@@ -1,51 +1,51 @@
 # FAQ #
-## What is the easiest way to install PhotoPrism on Mac/Windows? ##
+## Was ist der einfachste Weg, um PhotoPrism unter Mac / Windows zu installieren? ##
 
-## Should I install PhotoPrism on my laptop or on a server? ##
+## Sollte ich PhotoPrism auf meinem Laptop oder auf einem Server installieren? ##
 
-## Is there a mobile app available? ##
-We do not offer a native app via the app stores. 
-But our app is fully responsive and you can add it to the homescreen of your phone or tablet. 
-This way you can use it like any other app.
+## Gibt es eine mobile App? ##
+Wir bieten keine native App über die App Stores an.
+Unsere App reagiert jedoch vollständig und Sie können sie dem Homescreen Ihres Telefons oder Tablets hinzufügen.
+Auf diese Weise können Sie es wie jede andere App verwenden.
 
 **iOS:**
 
-1. Open photoprism in the Safari browser on your phone or tablet
-2. Click :material-export-variant:
-3. Click add to home screen :material-plus-box-outline:
+1. Öffnen Sie Fotoprisma im Safari-Browser auf Ihrem Telefon oder Tablet
+2. Klicken Sie auf: Material-Export-Variante:
+3. Klicken Sie auf Zum Startbildschirm hinzufügen: Material-plus-Box-Gliederung:
 
 **Android:**
 
 
 
-## How can I find/change my import/originals directories? ##
+## Wie kann ich meine Import- / Originalverzeichnisse finden / ändern? ##
 
 
-## Why do some of my photos get the import date as date instead of the date of the image creation? ##
+## Warum erhalten einige meiner Fotos das Importdatum als Datum anstelle des Datums der Bilderstellung? ##
 ?????
 
-## Where are my files saved? ##
-Your original files stay in the directory you defined as Originals during the set up.
+## Wo werden meine Dateien gespeichert? ##
+Ihre Originaldateien verbleiben in dem Verzeichnis, das Sie während der Einrichtung als Originale definiert haben.
 
-## Can PhotoPrism do backups of my files? ##
+## Kann PhotoPrism Backups meiner Dateien erstellen? ##
 
-## Can I backup images from my phone directly to PhotoPrism? ##
+## Kann ich Bilder von meinem Telefon direkt auf PhotoPrism sichern? ##
 
-## I removed a label but the related keyword is still existing, why? ##
-Keywords come from various sources: labels, file names, folder names, locations etc. 
-If a label is removed the keyword is not automatically removed because it might originated from another source.
-You can delete the keyword manually on the [edit dialogue](organize/edit.md).
+## Ich habe ein Label entfernt, aber das zugehörige Schlüsselwort ist noch vorhanden. Warum? ##
+Schlüsselwörter stammen aus verschiedenen Quellen: Beschriftungen, Dateinamen, Ordnernamen, Speicherorte usw.
+Wenn eine Beschriftung entfernt wird, wird das Schlüsselwort nicht automatisch entfernt, da es möglicherweise aus einer anderen Quelle stammt.
+Sie können das Schlüsselwort manuell im [edit dialogue] (organize/edit.md) löschen.
 
-## What are sidecar files and where do I find them? ##
-A sidecar is a file which sits along**side** your photos with the same name but different file extension/type. E.g:
+## Was sind Beiwagen-Dateien und wo finde ich sie? ##
+Ein Beiwagen ist eine Datei, die sich neben Ihren Fotos mit demselben Namen, aber unterschiedlicher Dateierweiterung / unterschiedlichem Dateityp befindet. Z.B:
 
  * `IMG_0101.jpg`
  * `IMG_0101.json`
  * `IMG_0101.yaml`
 
-There are 2 types of sidecar files used by Photoprism. 
+Es gibt zwei Arten von Beiwagen-Dateien, die von Photoprism verwendet werden.
 
- * **json** - (Variable: `PHOTOPRISM_SIDECAR_JSON` Parameter: `--sidecar-json, -j`) - This is automatically created from the EXIF data of your photos by `exiftool`. This makes the data easily available for other scripts/apps.
- * **yaml** - (Variable: `PHOTOPRISM_SIDECAR_YAML` Parameter: `--sidecar-yaml, -y`) - This is used to back up any changes made in Photoprism to the metadata of your photos. This preserves the promise that we will not make any changes to originals while also providing any changes you have made in a plaintext format. Useful for and backup/restore and database rebuilds.
+ * **json** - (Variable: `PHOTOPRISM_SIDECAR_JSON` Parameter: `--sidecar-json, -j`) - Dies wird automatisch aus den EXIF-Daten Ihrer Fotos von erstellt `exiftool`. Dadurch sind die Daten für andere Skripte / Apps leicht verfügbar
+ * **yaml** - (Variable: `PHOTOPRISM_SIDECAR_YAML` Parameter: `--sidecar-yaml, -y`) - Dies wird verwendet, um alle in Photoprism vorgenommenen Änderungen an den Metadaten Ihrer Fotos zu sichern. Dadurch bleibt das Versprechen erhalten, dass wir keine Änderungen an den Originalen vornehmen und gleichzeitig Änderungen vornehmen, die Sie im Klartextformat vorgenommen haben. Nützlich für und Backup / Restore und Datenbank-Neuerstellungen.
 
-## What is the advantage of PhotoPrism being OpenSource for me as a user? ##
+## Was ist der Vorteil von PhotoPrism als OpenSource für mich als Benutzer? ##
