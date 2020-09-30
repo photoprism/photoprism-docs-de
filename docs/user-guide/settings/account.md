@@ -7,4 +7,4 @@
 5.
 Klicken Sie auf * ändern *
 
-![Bildschirmfoto](img/Veränderung-Passwort.png) 
+![Screenshot](img/change-password.png) 
