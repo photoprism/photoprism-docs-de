@@ -1,8 +1,8 @@
-# Thumbnail Settings #
+# Miniaturansichten #
+Für beste Ergebnisse sollten Sie (mindestens) die JPEG-Qualität auf 95 einstellen und den Filter "lanczos" verwenden. Dies erfordert natürlich deutlich mehr Speicher- und CPU-Zeit. Nach unserer Erfahrung ist "cubic" auf modernen Desktop- und Server-CPUs möglicherweise 30% schneller als "lanczos". Denken Sie daran, dass Sie nur einmal Miniaturansichten erstellen müssen und diese dann für den Rest Ihres Lebens genießen können.
 
-For best results, you should (at least) set jpeg quality to 95 and use the "lanczos" filter. Obviously this will require significantly more storage and CPU time. From our experience, "cubic" might be 30% faster than "lanczos" on modern desktop and server CPUs. Keep in mind that you only need to create thumbnails once and then can enjoy them for the rest of your life.
 
-## Config Options ##
+## Konfigurationsoptionen ##
 
 `--jpeg-quality value, -q value`
 
@@ -36,21 +36,22 @@ The minimum size is 720px. This will render the following images:
 
 ![Screenshot 2020-01-08 at 22 10 30](https://user-images.githubusercontent.com/301686/72016344-e5fdfb80-3263-11ea-95b3-00564156140f.png)
 
-500px is used for tiles in search results, the others are mostly needed for classification.
+500px wird für Kacheln in Suchergebnissen verwendet, die anderen werden meistens für die Klassifizierung benötigt.
 
-Size is still ~550kb with high quality (95). With lower JPEG quality (80), you'll get it down to ~100kb:
+Größe ist noch ~550kb mit hoher Qualität (95). Mit niedriger JPEG quality (80), Sie werden es auf bekommen ~100kb:
 
 ```
 photoprism -s 720 -q 80 start
 ```
 
-This page demonstrates and discusses the effects of JPEG compression: http://fotoforensics.com/tutorial-estq.php
+Diese Seite demonstriert und diskutiert die Auswirkungen von JPEG Kompression: http://fotoforensics.com/tutorial-estq.php
 
-Image classification obviously works better with sharp images, so it's possible you'll get less accurate labels with higher compression. Please share your experience.
+Die Bildklassifizierung funktioniert bei scharfen Bildern offensichtlich besser, sodass Sie möglicherweise weniger genaue Beschriftungen mit höherer Komprimierung erhalten. Bitte teilen Sie Ihre Erfahrungen.
 
-If size limit is exceeded, for example because you use a large screen, originals will be used for displaying images in the frontend. This might result in the image displayed with wrong rotation if the browser doesn't rotate it automatically.
 
-## Sizes ##
+Wenn die Größenbeschränkung überschritten wird, z. B. weil Sie einen großen Bildschirm verwenden, werden Originale für die Anzeige von Bildern im Frontend verwendet. Dies kann dazu führen, dass das Bild mit falscher Drehung angezeigt wird, wenn der Browser es nicht automatisch dreht.
+
+## Größen ##
 
 
 Name      | Source    | Width  | Height  | Use               |
@@ -75,49 +76,51 @@ Source: https://ijarcce.com/wp-content/uploads/2016/02/IJARCCE-7.pdf
 
 ### Linear ###
 
-Bilinear interpolation takes a weighted average of the four
-neighborhood pixels to calculate its final interpolated
-value. The result is much smoother image than the original
-image. When all known pixel distances are equal, then the
-interpolated value is simply their sum divided by four.
-This technique performs interpolation in both directions,
-horizontal and vertical. This technique gives better result
-than nearest neighbor interpolation and take less
-computation time compared to bicubic interpolation.
+Die bilineare Interpolation ergibt einen gewichteten Durchschnitt der vier
+Nachbarschaftspixel, um seine endgültige Interpolation zu berechnen
+Wert. Das Ergebnis ist ein viel glatteres Bild als das Original
+Bild. Wenn alle bekannten Pixelabstände gleich sind, wird die
+Der interpolierte Wert ist einfach ihre Summe geteilt durch vier.
+Diese Technik führt eine Interpolation in beide Richtungen durch.
+horizontal und vertikal. Diese Technik liefert ein besseres Ergebnis
+als nächste Nachbarinterpolation und nehmen weniger
+Rechenzeit im Vergleich zur bikubischen Interpolation.
 
 ### Cubic ###
 
-Catmull-Rom is a local interpolating spline developed for
-computer graphics purposes. Its initial use was in design
-of curves and surfaces, and has recently been used in
-several applications. Catmull-Rom splines are a family of
-cubic interpolating splines formulated such that the
-tangent at each point is calculated using the previous and
-next point on the spline. The results are similar to ones
-produced by bicubic interpolation with regards to
-sharpness, but the Catmull-Rom reconstruction is clearly
-superior in smooth signal region.
+Catmull-Rom ist ein lokaler interpolierender Spline, der für entwickelt wurde
+Computergrafikzwecke. Die anfängliche Verwendung erfolgte im Design
+von Kurven und Flächen und wurde vor kurzem in verwendet
+mehrere Anwendungen. Catmull-Rom Splines sind eine Familie von
+kubische interpolierende Splines, die so formuliert sind, dass die
+Die Tangente an jedem Punkt wird unter Verwendung der vorherigen und berechnet
+nächster Punkt auf dem Spline. Die Ergebnisse ähneln denen
+erzeugt durch bikubische Interpolation in Bezug auf
+Schärfe, aber die Catmull-Rom-Rekonstruktion ist klar
+überlegen im glatten Signalbereich.
 
 ### Lanczos ###
 
-The Lanczos interpolation function is a mathematical formula
-used to smoothly interpolate the value of a digital
-image between its samples. It maps each sample of the
-given image to a translated and scaled copy of the Lanczos
-kernel, which is a sinc function windowed by the central
-hump of a dilated sinc function. The sum of these
-translated and scaled kernels is then evaluated at the
-desired pixel. Lanczos interpolation has the **best
-properties in terms of detail preservation and minimal
-generation of aliasing artifacts** for geometric
-transformations not involving strong down sampling. 
-However higher order Lanczos interpolation requires high
-computational time, which makes it unsuitable for
-most commercial software.
+Die Lanczos-Interpolationsfunktion ist eine mathematische Formel
+wird verwendet, um den Wert eines Digitaldrucks reibungslos zu interpolieren
+Bild zwischen seinen Proben. Es bildet jede Stichprobe der
+gegebenes Bild zu einer übersetzten und skalierten Kopie der Lanczos
+Kernel, eine Sinc-Funktion, die von der Zentrale angezeigt wird
+Buckel einer erweiterten Sinc-Funktion. Die Summe davon
+übersetzte und skalierte Kernel werden dann am ausgewertet
+gewünschtes Pixel. Lanczos Interpolation hat die **Beste
+Eigenschaften in Bezug auf Detailerhaltung und minimal
+Generierung von Aliasing-Artefakten** für geometrische
+Transformationen ohne starke Down-Sampling.
+Die Lanczos-Interpolation höherer Ordnung erfordert jedoch hohe Werte
+Rechenzeit, die es ungeeignet macht für
+die meiste kommerzielle Software.
+
 
 ### Blackman ###
 
-Blackman is a modification of Lanczos that has better control of ringing artifacts.
+Blackman ist eine Modifikation von Lanczos, mit der sich klingelnde Artefakte besser kontrollieren lassen.
+
 
 ### Examples ###
 
