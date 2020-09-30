@@ -1,4 +1,4 @@
-PhotoPrism Documentation
+PhotoPrism German User Guide
 ========================
 
 [![GitHub contributors](https://img.shields.io/github/contributors/photoprism/photoprism-docs.svg)](https://github.com/photoprism/photoprism-docs/graphs/contributors/)
@@ -6,9 +6,9 @@ PhotoPrism Documentation
 [![Community Chat](https://img.shields.io/badge/chat-on%20gitter-4aa087.svg)][chat]
 [![Twitter](https://img.shields.io/badge/follow-@browseyourlife-00acee.svg)][twitter]
 
-This repository contains the source files of [PhotoPrism](https://photoprism.org)'s documentation in markdown.
+This repository contains the source files of the german user guide for [PhotoPrism](https://photoprism.org) in markdown.
 
-They are meant to be parsed with the [Mkdocs](https://www.mkdocs.org/) documentation builder to build the HTML documentation on [docs.photoprism.org](https://docs.photoprism.org/).
+They are meant to be parsed with the [Mkdocs](https://www.mkdocs.org/) documentation builder to build the HTML documentation on [docs.photoprism.org](https://docs.photoprism.org/de).
 
 ## Contributing changes
 
