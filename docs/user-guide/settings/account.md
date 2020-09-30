@@ -1,5 +1,5 @@
-# Account Settings #
-### Change password ###
+# Kontoeinstellungen #
+### Passwort ändern ###
 1. Klicken Sie auf Einstellungen
 2. Klicken Sie auf * Konto *
 3. Gib dein aktuelles Passwort ein
