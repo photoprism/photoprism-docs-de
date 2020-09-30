@@ -1,13 +1,13 @@
-# Panoramas #
-PhotoPrism automatically marks photos with an aspect ratio of 2/1 or higher as *panorama*.
-You can view all your panorama images in the *Panorama section*.
+# Panoramen #
+PhotoPrism markiert Fotos mit einem Seitenverhältnis von 2/1 oder höher automatisch als * Panorama *.
+Sie können alle Ihre Panoramabilder im Bereich * Panorama * anzeigen.
 
 ![Screenshot](img/panorama-1.png)
 
-## Edit panorama flag ##
+## Panorama-Flag bearbeiten ##
 
- 1. Open the [*photo edit dialogue*](edit.md)
- 2. Click :material-cog:
- 3. Set or unset the panorama flag
+  1. Öffnen Sie den [* Fotobearbeitungsdialog *] (edit.md)
+  2. Klicken Sie auf: material-cog:
+  3. Setzen oder deaktivieren Sie die Panorama-Flagge
 
 ![Screenshot](img/panorama-2.png)
