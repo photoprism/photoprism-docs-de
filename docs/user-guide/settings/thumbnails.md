@@ -1,136 +1,135 @@
-# Thumbnail Settings #
+# Miniaturansichten #
 
-For best results, you should (at least) set jpeg quality to 95 and use the "lanczos" filter. Obviously this will require significantly more storage and CPU time. From our experience, "cubic" might be 30% faster than "lanczos" on modern desktop and server CPUs. Keep in mind that you only need to create thumbnails once and then can enjoy them for the rest of your life.
+Für beste Ergebnisse sollten Sie (mindestens) die JPEG-Qualität auf 95 einstellen und den Filter "lanczos" verwenden. Dies erfordert natürlich deutlich mehr Speicher- und CPU-Zeit. Nach unserer Erfahrung ist "cubic" auf modernen Desktop- und Server-CPUs möglicherweise 30% schneller als "lanczos". Denken Sie daran, dass Sie nur einmal Miniaturansichten erstellen müssen und diese dann für den Rest Ihres Lebens genießen können.
 
-## Config Options ##
+## Konfigurationsoptionen ##
 
-`--jpeg-quality value, -q value`
+`--jpeg-Qualitätswert, -q Wert`
 
-set to 95 for high-quality thumbnails (25-100) (default: 90) [$PHOTOPRISM_JPEG_QUALITY]
+für hochwertige Miniaturansichten (25-100) auf 95 gesetzt (Standard: 90) [$ PHOTOPRISM_JPEG_QUALITY]
 
 `--thumb-size value, -s value`
 
-default thumbnail size limit in pixels (720-3840) (default: 2048) [$PHOTOPRISM_THUMB_SIZE]
+Standard-Größenbeschränkung für Miniaturansichten in Pixel (720-3840) (Standard: 2048) [$ PHOTOPRISM_THUMB_SIZE]
 
 `--thumb-limit value, -x value`
 
-on-demand thumbnail size limit in pixels (720-3840) (default: 3840) [$PHOTOPRISM_THUMB_LIMIT]
+Größenbeschränkung für Miniaturansichten bei Bedarf in Pixel (720-3840) (Standard: 3840) [$ PHOTOPRISM_THUMB_LIMIT]
 
 `--thumb-uncached, -u`
 
-on-demand rendering of default thumbnails (high memory and cpu usage) [$PHOTOPRISM_THUMB_UNCACHED]
+On-Demand-Rendering von Standard-Miniaturansichten (hohe Speicher- und CPU-Auslastung) [$ PHOTOPRISM_THUMB_UNCACHED]
 
 `--thumb-filter value, -f value`
 
-resample filter (best to worst: blackman, lanczos, cubic, linear) (default: "lanczos") [$PHOTOPRISM_THUMB_FILTER]
+Resample-Filter (vom Besten zum Schlechtesten: Blackman, Lanczos, Cubic, Linear) (Standard: "Lanczos") [$ PHOTOPRISM_THUMB_FILTER]
 
-## Example ##
+## Beispiel ##
 
-You can limit the size of JPEG thumbnails using the `-s` parameter when you run commands:
+Sie können die Größe von JPEG-Miniaturansichten mit dem Parameter `-s` begrenzen, wenn Sie Befehle ausführen:
 
-```
-photoprism -s 720 start
-```
+`` `
+Fotoprisma -s 720 starten
+`` `
 
-The minimum size is 720px. This will render the following images:
+Die Mindestgröße beträgt 720px. Dadurch werden die folgenden Bilder gerendert:
 
-![Screenshot 2020-01-08 at 22 10 30](https://user-images.githubusercontent.com/301686/72016344-e5fdfb80-3263-11ea-95b3-00564156140f.png)
+![Screenshot 2020-01-08 um 22 10 30](https://user-images.githubusercontent.com/301686/72016344-e5fdfb80-3263-11ea-95b3-00564156140f.png)
 
-500px is used for tiles in search results, the others are mostly needed for classification.
+500px wird für Kacheln in Suchergebnissen verwendet, die anderen werden meistens für die Klassifizierung benötigt.
 
-Size is still ~550kb with high quality (95). With lower JPEG quality (80), you'll get it down to ~100kb:
+Größe ist immer noch ~ 550kb mit hoher Qualität (95). Mit einer niedrigeren JPEG-Qualität (80) erreichen Sie ~ 100 KB:
 
-```
-photoprism -s 720 -q 80 start
-```
+`` `
+Fotoprisma -s 720 -q 80 starten
+`` `
 
-This page demonstrates and discusses the effects of JPEG compression: http://fotoforensics.com/tutorial-estq.php
+Diese Seite demonstriert und diskutiert die Auswirkungen der JPEG-Komprimierung: http://fotoforensics.com/tutorial-estq.php
 
-Image classification obviously works better with sharp images, so it's possible you'll get less accurate labels with higher compression. Please share your experience.
+Die Bildklassifizierung funktioniert bei scharfen Bildern offensichtlich besser, sodass Sie möglicherweise weniger genaue Beschriftungen mit höherer Komprimierung erhalten. Bitte teilen Sie Ihre Erfahrungen.
 
-If size limit is exceeded, for example because you use a large screen, originals will be used for displaying images in the frontend. This might result in the image displayed with wrong rotation if the browser doesn't rotate it automatically.
+Wenn die Größenbeschränkung überschritten wird, z. B. weil Sie einen großen Bildschirm verwenden, werden Originale für die Anzeige von Bildern im Frontend verwendet. Dies kann dazu führen, dass das Bild mit falscher Drehung angezeigt wird, wenn der Browser es nicht automatisch dreht.
 
-## Sizes ##
+## Größen ##
 
 
-Name      | Source    | Width  | Height  | Use               |
-:---------|:----------|:------:|:-------:|:------------------|
-colors    | fit_720   | 3      | 3       | colors            |
-tile_50   | tile_500  | 50     | 50      | maps              |
-tile_100  | tile_500  | 100    | 100     | maps              |
-tile_224  | tile_500  | 224    | 224     | tensorflow        |
-left_224  | fit_720   | 224    | 224     | tensorflow        |
-right_224 | fit_720   | 224    | 224     | tensorflow        |
-tile_500  |           | 500    | 500     | preview           |
-fit_720   |           | 720    | 720     | lightbox          |
-fit_1280  | fit_2048  | 1280   | 1024    | lightbox          |
-fit_1920  | fit_2048  | 1920   | 1200    | lightbox          |
-fit_2048  |           | 2048   | 2048    | lightbox          |
-fit_2560  |           | 2560   | 1600    | lightbox / retina |
-fit_3840  |           | 3840   | 2400    | lightbox / retina |
+Name | Quelle | Breite | Höhe | Verwenden Sie |
+: --------- |: ---------- |: ------: |: -------: |: ------- ----------- |
+Farben | fit_720 | 3 | 3 | Farben |
+tile_50 | tile_500 | 50 | 50 | Karten |
+tile_100 | tile_500 | 100 | 100 | Karten |
+tile_224 | tile_500 | 224 | 224 | Tensorfluss |
+left_224 | fit_720 | 224 | 224 | Tensorfluss |
+right_224 | fit_720 | 224 | 224 | Tensorfluss |
+tile_500 | | 500 | 500 | Vorschau |
+fit_720 | | 720 | 720 | Leuchtkasten |
+fit_1280 | fit_2048 | 1280 | 1024 | Leuchtkasten |
+fit_1920 | fit_2048 | 1920 | 1200 | Leuchtkasten |
+fit_2048 | | 2048 | 2048 | Leuchtkasten |
+fit_2560 | | 2560 | 1600 | Leuchtkasten / Netzhaut |
+fit_3840 | | 3840 | 2400 | Leuchtkasten / Netzhaut |
 
-## Filters ##
-
-Source: https://ijarcce.com/wp-content/uploads/2016/02/IJARCCE-7.pdf
+## Filter ##
+Quelle: https://ijarcce.com/wp-content/uploads/2016/02/IJARCCE-7.pdf
 
 ### Linear ###
 
-Bilinear interpolation takes a weighted average of the four
-neighborhood pixels to calculate its final interpolated
-value. The result is much smoother image than the original
-image. When all known pixel distances are equal, then the
-interpolated value is simply their sum divided by four.
-This technique performs interpolation in both directions,
-horizontal and vertical. This technique gives better result
-than nearest neighbor interpolation and take less
-computation time compared to bicubic interpolation.
+Die bilineare Interpolation ergibt einen gewichteten Durchschnitt der vier
+Nachbarschaftspixel, um seine endgültige Interpolation zu berechnen
+Wert. Das Ergebnis ist ein viel glatteres Bild als das Original
+Bild. Wenn alle bekannten Pixelabstände gleich sind, wird die
+Der interpolierte Wert ist einfach ihre Summe geteilt durch vier.
+Diese Technik führt eine Interpolation in beide Richtungen durch.
+horizontal und vertikal. Diese Technik liefert ein besseres Ergebnis
+als nächste Nachbarinterpolation und nehmen weniger
+Rechenzeit im Vergleich zur bikubischen Interpolation.
 
-### Cubic ###
+### kubisch ###
 
-Catmull-Rom is a local interpolating spline developed for
-computer graphics purposes. Its initial use was in design
-of curves and surfaces, and has recently been used in
-several applications. Catmull-Rom splines are a family of
-cubic interpolating splines formulated such that the
-tangent at each point is calculated using the previous and
-next point on the spline. The results are similar to ones
-produced by bicubic interpolation with regards to
-sharpness, but the Catmull-Rom reconstruction is clearly
-superior in smooth signal region.
+Catmull-Rom ist ein lokaler interpolierender Spline, der für entwickelt wurde
+Computergrafikzwecke. Die anfängliche Verwendung erfolgte im Design
+von Kurven und Flächen und wurde vor kurzem in verwendet
+mehrere Anwendungen. Catmull-Rom Splines sind eine Familie von
+kubische interpolierende Splines, die so formuliert sind, dass die
+Die Tangente an jedem Punkt wird unter Verwendung der vorherigen und berechnet
+nächster Punkt auf dem Spline. Die Ergebnisse ähneln denen
+erzeugt durch bikubische Interpolation in Bezug auf
+Schärfe, aber die Catmull-Rom-Rekonstruktion ist klar
+überlegen im glatten Signalbereich.
 
 ### Lanczos ###
 
-The Lanczos interpolation function is a mathematical formula
-used to smoothly interpolate the value of a digital
-image between its samples. It maps each sample of the
-given image to a translated and scaled copy of the Lanczos
-kernel, which is a sinc function windowed by the central
-hump of a dilated sinc function. The sum of these
-translated and scaled kernels is then evaluated at the
-desired pixel. Lanczos interpolation has the **best
-properties in terms of detail preservation and minimal
-generation of aliasing artifacts** for geometric
-transformations not involving strong down sampling. 
-However higher order Lanczos interpolation requires high
-computational time, which makes it unsuitable for
-most commercial software.
+Die Lanczos-Interpolationsfunktion ist eine mathematische Formel
+wird verwendet, um den Wert eines Digitaldrucks reibungslos zu interpolieren
+Bild zwischen seinen Proben. Es bildet jede Stichprobe der
+gegebenes Bild zu einer übersetzten und skalierten Kopie der Lanczos
+Kernel, eine Sinc-Funktion, die von der Zentrale angezeigt wird
+Buckel einer erweiterten Sinc-Funktion. Die Summe davon
+übersetzte und skalierte Kernel werden dann am ausgewertet
+gewünschtes Pixel. Die Lanczos-Interpolation hat das Beste
+Eigenschaften in Bezug auf Detailerhaltung und minimal
+Generierung von Aliasing-Artefakten ** für geometrische
+Transformationen ohne starke Down-Sampling.
+Die Lanczos-Interpolation höherer Ordnung erfordert jedoch hohe Werte
+Rechenzeit, die es ungeeignet macht für
+die meiste kommerzielle Software.
 
-### Blackman ###
+### Schwarzer Mann ###
 
-Blackman is a modification of Lanczos that has better control of ringing artifacts.
+Blackman ist eine Modifikation von Lanczos, mit der sich klingelnde Artefakte besser kontrollieren lassen.
 
-### Examples ###
+### Beispiele ###
 
-Original image:
+Original Bild:
 
 ![](img/branches.png)
 
-The same image resized from 600x400px to 150x100px using different resampling filters.
-From faster (lower quality) to slower (higher quality):
+Das gleiche Bild wurde mithilfe verschiedener Resampling-Filter von 600 x 400 Pixel auf 150 x 100 Pixel geändert.
+Von schneller (geringere Qualität) bis langsamer (höhere Qualität):
 
-Filter                    | Resize result
+Filter                    | Ändern Sie die Größe des Ergebnisses
 --------------------------|---------------------------------------------
-Nearest Neighbor          | ![](img/out_resize_nearest.png) 
+Nächster Nachbar        | ![](img/out_resize_nearest.png) 
 Bilinear                  | ![](img/out_resize_linear.png)
-Sharp Bicubic             | ![](img/out_resize_catrom.png)
+Scharfes Bikubisch            | ![](img/out_resize_catrom.png)
 Lanczos                   | ![](img/out_resize_lanczos.png)
