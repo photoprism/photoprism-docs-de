@@ -1,68 +1,81 @@
-# User Interface Settings #
+# Einstellungen der Benutzeroberfläche #
 
-In *Settings* you can configure properties of your photo library, user interface and places.
-
+Im *Settings*Sie können Eigenschaften Ihrer Fotobibliothek, Benutzeroberfläche und Orte konfigurieren.
 ![Screenshot](img/settings.png)
 
-### Library Settings ###
-#### Hide Private :material-lock: ####
-Photos/videos marked as *private* do NOT appear in *Photos*, *Videos*, *Favorites*, *Labels*, *Places* and shared albums in case this option is selected.
+### Bibliothekseinstellungen ###
+#### Privat ausblenden: Material-Lock: ####
+Fotos / Videos, die als * privat * markiert sind, werden NICHT in * Fotos *, * Videos *, * Favoriten *, * Labels *, * Orten * und freigegebenen Alben angezeigt, falls diese Option ausgewählt ist.
 
-#### Quality Filter :material-eye: ####
-When selected, non-photographic photos/videos like screenshots and low-quality photos need to be [*reviewed*](../organize/review.md) before they appear in *Photos* or *Videos*.
 
-#### Convert to JPEG :material-camera: ####
-*JPEGs* are created for *RAW files* during [*indexing*](../library/indexing.md) in case they do not yet exist. JPEGs will be stored in the same folder next to the original.
+#### Qualitätsfilter: Materialauge: ####
+Bei Auswahl dieser Option müssen nicht fotografische Fotos / Videos wie Screenshots und Fotos von geringer Qualität [* überprüft *] (../organisieren / überprüfen.md) sein, bevor sie in * Fotos * oder * Videos * angezeigt werden.
 
-!!! attention
-    In case this is disabled and there is a RAW file without a JPEG there will be no preview.
+#### Konvertieren to JPEG :material-camera: ####
+*JPEGs* werden für * RAW-Dateien * während der [* Indizierung *] (../ library / indexing.md) erstellt, falls sie noch nicht vorhanden sind. JPEGs werden im selben Ordner neben dem Original gespeichert.
+
+
+!!! Beachtung
+    Falls dies deaktiviert ist und eine RAW-Datei ohne JPEG vorhanden ist, erfolgt keine Vorschau.
     
-#### Group Sequential :material-image-multiple: ####
-Related files will be grouped when selected.
-Grouped files will have one primary file that is shown in our views. You find your grouped files in [*Stacks*](../organize/stacks.md).
+#### Gruppensequenziell :material-image-multiple: ####
+Verwandte Dateien werden bei Auswahl gruppiert.
+Gruppierte Dateien haben eine Primärdatei, die in unseren Ansichten angezeigt wird. Sie finden Ihre gruppierten Dateien in [* Stacks *] (../ organisate / stacks.md).
     
-### User Interface Settings ###
-You can change the *theme* and *language* of the User interface.
+### Einstellungen der Benutzeroberfläche
+ ###
+Sie können das * Thema * und die * Sprache * der Benutzeroberfläche ändern.
 
-To make PhotoPrism suite your individual needs the following sections and functionalities can be en- or disabled.
-Disabled sections do not appear in the main navigation.
 
-#### Upload :material-cloud-upload: ####
-When disabled, uploading files via [*upload*](../library/upload.md) is not possible. 
-This might be useful when you grant others access to your PhotoPrism but do not want them to upload photos.
+Um PhotoPrism Suite Ihren individuellen Anforderungen anzupassen, können die folgenden Abschnitte und Funktionen aktiviert oder deaktiviert werden.
+Deaktivierte Abschnitte werden in der Hauptnavigation nicht angezeigt.
 
-#### Download :material-cloud-download: ####
-When disabled, no files can be downloaded.
+#### Hochladen :material-cloud-upload: ####
+Wenn deaktiviert, ist das Hochladen von Dateien über [* upload *] (../ library / upload.md) nicht möglich.
+Dies kann nützlich sein, wenn Sie anderen Zugriff auf Ihr PhotoPrism gewähren, aber nicht möchten, dass sie Fotos hochladen.
 
-#### Share :material-share-variant: ####
-When disabled, album sharing and upload to remote services like Nextcloud is not possible.
+#### Herunterladen :material-cloud-download: ####
+Wenn deaktiviert, können keine Dateien heruntergeladen werden.
 
-#### Archive :material-archive-arrow-down: ####
-When disabled, there is no *Archive*. Photos that have been archived beforehand will appear in *Photos/Videos*.
 
-#### Edit :material-pencil: ####
-When disabled, it is not possible to edit photo information.
+#### Teilen :material-share-variant: ####
+Wenn diese Option deaktiviert ist, ist das Teilen von Alben und das Hochladen auf Remotedienste wie Nextcloud nicht möglich.
 
-#### Originals :material-file: ####
-When disabled, there is no *Originals* section.
 
-#### Moments :material-star: ####
-When disabled, there is no *Moments* section.
+#### Archiv :material-archive-arrow-down: ####
+Wenn deaktiviert, gibt es kein * Archiv *. Fotos, die zuvor archiviert wurden, werden in * Fotos / Videos * angezeigt.
 
-#### Labels :material-label: ####
-When disabled, there is no *Labels* section and you cannot add or edit labels.
 
-#### Library :material-film: ####
-When disabled, there is no *Library* section.
+#### Bearbeiten :material-pencil: ####
+Wenn deaktiviert, ist es nicht möglich, Fotoinformationen zu bearbeiten.
 
-#### Import :material-folder-plus: ####
-When disabled, there is no possibility to [*import*](../library/import.md) photos. You need to use [*index*](../library/indexing.md) instead to add new photos.
+#### Originale :material-file: ####
+Wenn deaktiviert, gibt es keinen Abschnitt * Originale *.
+
+
+#### Momente :material-star: ####
+Wenn deaktiviert, gibt es keinen Abschnitt * Momente *.
+
+#### Etiketten :material-label: ####
+Wenn deaktiviert, gibt es keinen Abschnitt * Labels * und Sie können keine Labels hinzufügen oder bearbeiten.
+
+
+#### Bibliothek :material-film: ####
+Wenn deaktiviert, gibt es keinen Abschnitt * Bibliothek *.
+
+
+#### Importieren :material-folder-plus: ####
+Wenn deaktiviert, gibt es keine Möglichkeit, [* import *] (../ library / import.md) Fotos zu importieren. Sie müssen stattdessen [* index *] (../ library / indexing.md) verwenden, um neue Fotos hinzuzufügen.
+
 
 #### Logs :material-text: ####
-When disabled, server logs are not shown.
+Wenn deaktiviert, werden Serverprotokolle nicht angezeigt.
 
-#### Places :material-map-marker: ####
-When disabled, there is no *Places* section.
 
-### Places Settings ####
-You can configure a map style and the speed of the places animation.
+#### Setzt :material-map-marker: ####
+Wenn deaktiviert, gibt es keinen Abschnitt * Orte *.
+
+
+### Orte Einstellungen ####
+Sie können einen Kartenstil und die Geschwindigkeit der Ortsanimation konfigurieren.
+
