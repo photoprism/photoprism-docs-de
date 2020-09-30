@@ -1,28 +1,27 @@
 # Folders #
-We automatically display all folders of your *originals directory* in the *Folders section*.
-In case you add new files to your *originals directory* your folders will be updated.
+Wir zeigen automatisch alle Ordner Ihres * Originalverzeichnisses * im Abschnitt * Ordner * an.
+Wenn Sie Ihrem * Originalverzeichnis * neue Dateien hinzufügen, werden Ihre Ordner aktualisiert.
 
 ![Screenshot](img/folders-1.png)
 
-The context menu allows you to perform the following actions:
-
+Über das Kontextmenü können Sie folgende Aktionen ausführen:
 ## Delete folder ##
-1. Select folder
-2. Open context menu
-3. Click :material-delete:
-4. Confirm
+1. Ordner auswählen
+2. Öffnen Sie das Kontextmenü
+3. Klicken Sie auf: Material löschen:
+4. Bestätigen Sie
 
-!!! hint
-    Only the representation of the folder will be deleted. Your files stay untouched.
+!!! Hinweis
+     Nur die Darstellung des Ordners wird gelöscht. Ihre Dateien bleiben unberührt.
 
 ## Download folder as zip ##
-1. Select folder
-2. Open context menu
-3. Click :material-download:
+1. Ordner auswählen
+2. Öffnen Sie das Kontextmenü
+3. Klicken Sie auf: Material-Download:
 
-## Create album from folder ##
-1. Select folder
-2. Open context menu
-3. Click :material-folder:
-4. Select existing album or enter new album name
-5. Click *add to album*
+## Album aus Ordner erstellen ##
+1. Ordner auswählen
+2. Öffnen Sie das Kontextmenü
+3. Klicken Sie auf: Materialordner:
+4. Wählen Sie ein vorhandenes Album aus oder geben Sie einen neuen Albumnamen ein
+5. Klicken Sie auf * Zum Album hinzufügen *
