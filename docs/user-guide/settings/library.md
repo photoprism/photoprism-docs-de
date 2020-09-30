@@ -1,21 +1,23 @@
-# Library Settings #
+# Bibliothekseinstellungen #
 
-## RAW to JPEG Conversion ##
+## RAW-JPEG-Konvertierung ##
 
-Many photographers keep their originals in some sort of lossless RAW format instead of compressed JPEG, especially when shooting with a Digital SLR. Some [mobile phones](https://www.fredericpaulussen.be/how-to-raw-photos-huawei-p30-pro/) also support RAW or use HEIC/HEIF for a similar purpose. PhotoPrism aims at providing excellent support for all [RAW](https://en.wikipedia.org/wiki/Raw_image_format) formats, independent of camera brand and model. Please let us know when there is an issue with your specific device.
+Viele Fotografen behalten ihre Originale in einem verlustfreien RAW-Format anstelle von komprimiertem JPEG, insbesondere bei Aufnahmen mit einer digitalen Spiegelreflexkamera. Einige [Mobiltelefone] (https://www.fredericpaulussen.be/how-to-raw-photos-huawei-p30-pro/) unterstützen auch RAW oder verwenden HEIC / HEIF für einen ähnlichen Zweck. PhotoPrism bietet eine hervorragende Unterstützung für alle [RAW] -Formate (https://en.wikipedia.org/wiki/Raw_image_format), unabhängig von Kameramarke und -modell. Bitte teilen Sie uns mit, wenn ein Problem mit Ihrem Gerät vorliegt.
 
-Web browsers in general cannot display RAW image files. They need to be converted, which is what our *import* and *convert* commands do. You'll also find a checkbox for this step in our [Web UI](ui.md).
+Webbrowser können im Allgemeinen keine RAW-Bilddateien anzeigen. Sie müssen konvertiert werden, wie es unsere Befehle * import * und * convert * tun. Ein Kontrollkästchen für diesen Schritt finden Sie auch in unserer [Web-Benutzeroberfläche] (ui.md).
 
-In addition, PhotoPrism now also supports TIFF, PNG, BMP and GIF files. Be aware that files in those formats often don't contain useful metadata and are typically used for screenshots, charts, graphs and icons only.
-
+Darüber hinaus unterstützt PhotoPrism jetzt auch TIFF-, PNG-, BMP- und GIF-Dateien. Beachten Sie, dass Dateien in diesen Formaten häufig keine nützlichen Metadaten enthalten und normalerweise nur für Screenshots, Diagramme, Grafiken und Symbole verwendet werden.
 ![](https://pbs.twimg.com/media/EPd-Lp1WAAYYBzs?format=png&name=large)
 
-### Read-only mode ###
+### Schreibgeschützter Modus ###
 
-Conversion is currently disabled in *read-only mode* because creating JPEGs from RAWs is a pretty expensive operation and it makes sense to store JPEGs right next to their RAW files so that they can be found and used again in the future. Otherwise it might not be possible to match the files again and you don't want to put the expensively created JPEG file in a temporary directory or do all this on the fly in memory, unless you have a really fast computer. Most users want to make a backup of their files, so files that belong together should not be randomly distributed across the file system. 20 years from now, it's probably easier to open a JPEG than render a proprietary RAW file again in good quality.
+Die Konvertierung ist derzeit im * schreibgeschützten Modus * deaktiviert, da das Erstellen von JPEGs aus RAWs ein ziemlich teurer Vorgang ist und es sinnvoll ist, JPEGs direkt neben ihren RAW-Dateien zu speichern, damit sie in Zukunft wieder gefunden und verwendet werden können. Andernfalls ist es möglicherweise nicht möglich, die Dateien erneut abzugleichen, und Sie möchten die teuer erstellte JPEG-Datei nicht in einem temporären Verzeichnis ablegen oder dies alles im laufenden Betrieb im Speicher tun, es sei denn, Sie haben einen wirklich schnellen Computer. Die meisten Benutzer möchten eine Sicherungskopie ihrer Dateien erstellen, daher sollten zusammengehörige Dateien nicht zufällig über das Dateisystem verteilt werden. In 20 Jahren ist es wahrscheinlich einfacher, ein JPEG zu öffnen, als eine proprietäre RAW-Datei erneut in guter Qualität zu rendern.
 
-However, we see the point of [users who want to use PhotoPrism as a read-only photo viewer](https://github.com/photoprism/photoprism/issues/189) that should not create any files in their *originals directory*. The easiest solution is to create JPEGs manually or use another tool you trust to do this automatically.
 
-With some effort, it might be possible to extract embedded JPEGs in acceptable quality from many RAW formats and use those in read-only mode. Alternatively, JPEGs could be created in the cache directory with all the disadvantages mentioned above, the storage will be gone one way or the other. Note that JPEGs in full-resolution are relatively large and you won't be able to find or reuse them as files there have a different naming scheme based on the hash of the original file.
+Wir sehen jedoch den Punkt [Benutzer, die PhotoPrism als schreibgeschützten Fotobetrachter verwenden möchten] (https://github.com/photoprism/photoprism/issues/189), der keine Dateien in ihrem * Originalverzeichnis erstellen sollte *. Die einfachste Lösung besteht darin, JPEGs manuell zu erstellen oder ein anderes Tool Ihres Vertrauens zu verwenden, um dies automatisch zu tun.
 
-Idea: Put converted images in `cache/converted` by default with an option to automatically move / copy them to the `originals` directory. Feedback welcome.
+Mit etwas Aufwand ist es möglicherweise möglich, eingebettete JPEGs in akzeptabler Qualität aus vielen RAW-Formaten zu extrahieren und diese im schreibgeschützten Modus zu verwenden. Alternativ könnten JPEGs im Cache-Verzeichnis mit allen oben genannten Nachteilen erstellt werden. Der Speicher wird auf die eine oder andere Weise gelöscht. Beachten Sie, dass JPEGs in voller Auflösung relativ groß sind und Sie sie nicht finden oder wiederverwenden können, da Dateien dort ein anderes Namensschema haben, das auf dem Hash der Originaldatei basiert.
+
+
+Idee: Legen Sie konvertierte Bilder standardmäßig in den "Cache / konvertiert" mit der Option, sie automatisch in das "Originale" -Verzeichnis zu verschieben / kopieren. Feedback willkommen.
+
