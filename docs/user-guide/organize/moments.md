@@ -1,29 +1,28 @@
-# Moments #
+# Momente #
 
-PhotoPrism creates moments out of your memories. 
-*Moments* get constantly updated in case you add new photos.
-
+PhotoPrism schafft Momente aus Ihren Erinnerungen.
+* Momente * werden ständig aktualisiert, falls Sie neue Fotos hinzufügen.
 ![Screenshot](img/moments.png)
 
-The context menu allows you to perform the following actions:
+Über das Kontextmenü können Sie folgende Aktionen ausführen:
 
-## Delete moment ##
-1. Select moment
-2. Open context menu
-3. Click :material-delete:
-4. Confirm
+## Moment löschen ##
+1. Moment auswählen
+2. Öffnen Sie das Kontextmenü
+3. Klicken Sie auf: Material löschen:
+4. Bestätigen Sie
 
-!!! hint
-    Only the moment will be deleted. Your files stay untouched.
+!!! Hinweis
+     Nur der Moment wird gelöscht. Ihre Dateien bleiben unberührt.
 
-## Download moment as zip ##
-1. Select moment
-2. Open context menu
-3. Click :material-download:
+## Moment als Zip herunterladen ##
+1. Moment auswählen
+2. Öffnen Sie das Kontextmenü
+3. Klicken Sie auf: Material-Download:
 
-## Create album from moment ##
-1. Select moment
-2. Open context menu
-3. Click :material-folder:
-4. Select existing album or enter new album name
-5. Click *add to album*
+## Album ab Moment erstellen ##
+1. Moment auswählen
+2. Öffnen Sie das Kontextmenü
+3. Klicken Sie auf: Materialordner:
+4. Wählen Sie ein vorhandenes Album aus oder geben Sie einen neuen Albumnamen ein
+5. Klicken Sie auf * Zum Album hinzufügen *
