@@ -1,38 +1,38 @@
-# Share albums via link #
+# Alben über einen Link teilen #
 
-## Create sharing link ##
-1. Go to *Albums*
-2. Select the album you want to share
-3. Open the context menu
-4. Click :material-share-variant:
-    
+## Freigabelink erstelle ##
+1. Gehe zu *Alben*
+2. Wähle das Album aus, das du freigeben möchten
+3. Öffne das Kontextmenü
+4. Klicke auf :material-share-variant:
+
     ![Screenshot](img/share-1.png)
-    
-5. Click :material-chevron-down: to open the *link details*
-6. Set a *secret* and *expiry date*
-7. Click *save*
-    
+
+5. Klicke auf :material-chevron-down: um die *Linkdetails* zu öffnen
+6. Lege ein *Geheimnis* und *Ablaufdatum* fest
+7. Klicke auf *Speichern*
+
     ![Screenshot](img/share-2.png)
-    
-8. Copy the link by clicking on it
-    
+
+8. Kopiere den Link, indem du auf ihn klickst
+
     ![Screenshot](img/share-3.png)
-    
-9. Share it with your friends
+
+9. Teile es mit deinen Freunden
 
 
 
-!!!tip
-    You can create additional links with different secrets and expiry dates by clicking :material-link-plus:.
+!!!Tipp
+    Du kannst zusätzliche Links mit verschiedenen Geheimnissen und Ablaufdaten erstellen, indem du auf :material-link-plus: klickst
 
-## Delete sharing link ##
+## Freigabelink löschen ##
 
-1. Go to *Albums*
-2. Click :material-share-variant: on the album cover
+1. Gehe zu *Alben*
+2. Klicke auf dem Albumcover auf :material-share-variant:
 
     ![Screenshot](img/delete-share-1.png)
     
-3. Click :material-chevron-down:
-4. Click :material-delete:
+3. Klicke auf :material-chevron-down:
+4. Klicke auf :material-delete:
 
      ![Screenshot](img/delete-share-2.png)
