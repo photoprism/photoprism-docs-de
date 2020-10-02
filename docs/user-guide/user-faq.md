@@ -5,14 +5,14 @@
 
 ## Gibt es eine mobile App? ##
 Wir bieten keine native App über die App Stores an.
-Unsere App reagiert jedoch vollständig und Sie können sie dem Homescreen Ihres Telefons oder Tablets hinzufügen.
+Unsere App jedoch vollständig mobil nutzbar und Sie können sie auf dem Homescreen Ihres Telefons oder Tablets hinzufügen.
 Auf diese Weise können Sie es wie jede andere App verwenden.
 
 **iOS:**
 
-1. Öffnen Sie Fotoprisma im Safari-Browser auf Ihrem Telefon oder Tablet
-2. Klicken Sie auf: Material-Export-Variante:
-3. Klicken Sie auf Zum Startbildschirm hinzufügen: Material-plus-Box-Gliederung:
+1. Öffnen Sie PhotoPrism im Safari-Browser auf Ihrem Telefon oder Tablet
+2. Klicken Sie auf :material-export-variant:
+3. Klicken Sie auf Zum Startbildschirm hinzufügen :material-plus-box-outline:
 
 **Android:**
 
@@ -36,16 +36,16 @@ Schlüsselwörter stammen aus verschiedenen Quellen: Beschriftungen, Dateinamen,
 Wenn eine Beschriftung entfernt wird, wird das Schlüsselwort nicht automatisch entfernt, da es möglicherweise aus einer anderen Quelle stammt.
 Sie können das Schlüsselwort manuell im [edit dialogue] (organize/edit.md) löschen.
 
-## Was sind Beiwagen-Dateien und wo finde ich sie? ##
-Ein Beiwagen ist eine Datei, die sich neben Ihren Fotos mit demselben Namen, aber unterschiedlicher Dateierweiterung / unterschiedlichem Dateityp befindet. Z.B:
+## Was sind Filialdateien-Dateien und wo finde ich sie? ##
+Eine Filialdatei ist eine Datei, die sich neben Ihren Fotos mit demselben Namen, aber unterschiedlicher Dateierweiterung / unterschiedlichem Dateityp befindet. Z.B:
 
  * `IMG_0101.jpg`
  * `IMG_0101.json`
  * `IMG_0101.yaml`
 
-Es gibt zwei Arten von Beiwagen-Dateien, die von Photoprism verwendet werden.
+Es gibt zwei Arten von Filialdateien, die von PhotoPrism verwendet werden.
 
  * **json** - (Variable: `PHOTOPRISM_SIDECAR_JSON` Parameter: `--sidecar-json, -j`) - Dies wird automatisch aus den EXIF-Daten Ihrer Fotos von erstellt `exiftool`. Dadurch sind die Daten für andere Skripte / Apps leicht verfügbar
- * **yaml** - (Variable: `PHOTOPRISM_SIDECAR_YAML` Parameter: `--sidecar-yaml, -y`) - Dies wird verwendet, um alle in Photoprism vorgenommenen Änderungen an den Metadaten Ihrer Fotos zu sichern. Dadurch bleibt das Versprechen erhalten, dass wir keine Änderungen an den Originalen vornehmen und gleichzeitig Änderungen vornehmen, die Sie im Klartextformat vorgenommen haben. Nützlich für und Backup / Restore und Datenbank-Neuerstellungen.
+ * **yaml** - (Variable: `PHOTOPRISM_SIDECAR_YAML` Parameter: `--sidecar-yaml, -y`) - Dies wird verwendet, um alle in PhotoPrism vorgenommenen Änderungen an den Metadaten Ihrer Fotos zu sichern. Dadurch bleibt das Versprechen erhalten, dass wir keine Änderungen an den Originalen vornehmen und gleichzeitig Änderungen vornehmen, die Sie im Klartextformat vorgenommen haben. Nützlich für und Backup/Sicherunge und Datenbank-Neuerstellungen.
 
 ## Was ist der Vorteil von PhotoPrism als OpenSource für mich als Benutzer? ##
