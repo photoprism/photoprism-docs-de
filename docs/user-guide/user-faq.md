@@ -46,6 +46,6 @@ Eine Filialdatei ist eine Datei, die sich neben Ihren Fotos mit demselben Namen,
 Es gibt zwei Arten von Filialdateien, die von PhotoPrism verwendet werden.
 
  * **json** - (Variable: `PHOTOPRISM_SIDECAR_JSON` Parameter: `--sidecar-json, -j`) - Dies wird automatisch aus den EXIF-Daten Ihrer Fotos von erstellt `exiftool`. Dadurch sind die Daten für andere Skripte / Apps leicht verfügbar
- * **yaml** - (Variable: `PHOTOPRISM_SIDECAR_YAML` Parameter: `--sidecar-yaml, -y`) - Dies wird verwendet, um alle in PhotoPrism vorgenommenen Änderungen an den Metadaten Ihrer Fotos zu sichern. Dadurch bleibt das Versprechen erhalten, dass wir keine Änderungen an den Originalen vornehmen und gleichzeitig Änderungen vornehmen, die Sie im Klartextformat vorgenommen haben. Nützlich für und Backup/Sicherunge und Datenbank-Neuerstellungen.
+ * **yaml** - (Variable: `PHOTOPRISM_SIDECAR_YAML` Parameter: `--sidecar-yaml, -y`) - Dies wird verwendet, um alle in PhotoPrism vorgenommenen Änderungen an den Metadaten Ihrer Fotos zu sichern. Dadurch bleibt das Versprechen erhalten, dass wir keine Änderungen an den Originalen vornehmen und gleichzeitig Änderungen vornehmen, die Sie im Klartextformat vorgenommen haben. Nützlich für und Backup/Sicherungen und Datenbank-Neuerstellungen.
 
 ## Was ist der Vorteil von PhotoPrism als OpenSource für mich als Benutzer? ##
