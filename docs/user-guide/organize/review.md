@@ -1,4 +1,4 @@
-# Review von Bildern die eine geringe Qualität oder kein Foto sind #
+# Überprüfen von Bildern mit geringer Qualität oder die kein Foto sind #
 Wenn neue Fotos hinzugefügt werden, wird automatisch die Qualität auf einer Skala von 1 bis 5 bewertet. Fotos die mit weniger als 3 bewertet wurden, werden in *Photos* erst angezeigt, wenn ihre Qualität manuell bestätigt wurde.
 
 Die Qualität wird anhand der folgenden Kriterien bestimmt:
@@ -8,7 +8,7 @@ Die Qualität wird anhand der folgenden Kriterien bestimmt:
 * Foto ist nicht als *Info* oder *Screenshot* eingestuft
 * Foto ist ein Favorit, wurde editiert oder bestätigt.
 
-### Deaktivierten des Qualitätsfilters/Review-Prozesses ###
+### Deaktivieren des Qualitätsfilters/Review-Prozesses ###
 In den [Settings](../settings/ui.md) kann der Qualitätsfilter/Review-Prozess deaktiviert werden.
 
 ### Bestätigen von Fotos ###
