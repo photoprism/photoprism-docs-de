@@ -12,7 +12,7 @@ Bei Verwendung der Suche werden auf der Karte nur Fotos angezeigt, die dem Suchb
 
 Die Darstellung der Karte (Straßen, Topographie) kann in den [Settings](../settings/ui.md) geändert werden.
 
-!!! Tipp:
+!!! Tipp
     Klicke auf den Karten-Pin auf einer Fotokarte um direkt zum Ort der Aufnahme zu springen.
 
    ![Screenshot](img/places-animation-1.png)

@@ -24,7 +24,7 @@ In den [Settings](../settings/ui.md) kann der Qualitätsfilter/Review-Prozess de
 
     ![Screenshot](img/review-2.png)
 
-!!! Hinweis:
+!!! Hinweis
     Die Qualitätsbewertung wird automatisch aktualisiert.
     Wenn Datums- oder Ortsinformationen zu einem Foto hinzugefügt werden oder ein Foto geliked wird, wird die Bewertung automatisch erhöht.
     Falls dadurch der Qualitätswert größer oder gleich 3 ist, wird das Bild automatisch bestätigt.

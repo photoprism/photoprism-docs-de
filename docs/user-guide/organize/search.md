@@ -13,10 +13,10 @@ Probier es einfach aus!
 
    ![Screenshot](img/search-beach.png)
 
-!!! Tipp:
-Um gleichzeitig nach mehreren Eigenschaften zu suchen, trenne die Suchbegriffe mit einem Leerzeichen.
+!!! Tipp
+    Um gleichzeitig nach mehreren Eigenschaften zu suchen, trenne die Suchbegriffe mit einem Leerzeichen.
 
-Eine Suche nach `cat blue berlin` wird alle Fotos finden auf denen eine Katze abgebildet ist, die Hauptfarbe Blau haben oder in Berlin aufgenommen wurden.
+    Eine Suche nach `cat blue berlin` wird alle Fotos finden auf denen eine Katze abgebildet ist, die Hauptfarbe Blau haben oder in Berlin aufgenommen wurden.
 
 ## Filter ##
 Zusätzlich zur Suche können auch folgende Filter aktiviert werden:
@@ -33,15 +33,15 @@ Sofern mehrere Filter ausgewählt wurden, werden nur Fotos von der Suche berück
 
  ![Screenshot](img/color-red.png)
 
-!!! Tipp:
-Filter können auch im Suchfeld angegeben werden:
+!!! Tipp
+    Filter können auch im Suchfeld angegeben werden:
 
     `label:cat`
     `color:green`
     `type:live`
 
-Die komplette Liste der Filter findest du weiter unten.
-![Screenshot](img/color-green.png)
+    Die komplette Liste der Filter findest du weiter unten.
+    ![Screenshot](img/color-green.png)
 
 
 # Suchfilter #

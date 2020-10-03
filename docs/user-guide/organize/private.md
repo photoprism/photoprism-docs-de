@@ -12,7 +12,7 @@ In der Standardeinstellung werden alle Fotos die als privat markiert sind in den
  * Favorites
  * Shared albums
  
-!!! Info:
+!!! Info
     In den [Settings](../settings/ui.md) kannst du einstellen, dass private Aufnahmen überall angezeigt werden sollen.
  
 #### Ein Foto/Video als privat markieren ####
