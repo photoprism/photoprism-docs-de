@@ -1,21 +1,20 @@
 # Views #
-PhotoPrism provides you three beautiful views to enjoy your photos and videos.
+PhotoPrism bietet dir drei verschiedene Ansichten um deine Fotos und Videos zu betrachten.
 
-* The *card view* displays important metadata like title, time and location next to the photos
+* Der *Card View* zeigt unter den Fotos wichtige Metadaten wie Titel, Aufnahmezeit und -Ort.
 
     ![Screenshot](img/card.png)
-    
-* The *mosaic view* lets you enjoy your photos without distraction
+
+* Der *Mosaic View* zeigt nur die Fotos an.
 
     ![Screenshot](img/mosaic.png)
     
-* The *list view* provides you photos and metadata in a  well-arranged list
+* Der *List View* zeigt Fotos und Metadaten in einer übersichtlichen Liste an.
 
     ![Screenshot](img/list.png)
 
-To switch between views you can either use the filter in the filter bar or the view button (:material-view-column:, :material-view-comfy:, :material-view-list:) in the upper right corner.
+Um zwischen den Ansichten umzuschalten, kannst du den entsprechenden Filter in der Filterleiste oder einen der View-Buttons (:material-view-column:, :material-view-comfy:, :material-view-list:) in der oberen rechten Ecke nutzen.
 
-
-Additionally you can open your photos/videos in *fullscreen mode* and start a slideshow (:material-play:).
+Alternativ kannst du Fotos und Videos im *Fullscreen Mode* anzeigen. Um eine Diashow zu starten, klicke auf :material-play:.
 
 ![Screenshot](img/slideshow.png)
