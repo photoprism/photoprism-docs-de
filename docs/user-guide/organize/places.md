@@ -1,19 +1,19 @@
 # Places #
-*Places* displays all photos with GPS information on a world map.
+*Places* zeigt alle mit GPS-Daten versehenen Fotos auf einer Weltkarte an.
 
-You can zoom either by using :material-plus: or :material-minus: or by clicking on a photo or photo collector (the blue circles with a photo count inside).
+Es gibt zwei Möglichkeiten um zu Zoomen. Entweder nutzen sie die Schaltflächen :material-plus: und :material-minus: oder klicken auf einen der blauen Kreise (=Photo Collector).
 
 ![Screenshot](img/places-1.png)
 ![Screenshot](img/places-2.png)
 
-When using the search only photos matching the search term are shown on the map.
+Bei Verwendung der Suche werden auf der Karte nur Fotos angezeigt, die dem Suchbegriff entsprechen.
 
 ![Screenshot](img/places-3.png)
 
-You can choose between different map styles like streets or topographic in the [settings](../settings/ui.md).
+Die Darstellung der Karte (Straßen, Topographie) kann in den [Settings](../settings/ui.md) geändert werden.
 
-!!! tip
-    To switch from a photos card view directly to the location of a photo on the world map click on the location.
+!!! Tipp:
+    Klicke auf den Karten-Pin auf einer Fotokarte um direkt zum Ort der Aufnahme zu springen.
 
    ![Screenshot](img/places-animation-1.png)
    ![Screenshot](img/places-animation-2.png)
