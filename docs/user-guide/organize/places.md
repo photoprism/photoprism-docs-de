@@ -1,7 +1,7 @@
 # Places #
 *Places* zeigt alle mit GPS-Daten versehenen Fotos auf einer Weltkarte an.
 
-Es gibt zwei Möglichkeiten um zu Zoomen. Entweder nutzen sie die Schaltflächen :material-plus: und :material-minus: oder klicken auf einen der blauen Kreise (=Photo Collector).
+Es gibt zwei Möglichkeiten um zu Zoomen. Entweder klickst du auf die Schaltflächen :material-plus: und :material-minus: oder einen der blauen Kreise (=Photo Collector).
 
 ![Screenshot](img/places-1.png)
 ![Screenshot](img/places-2.png)
