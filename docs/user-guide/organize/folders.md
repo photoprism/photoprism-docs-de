@@ -1,24 +1,28 @@
 # Folders #
-We automatically display all folders of your *originals directory* in the *Folders section*.
-In case you add new files to your *originals directory* your folders will be updated.
+PhotoPrism zeigt automatisch alle Ordner deines *Original*-Verzeichnisses in der *Folder Section*.
+Falls neue Dateien dem *Original*-Verzeichnis hinzugefügt werden, aktualisiert PhotoPrism automatisch die Ordneransicht.
 
 ![Screenshot](img/folders-1.png)
 
-The context menu allows you to perform the following actions:
+Das Kontextmenü erlaubt die folgenden Aktionen:
 
-## Delete folder ##
-1. Select folder
-2. Open context menu
-3. Click :material-delete:
-4. Confirm
+## Ordner/Folder löschen
+1. Wähle den Ordner aus
+2. Öffne das Kontextmenü und klicke auf :material-delete:
+3. Bestätige die Sicherheitsabfrage
 
-!!! hint
-    Only the representation of the folder will be deleted. Your files stay untouched.
+!!! Hinweis
+    Nur die Repräsentation des Ordners wird aus PhotoPrism entfernt. Deine Dateien werden nicht gelöscht.
 
-## Download folder as zip ##
-1. Select folder
-2. Open context menu
-3. Click :material-download:
+## Ordner/Folder als ZIP-Archiv herunterladen ##
+1. Wähle den Ordner aus
+2. Öffne das Kontextmenü und klicke auf :material-download:
+
+## Erstelle ein Album anhand eines Ordners/Folders ##
+1. Wähle den Ordner aus
+2. Öffne das Kontextmenü und klicke auf :material-folder:
+3. Wähle ein existierendes Album aus oder gib einen neuen Albumnamen ein
+5. Klicke auf *Add to Album*
 
 ## Create album from folder ##
 1. Select folder
