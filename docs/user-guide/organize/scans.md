@@ -1,12 +1,13 @@
 # Scans #
-You can mark scanned photos as *scans* within the photo edit dialogue.
+Eingescannte Fotos können als *Scan* markiert werden.
 
-We aim to automatically mark scans in the future.
+!!! Hinweis
+    Wir arbeiten daran, dass gescannte Fotos in der Zukunft automatisch erkannt werden.
 
-## Set scan flag ##
+## Markieren einer Aufnahme als Scan ##
 
- 1. Open the [*photo edit dialogue*](edit.md)
- 2. Click :material-cog:
- 3. Set or unset the scan flag
+ 1. Öffne den [*Edit-Dialog*](edit.md).
+ 2. Klicke auf :material-cog:
+ 3. Setze oder entferne das *Scan*-Flag
 
 ![Screenshot](img/scan-1.png)

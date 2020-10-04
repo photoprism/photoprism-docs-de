@@ -1,54 +1,53 @@
-# Search #
-In all sections you can use the *search bar* to find certain photos, videos, albums or labels.
+# Suche #
+Mit Hilfe des *Suchfelds* kann nach Fotos, Videos, Alben und Labels gesucht werden.
 
-You can search for all kind of things:
+Es ist möglich nach verschiedensten Eigenschaften zu suchen:
 
-* Objects that are displayed on the photo
-* The main color of the photo
-* The filename or foldername of a photo
-* Location where the photo has been taken
+* Abgebildete Objekte
+* Die Hauptfarbe eines Fotos
+* Der Dateiname oder das Verzeichnis in dem die Datei liegt
+* Ort der Aufnahme
 * ...
 
-Just try it!
+Probier es einfach aus!
 
    ![Screenshot](img/search-beach.png)
 
-!!! tip
-    In case you want to search for multiple things at once, enter the terms separated by a space.
-    
-    A search for `cat blue berlin` will find all photos that either display a cat, have blue as main color or have been taken in Berlin.
+!!! Tipp
+    Um gleichzeitig nach mehreren Eigenschaften zu suchen, trenne die Suchbegriffe mit einem Leerzeichen.
 
-## Filters ##
-Additionally to the search you can set filters for:
+    Eine Suche nach `cat blue berlin` wird alle Fotos finden auf denen eine Katze abgebildet ist, die Hauptfarbe Blau haben oder in Berlin aufgenommen wurden.
 
-* Country
-* Year
-* Order
-* Camera
-* Lens
-* Color
-* Category
+## Filter ##
+Zusätzlich zur Suche können auch folgende Filter aktiviert werden:
 
-In case you set multiple filters only photos are shown in the search result that fulfill all filter criteria.
+* Land
+* Jahr
+* Reihenfolge
+* Kamera
+* Linse
+* Farbe
+* Kategorie
+
+Sofern mehrere Filter ausgewählt wurden, werden nur Fotos von der Suche berücksichtigt die allen Filterkriterien entsprechen.
 
  ![Screenshot](img/color-red.png)
 
-!!! tip
-    You can use filters as well in the search bar like this:
-    
+!!! Tipp
+    Filter können auch im Suchfeld angegeben werden:
+
     `label:cat`
     `color:green`
-    `type: live`
-    
-    You find the full list of filters below.
-    
-   ![Screenshot](img/color-green.png)
+    `type:live`
+
+    Die komplette Liste der Filter findest du weiter unten.
+    ![Screenshot](img/color-green.png)
 
 
-# Search filter #
-PhotoPrism allows you to use multiple filters in its search.
+# Suchfilter #
+PhotoPrism unterstützt die folgenden Filter.
     
-| Filter      | Examples |
+| Filter      | Beispiele |
 | ----------- | ----------- |
 | label      |    cat    |
 | color  | purple, magenta, pink, red, orange, gold, yellow, lime, green, teal, cyan, blue, brown, white, grey, black       |
