@@ -1,22 +1,22 @@
 ### Videos ###
-PhotoPrism currently supports avc1 videos.
+PhotoPrism untestützt aktuell Videos die mit avc1 codiert wurden.
 
-Of course there are a lot more formats to come!
+!!! Info
+    Natürlich werden in Zukunft mehr Videoformate hinzugefügt werden.
 
-In *Videos* you find all your videos. To play a video click :material-play:.
+Unter *Videos* findest du alle deine Videos. Um ein Video abzuspielen, klicke auf :material-play:.
 
 ![Screenshot](img/video-1.png)
 
-To play videos in fullscreen mode click :material-play: on the video or :material-movie: next to the videos title.
+Um ein Video im Vollbild abzuspielen, klicke auf den Button :material-play: des Videos oder klicke auf :material-movie: neben dem Videotitel.
 
 ![Screenshot](img/video.png)
 
-### Live photos ###
-Live photos are treated as photos.
-They are marked with :material-adjust: in the upper left corner.
+### Live-Fotos ###
+Live-Fotos werden wie normale Fotos behandelt, jedoch sind sie mit :material-adjust: in der linken oberen Ecke markiert.
 
-You can filter for them using `type:live`.
+Um nach Live-Fotos zu filtern, nutze den Filter `type:live`.
 
 ![Screenshot](img/live-photo.png)
 
-To play a live photo just hover over it.
+Um ein Live-Foto abzuspielen, berühre es mit dem Mauszeiger.
