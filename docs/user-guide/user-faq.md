@@ -36,14 +36,14 @@ Schlüsselwörter stammen aus verschiedenen Quellen: Beschriftungen, Dateinamen,
 Wenn eine Beschriftung entfernt wird, wird das Schlüsselwort nicht automatisch entfernt, da es möglicherweise aus einer anderen Quelle stammt.
 Sie können das Schlüsselwort manuell im [edit dialogue] (organize/edit.md) löschen.
 
-## Was sind Filialdateien-Dateien und wo finde ich sie? ##
-Eine Filialdatei ist eine Datei, die sich neben Ihren Fotos mit demselben Namen, aber unterschiedlicher Dateierweiterung / unterschiedlichem Dateityp befindet. Z.B:
+## Was sind Sidecar-Dateien und wo finde ich sie? ##
+Eine Sidecar-Datei ist eine Datei, die sich neben Ihren Fotos mit demselben Namen, aber unterschiedlicher Dateierweiterung / unterschiedlichem Dateityp befindet. Z.B:
 
  * `IMG_0101.jpg`
  * `IMG_0101.json`
  * `IMG_0101.yaml`
 
-Es gibt zwei Arten von Filialdateien, die von PhotoPrism verwendet werden.
+Es gibt zwei Arten von Sidecar-Dateien, die von PhotoPrism verwendet werden.
 
  * **json** - (Variable: `PHOTOPRISM_SIDECAR_JSON` Parameter: `--sidecar-json, -j`) - Dies wird automatisch aus den EXIF-Daten Ihrer Fotos von erstellt `exiftool`. Dadurch sind die Daten für andere Skripte / Apps leicht verfügbar
  * **yaml** - (Variable: `PHOTOPRISM_SIDECAR_YAML` Parameter: `--sidecar-yaml, -y`) - Dies wird verwendet, um alle in PhotoPrism vorgenommenen Änderungen an den Metadaten Ihrer Fotos zu sichern. Dadurch bleibt das Versprechen erhalten, dass wir keine Änderungen an den Originalen vornehmen und gleichzeitig Änderungen vornehmen, die Sie im Klartextformat vorgenommen haben. Nützlich für und Backup/Sicherungen und Datenbank-Neuerstellungen.
