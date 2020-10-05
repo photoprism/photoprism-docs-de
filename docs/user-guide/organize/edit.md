@@ -1,7 +1,7 @@
 # Foto Details bearbeiten #
 Nutze den *Edit Dialog* um die Metadaten von Fotos und Videos zu bearbeiten, oder um neue Metadaten hinzuzufügen.
 
-PhotoPrism versucht während der [*Indizierung*](../index.md) deiner Dateien so viele Metadaten wie möglich auszulesen. Dabei werden auch mit dem Foto verknüpfte Dateien ausgewertet.
+PhotoPrism versucht während der [*Indizierung*](../library/indexing.md) deiner Dateien so viele Metadaten wie möglich auszulesen. Dabei werden auch mit dem Foto verknüpfte Dateien ausgewertet.
 
 ### Öffnen des Edit-Dialogs ###
 #### Innerhalb des Card Views ####
@@ -52,7 +52,7 @@ Der Button *Apply* speichert die aktuellen Änderungen.
 *OK* speichert die Änderungen und schließt den Dialog.
 
 !!! Info
-    Die meisten Metadaten, wie Schlagworte, Titel, Ort der Aufnahme, werden durch PhotoPrism während der Indizierung hinzugefügt.
+    Die meisten Metadaten, wie Schlagworte, Titel, Ort der Aufnahme, werden durch PhotoPrism während der [*Indizierung*](../library/indexing.md) hinzugefügt.
     Deine Änderungen an den Metadaten werden von PhotoPrism bei einer Neuindizierung nicht überschrieben.
 
 !!! Tipp
