@@ -1,85 +1,77 @@
 # Labels #
-PhotoPrism uses labels to classify images.
-Other tools use the term tags instead of labels.
-Labels are set automatically when adding new photos. 
-You can manually add new labels or edit/remove the ones that have been created by us.
+PhotoPrism nutzt *Labels* um Bilder und Videos zu kategorisieren. (Andere Tools nutzen den Begriff *Etikett* oder *Tag*.) *Labels* werden automatisch gesetzt wenn neue Fotos zu PhotoPrism hinzugefügt werden. Du kannst auch manuell neue *Labels* erzeugen sowie bestehende *Labels* bearbeiten oder entfernen.
+Alle deine *Labels* werden in der Ansicht "*Labels*" angezeigt.
+Um ein *Label* mit einem Stern zu versehen, klicke auf :material-star:. So markierte *Labels* werden in der Liste an vorderster Stelle angezeigt.
 
-In *Labels* you find all labels of your photos and videos. 
-You can star labels by clicking :material-star:. Stared labels will be listed first.
-
-To see only labels with high priority click :material-eye: in the upper right corner.
+Um nur die Labels mit einer hohen Priorität angezeigt zu bekommen, klicke auf :material-eye: in der rechten oberen Ecke des Fensters.
 
 ![Screenshot](img/labels-1.png)
 
-### View all photos with a certain label ###
+### Anzeige aller Fotos mit einem bestimmten Label ###
 
-1. Go to *Labels*
-2. Click on the label you are interested in
-
+1. Gehe zu *Labels*
+2. Klicke auf ein beliebiges *Label*
     ![Screenshot](img/labels-2.png)
     ![Screenshot](img/labels-3.png)
 
-!!! info
-    Alternatively you can use the search field in Photos/Videos. You search for photos with a special label like this: `label:dog`.
+!!! Info
+    Alternativ kannst du auch das Suchfeld verwenden. Um beispielsweise nach dem *Label* "dog" zu suchen, verwende den Suchbegriff `label:dog`.
 
-### Add label to a photo/video ###
-
-1. Go to the photo [*edit dialogue*](edit.md)
-2. Go to *Labels* tab
-3. Click on the *label field* in the last row of the label table
-4. Enter a label name
-5. Click :material-plus: on the right side of this row
+### Hinzufügen eines Labels ###
+1. Öffne den [*Edit Dialog*](edit.md)
+2. Gehe zum Tab *Labels*
+3. Klicke auf das *Label-Feld* in der letzten Zeile der *Label*-Tabelle 
+4. Gib den Namen des *Labels* ein
+5. Klicke auf :material-plus: in der rechten Spalte
 
     ![Screenshot](img/add-label.png)
     
-### Remove/delete label from a photo/video ###
+### Entfernen/Löschen eines Labels von einem Foto/Video ###
 
-Labels that have been set automatically can be removed.
-Manually added labels can be deleted.
+Automatisch zugewiesene *Labels* können entfernt werden. Manuell hinzugefügte *Labels* können gelöscht werden.
 
-1. Go to the photo [*edit dialogue*](edit.md)
-2. Go to *Labels* tab
-3. Click the :material-minus:/:material-delete: button of the label you want to remove/delete
+1. Öffne den [*Edit Dialog*](edit.md)
+2. Öffne den Tab *Labels*
+3. Klicke auf :material-minus: oder :material-delete: um das Label zu entfernen oder zu löschen
 
     ![Screenshot](img/remove-label-1.png)
     
-!!! info
-    Removed labels have a confidence of 0% and can be activated again at any time by clicking *add*.
+!!! Info
+    Entferne *Labels* bekommen den Vertrauensgrad (*Confidence*) 0% zugewiesen. Sie können jederzeit wieder durch einen Klick auf *Add* aktiviert werden.
     
    ![Screenshot](img/remove-label-2.png)
 
-!!! info
-    You can hide Labels in [Settings](../settings/ui.md)
+!!! Info
+    In den [Settings](../settings/ui.md) können *Labels* jederzeit ausgeblendet werden.
 
-### Rename a label ###
+### Umbenennen eines Labels ###
 
-1. Go to the photo [*edit dialogue*](edit.md) of any photo that has the label you want to rename
+1. Öffne den [*Edit Dialog*](edit.md) eines beliebigen Fotos, das mit dem *Label* versehen ist das umbenannt werden soll.
 
     ![Screenshot](img/edit-label-1.png)
-    
-2. Go to *Labels* tab
-3. Click on the *label name* you want to change
-4. Change the name and click *enter*
+
+2. Öffne den Tab *Labels*
+3. Klicke auf den Namen des *Labels* das geändert werden soll
+4. Ändere den Namen und klicke auf *Enter*
 
     ![Screenshot](img/edit-label-2.png)
     
     ![Screenshot](img/edit-label-3.png)
-    
-5. The changes will be applied to all photos with this label after the next  [*indexing*](../index.md)
+
+5. Nach der nächsten [*Indizierung*](../index.md) werden deine Änderungen für alle Fotos übernommen
 
     ![Screenshot](img/edit-label-4.png)
 
-!!! attention
-    Be aware this change applies to all photos that have this label.
+!!! Attention
+    Beachte, dass diese Änderung alle Fotos betreffen, die mit dem *Label* verknüpft sind.
 
-### Delete a label ###
-You can permanently delete a label. No file will get a deleted label set during indexing.
+### Ein Label löschen ###
+*Labels* können dauerhaft gelöscht werden. Ein gelöschtes *Label* wird bei der [*Indizierung*](../index.md) nicht vergeben.
 
-1. Go to *Labels*
-2. Select the label you want to delete
-3. Open the context menu
-4. Click :material-delete:
-5. Confirm
+1. Gehe zu *Labels*
+2. Wähle das zu löschende *Label*
+3. Öffne das Kontextmenü und klicke auf :material-delete:
+4. Bestätige die Sicherheitsabfrage
 
-!!! attention
-    In case you want a deleted label to appear again, you need to add it to one photo and then index all files again.
+!!! Attention
+    Wenn ein gelöschtes *Label* wieder verwendet werden soll, muss es einem Foto hinzugefügt werden und die [*Indizierung*](../library/indexing.md) gestartet werden.
