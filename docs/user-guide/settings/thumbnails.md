@@ -1,56 +1,58 @@
-# Thumbnail Settings #
+# Vorschau (Thumbnail) Einstellungen #
 
-For best results, you should (at least) set jpeg quality to 95 and use the "lanczos" filter. Obviously this will require significantly more storage and CPU time. From our experience, "cubic" might be 30% faster than "lanczos" on modern desktop and server CPUs. Keep in mind that you only need to create thumbnails once and then can enjoy them for the rest of your life.
+Um das beste Ergebnis zu erzielen, solltest du die *JPEG*-Qualität auf ein Minimum von 95 einstellen und den *Lanczos*-Filter verwenden. Diese Qualität benötigt jedoch einiges an Rechenzeit.
+Wir haben die Erfahrung gemacht, dass moderene Desktop- und Server-Prozessoren den *Cubic*-Filter ungefähr 30% schneller als der *Lanczos*-Filter anwenden können. Bei der Wahl der richtigen Einstellungen solltest du bedenken, dass Vorschaubilder nur einmal erzeugt werden und du sie danach für den Rest deines Lebens verwenden kannst.
 
-## Config Options ##
+
+## Einstellmöglichkeiten ##
 
 `--jpeg-quality value, -q value`
 
-set to 95 for high-quality thumbnails (25-100) (default: 90) [$PHOTOPRISM_JPEG_QUALITY]
+setze den Wert auf 95 für hochqualitative Thumbnails. (Wertebereich 25-100, Standardwert 90)  [$PHOTOPRISM_JPEG_QUALITY]
 
 `--thumb-size value, -s value`
 
-default thumbnail size limit in pixels (720-3840) (default: 2048) [$PHOTOPRISM_THUMB_SIZE]
+Größenbeschränkung für Thumbnails in Pixeln. (Wertebereich 720-3840, Standardwert 2048) [$PHOTOPRISM_THUMB_SIZE]
 
 `--thumb-limit value, -x value`
 
-on-demand thumbnail size limit in pixels (720-3840) (default: 3840) [$PHOTOPRISM_THUMB_LIMIT]
+Größenbeschränkung in Pixeln für on-demand Thumbnails. (Wertebereich 720-3840, Standardwert 3840) [$PHOTOPRISM_THUMB_LIMIT]
 
 `--thumb-uncached, -u`
 
-on-demand rendering of default thumbnails (high memory and cpu usage) [$PHOTOPRISM_THUMB_UNCACHED]
+Aktiviert die on-demand Erstellung von Thumbnails. Dies benötigt viel Arbeitsspeicher und Rechenzeit. [$PHOTOPRISM_THUMB_UNCACHED]
 
 `--thumb-filter value, -f value`
 
-resample filter (best to worst: blackman, lanczos, cubic, linear) (default: "lanczos") [$PHOTOPRISM_THUMB_FILTER]
+Der zur Erstellung von Thumbnails genutzte Filter. (Mögliche Optionen, sortiert von gut nach schlecht: *Blackman*, *Lanczos*, *Cubic*, *Linear*. Standardwert ist *Lanczos*) [$PHOTOPRISM_THUMB_FILTER]
 
-## Example ##
+## Beispiel ##
 
-You can limit the size of JPEG thumbnails using the `-s` parameter when you run commands:
+Die Größe von *JPEG*-Vorschaubildern kann mit dem `-s`-Parameter eingeschränkt werden:ds:
 
 ```
 photoprism -s 720 start
 ```
 
-The minimum size is 720px. This will render the following images:
+Dadurch wird die minimale Größe auf 720 Pixel gesetzt. Dementsprechend werden die folgenden Bilder erzeugt:
 
 ![Screenshot 2020-01-08 at 22 10 30](https://user-images.githubusercontent.com/301686/72016344-e5fdfb80-3263-11ea-95b3-00564156140f.png)
 
-500px is used for tiles in search results, the others are mostly needed for classification.
+Die Version mit 500 Pixeln Größe wird für Kacheln in den Suchergebnissen verwendet. Die anderen werden größtenteils für die Klassifizierung benötigt.
 
-Size is still ~550kb with high quality (95). With lower JPEG quality (80), you'll get it down to ~100kb:
+Die Größe bei hoher Qualität (95) beträgt ungefähr 550 Kilobytes. Mit geringerer *JPEG*-Qualität (80), sinkt die Dateigröße auf ungefähr 100 Kilobytes.
 
 ```
 photoprism -s 720 -q 80 start
 ```
 
-This page demonstrates and discusses the effects of JPEG compression: http://fotoforensics.com/tutorial-estq.php
+Wenn du mehr über die Komprimierungseffekte bei *JPEG*-Dateien erfahren möchtest, ist folgende Seite für dich interessant: [http://fotoforensics.com/tutorial-estq.php](http://fotoforensics.com/tutorial-estq.php)
 
-Image classification obviously works better with sharp images, so it's possible you'll get less accurate labels with higher compression. Please share your experience.
+Die Klassifizierung von Bildern funktioniert offensichtlich am Besten mit scharfen Bildern. Daraus folgt, dass du bei höherer Kompression an Genauigkeit bei der automatischen Erzeugung von *Labeln* verlierst.
 
-If size limit is exceeded, for example because you use a large screen, originals will be used for displaying images in the frontend. This might result in the image displayed with wrong rotation if the browser doesn't rotate it automatically.
+Falls das Größenlimit ausgeschöpft ist, zum Beispiel bei der Verwendung eines sehr großen Bildschirms, werden dir in PhotoPrism immer die Originalbilder angezeigt. Deshalb kann es passieren, dass Bilder falsch rotiert angezeigt werden, da nicht jeder Browser die Bilder automatisch und korrekt rotiert.
 
-## Sizes ##
+## Größem ##
 
 
 Name      | Source    | Width  | Height  | Use               |
@@ -69,68 +71,41 @@ fit_2048  |           | 2048   | 2048    | lightbox          |
 fit_2560  |           | 2560   | 1600    | lightbox / retina |
 fit_3840  |           | 3840   | 2400    | lightbox / retina |
 
-## Filters ##
+## Filter ##
 
-Source: https://ijarcce.com/wp-content/uploads/2016/02/IJARCCE-7.pdf
+Quelle: https://ijarcce.com/wp-content/uploads/2016/02/IJARCCE-7.pdf
 
 ### Linear ###
 
-Bilinear interpolation takes a weighted average of the four
-neighborhood pixels to calculate its final interpolated
-value. The result is much smoother image than the original
-image. When all known pixel distances are equal, then the
-interpolated value is simply their sum divided by four.
-This technique performs interpolation in both directions,
-horizontal and vertical. This technique gives better result
-than nearest neighbor interpolation and take less
-computation time compared to bicubic interpolation.
+Die bilineare Interpolation berechnet den Wert eines Pixels indem ein gewichteter Mittelwert der vier benachbarten Pixel berechnet wird. Das dabei entstehende Bild ist weicher als das Originalbild. Wenn die Distanzen zu den verwendeten Pixeln gleich sind, dann ist der interpolierte Wert eines Pixels gleich der Summe der Distanzen geteilt durch vier.
+Bei der bilinearen Interpolation wird die Interpolation in beiden Richtungen, horizontal und vertikal, durchgeführt. Das Ergebnis ist qualitativ besser als *Nächster Nachbar* und benötigt weniger Rechenzeit als die bikubische Interpolation.
 
-### Cubic ###
+### Kubisch ###
 
-Catmull-Rom is a local interpolating spline developed for
-computer graphics purposes. Its initial use was in design
-of curves and surfaces, and has recently been used in
-several applications. Catmull-Rom splines are a family of
-cubic interpolating splines formulated such that the
-tangent at each point is calculated using the previous and
-next point on the spline. The results are similar to ones
-produced by bicubic interpolation with regards to
-sharpness, but the Catmull-Rom reconstruction is clearly
-superior in smooth signal region.
+Catmull-Rom ist ein lokal interpolierendes Kurvenintervall was speziell für die Verwendung in der Computergrafik entwickelt wurde. Während die ursprüngliche Verwendung im Design von Oberflächen und Kurven lag, wird es mittlerweile auch in anderen Bereichen eingesetzt. Catmull-Rom Splines gehören zur Familie von kubischen, interpolierenden Splines, so dass die Tangente an jedem Punkt mithilfe des vorherigen und des nächsten Punkts auf dem Kurvenintervall berechnet wird. Das Ergebnis ist ähnlich dem der bikubischen Interpolation im Bezug auf die Schärfe des Ergebnisbildes, aber bei Regionen mit weichen Verläufen ist Catmull-Rom eindeutig überlegen.
 
 ### Lanczos ###
 
-The Lanczos interpolation function is a mathematical formula
-used to smoothly interpolate the value of a digital
-image between its samples. It maps each sample of the
-given image to a translated and scaled copy of the Lanczos
-kernel, which is a sinc function windowed by the central
-hump of a dilated sinc function. The sum of these
-translated and scaled kernels is then evaluated at the
-desired pixel. Lanczos interpolation has the **best
-properties in terms of detail preservation and minimal
-generation of aliasing artifacts** for geometric
-transformations not involving strong down sampling. 
-However higher order Lanczos interpolation requires high
-computational time, which makes it unsuitable for
-most commercial software.
+Die *Lanczos*-Interpolation ist eine mathematische Formel zur weichen Interpolation eines Bildes, basierend auf verschiedenen Teilen innerhalb des Bildes. Dabei wird jedes Sample auf eine verschobene und skalierte Kopie des Filter-Kerns angewandt. Die Summe dieser Kerne wird dann am aktuell zu berechnenden Pixel ausgewertet. Die *Lanczos*-Interpolation ist **am besten geeignet um Details beizubehalten und ein Minimum an Artefakten zu erhalten**. Jedoch benötigt eine höherwertige *Lanczos*-Interpolation sehr viel Rechenzeit, wodurch es für die meiste kommerzielle Software ungeeignet ist.
 
 ### Blackman ###
 
-Blackman is a modification of Lanczos that has better control of ringing artifacts.
+*Blackman* ist eine modifizierte *Lanczos*-Interpolation die eine bessere Kontrolle über bestimmte Artefakte hat.
 
-### Examples ###
+### Beispiele ###
 
-Original image:
+Originalbild:
 
 ![](img/branches.png)
 
-The same image resized from 600x400px to 150x100px using different resampling filters.
-From faster (lower quality) to slower (higher quality):
+Dieses Bild wurde unter der Verwendung von verschiedenen Filtern von 600x400 Pixeln auf 150x100 Pixel skaliert.
+Die Liste ist sortiert nach Rechengeschwindigkeit.
 
-Filter                    | Resize result
+An erster Stelle steht der schnellste Filter mit der niedgrigsten Qualität, an letzer Stelle der langsamste Filter mit der besten Qualität.
+
+Filter                    | Ergebnis
 --------------------------|---------------------------------------------
-Nearest Neighbor          | ![](img/out_resize_nearest.png) 
+Nächster Nachbar          | ![](img/out_resize_nearest.png) 
 Bilinear                  | ![](img/out_resize_linear.png)
-Sharp Bicubic             | ![](img/out_resize_catrom.png)
+Bikubisch (Scharf)        | ![](img/out_resize_catrom.png)
 Lanczos                   | ![](img/out_resize_lanczos.png)
