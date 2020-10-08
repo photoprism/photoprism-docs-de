@@ -1,21 +1,20 @@
 # PhotoPrism Places #
 
-We've recently launched **PhotoPrism Places**, a Geocoding API that replaces OpenStreetMap development infrastructure. Our users now enjoy much better performance, higher availability and more privacy. In addition, we're going to add information about public events that have taken place at a location. This can be used to automatically create albums of popular music festivals or sports events.
+Vor kurzem haben wir **PhotoPrism Places** in Betrieb genommen. Dabei handelt es sich um eine Geocoding API die die bisherige OpenStreetMap Infrastruktur ersetzt.
+Für die Benutzer bedeutet dies eine bessere Performanz, eine höhere Verfügbarkeit und mehr Privatsphäre. Zusätzlich werden wir in Zukunft Informationen über öffentliche Events bereitstellen, die an einem bestimmten Ort stattgefunden haben. Dadurch können beispielsweise automatisch Alben von Musikfestivals oder Sportevents erzeugt werden.
 
-## Privacy ##
+## Datenschutz ##
 
-Geocoding requests are NOT logged, but developers can of course see cached items in MariaDB without personal information. That's the point of a cache. Those will be randomly distributed with hot spots around tourist attractions and big cities.
+Anfragen an die Geocoding API werden nicht gespeichert. Die Entwickler von *PhotoPrism Places* können jedoch zwischengespeicherte Daten in der Datenbank (MariaDB) einsehen. Diese Daten besitzen jedoch keinerlei persönliche Informationen. Die Daten werden nach dem Zufallsprinzip mit Hotspots um Touristenatraktionen und Großstädten verteilt.
 
-Because of HTTPS, your internet provider can't see the exact request, just that you contacted a server.
+Aufgrund der verwendeten HTTPS-Verschlüsselung, kann dein Internetprovider nicht die übertragenen Daten einsehen. Er kann jedoch sehen, dass du Kontakt zu einem Server aufgebaut hast.
 
-The API approximates coordinates, encodes them with [S2](https://s2geometry.io/resources/s2cell_statistics.html) and doesn't care about street or house number:
+Die Geocoding-Programmierschnittstelle nutzt ungefähre Koordinaten und kodiert sie mit [S2](https://s2geometry.io/resources/s2cell_statistics.html). Straßen und Hausnummern werden ignoriert.
 
 ![](https://pbs.twimg.com/media/EN9AoYdWkAIqVDD?format=jpg&name=medium)
 
-## Performance ##
+## Performanz ##
 
-First [benchmarks](https://github.com/tsliwowicz/go-wrk) show that up to 2500 req/s can be handled. Compare this with the pricing of commercial providers and you'll see the value. Response times range from 10ms to 7μs, depending on the query and cache.
+Erste [Messungen](https://github.com/tsliwowicz/go-wrk) zeigen, dass das neue System bis zu 2500 Anfragen pro Sekunde verarbeiten kann. Du kannst diese Werte gerne mit einem kommerziellen Provider vergleichen. Wir schlagen uns nicht schlecht... Die Antwortzeiten betragen zwischen 7 Mikrosekunden und 10 Millisekunden, wobei dies Abhängig vom Cache und der genauen Abfrage ist.
 
-If you prefer running this on-site: We use a 6-core Intel Xeon processor, 320 GB of SSD and 16 GB of memory. 
-In addition you'll have to download ~100 GB of data.
-Due to the properties of S2 cell IDs, scaling and sharding should be easy if needed.
+Falls du *PhotoPrism Places* auf deinem eigenen System hosten möchtest, hier die Daten unseres Servers zum Vergleich: Wir nutzen einen Intel Xeon Prozessor mit sechs Kernen, 320GB SSD und 16GB Arbeitsspeicher. Bei einer eigenen Installation hast du mit einem zusätzlichen Download von ungefähr 100GB zu rechnen. Aufgrund der Eigenschaften von S2-Zell-IDs sollten Skalierung und Schichtung bei Bedarf leicht möglich sein.
