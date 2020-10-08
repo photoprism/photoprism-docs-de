@@ -49,3 +49,12 @@ Um das primäre Bild zu ändern, gehe wie folgt vor:
 Nun werden alle Bilder in den Views angezeigt.
 
 ![Screenshot](img/group-4.png)
+
+### Nicht primäre Dateien endgültig löschen ###
+1. Öffne den [*Edit Dialog*](edit.md) des Fotos
+2. Öffne den *Files*-Tab
+3. Klicke auf das Symbol :material-chevron-down: der Datei, die nicht das primäre Bild ist.
+4. Klicke auf *löschen*
+5. Bestätige, dass du das Bild wirklich löschen willst
+
+      ![Screenshot](img/group-5.png)

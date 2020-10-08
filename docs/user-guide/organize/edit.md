@@ -71,6 +71,6 @@ Um die Details einer Datei anzuzeigen, klicke auf :material-chevron-down:.
 
 ![Screenshot](img/group-2.png)
 
-Falls du [*Grouped-Files*](stacks.md) hast, kannst du das primäre Foto mit dem entsprechenden Button auswählen. Natürlich kannst du die Gruppierung von Dateien auch aufheben.
+Falls du [*Grouped-Files*](stacks.md) hast, kannst du das primäre Foto mit dem entsprechenden Button auswählen. Natürlich kannst du die Gruppierung von Dateien auch aufheben oder nicht primäre Dateien löschen.
 
 
