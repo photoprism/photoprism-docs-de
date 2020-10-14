@@ -1,24 +1,33 @@
-# Uploading files to your library #
+# Hochladen von Dateien in Ihre Bibliothek
 
-1. Click :material-cloud-upload: in the upper right corner
+ #
+
+1. Klicken Sie auf :material-cloud-upload: in der oberen rechten Ecke
+
+
 
     ![Screenshot](img/upload-3.png)
 
 **or**
 
-1. Go to *Library* using the main navigation, and open the *Import* tab
+1. Gehen Sie mit der Hauptnavigation zu *Bibliothek*, und öffnen Sie die Registerkarte *Import*
 
-2. Click *Upload*
+2. Klicken Sie auf *Upload*
 
-    ![Screenshot](img/upload-1.png)
+
+
+    ![bildschirmausdruck](img/upload-1.png)
     
-3. In case you want to upload the files directly to an album select one
+3. Falls Sie die Dateien direkt in ein Album hochladen möchten, wählen Sie eine
 
-4. Click *Upload*
+4. Klicken Sie auf *Upload*
 
-    ![Screenshot](img/upload-to-album.png)
 
-5. Select files
+    ![bildschirmausdruck](img/upload-to-album.png)
 
-6. Click *Upload* to start uploading and importing the selected files
+5. Dateien auswählen
+
+6. Klicken Sie auf *Upload*, um mit dem Hochladen und Importieren der ausgewählten Dateien zu beginnen
+
+
 

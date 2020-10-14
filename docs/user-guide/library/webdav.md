@@ -1,14 +1,15 @@
-# Add files using WebDAV #
-In case you have PhotoPrism running on a server you can use WebDAV to add files to your *import* or *originals* folder.
+# Hinzufügen von Dateien mit WebDAV #
+Falls PhotoPrism auf einem Server ausgeführt wird, können Sie Mit WebDAV Dateien zu Ihrem Ordner *import* oder *originals* hinzufügen.
 
 
-Just follow those [instructions](../backup/webdav.md).
+Folgen Sie einfach denen [Anweisungen](../backup/webdav.md).
 
-Once all files are added you can start [importing or indexing](import-vs-index.md) your files.
+Sobald alle Dateien hinzugefügt wurden, können Sie [Importieren oder Indizieren](import-vs-index.md) Ihre Dateien.
 
-<!--### Add photos via WebDAV on MacOS ###
-1. On your computer, open the Finder.
-2. In the Finder menu click "Go" and then "Connect to Server". 
+<!--### Hinzufügen von Fotos über WebDAV unter MacOS ###
+
+1. Öffnen Sie auf Ihrem Computer den Finder.
+2. Klicken Sie im Finder-Menü auf "Go" und dann auf "Connect to Server". 
 
       ![Screenshot](img/webdav-1.png)
 
@@ -22,24 +23,25 @@ Once all files are added you can start [importing or indexing](import-vs-index.m
 
       ![Screenshot](img/webdav-2.png)
 
-4. Click "Connect".
 
-5. Enter your username and password. The username is photoprism. You can change your password in the [account settings](../settings/account.md).
+4. Klicken Sie auf "Verbinden".
 
-6. Now you can move photos to the `import` or `originals` folder.
+5. Geben Sie Ihren Benutzernamen und Ihr Passwort ein. Der Benutzername ist photoprism. Sie können Ihr Passwort im [account settings](../settings/account.md).
+
+6. Jetzt können Sie Fotos in den Ordner "Import" oder "Originale" verschieben.
 
  -->
 
-!!! tip 
-    You can use WebDAV to download photos from the server as well. 
-    Just connect to http://servername/originals/ and copy the files to your preferred destination.
+!!! Tipp 
+    Sie können WebDAV auch verwenden, um Fotos vom Server herunterzuladen. 
+    Verbinden Sie sich einfach mit http://servername/originals/ und kopieren Sie die Dateien an Ihr bevorzugtes Ziel.
 
 <!--### Add photos via WebDAV on Windows ###
-1. Open the windows explorer (e.g. by clicking [Windows] and [E]).
-2. Right click on "This Computer".
-3. Select "Add Network".
-4. Click "Next".
-5. Enter 
+1. Öffnen Sie den Windows Explorer (z. B. durch Klicken auf [Windows] und [E]).
+2. Klicken Sie mit der rechten Maustaste auf "Dieser Computer".
+3. Wählen Sie "Netzwerk hinzufügen".
+4. Klicken Sie auf "Weiter".
+5. Geben Sie 
    
        * http://servername/originals/
    
@@ -47,15 +49,17 @@ Once all files are added you can start [importing or indexing](import-vs-index.m
    
        * http://servername/import/
        
-6. Enter your username and password. The username is photoprism. You can change your password in the [account settings](../settings/account.md).
-7. Now the network appears in your explorer and you can start adding files.
+       
+6. Geben Sie Ihren Benutzernamen und Ihr Passwort ein. Der Benutzername ist photoprism. Sie können Ihr Passwort im [account settings](../settings/account.md).
+       
+7. Jetzt erscheint das Netzwerk in Ihrem Explorer und Sie können mit dem Hinzufügen von Dateien beginnen.
 
 
 ### Add photos via WebDAV from mobile device ###
-You can use WebDAV to add photos from your mobile phone or tablet as well.
+Sie können WebDAV verwenden, um Fotos von Ihrem Mobiltelefon oder Tablet hinzuzufügen.
 
-1. Install an app that supports WebDAV.
-2. Connect to
+1. Installieren Sie eine App, die WebDAV unterstützt.
+2. Verbinden Sie sich mit
       
        * http://servername/originals/
    
@@ -63,5 +67,5 @@ You can use WebDAV to add photos from your mobile phone or tablet as well.
    
        * http://servername/import/
        
-3. Move or copy your files.
+3. Verschieben oder kopieren Sie Ihre Dateien.
 -->
