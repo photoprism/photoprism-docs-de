@@ -16,7 +16,7 @@
 4. Drücken Sie *Start*, um mit der Indizierung zu beginnen
 
 
-![bildschirmausdruck](img/index.png)
+![Screenshot](img/index.png)
 
 
 !!! Tipp
