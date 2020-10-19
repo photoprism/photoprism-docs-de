@@ -14,7 +14,7 @@ verschieben oder umbenennen.
 
 Ihre Ordnerstruktur in *originals* könnte wie folgt aussehen:
 
-   ![bildschirmausdruck](img/before-index.png)
+   ![Screenshot](img/before-index.png)
      
 **Während der Indizierung:**
 
@@ -26,7 +26,7 @@ Ihre Ordnerstruktur in *originals* könnte wie folgt aussehen:
 
 **Nach der Indizierung des Originalordners könnte dies so aussehen:**
 
-  ![bildschirmausdruck](img/after-index.png)
+  ![Screenshot](img/after-index.png)
 
     
 
@@ -42,7 +42,7 @@ Ihre Ordnerstruktur in *originals* könnte wie folgt aussehen:
 
 Ihre anfängliche Ordnerstruktur in *Importieren* könnte wie folgt aussehen:
 
-   ![bildschirmausdruck](img/before-import.png)
+   ![Screenshot](img/before-import.png)
    
 **Während Importieren:**
  
@@ -52,11 +52,11 @@ Ihre anfängliche Ordnerstruktur in *Importieren* könnte wie folgt aussehen:
 
 **Nach dem Import mit "Kopieren" (dies ist die Standardeinstellung) könnten Ihre Ordner wie folgt aussehen:**
 
-   ![bildschirmausdruck](img/copy-import.png)
+   ![Screenshot](img/copy-import.png)
 
 **Nach dem Import mit "Verschieben" können Ihre Ordner wie folgt aussehen:**
 
-   ![bildschirmausdruck](img/move-import.png)
+   ![Screenshot](img/move-import.png)
 
 #### Vorteile ####
 * Duplikate oder nicht unterstützte Dateien bleiben im Import-Verzeichnis unberührt
