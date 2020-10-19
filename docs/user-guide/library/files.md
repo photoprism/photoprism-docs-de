@@ -4,14 +4,14 @@ Im Abschnitt *Originals* werden alle Dateien Ihres *originals*-Verzeichnisses an
 
 Wenn Sie auf eine Datei klicken, wird das Bearbeitungsdialogfeld geöffnet. 
 
-![bildschirmausdruck](img/files.png)
+![Screenshot](img/files.png)
 
 Im Kontextmenü können Sie die folgenden Aktionen ausführen:
 
 ## Dateien herunterladen ##
 1. Dateien auswählen
 2. Kontextmenü öffnen
-3. Klicken Sie: material-Herunterladen
+3. Klicken Sie: material-Download
 
 
 ## Erstellen von Alben aus Dateien ##
