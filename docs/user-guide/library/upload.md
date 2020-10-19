@@ -16,14 +16,14 @@
 
 
 
-    ![bildschirmausdruck](img/upload-1.png)
+    ![Screenshot](img/upload-1.png)
     
 3. Falls Sie die Dateien direkt in ein Album hochladen möchten, wählen Sie eine
 
 4. Klicken Sie auf *Upload*
 
 
-    ![bildschirmausdruck](img/upload-to-album.png)
+    ![Screenshot](img/upload-to-album.png)
 
 5. Dateien auswählen
 
