@@ -16,7 +16,7 @@
     Sie können [WebDAV](webdav.md) zum Hinzufügen von Dateien zum Ordner *import*.
     Dies ist besonders hilfreich, wenn PhotoPrism auf einem Remoteserver ausgeführt wird.
 
-!!! Aufmerksamkeit
+!!! Attention
     Der Import ist in [Schreibmodus](../settings/library.md) wie es erforderlich ist
     Schreibberechtigungen für den Ordner *originals*.
     

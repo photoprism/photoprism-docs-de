@@ -62,7 +62,7 @@ Ihre anfängliche Ordnerstruktur in *Importieren* könnte wie folgt aussehen:
 * Duplikate oder nicht unterstützte Dateien bleiben im Import-Verzeichnis unberührt
 
 
-!!! Informationen
+!!! Info
     Originaldatei- und Ordnernamen werden zum Erstellen von Schlüsselwörtern verwendet. 
     Falls Sie ein Verzeichnis mit dem Pfad "Urlaub/Afrika" importieren und indizieren oder nur indizieren. Alle Dateien aus diesem Ordner erhalten die Schlüsselwörter "Urlaub" und "Afrika".
 
