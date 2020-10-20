@@ -1,72 +1,74 @@
-# Shall I import or index my originals?
+# Soll ich meine Originale importieren oder indizieren?
 
-*Import* is a temporary folder from which you can move or copy files to *originals* in a structured way that avoids duplicates. 
-Most users with existing collections will want to index their originals directly without importing them, 
-so that existing file and directory names stay the same. On the other hand, 
-importing is more efficient when adding files as you don't need to re-index all originals to find new photos and videos.
+
+*Importieren* ist ein temporärer Ordner, aus dem Sie Dateien strukturiert in *originals* verschieben oder kopieren können, um Duplikate zu vermeiden. 
+Die meisten Benutzer mit vorhandenen Sammlungen möchten ihre Originale direkt indizieren, ohne sie zu importieren. 
+damit die vorhandenen Datei- und Verzeichnisnamen gleich bleiben. Auf der anderen Seite 
+Das Importieren ist effizienter, wenn Sie Dateien hinzufügen, da Sie nicht alle Originale neu indizieren müssen, um neue Fotos und Videos zu finden.
+
 
 ### Index ###
 
-Use *index* when you want to index your photos and videos directly in the *originals* folder without copying,
-moving or renaming them in any way.
+Verwenden Sie *index*, wenn Sie Ihre Fotos und Videos direkt im Ordner *originals* indizieren möchten, ohne zu kopieren,
+verschieben oder umbenennen.
 
-Your folder structure in *originals* might look like this:
+Ihre Ordnerstruktur in *originals* könnte wie folgt aussehen:
 
    ![Screenshot](img/before-index.png)
      
-**During indexing:**
+**Während der Indizierung:**
 
-* Files are not renamed or moved
-* Your existing folder structure remains. You might decide to have your folders displayed as albums in PhotoPrism
-* Metadata from your files is read to create labels, titles and locations for your photos
-* Thumbnails are rendered for JPEGs
-* Optionally json and or yml files containing metadata are created
+* Dateien werden nicht umbenannt oder verschoben
+* Ihre vorhandene Ordnerstruktur bleibt erhalten. Sie können entscheiden, dass Ihre Ordner als Alben in PhotoPrism angezeigt werden.
+* Metadaten aus Ihren Dateien werden gelesen, um Etiketten, Titel und Speicherorte für Ihre Fotos zu erstellen
+* Thumbnails werden für JPEGs gerendert
+* Optional werden json- und oder yml-Dateien mit Metadaten erstellt
 
-**After indexing your originals folder might look like this:**
+**Nach der Indizierung des Originalordners könnte dies so aussehen:**
 
   ![Screenshot](img/after-index.png)
 
     
 
-#### Advantages ####
+#### Vorteile ####
 
-* You keep your existing folder structure
-* You can display your existing folder structure in PhotoPrism
+* Sie behalten Ihre vorhandene Ordnerstruktur
+* Sie können Ihre vorhandene Ordnerstruktur in PhotoPrism anzeigen
 
-### Import ###
+### Importieren ###
 
-*Importing* is more efficient when adding files as you don't need to re-index all originals to find new photos and videos.
-[*Uploads*](upload.md) will also be treated as import, you can't directly upload to originals (yet).
+*Importieren* ist effizienter beim Hinzufügen von Dateien, da Sie nicht alle Originale neu indizieren müssen, um neue Fotos und Videos zu finden.
+[*Uploads*](upload.md) werden auch als Import behandelt, Sie können (noch) nicht direkt in Originale hochladen.
 
-Your initial folder structure in *import* might look like this:
+Ihre anfängliche Ordnerstruktur in *Importieren* könnte wie folgt aussehen:
 
    ![Screenshot](img/before-import.png)
    
-**During import:**
+**Während Importieren:**
  
-* Files are moved or copied from import directory to originals directory
-* In the originals directory files are renamed and get a new folder structure. The original name is saved as property of the file
-* All imported files are indexed
+* Dateien werden aus dem Importverzeichnis in das Originalverzeichnis verschoben oder kopiert
+* In den Originalen werden Verzeichnisdateien umbenannt und erhalten eine neue Ordnerstruktur. Der ursprüngliche Name wird als Eigenschaft der Datei gespeichert.
+* Alle importierten Dateien werden indiziert
 
-**After import using "copy" (this is the default) your folders could look like this:**
+**Nach dem Import mit "Kopieren" (dies ist die Standardeinstellung) könnten Ihre Ordner wie folgt aussehen:**
 
    ![Screenshot](img/copy-import.png)
 
-**After import using "move" your folders might look like this:**
+**Nach dem Import mit "Verschieben" können Ihre Ordner wie folgt aussehen:**
 
    ![Screenshot](img/move-import.png)
 
-#### Advantages ####
-* Duplicates or unsupported files stay untouched in the import directory
+#### Vorteile ####
+* Duplikate oder nicht unterstützte Dateien bleiben im Import-Verzeichnis unberührt
 
 
-!!! info
-    Original file and folder names are used to create keywords. 
-    In case you import and index or only index a directory with the path "Vacation/Africa". All files from this folder get the keywords "vacation" and "africa".
+!!! Informationen
+    Originaldatei- und Ordnernamen werden zum Erstellen von Schlüsselwörtern verwendet. 
+    Falls Sie ein Verzeichnis mit dem Pfad "Urlaub/Afrika" importieren und indizieren oder nur indizieren. Alle Dateien aus diesem Ordner erhalten die Schlüsselwörter "Urlaub" und "Afrika".
 
 
-### Conclusion ###
-In case you have no organization in your existing photo collection and you assume you have many duplicates on various hard drives.
-*Import* is the way to go. It will organize all your photos and videos due to time taken and it will avoid duplicates.
+### Schlussfolgerung ###
+Falls Sie keine Organisation in Ihrer vorhandenen Fotosammlung haben und davon ausgehen, dass Sie viele Duplikate auf verschiedenen Festplatten haben.
+*Importieren* ist der Weg zu gehen. Es wird alle Ihre Fotos und Videos aufgrund der Zeit zu organisieren und es wird Duplikate zu vermeiden.
 
-In case you have your photo collection organized nicely in folders and you prefer to keep this organization displayed in the filesystem. *Index* will be the right option for you.
+Falls Sie Ihre Fotosammlung gut in Ordnern organisiert haben und diese Organisation lieber im Dateisystem angezeigt halten. *Index* ist die richtige Option für Sie.

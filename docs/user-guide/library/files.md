@@ -1,21 +1,22 @@
-# Original files #
+# Originaldateien #
 
-The *Originals* section displays all files of your *originals* directory.
+Im Abschnitt *Originals* werden alle Dateien Ihres *originals*-Verzeichnisses angezeigt.
 
-Clicking on a file opens its edit dialog. 
+Wenn Sie auf eine Datei klicken, wird das Bearbeitungsdialogfeld geöffnet. 
 
 ![Screenshot](img/files.png)
 
-The context menu allows you to perform the following actions:
+Im Kontextmenü können Sie die folgenden Aktionen ausführen:
 
-## Download files ##
-1. Select files
-2. Open context menu
-3. Click :material-download:
+## Dateien herunterladen ##
+1. Dateien auswählen
+2. Kontextmenü öffnen
+3. Klicken Sie: material-Download
 
-## Create album from files ##
-1. Select files
-2. Open context menu
-3. Click :material-folder:
-4. Select existing album or enter new album name
-5. Click *add to album*
+
+## Erstellen von Alben aus Dateien ##
+1. Dateien auswählen
+2. Kontextmenü öffnen
+3. Klicken Sie auf:mMaterial-Ordner
+4. Wählen Sie vorhandenes Album aus oder geben Sie einen neuen Albumnamen ein
+5. Klicken Sie auf zum Album hinzufügen

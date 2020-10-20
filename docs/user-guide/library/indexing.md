@@ -1,34 +1,34 @@
-# Indexing your originals #
+# Indizieren Ihrer Originale #
 
-!!! info
-    If you're using PhotoPrism for the first time, make sure your photo and video 
-    collection is properly configured as *originals* folder.
-    See installation instructions in [Getting Started](../../getting-started/index.md) for details.
-    When starting with an empty folder, you need to add or upload files first.
+!!! Informationen
+    Wenn Sie PhotoPrism zum ersten Mal verwenden, stellen Sie sicher, dass Ihr Foto und Video 
+    Auflistung ist ordnungsgemäß als *originals* Ordner konfiguriert.
+    Siehe Installationsanleitung unter [Erste Schritte](../../getting-started/index.md) für Details.
+    Wenn Sie mit einem leeren Ordner beginnen, müssen Sie zuerst Dateien hinzufügen oder hochladen.
 
 
-1. Go to *Library* using the main navigation
+1. Gehen Sie mit der Hauptnavigation zu *Library*
 
-2. Select a sub-folder or keep the default to index all files
+2. Wählen Sie einen Unterordner oder halten Sie die Standardeinstellung, um alle Dateien zu indizieren
 
-3. Select *Complete Rescan* to re-index all originals, including already indexed and unchanged files
+3. Wählen Sie *Complete Rescan*, um alle Originale neu zu indizieren, einschließlich bereits indizierter und unveränderter Dateien
 
-4. Press *Start* to start indexing
+4. Drücken Sie *Start*, um mit der Indizierung zu beginnen
 
 
 ![Screenshot](img/index.png)
 
 
-!!! tip
-    You may use [WebDAV](webdav.md) for adding files to the *originals* folder.
-    This is especially helpful if PhotoPrism is running on a remote server.
+!!! Tipp
+    Sie können [WebDAV] (webdav.md) zum Hinzufügen von Dateien zum Ordner *originals* verwenden.
+    Dies ist besonders hilfreich, wenn PhotoPrism auf einem Remoteserver ausgeführt wird.
 
-!!! tip 
-    A NSFW detector can be enabled to automatically flag pictures as private which 
-    may have offensive content. Note that this is only somewhat reliable. 
+!!! Tipp 
+    Ein NSFW-Detektor kann aktiviert werden, um Bilder automatisch als privat zu kennzeichnen, 
+    können anstößige Inhalte haben. Beachten Sie, dass dies nur etwas zuverlässig ist. 
 
-#### When should "Complete Rescan" be selected? ####
+#### Wann sollte "Vollständiger Rescan" ausgewählt werden? ####
 
-If selected, all files in the *originals* folder will be re-indexed, including already indexed and unchanged files. 
-This may be necessary after upgrading, especially to new major versions.
+Wenn diese Option ausgewählt ist, werden alle Dateien im Ordner *originals* neu indiziert, einschließlich bereits indizierter und unveränderter Dateien. 
+Dies kann nach dem Upgrade erforderlich sein, insbesondere auf neue Hauptversionen.
 

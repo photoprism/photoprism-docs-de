@@ -1,30 +1,30 @@
-# Importing files to your library #
+# Importieren von Dateien in Ihre Bibliothek #
 
-1. Add files to the *import* folder if not done already
+1. Fügen Sie Dateien zum Ordner *import* hinzu, wenn Sie dies noch nicht getan haben
 
-2. Go to *Library* using the main navigation, and open the *Import* tab
+2. Gehen Sie mit der Hauptnavigation zu *Bibliothek*, und öffnen Sie die Registerkarte *Import*
 
-3. Select a sub-folder or keep the default to import all files
+3. Wählen Sie einen Unterordner oder halten Sie die Standardeinstellung, um alle Dateien zu importieren
 
-4. Select *Move Files* if you want imported files to be removed from the *import* folder
+4. Wählen Sie *Dateien verschieben*, wenn importierte Dateien aus dem Ordner *import* entfernt werden sollen
 
-5. Click on *Import*
+5. Klicken Sie auf *Import*
 
 ![Screenshot](img/import.png)
 
-!!! tip
-    You may use [WebDAV](webdav.md) for adding files to the *import* folder.
-    This is especially helpful if PhotoPrism is running on a remote server.
+!!! Tipp
+    Sie können [WebDAV](webdav.md) zum Hinzufügen von Dateien zum Ordner *import*.
+    Dies ist besonders hilfreich, wenn PhotoPrism auf einem Remoteserver ausgeführt wird.
 
-!!! attention
-    Importing is not possible in [read-only mode](../settings/library.md) as it requires
-    write permissions for the *originals* folder.
+!!! Aufmerksamkeit
+    Der Import ist in [Schreibmodus](../settings/library.md) wie es erforderlich ist
+    Schreibberechtigungen für den Ordner *originals*.
     
-#### When should "Move Files" be selected? ####
+#### Wann sollte "Dateien verschieben" ausgewählt werden? ####
 
-If selected, files that have been moved to the *originals* folder, or that already exist,
-will automatically be deleted from the *import* folder.
-This will save storage if you don't want to keep them as backup, or for any other reason.
+Wenn diese Option ausgewählt ist, werden Dateien, die in den Ordner *originals* verschoben wurden oder bereits vorhanden sind,
+wird automatisch aus dem Ordner *import* gelöscht.
+Dadurch wird Speicher gespeichert, wenn Sie sie nicht als Sicherung oder aus einem anderen Grund beibehalten möchten.
 
 
 
