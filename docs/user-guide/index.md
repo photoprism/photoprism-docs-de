@@ -1,15 +1,9 @@
-# User Guide #
+# Benutzeranleitung
 
-Step-by-step installation instructions can be found in [Getting Started](../getting-started/index.md) - 
-all you need is a Web browser and Docker to run the server. It is available for Mac, Linux and Windows.
+Schritt-für-Schritt Installationsanweisungen finden Sie in [Getting Started](../getting-started/index.md) - alles, was Sie brauchen, ist ein Webbrowser und Docker zum Betrieb des Servers. Es ist für Mac, Linux und Windows verfügbar.
 
-Next, you'll have to [index or import](library/import-vs-index.md) 
-existing files. Please be patient, this will take a while depending on the size of your library.
+Als Nächstes müssen Sie vorhandene Dateien [index or import](library/import-vs-index.md). Bitte haben Sie Geduld, dies wird eine Weile dauern, je nach Größe Ihrer Bibliothek.
 
-Already indexed photos can be browsed in [Photos](organize/browse.md) 
-while videos show up in [Videos](organize/video.md).
-Counts are continuously updated in the navigation.
+Bereits indizierte Fotos können in [Photos](organize/browse.md) während Videos in [Videos](organize/video.md) angezeigt werden. Die Zähler werden in der Navigation laufend aktualisiert.
 
-If photos are missing, they might be in [review](organize/review.md) due to low quality or missing metadata.
-You can turn this and other features off in [Settings](settings/ui.md), depending on
-your specific use case.
+Wenn Fotos fehlen, könnten sie in [Review](organize/review.md) sein, da die Qualität niedrig ist oder keine Metadaten vorhanden sind. Sie können diese und andere Funktionen in [Settings](settings/ui.md) ausschalten, abhängig von Ihrem speziellen Anwendungsfall.
