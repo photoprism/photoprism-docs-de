@@ -1,50 +1,45 @@
-# Navigate #
-Photo and video search is based on the following components. Note that all pages are fully responsive, 
-our screenshots show the user-interface in a desktop browser with medium resolution.
+# Navigate
+Die Foto- und Videosuche basiert auf folgenden Komponenten. Beachten Sie, dass alle Seiten voll reagieren können, unsere Screenshots zeigen das Benutzerinterface in einem Desktop-Browser mit mittlerer Auflösung an.
 
 ![Screenshot](img/nav1edited.png)
 
 ![Screenshot](img/nav2edited.png)
 
-#### 1. Main Navigation ####
+#### 1. Hauptnavigation
 
-Located on the left, minimized on mobile devices.
-Click on the links to switch between different pages like Photos, Albums, Places, or Settings.
+Links gelegen, minimiert auf mobilen Geräten. Klicken Sie auf die Links, um zwischen verschiedenen Seiten wie Fotos, Alben, Orten oder Einstellungen zu wechseln.
 
-#### 2. Toolbar ####
+#### 2. Werkzeugleiste
 
-Located on the top. Find photos or videos by entering search terms like `cats` and filters like `label:cat`.
+Gefunden an der Spitze. Finden Sie Fotos oder Videos, indem Sie Suchbegriffe wie `cats` und Filter wie `label:cat` eingeben.
 
-#### 3. Reload Button ####
+#### 3. Neu laden
 
-:material-refresh: reloads search results without reloading the full page.
+:material-refresh: lädt die Suchergebnisse neu, ohne die vollständige Seite neu zu laden.
 
-#### 4. View Button ####
+#### 4. Schaltfläche anzeigen
 
-Click to switch to a different search result view (cards: :material-view-column:, mosaic: :material-view-comfy:, or list: :material-view-list:).
+Klicken, um zu einer anderen Suchergebnisansicht zu wechseln (Karten: :material-view-column:, Mosaik: :material-view-comfy:, oder Liste: :material-view-list:).
 
-#### 5. Upload Button ####
+#### 5. Upload-Button
 
-:material-cloud-upload: opens the upload dialog. Available on most pages, unless read-only mode is enabled or upload is disabled in [Settings](settings/ui.md).
+:material-cloud-upload: öffnet den Upload-Dialog. Auf den meisten Seiten verfügbar, es sei denn, dass der schreibgeschützte Modus aktiviert ist oder der Upload in [Settings](settings/ui.md) deaktiviert ist.
 
-#### 6. Expanded Toolbar ####
+#### 6. Erweiterte Werkzeugleiste
 
-The expanded toolbar contains additional options and search filters for country, year, month, camera, color, and category.
+Die erweiterte Werkzeugleiste enthält zusätzliche Optionen und Suchfilter für Land, Jahr, Monat, Kamera, Farbe und Kategorie.
 
-#### 7. Context Menu ####
+#### 7. Kontext-Menü
 
-When photos or videos are selected, the context menu appears in the lower right corner. 
-The number displayed is the count of currently selected items.
-It also contains the following buttons:
+Wenn Fotos oder Videos ausgewählt werden, erscheint das Kontextmenü in der unteren rechten Ecke. Die angezeigte Nummer ist die Anzahl der aktuell ausgewählten Einträge. Er enthält auch die folgenden Schaltfläche:
 
-* :material-archive-arrow-down: Archive photos
-* :material-folder: Add photos to album
-* :material-cloud-download: Download photos
-* :material-lock: Mark photos as private
-* :material-pencil: Open edit dialogue
-* :material-share-variant: Share photos
+* :material-archive-arrow-down: Fotos archivieren
+* :material-folder: Fotos zu Album hinzufügen
+* :material-cloud-download: Bilder herunterladen
+* :material-lock: markierte Fotos als privat
+* :material-pencil: Öffne Bearbeitungsdialog
+* :material-share-variant: Fotos freigeben
 
-To unselect all items, click the cross at the top:
+Um alle Elemente auszuwählen, klicken Sie auf das Kreuz oben:
 
-![Screenshot](img/nav3edited.png)
-
+![Screenshot](img/nav1edited.png)
