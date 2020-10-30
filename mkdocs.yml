@@ -31,12 +31,12 @@ nav:
             - Ansicht: user-guide/organize/views.md
             - Suche & Filter: user-guide/organize/search.md
           #- Search Filter: user-guide/organize/search.md
-          - Review: user-guide/organize/review.md
-          - Stacks: user-guide/organize/stacks.md
+          - Bestätigen: user-guide/organize/review.md
+          - Bildstapel: user-guide/organize/stacks.md
           - Panoramas: user-guide/organize/panoramas.md
           - Scans: user-guide/organize/scans.md
-          - Private: user-guide/organize/private.md
-          - Archive: user-guide/organize/archive.md
+          - Privat: user-guide/organize/private.md
+          - Archiv: user-guide/organize/archive.md
           - Albums: user-guide/organize/albums.md
           - Folders: user-guide/organize/folders.md
           - Labels: user-guide/organize/labels.md

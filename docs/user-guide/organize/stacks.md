@@ -1,60 +1,61 @@
-# Stacks #
+# Bildstapel #
 
 ## Gruppierte Dateien ##
 
-Ein aus mehreren JPEG-Dateien bestehendes Foto wird gruppiert, wenn in den [*Settings*](../settings/ui.md) die Einstellung "Grouped Sequentials" aktiv ist.
-Gruppierte Dateien werden als *Stacks* dargestellt.
+Zusammengehörige Dateien werden gruppiert, wenn in den [*Einstellungen*](../settings/ui.md) "Sequenzen gruppieren" aktiviert ist.
+Gruppierte Dateien werden im Bereich *Bildstapel* dargestellt.
 
 ![Screenshot](img/stacks-1.png)
 
 !!! Info
-    Dateien werden in zwei Fällen zu einer Gruppe zusammengefasst:
+    Dateien werden in folgenden Fällen gruppiert:
 
     1. Dateinamen haben einen Bezug zueinander: Beispielsweise `IMG_1234 (2)` und `IMG_1234 copy 2`
-    2. Fotos die am gleichen Ort in der selben Sekunde aufgenommen wurden.
+    2. Fotos wurden am gleichen Ort und in der selben Sekunde aufgenommen
 
 
-### Blättern durch zusammenhängende Dateien ###
+### Zusammenhängende Dateien anschauen ###
 
-1. Klicke auf *Sequence*
+1. Klicke auf das Sequenz Symbol
 
     ![Screenshot](img/sequential1.png)
 
-2. Nutze die Pfeile um durch alle Fotos der Sequenz zu blättern.
+2. Mit Hilfe der Pfeile kannst du durch alle Fotos der Sequenz wechseln
 
     ![Screenshot](img/sequential3.png) ![Screenshot](img/sequential4.png)
 
 
-### Wechseln des primären Bildes ###
-Das als *primary* markierte Bild wird in den Views angezeigt. Es wird als erster Eintrag im *Files*-Tab angezeigt.
+### Das Anzeigebild wechseln ###
+Das als *Primärdatei* ausgewählte Bild wird in den Foto-Ansichten verwendet. 
+Es wird als erster Eintrag im Tab *Dateien* angezeigt.
 
-Um das primäre Bild zu ändern, gehe wie folgt vor:
+Um die Primärdatei zu ändern, gehe wie folgt vor:
 
-1. Öffne den [*Edit Dialog*](edit.md) des Fotos
-2. Öffne den *Files*-Tab
-3. Klicke auf das Symbol :material-chevron-down: der Datei, die das neue primäre Bild sein soll.
-4. Klicke auf *primary*
+1. Öffne den [*Bearbeitungs-Dialog*](edit.md) des Fotos
+2. Gehe zu *Dateien*
+3. Klicke auf :material-chevron-down: der Datei, die du als primär markieren willst
+4. Klicke *Primärdatei*
 
       ![Screenshot](img/group-3.png) 
 
 
 ### Gruppierung von Dateien aufheben ###
-1. Öffne den [*Edit Dialog*](edit.md) des Fotos
-2. Öffne den *Files*-Tab
-3. Klicke auf das Symbol :material-chevron-down: der Datei, die nicht das primäre Bild ist.
-4. Klicke auf *ungroup*
+1. Öffne den [*Bearbeitungs-Dialog*](edit.md) des Fotos
+2. Gehe zu *Dateien*
+3. Klicke auf :material-chevron-down: der Datei, die nicht als primär markiert ist
+4. Klicke *Entfernen*
 
       ![Screenshot](img/group-3.png)
 
-Nun werden alle Bilder in den Views angezeigt.
+Das Bild wird nun separat von der anderen Datei in den Ansichten angezeigt.
 
 ![Screenshot](img/group-4.png)
 
 ### Nicht primäre Dateien endgültig löschen ###
-1. Öffne den [*Edit Dialog*](edit.md) des Fotos
-2. Öffne den *Files*-Tab
-3. Klicke auf das Symbol :material-chevron-down: der Datei, die nicht das primäre Bild ist.
-4. Klicke auf *löschen*
-5. Bestätige, dass du das Bild wirklich löschen willst
+1. Öffne den [*Bearbeitungs-Dialog*](edit.md) des Fotos
+2. Gehe zu *Dateien*
+3. Klicke auf :material-chevron-down: der Datei, die nicht als primär markiert ist
+4. Klicke *Löschen*
+5. Bestätige, dass du das Bild wirklich löschen möchtest
 
       ![Screenshot](img/group-5.png)

@@ -1,11 +1,11 @@
 # Suche #
-Mit Hilfe des *Suchfelds* kann nach Fotos, Videos, Alben und Labels gesucht werden.
+Mit Hilfe des *Suchfelds* kann  in allen Bereichen nach Fotos, Videos, Alben oder Labels gesucht werden.
 
-Es ist möglich nach verschiedensten Eigenschaften zu suchen:
+Du kannst nach unerschiedlichsten Kriterien suchen:
 
-* Abgebildete Objekte
-* Die Hauptfarbe eines Fotos
-* Der Dateiname oder das Verzeichnis in dem die Datei liegt
+* Auf dem Foto abgebildete Objekte
+* Hauptfarbe eines Fotos
+* Dateiname oder Verzeichnisname
 * Ort der Aufnahme
 * ...
 
@@ -16,10 +16,10 @@ Probier es einfach aus!
 !!! Tipp
     Um gleichzeitig nach mehreren Eigenschaften zu suchen, trenne die Suchbegriffe mit einem Leerzeichen.
 
-    Eine Suche nach `cat blue berlin` wird alle Fotos finden auf denen eine Katze abgebildet ist, die Hauptfarbe Blau haben oder in Berlin aufgenommen wurden.
+    Eine Suche nach `cat blue berlin` wird alle Fotos finden, auf denen eine Katze abgebildet ist, deren Hauptfarbe blau ist oder die in Berlin aufgenommen wurden.
 
 ## Filter ##
-Zusätzlich zur Suche können auch folgende Filter aktiviert werden:
+Zusätzlich zur Suche können auch folgende Filter gesetzt werden:
 
 * Land
 * Jahr
@@ -29,7 +29,7 @@ Zusätzlich zur Suche können auch folgende Filter aktiviert werden:
 * Farbe
 * Kategorie
 
-Sofern mehrere Filter ausgewählt wurden, werden nur Fotos von der Suche berücksichtigt die allen Filterkriterien entsprechen.
+Sofern mehrere Filter ausgewählt wurden, werden nur Fotos von der Suche berücksichtigt, die allen Filterkriterien entsprechen.
 
  ![Screenshot](img/color-red.png)
 
@@ -41,11 +41,13 @@ Sofern mehrere Filter ausgewählt wurden, werden nur Fotos von der Suche berück
     `type:live`
 
     Die komplette Liste der Filter findest du weiter unten.
-    ![Screenshot](img/color-green.png)
+    
+   
+   ![Screenshot](img/color-green.png)
 
 
 # Suchfilter #
-PhotoPrism unterstützt die folgenden Filter.
+PhotoPrism unterstützt die folgenden Filter im Suchfeld.
     
 | Filter      | Beispiele |
 | ----------- | ----------- |

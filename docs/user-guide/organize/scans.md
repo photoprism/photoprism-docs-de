@@ -2,12 +2,12 @@
 Eingescannte Fotos können als *Scan* markiert werden.
 
 !!! Hinweis
-    Wir arbeiten daran, dass gescannte Fotos in der Zukunft automatisch erkannt werden.
+    Wir arbeiten daran, eingescannte Fotos in der Zukunft automatisch zu erkennen.
 
 ## Markieren einer Aufnahme als Scan ##
 
- 1. Öffne den [*Edit-Dialog*](edit.md).
- 2. Klicke auf :material-cog:
- 3. Setze oder entferne das *Scan*-Flag
+ 1. Öffne den [*Bearbeitungs-Dialog*](edit.md).
+ 2. Klicke :material-cog:
+ 3. Setze oder entferne den *Scan*-Status
 
 ![Screenshot](img/scan-1.png)

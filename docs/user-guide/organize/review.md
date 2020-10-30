@@ -1,5 +1,5 @@
-# Überprüfen von Bildern mit geringer Qualität oder die kein Foto sind #
-Wenn neue Fotos hinzugefügt werden, wird automatisch die Qualität auf einer Skala von 1 bis 5 bewertet. Fotos die mit weniger als 3 bewertet wurden, werden in *Photos* erst angezeigt, wenn ihre Qualität manuell bestätigt wurde.
+# Überprüfe Bilder mit geringer Qualität oder nicht fotografischem Inhalt #
+Wenn neue Fotos hinzugefügt werden, wird automatisch die Qualität auf einer Skala von 1 bis 5 bewertet. Fotos, die mit weniger als 3 bewertet sind, werden erst nach einer manuellen Überprüfung in den Bereich *Fotos* übernommen.
 
 Die Qualität wird anhand der folgenden Kriterien bestimmt:
 
@@ -8,23 +8,23 @@ Die Qualität wird anhand der folgenden Kriterien bestimmt:
 * Foto ist nicht als *Info* oder *Screenshot* eingestuft
 * Foto ist ein Favorit, wurde editiert oder bestätigt.
 
-### Deaktivieren des Qualitätsfilters/Review-Prozesses ###
-In den [Settings](../settings/ui.md) kann der Qualitätsfilter/Review-Prozess deaktiviert werden.
+!!! Tipp
+    In den [Einstellungen](../settings/ui.md) kann der Qualitätsfilter und somit auch der Bestätigungs-Prozess deaktiviert werden.
 
-### Bestätigen von Fotos ###
-1. Öffne den [*Edit-Dialog*](edit.md) des Fotos
-2. Klicke auf *approve*
+### Fotos übernehmen ###
+1. Öffne den [*Bearbeitungs-Dialog*](edit.md) des Fotos
+2. Klicke auf *Übernehmen*
 
     ![Screenshot](img/review.png)
     
-**Alernativ:**
+**oder:**
 
-1. Öffne den *Card View*
-2. Klicke auf *Approve* in der *Review Section*
+1. Öffne die *Karten Ansicht*
+2. Klicke auf *Übernehmen*
 
     ![Screenshot](img/review-2.png)
 
 !!! Hinweis
     Die Qualitätsbewertung wird automatisch aktualisiert.
-    Wenn Datums- oder Ortsinformationen zu einem Foto hinzugefügt werden oder ein Foto geliked wird, wird die Bewertung automatisch erhöht.
-    Falls dadurch der Qualitätswert größer oder gleich 3 ist, wird das Bild automatisch bestätigt.
+    Wenn Datums- oder Ortsinformationen zu einem Foto hinzugefügt werden oder ein Foto als Favorit markiert wird, erhöht sich die Bewertung automatisch.
+    Falls dadurch der Qualitätswert größer oder gleich 3 ist, wird das Bild automatisch übernommen.

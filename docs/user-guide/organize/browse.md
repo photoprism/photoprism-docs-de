@@ -1,53 +1,53 @@
-# Browse through your photo collection #
-PhotoPrisms photo/video views are a nice way for you to browse through your photo collection.
-They enable you to re-discover forgotten photos, find specific photos you are looking for or organize your photos.
+# Schaue dir deine Fotos an #
+PhotoPrisms Foto und Video Ansichten bieten die dir Möglichkeit vergessene Fotos wieder zu entdecken, ganz bestimmte Fotos zu finden oder
+deine Bilder zu organisieren.
 
-### Sections ###
-Using the main navigation you can visit the different sections of your photo library:
+### Bereiche ###
+Über die Hauptnavigation erreichst du folgende Bereiche:
 
-#### Photos :material-image: ####
-Shows all photos that are not in review or archived or private.
+#### Fotos :material-image: ####
+Hier findest du alle Fotos, die in *Bestätigen*, *Archiv* oder *Privat* sind.
 
-!!! hint
-    In case the review, private or archive functions are turned off - Photos displays those photos as well.
+!!! Hinweis
+    Wenn die Funktionen Qualitätsfilter, Privat oder Archiv deaktiviert sind, findest du hier alle deine Fotos.
     
 ![Screenshot](img/photos-section.png)
 
-#### Favorites :material-heart: ####
-Shows all photos and videos you liked.
+#### Favoriten :material-heart: ####
+Hier befinden sich alle Fotos, die du als Favorit markiert hast.
 
 ![Screenshot](img/favorites-section.png)
 
-#### Private :material-lock: ####
-Shows photos and videos marked as private.
+#### Privat :material-lock: ####
+Hier befinden sich alle Fotos, die du als privat markiert hast.
 
 #### Videos :material-movie: ####
-Shows videos that are not in review or archived or private.
+Hier findest du alle Videos, die nicht in *Bestätigen*, *Archiv* oder *Privat* sind.
 
 ![Screenshot](img/video-section.png)
 
-#### Albums :material-folder: ####
-Shows albums you created.
+#### Alben :material-folder: ####
+Hier befinden sich deine Alben.
 
 ![Screenshot](img/album-section.png)
 
-#### Labels :material-label:####
-Shows your photos and videos grouped by labels like cat, dog or beach.
+#### Kategorien :material-label:####
+Zeigt deine Fotos und Videos gruppiert nach Kategorien wie *Katze*, *Hund* oder *Strand*.
 
 ![Screenshot](img/label-section.png)
 
-#### Places :material-map-marker: ####
-Displays all photos and videos with location information on a worldmap.
+#### Karten :material-map-marker: ####
+Hier sind alle Fotos und Videos, die Geodaten haben, auf einer Weltkarte dargestellt.
 
 ![Screenshot](img/places-section.png)
 
-#### Moments :material-star: ####
-Discover albums we automatically create for you.
+#### Erlebnisse :material-star: ####
+Entdecke Alben von Erlebnissen, die wir automatisch für dich erstellt haben.
 
 ![Screenshot](img/moments.png)
 
-#### Calendar :material-calendar-range: ####
-Organizes your photos due to time taken.
+#### Kalender :material-calendar-range: ####
+Hier sind deine Fotos nach Erstellungsdatum sortiert.
 
 ![Screenshot](img/calendar.png)
 

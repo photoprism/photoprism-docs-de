@@ -1,30 +1,30 @@
-# Archive #
-You can move photos and videos you do not want to keep in your collection to *Archive*.
-Content that is archived is not deleted but it will not appear in any section apart from *Archive*.
+# Archiv #
+Du kannst Dateien, die du nicht in deiner Sammlung behalten möchtest archivieren. 
+Archivierte Dateien werden nicht gelöscht, sie werden allerdings ausschließlich im Bereich *Archiv* angezeigt.
 
-### Archive photos ###
+### Fotos archivieren ###
 
-1. Select photos/videos
-2. Click context menu
-3. Click :material-archive-arrow-down:
-4. Confirm
+1. Selektiere Fotos/Videos
+2. Öffne das Kontextmenü
+3. Klicke :material-archive-arrow-down:
+4. Bestätige
 
     ![Screenshot](img/archive.png)
     
     ![Screenshot](img/confirm-archive.png)
 
 
-### Restore photos from archive ###
+### Archivierte Fotos wieder herstellen ###
 
-1. Go to *Archive*
-2. Select photos/videos
-3. Click context menu
-4. Click :material-archive-arrow-up:
+1. Gehe zu *Archiv*
+2. Selektiere Fotos/Videos
+3. Öffne das Kontextmenü
+4. Klicke :material-archive-arrow-up:
 
     ![Screenshot](img/restore.png)
 
-Currently there is no permanent deletion possible in PhotoPrism. 
+Momentan gibt es in PhotoPrism keine Möglichkeit Fotos endgültig zu löschen.
 
-In case you want to permanently delete a photo or video you must delete it in your *originals folder* directly.
+Falls du Dateien endgültig löschen möchtest, kannst du dies über dein Dateisystem direkt im *Originals* Ordner tun.
 
-We might add this functionality later.
+Wir werden diese Funktion vermutlich zu einem späteren Zeitpunkt entwickeln.
