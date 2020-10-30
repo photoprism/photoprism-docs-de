@@ -1,64 +1,60 @@
-# Albums #
-### Create a new album ###
+# Alben #
+### Ein neues Album erstellen ###
 
-1. Go to *Albums*
-2. In the upper right corner click :material-plus:
+1. Gehe zu *Alben*
+2. Klicke :material-plus: oben rechts
 
     ![Screenshot](img/create-album.png)
     
-3. A new album with name "Month Year" is created
+3. Ein neues Album mit Titel "Month Year" ist nun erstellt
 
     ![Screenshot](img/album-name-1.png)
 
-### Edit album ###
+### Album bearbeiten ###
 
-1. Go to *Albums*
-2. To open the *album edit dialogue* click on the *album title*
+1. Gehe zu *Alben*
+2. Klicke auf den *Album Titel*, um den *Bearbeitungs-Dialog* zu öffnen
 
     ![Screenshot](img/edit-album-1.png)
     
-    OR
-    
-    Select album, open context menu and click :material-pencil:
+    Alternativ kannst du auch ein Album selektieren, das Kontextmenü öffnen und :material-pencil: klicken
     
     ![Screenshot](img/album-edit-2.png)
     
-    OR
-    
-    Open album and click :material-pencil: in the upper right corner
+    Oder das Album öffnen und :material-pencil: rechts oben klicken
     
     ![Screenshot](img/album-edit-3.png)
     
-3. Edit album details and click *save*
+3. Bearbeite die Album Details und klicke *Speichern*
 
     ![Screenshot](img/album-edit-4.png)
     
 
-### Add photos to album ###
+### Fotos zu Album hinzufügen ###
 
-1. Select photos and videos
-2. Click context menu
-3. Click :material-folder:
+1. Selektiere Fotos und Videos
+2. Öffne das Kontextmenü
+3. Klicke :material-folder:
 
     ![Screenshot](img/add-photo-album-1.png)
     
-4. Select album.
+4. Wähle ein Album
 
     ![Screenshot](img/add-photo-album-2.png)
     
-5. Click *add to album*
+5. Klicke *Hinzufügen*
 
     ![Screenshot](img/add-photo-album-3.png)
 
-!!! tip
-    You can select many photos at once using shift.
+!!! Info
+    Du kannst mehrere Fotos auf einmal selektieren, indem du die Shift Taste verwendest.
 
-### Remove photos from album ###
+### Fotos aus Album entfernen ###
 
-1. Go to your album
-3. Select photos/videos you want to remove
-4. Click context menu
-5. Click :material-minus:
+1. Gehe zu einem Album
+3. Selektiere Fotos, die du entfernen möchtest
+4. Öffne das Kontextmenü
+5. Klicke :material-minus:
 
     ![Screenshot](img/remove-from-album-1.png)
 

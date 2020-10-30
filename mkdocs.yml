@@ -37,15 +37,15 @@ nav:
           - Scans: user-guide/organize/scans.md
           - Privat: user-guide/organize/private.md
           - Archiv: user-guide/organize/archive.md
-          - Albums: user-guide/organize/albums.md
-          - Folders: user-guide/organize/folders.md
-          - Labels: user-guide/organize/labels.md
-          - Places: user-guide/organize/places.md
+          - Alben: user-guide/organize/albums.md
+          - Ordner: user-guide/organize/folders.md
+          - Kategorien: user-guide/organize/labels.md
+          - Karten: user-guide/organize/places.md
           - Videos: user-guide/organize/video.md
-          - Moments: user-guide/organize/moments.md
-          - Calendar: user-guide/organize/calendar.md
-          - Download photos: user-guide/organize/download.md
-          - Edit photos: user-guide/organize/edit.md
+          - Erlebnisse: user-guide/organize/moments.md
+          - Kalender: user-guide/organize/calendar.md
+          - Fotos herunterladen: user-guide/organize/download.md
+          - Fotos bearbeiten: user-guide/organize/edit.md
       - Backup:
           - Connect via WebDAV:  user-guide/backup/webdav.md
           - Nextcloud Sync:  user-guide/backup/nextcloud.md

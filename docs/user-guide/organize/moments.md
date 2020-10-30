@@ -1,25 +1,26 @@
-# Momente #
+# Erlebnisse #
 
-Deine Erinnerungen werden automatisch zu *Momenten* zusammengefasst. Deine *Momente* werden aktualisiert, sobald du neue Fotos zu PhotoPrism hinzufügst.
+PhotoPrism erstellt automatisch *Erlebnisse* aus deinen Erinnerungen. 
+Deine *Erlebnisse* werden laufend aktualisiert, wenn neue Fotos hinzugefügt werden.
 
 ![Screenshot](img/moments.png)
 
 Mithilfe des Kontextmenüs kannst du die folgenden Aktionen durchführen:
 
-## Moment löschen ##
-1. Wähle den *Moment* aus
-2. Öffne das Kontextmenü und klicke auf :material-delete:
-3. Bestätige die Sicherheitsabfrage
+## Erlebnis löschen ##
+1. Selektiere ein *Erlebnis*
+2. Öffne das Kontextmenü und klicke :material-delete:
+3. Bestätige
 
 !!! Hinweis
-    Nur der Moment wird gelöscht. Deine Dateien werden nicht gelöscht oder verändert.
+    Nur das Erlebnis wird gelöscht. Deine Dateien werden nicht gelöscht oder verändert.
 
-## Herunterladen eines Moments als ZIP-Archiv ##
-1. Wähle den *Moment* aus
+## Erlebnis als ZIP-Archiv herunterladen ##
+1. Wähle ein *Erlebnis* aus
 2. Öffne das Kontextmenü und klicke auf :material-download:
 
-## Album anhand eines Moments erzeugen / Moment einem Album hinzufügen ##
-1. Wähle den *Moment* aus
+## Album anhand eines Erlebnisses erstellen##
+1. Selektiere ein *Erlebnis*
 2. Öffne das Kontextmenü und klicke auf :material-folder:
 3. Wähle ein existierendes Album oder gib einen neuen Albumnamen ein
-4. Klicke auf *Add to Album*
+4. Klicke auf *Hinzufügen*

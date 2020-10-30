@@ -1,21 +1,23 @@
-# Download #
-### Download single photo ###
+# Fotos herunterladen #
+### Einzelnes Foto herunterladen ###
 
-1. Click on the photo
+1. Klicke auf das Foto
 
     ![Screenshot](img/download-1.png)
     
-2. In fullscreen mode click :material-download:
+2. Im Vollbild Modus klicke :material-download:
 
     ![Screenshot](img/download-2.png)
 
-### Download multiple photos ###
+### Mehrere Fotos herunterladen ###
 
-1. Select photos
-2. Click on the context menu
-3. Click :material-cloud-download:. Photos will be downloaded in original size
+1. Selektiere Fotos und Videos
+2. Öffne das Kontextmenü
+3. Klicke :material-cloud-download:
 
-    ![Screenshot](img/multi-download.png)
+Fotos werden in Originalgröße heruntergeladen.
 
-!!! tip
-    You can select many photos at once using shift.
+   ![Screenshot](img/multi-download.png)
+
+!!! tipp
+    Du kannst mehrere Fotos auf einmal selektieren, indem du die Shift Taste verwendest.

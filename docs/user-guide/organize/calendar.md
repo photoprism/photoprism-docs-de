@@ -1,28 +1,28 @@
-# Calendar #
+# Kalender #
 
-Our *Calendar* enables you to browse through your photos by year and month.
+Im Bereich *Kalender* findest du deine Fotos nach Jahr und Monat sortiert.
 
 ![Screenshot](img/calendar.png)
 
-The context menu allows you to perform the following actions:
+Das Kontextmenü ermöglicht die folgenden Aktionen:
 
-## Delete month ##
-1. Select month
-2. Open context menu
-3. Click :material-delete:
-4. Confirm
+## Monat löschen ##
+1. Selektiere einen Monat 
+2. Öffne das Kontextmenü
+3. Klicke :material-delete:
+4. Bestätige
 
-!!! hint
-    Only the representation of the month will be deleted. Your files stay untouched.
+!!! Hinweis
+    Nur die Repräsentation des Monats in diesem Bereich wird gelöscht. Deine Dateien bleiben unberührt.
 
-## Download month as zip ##
-1. Select month
-2. Open context menu
-3. Click :material-download:
+## Monat als ZIP-Archiv herunterladen ##
+1. Selektiere einen Monat 
+2. Öffne das Kontextmenü
+3. Klicke :material-download:
 
-## Create album from month ##
-1. Select month
-2. Open context menu
-3. Click :material-folder:
-4. Select existing album or enter new album name
-5. Click *add to album*
+## Album aus Monat erstellen ##
+1. Selektiere einen Monat 
+2. Öffne das Kontextmenü
+3. Klicke :material-folder:
+4. Wähle ein existierendes Album oder gib einen neuen Albumnamen ein
+5. Klicke auf *Hinzufügen*

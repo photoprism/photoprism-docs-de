@@ -1,32 +1,26 @@
-# Folders #
-PhotoPrism zeigt automatisch alle Ordner deines *Original*-Verzeichnisses in der *Folder Section*.
-Falls neue Dateien dem *Original*-Verzeichnis hinzugefügt werden, aktualisiert PhotoPrism automatisch die Ordneransicht.
+# Ordner #
+Im Bereich *Ordner* werden automatisch die Verzeichnisse deines *Originals* Ordner angezeigt.
+Falls neue Dateien hinzugefügt werden, aktualisiert PhotoPrism die Ansicht automatisch.
 
 ![Screenshot](img/folders-1.png)
 
-Das Kontextmenü erlaubt die folgenden Aktionen:
+Das Kontextmenü bietet die folgenden Aktionen:
 
-## Ordner/Folder löschen
-1. Wähle den Ordner aus
-2. Öffne das Kontextmenü und klicke auf :material-delete:
-3. Bestätige die Sicherheitsabfrage
+## Ordner löschen
+1. Wähle einen Ordner aus
+2. Öffne das Kontextmenü und klicke :material-delete:
+3. Bestätige
 
 !!! Hinweis
-    Nur die Repräsentation des Ordners wird aus PhotoPrism entfernt. Deine Dateien werden nicht gelöscht.
+    Nur die Repräsentation des Ordners im Bereich *Ordner* wird aus PhotoPrism entfernt. Deine Dateien werden nicht gelöscht.
 
-## Ordner/Folder als ZIP-Archiv herunterladen ##
-1. Wähle den Ordner aus
-2. Öffne das Kontextmenü und klicke auf :material-download:
+## Ordner als ZIP-Archiv herunterladen ##
+1. Wähle einen Ordner aus
+2. Öffne das Kontextmenü und klicke :material-download:
 
-## Erstelle ein Album anhand eines Ordners/Folders ##
-1. Wähle den Ordner aus
-2. Öffne das Kontextmenü und klicke auf :material-folder:
+## Erstelle ein Album anhand eines Ordners ##
+1. Wähle einen Ordner aus
+2. Öffne das Kontextmenü und klicke :material-folder:
 3. Wähle ein existierendes Album aus oder gib einen neuen Albumnamen ein
-5. Klicke auf *Add to Album*
+5. Klicke auf *Hinzufügen*
 
-## Create album from folder ##
-1. Select folder
-2. Open context menu
-3. Click :material-folder:
-4. Select existing album or enter new album name
-5. Click *add to album*
