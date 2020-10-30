@@ -1,10 +1,10 @@
-# Hinzufügen von Dateien mit WebDAV #
-Falls PhotoPrism auf einem Server ausgeführt wird, können Sie Mit WebDAV Dateien zu Ihrem Ordner *import* oder *originals* hinzufügen.
+# Dateien mit WebDAV zum Originals oder Import Ordner hinzufügen #
+Falls PhotoPrism auf einem Server ausgeführt wird, kann WebDAV benutzt werden, um Dateien in die Ordner *Import* oder *Originals* zu laden.
 
 
-Folgen Sie einfach denen [Anweisungen](../backup/webdav.md).
+Folge hierzu dieser [Anleitung](../backup/webdav.md).
 
-Sobald alle Dateien hinzugefügt wurden, können Sie [Importieren oder Indizieren](import-vs-index.md) Ihre Dateien.
+Sobald alle Dateien hinzugefügt sind, können sie [importiert oder indexiert](import-vs-index.md) werden.
 
 <!--### Hinzufügen von Fotos über WebDAV unter MacOS ###
 
@@ -33,8 +33,8 @@ Sobald alle Dateien hinzugefügt wurden, können Sie [Importieren oder Indiziere
  -->
 
 !!! Tipp 
-    Sie können WebDAV auch verwenden, um Fotos vom Server herunterzuladen. 
-    Verbinden Sie sich einfach mit http://servername/originals/ und kopieren Sie die Dateien an Ihr bevorzugtes Ziel.
+    WebDAV kann auch verwendet werden, um Fotos vom Server herunterzuladen. 
+    Verbinden dich einfach mit http://servername/originals/ und kopiere die Dateien.
 
 <!--### Add photos via WebDAV on Windows ###
 1. Öffnen Sie den Windows Explorer (z. B. durch Klicken auf [Windows] und [E]).

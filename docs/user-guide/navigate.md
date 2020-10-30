@@ -1,5 +1,8 @@
-# Navigate
-Die Foto- und Videosuche basiert auf folgenden Komponenten. Beachten Sie, dass alle Seiten voll reagieren können, unsere Screenshots zeigen das Benutzerinterface in einem Desktop-Browser mit mittlerer Auflösung an.
+# Navigation
+PhotoPrisms Foto- und Videosuche basiert auf den folgenden Komponenten. 
+
+!!! Hinweis
+    PhotoPrism ist auf alle Bildschirmgrößen angepasst. Unsere Screenshots zeigen die App in einem Desktop-Browser mit mittlerer Auflösung.
 
 ![Screenshot](img/nav1edited.png)
 
@@ -7,39 +10,39 @@ Die Foto- und Videosuche basiert auf folgenden Komponenten. Beachten Sie, dass a
 
 #### 1. Hauptnavigation
 
-Links gelegen, minimiert auf mobilen Geräten. Klicken Sie auf die Links, um zwischen verschiedenen Seiten wie Fotos, Alben, Orten oder Einstellungen zu wechseln.
+Befindet sich auf der linken Seite und ist auf mobilen Geräten minimiert. Klicke auf die Links, um zwischen verschiedenen Seiten wie Fotos, Alben, Orte oder Einstellungen zu wechseln.
 
-#### 2. Werkzeugleiste
+#### 2. Suchleiste
 
-Gefunden an der Spitze. Finden Sie Fotos oder Videos, indem Sie Suchbegriffe wie `cats` und Filter wie `label:cat` eingeben.
+Befindet sich ganz oben. Finde Fotos oder Videos, indem du zum Beispiel nach `cats` oder `label:cat` suchst.
 
-#### 3. Neu laden
+#### 3. Reload-Funktion
 
-:material-refresh: lädt die Suchergebnisse neu, ohne die vollständige Seite neu zu laden.
+:material-refresh: lädt die Suchergebnisse neu, ohne die komplette Seite neu zu laden.
 
-#### 4. Schaltfläche anzeigen
+#### 4. Ansicht wechseln
 
-Klicken, um zu einer anderen Suchergebnisansicht zu wechseln (Karten: :material-view-column:, Mosaik: :material-view-comfy:, oder Liste: :material-view-list:).
+Klicke, um zu einer anderen Ansicht zu wechseln (Karten: :material-view-column:, Mosaik: :material-view-comfy:, oder Liste: :material-view-list:).
 
-#### 5. Upload-Button
+#### 5. Upload-Funktion
 
-:material-cloud-upload: öffnet den Upload-Dialog. Auf den meisten Seiten verfügbar, es sei denn, dass der schreibgeschützte Modus aktiviert ist oder der Upload in [Settings](settings/ui.md) deaktiviert ist.
+:material-cloud-upload: öffnet den Upload-Dialog. Diese Funktion ist auf den meisten Seiten verfügbar, wenn PhotoPrism nicht im read-only Modus betrieben wird und der Upload nicht in den  [Einstellungen](settings/ui.md) deaktiviert wurde.
 
-#### 6. Erweiterte Werkzeugleiste
+#### 6. Filterleiste
 
-Die erweiterte Werkzeugleiste enthält zusätzliche Optionen und Suchfilter für Land, Jahr, Monat, Kamera, Farbe und Kategorie.
+Die Filterleise enthält zusätzliche Suchfilter wie Land, Jahr, Monat, Kamera, Farbe oder Kategorie.
 
 #### 7. Kontext-Menü
 
-Wenn Fotos oder Videos ausgewählt werden, erscheint das Kontextmenü in der unteren rechten Ecke. Die angezeigte Nummer ist die Anzahl der aktuell ausgewählten Einträge. Er enthält auch die folgenden Schaltfläche:
+Wenn Fotos oder Videos selektiert sind, erscheint das Kontextmenü in der Ecke unten rechts. Die angezeigte Zahl ist die Anzahl der aktuell selektierten Ergebnisse. Das Menü bietet folgende Aktionen:
 
 * :material-archive-arrow-down: Fotos archivieren
-* :material-folder: Fotos zu Album hinzufügen
+* :material-folder: Fotos zu Alben hinzufügen
 * :material-cloud-download: Bilder herunterladen
-* :material-lock: markierte Fotos als privat
-* :material-pencil: Öffne Bearbeitungsdialog
-* :material-share-variant: Fotos freigeben
+* :material-lock: Fotos als privat markieren
+* :material-pencil: Bearbeitungs-Dialog öffnen
+* :material-share-variant: Fotos teilen
 
-Um alle Elemente auszuwählen, klicken Sie auf das Kreuz oben:
+Um die aktuelle Selektion aufzuheben, klicke auf das x:
 
-![Screenshot](img/nav1edited.png)
+![Screenshot](img/nav3edited.png)

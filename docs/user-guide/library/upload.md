@@ -1,33 +1,26 @@
-# Hochladen von Dateien in Ihre Bibliothek
+# Dateien über die App in den Import Ordner hochladen#
 
- #
-
-1. Klicken Sie auf :material-cloud-upload: in der oberen rechten Ecke
-
-
+1. Klicke :material-cloud-upload: in der oberen rechten Ecke
 
     ![Screenshot](img/upload-3.png)
 
-**or**
+**oder**
 
-1. Gehen Sie mit der Hauptnavigation zu *Bibliothek*, und öffnen Sie die Registerkarte *Import*
+1. Öffne die Seite *Dateien*, und wechsel zum tab *Kopieren*
 
-2. Klicken Sie auf *Upload*
-
-
+2. Klicke auf *Upload*
 
     ![Screenshot](img/upload-1.png)
     
-3. Falls Sie die Dateien direkt in ein Album hochladen möchten, wählen Sie eine
+3. Wähle oder erstelle ein Album, falls deine Dateien automatisch einem Album hinzugefügt werden sollen
 
-4. Klicken Sie auf *Upload*
-
+4. Klicke auf *Upload*
 
     ![Screenshot](img/upload-to-album.png)
 
-5. Dateien auswählen
+5. Wähle Dateien aus
 
-6. Klicken Sie auf *Upload*, um mit dem Hochladen und Importieren der ausgewählten Dateien zu beginnen
+6. Klicke *Upload*, um mit dem Hochladen und Importieren der ausgewählten Dateien zu beginnen
 
 
 

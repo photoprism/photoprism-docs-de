@@ -1,9 +1,9 @@
-# Benutzeranleitung
+# PhotoPrism Anleitung
 
-Schritt-für-Schritt Installationsanweisungen finden Sie in [Getting Started](../getting-started/index.md) - alles, was Sie brauchen, ist ein Webbrowser und Docker zum Betrieb des Servers. Es ist für Mac, Linux und Windows verfügbar.
+Unsere Schritt-für-Schritt Installationsanweisungen findest du [hier](https://docs.photoprism.org/getting-started/) - alles, was du brauchst, ist ein Webbrowser sowie Docker, um den Server zu betreiben. Docker ist für Mac, Linux und Windows verfügbar.
 
-Als Nächstes müssen Sie vorhandene Dateien [index or import](library/import-vs-index.md). Bitte haben Sie Geduld, dies wird eine Weile dauern, je nach Größe Ihrer Bibliothek.
+Nach der Installation kannst du deine vorhandenen Dateien [indexieren oder importieren](library/import-vs-index.md). Bitte habe etwas Geduld, je nachdem wie groß deine Bildsammlung ist, wird das eine Weile dauern.
 
-Bereits indizierte Fotos können in [Photos](organize/browse.md) während Videos in [Videos](organize/video.md) angezeigt werden. Die Zähler werden in der Navigation laufend aktualisiert.
+Bereits indizierte Fotos werden in [Fotos](organize/browse.md), Videos in [Videos](organize/video.md) angezeigt. Die Anzahlsanzeige deiner Fotos und Videos in der Navigation wird laufend aktualisiert.
 
-Wenn Fotos fehlen, könnten sie in [Review](organize/review.md) sein, da die Qualität niedrig ist oder keine Metadaten vorhanden sind. Sie können diese und andere Funktionen in [Settings](settings/ui.md) ausschalten, abhängig von Ihrem speziellen Anwendungsfall.
+Falls deine Fotos nicht auftauchen, kann es sein, dass sie in [Review](organize/review.md) sind, da die Qualität niedrig ist oder keine Metadaten vorhanden sind. Du kannst diese und andere Funktionen in den  [Einstellungen](settings/ui.md) deaktivieren, um PhotoPrism an deine Bedürfnisse anzupassen.

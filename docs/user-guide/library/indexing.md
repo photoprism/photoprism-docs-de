@@ -1,34 +1,34 @@
-# Indizieren Ihrer Originale #
+# Dateien indexieren #
 
-!!! Informationen
-    Wenn Sie PhotoPrism zum ersten Mal verwenden, stellen Sie sicher, dass Ihr Foto und Video 
-    Auflistung ist ordnungsgemäß als *originals* Ordner konfiguriert.
-    Siehe Installationsanleitung unter [Erste Schritte](../../getting-started/index.md) für Details.
-    Wenn Sie mit einem leeren Ordner beginnen, müssen Sie zuerst Dateien hinzufügen oder hochladen.
+!!! Info
+    Wenn du PhotoPrism zum ersten Mal verwendest, gehe sicher, dass deine Foto und Video 
+    Sammlung als *originals* Ordner konfiguriert ist.
+    Details hierzu findest du in unserer [Installationsanleitung](https://docs.photoprism.org/getting-started/).
+    Wenn du mit einem leeren *Originals* Ordner beginnst, musst du zunächst Dateien über dein Dateisystem hinzufügen.
 
 
-1. Gehen Sie mit der Hauptnavigation zu *Library*
+1. Öffne *Dateien*, indem du auf den Link in der Hauptnavigation klickst
 
-2. Wählen Sie einen Unterordner oder halten Sie die Standardeinstellung, um alle Dateien zu indizieren
+2. Wählen einen Unterordner aus, oder nutze die Standardeinstellung, um alle Dateien zu indexieren
 
-3. Wählen Sie *Complete Rescan*, um alle Originale neu zu indizieren, einschließlich bereits indizierter und unveränderter Dateien
+3. Wähle *Vollständig Indexieren*, um alle Dateien neu zu indexieren, einschließlich bereits indexierter und unveränderter Dateien
 
-4. Drücken Sie *Start*, um mit der Indizierung zu beginnen
+4. Klicke *Start*, um mit der Indexierung zu beginnen
 
 
 ![Screenshot](img/index.png)
 
 
 !!! Tipp
-    Sie können [WebDAV] (webdav.md) zum Hinzufügen von Dateien zum Ordner *originals* verwenden.
-    Dies ist besonders hilfreich, wenn PhotoPrism auf einem Remoteserver ausgeführt wird.
+    Zum Hinzufügen von Dateien zum *Originals* Ordner kann [WebDAV](webdav.md) verwendet werden.
+    Das ist besonders hilfreich, wenn PhotoPrism auf einem Remoteserver ausgeführt wird.
 
 !!! Tipp 
-    Ein NSFW-Detektor kann aktiviert werden, um Bilder automatisch als privat zu kennzeichnen, 
-    können anstößige Inhalte haben. Beachten Sie, dass dies nur etwas zuverlässig ist. 
+    Ein NSFW-Detektor kann aktiviert werden, um Bilder, mit anstößigem Inhalt, automatisch als privat zu kennzeichnen. 
+    Beachte, dass der Mechanismus nicht 100% zuverlässig ist. 
 
-#### Wann sollte "Vollständiger Rescan" ausgewählt werden? ####
+#### Wann sollte ich den Index vollständig aktualisieren? ####
 
-Wenn diese Option ausgewählt ist, werden alle Dateien im Ordner *originals* neu indiziert, einschließlich bereits indizierter und unveränderter Dateien. 
-Dies kann nach dem Upgrade erforderlich sein, insbesondere auf neue Hauptversionen.
+Wenn die Option "Index vollständig aktualisieren" gewählt ist, werden alle Dateien in *Originals* neu indexiert. Also auch Dateien, die bereits indexiert und nicht verändert wurden. 
+Das kann nach einem Upgrade auf eine neue Hauptversion erforderlich sein.
 

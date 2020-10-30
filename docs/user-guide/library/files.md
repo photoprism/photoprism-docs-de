@@ -1,22 +1,22 @@
-# Originaldateien #
+# Originale #
 
-Im Abschnitt *Originals* werden alle Dateien Ihres *Originals*-Verzeichnisses angezeigt.
+Im Bereich *Originale* werden alle Dateien deines *Originals* Verzeichnis angezeigt.
 
-Wenn Sie auf eine Datei klicken, wird der Bearbeitungsdialog geöffnet. 
+Klicken auf eine Datei öffnet den Bearbeitungs-Dialog. 
 
 ![Screenshot](img/files.png)
 
-Im Kontextmenü können Sie die folgenden Aktionen ausführen:
+Über das Kontextmenü können folgenden Aktionen ausgeführt werden:
 
 ## Dateien herunterladen ##
-1. Dateien auswählen
-2. Kontextmenü öffnen
-3. Klicken Sie :material-download:
+1. Selektiere Dateien 
+2. Öffne das Kontextmenü
+3. Klicke :material-download:
 
 
 ## Erstellen von Alben aus Dateien ##
-1. Dateien auswählen
-2. Kontextmenü öffnen
-3. Klicken Sie auf :material-folder:
-4. Wählen Sie vorhandenes Album aus oder geben Sie einen neuen Albumnamen ein
-5. Klicken Sie auf zum Album hinzufügen
+1. Selektiere Dateien
+2. Öffne das Kontextmenü
+3. Klicke :material-folder:
+4. Wähle ein vorhandenes Album aus oder tippe einen neuen Albumnamen ein
+5. Klicke *Zum Album hinzufügen*

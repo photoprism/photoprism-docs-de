@@ -1,30 +1,30 @@
-# Importieren von Dateien in Ihre Bibliothek #
+# Dateien importieren #
 
-1. Fügen Sie Dateien zum Ordner *import* hinzu, wenn Sie dies noch nicht getan haben
+1. Stelle sicher, dass sich alle Dateien, die du importieren willst, im *Import* Verzeichnis befinden
 
-2. Gehen Sie mit der Hauptnavigation zu *Bibliothek*, und öffnen Sie die Registerkarte *Import*
+2. Öffne *Dateien*, indem du auf den Link in der Hauptnavigation klickst, dann wechsle zum Tab *Kopieren*
 
-3. Wählen Sie einen Unterordner oder halten Sie die Standardeinstellung, um alle Dateien zu importieren
+3. Wähle optional einen Unterordner aus
 
-4. Wählen Sie *Dateien verschieben*, wenn importierte Dateien aus dem Ordner *import* entfernt werden sollen
+4. Wähle *Dateien verschieben*, wenn deine Dateien nach dem Import aus dem Ordner *Import* entfernt werden sollen
 
-5. Klicken Sie auf *Import*
+5. Klicke *Import*
 
 ![Screenshot](img/import.png)
 
 !!! Tipp
-    Sie können [WebDAV](webdav.md) zum Hinzufügen von Dateien zum Ordner *import*.
-    Dies ist besonders hilfreich, wenn PhotoPrism auf einem Remoteserver ausgeführt wird.
+    Zum Hinzufügen von Dateien zum *Import* Ordner kann [WebDAV](webdav.md) verwendet werden.
+    Das ist besonders hilfreich, wenn PhotoPrism auf einem Remoteserver ausgeführt wird.
 
-!!! Attention
-    Der Import ist in [Schreibmodus](../settings/library.md) wie es erforderlich ist
-    Schreibberechtigungen für den Ordner *originals*.
+!!! Achtung
+    Importieren ist im [read-only Modus](../settings/library.md) nicht möglich, da Schreibrechte benötigt werden.
     
-#### Wann sollte "Dateien verschieben" ausgewählt werden? ####
+#### Wann sollte ich die Option "Dateien verschieben" wählen? ####
 
-Wenn diese Option ausgewählt ist, werden Dateien, die in den Ordner *originals* verschoben wurden oder bereits vorhanden sind,
-wird automatisch aus dem Ordner *import* gelöscht.
-Dadurch wird Speicher gespeichert, wenn Sie sie nicht als Sicherung oder aus einem anderen Grund beibehalten möchten.
+Wenn diese Option ausgewählt ist, werden Dateien, die in den Ordner *Originals* verschoben wurden oder dort bereits vorhanden sind,
+automatisch aus dem *Import* Verzeichnis gelöscht.
+Dadurch wird weniger Speicherplatz benötigt.
+Wähle diese Option nur, wenn du die Dateien nicht als Backup oder aus einem anderen Grund in *Import* behalten möchtest.
 
 
 

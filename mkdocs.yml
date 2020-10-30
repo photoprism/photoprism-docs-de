@@ -7,16 +7,16 @@ nav:
   - License: license.md
   - Contact: contact.md
   - User Guide:
-      - Introduction: user-guide/index.md
+      - Einleitung: user-guide/index.md
       # - Setting up: user-guide/setup.md
-      - Navigate: user-guide/navigate.md
-      - Index:
-          - Introduction: user-guide/library/import-vs-index.md
-          - Index Originals: user-guide/library/indexing.md
-          - Import Files: user-guide/library/import.md
-          - Upload via Web UI: user-guide/library/upload.md
+      - Navigation: user-guide/navigate.md
+      - Dateien hinzufügen:
+          - Enleitung: user-guide/library/import-vs-index.md
+          - Indexieren: user-guide/library/indexing.md
+          - Importieren: user-guide/library/import.md
+          - Upload über die App: user-guide/library/upload.md
           - WebDAV Upload: user-guide/library/webdav.md
-          - Original Files: user-guide/library/files.md
+          - Originale: user-guide/library/files.md
         #- Import from camera: user-guide.md
         #- Import from Facebook: user-guide.md
         #- Import from NAS: user-guide.md
@@ -25,11 +25,11 @@ nav:
       # - Sync and Back Up:
       # - WebDAV Sync
       #    - Nextcloud: user-guide/nextcloud.md
-      - Organize:
-          - Browse:
-            - Sections: user-guide/organize/browse.md
-            - Views: user-guide/organize/views.md
-            - Search & Filters: user-guide/organize/search.md
+      - Organisation:
+          - Entdecken:
+            - Bereiche: user-guide/organize/browse.md
+            - Ansicht: user-guide/organize/views.md
+            - Suche & Filter: user-guide/organize/search.md
           #- Search Filter: user-guide/organize/search.md
           - Review: user-guide/organize/review.md
           - Stacks: user-guide/organize/stacks.md
