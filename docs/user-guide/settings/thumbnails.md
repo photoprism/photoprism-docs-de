@@ -1,7 +1,7 @@
 # Vorschau (Thumbnail) Einstellungen #
 
 Um das beste Ergebnis zu erzielen, solltest du die *JPEG*-Qualität auf ein Minimum von 95 einstellen und den *Lanczos*-Filter verwenden. Diese Qualität benötigt jedoch einiges an Rechenzeit.
-Wir haben die Erfahrung gemacht, dass moderene Desktop- und Server-Prozessoren den *Cubic*-Filter ungefähr 30% schneller als der *Lanczos*-Filter anwenden können. Bei der Wahl der richtigen Einstellungen solltest du bedenken, dass Vorschaubilder nur einmal erzeugt werden und du sie danach für den Rest deines Lebens verwenden kannst.
+Wir haben die Erfahrung gemacht, dass moderene Desktop- und Server-Prozessoren den *Cubic*-Filter ungefähr 30% schneller als den *Lanczos*-Filter anwenden können. Bei der Wahl der richtigen Einstellungen solltest du bedenken, dass Vorschaubilder nur einmal erzeugt werden und du sie danach für den Rest deines Lebens verwenden kannst.
 
 
 ## Einstellmöglichkeiten ##
@@ -28,7 +28,7 @@ Der zur Erstellung von Thumbnails genutzte Filter. (Mögliche Optionen, sortiert
 
 ## Beispiel ##
 
-Die Größe von *JPEG*-Vorschaubildern kann mit dem `-s`-Parameter eingeschränkt werden:ds:
+Die Größe von *JPEG*-Vorschaubildern kann mit dem `-s`-Parameter eingeschränkt werden:
 
 ```
 photoprism -s 720 start
@@ -48,11 +48,11 @@ photoprism -s 720 -q 80 start
 
 Wenn du mehr über die Komprimierungseffekte bei *JPEG*-Dateien erfahren möchtest, ist folgende Seite für dich interessant: [http://fotoforensics.com/tutorial-estq.php](http://fotoforensics.com/tutorial-estq.php)
 
-Die Klassifizierung von Bildern funktioniert offensichtlich am Besten mit scharfen Bildern. Daraus folgt, dass du bei höherer Kompression an Genauigkeit bei der automatischen Erzeugung von *Labeln* verlierst.
+Die Klassifizierung von Bildern funktioniert offensichtlich am Besten mit scharfen Bildern. Daraus folgt, dass du bei höherer Kompression an Genauigkeit bei der automatischen Erzeugung von *Kategorien* verlierst.
 
 Falls das Größenlimit ausgeschöpft ist, zum Beispiel bei der Verwendung eines sehr großen Bildschirms, werden dir in PhotoPrism immer die Originalbilder angezeigt. Deshalb kann es passieren, dass Bilder falsch rotiert angezeigt werden, da nicht jeder Browser die Bilder automatisch und korrekt rotiert.
 
-## Größem ##
+## Größen ##
 
 
 Name      | Source    | Width  | Height  | Use               |

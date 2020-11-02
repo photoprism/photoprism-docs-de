@@ -1,55 +1,54 @@
 # Verbindung via WebDAV #
 
-WebDAV Clients, wie Microsoft Windows Explorer oder Apple Finder, können sich direkt mit PhotoPrism verbinden.
-Dazu werden der *originals Ordner* als Netzwerklaufwerk verbunden und man kann direkt Dateien bearbeiten, als wären sie lokal.
+WebDAV Clients, wie der Microsoft Windows Explorer oder der Apple Finder, können sich direkt mit PhotoPrism verbinden.
+Dazu wird der *Originals* Ordner als Netzwerklaufwerk verbunden, so kannst du Dateien von deinem Computer oder Smartphone aus öffnen, bearbeiten oder löschen.
 
-Der "originals" Ordner für einen öffentlichen Server sieht wie folgt aus:
+Die Url des *Originals* Verzeichnis für öffentliche Server lautet:
 
 ```
 https://admin@example.com/originals/
 ```
 
-Bitte ersetze *example.com* einfach mit der richtigen Domain.
+Bitte ersetze *example.com* mit deiner Domain.
 Der `/` am Ende ist wichtig und darf nicht weggelassen werden.
 
-Zur Verbindung muss man sich ganz normal mit dem Passwort anmelden.
-Das Passwort ändert sich, wenn man es in den *Einstellungen* aktualisiert. Der Nutzername ist `admin`.
+Wenn du dich verbindest, musst du dich mit deinem Passwort authentifizieren.
+Das Passwort kann in den *Einstellungen* geändert werden. Der Nutzername ist `admin`.
 
 !!! Info
-	Du kannst auch mit dem `import` Ordner mounten.
-	Dazu einfach bei der Verbindung den Ordner  `originals/` mit `import/` in der URL ersetzen.
+	Du kannst auch eine Verbindung zum *Import* Verzeichnis aufbauen, indem du in der URL `originals/` mit `import/` ersetzt.
 
-Für Nutzer, die PhotoPrism lokal auf Port *2342* laufen haben sieht die *originals* URL so aus:
+
+Für Nutzer, die PhotoPrism lokal auf Port *2342* betreiben, ist die Url:
 
 ```
 http://admin@localhost:2342/originals/
 ```
 
 !!! Achtung
-	Benutze WebDAV **nicht ohne https** außerhalb deines lokalen, privaten
-	Netzwerks, da sonst das Passwort im Klartext im Internet übertragen wird.
+	Benutze WebDAV **niemals ohne https** außerhalb deines lokalen, privaten
+	Netzwerks, da sonst das Passwort im Klartext über das Internet übertragen wird.
 
-## Eine Verbindung zu einem WebDAV Server unter macOS aufbauen ##
+## Unter macOS mit einem WebDAV Server verbinden ##
 
-1. Im **Finder** unter "Gehe zu" auf "mit Server verbinden" klicken
-2. In das Feld **Serveradresse** die URL eintragen
-3. Auf **Verbinden** drücken
+1. Im **Finder** klicke "Gehe zu" > "Mit Server verbinden"
+2. Trage die Url in das Feld **Serveradresse** ein
+3. Klicke  **Verbinden**
 
-## Eine Verbindung zu einem WebDAV Server unter Windows 10 aufbauen ##
+## Unter Windows 10 mit einem WebDAV Server verbinden ##
 
-1. Den **Windows Explorer** öffenen
-2. Rechtsklick auf **Mein PC**
+1. Öffne den **Windows Explorer**
+2. Klicke mit der rechten Maustaste auf **Mein PC**
 3. Wähle **Netzwerklaufwerk hinzufügen...**
-4. Den Laufwerksbuchstaben und das Verzeichnis wählen, dass mit WebDAV verknüpft werden soll
-	5. Wähle folgenden Optionen aus **Verbindung bei Anmeldung wiederherstellen** und **Verbindung mit anderen Anmeldeinformationen herstellen**
-6. Klick auf Link **Verbindung mit einer Webseite herstellen, auf der Sie Dokumente und Bilder speichern können**
-7. Klicke auf **Weiter**
-8. Klicke auf **Eine benutzerdefinierte Netzwerkadresse auswählen** und dann auf **Weiter**
-9. Trage die URL von oben in das **Internet oder Netzwerkadresse** Feld ein
-10. Drücke auf **Weiter** und dann auf **Fertig stellen**
+4. Wähle den Laufwerksbuchstaben sowie das Verzeichnis, dass mit WebDAV verknüpft werden soll
+5. Wähle die Optionen **Verbindung bei Anmeldung wiederherstellen** und **Verbindung mit anderen Anmeldeinformationen herstellen** aus
+6. Öffne folgenden Link: **Verbindung mit einer Webseite herstellen, auf der Sie Dokumente und Bilder speichern können**
+7. Klicke  **Weiter**
+8. Klicke **Eine benutzerdefinierte Netzwerkadresse auswählen** und dann auf **Weiter**
+9. Trage die URL in das Feld **Internet oder Netzwerkadresse** ein
+10. Klicke **Weiter** und dann **Fertig stellen**
 
-Der "originals" Ordner ist nun verbunden und kann mit dem Windows Explorer verwendet werden.
-Dateien können nur erstellt, bearbeitet oder gelöscht werdern.
+Der Originals Ordner ist nun als Netzwerklaufwerk im Windows Explorer eingebunden und du kannst direkt Dateien oder Verzeichnisse hinzufügen, bearbeiten oder löschen.
 
-Wenn es Probleme mit der WebDAV Verbindung gibt, dann muss eventuell ein Update in der Windows Basic-Authentifizierung
-[geupdatet](https://help.dreamhost.com/hc/en-us/articles/216473357-Accessing-WebDAV-with-Windows) werden.
+
+Wenn du Probleme bei der Verbindung mit WebDav hast, musst du eventuell das Basic-Authentication Level in der Registry [aktualisieren](https://help.dreamhost.com/hc/en-us/articles/216473357-Accessing-WebDAV-with-Windows).

@@ -1,11 +1,5 @@
 # Main navigation.
 nav:
-  - Introduction: index.md
-  - Team: team.md
-  - Funding: funding.md
-  - Credits: credits.md
-  - License: license.md
-  - Contact: contact.md
   - User Guide:
       - Einleitung: user-guide/index.md
       # - Setting up: user-guide/setup.md
@@ -47,19 +41,19 @@ nav:
           - Fotos herunterladen: user-guide/organize/download.md
           - Fotos bearbeiten: user-guide/organize/edit.md
       - Backup:
-          - Connect via WebDAV:  user-guide/backup/webdav.md
+          - Verbindung via WebDAV:  user-guide/backup/webdav.md
           - Nextcloud Sync:  user-guide/backup/nextcloud.md
-      - Share:
-          - Share album via link: user-guide/share/share.md
-      - Settings:
-          - Library: user-guide/settings/library.md
-          - User Interface: user-guide/settings/ui.md
-          - Account: user-guide/settings/account.md
+      - Teilen:
+          - Album über Link teilen: user-guide/share/share.md
+      - Einstellungen:
+          - Dateien: user-guide/settings/library.md
+          - Benutzeroberfläche: user-guide/settings/ui.md
+          - Konto: user-guide/settings/account.md
           - Places: user-guide/settings/places.md
           - Thumbnails: user-guide/settings/thumbnails.md
-      - Use Cases:
-          - Export files from Google Photos: user-guide/use-cases/google.md
-          - Export files from Flickr: user-guide/use-cases/flickr.md
+      - Anwendungsfälle:
+          - Dateien aus Google Photos exportieren: user-guide/use-cases/google.md
+          - Dateien aus Flickr exportieren: user-guide/use-cases/flickr.md
           #- Link directories from remote:
       - FAQ: user-guide/faq.md
     # - Metadata: user-guide/metadata.md

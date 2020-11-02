@@ -1,9 +1,9 @@
-# Export files from Flickr #
+# Exportiere Dateien aus Flickr #
 <!--@Micha what do we currently import from Googles json? 
 @Micha what might we import later? -->
 
 1. Gehe zu https://www.flickr.com/account
-2. *Anfrage* Ihre Flickr-Daten
-3. Abhängig von der Anzahl der Fotos kann es einige Tage dauern, bis Ihre Daten exportiert werden
-4. *Herunterladen* Ihre Daten und fügen Sie es Ihren *Originalverzeichnis* (einschließlich JSON-Dateien)
-5. Start [*indexing*](../library/indexing.md)
+2. *Frage* deine Flickr Daten an
+3. Abhängig von der Anzahl/Größe der Fotos kann es einige Tage dauern, bis deine Daten exportiert sind
+4. *Lade* deine Daten herunter und fügen sie (einschließlich JSON-Dateien) deinem *Originals* Verzeichnis hinzu
+5. [*Indexiere*](../library/indexing.md) die Dateien
