@@ -15,6 +15,6 @@ PhotoPrism bietet drei schöne Ansichten, um deine Fotos und Videos anzuzeigen.
 
 Um zwischen den Ansichten zu wechseln, kannst du den entsprechenden Filter in der Filterleiste oder einen der Ansicht-Schalter (:material-view-column:, :material-view-comfy:, :material-view-list:) in der Ecke oben rechts nutzen.
 
-Alternativ kannst du Fotos und Videos in der *Vollbild Ansicht* anzeigen. Um eine Diashow zu starten, klicke auf :material-play:.
+Alternativ kannst du dir Fotos und Videos auch in der *Vollbild Ansicht* anzeigen lassen. Um eine Diashow zu starten, klicke auf :material-play:.
 
 ![Screenshot](img/slideshow.png)

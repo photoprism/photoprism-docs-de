@@ -16,7 +16,7 @@ Mit der Standardeinstellung werden alle Fotos, die als privat markiert sind, in 
 !!! Info
     In den [Einstellungen](../settings/ui.md) kannst du diese Funktion deaktivieren.
  
-#### Ein Foto/Video als privat markieren ####
+#### Einzelne Fotos/Videos als privat markieren ####
 
 1. Gehe zu *Fotos*
 2. Wechsele zur *Listen-Ansicht*
@@ -32,17 +32,17 @@ Mit der Standardeinstellung werden alle Fotos, die als privat markiert sind, in 
 
 ![Screenshot](img/private-context-menu.png)
 
-#### Entferne die Privat-Markierung von einem Foto/Video ####
+#### Entferne die Privat-Markierung von einzelnen Fotos/Videos ####
 
-1. Gehe zu *Privat*
-2. Stelle sicher, dass die Listenansicht (*list view*) aktiv ist
+1. Gehe zum Bereich *Privat*
+2. Stelle sicher, dass die *Listen-Ansicht* aktiv ist
 3. Klicke auf :material-lock: in der rechten Spalte
 
 ![Screenshot](img/remove-private-list.png)
 
 #### Entferne Privat-Markierung von mehreren Fotos/Videos ####
 
-1. Gehe zu *Privat*
+1. Gehe zum Bereich *Privat*
 2. Selektiere die Fotos/Videos, die nicht mehr privat sein sollen
 3. Öffne das Kontextmenü und klicke :material-lock:
 

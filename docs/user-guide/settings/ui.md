@@ -35,7 +35,7 @@ Diese Einstellung kann hilfreich sein, wenn du anderen Personen Zugriff auf dein
 Wenn diese Option deaktiviert ist, können Dateien nicht über PhotoPrism heruntergeladen werden.
 
 #### Teilen :material-share-variant: ####
-Wenn diese Option deaktiviert ist, können Alben weder geteilt noch zu anderen Diensten (wie NextCloud) hochgeladen werden.
+Wenn diese Option deaktiviert ist, können Alben weder geteilt noch zu anderen Diensten (wie Nextcloud) hochgeladen werden.
 
 #### Archivieren :material-archive-arrow-down: ####
 Diese Option steuert das *Archiv*. Fotos die archiviert wurden bevor du die Option deaktivierst, werden in *Fotos/Videos* dargestellt.

@@ -1,11 +1,11 @@
 # Main navigation.
 nav:
-  - User Guide:
+  - Benutzer Handbuch:
       - Einleitung: user-guide/index.md
       # - Setting up: user-guide/setup.md
       - Navigation: user-guide/navigate.md
       - Dateien hinzufügen:
-          - Enleitung: user-guide/library/import-vs-index.md
+          - Einleitung: user-guide/library/import-vs-index.md
           - Indexieren: user-guide/library/indexing.md
           - Importieren: user-guide/library/import.md
           - Upload über die App: user-guide/library/upload.md

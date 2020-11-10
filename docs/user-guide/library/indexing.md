@@ -1,17 +1,16 @@
 # Dateien indexieren #
 
 !!! Info
-    Wenn du PhotoPrism zum ersten Mal verwendest, gehe sicher, dass deine Foto und Video 
-    Sammlung als *originals* Ordner konfiguriert ist.
+    Wenn du PhotoPrism zum ersten Mal verwendest, stelle sicher, dass deine Foto und Video 
+    Sammlung als *Originals* Ordner konfiguriert ist.
     Details hierzu findest du in unserer [Installationsanleitung](https://docs.photoprism.org/getting-started/).
-    Wenn du mit einem leeren *Originals* Ordner beginnst, musst du zunächst Dateien über dein Dateisystem hinzufügen.
+    Wenn du mit einem leeren *Originals* Ordner beginnst, musst du diesem zunächst Dateien über dein Dateisystem hinzufügen.
 
-
-1. Öffne *Dateien*, indem du auf den Link in der Hauptnavigation klickst
+1. Öffne den Bereich *Dateien*, indem du auf den Link in der Hauptnavigation klickst
 
 2. Wählen einen Unterordner aus, oder nutze die Standardeinstellung, um alle Dateien zu indexieren
 
-3. Wähle *Vollständig Indexieren*, um alle Dateien neu zu indexieren, einschließlich bereits indexierter und unveränderter Dateien
+3. Wähle *Vollständig Indexieren*, falls du alle Dateien, einschließlich bereits indexierter und unveränderter Dateien, indexieren möchtest
 
 4. Klicke *Start*, um mit der Indexierung zu beginnen
 

@@ -1,5 +1,5 @@
 # Alben #
-### Ein neues Album erstellen ###
+### Album erstellen ###
 
 1. Gehe zu *Alben*
 2. Klicke :material-plus: oben rechts

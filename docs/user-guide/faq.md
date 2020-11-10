@@ -20,11 +20,11 @@ Die meisten Nutzer können ihre Erinnerungen nicht strikt hierarchisch sortieren
 
 ### Was ist der Unterschied zwischen Suchbegriffen und Kategorien ###
 Suchbegriffe bestehen aus einer Liste von Begriffen, welche aus Metadaten, Dateinamen und anderen Quellen, wie Geoddaten, extrahiert wurden.
-Bilder mit passenden Suchbegriffen tauchen automatisch auch in den verwandten Kategorien auf.
+Bilder mit passenden Suchbegriffen tauchen automatisch auch in den entsprechenden Kategorien auf.
 
 Auch wenn sich Suchbegriffe und Kategorien überschneiden können, dienen sie unterschiedlichen Zwecken:
 
-* **Kategorien** können übergeordnete Kategorien haben und werden primär für die Kalssifizierung verwendet, z.B. "Tier", "Katze", "Boot".
+* **Kategorien** können übergeordnete Kategorien haben und werden primär für die Klassifizierung verwendet, z.B. "Tier", "Katze", "Boot".
 Duplikate und Unstimmigkeiten sollten vermieden werden.
 * **Suchbegriffe** werden hauptsächlich zum Suchen verwendet. Sie können ähnliche Begriffe und Übersetzungen enthalten wie "Kätzchen", "Katze", "Kater".
 

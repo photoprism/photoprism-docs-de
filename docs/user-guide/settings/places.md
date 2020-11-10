@@ -7,7 +7,7 @@ Für die Benutzer bedeutet dies eine bessere Performanz, eine höhere Verfügbar
 
 Anfragen an die Geocoding API werden nicht gespeichert. Die Entwickler von *PhotoPrism Places* können jedoch zwischengespeicherte Daten in der Datenbank (MariaDB) einsehen. Diese Daten besitzen jedoch keinerlei persönliche Informationen. Die Daten werden nach dem Zufallsprinzip mit Hotspots um Touristenatraktionen und Großstädten verteilt.
 
-Aufgrund der verwendeten HTTPS-Verschlüsselung, kann dein Internetprovider nicht die übertragenen Daten einsehen. Er kann jedoch sehen, dass du Kontakt zu einem Server aufgebaut hast.
+Aufgrund der verwendeten HTTPS-Verschlüsselung, kann dein Internetprovider die übertragenen Daten nicht einsehen. Er kann jedoch sehen, dass du Kontakt zu einem Server aufgebaut hast.
 
 Die Geocoding-Programmierschnittstelle nutzt ungefähre Koordinaten und kodiert sie mit [S2](https://s2geometry.io/resources/s2cell_statistics.html). Straßen und Hausnummern werden ignoriert.
 

@@ -4,11 +4,11 @@ Um das beste Ergebnis zu erzielen, solltest du die *JPEG*-Qualität auf ein Mini
 Wir haben die Erfahrung gemacht, dass moderene Desktop- und Server-Prozessoren den *Cubic*-Filter ungefähr 30% schneller als den *Lanczos*-Filter anwenden können. Bei der Wahl der richtigen Einstellungen solltest du bedenken, dass Vorschaubilder nur einmal erzeugt werden und du sie danach für den Rest deines Lebens verwenden kannst.
 
 
-## Einstellmöglichkeiten ##
+## Konfigurations Optionen ##
 
 `--jpeg-quality value, -q value`
 
-setze den Wert auf 95 für hochqualitative Thumbnails. (Wertebereich 25-100, Standardwert 90)  [$PHOTOPRISM_JPEG_QUALITY]
+Setze den Wert auf 95 für hochqualitative Thumbnails. (Wertebereich 25-100, Standardwert 90)  [$PHOTOPRISM_JPEG_QUALITY]
 
 `--thumb-size value, -s value`
 
@@ -48,7 +48,7 @@ photoprism -s 720 -q 80 start
 
 Wenn du mehr über die Komprimierungseffekte bei *JPEG*-Dateien erfahren möchtest, ist folgende Seite für dich interessant: [http://fotoforensics.com/tutorial-estq.php](http://fotoforensics.com/tutorial-estq.php)
 
-Die Klassifizierung von Bildern funktioniert offensichtlich am Besten mit scharfen Bildern. Daraus folgt, dass du bei höherer Kompression an Genauigkeit bei der automatischen Erzeugung von *Kategorien* verlierst.
+Die Klassifizierung von Bildern funktioniert mit scharfen Bildern offensichtlich am Besten. Daraus folgt, dass du bei höherer Kompression an Genauigkeit bei der automatischen Erzeugung von *Kategorien* verlierst.
 
 Falls das Größenlimit ausgeschöpft ist, zum Beispiel bei der Verwendung eines sehr großen Bildschirms, werden dir in PhotoPrism immer die Originalbilder angezeigt. Deshalb kann es passieren, dass Bilder falsch rotiert angezeigt werden, da nicht jeder Browser die Bilder automatisch und korrekt rotiert.
 

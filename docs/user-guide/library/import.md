@@ -2,11 +2,11 @@
 
 1. Stelle sicher, dass sich alle Dateien, die du importieren willst, im *Import* Verzeichnis befinden
 
-2. Öffne *Dateien*, indem du auf den Link in der Hauptnavigation klickst, dann wechsle zum Tab *Kopieren*
+2. Öffne den Bereich *Dateien*, indem du auf den Link in der Hauptnavigation klickst, dann wechsle zum Tab *Kopieren*
 
 3. Wähle optional einen Unterordner aus
 
-4. Wähle *Dateien verschieben*, wenn deine Dateien nach dem Import aus dem Ordner *Import* entfernt werden sollen
+4. Wähle optional *Dateien verschieben*, wenn deine Dateien nach dem Import aus dem Ordner *Import* entfernt werden sollen
 
 5. Klicke *Import*
 
@@ -17,7 +17,7 @@
     Das ist besonders hilfreich, wenn PhotoPrism auf einem Remoteserver ausgeführt wird.
 
 !!! Achtung
-    Importieren ist im [read-only Modus](../settings/library.md) nicht möglich, da Schreibrechte benötigt werden.
+    Importieren ist im [read-only Modus](../settings/library.md) (schreibgeschützt) nicht möglich, da Schreibrechte benötigt werden.
     
 #### Wann sollte ich die Option "Dateien verschieben" wählen? ####
 

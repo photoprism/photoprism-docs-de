@@ -2,7 +2,7 @@
 Eingescannte Fotos können als *Scan* markiert werden.
 
 !!! Hinweis
-    Wir arbeiten daran, eingescannte Fotos in der Zukunft automatisch zu erkennen.
+    Wir arbeiten daran, eingescannte Fotos in Zukunft automatisch zu erkennen.
 
 ## Markieren einer Aufnahme als Scan ##
 

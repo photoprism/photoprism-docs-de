@@ -65,7 +65,7 @@ Im Tab *Kategorien* können die [*Kategorien*](labels.md) eines Fotos/Videos ang
 
 ### Dateien bearbeiten###
 Im Tab *Dateien* werden alle Dateien angezeigt, die zu einem Foto gehören.
-Ein Foto kann aus mehreren Dateien bestehen. Beispielsweise ein *Raw-File*, eine dazugehörige *JPEG-Version* sowie eine verknüpfte *XMP/JSON Datei*.
+Ein Foto kann aus mehreren Dateien bestehen. Beispielsweise einer *RAW-Datei*, eine dazugehörige *JPEG-Version* sowie eine verknüpfte *XMP/JSON Datei*.
 
 ![Screenshot](img/files-1.png)
 

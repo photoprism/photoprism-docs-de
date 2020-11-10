@@ -62,7 +62,7 @@ PhotoPrism kann mit einem Nextcloud Server verbunden werden. So können zum Beis
 !!! Achtung
     Videos werden noch nicht synchronisiert. Wir arbeiten daran.
 
-### Backup / Synchronisation Optionen ###
+### Backup Optionen ###
 * *Dateien herunterladen*  - alle Dateien, die noch nicht in PhotoPrism existieren, werden regelmäßig von deiner Nextcloud Instanz heruntergeladen
 * *Dateien hochladen* - alle Dateien, die auf deiner Nextcloud noch nicht existieren, werden regelmäßig von PhotoPrism auf deine Nextcloud Instanz geladen
 * *Namen beibehalten* Dateinamen von Nextcloud werden beibehalten

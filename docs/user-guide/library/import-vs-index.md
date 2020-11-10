@@ -62,8 +62,8 @@ Ordnerstruktur in *Import* und *Originals* nach Import mit der "Verschieben" Opt
 
 
 !!! Info
-    Originaldatei- und Ordnernamen werden zum Erstellen von Keywords verwendet. 
-    Falls du ein Verzeichnis mit dem Pfad "Urlaub/Afrika" importierst oder indexierst erhalten alle Dateien aus diesem Ordner die Keywords "Urlaub" und "Afrika".
+    Originaldatei- und Ordnernamen werden zum Erstellen von Suchbegriffen verwendet. 
+    Falls du ein Verzeichnis mit dem Pfad "Urlaub/Afrika" importierst oder indexierst erhalten alle Dateien aus diesem Ordner die Suchbegriffe "Urlaub" und "Afrika".
 
 
 ### Schlussfolgerung ###
