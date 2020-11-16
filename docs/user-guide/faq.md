@@ -31,7 +31,7 @@ Duplikate und Unstimmigkeiten sollten vermieden werden.
 ### Welche Datei Typen werden unterstützt?###
 
 PhotoPrism's primäres Dateiformat ist JPEG.
-Während der Indexierung werden für RAW, HEIF, TIFF, PNG, BMP und GIF Dateien JPEG Dateien erstellt.
+Während der Indizierung werden für RAW, HEIF, TIFF, PNG, BMP und GIF Dateien JPEG Dateien erstellt.
 Diese werden für die Klassifizierung und das Resampling benötigt.
 
 Unterstützung spezieller RAW Formate ist abhängig von der Laufzeitumgebung sowie der Konfiguration. 
@@ -39,7 +39,7 @@ PhotoPrism kann [Darktable](https://www.darktable.org/) und [RawTherapee](https:
 Auf Mac OS, wird möglicherweise auch [Sips](https://ss64.com/osx/sips.html) verwendet.
 
 Momentan unterstützen wir nur MPEG-4 AVC Videodateien. In einem späteren Release sind weitere Formate geplant.
-Zusätzlich solltest du PhotoPrism so konfigurieren, dass automatisch JSON Sidecar-Dateien erstellt werden, damit Metadaten deiner Videos, wie Aufnahmeort und Dauer indexiert werden können.
+Zusätzlich solltest du PhotoPrism so konfigurieren, dass automatisch JSON Sidecar-Dateien erstellt werden, damit Metadaten deiner Videos, wie Aufnahmeort und Dauer indiziert werden können.
 
 Falls du Probleme mit einem bestimmten Dateiformat hast, öffne gerne ein Ticket.
 
@@ -53,7 +53,7 @@ werden diese zu einem Bildstapel gruppiert. Du findest sie im Bereich *Bildstape
 Das kommt vor, wenn es zum Aufnahmezeitpunkt Probleme mit deinen Kameraeinstellungen gab.
 Du kannst das Datum im [Bearbeitungs-Dialog](organize/edit.md) ändern. Hier wird allerdings nur der Index in PhotoPrism geändert.
 
-Um das Datum direkt in deiner Originaldatei zu ändern nutze bitte andere Apps wie Photoshop oder Exiftool und indexiere deine Dateien anschließend erneut.
+Um das Datum direkt in deiner Originaldatei zu ändern nutze bitte andere Apps wie Photoshop oder Exiftool und indiziere deine Dateien anschließend erneut.
 
 ### Wie kann ich Dateien endgültig löschen? ###
 Momentan verändern wir Originaldateien (noch) nicht, um versehentlichen Verlust von Daten oder Konflikte mit anderen Apps zu vermeiden.
@@ -61,4 +61,4 @@ Du kannst Bilder archivieren, dann werden sie von *Fotos* ins *Archiv* verschobe
 
 Die Funktion Bilder in PhotoPrism endgültig zu löschen haben wir für einen späteren Release geplant. Siehe [hier](https://github.com/photoprism/photoprism/issues/167).
 
-Wenn du Dateien manuell oder bei der Nutzung von anderen Apps löschst, vergiss nicht deine Dateien erneut zu indexieren oder das Kommando `photoprism purge` im Terminal auszuführen.
+Wenn du Dateien manuell oder bei der Nutzung von anderen Apps löschst, vergiss nicht deine Dateien erneut zu indizieren oder das Kommando `photoprism purge` im Terminal auszuführen.

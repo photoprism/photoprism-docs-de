@@ -62,7 +62,7 @@ Automatisch zugewiesene *Kategorien* können entfernt werden. Manuell hinzugefü
     
     ![Screenshot](img/edit-label-3.png)
 
-5. Nach der nächsten [*Indexierung*](../index.md) werden deine Änderungen für alle Fotos übernommen
+5. Nach der nächsten [*Indizierung*](../index.md) werden deine Änderungen für alle Fotos übernommen
 
     ![Screenshot](img/edit-label-4.png)
 
@@ -70,7 +70,7 @@ Automatisch zugewiesene *Kategorien* können entfernt werden. Manuell hinzugefü
     Beachte, dass diese Änderung alle Fotos betrifft, die mit dieser *Kategorie* verknüpft sind.
 
 ### Kategorie löschen ###
-*Kategorien* können dauerhaft gelöscht werden. Eine gelöschte *Kategorie* wird bei der [*Indexierung*](../index.md) in Zukunft nicht mehr vergeben.
+*Kategorien* können dauerhaft gelöscht werden. Eine gelöschte *Kategorie* wird bei der [*Indizierung*](../index.md) in Zukunft nicht mehr vergeben.
 
 1. Gehe zu *Kategorien*
 2. Selektiere die zu löschende *Kategorie*
@@ -78,4 +78,4 @@ Automatisch zugewiesene *Kategorien* können entfernt werden. Manuell hinzugefü
 4. Bestätige
 
 !!! Achtung
-    Wenn eine gelöschte *Kategorie* wieder hergestellt werden soll, muss diese einem Foto hinzugefügt sowie die [*Indexierung*](../library/indexing.md) gestartet werden.
+    Wenn eine gelöschte *Kategorie* wieder hergestellt werden soll, muss diese einem Foto hinzugefügt sowie die [*Indizierung*](../library/indexing.md) gestartet werden.

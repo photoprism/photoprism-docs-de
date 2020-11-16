@@ -6,7 +6,7 @@ nav:
       - Navigation: user-guide/navigate.md
       - Dateien hinzufügen:
           - Einleitung: user-guide/library/import-vs-index.md
-          - Indexieren: user-guide/library/indexing.md
+          - Indizieren: user-guide/library/indexing.md
           - Importieren: user-guide/library/import.md
           - Upload über die App: user-guide/library/upload.md
           - WebDAV Upload: user-guide/library/webdav.md

@@ -4,7 +4,7 @@ Falls PhotoPrism auf einem Server ausgeführt wird, kann WebDAV benutzt werden, 
 
 Folge hierzu dieser [Anleitung](../backup/webdav.md).
 
-Sobald alle Dateien hinzugefügt sind, können sie [importiert oder indexiert](import-vs-index.md) werden.
+Sobald alle Dateien hinzugefügt sind, können sie [importiert oder indiziert](import-vs-index.md) werden.
 
 <!--### Hinzufügen von Fotos über WebDAV unter MacOS ###
 

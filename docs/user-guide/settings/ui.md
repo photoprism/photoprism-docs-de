@@ -12,7 +12,7 @@ Wenn diese Option aktiviert ist, werden private Fotos und Videos nicht in *Fotos
 Wenn diese Option aktiviert ist, musst du Fotos und Videos mit geringer Qualität [*überprüfen*](../organize/review.md), bevor sie in *Fotos* oder *Videos* angezeigt werden.
 
 #### Automatische Konvertierung zu JPEG :material-camera: ####
-Wenn diese Option aktiviert ist, werden während der [*Indexierung*](../library/indexing.md) automatisch *JPEG*-Vorschaubilder deiner *RAW*-Dateien erstellt. Die *JPEG*-Dateien werden im gleichen Ordner wie das Originalbild abgelegt.
+Wenn diese Option aktiviert ist, werden während der [*Indizierung*](../library/indexing.md) automatisch *JPEG*-Vorschaubilder deiner *RAW*-Dateien erstellt. Die *JPEG*-Dateien werden im gleichen Ordner wie das Originalbild abgelegt.
 
 !!! Attention
     Falls diese Option deaktiviert ist, und es RAW Dateien ohne dazugehöriges JPEG gibt, wird es für diese Dateien keine Vorschau geben.
@@ -56,7 +56,7 @@ Wenn diese Option deaktiviert ist, wird der Bereich *Kategorien* nicht angezeigt
 Wenn diese Option deaktiviert ist, wird der Bereich *Dateien* nicht angezeigt.
 
 #### Import :material-folder-plus: ####
-Wenn diese Option deaktiviert ist, gibt es keine Möglichkeit Fotos zu [*importieren*](../library/import.md). In diesem Fall musst du neue Fotos über eine [*Indexierung*](../library/indexing.md) hizufügen.
+Wenn diese Option deaktiviert ist, gibt es keine Möglichkeit Fotos zu [*importieren*](../library/import.md). In diesem Fall musst du neue Fotos über eine [*Indizierung*](../library/indexing.md) hizufügen.
 
 #### Logs :material-text: ####
 Wenn diese Option deaktiviert ist, werden keine Server-Logs angezeigt.
