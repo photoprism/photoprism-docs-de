@@ -11,7 +11,7 @@ Aufgrund der verwendeten HTTPS-Verschlüsselung, kann dein Internetprovider die 
 
 Die Geocoding-Programmierschnittstelle nutzt ungefähre Koordinaten und kodiert sie mit [S2](https://s2geometry.io/resources/s2cell_statistics.html). Straßen und Hausnummern werden ignoriert.
 
-![](https://pbs.twimg.com/media/EN9AoYdWkAIqVDD?format=jpg&name=medium)
+![](img/placesPrivacy.jpeg)
 
 ## Performanz ##
 
