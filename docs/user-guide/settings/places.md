@@ -1,7 +1,10 @@
 # PhotoPrism Places #
 
-Vor kurzem haben wir **PhotoPrism Places** in Betrieb genommen. Dabei handelt es sich um eine Geocoding API, die die bisherige OpenStreetMap Infrastruktur ersetzt.
-Für die Benutzer bedeutet dies eine bessere Performanz, eine höhere Verfügbarkeit und mehr Privatsphäre. Zusätzlich werden wir in Zukunft Informationen über öffentliche Events bereitstellen, die an einem bestimmten Ort stattgefunden haben. Dadurch können beispielsweise automatisch Alben von Musikfestivals oder Sportevents erzeugt werden.
+PhotoPrism bietet dir 4 hochauflösende Kartenansichten. 
+Um deinen Bildern Informationen wie Land, Stadt oder Kategorie hinzuzufügen, haben wir kürzlich **PhotoPrism Places** in Betrieb genommen. 
+PhotoPrism Places ist unsere eigene Geocoding API, basierend auf  OpenStreetMap.
+Zusätzlich werden wir in Zukunft Informationen über öffentliche Events bereitstellen, die an bestimmten Orten stattgefunden haben. 
+Dadurch können beispielsweise automatisch Alben von Musikfestivals oder Sportevents erzeugt werden.
 
 ## Datenschutz ##
 
