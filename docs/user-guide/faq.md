@@ -62,3 +62,6 @@ Du kannst Bilder archivieren, dann werden sie von *Fotos* ins *Archiv* verschobe
 Die Funktion Bilder in PhotoPrism endgültig zu löschen haben wir für einen späteren Release geplant. Siehe [hier](https://github.com/photoprism/photoprism/issues/167).
 
 Wenn du Dateien manuell oder bei der Nutzung von anderen Apps löschst, vergiss nicht deine Dateien erneut zu indizieren oder das Kommando `photoprism purge` im Terminal auszuführen.
+
+### Es sind bereits einige meiner Bilder indiziert. Warum befinden sich noch keine Bilder in den Bereichen Ordner, Kalender und Erlebnisse? ###
+Bilder werden erst am Ende der Indizierung zu den Bereichen Ordner, Kalender und Erlebnisse hinzugefügt.

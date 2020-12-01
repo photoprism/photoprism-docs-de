@@ -1,9 +1,28 @@
-# PhotoPrism Anleitung
+# PhotoPrism: Browse Your Life in Pictures
 
-Unsere Schritt-für-Schritt Installationsanweisungen findest du [hier](https://docs.photoprism.org/getting-started/) - alles, was du brauchst, ist ein Webbrowser sowie Docker, um den Server zu betreiben. Docker ist für Mac, Linux und Windows verfügbar.
+PhotoPrism® ist eine server-basierte App zum Betrachten, Organisieren und Teilen deiner persönlichen Fotosammlung.
+Wir nutzen die neuesten Technologien, um Bilder automatisch zu kategorisieren.
+Verabschiede dich von Lösungen, die dich zwingen deine Erinnerungen in die Cloud zu laden!
 
-Nach der Installation kannst du deine vorhandenen Dateien [indizieren oder importieren](user-guide/library/import-vs-index.md). Bitte habe etwas Geduld, je nachdem wie groß deine Bildsammlung ist, wird das eine Weile dauern.
 
-Bereits indizierte Fotos werden in [Fotos](user-guide/organize/browse.md), Videos in [Videos](user-guide/organize/video.md) angezeigt. Die Anzahlsanzeige deiner Fotos und Videos in der Navigation wird laufend aktualisiert.
+![Screenshot](img/preview.jpg)
 
-Falls deine Fotos nicht auftauchen, kann es sein, dass sie im Bereich [Bestätigen](user-guide/organize/review.md) sind, da die Qualität niedrig ist oder keine Metadaten vorhanden sind. Du kannst diese und andere Funktionen in den  [Einstellungen](user-guide/settings/ui.md) deaktivieren, um PhotoPrism an deine Bedürfnisse anzupassen.
+## Funktionen ##
+
+* Unsere klar strukturtierte [Benutzeroberfläche](https://demo.photoprism.org/) macht dir das Organisieren und Teilen deiner persönlichen Fotosammlung
+so einfach wie möglich — egal ob von deinem Handy, Tablet oder Computer.
+* Indiziere alle deine Dateien, ohne dir über Duplikate oder [RAW zu JPEG Konvertierung](https://docs.photoprism.org/developer-guide/library/converting/) Gedanken zu machen.
+* Automatische [Objekterkennung](https://docs.photoprism.org/developer-guide/metadata/classification/) basierend auf Google TensorFlow.
+Zusätzlich erkennt unser Indexer _Farben_, _Chroma_, _Helligkeit_, _Panorama-Projektion_, _Ort_, _Qualität_ und viele andere Eigenschaften.
+* Vier hochauflösende [Kartenansichten](https://demo.photoprism.org/places) lassen dich lang vergessene Aufnahmen wieder entdecken.
+* WebDav Clients, wie Microsoft's Windows Explorer oder Apple's Finder können sich direkt mit PhotoPrism [verbinden](user-guide/backup/webdav.md),
+so dass du Dateien von deinem Computer aus öffnen, bearbeiten und löschen kannst, als wären sie lokal vorhanden.
+Du kannst deine Bilder auch einfach mit einer Nextcloud Instanz synchronisieren.
+* PhotoPrism verhält sich wie eine [native App](https://en.wikipedia.org/wiki/Progressive_web_application), du kannst sie natürlich auch deinem Home-Bildschirm hinzufügen.
+
+
+<p style="text-align: center; padding: 20px 4px;">
+<a class="md-button" style="background-color: #546e7a; font-size: 0.66rem; font-weight: normal; color: white" href="https://demo.photoprism.org/" target="_blank">DEMO</a>
+<a class="md-button" style="background-color: #546e7a; font-size: 0.66rem; font-weight: normal; color: white" href="/user-guide/">ANLEITUNG</a>
+<a class="md-button" style="background-color: #546e7a; font-size: 0.66rem; font-weight: normal; color: white" href="https://docs.photoprism.org/getting-started/">LEGE LOS</a>
+</p>
