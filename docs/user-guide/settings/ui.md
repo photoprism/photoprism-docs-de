@@ -17,10 +17,16 @@ Wenn diese Option aktiviert ist, werden während der [*Indizierung*](../library/
 !!! Attention
     Falls diese Option deaktiviert ist, und es RAW Dateien ohne dazugehöriges JPEG gibt, wird es für diese Dateien keine Vorschau geben.
     
-#### Sequenzen gruppieren :material-image-multiple: ####
+#### Bildstapel :material-image-multiple: ####
 Wenn diese Option aktiviert ist, werden zusammengehörige Dateien von PhotoPrism automatisch zu Bildstapeln zusammengefasst.
 Ein Bildstapel hat ein primäres Bild, das in den Ansichten angezeigt wird. Deine gruppierten Dateien findest du unter  [*Bildstapel*](../organize/stacks.md).
-    
+
+PhotoPrism bietet die folgenden Optionen, um Bilder zu gruppieren:
+
+* Fortlaufende Dateinamen
+* Gleicher Ort und Zeit
+* Gleiche eindeutige Bild-ID
+
 ### Benutzeroberfläche ###
 Hier kannst du das *Design* und die *Sprache* der Benutzeroberfläche ändern.
 
