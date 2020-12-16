@@ -38,8 +38,8 @@ Unterstützung spezieller RAW Formate ist abhängig von der Laufzeitumgebung sow
 PhotoPrism kann [Darktable](https://www.darktable.org/) und [RawTherapee](https://rawtherapee.com/) für die RAW zu JPEG Konvertierung nutzen. 
 Auf Mac OS, wird möglicherweise auch [Sips](https://ss64.com/osx/sips.html) verwendet.
 
-Momentan unterstützen wir nur MPEG-4 AVC Videodateien. In einem späteren Release sind weitere Formate geplant.
-Zusätzlich solltest du PhotoPrism so konfigurieren, dass automatisch JSON Sidecar-Dateien erstellt werden, damit Metadaten deiner Videos, wie Aufnahmeort und Dauer indexiert werden können.
+Wir unterstützen alle gängigen Videodateien.
+Du solltest PhotoPrism so konfigurieren, dass automatisch JSON Sidecar-Dateien erstellt werden, damit Metadaten deiner Videos, wie Aufnahmeort und Dauer indexiert werden können.
 
 Falls du Probleme mit einem bestimmten Dateiformat hast, öffne gerne ein Ticket.
 

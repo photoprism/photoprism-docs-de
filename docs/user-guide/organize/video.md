@@ -1,8 +1,8 @@
 ### Videos ###
-Aktuell unterstützt PhotoPrism Videos, die mit avc1 codiert wurden.
+Aktuell unterstützt PhotoPrism alle gängigen Videoformate.
 
 !!! Info
-    Natürlich werden in Zukunft deutlich mehr Videoformate unterstützt.
+    Falls du ein Fomrat findest, das nicht abgespielt werden kann, melde dich gerne bei uns.
 
 Im Bereich *Videos* findest du alle Videos deiner Sammlung. Um ein Video abzuspielen, klicke auf :material-play:.
 
