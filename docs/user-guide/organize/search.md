@@ -46,14 +46,14 @@ Sofern mehrere Filter ausgewählt wurden, werden nur Fotos von der Suche berück
    ![Screenshot](img/color-green.png)
 
 
-# Suchfilter #
+### Suchfilter Übersicht ###
 PhotoPrism unterstützt die folgenden Filter im Suchfeld.
     
 | Filter      | Examples |
 | ----------- | ----------- |
-| after      |    2006-01-02    |
+| after      |    2015-06-30    |
 | archived     |    true, false    |
-| before      |   2009-01-02     |
+| before      |   2016-12-22     |
 | chroma     |   5     |
 | color  | purple, magenta, pink, red, orange, gold, yellow, lime, green, teal, cyan, blue, brown, white, grey, black       |
 | country     | "de" |
@@ -89,3 +89,20 @@ PhotoPrism unterstützt die folgenden Filter im Suchfeld.
 | video | true, false |
 | year     |  2012    |
 
+## UND Suche ##
+Du kannst verschiedene Filter kombinieren:
+
+```
+mono:true review:false
+```
+
+Gefunden werden alle Bilder, die monochrom **UND** nicht in Überprüfen sind.
+
+## ODER Suche ##
+Für eine ODER Suche verwende |:
+
+```
+label:cat|dog
+```
+
+Hier werden alle Bilder mit Kategorie Katze **ODER** Hund angezeigt.
