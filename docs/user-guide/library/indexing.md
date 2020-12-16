@@ -1,4 +1,4 @@
-# Dateien indizieren #
+# Dateien indexieren #
 
 !!! Info
     Wenn du PhotoPrism zum ersten Mal verwendest, stelle sicher, dass deine Foto und Video 
@@ -8,11 +8,11 @@
 
 1. Öffne den Bereich *Dateien*, indem du auf den Link in der Hauptnavigation klickst
 
-2. Wählen einen Unterordner aus, oder nutze die Standardeinstellung, um alle Dateien zu indizieren
+2. Wählen einen Unterordner aus, oder nutze die Standardeinstellung, um alle Dateien zu indexieren
 
-3. Wähle *Index vollständig aktualisieren*, falls du alle Dateien, einschließlich bereits indizierter und unveränderter Dateien, indizieren möchtest
+3. Wähle *Index vollständig aktualisieren*, falls du alle Dateien, einschließlich bereits indexierterer und unveränderter Dateien, indexieren möchtest
 
-4. Klicke *Start*, um mit der Indizierung zu beginnen
+4. Klicke *Start*, um mit der Indexierung zu beginnen
 
 
 ![Screenshot](img/index.png)
@@ -28,6 +28,6 @@
 
 #### Wann sollte ich den Index vollständig aktualisieren? ####
 
-Wenn die Option "Index vollständig aktualisieren" gewählt ist, werden alle Dateien in *Originals* neu indiziert. Also auch Dateien, die bereits indiziert und nicht verändert wurden. 
+Wenn die Option "Index vollständig aktualisieren" gewählt ist, werden alle Dateien in *Originals* neu indexiert. Also auch Dateien, die bereits indexiert und nicht verändert wurden. 
 Das kann nach einem Upgrade auf eine neue Hauptversion erforderlich sein.
 

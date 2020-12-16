@@ -11,7 +11,7 @@ Verabschiede dich von Lösungen, die dich zwingen deine Erinnerungen in die Clou
 
 * Unsere klar strukturtierte [Benutzeroberfläche](https://demo.photoprism.org/) macht dir das Organisieren und Teilen deiner persönlichen Fotosammlung
 so einfach wie möglich — egal ob von deinem Handy, Tablet oder Computer.
-* Indiziere alle deine Dateien, ohne dir über Duplikate oder [RAW zu JPEG Konvertierung](https://docs.photoprism.org/developer-guide/library/converting/) Gedanken zu machen.
+* Indexiere alle deine Dateien, ohne dir über Duplikate oder [RAW zu JPEG Konvertierung](https://docs.photoprism.org/developer-guide/library/converting/) Gedanken zu machen.
 * Automatische [Objekterkennung](https://docs.photoprism.org/developer-guide/metadata/classification/) basierend auf Google TensorFlow.
 Zusätzlich erkennt unser Indexer _Farben_, _Chroma_, _Helligkeit_, _Panorama-Projektion_, _Ort_, _Qualität_ und viele andere Eigenschaften.
 * Vier hochauflösende [Kartenansichten](https://demo.photoprism.org/places) lassen dich lang vergessene Aufnahmen wieder entdecken.

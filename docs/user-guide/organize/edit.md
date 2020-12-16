@@ -1,7 +1,7 @@
 # Foto Details bearbeiten #
 Der Bearbeitungs-Dialog ermöglicht es dir, Metadaten zu deinen Fotos hinzuzufügen oder vorhandene Metadaten zu bearbeiten.
 
-Während der [*Indizierung*](../library/indexing.md) liest PhotoPrism so viele Daten wie möglich aus Sidecar-Dateien oder den Fotos selbst aus.
+Während der [*Indexierung*](../library/indexing.md) liest PhotoPrism so viele Daten wie möglich aus Sidecar-Dateien oder den Fotos selbst aus.
 
 ### Bearbeitungs-Dialog öffnen ###
 #### In der *Karten-Ansicht* ####
@@ -54,8 +54,8 @@ Im *Detail-Tab* des *Bearbeitungs-Dialogs* können die folgenden Daten angezeigt
 *Fertig* speichert die Änderungen und schließt den Dialog.
 
 !!! Info
-    Viele Metadaten, wie Suchbegriffe, Titel, Ort der Aufnahme oder Kameradetails werden von PhotoPrism während der [*Indizierung*](../library/indexing.md) automatisch hinzugefügt.
-    Nimmst du manuell Änderungen an den Metadaten vor, werden diese von PhotoPrism bei einer erneuten Indizierung nicht überschrieben.
+    Viele Metadaten, wie Suchbegriffe, Titel, Ort der Aufnahme oder Kameradetails werden von PhotoPrism während der [*Indexierung*](../library/indexing.md) automatisch hinzugefügt.
+    Nimmst du manuell Änderungen an den Metadaten vor, werden diese von PhotoPrism bei einer erneuten Indexierung nicht überschrieben.
 
 !!! Tipp
     Die Suchbegriffe können im Suchfeld verwendet werden, um Fotos und Videos zu finden.
