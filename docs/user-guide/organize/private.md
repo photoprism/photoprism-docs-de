@@ -2,7 +2,7 @@
 ### Was sind private Aufnahmen? ###
 Du wirst bestimmt einige Aufnahmen haben, die du, aus persönlichen Gründen, nicht mit jedem Teilen möchtest.
 PhotoPrism bietet die Möglichkeit private Fotos und Videos in einigen Bereichen zu verbergen.
-So kannst du deine Familie und Freunde durch deine Fotos schauen lassen, ohne Gefahr zu laufen, dass sie private Aufnahmen finden.
+So kannst du deine Familie und Freunde durch deine Fotos scrollen lassen, ohne Gefahr zu laufen, dass sie private Aufnahmen finden.
 
 Mit der Standardeinstellung werden alle Fotos, die als privat markiert sind, in den folgenden Bereichen nicht angezeigt:
 

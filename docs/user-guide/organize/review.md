@@ -9,7 +9,7 @@ Die Qualität wird anhand der folgenden Kriterien bestimmt:
 * Foto ist ein Favorit, wurde editiert oder bestätigt.
 
 !!! Tipp
-    In den [Einstellungen](../settings/ui.md) kann der Qualitätsfilter und somit auch der Bestätigungs-Prozess deaktiviert werden.
+    In den [Einstellungen](../settings/ui.md) kann der Qualitätsfilter und somit auch der Überprüfungs-Prozess deaktiviert werden.
 
 ### Fotos übernehmen ###
 1. Öffne den [*Bearbeitungs-Dialog*](edit.md) des Fotos
@@ -19,7 +19,7 @@ Die Qualität wird anhand der folgenden Kriterien bestimmt:
     
 **oder:**
 
-1. Öffne die *Karten Ansicht*
+1. Öffne die *Karteikarten Ansicht*
 2. Klicke auf *Übernehmen*
 
     ![Screenshot](img/review-2.png)

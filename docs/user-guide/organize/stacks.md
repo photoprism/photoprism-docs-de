@@ -2,7 +2,7 @@
 
 ## Gruppierte Dateien ##
 
-Zusammengehörige Dateien werden gruppiert, wenn in den [*Einstellungen*](../settings/ui.md) "Bildstapel" aktiviert ist.
+Zusammengehörige Dateien werden gruppiert, wenn in den [*Einstellungen*](../settings/ui.md) die Option "Bildstapel" aktiviert ist.
 Gruppierte Dateien werden im Bereich *Bildstapel* dargestellt.
 
 ![Screenshot](img/stacks-1.png)
@@ -10,7 +10,7 @@ Gruppierte Dateien werden im Bereich *Bildstapel* dargestellt.
 !!! Info
     Dateien können in folgenden Fällen gruppiert werden:
 
-    1. Dateien haben fortlaufende Namen: Beispielsweise `IMG_1234 (2)` und `IMG_1234 copy 2`.
+    1. Dateien haben fortlaufende Namen: Beispielsweise `IMG_1234` und `IMG_1234 (2)`.
     2. Fotos wurden am gleichen Ort und in der selben Sekunde aufgenommen.
     3. Dateien haben die gleiche eindeutige Bild-ID.
 

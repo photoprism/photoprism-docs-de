@@ -8,7 +8,7 @@ nav:
       - Navigation: user-guide/navigate.md
       - Dateien hinzufügen:
           - Einleitung: user-guide/library/import-vs-index.md
-          - Indizieren: user-guide/library/indexing.md
+          - Indexieren: user-guide/library/indexing.md
           - Importieren: user-guide/library/import.md
           - Upload über die App: user-guide/library/upload.md
           - WebDAV Upload: user-guide/library/webdav.md
@@ -27,7 +27,7 @@ nav:
             - Ansicht: user-guide/organize/views.md
             - Suche & Filter: user-guide/organize/search.md
           #- Search Filter: user-guide/organize/search.md
-          - Bestätigen: user-guide/organize/review.md
+          - Überprüfen: user-guide/organize/review.md
           - Bildstapel: user-guide/organize/stacks.md
           - Panoramas: user-guide/organize/panoramas.md
           - Scans: user-guide/organize/scans.md

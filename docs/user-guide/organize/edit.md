@@ -4,7 +4,7 @@ Der Bearbeitungs-Dialog ermöglicht es dir, Metadaten zu deinen Fotos hinzuzufü
 Während der [*Indexierung*](../library/indexing.md) liest PhotoPrism so viele Daten wie möglich aus Sidecar-Dateien oder den Fotos selbst aus.
 
 ### Bearbeitungs-Dialog öffnen ###
-#### In der *Karten-Ansicht* ####
+#### In der *Karteikarten Ansicht* ####
 1. Klicke auf den Titel, den Aufnahmezeitpunkt oder die Kamerainformationen
 
     ![Screenshot](img/edit-open-1.png)

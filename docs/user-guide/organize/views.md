@@ -1,7 +1,7 @@
 # Ansichten #
 PhotoPrism bietet drei schöne Ansichten, um deine Fotos und Videos anzuzeigen.
 
-* In der *Karten Ansicht* findest du unter jedem Foto wichtige Metadaten wie Titel, Aufnahmezeit und -Ort.
+* In der *Karteikarten Ansicht* findest du unter jedem Foto wichtige Metadaten wie Titel, Aufnahmezeit und -Ort.
 
     ![Screenshot](img/card.png)
 

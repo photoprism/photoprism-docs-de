@@ -44,7 +44,7 @@ Zusätzlich solltest du PhotoPrism so konfigurieren, dass automatisch JSON Sidec
 Falls du Probleme mit einem bestimmten Dateiformat hast, öffne gerne ein Ticket.
 
 ### Ich vermisse einige Dateien, wo könnten sie sein? ###
-Falls du den [Qualitätsfilter](organize/review.md) aktiviert hast, findest du deine Bilder eventuell im Bereich *Bestätigen*.
+Falls du den [Qualitätsfilter](organize/review.md) aktiviert hast, findest du deine Bilder eventuell im Bereich *Überprüfen*.
 Es kann auch sein, dass das Format der Bilder nicht unterstützt wird, oder die Bilder kaputt sind.
 Haben mehrere Dateien den gleichen Namen oder exakt das gleiche Datum und den gleichen Aufnahmeort oder die gleiche ID,
 werden diese zu einem Bildstapel gruppiert. Du findest sie im Bereich *Bildstapel* und kannst die Gruppierung dort aufheben, sofern sie fehlerhaft ist.

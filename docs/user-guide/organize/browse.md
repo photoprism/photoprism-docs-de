@@ -6,7 +6,7 @@ deine Bilder zu organisieren.
 Über die Hauptnavigation erreichst du folgende Bereiche:
 
 #### Fotos :material-image: ####
-Hier findest du alle Fotos, die in *Bestätigen*, *Archiv* oder *Privat* sind.
+Hier findest du alle Fotos, die nicht in *Überprüfen*, *Archiv* oder *Privat* sind.
 
 !!! Hinweis
     Wenn die Funktionen Qualitätsfilter, Privat oder Archiv deaktiviert sind, findest du hier alle deine Fotos.
@@ -22,7 +22,7 @@ Hier befinden sich alle Fotos, die du als Favorit markiert hast.
 Hier befinden sich alle Fotos, die du als privat markiert hast.
 
 #### Videos :material-movie: ####
-Hier findest du alle Videos, die nicht in *Bestätigen*, *Archiv* oder *Privat* sind.
+Hier findest du alle Videos, die nicht in *Überprüfen*, *Archiv* oder *Privat* sind.
 
 ![Screenshot](img/video-section.png)
 

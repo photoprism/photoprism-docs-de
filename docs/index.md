@@ -14,7 +14,7 @@ so einfach wie möglich — egal ob von deinem Handy, Tablet oder Computer.
 * Indexiere alle deine Dateien, ohne dir über Duplikate oder [RAW zu JPEG Konvertierung](https://docs.photoprism.org/developer-guide/library/converting/) Gedanken zu machen.
 * Automatische [Objekterkennung](https://docs.photoprism.org/developer-guide/metadata/classification/) basierend auf Google TensorFlow.
 Zusätzlich erkennt unser Indexer _Farben_, _Chroma_, _Helligkeit_, _Panorama-Projektion_, _Ort_, _Qualität_ und viele andere Eigenschaften.
-* Vier hochauflösende [Kartenansichten](https://demo.photoprism.org/places) lassen dich lang vergessene Aufnahmen wieder entdecken.
+* Vier hochauflösende [Kartenansichten](https://demo.photoprism.org/places) lassen dich lang vergessene Erinnerungen wieder entdecken.
 * WebDav Clients, wie Microsoft's Windows Explorer oder Apple's Finder können sich direkt mit PhotoPrism [verbinden](user-guide/backup/webdav.md),
 so dass du Dateien von deinem Computer aus öffnen, bearbeiten und löschen kannst, als wären sie lokal vorhanden.
 Du kannst deine Bilder auch einfach mit einer Nextcloud Instanz synchronisieren.
