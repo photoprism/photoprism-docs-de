@@ -9,7 +9,7 @@ Die Qualität wird anhand der folgenden Kriterien bestimmt:
 * Foto ist ein Favorit, wurde editiert oder bestätigt.
 
 !!! Tipp
-    In den [Einstellungen](../settings/ui.md) kann der Qualitätsfilter und somit auch der Überprüfungs-Prozess deaktiviert werden.
+    In den [Einstellungen](../settings/general.md) kann der Qualitätsfilter und somit auch der Überprüfungs-Prozess deaktiviert werden.
 
 ### Fotos übernehmen ###
 1. Öffne den [*Bearbeitungs-Dialog*](edit.md) des Fotos

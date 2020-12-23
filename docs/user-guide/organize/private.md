@@ -14,7 +14,7 @@ Mit der Standardeinstellung werden alle Fotos, die als privat markiert sind, in 
  * In geteilten Alben
  
 !!! Info
-    In den [Einstellungen](../settings/ui.md) kannst du diese Funktion deaktivieren.
+    In den [Einstellungen](../settings/general.md) kannst du diese Funktion deaktivieren.
  
 #### Einzelne Fotos/Videos als privat markieren ####
 

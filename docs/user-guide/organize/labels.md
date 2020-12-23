@@ -46,7 +46,7 @@ Automatisch zugewiesene *Kategorien* können entfernt werden. Manuell hinzugefü
    ![Screenshot](img/remove-label-2.png)
 
 !!! Info
-    In den [Einstellungen](../settings/ui.md) kann der Bereich *Kategorien* ausgeblendet werden.
+    In den [Einstellungen](../settings/general.md) kann der Bereich *Kategorien* ausgeblendet werden.
 
 ### Kategorie umbenennen ###
 

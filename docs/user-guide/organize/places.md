@@ -11,7 +11,7 @@ Wenn du nach etwas suchst, werden nur Fotos, die der Suche entsprechen angezeigt
 
 ![Screenshot](img/places-3.png)
 
-In den [Einstellungen](../settings/ui.md) kannst du zwischen verschiedenen Kartenstilen auswählen.
+In den [Einstellungen](../settings/general.md) kannst du zwischen verschiedenen Kartenstilen auswählen.
 
 !!! Tipp
     Um von der *Karteikarten Ansicht* im Bereich *Fotos* zu einem bestimmten Foto auf der Weltkarte zu wechseln, klicke auf den Aufnahmeort dieses Fotos.
