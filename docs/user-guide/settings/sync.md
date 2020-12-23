@@ -1,31 +1,31 @@
-# Backup und Synchronisation mit Nextcloud #
+# Synchronisations Einstellungen #
 
-## Mit Nextcloud verbinden ##
-PhotoPrism kann mit einem Nextcloud Server verbunden werden. So können zum Beispiel automatisch Backups auf deiner Nextcloud Instanz erstellt oder
+## Mit WebDAV Server verbinden ##
+PhotoPrism kann mit einem WebDAV Server verbunden werden. So können zum Beispiel automatisch Backups auf deiner Nextcloud Instanz erstellt oder
  neue Bilder von deiner Nextcloud Instanz in PhotoPrism geladen werden.
 
 **Verbindung aufbauen:**
 
 1. Gehe zu *Einstellungen*
-2. Öffne das *Backup* Tab
+2. Öffne das *Sync* Tab
 3. Klicke auf *Server hinzufügen*
-    ![Screenshot](img/nextcloud-connect.png)
-4.  Trage die Nextcloud Server URL, den Nutzernamen sowie das Passwort ein
+   ![Screenshot](img/sync-1.png)
+4.  Trage die Server URL, den Nutzernamen sowie das Passwort ein
 5. Klicke *Verbinden*
-    ![Screenshot](img/nextcloud-connect-2.png)
-6. Deine Nextcloud Instanz ist jetzt mit PhotoPrism verbunden
+   ![Screenshot](img/sync-2.png)
+6. Deine Server ist jetzt mit PhotoPrism verbunden
 
 ## Dateien manuell zu Nextcloud hochladen ##
 **Manuellen Upload einrichten:**
 
 1. Gehe zu *Einstellungen*
-2. Öffne das *Backup* Tab
+2. Öffne das *Sync* Tab
 3. Klicke in den Upload Bereich deines Nextcloud Servers
 
-![Screenshot](img/upload-1.png)
+![Screenshot](img/sync-upload-1.png)
 4. Wähle den Ordner, in den die Dateien hochgeladen werden sollen und klicke *Speichern*
 
-![Screenshot](img/upload-2.png)
+![Screenshot](img/sync-upload-2.png)
 
 **Bilder von PhotoPrism zu Nextcloud laden:**
 
@@ -49,15 +49,15 @@ PhotoPrism kann mit einem Nextcloud Server verbunden werden. So können zum Beis
 **Synchronisierung einrichten:**
 
 1. Gehe zu *Einstellungen*
-2. Öffne das *Backup* Tab
+2. Öffne das *Sync* Tab
 3. Klicke in den Sync Bereich deines Nextcloud Servers
-![Screenshot](img/sync-1.png)
+   ![Screenshot](img/sync-sync-1.png)
 4. Aktiviere die Synchronisation in der Ecke oben rechts
 5. Wähle den Ordner, in welchem sich deine Bilder bei Nextcloud befinden
 6. Entscheide wie oft die Dateien synchronisiert werden sollen
 7. Selektiere alle Optionen, die zu deinem Anwendungsfall passen und klicke *Speichern*
 
-![Screenshot](img/sync-2.png)
+![Screenshot](img/sync-sync-1.png)
 
 ### Backup Optionen ###
 * *Dateien herunterladen*  - alle Dateien, die noch nicht in PhotoPrism existieren, werden regelmäßig von deiner Nextcloud Instanz heruntergeladen
