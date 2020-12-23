@@ -1,31 +1,8 @@
-# App Einstellungen#
+# Allgemeine Einstellungen#
 
-In den *Einstellungen* kannst du die Eigenschaften deiner Foto-Bibliothek, der Benutzeroberfläche sowie der Karten konfigurieren.
+In den *Einstellungen* kannst du die Eigenschaften der Benutzeroberfläche sowie der Karten konfigurieren.
 
-![Screenshot](img/settings.png)
-
-### Dateien ###
-#### Private Aufnahmen verbergen :material-lock: ####
-Wenn diese Option aktiviert ist, werden private Fotos und Videos nicht in *Fotos*, *Videos*, *Favoriten*, *Kategorien*, *Karten* und *geteilten Alben* angezeigt.
-
-#### Qualitätsfilter :material-eye: ####
-Wenn diese Option aktiviert ist, musst du Fotos und Videos mit geringer Qualität [*überprüfen*](../organize/review.md), bevor sie in *Fotos* oder *Videos* angezeigt werden.
-
-#### Automatische Konvertierung zu JPEG :material-camera: ####
-Wenn diese Option aktiviert ist, werden während der [*Indexierung*](../library/indexing.md) automatisch *JPEG*-Vorschaubilder deiner *RAW*-Dateien erstellt. Die *JPEG*-Dateien werden im gleichen Ordner wie das Originalbild abgelegt.
-
-!!! Attention
-    Falls diese Option deaktiviert ist, und es RAW Dateien ohne dazugehöriges JPEG gibt, wird es für diese Dateien keine Vorschau geben.
-    
-#### Bildstapel :material-image-multiple: ####
-Wenn diese Option aktiviert ist, werden zusammengehörige Dateien von PhotoPrism automatisch zu Bildstapeln zusammengefasst.
-Ein Bildstapel hat ein primäres Bild, das in den Ansichten angezeigt wird. Deine gruppierten Dateien findest du unter  [*Bildstapel*](../organize/stacks.md).
-
-PhotoPrism bietet die folgenden Optionen, um Bilder zu gruppieren:
-
-* Fortlaufende Dateinamen
-* Gleicher Ort und Zeit
-* Gleiche eindeutige Bild-ID
+![Screenshot](img/general-settings.jpg)
 
 ### Benutzeroberfläche ###
 Hier kannst du das *Design* und die *Sprache* der Benutzeroberfläche ändern.
@@ -72,3 +49,9 @@ Wenn diese Option deaktiviert ist, wird der Bereich *Karten* nicht angezeigt.
 
 ### Karten ####
 Hier kannst du den Kartenstil und die Geschwindigkeit von Animationen einstellen.
+
+PhotoPrism bietet dir 4 hochauflösende Kartenansichten.
+Um deinen Bildern Informationen wie Land, Stadt oder Kategorie hinzuzufügen, haben wir kürzlich **PhotoPrism Places** in Betrieb genommen.
+PhotoPrism Places ist unsere eigene Geocoding API, basierend auf  OpenStreetMap.
+Zusätzlich werden wir in Zukunft Informationen über öffentliche Events bereitstellen, die an bestimmten Orten stattgefunden haben.
+Dadurch können beispielsweise automatisch Alben von Musikfestivals oder Sportevents erzeugt werden.
