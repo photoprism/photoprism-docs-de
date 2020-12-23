@@ -2,7 +2,7 @@
 Falls PhotoPrism auf einem Server ausgeführt wird, kann WebDAV benutzt werden, um Dateien in die Ordner *Import* oder *Originals* zu laden.
 
 
-Folge hierzu dieser [Anleitung](../backup/webdav.md).
+Folge hierzu dieser [Anleitung](../sync/webdav.md).
 
 Sobald alle Dateien hinzugefügt sind, können sie [importiert oder indexiert](import-vs-index.md) werden.
 
