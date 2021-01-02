@@ -17,6 +17,6 @@ Klicken auf eine Datei öffnet den Bearbeitungs-Dialog.
 ## Erstellen von Alben aus Dateien ##
 1. Selektiere Dateien
 2. Öffne das Kontextmenü
-3. Klicke :material-folder:
+3. Klicke :material-bookmark:
 4. Wähle ein vorhandenes Album aus oder tippe einen neuen Albumnamen ein
 5. Klicke *Zum Album hinzufügen*
