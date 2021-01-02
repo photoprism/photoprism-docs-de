@@ -14,7 +14,7 @@ Deaktivierte Bereiche tauchen nicht in der Hauptnavigation auf.
 Wenn diese Option deaktiviert ist, können keine Dateien über [*Upload*](../library/upload.md) hochgeladen werden.
 Diese Einstellung kann hilfreich sein, wenn du anderen Personen Zugriff auf dein PhotoPrism gibst, diese aber keine Dateien hochladen dürfen.
 
-#### Download :material-cloud-download: ####
+#### Download :material-download: ####
 Wenn diese Option deaktiviert ist, können Dateien nicht über PhotoPrism heruntergeladen werden.
 
 #### Teilen :material-share-variant: ####
@@ -29,7 +29,7 @@ Wenn diese Option deaktiviert ist, kannst du keine Metadaten editieren.
 #### Originale :material-file: ####
 Wenn diese Option deaktiviert ist, wird der Bereich *Originale* nicht angezeigt.
 
-#### Erlebnisse :material-star: ####
+#### Erlebnisse :material-compass: ####
 Wenn diese Option deaktiviert ist, wird der Bereich *Erlebnisse* nicht angezeigt.
 
 #### Kategorien :material-label: ####

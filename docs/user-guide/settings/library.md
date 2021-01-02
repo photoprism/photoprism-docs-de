@@ -20,9 +20,9 @@ Ein Bildstapel hat ein primäres Bild, das in den Ansichten angezeigt wird. Dein
 
 Du kannst folgende Optionen nutzen, um Bilder zu gruppieren:
 
-* Fortlaufende Dateinamen
-* Gleicher Ort und Zeit
-* Gleiche eindeutige Bild-ID
+* :material-format-list-numbered-rtl: Fortlaufende Dateinamen
+* :material-clock-outline: Gleicher Ort und Zeit
+* :material-fingerprint: Gleiche eindeutige Bild-ID
 
 
 <!--## Umwandlung von RAW zu JPEG ##
