@@ -26,7 +26,7 @@ Hier findest du alle Videos, die nicht in *Überprüfen*, *Archiv* oder *Privat*
 
 ![Screenshot](img/video-section.png)
 
-#### Alben :material-folder: ####
+#### Alben :material-image-album: ####
 Hier befinden sich deine Alben.
 
 ![Screenshot](img/album-section.png)
@@ -41,7 +41,7 @@ Hier sind alle Fotos und Videos, die Geodaten haben, auf einer Weltkarte dargest
 
 ![Screenshot](img/places-section.png)
 
-#### Erlebnisse :material-star: ####
+#### Erlebnisse :material-compass: ####
 Entdecke Alben von Erlebnissen, die wir automatisch für dich erstellt haben.
 
 ![Screenshot](img/moments.png)

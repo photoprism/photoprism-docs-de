@@ -21,6 +21,6 @@ Mithilfe des Kontextmenüs kannst du die folgenden Aktionen durchführen:
 
 ## Album anhand eines Erlebnisses erstellen##
 1. Selektiere ein *Erlebnis*
-2. Öffne das Kontextmenü und klicke auf :material-folder:
+2. Öffne das Kontextmenü und klicke auf :material-bookmark:
 3. Wähle ein existierendes Album oder gib einen neuen Albumnamen ein
 4. Klicke auf *Hinzufügen*

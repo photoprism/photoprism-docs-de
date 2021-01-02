@@ -19,7 +19,7 @@ Gruppierte Dateien werden im Bereich *Bildstapel* dargestellt.
 
 ### Zusammenhängende Dateien anschauen ###
 
-1. Klicke auf das Sequenz Symbol
+1. Klicke auf :material-camera-burst:
 
     ![Screenshot](img/sequential1.png)
 

@@ -23,6 +23,6 @@ Das Kontextmenü ermöglicht die folgenden Aktionen:
 ## Album aus Monat erstellen ##
 1. Selektiere einen Monat 
 2. Öffne das Kontextmenü
-3. Klicke :material-folder:
+3. Klicke :material-bookmark:
 4. Wähle ein existierendes Album oder gib einen neuen Albumnamen ein
 5. Klicke auf *Hinzufügen*

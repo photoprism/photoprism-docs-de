@@ -34,7 +34,7 @@
 
 1. Selektiere Fotos und Videos
 2. Öffne das Kontextmenü
-3. Klicke :material-folder:
+3. Klicke :material-bookmark:
 
     ![Screenshot](img/add-photo-album-1.png)
     

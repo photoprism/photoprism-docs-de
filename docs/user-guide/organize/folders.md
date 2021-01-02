@@ -20,7 +20,7 @@ Das Kontextmenü bietet die folgenden Aktionen:
 
 ## Erstelle ein Album anhand eines Ordners ##
 1. Wähle einen Ordner aus
-2. Öffne das Kontextmenü und klicke :material-folder:
+2. Öffne das Kontextmenü und klicke :material-bookmark:
 3. Wähle ein existierendes Album aus oder gib einen neuen Albumnamen ein
 5. Klicke auf *Hinzufügen*
 
