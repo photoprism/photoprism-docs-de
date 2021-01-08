@@ -49,6 +49,11 @@ Es kann auch sein, dass das Format der Bilder nicht unterstützt wird, oder die 
 Haben mehrere Dateien den gleichen Namen oder exakt das gleiche Datum und den gleichen Aufnahmeort oder die gleiche ID,
 werden diese zu einem Bildstapel gruppiert. Du findest sie im Bereich *Bildstapel* und kannst die Gruppierung dort aufheben, sofern sie fehlerhaft ist.
 
+### Warum sind einige meiner Dateien zu Bildstapeln gruppiert? ###
+Dateien, mit gleicher *XMP Instanz ID* oder *Eindeutigen Bild ID*, sowie Dateien mit mit identischem Aufnahmeort und Zeit werden standardmäßig gruppiert.
+Dieses Verhalten kann in den [*Einstellungen*](settings/library.md) ausgeschaltet werden. 
+Sidecar-Dateien werden in jedem Fall gruppiert.
+
 ### Warum haben manche Bilder ein komisches Datum wie 01/01/1980? ###
 Das kommt vor, wenn es zum Aufnahmezeitpunkt Probleme mit deinen Kameraeinstellungen gab.
 Du kannst das Datum im [Bearbeitungs-Dialog](organize/edit.md) ändern. Hier wird allerdings nur der Index in PhotoPrism geändert.
