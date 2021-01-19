@@ -26,5 +26,7 @@ automatisch aus dem *Import* Verzeichnis gelöscht.
 Dadurch wird weniger Speicherplatz benötigt.
 Wähle diese Option nur, wenn du die Dateien nicht als Backup oder aus einem anderen Grund in *Import* behalten möchtest.
 
-
+#### Automatisch Importieren ####
+15 Minuten, nachdem Änderungen über WebDAV am Import Verzeichnis vorgnommen wurden, wird der Importer automatisch gestartet.
+Die Standardeinstllung von 15 Minuten kann über die [Konfigurations-Optionen](https://docs.photoprism.org/getting-started/config-options/) angepasst werden.
 
