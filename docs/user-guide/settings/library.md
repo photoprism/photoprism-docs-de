@@ -2,8 +2,8 @@
 
 ##Indexierung ##
 
-#### Private Aufnahmen verbergen :material-lock: ####
-Wenn diese Option aktiviert ist, werden private Fotos und Videos nicht in *Fotos*, *Videos*, *Favoriten*, *Kategorien*, *Karten* und *geteilten Alben* angezeigt.
+#### :material-chart-timeline-variant: Schätzungen ####
+Den ungefähren Standort von Bildern ohne Koordinaten automatisch schätzen.
 
 #### Qualitätsfilter :material-eye: ####
 Wenn diese Option aktiviert ist, musst du Fotos und Videos mit geringer Qualität [*überprüfen*](../organize/review.md), bevor sie in *Fotos* oder *Videos* angezeigt werden.

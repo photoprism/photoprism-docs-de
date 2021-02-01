@@ -23,8 +23,3 @@ Archivierte Dateien werden nicht gelöscht, sie werden allerdings ausschließlic
 
     ![Screenshot](img/restore.png)
 
-Momentan gibt es in PhotoPrism keine Möglichkeit Fotos endgültig zu löschen.
-
-Falls du Dateien endgültig löschen möchtest, kannst du dies über dein Dateisystem direkt im *Originals* Ordner tun.
-
-Wir werden diese Funktion vermutlich zu einem späteren Zeitpunkt entwickeln.

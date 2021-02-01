@@ -8,6 +8,17 @@
 
     ![Screenshot](img/share-1.png)
 
+
+Oder
+
+1. Gehe zu *Alben*
+2. Öffne das Album, das du teilen möchtest
+3. Klicke :material-share-variant:
+
+   ![Screenshot](img/share-5.png)
+
+Dann
+
 5. Klicke :material-chevron-down: um die *Link Details* zu öffnen
 6. Setze den *Code* und das *Ablaufdatum*
 7. Klicke *Speichern*

@@ -42,6 +42,7 @@ nav:
           - Kalender: user-guide/organize/calendar.md
           - Fotos herunterladen: user-guide/organize/download.md
           - Fotos bearbeiten: user-guide/organize/edit.md
+          - Fotos löschen: user-guide/organize/delete.md
       - Backup:
           - Verbindung via WebDAV:  user-guide/sync/webdav.md
       - Teilen:

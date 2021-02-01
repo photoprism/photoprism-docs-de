@@ -20,11 +20,17 @@ Wenn diese Option deaktiviert ist, können Dateien nicht über PhotoPrism herunt
 #### Teilen :material-share-variant: ####
 Wenn diese Option deaktiviert ist, können Alben weder geteilt noch zu anderen Diensten (wie Nextcloud) hochgeladen werden.
 
+### Private Aufnahmen verbergen :material-lock: ####
+Wenn diese Option aktiviert ist, werden private Fotos und Videos nicht in *Fotos*, *Videos*, *Favoriten*, *Kategorien*, *Karten* und *geteilten Alben* angezeigt.
+
 #### Archivieren :material-archive-arrow-down: ####
 Diese Option steuert das *Archiv*. Fotos die archiviert wurden bevor du die Option deaktivierst, werden in *Fotos/Videos* dargestellt.
 
 #### Bearbeiten :material-pencil: ####
 Wenn diese Option deaktiviert ist, kannst du keine Metadaten editieren.
+
+#### :material-delete: Löschen ####
+Wenn diese Option aktiviert ist, können Dateien permamnent aus dem Archiv gelöscht werden, um Speicherplatz freizugeben.
 
 #### Originale :material-file: ####
 Wenn diese Option deaktiviert ist, wird der Bereich *Originale* nicht angezeigt.
