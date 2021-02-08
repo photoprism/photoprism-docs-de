@@ -61,8 +61,7 @@ Du kannst das Datum im [Bearbeitungs-Dialog](organize/edit.md) ändern. Hier wir
 Um das Datum direkt in deiner Originaldatei zu ändern nutze bitte andere Apps wie Photoshop oder Exiftool und indexiere deine Dateien anschließend erneut.
 
 ### Wie kann ich Dateien endgültig löschen? ###
-Momentan verändern wir Originaldateien (noch) nicht, um versehentlichen Verlust von Daten oder Konflikte mit anderen Apps zu vermeiden.
-Du kannst Bilder archivieren, dann werden sie von *Fotos* ins *Archiv* verschoben, sofern die Archiv Funktionalität in den Einstellungen aktiviert ist.
+Ja, wenn du Sponsor bist, kannst du Dateien über die Web-Oberfläche [löschen](./organize/delete.md). Falls du kein Sponsor bist, musst du dich noch ein bisschen gedulden.
 
 Die Funktion Bilder in PhotoPrism endgültig zu löschen haben wir für einen späteren Release geplant. Siehe [hier](https://github.com/photoprism/photoprism/issues/167).
 
