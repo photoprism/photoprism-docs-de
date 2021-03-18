@@ -11,7 +11,7 @@ Wir haben uns aus den folgenden Gründen für YAML-Dateien entschieden:
 
 ## Album Backups
 
-Es werden Backups für die folgenden Albumtypen erstellt: Album, Ordner, Status, Moment and Monat.
+Es werden Backups für die folgenden Albumtypen erstellt: Album, Ordner, Bundesland, Moment and Monat.
 Du kannst diese Backups in deinem `Speicherpfad` in `/albums` finden.
 
 ### Album
@@ -32,9 +32,9 @@ Für jeden Monat werden die folgenden Metainformationen in der YAML-Datei gespei
 
 * UID, Slug, Type, Title, Location, Category, Description, Filter, Sort Order, Country, Year, Month, CreatedAt, UpdatedAt
 
-### Status
+### Bundesland
 
-Für jeden Status exportieren wir die folgenden Metainformationen in die YAML-Datei:
+Für jedes Bundesland exportieren wir die folgenden Metainformationen in die YAML-Datei:
 
 * UID, Slug, Type, Title, Location, Category, Description, Filter, Sort Order, Country, CreatedAt, UpdatedAt
 
