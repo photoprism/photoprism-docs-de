@@ -26,7 +26,7 @@ Klicke, um zu einer anderen Ansicht zu wechseln (Karten: :material-view-column:,
 
 #### 5. Upload-Funktion
 
-:material-cloud-upload: öffnet den Upload-Dialog. Diese Funktion ist auf den meisten Seiten verfügbar, wenn PhotoPrism nicht im read-only Modus (schreibgeschützt) betrieben wird und der Upload nicht in den  [Einstellungen](settings/general.md) deaktiviert wurde.
+:material-cloud-upload: öffnet den Upload-Dialog. Diese Funktion ist auf den meisten Seiten verfügbar, sofern PhotoPrism nicht im read-only Modus (schreibgeschützt) betrieben wird und der Upload nicht in den  [Einstellungen](settings/general.md) deaktiviert wurde.
 
 #### 6. Filterleiste
 

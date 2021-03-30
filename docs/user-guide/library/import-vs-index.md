@@ -11,6 +11,10 @@ Das Importieren ist dagegen deutlich effizienter, wenn später neue Dateien hinz
 Verwende *Indexieren*, wenn du deine Fotos und Videos direkt im Ordner *Originals* indexieren möchtest, ohne sie zu kopieren,
 zu verschieben oder umzubenennen.
 
+!!! tip
+    Du kannst auch [eine Ignorieren Liste konfigurieren](indexing.md#verzeichnisse-und-dateien-ignorieren)
+    bevor du die Indexierung startest, falls du bestimmte Dateien nicht indexieren willst.
+
 Deine Ordnerstruktur in *Originals* könnte so aussehen:
 
    ![Screenshot](img/before-index.png)
@@ -23,7 +27,7 @@ Deine Ordnerstruktur in *Originals* könnte so aussehen:
 * Für JPEGs werden Thumbnails erstellt
 * Optional werden json- und oder yml-Dateien mit Metadaten erstellt
 
-Der *Originals* Ordner nach der Indexierung:
+**Der *Originals* Ordner nach der Indexierung:**
 
   ![Screenshot](img/after-index.png)
 
@@ -49,11 +53,11 @@ Deine anfängliche Ordnerstruktur in *Import* könnte wie folgt aussehen:
 * Im *Originals* Verzeichnis werden die Dateien umbenannt und umstrukturiert. Der ursprüngliche Dateiname wird in den Metadaten der Datei gespeichert
 * Alle importierten Dateien werden indexiert
 
-Ordnerstruktur in *Import* und *Originals* nach Import mit der "Kopieren" Option:
+**Ordnerstruktur in *Import* und *Originals* nach Import mit der "Kopieren" Option:**
 
    ![Screenshot](img/copy-import.png)
 
-Ordnerstruktur in *Import* und *Originals* nach Import mit der "Verschieben" Option:
+**Ordnerstruktur in *Import* und *Originals* nach Import mit der "Verschieben" Option:**
 
    ![Screenshot](img/move-import.png)
 
@@ -66,7 +70,7 @@ Ordnerstruktur in *Import* und *Originals* nach Import mit der "Verschieben" Opt
     Falls du ein Verzeichnis mit dem Pfad "Urlaub/Afrika" importierst oder indexierst erhalten alle Dateien aus diesem Ordner die Suchbegriffe "Urlaub" und "Afrika".
 
 
-### Schlussfolgerung ###
+### Fazit ###
 Deine Fotosammlung ist noch nicht organisiert und du gehst davon aus, dass du viele Duplikate, beispielsweise verteilt auf verschiedenen Festplatten, hast?
 
 Dann ist *Importieren* die bessere Wahl.

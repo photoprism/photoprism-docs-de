@@ -106,3 +106,19 @@ label:cat|dog
 ```
 
 Hier werden alle Bilder mit Kategorie Katze **ODER** Hund angezeigt.
+
+## Wildcard ##
+Das `*` fungiert in der Suche als Wildcard:
+
+```
+name:"IMG_23*"
+```
+
+Gefunden werden alle Bilder, deren Namen mit `IMG_23` starten.
+
+
+```
+name:"*_23*"
+```
+
+Hier werden alle Bilder gefunden, die  `_23` im Namen enthalten, beispielsweise `IMG_2356.MOV` , `2021_02_23.jpg`, etc.

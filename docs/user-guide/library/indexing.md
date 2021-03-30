@@ -20,11 +20,28 @@
 
 !!! Tipp
     Zum Hinzufügen von Dateien zum *Originals* Ordner kann [WebDAV](webdav.md) verwendet werden.
-    Das ist besonders hilfreich, wenn PhotoPrism auf einem Remoteserver ausgeführt wird.
+    Das ist besonders hilfreich, wenn PhotoPrism auf einem Remoteserver ausgeführt wird oder du Dateien von deinem Handy synchronisieren möchtest.
 
 !!! Tipp 
     Ein NSFW-Detektor kann aktiviert werden, um Bilder, mit anstößigem Inhalt, automatisch als privat zu kennzeichnen. 
     Beachte, dass der Mechanismus nicht 100% zuverlässig ist. 
+
+#### Verzeichnisse und Dateien ignorieren ####
+Falls bestimmte Dateien oder Ordner nicht indexiert werden sollen, erstelle eine `.ppignore` Datei im Verzeichnis, in welchem diese Dateien/Ordner liegen.
+In dieser Datei kannst du konfigurieren, welche Dateien oder Ordner ignoriert werden sollen.
+
+```
+# Ignoriere den Ordner "foo"
+foo
+# Ignoriere alle Dateien in diesem Ordner
+*.*
+# Ignoriere alle Dateien, die auf .gif enden
+*.gif
+# Ignoriere Videos, deren Name mit MVI beginnt
+MVI_*.MOV
+# oder
+MVI_*.*
+```
 
 #### Wann sollte ich den Index vollständig aktualisieren? ####
 
