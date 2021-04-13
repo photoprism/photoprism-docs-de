@@ -17,7 +17,7 @@ zu verschieben oder umzubenennen.
 
 Deine Ordnerstruktur in *Originals* könnte so aussehen:
 
-   ![Screenshot](img/before-index.png)
+![Screenshot](img/originals-before-after.png)
      
 **Während der Indexierung:**
 
@@ -29,7 +29,7 @@ Deine Ordnerstruktur in *Originals* könnte so aussehen:
 
 **Der *Originals* Ordner nach der Indexierung:**
 
-  ![Screenshot](img/after-index.png)
+![Screenshot](img/originals-before-after.png)
 
     
 
