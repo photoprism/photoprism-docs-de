@@ -19,7 +19,7 @@
 !!! Achtung
     Importieren ist im [read-only Modus](../settings/library.md) (schreibgeschützt) nicht möglich, da Schreibrechte benötigt werden.
     
-#### Wann sollte ich die Option "Dateien verschieben" wählen? ####
+#### Wann sollte die Option "Dateien verschieben" verwendet werden? ####
 
 Wenn diese Option ausgewählt ist, werden Dateien, die in den Ordner *Originals* verschoben wurden oder dort bereits vorhanden sind,
 automatisch aus dem *Import* Verzeichnis gelöscht.

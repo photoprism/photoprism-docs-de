@@ -43,7 +43,7 @@ MVI_*.MOV
 MVI_*.*
 ```
 
-#### Wann sollte ich den Index vollständig aktualisieren? ####
+#### Wann sollte der Index vollständig aktualisiert werden? ####
 
 Wenn die Option "Index vollständig aktualisieren" gewählt ist, werden alle Dateien in *Originals* neu indexiert. Also auch Dateien, die bereits indexiert und nicht verändert wurden. 
 Das kann nach einem Upgrade auf eine neue Hauptversion erforderlich sein.

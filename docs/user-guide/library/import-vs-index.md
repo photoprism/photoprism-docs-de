@@ -62,7 +62,8 @@ Deine anfängliche Ordnerstruktur in *Import* könnte wie folgt aussehen:
    ![Screenshot](img/move-import.png)
 
 #### Vorteile ####
-* Duplikate oder nicht unterstützte Dateien bleiben unberührt im Import-Verzeichnis
+* Nicht unterstützte Dateien bleiben unberührt im Import Verzeichnis
+* Keine Duplikate im Originals Verzeichnis
 
 
 !!! Info
