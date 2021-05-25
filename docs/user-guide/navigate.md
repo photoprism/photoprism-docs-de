@@ -14,7 +14,7 @@ Befindet sich auf der linken Seite und ist auf mobilen Geräten minimiert. Klick
 
 #### 2. Suchleiste
 
-Befindet sich ganz oben. Finde Fotos oder Videos, indem du zum Beispiel nach `cats` oder `label:cat` suchst.
+Befindet sich ganz oben. Finde Fotos oder Videos, indem du zum Beispiel nach `cats` oder `label:cat` suchst. Eine Übersicht über alle Suchfilter findest du [hier](organize/search.md).
 
 #### 3. Reload-Funktion
 
