@@ -1,8 +1,8 @@
 # Synchronisations Einstellungen #
 
 ## Mit WebDAV Server verbinden ##
-PhotoPrism kann mit einem WebDAV Server verbunden werden. So können zum Beispiel automatisch Backups auf deiner Nextcloud Instanz erstellt oder
- neue Bilder von deiner Nextcloud Instanz in PhotoPrism geladen werden.
+PhotoPrism kann mit anderen WebDAV Servern verbunden werden. So können zum Beispiel automatisch Backups auf deiner Nextcloud Instanz erstellt oder
+neue Bilder von deiner Nextcloud Instanz in PhotoPrism geladen werden.
 
 **Verbindung aufbauen:**
 
@@ -13,7 +13,7 @@ PhotoPrism kann mit einem WebDAV Server verbunden werden. So können zum Beispie
 4.  Trage die Server URL, den Nutzernamen sowie das Passwort ein
 5. Klicke *Verbinden*
    ![Screenshot](img/sync-2.png)
-6. Deine Server ist jetzt mit PhotoPrism verbunden
+6. Dein Server ist jetzt mit PhotoPrism verbunden
 
 ## Dateien manuell zu Nextcloud hochladen ##
 **Manuellen Upload einrichten:**
@@ -57,7 +57,7 @@ PhotoPrism kann mit einem WebDAV Server verbunden werden. So können zum Beispie
 6. Entscheide wie oft die Dateien synchronisiert werden sollen
 7. Selektiere alle Optionen, die zu deinem Anwendungsfall passen und klicke *Speichern*
 
-![Screenshot](img/sync-sync-1.png)
+![Screenshot](img/sync-sync-2.png)
 
 ### Backup Optionen ###
 * *Dateien herunterladen*  - alle Dateien, die noch nicht in PhotoPrism existieren, werden regelmäßig von deiner Nextcloud Instanz heruntergeladen
