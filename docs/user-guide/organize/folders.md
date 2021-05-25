@@ -1,5 +1,5 @@
 # Ordner #
-Im Bereich *Ordner* werden automatisch die Verzeichnisse deines *Originals* Ordner angezeigt.
+Im Bereich *Ordner* werden automatisch die Unterordner deines *Originals* Verzeichnis angezeigt.
 Falls neue Dateien hinzugefügt werden, aktualisiert PhotoPrism die Ansicht automatisch.
 
 ![Screenshot](img/folders-1.png)

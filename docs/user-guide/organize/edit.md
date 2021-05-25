@@ -73,5 +73,5 @@ Um die Details einer Datei anzuzeigen, klicke auf :material-chevron-down:.
 
 ![Screenshot](img/group-2.png)
 
-
+Falls du [*Bildstapel*](stacks.md) bearbeitest, kannst du in dieser Ansicht das Anzeigebild wechseln oder gruppierte Dateien trennen.
 
