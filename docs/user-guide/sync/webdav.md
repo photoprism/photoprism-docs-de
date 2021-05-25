@@ -40,7 +40,7 @@ http://admin@localhost:2342/originals/
 1. Öffne den **Windows Explorer**
 2. Klicke mit der rechten Maustaste auf **Mein PC**
 3. Wähle **Netzwerklaufwerk hinzufügen...**
-4. Wähle den Laufwerksbuchstaben sowie das Verzeichnis, dass mit WebDAV verknüpft werden soll
+4. Wähle den Laufwerksbuchstaben sowie das Verzeichnis, das mit WebDAV verknüpft werden soll
 5. Wähle die Optionen **Verbindung bei Anmeldung wiederherstellen** und **Verbindung mit anderen Anmeldeinformationen herstellen** aus
 6. Öffne folgenden Link: **Verbindung mit einer Webseite herstellen, auf der Sie Dokumente und Bilder speichern können**
 7. Klicke  **Weiter**
