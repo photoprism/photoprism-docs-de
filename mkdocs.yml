@@ -44,6 +44,7 @@ nav:
           - Fotos löschen: user-guide/organize/delete.md
       - Backup:
           - Verbindung via WebDAV:  user-guide/sync/webdav.md
+          - Backup von Smartphones:  user-guide/sync/sync-phone.md
       - Teilen:
           - Album über Link teilen: user-guide/share/share.md
       - Einstellungen:
@@ -55,8 +56,14 @@ nav:
           #- Places: user-guide/settings/places.md
       - Anwendungsfälle:
           - Dateien aus Google Photos exportieren: user-guide/use-cases/google.md
+          - Dateien aus Apple Photos exportieren: user-guide/use-cases/apple.md
+          #- Dateien mit Dropbox synchronisieren: user-guide/use-cases/dropbox.md
           - Dateien aus Flickr exportieren: user-guide/use-cases/flickr.md
           #- Link directories from remote:
+      - Weiteres:
+          - Metadaten: user-guide/advanced/metadata.md
+          - Backups: user-guide/advanced/backups.md
+          - Verzeichnisse: user-guide/advanced/folders.md
       - FAQ: user-guide/faq.md
     # - Metadata: user-guide/metadata.md
 

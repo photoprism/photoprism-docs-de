@@ -69,3 +69,21 @@ Wenn du Dateien manuell oder bei der Nutzung von anderen Apps löschst, vergiss 
 
 ### Es sind bereits einige meiner Bilder indexiert. Warum befinden sich noch keine Bilder in den Bereichen Ordner, Kalender und Erlebnisse? ###
 Bilder werden erst am Ende der Indexierung zu den Bereichen Ordner, Kalender und Erlebnisse hinzugefügt.
+
+### Warum entspricht die Anzahl in *Suche* nicht der Anzahl in *Originals*?###
+Der Bereich *Originals* zeigt Dateien an, während in *Suche* Fotos und Videos dargestellt werden.
+
+Fotos und Videos können aus mehreren Dateien bestehen:
+
+* RAW + JPG + XMP = 1 Foto, aber 3 Dateien
+* MP4 + JPG = 1 Video, aber 2 Dateien
+
+Es kann auch sein, dass mehrere JPG Dateien zu einem Foto gruppiert sind (z.B. eine original und eine bearbeitete Version).
+
+### Warum ist die Anzahl in *Originals* höher, als die Anzahl an Dateien in meinem Originals Verzeichnis? ###
+Während der Indexierung erstellt Photoprism JPG Dateien, falls diese nicht vorhanden sind (beispielsweise für RAWs, Videos oder PNGs).
+Diese Dateien werden in /storage/sidecar gespeichert. In der Benutzeroberfläche werden sie allerdings im Bereich Originals angezeigt.
+
+### Warum haben manche meiner Fotos ohne GPS Informationen trotzdem einen Ort gesetzt?###
+Für Fotos ohne Orts-Informationen wird anhand von anderen Fotos, die am gleichen Tag gemacht wurden, ein Ort geschätzt. 
+Die Schätzungen können in den [Einstellungen](./settings/general.md) deaktiviert werden.
