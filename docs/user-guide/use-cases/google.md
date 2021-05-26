@@ -1,10 +1,10 @@
-# Dateien aus Google Photos exportieren #
+# Wechsel von Google Photos #
 
 Fotosammlungen können problemlos von Google Photos in PhotoPrism übertragen werden.
 
 Um deine Originalbilder mit Metadaten (wie Koordinaten) von Google Photos zu bekommen wird [Google Takeout](https://takeout.google.com/) verwendet.
 
-## Exportiere Dateien aus Google Photos #
+## Dateien übertragen #
 
 1. Gehe zu https://takeout.google.com/
 2. Triggere den *Export* deiner Google-Photos Daten
@@ -14,7 +14,7 @@ Um deine Originalbilder mit Metadaten (wie Koordinaten) von Google Photos zu bek
 
 ## Metadaten
 
-Google Takeout exportiert folgende Informationen
+**Google Takeout exportiert folgende Informationen:**
 
 | Typ | Beschreibung | Format |
 |:--|:--|:--|
@@ -23,7 +23,7 @@ Google Takeout exportiert folgende Informationen
 |Album Metadaten|Beispielsweise Album Titel oder Beschreibung|JSON|
 |Foto Metadaten|Beispielsweise Erstellungsdatum oder Kommentare|JSON|
 
-PhotoPrism liest die folgenden Metadaten aus den Foto JSON Dateien aus:
+**PhotoPrism liest die folgenden Metadaten aus den Foto JSON Dateien aus:**
 
 - Titel
 - Beschreibung

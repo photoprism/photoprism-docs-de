@@ -1,4 +1,6 @@
-# Dateien aus Apple Photos exportieren #
+# Wechsel von Apple Photos #
+
+## Dateien übertragen
 
 1. Wähle Dateien oder Alben zum Export aus
 2. Klicke *File > Export > Export Unmodified Original For Photos*
@@ -8,7 +10,7 @@
 
 ## Metadaten
 
-Folgende Daten sind in den XMP Dateien enthalten:
+**Folgende Daten sind in den XMP Dateien enthalten:**
 
 - Titel
 - Beschreibung
@@ -16,7 +18,7 @@ Folgende Daten sind in den XMP Dateien enthalten:
 - Suchbegriffe (diese enthalten auch Informationen zu Personen)
 - GPS Informationen
 
-Davon liest PhotoPrism folgende Felder während der Indexierung aus:
+**Davon liest PhotoPrism folgende Felder während der Indexierung aus:**
 
 - Titel
 - Beschreibung

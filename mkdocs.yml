@@ -54,11 +54,10 @@ nav:
           - Sync:  user-guide/settings/sync.md
           - Konto: user-guide/settings/account.md
           #- Places: user-guide/settings/places.md
-      - Anwendungsfälle:
-          - Dateien aus Google Photos exportieren: user-guide/use-cases/google.md
-          - Dateien aus Apple Photos exportieren: user-guide/use-cases/apple.md
-          #- Dateien mit Dropbox synchronisieren: user-guide/use-cases/dropbox.md
-          - Dateien aus Flickr exportieren: user-guide/use-cases/flickr.md
+      - Migrieren:
+          - Von Google Photos wechseln: user-guide/use-cases/google.md
+          - Von Apple Photos wechseln: user-guide/use-cases/apple.md
+          - Von Flickr wechseln: user-guide/use-cases/flickr.md
           #- Link directories from remote:
       - Weiteres:
           - Metadaten: user-guide/advanced/metadata.md

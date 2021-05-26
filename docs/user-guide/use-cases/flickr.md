@@ -1,4 +1,6 @@
-# Exportiere Dateien aus Flickr #
+# Wechsel von Flickr #
+
+## Dateien übertragen
 
 1. Gehe zu https://www.flickr.com/account
 2. Frage deine Flickr Daten an
