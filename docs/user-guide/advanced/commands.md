@@ -1,40 +1,37 @@
-PhotoPrism bietet dir verschiedene Befehle um Ordnung in deiner Instanz zu halten oder Backups zu aktualisieren. Einige werden automatisiert im Hintergrund ausgeführt und Andere müssen manuell ausgelöst werden.
+Photoprism provides commands to keep your instance clean or to update backups.
+Some of the commands are executed in the background. Others can only be triggered manually.
 
-## Aufräumen
+## Cleanup
+### What does it?
 
-### Wozu dient diese Fuktion?
+### When is it executed?
 
-### Wann wird Sie ausgeführt?
+## Optimize
+### What does it?
+The optimize command checks all files with checked = false for metadata optimizations. 
+Those include:
 
-## Backup
+* Estimate locations 
+* Use mod date as date if no other date is provided
+* .....
+* Set checked = true for all the files it checked
 
-### Warum brauche ich Backups?
+### When is it executed?
+By default optimize is running every 15 minutes. 
+This interval can be configured using: `PHOTOPRISM_WAKEUP_INTERVAL`.
 
-### Wann werden Backups erstellt?
+After 7 days the files with checked = true will be reset to checked = false.
 
-## Optimieren
+## Purge
+### What does it?
 
-### Was wird optimiert?
+### When is it executed?
 
-Dieser Befehl prüft alle Dateien die ein `checked = false` haben und prüft, ob zusätzliche Metainformationen ausgelesen bzw. optimiert werden können.
 
-Zum Beispiel:
+## Reset db
 
-* Mögliche Orte
-* Bearbeitungsdatum als Datum, wenn kein Datum angegeben wurde.
-* ...
+## Restore
 
-Abschließend wird das `checked`-Flag auf true gesetzt.
+## How to migrate between different dbs
 
-### Wann wird der Befehl ausgeführt?
 
-Standardmäßig wird der Befehl alle 15 Minuten ausgeführt.
-Dieses Intervall kann mit `PHOTOPRISM_WAKEUP_INTERVAL` angepasst werden.
-
-Nach 7 Tagen wird das `checked`-Flag wieder auf false gesetzt.
-
-## Reinigen
-
-### Was wird gereinigt?
-
-### Wann wird die Reinigung durchgeführt?
