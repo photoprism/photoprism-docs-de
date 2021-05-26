@@ -24,6 +24,9 @@ Wir empfehlen die, für iOS und Android verfügbare, App [PhotoSync](https://www
    
       ![Screenshot](img/photosync-4.png){: style="width:35%"}
       ![Screenshot](img/photosync-5.png){: style="width:35%"}
+
+!!! attention
+      Falls du PhotoSync auf Android nutzt, wähle WebDAV als Übertragungsziel.
    
 ### Automatische Synchronisation einrichten ###
 1. Öffne PhotoSync und klicke :material-cog-outline:
