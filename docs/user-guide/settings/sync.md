@@ -41,7 +41,7 @@ neue Bilder von deiner Nextcloud Instanz in PhotoPrism geladen werden.
 	Aktuell werden nur JPEGs beim manuellen Upload kopiert.
 	Unterstützung für RAW und Video Dateien ist geplant.
 
-!!! Achtung
+!!! Attention
 	Auf Grund von Problemen bei bestimmten Nextcloud Einstellungen kann es vorkommen, dass nach dem Upload bei Nextcloud nur 0 Byte große Dateien ankommen. 
 	[Hier](https://github.com/photoprism/photoprism/issues/443) findest du Informationen, die dir helfen, das Problem zu beheben.
 

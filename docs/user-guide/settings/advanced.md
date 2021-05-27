@@ -6,7 +6,7 @@ Diese Seite ermöglicht dir erweiterte Einstellungen an deiner PhotoPrism Instan
 Alle Optionen können alternativ über die 
 [Konfigurations Parameter](https://docs.photoprism.org/getting-started/config-options/) gesetzt werden.
 
-!!! note
+!!! Info
     Wenn du PhotoPrism im public Modus betreibst, sind die erweiterten Einstellungen nicht verfügbar.
 
 ## Optionen ##
@@ -18,7 +18,7 @@ Debug Logs unter *Dateien>Logs* anzeigen.
 Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DEBUG`.
 
 ### Schreibgeschützter Modus ###
-Ist diese Option gewählt können Dateien nicht importiert, über die Benutzeroberfläche hochgeladen oder gelöscht werden.
+Ist diese Option gewählt, können Dateien nicht importiert, über die Benutzeroberfläche hochgeladen oder gelöscht werden.
 
 Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_READONLY`.
 
@@ -30,7 +30,7 @@ Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting
 ### Keine Sicherungskopien anlegen ###
 Keine YAML-Sicherungskopien für Metadaten von Bildern und Alben erstellen.
 
-Ist diese Option aktiviert werden die folgenden Backups nicht erstellt:
+Ist diese Option aktiviert, werden die folgenden Backups nicht erstellt:
 
 - Metadaten-Backup für Fotos in `storage/sidecar`
 - Backups für Alben, Monate, Staaten und Ordner in `storage/albums`
@@ -93,7 +93,7 @@ Source: [A Comparative Analysis of Image Interpolation Algorithms](https://ijarc
 
 ### Dynamische Vorschaubilder
 Vorschaubilder können on-demand erstellt werden, also erst, wenn sie gebraucht werden. Dies ist beispielsweise beim Betrachten der Fotos der Fall.
-Diese Einstellung spart Speicherplatz (da die Thumbnails nicht gespeichert werden), aber braucht viel Rechenleistung.
+Diese Einstellung spart Speicherplatz (da die Thumbnails nicht gespeichert werden), braucht allerdings viel Rechenleistung.
 Wir empfehlen diese Einstellung nicht, wenn PhotoPrism auf einem nicht leistungsstarken Gerät betrieben wird.
 
 Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_THUMB_UNCACHED`.
@@ -127,16 +127,16 @@ Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting
 
 !!! warning
     Wenn die eingestellte Maximalgröße überschritten wird (z.B. wenn Nutzer einen großen Bildschirm verwenden),
-    ist kein Thumbnail in der angefragten Größe vorhanden und das Originalbild muss angezeigt werden. Dies kann dazu führen, dass Bilder in der falschen Orientierung dargestellt werden.
+    und kein Thumbnail in der angefragten Größe vorhanden ist, wird das Originalbild angezeigt. Dies kann dazu führen, dass Bilder in der falschen Orientierung dargestellt werden.
 
 Die Maximalgröße muss mindestens 720px sein, um zu gewährleisten, dass Thumbnails für die Fotoansichten und die Objekterkennung vorhanden sind.
 
-Wir empfehlen eine hohe Maximalgröße, für die beste Nutzererfahrung beim Bilder betrachten.
+Wir empfehlen eine hohe Maximalgröße, für die beste Nutzererfahrung beim Bilder Betrachten.
 Sollte der von Thumbnails belegte Speicherplatz allerdings ein Problem darstellen, kannst du eine niedrigere statische Maximalgröße einstellen.
 Setze in diesem Fall eine hohe dynamische Maximalgröße, damit dein Server bei Bedarf Vorschaubilder erstellen kann.
 Beachte, dass dies eine hohe Rechenleistung erfordert und es zu einer Verzögerung kommen kann, wenn du Bilder im Vollbildmodus betrachten willst.
 
-!!! tip
+!!! Info
     Falls du im Vollbildmodus deine Originalbilder angezeigt bekommen möchtest, aktiviere *Dynamische Vorschaubilder*,
     und setze niedrige dynamische und statische Maximalgrößen (z.B. 720).
 
@@ -168,10 +168,10 @@ fit_4096  | 4096   | 4096    | Ultra HD, Retina 4K      |
 fit_7680  | 7680   | 4320    | 8K Ultra HD 2, Retina 6K |
 
 ## Umwandlung von RAW zu JPEG ##
-Viele Fotografen, insbeondere Nutzer einer digitalen SLR, verwenden ein verlustfreies RAW-Format anstelle des verlustbehafteten JPEG-Formats. Es gibt auch [Handies](https://www.fredericpaulussen.be/how-to-raw-photos-huawei-p30-pro/) die RAW-Daten abspeichern können oder das Format HEIC/HEIF nutzen.
+Viele Fotografen, insbeondere Nutzer einer digitalen SLR, verwenden ein verlustfreies RAW-Format anstelle des verlustbehafteten JPEG-Formats. Es gibt auch [Handies](https://www.fredericpaulussen.be/how-to-raw-photos-huawei-p30-pro/), die RAW-Daten abspeichern können oder das Format HEIC/HEIF nutzen.
 Das Ziel von PhotoPrism ist eine umfangreiche Unterstützung für alle [RAW-Formate](https://en.wikipedia.org/wiki/Raw_image_format), unabhängig vom verwendeten Kameramodell. Deshalb bitten wir dich uns eine Nachricht zu schicken, falls du ein Problem mit den Dateien von einem deiner Geräte hast.
 
-Webbrowser können keine RAW-Formate anzeigen. Deshalb muss PhotoPrism diese Dateien zu JPEGs *konvertieren*. Falls du das nicht möchtest, kannst du das in den [Einstellungen](ui.md) ausschalten.
+Webbrowser können keine RAW-Formate anzeigen. Deshalb muss PhotoPrism diese Dateien zu JPEGs *konvertieren*. Falls du das nicht möchtest, kannst du das in den [Einstellungen](library.md) ausschalten.
 
 Zusätzlich zu den oben genannten Formaten unterstützt PhotoPrism auch BMP-, GIF-, PNG- und TIFF-Dateien. Bevor du diese Formate zur Speicherung nutzt, solltest du bedenken, dass sie oft keine Metadaten speichern können. Deshalb werden sie in der Regel für Screenshots, Diagramme und Icons verwendet.
 

@@ -1,6 +1,6 @@
 # Allgemeine Einstellungen#
 
-In den *Einstellungen* kannst du die Eigenschaften der Benutzeroberfläche sowie der Karten konfigurieren.
+In den *Allgemeinen Einstellungen* kannst du die Eigenschaften der Benutzeroberfläche sowie der Karten konfigurieren.
 
 ![Screenshot](img/general-settings.jpg)
 
@@ -24,13 +24,13 @@ Wenn diese Option deaktiviert ist, können Alben weder geteilt noch zu anderen D
 Wenn diese Option aktiviert ist, werden private Fotos und Videos nicht in *Fotos*, *Videos*, *Favoriten*, *Kategorien*, *Karten* und *geteilten Alben* angezeigt.
 
 #### :material-archive-arrow-down: Archivieren ####
-Diese Option steuert das *Archiv*. Fotos die archiviert wurden bevor du die Option deaktivierst, werden in *Fotos/Videos* dargestellt.
+Diese Option steuert das *Archiv*. Fotos die archiviert wurden, bevor du die Option deaktivierst, werden in *Fotos/Videos* dargestellt.
 
 #### :material-pencil: Bearbeiten ####
 Wenn diese Option deaktiviert ist, kannst du keine Metadaten editieren.
 
 #### :material-delete: Löschen ####
-Wenn diese Option aktiviert ist, können Dateien permamnent aus dem Archiv gelöscht werden, um Speicherplatz freizugeben.
+Wenn diese Option aktiviert ist, können Dateien endgültig aus dem Archiv gelöscht werden, um Speicherplatz freizugeben.
 
 #### :material-file: Originale  ####
 Wenn diese Option deaktiviert ist, wird der Bereich *Originale* nicht angezeigt.
