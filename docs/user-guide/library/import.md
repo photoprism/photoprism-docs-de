@@ -2,7 +2,7 @@
 
 1. Stelle sicher, dass sich alle Dateien, die du importieren willst, im *Import* Verzeichnis befinden
 
-2. Öffne den Bereich *Dateien*, indem du auf den Link in der Hauptnavigation klickst, dann wechsle zum Tab *Kopieren*
+2. Öffne den Bereich *Dateien*, indem du auf den Link in der Hauptnavigation klickst, dann wechsle zum Tab *Import*
 
 3. Wähle optional einen Unterordner aus
 
@@ -12,12 +12,12 @@
 
 ![Screenshot](img/import.png)
 
-!!! Tipp
+!!! Info
     Zum Hinzufügen von Dateien zum *Import* Ordner kann [WebDAV](webdav.md) verwendet werden.
-    Das ist besonders hilfreich, wenn PhotoPrism auf einem Remoteserver ausgeführt wird.
+    Das ist besonders hilfreich, wenn PhotoPrism auf einem Remote-Server ausgeführt wird.
 
-!!! Achtung
-    Importieren ist im [read-only Modus](../settings/library.md) (schreibgeschützt) nicht möglich, da Schreibrechte benötigt werden.
+!!! Info
+    Importieren ist im [read-only Modus](../settings/advanced.md#schreibgeschutzter-modus) (schreibgeschützt) nicht möglich, da Schreibrechte benötigt werden.
     
 #### Wann sollte die Option "Dateien verschieben" verwendet werden? ####
 

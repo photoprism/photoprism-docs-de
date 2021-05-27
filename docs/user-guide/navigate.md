@@ -1,7 +1,7 @@
 # Navigation
-PhotoPrisms Foto- und Videosuche basiert auf den folgenden Komponenten. 
+Unsere Foto- und Videosuche basiert auf den folgenden Komponenten. 
 
-!!! Hinweis
+!!! Info
     PhotoPrism ist auf alle Bildschirmgrößen angepasst. Unsere Screenshots zeigen die App in einem Desktop-Browser mit mittlerer Auflösung.
 
 ![Screenshot](img/nav1edited.png)
@@ -10,7 +10,7 @@ PhotoPrisms Foto- und Videosuche basiert auf den folgenden Komponenten.
 
 #### 1. Hauptnavigation
 
-Befindet sich auf der linken Seite und ist auf mobilen Geräten minimiert. Klicke auf die Links, um zwischen verschiedenen Seiten wie Fotos, Alben, Orte oder Einstellungen zu wechseln.
+Befindet sich auf der linken Seite und ist auf mobilen Geräten minimiert. Klicke auf die Links, um zwischen verschiedenen Seiten wie Suche, Alben, Karten oder Einstellungen zu wechseln.
 
 #### 2. Suchleiste
 

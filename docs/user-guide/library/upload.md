@@ -6,7 +6,7 @@
 
 **oder**
 
-1. Öffne den Bereich *Dateien*, und wechsele zum Tab *Kopieren*
+1. Öffne den Bereich *Dateien*, und wechsele zum Tab *Import*
 
 2. Klicke auf *Upload*
 

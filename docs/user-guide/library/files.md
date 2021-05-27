@@ -14,7 +14,7 @@ Klicken auf eine Datei öffnet den Bearbeitungs-Dialog.
 3. Klicke :material-download:
 
 
-## Erstellen von Alben aus Dateien ##
+## Dateien zu Album hinzufügen##
 1. Selektiere Dateien
 2. Öffne das Kontextmenü
 3. Klicke :material-bookmark:

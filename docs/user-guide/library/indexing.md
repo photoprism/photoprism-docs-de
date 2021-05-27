@@ -18,11 +18,11 @@
 ![Screenshot](img/index.png)
 
 
-!!! Tipp
+!!! Info
     Zum Hinzufügen von Dateien zum *Originals* Ordner kann [WebDAV](webdav.md) verwendet werden.
-    Das ist besonders hilfreich, wenn PhotoPrism auf einem Remoteserver ausgeführt wird oder du Dateien von deinem Handy synchronisieren möchtest.
+    Das ist besonders hilfreich, wenn PhotoPrism auf einem Remote-Server ausgeführt wird oder du Dateien von deinem Handy synchronisieren möchtest.
 
-!!! Tipp 
+!!! Info 
     Ein NSFW-Detektor kann aktiviert werden, um Bilder, mit anstößigem Inhalt, automatisch als privat zu kennzeichnen. 
     Beachte, dass der Mechanismus nicht 100% zuverlässig ist. 
 
