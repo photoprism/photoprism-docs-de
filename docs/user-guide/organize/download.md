@@ -19,5 +19,5 @@ Fotos werden in Originalgröße heruntergeladen.
 
    ![Screenshot](img/multi-download.png)
 
-!!! tipp
+!!! Info
     Du kannst mehrere Fotos auf einmal selektieren, indem du die Shift Taste verwendest.

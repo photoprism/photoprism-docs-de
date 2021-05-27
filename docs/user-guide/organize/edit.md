@@ -57,7 +57,7 @@ Im *Detail-Tab* des *Bearbeitungs-Dialogs* können die folgenden Daten angezeigt
     Viele Metadaten, wie Suchbegriffe, Titel, Ort der Aufnahme oder Kameradetails werden von PhotoPrism während der [*Indexierung*](../library/indexing.md) automatisch hinzugefügt.
     Nimmst du manuell Änderungen an den Metadaten vor, werden diese von PhotoPrism bei einer erneuten Indexierung nicht überschrieben.
 
-!!! Tipp
+!!! Info
     Die Suchbegriffe können im Suchfeld verwendet werden, um Fotos und Videos zu finden.
 
 ### Kategorien bearbeiten ###

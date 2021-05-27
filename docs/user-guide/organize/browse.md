@@ -1,14 +1,13 @@
-# Schaue dir deine Fotos an #
-PhotoPrisms Foto und Video Ansichten bieten die dir Möglichkeit vergessene Fotos wieder zu entdecken, ganz bestimmte Fotos zu finden oder
+# Bereiche #
+Unsere Foto und Video Ansichten bieten die dir Möglichkeit vergessene Fotos wieder zu entdecken, ganz bestimmte Fotos zu finden oder
 deine Bilder zu organisieren.
 
-### Bereiche ###
 Über die Hauptnavigation erreichst du folgende Bereiche:
 
 #### Fotos :material-image: ####
 Hier findest du alle Fotos, die nicht in *Überprüfen*, *Archiv* oder *Privat* sind.
 
-!!! Hinweis
+!!! Info
     Wenn die Funktionen Qualitätsfilter, Privat oder Archiv deaktiviert sind, findest du hier alle deine Fotos.
     
 ![Screenshot](img/photos-section.png)

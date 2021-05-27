@@ -12,7 +12,7 @@ Mithilfe des Kontextmenüs kannst du die folgenden Aktionen durchführen:
 2. Öffne das Kontextmenü und klicke :material-delete:
 3. Bestätige
 
-!!! Hinweis
+!!! Info
     Nur das Erlebnis wird gelöscht. Deine Dateien werden nicht gelöscht oder verändert.
 
 ## Erlebnis als ZIP-Archiv herunterladen ##

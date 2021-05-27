@@ -2,7 +2,7 @@
 Aktuell unterstützt PhotoPrism alle gängigen Videoformate.
 
 !!! Info
-    Falls du ein Fomrat findest, das nicht abgespielt werden kann, melde dich gerne bei uns.
+    Falls du ein Format findest, das nicht abgespielt werden kann, melde dich gerne bei uns.
 
 Im Bereich *Videos* findest du alle Videos deiner Sammlung. Um ein Video abzuspielen, klicke auf :material-play:.
 

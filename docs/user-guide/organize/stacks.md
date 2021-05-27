@@ -17,7 +17,7 @@ Gruppierte Dateien werden im Bereich *Bildstapel* dargestellt.
     Diese Optionen kannst du in [*Einstellungen*](../settings/general.md) konfigurieren.
 
 
-### Zusammenhängende Dateien anschauen ###
+### Gruppierte Fotos anschauen ###
 
 1. Klicke auf :material-camera-burst:
 

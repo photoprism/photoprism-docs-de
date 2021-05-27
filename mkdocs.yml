@@ -22,9 +22,9 @@ nav:
       # - WebDAV Sync
       #    - Nextcloud: user-guide/nextcloud.md
       - Organisation:
-          - Entdecken:
+          - Übersicht:
             - Bereiche: user-guide/organize/browse.md
-            - Ansicht: user-guide/organize/views.md
+            - Ansichten: user-guide/organize/views.md
           - Suche & Filter: user-guide/organize/search.md
           - Überprüfen: user-guide/organize/review.md
           - Bildstapel: user-guide/organize/stacks.md

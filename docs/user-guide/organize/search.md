@@ -13,7 +13,7 @@ Probier es einfach aus!
 
    ![Screenshot](img/search-beach.png)
 
-!!! Tipp
+!!! Info
     Um gleichzeitig nach mehreren Eigenschaften zu suchen, trenne die Suchbegriffe mit einem Leerzeichen.
 
     Eine Suche nach `cat blue berlin` wird alle Fotos finden, auf denen eine Katze abgebildet ist, deren Hauptfarbe blau ist oder die in Berlin aufgenommen wurden.
@@ -33,7 +33,7 @@ Sofern mehrere Filter ausgewählt wurden, werden nur Fotos von der Suche berück
 
  ![Screenshot](img/color-red.png)
 
-!!! Tipp
+!!! Info
     Filter können auch im Suchfeld angegeben werden:
 
     `label:cat`
@@ -61,7 +61,7 @@ PhotoPrism unterstützt die folgenden Filter im Suchfeld.
 | month     |  5    | |
 | year     |  2012    | |
 | error     |    yes, no    | |
-| faces     |  yes, no, 1, 3    | 1 means minimum 1 face |
+| faces     |  yes, no, 1, 3    | faces:2 sucht Bilder mit mindestens 2 Gesichtern|
 | favorite     |    yes, no    | |
 | fmax     |    4.5  | |
 | fmin     |    1.8    | |
@@ -69,11 +69,11 @@ PhotoPrism unterstützt die folgenden Filter im Suchfeld.
 | geo | yes, no | |
 | hidden     |    yes, no    | |
 | label      |    cat    | |
-| lat     |    38.300457    | Latitude |
-| lng     |   8.931358   | Longitude |
-| mono     |    yes, no  | Monochrome images |
+| lat     |    38.300457    | Längengrad |
+| lng     |   8.931358   | Breitengrad |
+| mono     |    yes, no  | Einfarbige Bilder |
 | name     | "IMG_9831-112*", "IMG_9831-112" | |
-| original     | "IMG_9831-112*", "IMG_9831-112" | Only applicable when file have been imported |
+| original     | "IMG_9831-112*", "IMG_9831-112" | Nur relevant, wenn Import verwendet wird |
 | panorama     |    yes, no    | |
 | path | "2020/Holiday" | |
 | photo | yes, no | |

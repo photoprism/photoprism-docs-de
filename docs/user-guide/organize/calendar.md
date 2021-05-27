@@ -12,7 +12,7 @@ Das Kontextmenü ermöglicht die folgenden Aktionen:
 3. Klicke :material-delete:
 4. Bestätige
 
-!!! Hinweis
+!!! Info
     Nur die Repräsentation des Monats in diesem Bereich wird gelöscht. Deine Dateien bleiben unberührt.
 
 ## Monat als ZIP-Archiv herunterladen ##

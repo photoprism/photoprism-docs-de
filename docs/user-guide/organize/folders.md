@@ -11,7 +11,7 @@ Das Kontextmenü bietet die folgenden Aktionen:
 2. Öffne das Kontextmenü und klicke :material-delete:
 3. Bestätige
 
-!!! Hinweis
+!!! Info
     Nur die Repräsentation des Ordners im Bereich *Ordner* wird aus PhotoPrism entfernt. Deine Dateien werden nicht gelöscht.
 
 ## Ordner als ZIP-Archiv herunterladen ##
