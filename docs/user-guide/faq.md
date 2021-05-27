@@ -63,10 +63,6 @@ Um das Datum direkt in deiner Originaldatei zu ändern nutze bitte andere Apps w
 ### Wie kann ich Dateien endgültig löschen? ###
 Ja, wenn du Sponsor bist, kannst du Dateien über die Web-Oberfläche [löschen](./organize/delete.md). Falls du kein Sponsor bist, musst du dich noch ein bisschen gedulden.
 
-Die Funktion Bilder in PhotoPrism endgültig zu löschen haben wir für einen späteren Release geplant. Siehe [hier](https://github.com/photoprism/photoprism/issues/167).
-
-Wenn du Dateien manuell oder bei der Nutzung von anderen Apps löschst, vergiss nicht deine Dateien erneut zu indexieren oder das Kommando `photoprism purge` im Terminal auszuführen.
-
 ### Es sind bereits einige meiner Bilder indexiert. Warum befinden sich noch keine Bilder in den Bereichen Ordner, Kalender und Erlebnisse? ###
 Bilder werden erst am Ende der Indexierung zu den Bereichen Ordner, Kalender und Erlebnisse hinzugefügt.
 

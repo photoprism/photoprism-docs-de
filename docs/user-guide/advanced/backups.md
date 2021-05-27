@@ -4,37 +4,37 @@ PhotoPrism legt automatisch YAML-Backupdateien für Alben und Fotos an, damit du
 Backups können in den [Einstellungen](../settings/advanced.md) deaktiviert werden. 
 
 ## Album Backups
-Backups werden für alle Albentypen erstellt: Album, Ordner, Bundesland, Erlebnis and Monat.
+Backups werden für alle Albentypen erstellt: Album, Ordner, Bundesland, Erlebnis und Monat.
 
 Du findest sie in deinem `storage path` in `/albums`.
 
 ### Alben
-Für Alben werden folgende Metadaten in dem YAML Dateien gespeichert:
+Für Alben werden folgende Metadaten in den YAML Dateien gespeichert:
 
 * UID, Slug, Type, Title, Location, Category, Description, Sort Order, Country, CreatedAt, UpdatedAt, Photos (UID + date the photo was added to the album)
 
 ### Ordner-Alben
-Für Ordner-Alben werden folgende Metadaten in dem YAML Dateien gespeichert:
+Für Ordner-Alben werden folgende Metadaten in den YAML Dateien gespeichert:
 
 * UID, Slug, Type, Title, Location, Category, Description, Filter, Sort order, Country, Year, Month, Day, CreatedAt, UpdatedAt
 
 ### Monats-Alben
-Für Monats-Alben werden folgende Metadaten in dem YAML Dateien gespeichert:
+Für Monats-Alben werden folgende Metadaten in den YAML Dateien gespeichert:
 
 * UID, Slug, Type, Title, Location, Category, Description, Filter, Sort Order, Country, Year, Month, CreatedAt, UpdatedAt
 
 ### Bundesland-Alben
-Für Bundesland-Alben werden folgende Metadaten in dem YAML Dateien gespeichert:
+Für Bundesland-Alben werden folgende Metadaten in den YAML Dateien gespeichert:
 
 * UID, Slug, Type, Title, Location, Category, Description, Filter, Sort Order, Country, CreatedAt, UpdatedAt
 
 ### Erlebnis-Alben
-Für Erlebnis-Alben werden folgende Metadaten in dem YAML Dateien gespeichert:
+Für Erlebnis-Alben werden folgende Metadaten in den YAML Dateien gespeichert:
 
 * UID, Slug, Type, Title, Location, Category, Description, Filter, Sort Order, Country, Year, CreatedAt, UpdatedAt
 
 ## Foto Backups
-PhotoPrism erstellt für jedes Foto/Video eine YAML datei in deinem `sidecar path`.
+PhotoPrism erstellt für jedes Foto/Video eine YAML Datei in deinem `sidecar path`.
 
 Folgende Metadaten werden für Fotos gespeichert:
 
