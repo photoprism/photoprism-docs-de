@@ -25,7 +25,7 @@ Für Nutzer, die PhotoPrism lokal auf Port *2342* betreiben, ist die Url:
 http://admin@localhost:2342/originals/
 ```
 
-!!! Achtung
+!!! Attention
 	Benutze WebDAV **niemals ohne https** außerhalb deines lokalen, privaten
 	Netzwerks, da sonst das Passwort im Klartext über das Internet übertragen wird.
 

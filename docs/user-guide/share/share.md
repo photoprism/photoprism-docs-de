@@ -33,7 +33,7 @@ Dann
 
 
 
-!!!Tipp
+!!!Info
     Du kannst zusätzliche Links mit unterschiedlichen Codes und Ablaufdaten erstellen, indem du auf :material-link-plus: klickst
 
 ## Freigabelink löschen ##
