@@ -18,7 +18,7 @@ Diese Einstellung kann hilfreich sein, wenn du anderen Personen Zugriff auf dein
 Wenn diese Option deaktiviert ist, können Dateien nicht über PhotoPrism heruntergeladen werden.
 
 #### :material-share-variant: Teilen ####
-Wenn diese Option deaktiviert ist, können Alben weder geteilt noch zu anderen Diensten (wie Nextcloud) hochgeladen werden.
+Wenn diese Option deaktiviert ist, können Alben weder geteilt noch zu anderen Diensten (wie ownCloud) hochgeladen werden.
 
 #### :material-lock: Private Aufnahmen verbergen ####
 Wenn diese Option aktiviert ist, werden private Fotos und Videos nicht in *Fotos*, *Videos*, *Favoriten*, *Kategorien*, *Karten* und *geteilten Alben* angezeigt.

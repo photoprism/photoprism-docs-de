@@ -4,51 +4,66 @@ deine Bilder zu organisieren.
 
 Über die Hauptnavigation erreichst du folgende Bereiche:
 
-#### Fotos :material-image: ####
-Hier findest du alle Fotos, die nicht in *Überprüfen*, *Archiv* oder *Privat* sind.
+#### :material-magnify: Suche ####
+Hier findest du alle Fotos und Videos, die nicht in *Überprüfen*, *Archiv* oder *Privat* sind.
 
 !!! Info
-    Wenn die Funktionen Qualitätsfilter, Privat oder Archiv deaktiviert sind, findest du hier alle deine Fotos.
+    Wenn die Funktionen Qualitätsfilter, Privat oder Archiv deaktiviert sind, findest du hier alle deine Fotos und Videos.
     
-![Screenshot](img/photos-section.png)
+![Screenshot](img/search-section.jpg)
 
-#### Favoriten :material-heart: ####
-Hier befinden sich alle Fotos, die du als Favorit markiert hast.
-
-![Screenshot](img/favorites-section.png)
-
-#### Privat :material-lock: ####
-Hier befinden sich alle Fotos, die du als privat markiert hast.
-
-#### Videos :material-movie: ####
-Hier findest du alle Videos, die nicht in *Überprüfen*, *Archiv* oder *Privat* sind.
-
-![Screenshot](img/video-section.png)
-
-#### Alben :material-image-album: ####
+#### :material-image-album: [Alben](albums.md) ####
 Hier befinden sich deine Alben.
 
-![Screenshot](img/album-section.png)
+![Screenshot](img/albums.jpg)
 
-#### Kategorien :material-label:####
-Zeigt deine Fotos und Videos gruppiert nach Kategorien wie *Katze*, *Hund* oder *Strand*.
+#### :material-movie: [Videos](video.md) ####
+Hier findest du alle Videos, die nicht in *Überprüfen*, *Archiv* oder *Privat* sind.
 
-![Screenshot](img/label-section.png)
+![Screenshot](img/videos.jpg)
 
-#### Karten :material-map-marker: ####
-Hier sind alle Fotos und Videos, die Geodaten haben, auf einer Weltkarte dargestellt.
+#### :material-heart: Favoriten ####
+Hier befinden sich alle Fotos, die du als Favorit markiert hast.
 
-![Screenshot](img/places-section.png)
+![Screenshot](img/favorites.jpg)
 
-#### Erlebnisse :material-compass: ####
+#### :material-compass: [Erlebnisse](moments.md)  ####
 Entdecke Alben von Erlebnissen, die wir automatisch für dich erstellt haben.
 
-![Screenshot](img/moments.png)
+![Screenshot](img/moments.jpg)
 
-#### Kalender :material-calendar-range: ####
+#### :material-calendar-range: [Kalender](calendar.md) ####
 Hier sind deine Fotos nach Erstellungsdatum sortiert.
 
-![Screenshot](img/calendar.png)
+![Screenshot](img/calendar.jpg)
+
+#### :material-map-marker: [Karten](places.jpg) ####
+Hier sind alle Fotos und Videos, die Geodaten haben, auf einer Weltkarte dargestellt.
+
+![Screenshot](img/places.jpg)
+
+#### :material-label: [Kategorien](labels.md) ####
+Zeigt deine Fotos und Videos gruppiert nach Kategorien wie *Katze*, *Hund* oder *Strand*.
+
+![Screenshot](img/labels.jpg)
+
+#### :material-folder: [Ordner](folders.md) ####
+Hier werden automatisch die Unterordner deines *Originals* Verzeichnis angezeigt.
+
+#### :material-lock: [Privat](private.md) ####
+Hier befinden sich alle Fotos, die du als privat markiert hast.
+
+#### :material-film: [Originale](../library/files.md) ####
+Hier werden alle Dateien deines *Originals* Verzeichnis angezeigt
+
+![Screenshot](img/originals.jpg)
+
+![Screenshot](img/originals2.jpg)
+
+
+
+
+
 
 
     
