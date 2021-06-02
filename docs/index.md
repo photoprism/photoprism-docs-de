@@ -1,4 +1,4 @@
-# PhotoPrism: Browse Your Life in Pictures
+# PhotoPrism
 
 PhotoPrism® ist eine server-basierte App zum Betrachten, Organisieren und Teilen deiner persönlichen Fotosammlung.
 Wir nutzen die neuesten Technologien, um Bilder automatisch zu kategorisieren.

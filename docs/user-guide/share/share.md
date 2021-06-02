@@ -3,7 +3,7 @@
 ## Freigabelink erstellen ##
 1. Gehe zu *Alben*
 2. Selektiere das Album, das du teilen möchtest
-3. Öffne das Kontextmenü
+3. Öffne das Kontext-Menü
 4. Klicke :material-share-variant:
 
     ![Screenshot](img/share-1.png)

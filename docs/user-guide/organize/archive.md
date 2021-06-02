@@ -5,20 +5,19 @@ Archivierte Dateien werden nicht gelöscht, sie werden allerdings ausschließlic
 ### Fotos archivieren ###
 
 1. Selektiere Fotos/Videos
-2. Öffne das Kontextmenü
+2. Öffne das Kontext-Menü
 3. Klicke :material-archive-arrow-down:
-4. Bestätige
 
     ![Screenshot](img/archive.png)
     
-    ![Screenshot](img/confirm-archive.png)
+    <!--![Screenshot](img/confirm-archive.png)-->
 
 
 ### Archivierte Fotos wieder herstellen ###
 
 1. Gehe zu *Archiv*
 2. Selektiere Fotos/Videos
-3. Öffne das Kontextmenü
+3. Öffne das Kontext-Menü
 4. Klicke :material-archive-arrow-up:
 
     ![Screenshot](img/restore.png)

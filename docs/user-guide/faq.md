@@ -66,8 +66,8 @@ Ja, wenn du Sponsor bist, kannst du Dateien über die Web-Oberfläche [löschen]
 ### Es sind bereits einige meiner Bilder indexiert. Warum befinden sich noch keine Bilder in den Bereichen Ordner, Kalender und Erlebnisse? ###
 Bilder werden erst am Ende der Indexierung zu den Bereichen Ordner, Kalender und Erlebnisse hinzugefügt.
 
-### Warum entspricht die Anzahl in *Suche* nicht der Anzahl in *Originals*?###
-Der Bereich *Originals* zeigt Dateien an, während in *Suche* Fotos und Videos dargestellt werden.
+### Warum zeigt die Navigation unterschiedliche Zahlen für *Suche* und *Originale* an?###
+Der Bereich *Originale* zeigt Dateien an, während in *Suche* Fotos und Videos dargestellt werden.
 
 Fotos und Videos können aus mehreren Dateien bestehen:
 
@@ -78,7 +78,7 @@ Es kann auch sein, dass mehrere JPG Dateien zu einem Foto gruppiert sind (z.B. e
 
 ### Warum ist die Anzahl in *Originals* höher, als die Anzahl an Dateien in meinem Originals Verzeichnis? ###
 Während der Indexierung erstellt Photoprism JPG Dateien, falls diese nicht vorhanden sind (beispielsweise für RAWs, Videos oder PNGs).
-Diese Dateien werden in /storage/sidecar gespeichert. In der Benutzeroberfläche werden sie allerdings im Bereich Originals angezeigt.
+Diese Dateien werden in /storage/sidecar gespeichert. In der Benutzeroberfläche werden sie allerdings im Bereich Originale angezeigt.
 
 ### Warum haben manche meiner Fotos ohne GPS Informationen trotzdem einen Ort gesetzt?###
 Für Fotos ohne Orts-Informationen wird anhand von anderen Fotos, die am gleichen Tag gemacht wurden, ein Ort geschätzt. 

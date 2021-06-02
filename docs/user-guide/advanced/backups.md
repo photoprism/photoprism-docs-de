@@ -44,7 +44,7 @@ Folgende Metadaten werden für Fotos gespeichert:
 
 ## Backup Befehl
 PhotoPrism erstellt die Album und Foto YAML Backups automatisch.
-Falls du die Album Backups updaten, oder eine Datenbank Backup erstellen möchtest, kannst du den Backup Befehl verwenden.
+Falls du die Album Backups updaten, oder ein Datenbank Backup erstellen möchtest, kannst du den Backup Befehl verwenden.
 
 `docker-compose exec photoprism photoprism backup -a --albums-path PATH -i --index-path PATH [FILENAME]`
 

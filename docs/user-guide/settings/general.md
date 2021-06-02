@@ -7,7 +7,7 @@ In den *Allgemeinen Einstellungen* kannst du die Eigenschaften der Benutzeroberf
 ### Benutzeroberfläche ###
 Hier kannst du das *Design* und die *Sprache* der Benutzeroberfläche ändern.
 
-Um PhotoPrism an deine persönlichen Vorlieben und deinen Bedarf anzupassen, kannst du die folgenden Bereiche und Funktionalitäten ein- und ausschalten.
+Um PhotoPrism an deine individuellen Bedürfnisse anzupassen, kannst du die folgenden Bereiche und Funktionalitäten ein- und ausschalten.
 Deaktivierte Bereiche tauchen nicht in der Hauptnavigation auf.
 
 #### :material-cloud-upload: Upload ####
@@ -15,7 +15,7 @@ Wenn diese Option deaktiviert ist, können keine Dateien über [*Upload*](../lib
 Diese Einstellung kann hilfreich sein, wenn du anderen Personen Zugriff auf dein PhotoPrism gibst, diese aber keine Dateien hochladen dürfen.
 
 #### :material-download: Download ####
-Wenn diese Option deaktiviert ist, können Dateien nicht über PhotoPrism heruntergeladen werden.
+Wenn diese Option deaktiviert ist, können Dateien nicht über die App heruntergeladen werden.
 
 #### :material-share-variant: Teilen ####
 Wenn diese Option deaktiviert ist, können Alben weder geteilt noch zu anderen Diensten (wie ownCloud) hochgeladen werden.
@@ -24,7 +24,7 @@ Wenn diese Option deaktiviert ist, können Alben weder geteilt noch zu anderen D
 Wenn diese Option aktiviert ist, werden private Fotos und Videos nicht in *Fotos*, *Videos*, *Favoriten*, *Kategorien*, *Karten* und *geteilten Alben* angezeigt.
 
 #### :material-archive-arrow-down: Archivieren ####
-Diese Option steuert das *Archiv*. Fotos die archiviert wurden, bevor du die Option deaktivierst, werden in *Fotos/Videos* dargestellt.
+Diese Option steuert das *Archiv*. Fotos die archiviert wurden, bevor du die Option deaktivierst, werden wieder in *Fotos/Videos* dargestellt.
 
 #### :material-pencil: Bearbeiten ####
 Wenn diese Option deaktiviert ist, kannst du keine Metadaten editieren.

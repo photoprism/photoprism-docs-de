@@ -15,7 +15,7 @@ Während der [*Indexierung*](../library/indexing.md) liest PhotoPrism so viele D
 
 #### In anderen Ansichten ####
 1. Selektiere ein oder mehrere Fotos
-2. Öffne das Kontextmenü
+2. Öffne das Kontext-Menü
 3. Klicke auf :material-pencil:
 
 ![Screenshot](img/edit-open-3.png)

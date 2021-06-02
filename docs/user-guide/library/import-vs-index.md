@@ -12,7 +12,7 @@ Verwende *Indexieren*, wenn du deine Fotos und Videos direkt im Ordner *Original
 zu verschieben oder umzubenennen.
 
 !!! Info
-    Um bestimmte Dateien oder Ordner von der Indexierung aus zu schließen, kannst du [eine Ignorieren Liste konfigurieren](indexing.md#verzeichnisse-und-dateien-ignorieren)
+    Um bestimmte Dateien oder Ordner von der Indexierung auszuschließen, kannst du [eine Ignorieren Liste konfigurieren](indexing.md#verzeichnisse-und-dateien-ignorieren),
     bevor du die Indexierung startest.
 
 **Deine Ordnerstruktur in *Originals* könnte so aussehen:**
@@ -47,7 +47,7 @@ zu verschieben oder umzubenennen.
 
    ![Screenshot](img/before-import.png)
    
-**Während dem Importieren:**
+**Während dem Import:**
  
 * Dateien werden aus dem *Import* Verzeichnis in das *Originals* Verzeichnis verschoben oder kopiert
 * Im *Originals* Verzeichnis werden die Dateien umbenannt und umstrukturiert. Der ursprüngliche Dateiname wird in den Metadaten der Datei gespeichert

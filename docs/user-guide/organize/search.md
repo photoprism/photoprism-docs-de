@@ -29,7 +29,7 @@ Zusätzlich zur Suche können auch folgende Filter gesetzt werden:
 * Farbe
 * Kategorie
 
-Sofern mehrere Filter ausgewählt wurden, werden nur Fotos von der Suche berücksichtigt, die allen Filterkriterien entsprechen.
+Sind mehrere Filter gesetzt, werden nur Fotos von der Suche berücksichtigt, die allen Filterkriterien entsprechen.
 
  ![Screenshot](img/color-red.png)
 

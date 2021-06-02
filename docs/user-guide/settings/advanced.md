@@ -4,7 +4,7 @@ Diese Seite ermöglicht dir erweiterte Einstellungen an deiner PhotoPrism Instan
 ![](img/advanced-settings.jpg)
 
 Alle Optionen können alternativ über die 
-[Konfigurations Parameter](https://docs.photoprism.org/getting-started/config-options/) gesetzt werden.
+[Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) gesetzt werden.
 
 !!! Info
     Wenn du PhotoPrism im public Modus betreibst, sind die erweiterten Einstellungen nicht verfügbar.
@@ -15,17 +15,17 @@ Alle Optionen können alternativ über die
 Debug Logs unter *Dateien>Logs* anzeigen.
 Änderungen erfordern einen Neustart.
 
-Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DEBUG`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DEBUG`.
 
 ### Schreibgeschützter Modus ###
 Ist diese Option gewählt, können Dateien nicht importiert, über die Benutzeroberfläche hochgeladen oder gelöscht werden.
 
-Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_READONLY`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_READONLY`.
 
 ### Expermientelle Funktionen ###
 Aktiviert neue Funktionen, an denen derzeit noch entwickelt wird.
 
-Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_EXPERIMENTAL`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_EXPERIMENTAL`.
 
 ### Keine Sicherungskopien anlegen ###
 Keine YAML-Sicherungskopien für Metadaten von Bildern und Alben erstellen.
@@ -35,12 +35,12 @@ Ist diese Option aktiviert, werden die folgenden Backups nicht erstellt:
 - Metadaten-Backup für Fotos in `storage/sidecar`
 - Backups für Alben, Monate, Staaten und Ordner in `storage/albums`
 
-Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_BACKUPS`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_BACKUPS`.
 
 ### WebDAV deaktivieren###
 Deaktiviert den eingebauten WebDAV-Server. Änderungen erfordern einen Neustart.
 
-Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_WEBDAV`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_WEBDAV`.
 
 ### Karten deaktivieren ###
 Wenn Karten deaktiviert sind, liest PhotoPrism trotzdem noch Geo-Informationen (Längen- und Breitengrad) aus den Metadaten deiner Dateien aus.
@@ -48,17 +48,17 @@ Es wird allerding kein Reverse Lookup mehr gemacht, um Informationen über die O
 
 Die Karten Ansicht ist nicht sichtbar.
 
-Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_PLACES`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_PLACES`.
 
 ### ExifTool deaktivieren ###
 Keine JSON-Dateien  in `storage/sidecar` mit ExifTool erstellen. Diese werden für die Indexierung zusätzlicher Metadaten, z.B. von Videos, benötigt.
 
-Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_EXIFTOOL`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_EXIFTOOL`.
 
 ### TensorFlow deaktivieren###
 TensorFlow nicht zur automatischen Bild-Kategorisierung verwenden.
 
-Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_TENSORFLOW`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_TENSORFLOW`.
 
 ## Bilder##
 Mit folgenden Einstellungen kannst du die Generierung von Vorschaubildern kontrollieren.
@@ -69,7 +69,7 @@ Du kannst den Algorithmus wählen, der verwendet werden soll, um JPEG Vorschaubi
 Der *Lanczos* Filter erstellt die qualitativ hochwertigsten Thumbnails, ist aber etwas langsamer, als die anderen. 
 Der *Cubic* Filter ist ca 30% schneller.
 
-Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_THUMB_FILTER`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_THUMB_FILTER`.
 
 #### Beispiele ####
 
@@ -96,7 +96,7 @@ Vorschaubilder können on-demand erstellt werden, also erst, wenn sie gebraucht 
 Diese Einstellung spart Speicherplatz (da die Thumbnails nicht gespeichert werden), braucht allerdings viel Rechenleistung.
 Wir empfehlen diese Einstellung nicht, wenn PhotoPrism auf einem nicht leistungsstarken Gerät betrieben wird.
 
-Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_THUMB_UNCACHED`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_THUMB_UNCACHED`.
 
 ### JPG Qualität
 
@@ -111,19 +111,19 @@ Bei einer JPEG-Qualität von 95 sind die Vorschaubilder ca 500kB groß. Bei eine
 
 Die Objekterkennung funktioniert mit scharfen Bildern besser, mit hoher Kompression werden also auch die Kategorien ungenauer.
 
-Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_JPEG_QUALITY`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_JPEG_QUALITY`.
 
 ### Dynamic and Static Size Limits
 
 **Dynamische Maximalgröße**: 
 Maximalgröße, für Thumbnails, die on demand erstellt werden.
 
-Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_THUMB_SIZE_UNCACHED`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_THUMB_SIZE_UNCACHED`.
 
 **Statische Maximalgröße**:
 Maximalgröße, für Thumbnails, die während des Import- bzw Indexiervorgangs erstellt werden.
 
-Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_THUMB_SIZE`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_THUMB_SIZE`.
 
 !!! warning
     Wenn die eingestellte Maximalgröße überschritten wird (z.B. wenn Nutzer einen großen Bildschirm verwenden),
@@ -131,7 +131,7 @@ Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting
 
 Die Maximalgröße muss mindestens 720px sein, um zu gewährleisten, dass Thumbnails für die Fotoansichten und die Objekterkennung vorhanden sind.
 
-Wir empfehlen eine hohe Maximalgröße, für die beste Nutzererfahrung beim Bilder Betrachten.
+Wir empfehlen eine hohe Maximalgröße.
 Sollte der von Thumbnails belegte Speicherplatz allerdings ein Problem darstellen, kannst du eine niedrigere statische Maximalgröße einstellen.
 Setze in diesem Fall eine hohe dynamische Maximalgröße, damit dein Server bei Bedarf Vorschaubilder erstellen kann.
 Beachte, dass dies eine hohe Rechenleistung erfordert und es zu einer Verzögerung kommen kann, wenn du Bilder im Vollbildmodus betrachten willst.
@@ -185,31 +185,31 @@ Zusätzlich zu den oben genannten Formaten unterstützt PhotoPrism auch BMP-, GI
 
 Maximalgröße für JPEGs die, bei der RAW Konvertierung erstellt werden.
 
-Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_JPEG_SIZE`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_JPEG_SIZE`.
 
 ### Presets anwenden
 
 Aktiviert Benutzerdefinierte Voreinstellungen. Dateien werden möglicherweise langsamer konvertiert.
 
-Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_RAW_PRESETS`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_RAW_PRESETS`.
 
 ### Darktable deaktivieren
 
 Darktable nicht zum Konvertieren von Bildern verwenden.
 
-Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_DARKTABLE`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_DARKTABLE`.
 
 ### RawTherapee deaktivieren
 
 RawTherapee nicht zum Konvertieren von Bildern verwenden.
 
-Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_RAWTHERAPEE`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_RAWTHERAPEE`.
 
 ### FFmpeg deaktivieren
 
 FFmpeg nicht zum Konvertieren von Videos verwenden.
 
-Der entsprechende [Konfigurations Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_FFMPEG`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_FFMPEG`.
 
 
 <!--## Filter ##

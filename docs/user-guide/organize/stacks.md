@@ -32,7 +32,7 @@ Gruppierte Dateien werden im Bereich *Bildstapel* dargestellt.
 Das als *Primärdatei* ausgewählte Bild wird in den Foto-Ansichten verwendet. 
 Es wird als erster Eintrag im Tab *Dateien* angezeigt.
 
-Um die Primärdatei zu ändern, gehe wie folgt vor:
+Um die Primärdatei zu ändern:
 
 1. Öffne den [*Bearbeitungs-Dialog*](edit.md) des Fotos
 2. Gehe zu *Dateien*

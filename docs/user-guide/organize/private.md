@@ -28,7 +28,7 @@ Mit der Standardeinstellung werden alle Fotos, die als privat markiert sind, in 
 
 1. Gehe zu *Fotos*
 2. Selektiere private Fotos/Videos
-3. Öffne das Kontextmenü und klicke :material-lock:
+3. Öffne das Kontext-Menü und klicke :material-lock:
 
 ![Screenshot](img/private-context-menu.png)
 
@@ -44,6 +44,6 @@ Mit der Standardeinstellung werden alle Fotos, die als privat markiert sind, in 
 
 1. Gehe zum Bereich *Privat*
 2. Selektiere die Fotos/Videos, die nicht mehr privat sein sollen
-3. Öffne das Kontextmenü und klicke :material-lock:
+3. Öffne das Kontext-Menü und klicke :material-lock:
 
 ![Screenshot](img/remove-private-context-menu.png)

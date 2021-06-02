@@ -17,7 +17,7 @@
 
     ![Screenshot](img/edit-album-1.png)
     
-    Alternativ kannst du auch ein Album selektieren, das Kontextmenü öffnen und :material-pencil: klicken
+    Alternativ kannst du auch ein Album selektieren, das Kontext-Menü öffnen und :material-pencil: klicken
     
     ![Screenshot](img/album-edit-2.png)
     
@@ -33,7 +33,7 @@
 ### Fotos zu Album hinzufügen ###
 
 1. Selektiere Fotos und Videos
-2. Öffne das Kontextmenü
+2. Öffne das Kontext-Menü
 3. Klicke :material-bookmark:
 
     ![Screenshot](img/add-photo-album-1.png)
@@ -53,7 +53,7 @@
 
 1. Gehe zu einem Album
 3. Selektiere Fotos, die du entfernen möchtest
-4. Öffne das Kontextmenü
+4. Öffne das Kontext-Menü
 5. Klicke :material-minus:
 
     ![Screenshot](img/remove-from-album-1.png)

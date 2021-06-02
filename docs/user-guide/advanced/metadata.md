@@ -1,4 +1,4 @@
-Wir haben uns zum Ziel gesetzt, so viele Metadaten wie möglich aus deinen Original Dateien aus zu lesen.
+Wir haben uns zum Ziel gesetzt, so viele Metadaten wie möglich aus deinen Original Dateien auszulesen.
 
 Falls du bestimmte EXIF oder XMP Felder nutzt, die wir noch nicht unterstützten, erstelle gerne ein [Ticket](https://github.com/photoprism/photoprism/issues) oder einen Pull Request.
 

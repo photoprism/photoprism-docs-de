@@ -6,7 +6,7 @@ Dateien, die du löschen möchtest, müssen zuvor [archiviert](./archive.md) wer
 
 1. Gehe zu *Archiv*
 2. Selektiere Fotos oder Videos
-2. Öffne das Kontextmenü
+2. Öffne das Kontext-Menü
 3. Klicke :material-delete:
 4. Bestätige
 

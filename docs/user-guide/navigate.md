@@ -34,7 +34,7 @@ Die Filterleise enthält zusätzliche Suchfilter wie Land, Jahr, Monat, Kamera, 
 
 #### 7. Kontext-Menü
 
-Wenn Fotos oder Videos selektiert sind, erscheint das Kontextmenü in der Ecke unten rechts. Die angezeigte Zahl ist die Anzahl der aktuell selektierten Ergebnisse. Das Menü bietet folgende Aktionen:
+Wenn Fotos oder Videos selektiert sind, erscheint das Kontext-Menü in der Ecke unten rechts. Die angezeigte Zahl ist die Anzahl der aktuell selektierten Ergebnisse. Das Menü bietet folgende Aktionen:
 
 * :material-archive-arrow-down: Fotos archivieren
 * :material-bookmark: Fotos zu Alben hinzufügen

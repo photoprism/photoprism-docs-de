@@ -12,7 +12,7 @@
 ### Mehrere Fotos herunterladen ###
 
 1. Selektiere Fotos und Videos
-2. Öffne das Kontextmenü
+2. Öffne das Kontext-Menü
 3. Klicke :material-cloud-download:
 
 Fotos werden in Originalgröße heruntergeladen.

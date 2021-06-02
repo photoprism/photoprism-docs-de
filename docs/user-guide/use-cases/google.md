@@ -2,7 +2,7 @@
 
 Fotosammlungen können problemlos von Google Photos in PhotoPrism übertragen werden.
 
-Um deine Originalbilder mit Metadaten (wie Koordinaten) von Google Photos zu bekommen wird [Google Takeout](https://takeout.google.com/) verwendet.
+Um deine Originalbilder mit Metadaten von Google Photos zu bekommen wird [Google Takeout](https://takeout.google.com/) verwendet.
 
 ## Dateien übertragen #
 

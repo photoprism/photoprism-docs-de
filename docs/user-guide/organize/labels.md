@@ -74,7 +74,7 @@ Automatisch zugewiesene *Kategorien* können entfernt werden. Manuell hinzugefü
 
 1. Gehe zu *Kategorien*
 2. Selektiere die zu löschende *Kategorie*
-3. Öffne das Kontextmenü und klicke auf :material-delete:
+3. Öffne das Kontext-Menü und klicke auf :material-delete:
 4. Bestätige
 
 !!! Attention
