@@ -38,7 +38,7 @@ Unterstützung spezieller RAW Formate ist abhängig von der Laufzeitumgebung sow
 PhotoPrism kann [Darktable](https://www.darktable.org/) und [RawTherapee](https://rawtherapee.com/) für die RAW zu JPEG Konvertierung nutzen. 
 Auf Mac OS, wird möglicherweise auch [Sips](https://ss64.com/osx/sips.html) verwendet.
 
-Wir unterstützen alle gängigen Videodateien.
+Wir unterstützen [alle gängigen Videodateien](https://docs.photoprism.org/developer-guide/media/videos/).
 Du solltest PhotoPrism so konfigurieren, dass automatisch JSON Sidecar-Dateien erstellt werden, damit Metadaten deiner Videos, wie Aufnahmeort und Dauer indexiert werden können.
 
 Falls du Probleme mit einem bestimmten Dateiformat hast, öffne gerne ein Ticket.
@@ -83,3 +83,33 @@ Diese Dateien werden in /storage/sidecar gespeichert. In der Benutzeroberfläche
 ### Warum haben manche meiner Fotos ohne GPS Informationen trotzdem einen Ort gesetzt?###
 Für Fotos ohne Orts-Informationen wird anhand von anderen Fotos, die am gleichen Tag gemacht wurden, ein Ort geschätzt. 
 Die Schätzungen können in den [Einstellungen](./settings/general.md) deaktiviert werden.
+
+### Warum bekomme ich eine Fehlermeldung, wenn ich versuche einen Remote Server als Synchronisationsziel hinzuzufügen? ###
+PhotoPrism testet einige [übliche Endpoints](https://raw.githubusercontent.com/photoprism/photoprism/develop/internal/remote/heuristic.go), wenn ein neuer Remote Server
+hinzugefügt wird.
+Falls diese Tests fehlschlagen, wird dir eine Fehlermeldung angezeigt. Hierfür kann es unterschiedliche Gründe geben:
+
+- Du benutzt HTTPS mit einem ungültigen Zertifikat (nicht signiert, abgelaufen, falsche Domain, ...).
+- Dein Server hat Berechtigungsprobleme oder ist falsch konfiguriert. Nextcloud blockiert z.B. Anfragen, wenn der Host nicht unter den `trusted_domains` in `config.php` definiert ist.
+- Deine PhotoPrism Instanz kann aufgrund von Netzwerk Einstellungen oder einer Firewall die IP des Servers nicht erreichen.
+- Der interne Hostname kann nicht in eine IP Adresse aufgelöst werden.
+- Host oder Port sind falsch.
+- Benutzername oder Passwort sind falsch.
+
+Wenn du keine Probleme hast, das Terminal zu benutzen, kannst du [Curl](https://curl.se/) verwenden, um [HTTP Verbindungen zu testen](https://code.blogs.iiidefix.net/posts/webdav-with-curl/).
+
+```
+curl -X PROPFIND -H "Depth: 1" -u user:pass https://example.org/webdav/
+```
+
+Benutze Curl am besten im gleichen Docker-Container/der gleichen VM/der gleichen Server Umgebung, auf der du PhotoPrism installiert hast.
+
+### Wenn ich mit meiner Synchronisations App eine WebDAV Verbindung aufbauen will, bekomme ich den Fehler "TLS Paket-Header können nicht gelesen werden" ###
+Aufgrund von Sicherheitsbedenken haben einige Apps, wie [FolderSync](https://www.tacit.dk/foldersync/faq/#i-can-not-connect-to-a-non-https-webdav-server-why), den
+Support f̈́ür HTTP ohne SSL eingestellt.
+
+Wenn du PhotoPrism auf einem öffentlichen Server außerhalb deines Heimnetzwerks installierst, führe es bitte **immer hinter einem sicheren Reverse HTTP Proxy** ,
+ wie [Traefik](../getting-started/proxies/traefik.md),
+[Caddy](../getting-started/proxies/caddy-2.md), oder [NGINX](../getting-started/proxies/nginx.md) aus. 
+Deine Dateien und Passwörter werden sonst im Klartext übermittelt und können
+abgefangen werden.
