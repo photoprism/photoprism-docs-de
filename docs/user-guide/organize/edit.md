@@ -60,6 +60,12 @@ Im *Detail-Tab* des *Bearbeitungs-Dialogs* können die folgenden Daten angezeigt
 !!! Info
     Die Suchbegriffe können im Suchfeld verwendet werden, um Fotos und Videos zu finden.
 
+#### Geolocation Plugin ####
+
+Mit dem open source [Geolocation Plugin](https://github.com/andyvalerio/photoprism-geolocation) kann der Aufnahmeort auch auf einer Weltkarte eingetragen werden. Das Plugin kann [über den Chrome Webstore installiert werden](https://chrome.google.com/webstore/detail/geolocation-plugin-for-ph/oggmpodnbdcmfiognbkkeffacpeaifch).
+
+![Screenshot](https://valerio.nu/maps/geolocation.jpg)
+
 ### Kategorien bearbeiten ###
 Im Tab *Kategorien* können die [*Kategorien*](labels.md) eines Fotos/Videos angesehen und verändert werden.
 
