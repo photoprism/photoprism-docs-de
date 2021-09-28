@@ -4,16 +4,16 @@ Der Bearbeitungs-Dialog ermöglicht es dir, Metadaten zu deinen Fotos hinzuzufü
 Während der [*Indexierung*](../library/indexing.md) liest PhotoPrism so viele Daten wie möglich aus Sidecar-Dateien oder den Fotos selbst aus.
 
 ### Bearbeitungs-Dialog öffnen ###
-#### In der *Karteikarten Ansicht* ####
+#### Karteikarten Ansicht ####
 1. Klicke auf den Titel, den Aufnahmezeitpunkt oder die Kamerainformationen
 
     ![Screenshot](img/edit-open-1.png)
 
-#### Im Vollbildmodus ####
+#### Vollbildmodus ####
 1. Klicke auf :material-pencil:, in der rechten oberen Ecke des Bildschirms
     ![Screenshot](img/edit-open-2.png)
 
-#### In anderen Ansichten ####
+#### Anderen Ansichten ####
 1. Selektiere ein oder mehrere Fotos
 2. Öffne das Kontext-Menü
 3. Klicke auf :material-pencil:
@@ -68,6 +68,9 @@ Mit dem open source [Geolocation Plugin](https://github.com/andyvalerio/photopri
 
 ### Kategorien bearbeiten ###
 Im Tab *Kategorien* können die [*Kategorien*](labels.md) eines Fotos/Videos angesehen und verändert werden.
+
+### Personen bearbeiten ###
+Im Tab *Personen* kannst du abgebildete [Personen](people.md) ansehen und editieren.
 
 ### Dateien bearbeiten###
 Im Tab *Dateien* werden alle Dateien angezeigt, die zu einem Foto gehören.

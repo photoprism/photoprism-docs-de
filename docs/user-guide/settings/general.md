@@ -20,6 +20,10 @@ Wenn diese Option deaktiviert ist, können Dateien nicht über die App herunterg
 #### :material-share-variant: Teilen ####
 Wenn diese Option deaktiviert ist, können Alben weder geteilt noch zu anderen Diensten (wie ownCloud) hochgeladen werden.
 
+#### :material-account: Personen ####
+Wenn diese Option deaktiviert ist, wird der Bereich Personen nicht angezeigt. Um die Gesichtserkennung zu deaktivieren kannst du `PHOTOPRISM_DISABLE_FACES` oder `PHOTOPRISM_DISABLE_TENSORFLOW` `"true"` in deiner [Konfiguration](https://docs.photoprism.org/getting-started/config-options/) verwenden.
+
+
 #### :material-lock: Verberge private Aufnahmen ####
 Wenn diese Option aktiviert ist, werden private Fotos und Videos nicht in *Fotos*, *Videos*, *Favoriten*, *Kategorien*, *Karten* und *geteilten Alben* angezeigt.
 
