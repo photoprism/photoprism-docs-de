@@ -29,13 +29,13 @@ http://admin@localhost:2342/originals/
 	Benutze WebDAV **niemals ohne https** außerhalb deines lokalen, privaten
 	Netzwerks, da sonst das Passwort im Klartext über das Internet übertragen wird.
 
-## Unter macOS mit einem WebDAV Server verbinden ##
+## macOS ##
 
 1. Im **Finder** klicke "Gehe zu" > "Mit Server verbinden"
 2. Trage die Url in das Feld **Serveradresse** ein
 3. Klicke  **Verbinden**
 
-## Unter Windows 10 mit einem WebDAV Server verbinden ##
+## Windows 10 ##
 
 1. Öffne den **Windows Explorer**
 2. Klicke mit der rechten Maustaste auf **Mein PC**

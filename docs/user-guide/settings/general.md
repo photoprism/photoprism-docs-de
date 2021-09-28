@@ -20,7 +20,7 @@ Wenn diese Option deaktiviert ist, können Dateien nicht über die App herunterg
 #### :material-share-variant: Teilen ####
 Wenn diese Option deaktiviert ist, können Alben weder geteilt noch zu anderen Diensten (wie ownCloud) hochgeladen werden.
 
-#### :material-lock: Private Aufnahmen verbergen ####
+#### :material-lock: Verberge private Aufnahmen ####
 Wenn diese Option aktiviert ist, werden private Fotos und Videos nicht in *Fotos*, *Videos*, *Favoriten*, *Kategorien*, *Karten* und *geteilten Alben* angezeigt.
 
 #### :material-archive-arrow-down: Archivieren ####

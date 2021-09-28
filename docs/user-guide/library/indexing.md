@@ -1,4 +1,4 @@
-# Das Originals-Verzeichnis Indexieren #
+# Das Originals-Verzeichnis indexieren #
 
 !!! Info
     Wenn du PhotoPrism zum ersten Mal verwendest, stelle sicher, dass deine Foto und Video 
@@ -26,7 +26,7 @@
     Ein NSFW-Detektor kann aktiviert werden, um Bilder, mit anstößigem Inhalt, automatisch als privat zu kennzeichnen. 
     Beachte, dass der Mechanismus nicht 100% zuverlässig ist. 
 
-#### Verzeichnisse und Dateien Ignorieren ####
+#### Verzeichnisse und Dateien ignorieren ####
 Versteckte Dateien oder Ordner, deren Namen mit `.` oder `@` beginnen, werden automatisch ignoriert.
 Falls bestimmte Dateien oder Ordner nicht indexiert werden sollen, erstelle eine `.ppignore` Datei im Verzeichnis, in welchem diese Dateien/Ordner liegen.
 In dieser Datei kannst du konfigurieren, welche Dateien oder Ordner ignoriert werden sollen.
@@ -50,7 +50,7 @@ Du kannst `*` als Wildcard benutzen.
 Bereits indexierte Dateien und Ordner werden nicht nachträglich aus dem Index entfernt, wenn du Sie auf die Ignorieren Liste setzt.
 Hast du Dateien, die du ignorieren willst, bereits indexiert, kannst du die Datenbank zurücksetzen, um mit einem neuen Index zu starten.
 
-#### Index Vollständig Aktualisieren ####
+#### Index Vollständig aktualisieren ####
 
 Wenn die Option "Index vollständig aktualisieren" gewählt ist, werden alle Dateien in *Originals* neu indexiert. Also auch Dateien, die bereits indexiert und nicht verändert wurden. 
 Das kann nach einem Upgrade auf eine neue Hauptversion erforderlich sein.

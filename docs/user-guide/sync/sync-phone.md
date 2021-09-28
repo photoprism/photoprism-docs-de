@@ -7,7 +7,7 @@ Um Fotos und Videos von deinem Handy mit PhotoPrism zu synchronisieren, kannst d
 ## PhotoSync ##
 Wir empfehlen die, für iOS und Android verfügbare, App [PhotoSync](https://www.photosync-app.com/home.html).
 
-### PhotoPrism als Übertragungsziel einrichten ###
+### Übertragungsziel einrichten ###
 1. Öffne PhotoSync und klicke :material-cog-outline:
 2. Klicke *Konfigurieren*
 3. Wähle PhotoPrism als Übertragungsziel

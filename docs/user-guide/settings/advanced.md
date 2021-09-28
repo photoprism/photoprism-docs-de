@@ -37,12 +37,12 @@ Ist diese Option aktiviert, werden die folgenden Backups nicht erstellt:
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_BACKUPS`.
 
-### WebDAV deaktivieren###
+### Deaktiviere WebDAV ###
 Deaktiviert den eingebauten WebDAV-Server. Änderungen erfordern einen Neustart.
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_WEBDAV`.
 
-### Karten deaktivieren ###
+### Deaktiviere Karten ###
 Wenn Karten deaktiviert sind, liest PhotoPrism trotzdem noch Geo-Informationen (Längen- und Breitengrad) aus den Metadaten deiner Dateien aus.
 Es wird allerding kein Reverse Lookup mehr gemacht, um Informationen über die Orte, der Koordinaten, abzufragen.
 
@@ -50,12 +50,12 @@ Die Karten Ansicht ist nicht sichtbar.
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_PLACES`.
 
-### ExifTool deaktivieren ###
+### Deaktiviere ExifTool ###
 Keine JSON-Dateien  in `storage/sidecar` mit ExifTool erstellen. Diese werden für die Indexierung zusätzlicher Metadaten, z.B. von Videos, benötigt.
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_EXIFTOOL`.
 
-### TensorFlow deaktivieren###
+### Deaktiviere TensorFlow ###
 TensorFlow nicht zur automatischen Bild-Kategorisierung verwenden.
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_TENSORFLOW`.
@@ -113,7 +113,7 @@ Die Objekterkennung funktioniert mit scharfen Bildern besser, mit hoher Kompress
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_JPEG_QUALITY`.
 
-### Dynamic and Static Size Limits
+### Dynamische und Statische Größen Limits
 
 **Dynamische Maximalgröße**: 
 Maximalgröße, für Thumbnails, die on demand erstellt werden.
@@ -193,19 +193,19 @@ Aktiviert Benutzerdefinierte Voreinstellungen. Dateien werden möglicherweise la
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_RAW_PRESETS`.
 
-### Darktable deaktivieren
+### Deaktiviere Darktable
 
 Darktable nicht zum Konvertieren von Bildern verwenden.
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_DARKTABLE`.
 
-### RawTherapee deaktivieren
+### Deaktiviere RawTherapee
 
 RawTherapee nicht zum Konvertieren von Bildern verwenden.
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_RAWTHERAPEE`.
 
-### FFmpeg deaktivieren
+### Deaktiviere FFmpeg
 
 FFmpeg nicht zum Konvertieren von Videos verwenden.
 

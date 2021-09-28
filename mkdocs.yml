@@ -8,7 +8,7 @@ nav:
       - Navigation: user-guide/navigate.md
       - Indexieren:
           - Einleitung: user-guide/library/import-vs-index.md
-          - Originale Indexieren: user-guide/library/indexing.md
+          - Originale indexieren: user-guide/library/indexing.md
           - Importieren: user-guide/library/import.md
           - Web Upload: user-guide/library/upload.md
           - WebDAV Upload: user-guide/library/webdav.md
@@ -39,14 +39,14 @@ nav:
           - Videos: user-guide/organize/video.md
           - Erlebnisse: user-guide/organize/moments.md
           - Kalender: user-guide/organize/calendar.md
-          - Fotos herunterladen: user-guide/organize/download.md
-          - Fotos bearbeiten: user-guide/organize/edit.md
-          - Fotos löschen: user-guide/organize/delete.md
+          - Bilder herunterladen: user-guide/organize/download.md
+          - Bilder bearbeiten: user-guide/organize/edit.md
+          - Bilder löschen: user-guide/organize/delete.md
       - Sync & Backup:
           - Verbindung via WebDAV:  user-guide/sync/webdav.md
-          - Backup von Smartphones:  user-guide/sync/sync-phone.md
+          - Smartphone Backup:  user-guide/sync/sync-phone.md
       - Teilen:
-          - Album über Link teilen: user-guide/share/share.md
+          - Album-Link teilen: user-guide/share/share.md
       - Einstellungen:
           - Allgemein: user-guide/settings/general.md
           - Dateien: user-guide/settings/library.md
@@ -55,9 +55,9 @@ nav:
           - Konto: user-guide/settings/account.md
           #- Places: user-guide/settings/places.md
       - Migrieren:
-          - Von Google Photos wechseln: user-guide/use-cases/google.md
-          - Von Apple Photos wechseln: user-guide/use-cases/apple.md
-          - Von Flickr wechseln: user-guide/use-cases/flickr.md
+          - Google Photos: user-guide/use-cases/google.md
+          - Apple Photos: user-guide/use-cases/apple.md
+          - Flickr: user-guide/use-cases/flickr.md
           #- Link directories from remote:
       - Weiteres:
           - Metadaten: user-guide/advanced/metadata.md

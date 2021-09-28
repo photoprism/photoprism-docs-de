@@ -1,4 +1,4 @@
-# Album über Link teilen #
+# Album-Link teilen #
 
 ## Freigabelink erstellen ##
 1. Gehe zu *Alben*
