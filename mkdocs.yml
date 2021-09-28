@@ -6,11 +6,11 @@ nav:
       - Einleitung: user-guide/index.md
       # - Setting up: user-guide/setup.md
       - Navigation: user-guide/navigate.md
-      - Dateien hinzufügen:
+      - Indexieren:
           - Einleitung: user-guide/library/import-vs-index.md
-          - Indexieren: user-guide/library/indexing.md
+          - Originale Indexieren: user-guide/library/indexing.md
           - Importieren: user-guide/library/import.md
-          - Upload über die App: user-guide/library/upload.md
+          - Web Upload: user-guide/library/upload.md
           - WebDAV Upload: user-guide/library/webdav.md
           - Originale: user-guide/library/files.md
         #- Import from camera: user-guide.md
