@@ -8,13 +8,13 @@ Klicken auf eine Datei öffnet den Bearbeitungs-Dialog.
 
 Über das Kontext-Menü können folgenden Aktionen ausgeführt werden:
 
-## Dateien herunterladen ##
+## Dateien Herunterladen ##
 1. Selektiere Dateien 
 2. Öffne das Kontext-Menü
 3. Klicke :material-download:
 
 
-## Dateien zu Album hinzufügen##
+## Dateien zu Album Hinzufügen##
 1. Selektiere Dateien
 2. Öffne das Kontext-Menü
 3. Klicke :material-bookmark:

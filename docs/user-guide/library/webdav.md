@@ -1,4 +1,4 @@
-# Dateien mit WebDAV zum Originals oder Import Ordner hinzufügen #
+# Dateien mit WebDAV zum Originals oder Import Ordner Hinzufügen #
 Falls PhotoPrism auf einem Server ausgeführt wird, kann WebDAV benutzt werden, um Dateien in die Ordner *Import* oder *Originals* zu laden.
 
 

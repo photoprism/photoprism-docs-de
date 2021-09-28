@@ -1,4 +1,4 @@
-# Dateien über die App in den Import Ordner hochladen#
+# Dateien in den Import Ordner Hochladen#
 
 1. Klicke :material-cloud-upload: in der oberen rechten Ecke
 

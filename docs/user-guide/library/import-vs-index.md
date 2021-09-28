@@ -1,4 +1,4 @@
-# Soll ich meine Dateien importieren oder indexieren?
+# Soll ich meine Dateien Importieren oder Indexieren?
 
 
 Das *Import* Verzeichnis ist ein temporärer Ordner, aus welchem Dateien strukturiert in den *Originals* Ordner verschoben oder kopiert werden, um Duplikate in *Originals* zu vermeiden. 

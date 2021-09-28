@@ -1,4 +1,4 @@
-# Dateien indexieren #
+# Dateien Indexieren #
 
 !!! Info
     Wenn du PhotoPrism zum ersten Mal verwendest, stelle sicher, dass deine Foto und Video 
@@ -26,7 +26,7 @@
     Ein NSFW-Detektor kann aktiviert werden, um Bilder, mit anstößigem Inhalt, automatisch als privat zu kennzeichnen. 
     Beachte, dass der Mechanismus nicht 100% zuverlässig ist. 
 
-#### Verzeichnisse und Dateien ignorieren ####
+#### Verzeichnisse und Dateien Ignorieren ####
 Falls bestimmte Dateien oder Ordner nicht indexiert werden sollen, erstelle eine `.ppignore` Datei im Verzeichnis, in welchem diese Dateien/Ordner liegen.
 In dieser Datei kannst du konfigurieren, welche Dateien oder Ordner ignoriert werden sollen.
 
@@ -43,7 +43,7 @@ MVI_*.MOV
 MVI_*.*
 ```
 
-#### Wann sollte der Index vollständig aktualisiert werden? ####
+#### Wann sollte der Index Vollständig Aktualisiert werden? ####
 
 Wenn die Option "Index vollständig aktualisieren" gewählt ist, werden alle Dateien in *Originals* neu indexiert. Also auch Dateien, die bereits indexiert und nicht verändert wurden. 
 Das kann nach einem Upgrade auf eine neue Hauptversion erforderlich sein.

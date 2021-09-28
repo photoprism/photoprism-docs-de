@@ -20,7 +20,7 @@ Befindet sich ganz oben. Finde Fotos oder Videos, indem du zum Beispiel nach `ca
 
 :material-refresh: lädt die Suchergebnisse neu, ohne die komplette Seite neu zu laden.
 
-#### 4. Ansicht wechseln
+#### 4. Ansicht Wechseln
 
 Klicke, um zu einer anderen Ansicht zu wechseln (Karten: :material-view-column:, Mosaik: :material-view-comfy:, oder Liste: :material-view-list:).
 
