@@ -1,4 +1,4 @@
-# Dateien Importieren #
+# Dateien nach Originals Importieren #
 
 1. Stelle sicher, dass sich alle Dateien, die du importieren willst, im *Import* Verzeichnis befinden
 
@@ -19,7 +19,7 @@
 !!! Info
     Importieren ist im [read-only Modus](../settings/advanced.md#schreibgeschutzter-modus) (schreibgeschützt) nicht möglich, da Schreibrechte benötigt werden.
     
-#### Wann sollte ich die Option "Dateien Verschieben" Wählen? ####
+#### Option "Dateien Verschieben" ####
 
 Wenn diese Option ausgewählt ist, werden Dateien, die in den Ordner *Originals* verschoben wurden oder dort bereits vorhanden sind,
 automatisch aus dem *Import* Verzeichnis gelöscht.

@@ -1,4 +1,4 @@
-# Originale #
+# Originals Verzeichnis Anzeigen #
 
 Im Bereich *Originale* werden alle Dateien deines *Originals* Verzeichnis angezeigt.
 
