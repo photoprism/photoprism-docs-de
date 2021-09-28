@@ -37,6 +37,7 @@ zu verschieben oder umzubenennen.
 
 * Deine vorhandene Ordnerstruktur wird beibehalten
 * Deine vorhandene Ordnerstruktur kann in PhotoPrism anzeigt werden
+* Du kannst deine Dateien innerhalb von *Originals* verschieben. PhotoPrism erkennt den neuen Pfad bei der nächsten Indexierung automatisch
 
 ### Importieren ###
 
