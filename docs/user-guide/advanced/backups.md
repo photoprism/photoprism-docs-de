@@ -1,4 +1,4 @@
-PhotoPrism legt automatisch YAML-Backupdateien für Alben und Fotos an, damit du die volle Kontrolle 
+PhotoPrism legt automatisch YAML-Backupdateien für Alben und Bilder an, damit du die volle Kontrolle 
 über deine Daten und Metadaten erhälst.
 
 Backups können in den [Einstellungen](../settings/advanced.md) deaktiviert werden. 
@@ -33,17 +33,17 @@ Für Erlebnis-Alben werden folgende Metadaten in den YAML Dateien gespeichert:
 
 * UID, Slug, Type, Title, Location, Category, Description, Filter, Sort Order, Country, Year, CreatedAt, UpdatedAt
 
-## Foto Backups
-PhotoPrism erstellt für jedes Foto/Video eine YAML Datei in deinem `sidecar path`.
+## Bild Backups
+PhotoPrism erstellt für jedes Bild/Video eine YAML Datei in deinem `sidecar path`.
 
-Folgende Metadaten werden für Fotos gespeichert:
+Folgende Metadaten werden für Bilder gespeichert:
 
 * TakenAt + Source, UID, Type, Title + Source, Description + Source, OriginalName, TimeZone, PlaceSrc, Altitude, 
   Lat, Lng, Year, Month, Day, Iso, Exposure, FNumber, FocalLength, Quality, Favorite, Private, Keywords + Source, 
   Notes + Source, Subject + Source, Artist + Source, Copyright + Source, License + Source, CreatedAt, UpdatedAt, EditedAt, DeletedAt (Archived)
 
 ## Backup Befehl
-PhotoPrism erstellt die Album und Foto YAML Backups automatisch.
+PhotoPrism erstellt die Album und Bild YAML Backups automatisch.
 Falls du die Album Backups updaten, oder ein Datenbank Backup erstellen möchtest, kannst du den Backup Befehl verwenden.
 
 `docker-compose exec photoprism photoprism backup -a --albums-path PATH -i --index-path PATH [FILENAME]`

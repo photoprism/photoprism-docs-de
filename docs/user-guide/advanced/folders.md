@@ -3,11 +3,11 @@ Hier findest du eine Übersicht über die Verzeichnisse, die PhotoPrism verwende
 
 ## Originals
 Dieser Pfad wird mit `PHOTOPRISM_ORIGINALS_PATH` gesetzt.
-Der `originals` Ordner enthält deine Foto Sammlung. PhotoPrism schreibt nicht in dieses Verzeichnis.
+Der `originals` Ordner enthält deine  Bildersammlung. PhotoPrism schreibt nicht in dieses Verzeichnis.
 
 ## Import
 Dieser Pfad wird mit `PHOTOPRISM_IMPORT_PATH` gesetzt.
-Falls du die [Import Funktion](../library/import-vs-index.md) verwendest, befindet sich deine Foto Sammlung im `import` Ordner. Von hier werden die Dateien von
+Falls du die [Import Funktion](../library/import-vs-index.md) verwendest, befindet sich deine Bildersammlung im `import` Ordner. Von hier werden die Dateien von
 PhotoPrism nach `originals` verschoben oder kopiert.
 
 ## Storage
@@ -29,11 +29,11 @@ Hier erstellt PhotoPrism JSON Dateien. Diese Dateien enthalten von Exiftool ausg
 Du kannst Exiftool in den [Einstellungen](../settings/advanced.md) deaktivieren.
 
 #### Thumbnails
-PhotoPrism erstellt für jedes Foto Thumbnails in unterschiedlichen Größen. Diese werden in `thumbnails` gespeichert.
+PhotoPrism erstellt für jedes Bild Thumbnails in unterschiedlichen Größen. Diese werden in `thumbnails` gespeichert.
 Mehr Informatione zu Thumbnails findest du [hier](../settings/advanced.md#images).
 
 ### Sidecar
-Das `sidecar` Verzeichnis enthält [YAML Backups](./backups.md) für jedes Foto, sowie JPEGs, die von PhotoPrism durch Konvertierung erstellt wurden.
+Das `sidecar` Verzeichnis enthält [YAML Backups](./backups.md) für jedes Bild, sowie JPEGs, die von PhotoPrism durch Konvertierung erstellt wurden.
 Backups und RAW Kovertierung können in den [Einstellungen](../settings/advanced.md) deaktiviert werden.
 Dieser Pfad wird mit `PHOTOPRISM_SIDECAR_PATH` gesetzt.
 
