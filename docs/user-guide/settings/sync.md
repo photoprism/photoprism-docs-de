@@ -29,7 +29,7 @@ neue Bilder von deiner ownCloud Instanz in PhotoPrism geladen werden.
 
 **Bilder von PhotoPrism auf den Server laden:**
 
-1. Gehe zu *Fotos*
+1. Gehe zu *Suche*
 2. Selektiere Bilder, die du hochladen möchtest
 3. Öffne das Kontext-Menü
 4. Klicke :material-cloud:

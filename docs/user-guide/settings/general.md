@@ -25,10 +25,10 @@ Wenn diese Option deaktiviert ist, wird der Bereich Personen nicht angezeigt. Um
 
 
 #### :material-lock: Verberge private Aufnahmen ####
-Wenn diese Option aktiviert ist, werden private Fotos und Videos nicht in *Fotos*, *Videos*, *Favoriten*, *Kategorien*, *Karten* und *geteilten Alben* angezeigt.
+Wenn diese Option aktiviert ist, werden private Bilder und Videos nicht in *Suche*, *Videos*, *Favoriten*, *Kategorien*, *Karten* und *geteilten Alben* angezeigt.
 
 #### :material-archive-arrow-down: Archivieren ####
-Diese Option steuert das *Archiv*. Fotos die archiviert wurden, bevor du die Option deaktivierst, werden wieder in *Fotos/Videos* dargestellt.
+Diese Option steuert das *Archiv*. Bilder die archiviert wurden, bevor du die Option deaktivierst, werden wieder in *Suche/Videos* dargestellt.
 
 #### :material-pencil: Bearbeiten ####
 Wenn diese Option deaktiviert ist, kannst du keine Metadaten editieren.
@@ -49,7 +49,7 @@ Wenn diese Option deaktiviert ist, wird der Bereich *Kategorien* nicht angezeigt
 Wenn diese Option deaktiviert ist, wird der Bereich *Dateien* nicht angezeigt.
 
 #### :material-folder-plus: Import ####
-Wenn diese Option deaktiviert ist, gibt es keine Möglichkeit Fotos zu [*importieren*](../library/import.md). In diesem Fall musst du neue Fotos über eine [*Indexierung*](../library/indexing.md) hizufügen.
+Wenn diese Option deaktiviert ist, gibt es keine Möglichkeit Bilder zu [*importieren*](../library/import.md). In diesem Fall musst du neue Bilder über eine [*Indexierung*](../library/indexing.md) hizufügen.
 
 #### :material-text: Logs ####
 Wenn diese Option deaktiviert ist, werden keine Server-Logs angezeigt.

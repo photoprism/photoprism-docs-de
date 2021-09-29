@@ -32,7 +32,7 @@ Keine YAML-Sicherungskopien für Metadaten von Bildern und Alben erstellen.
 
 Ist diese Option aktiviert, werden die folgenden Backups nicht erstellt:
 
-- Metadaten-Backup für Fotos in `storage/sidecar`
+- Metadaten-Backup für Bilder in `storage/sidecar`
 - Backups für Alben, Monate, Staaten und Ordner in `storage/albums`
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_BACKUPS`.
@@ -92,7 +92,7 @@ Lanczos                   | ![](img/out_resize_lanczos.png)
 Source: [A Comparative Analysis of Image Interpolation Algorithms](https://ijarcce.com/wp-content/uploads/2016/02/IJARCCE-7.pdf)
 
 ### Dynamische Vorschaubilder
-Vorschaubilder können on-demand erstellt werden, also erst, wenn sie gebraucht werden. Dies ist beispielsweise beim Betrachten der Fotos der Fall.
+Vorschaubilder können on-demand erstellt werden, also erst, wenn sie gebraucht werden. Dies ist beispielsweise beim Betrachten der Bilder der Fall.
 Diese Einstellung spart Speicherplatz (da die Thumbnails nicht gespeichert werden), braucht allerdings viel Rechenleistung.
 Wir empfehlen diese Einstellung nicht, wenn PhotoPrism auf einem nicht leistungsstarken Gerät betrieben wird.
 
@@ -104,7 +104,7 @@ Um Thumbnails in best möglicher Qualität zu erhalten, solltest du die *JPEG*-Q
 Generell gilt: je höher die Qualität, desto mehr Speicherplatz brauchen die Thumbnails und desto länger dauert die Generierung.
 
 Qualitäts-Level von >90% werden als hoch eingestuft.
-80%-90% gilt als mittlere und 70-80% als niedrige Qualität (z.B. stark komprimierte Fotos auf Social Media). 
+80%-90% gilt als mittlere und 70-80% als niedrige Qualität (z.B. stark komprimierte Bilder auf Social Media). 
 Alles mit einer Qualität von unter 70% gilt als sehr niedrig.
 
 Bei einer JPEG-Qualität von 95 sind die Vorschaubilder ca 500kB groß. Bei einer Qualität von 80 ist die Größe auf ca 100kB reduziert.
@@ -129,7 +129,7 @@ Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting
     Wenn die eingestellte Maximalgröße überschritten wird (z.B. wenn Nutzer einen großen Bildschirm verwenden),
     und kein Thumbnail in der angefragten Größe vorhanden ist, wird das Originalbild angezeigt. Dies kann dazu führen, dass Bilder in der falschen Orientierung dargestellt werden.
 
-Die Maximalgröße muss mindestens 720px sein, um zu gewährleisten, dass Thumbnails für die Fotoansichten und die Objekterkennung vorhanden sind.
+Die Maximalgröße muss mindestens 720px sein, um zu gewährleisten, dass Thumbnails für die Bildansichten und die Objekterkennung vorhanden sind.
 
 Wir empfehlen eine hohe Maximalgröße.
 Sollte der von Thumbnails belegte Speicherplatz allerdings ein Problem darstellen, kannst du eine niedrigere statische Maximalgröße einstellen.

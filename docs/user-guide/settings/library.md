@@ -6,7 +6,7 @@
 Den ungefähren Standort von Bildern ohne Koordinaten automatisch schätzen.
 
 #### :material-eye: Qualitätsfilter ####
-Wenn diese Option aktiviert ist, musst du Fotos und Videos mit geringer Qualität [*überprüfen*](../organize/review.md), bevor sie in *Fotos* oder *Videos* angezeigt werden.
+Wenn diese Option aktiviert ist, musst du Bilder und Videos mit geringer Qualität [*überprüfen*](../organize/review.md), bevor sie in *Suche* oder *Videos* angezeigt werden.
 
 #### :material-camera: Automatische Konvertierung zu JPEG ####
 Wenn diese Option aktiviert ist, werden während der [*Indexierung*](../library/indexing.md) automatisch *JPEG*-Vorschaubilder deiner *RAW*-Dateien erstellt.
