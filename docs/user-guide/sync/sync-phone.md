@@ -1,5 +1,5 @@
-# Fotos von mobilen Endgeräten synchronisieren #
-Um Fotos und Videos von deinem Handy mit PhotoPrism zu synchronisieren, kannst du jede App, die Datei-Synchronisation mit WebDAV unterstützt, verwenden.
+# Bilder von mobilen Endgeräten synchronisieren #
+Um Bilder und Videos von deinem Handy mit PhotoPrism zu synchronisieren, kannst du jede App, die Datei-Synchronisation mit WebDAV unterstützt, verwenden.
 
 !!! info
       Wenn du PhotoPrism im public-Modus betreibst, ist WebDAV deaktiviert.

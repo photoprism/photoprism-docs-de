@@ -1,6 +1,6 @@
 # Häufig gestellte Fragen
 
-### Kann ich meine Fotos und Alben in Baumstrukturen organisieren? ###
+### Kann ich meine Bilder und Alben in Baumstrukturen organisieren? ###
 Außerhalb der Bereiche *Dateien > Originale* und *Kategorien* unterstützt PhotoPrism aus folgenden Gründen keine hierarchische Organisation von Dateien:
 
 
@@ -61,27 +61,27 @@ Du kannst das Datum im [Bearbeitungs-Dialog](organize/edit.md) ändern. Hier wir
 Um das Datum direkt in deiner Originaldatei zu ändern nutze bitte andere Apps wie Photoshop oder Exiftool und indexiere deine Dateien anschließend erneut.
 
 ### Wie kann ich Dateien endgültig löschen? ###
-Ja, wenn du Sponsor bist, kannst du Dateien über die Web-Oberfläche [löschen](./organize/delete.md). Falls du kein Sponsor bist, musst du dich noch ein bisschen gedulden.
+Du kannst Dateien über die Web-Oberfläche [löschen](./organize/delete.md).
 
 ### Es sind bereits einige meiner Bilder indexiert. Warum befinden sich noch keine Bilder in den Bereichen Ordner, Kalender und Erlebnisse? ###
 Bilder werden erst am Ende der Indexierung zu den Bereichen Ordner, Kalender und Erlebnisse hinzugefügt.
 
 ### Warum zeigt die Navigation unterschiedliche Zahlen für *Suche* und *Originale* an?###
-Der Bereich *Originale* zeigt Dateien an, während in *Suche* Fotos und Videos dargestellt werden.
+Der Bereich *Originale* zeigt Dateien an, während in *Suche* Bilder und Videos dargestellt werden.
 
-Fotos und Videos können aus mehreren Dateien bestehen:
+Bilder und Videos können aus mehreren Dateien bestehen:
 
-* RAW + JPG + XMP = 1 Foto, aber 3 Dateien
+* RAW + JPG + XMP = 1 Bild, aber 3 Dateien
 * MP4 + JPG = 1 Video, aber 2 Dateien
 
-Es kann auch sein, dass mehrere JPG Dateien zu einem Foto gruppiert sind (z.B. eine original und eine bearbeitete Version).
+Es kann auch sein, dass mehrere JPG Dateien zu einem Bild gruppiert sind (z.B. eine original und eine bearbeitete Version).
 
 ### Warum ist die Anzahl in *Originals* höher, als die Anzahl an Dateien in meinem Originals Verzeichnis? ###
 Während der Indexierung erstellt Photoprism JPG Dateien, falls diese nicht vorhanden sind (beispielsweise für RAWs, Videos oder PNGs).
 Diese Dateien werden in /storage/sidecar gespeichert. In der Benutzeroberfläche werden sie allerdings im Bereich Originale angezeigt.
 
-### Warum haben manche meiner Fotos ohne GPS Informationen trotzdem einen Ort gesetzt?###
-Für Fotos ohne Orts-Informationen wird anhand von anderen Fotos, die am gleichen Tag gemacht wurden, ein Ort geschätzt. 
+### Warum haben manche meiner Bilder ohne GPS Informationen trotzdem einen Ort gesetzt?###
+Für Bilder ohne Orts-Informationen wird anhand von anderen Bilder, die am gleichen Tag gemacht wurden, ein Ort geschätzt. 
 Die Schätzungen können in den [Einstellungen](./settings/general.md) deaktiviert werden.
 
 ### Warum bekomme ich eine Fehlermeldung, wenn ich versuche einen Remote Server als Synchronisationsziel hinzuzufügen? ###

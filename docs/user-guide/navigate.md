@@ -1,5 +1,5 @@
 # Navigation
-Unsere Foto- und Videosuche basiert auf den folgenden Komponenten. 
+Unsere Bild- und Videosuche basiert auf den folgenden Komponenten. 
 
 !!! Info
     PhotoPrism ist auf alle Bildschirmgrößen angepasst. Unsere Screenshots zeigen die App in einem Desktop-Browser mit mittlerer Auflösung.
@@ -14,7 +14,7 @@ Befindet sich auf der linken Seite und ist auf mobilen Geräten minimiert. Klick
 
 #### 2. Suchleiste
 
-Befindet sich ganz oben. Finde Fotos oder Videos, indem du zum Beispiel nach `cats` oder `label:cat` suchst. Eine Übersicht über alle Suchfilter findest du [hier](organize/search.md).
+Befindet sich ganz oben. Finde Bilder oder Videos, indem du zum Beispiel nach `cats` oder `label:cat` suchst. Eine Übersicht über alle Suchfilter findest du [hier](organize/search.md).
 
 #### 3. Reload-Funktion
 
@@ -34,14 +34,14 @@ Die Filterleise enthält zusätzliche Suchfilter wie Land, Jahr, Monat, Kamera, 
 
 #### 7. Kontext-Menü
 
-Wenn Fotos oder Videos selektiert sind, erscheint das Kontext-Menü in der Ecke unten rechts. Die angezeigte Zahl ist die Anzahl der aktuell selektierten Ergebnisse. Das Menü bietet folgende Aktionen:
+Wenn Bilder oder Videos selektiert sind, erscheint das Kontext-Menü in der Ecke unten rechts. Die angezeigte Zahl ist die Anzahl der aktuell selektierten Ergebnisse. Das Menü bietet folgende Aktionen:
 
-* :material-archive-arrow-down: Fotos archivieren
-* :material-bookmark: Fotos zu Alben hinzufügen
+* :material-archive-arrow-down: Bilder archivieren
+* :material-bookmark: Bilder zu Alben hinzufügen
 * :material-cloud-download: Bilder herunterladen
-* :material-lock: Fotos als privat markieren
+* :material-lock: Bilder als privat markieren
 * :material-pencil: Bearbeitungs-Dialog öffnen
-* :material-share-variant: Fotos teilen
+* :material-share-variant: Bilder teilen
 
 Um die aktuelle Selektion aufzuheben, klicke auf das x.
 
