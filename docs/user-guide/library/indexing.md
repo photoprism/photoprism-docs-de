@@ -1,7 +1,7 @@
 # Das Originals-Verzeichnis indexieren #
 
 !!! Info
-    Wenn du PhotoPrism zum ersten Mal verwendest, stelle sicher, dass deine Foto und Video 
+    Wenn du PhotoPrism zum ersten Mal verwendest, stelle sicher, dass deine Bild und Video 
     Sammlung als *Originals* Ordner konfiguriert ist.
     Details hierzu findest du in unserer [Installationsanleitung](https://docs.photoprism.org/getting-started/).
     Wenn du mit einem leeren *Originals* Ordner beginnst, musst du diesem zunächst Dateien über dein Dateisystem hinzufügen.

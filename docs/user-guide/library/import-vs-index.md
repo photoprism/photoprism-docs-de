@@ -4,11 +4,11 @@
 Das *Import* Verzeichnis ist ein temporärer Ordner, aus welchem Dateien strukturiert in den *Originals* Ordner verschoben oder kopiert werden, um Duplikate in *Originals* zu vermeiden. 
 Die meisten Nutzer mit bereits gut strukturierten Bildsammlungen möchten ihre Originaldateien direkt indexieren, ohne sie zu importieren, 
 damit vorhandene Datei- und Verzeichnisnamen erhalten bleiben. 
-Das Importieren ist dagegen deutlich effizienter, wenn später neue Dateien hinzugefügt werden, da nicht alle schon vorhandenen Dateien in *Originals* neu indexiert werden müssen, um die neu hinzugefügten Fotos und Videos zu finden.
+Das Importieren ist dagegen deutlich effizienter, wenn später neue Dateien hinzugefügt werden, da nicht alle schon vorhandenen Dateien in *Originals* neu indexiert werden müssen, um die neu hinzugefügten Bilder und Videos zu finden.
 
 ### Indexieren ###
 
-Verwende *Indexieren*, wenn du deine Fotos und Videos direkt im Ordner *Originals* indexieren möchtest, ohne sie zu kopieren,
+Verwende *Indexieren*, wenn du deine Bilder und Videos direkt im Ordner *Originals* indexieren möchtest, ohne sie zu kopieren,
 zu verschieben oder umzubenennen.
 
 !!! Info
@@ -23,7 +23,7 @@ zu verschieben oder umzubenennen.
 
 * Dateien werden NICHT umbenannt oder verschoben
 * Die vorhandene Ordnerstruktur bleibt erhalten. Ordner können später optional als Alben in PhotoPrism angezeigt werden
-* Metadaten der Dateien werden eingelesen, um Kategorien, Titel und Ortsinformationen für deine Fotos zu erstellen
+* Metadaten der Dateien werden eingelesen, um Kategorien, Titel und Ortsinformationen für deine Bilder zu erstellen
 * Für JPEGs werden Thumbnails erstellt
 * Optional werden JSON- und oder YAML-Dateien mit Metadaten erstellt
 
@@ -41,7 +41,7 @@ zu verschieben oder umzubenennen.
 
 ### Importieren ###
 
-*Importieren* ist effizienter beim Hinzufügen von Dateien, da nicht alle Dateien im *Originals* Ordner neu indexiert werden müssen, um die neuen Fotos und Videos zu finden.
+*Importieren* ist effizienter beim Hinzufügen von Dateien, da nicht alle Dateien im *Originals* Ordner neu indexiert werden müssen, um die neuen Bilder und Videos zu finden.
 [*Uploads*](upload.md) werden automatisch importiert, du kannst (noch) keine Dateien direkt in das *Originals* Verzeichnis hochladen.
 
 **Deine anfängliche Ordnerstruktur in *Import* könnte wie folgt aussehen:**
@@ -73,12 +73,12 @@ zu verschieben oder umzubenennen.
 
 
 ### Fazit ###
-Deine Fotosammlung ist noch nicht organisiert und du gehst davon aus, dass du viele Duplikate, beispielsweise verteilt auf verschiedenen Festplatten, hast?
+Deine Bildersammlung ist noch nicht organisiert und du gehst davon aus, dass du viele Duplikate, beispielsweise verteilt auf verschiedenen Festplatten, hast?
 
 Dann ist *Importieren* die bessere Wahl.
 Der Importvorgang wird deine Dateien nach Erstellungsdatum sortieren und Duplikate vermeiden.
 
 
-Ist deine Fotosammlung bereits gut in Ordnern organisiert und du möchtest diese Organisation auch im Dateisystem beibehalten?
+Ist deine Bildersammlung bereits gut in Ordnern organisiert und du möchtest diese Organisation auch im Dateisystem beibehalten?
 
 Dann ist *Indexieren* ist die richtige Option für dich.
