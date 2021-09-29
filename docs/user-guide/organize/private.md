@@ -1,12 +1,12 @@
 # Private Aufnahmen verbergen#
 ### Was sind private Aufnahmen? ###
 Du wirst bestimmt einige Aufnahmen haben, die du, aus persönlichen Gründen, nicht mit jedem Teilen möchtest.
-PhotoPrism bietet die Möglichkeit private Fotos und Videos in einigen Bereichen zu verbergen.
-So kannst du deine Familie und Freunde durch deine Fotos scrollen lassen, ohne Gefahr zu laufen, dass sie private Aufnahmen finden.
+PhotoPrism bietet die Möglichkeit private Bilder und Videos in einigen Bereichen zu verbergen.
+So kannst du deine Familie und Freunde durch deine Bilder scrollen lassen, ohne Gefahr zu laufen, dass sie private Aufnahmen finden.
 
-Mit der Standardeinstellung werden alle Fotos, die als privat markiert sind, in den folgenden Bereichen nicht angezeigt:
+Mit der Standardeinstellung werden alle Bilder, die als privat markiert sind, in den folgenden Bereichen nicht angezeigt:
 
- * Fotos
+ * Suche
  * Videos
  * Kategorien
  * Karten
@@ -16,23 +16,23 @@ Mit der Standardeinstellung werden alle Fotos, die als privat markiert sind, in 
 !!! Info
     In den [Einstellungen](../settings/general.md) kannst du diese Funktion deaktivieren.
  
-#### Einzelne Fotos/Videos als privat markieren ####
+#### Einzelne Bilder/Videos als privat markieren ####
 
-1. Gehe zu *Fotos*
+1. Gehe zu *Suche*
 2. Wechsele zur *Listen-Ansicht*
 3. Klicke auf :material-lock-open: in der rechten Spalte
 
 ![Screenshot](img/private-list.png)
 
-#### Mehrere Fotos/Videos als privat markieren ####
+#### Mehrere Bilder/Videos als privat markieren ####
 
-1. Gehe zu *Fotos*
-2. Selektiere private Fotos/Videos
+1. Gehe zu *Suche*
+2. Selektiere private Bilder/Videos
 3. Öffne das Kontext-Menü und klicke :material-lock:
 
 ![Screenshot](img/private-context-menu.png)
 
-#### Entferne die Privat-Markierung von einzelnen Fotos/Videos ####
+#### Entferne die Privat-Markierung von einzelnen Bilder/Videos ####
 
 1. Gehe zum Bereich *Privat*
 2. Stelle sicher, dass die *Listen-Ansicht* aktiv ist
@@ -40,10 +40,10 @@ Mit der Standardeinstellung werden alle Fotos, die als privat markiert sind, in 
 
 ![Screenshot](img/remove-private-list.png)
 
-#### Entferne Privat-Markierung von mehreren Fotos/Videos ####
+#### Entferne Privat-Markierung von mehreren Bilder/Videos ####
 
 1. Gehe zum Bereich *Privat*
-2. Selektiere die Fotos/Videos, die nicht mehr privat sein sollen
+2. Selektiere die Bilder/Videos, die nicht mehr privat sein sollen
 3. Öffne das Kontext-Menü und klicke :material-lock:
 
 ![Screenshot](img/remove-private-context-menu.png)

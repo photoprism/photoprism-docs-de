@@ -30,9 +30,9 @@
     ![Screenshot](img/album-edit-4.png)
     
 
-### Fotos zu Album hinzufügen ###
+### Bilder zu Album hinzufügen ###
 
-1. Selektiere Fotos und Videos
+1. Selektiere Bilder und Videos
 2. Öffne das Kontext-Menü
 3. Klicke :material-bookmark:
 
@@ -47,12 +47,12 @@
     ![Screenshot](img/add-photo-album-3.png)
 
 !!! Info
-    Du kannst mehrere Fotos auf einmal selektieren, indem du die Shift Taste verwendest.
+    Du kannst mehrere Bilder auf einmal selektieren, indem du die Shift Taste verwendest.
 
-### Fotos aus Album entfernen ###
+### Bilder aus Album entfernen ###
 
 1. Gehe zu einem Album
-3. Selektiere Fotos, die du entfernen möchtest
+3. Selektiere Bilder, die du entfernen möchtest
 4. Öffne das Kontext-Menü
 5. Klicke :material-minus:
 

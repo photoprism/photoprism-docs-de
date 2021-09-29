@@ -19,7 +19,7 @@ Um ein Video im Vollbild Modus abzuspielen, klicke :material-play: oder :materia
 ![Screenshot](img/video.png)
 
 ### Live-Fotos ###
-Live-Fotos werden wie normale Fotos behandelt. Sie sind mit :material-adjust: in der linken oberen Ecke markiert.
+Live-Fotos werden wie normale Bilder behandelt. Sie sind mit :material-adjust: in der linken oberen Ecke markiert.
 
 Um nach Live-Fotos zu filtern, nutze den Filter `type:live`.
 

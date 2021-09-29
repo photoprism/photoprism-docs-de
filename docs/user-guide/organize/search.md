@@ -1,11 +1,11 @@
 # Suche #
-Mit Hilfe des *Suchfelds* kann  in allen Bereichen nach Fotos, Videos, Alben oder Labels gesucht werden.
+Mit Hilfe des *Suchfelds* kann  in allen Bereichen nach Bildern, Videos, Alben oder Labels gesucht werden.
 
 Du kannst nach unerschiedlichsten Kriterien suchen:
 
 * Personen
-* Auf dem Foto abgebildete Objekte
-* Hauptfarbe eines Fotos
+* Auf dem Bild abgebildete Objekte
+* Hauptfarbe eines Bildes
 * Dateiname oder Verzeichnisname
 * Ort der Aufnahme
 * ...
@@ -19,7 +19,7 @@ Zusätzlich zur Suche können auf der Filterleiste folgende Filter gesetzt werde
 
 * Land, Jahr, Reihenfolge, Kamera, Linse, Farbe, Kategorie
 
-Sind mehrere Filter gesetzt, werden nur Fotos von der Suche berücksichtigt, die allen Filterkriterien entsprechen.
+Sind mehrere Filter gesetzt, werden nur Bilder von der Suche berücksichtigt, die allen Filterkriterien entsprechen.
 
  ![Screenshot](img/color-red.png)
 

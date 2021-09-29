@@ -2,9 +2,9 @@
 Du kannst Dateien, die du nicht in deiner Sammlung behalten möchtest archivieren. 
 Archivierte Dateien werden nicht gelöscht, sie werden allerdings ausschließlich im Bereich *Archiv* angezeigt.
 
-### Fotos archivieren ###
+### Bilder archivieren ###
 
-1. Selektiere Fotos/Videos
+1. Selektiere Bilder/Videos
 2. Öffne das Kontext-Menü
 3. Klicke :material-archive-arrow-down:
 
@@ -13,10 +13,10 @@ Archivierte Dateien werden nicht gelöscht, sie werden allerdings ausschließlic
     <!--![Screenshot](img/confirm-archive.png)-->
 
 
-### Archivierte Fotos wieder herstellen ###
+### Archivierte Bilder wieder herstellen ###
 
 1. Gehe zu *Archiv*
-2. Selektiere Fotos/Videos
+2. Selektiere Bilder/Videos
 3. Öffne das Kontext-Menü
 4. Klicke :material-archive-arrow-up:
 

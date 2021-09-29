@@ -1,6 +1,6 @@
 # Kalender #
 
-Im Bereich *Kalender* findest du deine Fotos nach Jahr und Monat sortiert.
+Im Bereich *Kalender* findest du deine Bilder nach Jahr und Monat sortiert.
 
 ![Screenshot](img/calendar.png)
 

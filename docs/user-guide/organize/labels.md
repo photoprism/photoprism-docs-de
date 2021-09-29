@@ -1,9 +1,9 @@
 # Kategorien #
-PhotoPrism nutzt *Kategorien* um Bilder und Videos zu kategorisieren. *Kategorien* werden automatisch gesetzt, wenn neue Fotos zu PhotoPrism hinzugefügt werden. 
+PhotoPrism nutzt *Kategorien* um Bilder und Videos zu kategorisieren. *Kategorien* werden automatisch gesetzt, wenn neue Bilder zu PhotoPrism hinzugefügt werden. 
 Du kannst manuell neue *Kategorien* hinzufügen sowie bestehende *Kategorien* bearbeiten oder entfernen.
 
 
-Im Bereich *Kategorien* werden alle Fotos nach Kategorien sortiert dargestellt.
+Im Bereich *Kategorien* werden alle Bilder nach Kategorien sortiert dargestellt.
 Du kannst eine Kategorie hervorheben, indem du auf :material-star: klickst. 
 Hervorgehobene *Kategorien* werden in der Ansicht ganz oben angezeigt.
 
@@ -11,7 +11,7 @@ Um ausschließlich *Kategorien* mit einer hohen Priorität angezeigt zu bekommen
 
 ![Screenshot](img/labels-1.png)
 
-### Fotos einer bestimmten Kategorie anzeigen ###
+### Bilder einer bestimmten Kategorie anzeigen ###
 
 1. Gehe zu *Kategorien*
 2. Klicke auf eine *Kategorie*
@@ -22,7 +22,7 @@ Um ausschließlich *Kategorien* mit einer hohen Priorität angezeigt zu bekommen
     Alternativ kannst du auch das Suchfeld verwenden. Um beispielsweise nach der *Kategorie* "Hund" zu suchen, verwende den Suchbegriff `label:dog`.
 
 ### Kategorie hinzufügen ###
-1. Öffne den [*Bearbeitungs-Dialog*](edit.md) eines Fotos
+1. Öffne den [*Bearbeitungs-Dialog*](edit.md) eines Bildes
 2. Gehe zum Tab *Kategorien*
 3. Klicke auf das *Kategorie-Feld* in der letzten Zeile der Tabelle 
 4. Gib den Kategorienamen ein
@@ -30,11 +30,11 @@ Um ausschließlich *Kategorien* mit einer hohen Priorität angezeigt zu bekommen
 
     ![Screenshot](img/add-label.png)
     
-### Kategorien von Fotos/Videos entfernen/löschen ###
+### Kategorien von Bilder/Videos entfernen/löschen ###
 
 Automatisch zugewiesene *Kategorien* können entfernt werden. Manuell hinzugefügte *Kategorien* können gelöscht werden.
 
-1. Öffne den [*Bearbeitungs-Dialog*](edit.md) eines Fotos
+1. Öffne den [*Bearbeitungs-Dialog*](edit.md) eines Bildes
 2. Gehe zum Tab *Kategorien*
 3. Klicke auf :material-minus: oder :material-delete: um die Kategorie zu entfernen oder zu löschen
 
@@ -50,7 +50,7 @@ Automatisch zugewiesene *Kategorien* können entfernt werden. Manuell hinzugefü
 
 ### Kategorie umbenennen ###
 
-1. Öffne den [*Bearbeitungs-Dialog*](edit.md) eines beliebigen Fotos, das mit der *Kategorie* versehen ist, die umbenannt werden soll
+1. Öffne den [*Bearbeitungs-Dialog*](edit.md) eines beliebigen Bildes, das mit der *Kategorie* versehen ist, die umbenannt werden soll
 
     ![Screenshot](img/edit-label-1.png)
 
@@ -62,12 +62,12 @@ Automatisch zugewiesene *Kategorien* können entfernt werden. Manuell hinzugefü
     
     ![Screenshot](img/edit-label-3.png)
 
-5. Nach der nächsten [*Indexierung*](../library/indexing.md) werden deine Änderungen für alle Fotos übernommen
+5. Nach der nächsten [*Indexierung*](../library/indexing.md) werden deine Änderungen für alle Bilder übernommen
 
     ![Screenshot](img/edit-label-4.png)
 
 !!! Attention
-    Beachte, dass diese Änderung alle Fotos betrifft, die mit dieser *Kategorie* verknüpft sind.
+    Beachte, dass diese Änderung alle Bilder betrifft, die mit dieser *Kategorie* verknüpft sind.
 
 ### Kategorie löschen ###
 *Kategorien* können dauerhaft gelöscht werden. Eine gelöschte *Kategorie* wird bei der [*Indexierung*](../library/indexing.md) in Zukunft nicht mehr vergeben.
@@ -78,4 +78,4 @@ Automatisch zugewiesene *Kategorien* können entfernt werden. Manuell hinzugefü
 4. Bestätige
 
 !!! Attention
-    Wenn eine gelöschte *Kategorie* wieder hergestellt werden soll, muss diese einem Foto hinzugefügt sowie die [*Indexierung*](../library/indexing.md) gestartet werden.
+    Wenn eine gelöschte *Kategorie* wieder hergestellt werden soll, muss diese einem Bild hinzugefügt sowie die [*Indexierung*](../library/indexing.md) gestartet werden.

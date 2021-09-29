@@ -1,10 +1,10 @@
 # Scans #
-Eingescannte Fotos können als *Scan* markiert werden.
+Eingescannte Bilder können als *Scan* markiert werden.
 
 !!! Info
-    Wir arbeiten daran, eingescannte Fotos in Zukunft automatisch zu erkennen.
+    Wir arbeiten daran, eingescannte Bilder in Zukunft automatisch zu erkennen.
 
-## Foto als Scan markieren ##
+## Bild als Scan markieren ##
 
  1. Öffne den [*Bearbeitungs-Dialog*](edit.md).
  2. Klicke :material-cog:

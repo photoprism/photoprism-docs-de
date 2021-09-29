@@ -1,7 +1,7 @@
 # Erlebnisse #
 
 PhotoPrism erstellt automatisch *Erlebnisse* aus deinen Erinnerungen. 
-Deine *Erlebnisse* werden laufend aktualisiert, wenn neue Fotos hinzugefügt werden.
+Deine *Erlebnisse* werden laufend aktualisiert, wenn neue Bilder hinzugefügt werden.
 
 !!! info
     Erlebnisse basieren auf Orts- und Zeitangaben z.B. *Germany 2020* oder auf Kategorien wie *Nature & Landscape* oder *Pets*

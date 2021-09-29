@@ -1,7 +1,7 @@
-# Foto Details bearbeiten #
-Der Bearbeitungs-Dialog ermöglicht es dir, Metadaten zu deinen Fotos hinzuzufügen oder vorhandene Metadaten zu bearbeiten.
+# Bild Details bearbeiten #
+Der Bearbeitungs-Dialog ermöglicht es dir, Metadaten zu deinen Bildern hinzuzufügen oder vorhandene Metadaten zu bearbeiten.
 
-Während der [*Indexierung*](../library/indexing.md) liest PhotoPrism so viele Daten wie möglich aus Sidecar-Dateien oder den Fotos selbst aus.
+Während der [*Indexierung*](../library/indexing.md) liest PhotoPrism so viele Daten wie möglich aus Sidecar-Dateien oder den Bildern selbst aus.
 
 ### Bearbeitungs-Dialog öffnen ###
 #### Karteikarten Ansicht ####
@@ -14,13 +14,13 @@ Während der [*Indexierung*](../library/indexing.md) liest PhotoPrism so viele D
     ![Screenshot](img/edit-open-2.png)
 
 #### Anderen Ansichten ####
-1. Selektiere ein oder mehrere Fotos
+1. Selektiere ein oder mehrere Bilder
 2. Öffne das Kontext-Menü
 3. Klicke auf :material-pencil:
 
 ![Screenshot](img/edit-open-3.png)
 
-### Fotodetails bearbeiten ###
+### Bilddetails bearbeiten ###
 Im *Detail-Tab* des *Bearbeitungs-Dialogs* können die folgenden Daten angezeigt und verändert werden:
 
 * Titel
@@ -58,7 +58,7 @@ Im *Detail-Tab* des *Bearbeitungs-Dialogs* können die folgenden Daten angezeigt
     Nimmst du manuell Änderungen an den Metadaten vor, werden diese von PhotoPrism bei einer erneuten Indexierung nicht überschrieben.
 
 !!! Info
-    Die Suchbegriffe können im Suchfeld verwendet werden, um Fotos und Videos zu finden.
+    Die Suchbegriffe können im Suchfeld verwendet werden, um Bilder und Videos zu finden.
 
 #### Geolocation Plugin ####
 
@@ -67,14 +67,14 @@ Mit dem open source [Geolocation Plugin](https://github.com/andyvalerio/photopri
 ![Screenshot](https://valerio.nu/maps/geolocation.jpg)
 
 ### Kategorien bearbeiten ###
-Im Tab *Kategorien* können die [*Kategorien*](labels.md) eines Fotos/Videos angesehen und verändert werden.
+Im Tab *Kategorien* können die [*Kategorien*](labels.md) eines Bildes/Videos angesehen und verändert werden.
 
 ### Personen bearbeiten ###
 Im Tab *Personen* kannst du abgebildete [Personen](people.md) ansehen und editieren.
 
 ### Dateien bearbeiten###
-Im Tab *Dateien* werden alle Dateien angezeigt, die zu einem Foto gehören.
-Ein Foto kann aus mehreren Dateien bestehen. Beispielsweise einer *RAW-Datei*, eine dazugehörige *JPEG-Version* sowie eine verknüpfte *XMP/JSON Datei*.
+Im Tab *Dateien* werden alle Dateien angezeigt, die zu einem Bild gehören.
+Ein Bild kann aus mehreren Dateien bestehen. Beispielsweise einer *RAW-Datei*, eine dazugehörige *JPEG-Version* sowie eine verknüpfte *XMP/JSON Datei*.
 
 ![Screenshot](img/files-1.png)
 
