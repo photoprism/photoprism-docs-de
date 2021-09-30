@@ -11,7 +11,7 @@ Klicke :material-star:, um eine Person als Favorit zu markieren. Favoriten werde
 ![Screenshot](img/new.png)
 
 !!!info
-    Nicht alle Gesichter gehören zu einem Cluster und werden unter Neu angezeigt. Du kannst alle Bilder, mit solchen Gesichtern finden,
+    Nicht alle Gesichter gehören zu einem Cluster und werden unter Neu angezeigt. Du findest alle Bilder, mit Gesichtern ohne Namen,
     indem du nach `face:new` suchst. Im [Bearbeitungs-Dialog](edit.md) werden immer alle Gesichter angezeigt.
 
 
@@ -58,7 +58,6 @@ Oder
 ![Screenshot](img/view-person-2.png)
 
 ## Personen umbenennen ##
-Wenn du das Gesicht einer Person auf einem Bild änderst, werden alle Bilder dieser Person aktualisiert.
 
 1. Gehe zu *Personen*
 2. Gehe zu *Erkannt*
@@ -69,16 +68,6 @@ Wenn du das Gesicht einer Person auf einem Bild änderst, werden alle Bilder die
 ![Screenshot](img/rename-recognized-0.png)
 
 ![Screenshot](img/rename-recognized.png)
-
-Oder
-
-1. Öffne den [*Bearbeitungs-Dialog*](edit.md)
-2. Gehe zu *Personen*
-3. Klicke auf den Namen
-4. Gib einen neuen Namen ein
-5. Drücke *Enter*
-
-![Screenshot](img/rename-edit.png)
 
 ## Gesicht einer anderen Person zuordnen ##
 Wenn einem Gesicht die falsche Person zugeordnet ist, kannst du dies ändern.
