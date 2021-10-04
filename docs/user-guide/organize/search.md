@@ -97,7 +97,7 @@ name:"*_23*"
 Hier werden alle Bilder gefunden, die  `_23` im Namen enthalten, beispielsweise `IMG_2356.MOV` , `2021_02_23.jpg`, etc.
 
 !!!info
-    Wildcards können nicht mit & oder | verwendet werden.
+    Wildcards können mit & oder | verwendet werden : `filename:"*IMG123*|*_22F6FC19.jpg"`
 
 ## Suchfilter Übersicht ##
 PhotoPrism unterstützt die folgenden Filter im Suchfeld.
