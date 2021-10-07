@@ -38,10 +38,29 @@ Oder
 
 Die Person wird nun unter *Erkannt* angezeigt
 
-## Gesichter verstecken ##
-Du kannst Gesichter in *Neu* verstecken, indem du :material-close: klickst.
+## Personen ausblenden ##
+Du kannst Personen im Bereich *Erkannt* ausblenden, indem du :material-close: klickst.
 
-![Screenshot](img/hide-face.png)
+!!! attention
+    Bilder von ausgeblendeten Personen tauchen weiterhin in Suchergebnissen auf.
+
+!!! info
+    Dies ist ein neues Feature, mit dem wir uns bei unseren Sponsoren und Mitwirkenden bedanken wollen.
+    Du erfährst, wie es aktiviert werden kann, sobald du uns bei [Patreon](https://www.patreon.com/photoprism) oder [GitHub Sponsors](https://github.com/sponsors/photoprism) unterstützt.
+
+![Screenshot](img/person-hide.png)
+
+Um alle Personen, inklusive ausgeblendete, zu sehen klicke :material-eye:.
+
+![Screenshot](img/person-show-all.png)
+
+Ausgeblendete Personen werden wieder angezeigt, wenn du :material-eye-off: klickst.
+
+![Screenshot](img/person-recover.png)
+
+
+## Gesichter ausblenden ##
+Du kannst Gesichter im Bereich *Neu* auf die gleiche Weise wie [Personen](#personen-ausblenden) ausblenden.
 
 ## Alle Bilder einer Person ansehen ##
 1. Gehe zu *Personen*
