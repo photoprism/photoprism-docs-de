@@ -4,7 +4,6 @@ nav:
   - Handbuch:
       - Einleitung: user-guide/index.md
       # - Setting up: user-guide/setup.md
-      - Navigation: user-guide/navigate.md
       - Indexieren:
           - Einleitung: user-guide/library/import-vs-index.md
           - Originale indexieren: user-guide/library/indexing.md
@@ -20,28 +19,29 @@ nav:
       # - Sync and Back Up:
       # - WebDAV Sync
       #    - Nextcloud: user-guide/nextcloud.md
-      - Organisation:
-          - Übersicht:
-            - Bereiche: user-guide/organize/browse.md
-            - Ansichten: user-guide/organize/views.md
+      - Entdecken & Suchen:
+          - Navigation: user-guide/navigate.md
+          - Ansichten: user-guide/organize/views.md
           - Suche & Filter: user-guide/organize/search.md
-          - Überprüfen: user-guide/organize/review.md
-          - Bildstapel: user-guide/organize/stacks.md
-          - Panoramas: user-guide/organize/panoramas.md
-          - Scans: user-guide/organize/scans.md
-          - Privat: user-guide/organize/private.md
-          - Archiv: user-guide/organize/archive.md
+          - Bereiche: user-guide/organize/browse.md
+      - Organisation:
           - Alben: user-guide/organize/albums.md
           - Personen: user-guide/organize/people.md
-          - Ordner: user-guide/organize/folders.md
           - Kategorien: user-guide/organize/labels.md
-          - Karten: user-guide/organize/places.md
+          - Archiv: user-guide/organize/archive.md
+          - Bilder löschen: user-guide/organize/delete.md
+          - Privat: user-guide/organize/private.md
+          - Überprüfen: user-guide/organize/review.md
+          - Bildstapel: user-guide/organize/stacks.md
+          - Bilder bearbeiten: user-guide/organize/edit.md
+          - Bilder herunterladen: user-guide/organize/download.md
           - Videos: user-guide/organize/video.md
+          - Karten: user-guide/organize/places.md
           - Erlebnisse: user-guide/organize/moments.md
           - Kalender: user-guide/organize/calendar.md
-          - Bilder herunterladen: user-guide/organize/download.md
-          - Bilder bearbeiten: user-guide/organize/edit.md
-          - Bilder löschen: user-guide/organize/delete.md
+          - Ordner: user-guide/organize/folders.md
+          - Panoramas: user-guide/organize/panoramas.md
+          - Scans: user-guide/organize/scans.md
       - Sync & Backup:
           - Verbindung via WebDAV:  user-guide/sync/webdav.md
           - Smartphone Backup:  user-guide/sync/sync-phone.md
