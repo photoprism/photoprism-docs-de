@@ -1,6 +1,6 @@
 # Das Originals-Verzeichnis indexieren #
 
-!!! Info
+!!! info ""
     Wenn du PhotoPrism zum ersten Mal verwendest, stelle sicher, dass deine Bild und Video 
     Sammlung als *Originals* Ordner konfiguriert ist.
     Details hierzu findest du in unserer [Installationsanleitung](https://docs.photoprism.org/getting-started/).
@@ -18,11 +18,11 @@
 ![Screenshot](img/index.png)
 
 
-!!! Info
+!!! tip ""
     Zum Hinzufügen von Dateien zum *Originals* Ordner kann [WebDAV](webdav.md) verwendet werden.
     Das ist besonders hilfreich, wenn PhotoPrism auf einem Remote-Server ausgeführt wird oder du Dateien von deinem Handy synchronisieren möchtest.
 
-!!! Info 
+!!! tip "" 
     Ein NSFW-Detektor kann aktiviert werden, um Bilder, mit anstößigem Inhalt, automatisch als privat zu kennzeichnen. 
     Beachte, dass der Mechanismus nicht 100% zuverlässig ist. 
 

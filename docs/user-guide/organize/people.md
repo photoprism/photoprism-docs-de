@@ -10,43 +10,45 @@ Klicke :material-star:, um eine Person als Favorit zu markieren. Favoriten werde
 ![Screenshot](img/recognized.png)
 ![Screenshot](img/new.png)
 
-!!!info
+!!!info ""
     Nicht alle Gesichter gehören zu einem Cluster und werden unter Neu angezeigt. Du findest alle Bilder, mit Gesichtern ohne Namen,
     indem du nach `face:new` suchst. Im [Bearbeitungs-Dialog](edit.md) werden immer alle Gesichter angezeigt.
 
 
 ## Gesichter identifizieren ##
-1. Gehe zu *Personen*
-2. Gehe zu *Neu*
-3. Klicke in das Eingabefeld
-4. Beginne einen Namen einzugeben
-5. Drücke *Enter*
+=== "Unter Personen"
+     1. Gehe zu *Personen*
+     2. Gehe zu *Neu*
+     3. Klicke in das Eingabefeld
+     4. Beginne einen Namen einzugeben
+     5. Drücke *Enter*
 
-![Screenshot](img/add-name-new.png)
+    ![Screenshot](img/add-name-new.png)
 
-<!--![Screenshot](img/add-name-new-2.png)-->
+=== " Im Bearbeitungs-Dialog"
 
-Oder
+     1. Öffne den [*Bearbeitungs-Dialog*](edit.md)
+     2. Gehe zu *Personen*
+     3. Klicke in das Eingabefeld
+     4. Beginne einen Namen einzugeben
+     5. Drücke *Enter*
 
-1. Öffne den [*Bearbeitungs-Dialog*](edit.md)
-2. Gehe zu *Personen*
-3. Klicke in das Eingabefeld
-4. Beginne einen Namen einzugeben
-5. Drücke *Enter*
-
-![Screenshot](img/add-name-edit.png)
+    ![Screenshot](img/add-name-edit.png)
 
 Die Person wird nun unter *Erkannt* angezeigt
 
 ## Personen ausblenden ##
 Du kannst Personen im Bereich *Erkannt* ausblenden, indem du :material-close: klickst.
 
-!!! attention
-    Bilder von ausgeblendeten Personen tauchen weiterhin in Suchergebnissen auf.
-
-!!! info
+!!! example ""
     Dies ist ein neues Feature, mit dem wir uns bei unseren Sponsoren und Mitwirkenden bedanken wollen.
     Du erfährst, wie es aktiviert werden kann, sobald du uns bei [Patreon](https://www.patreon.com/photoprism) oder [GitHub Sponsors](https://github.com/sponsors/photoprism) unterstützt.
+    Deine kontinuierliche Unterstützung hilft uns, die Betriebskosten zu finanzieren, Dienste wie Satellitenkarten anzubieten,
+    und neue Funktionen zu entwickeln. Vielen Dank! 💜
+
+!!! attention ""
+    Bilder von ausgeblendeten Personen tauchen weiterhin in Suchergebnissen auf.
+
 
 ![Screenshot](img/person-hide.png)
 
@@ -63,18 +65,18 @@ Ausgeblendete Personen werden wieder angezeigt, wenn du :material-eye-off: klick
 Du kannst Gesichter im Bereich *Neu* auf die gleiche Weise wie [Personen](#personen-ausblenden) ausblenden.
 
 ## Alle Bilder einer Person ansehen ##
-1. Gehe zu *Personen*
-2. Gehe zu *Erkannt*
-3. Klicke auf eine Person
+=== "Unter Personen"
+     1. Gehe zu *Personen*
+     2. Gehe zu *Erkannt*
+     3. Klicke auf eine Person
 
-![Screenshot](img/view-person.png)
+    ![Screenshot](img/view-person.png)
 
-Oder
+=== "Über die Suche"
+     1. Gehe zu *Suche*
+     2. Suche nach person:"jane-doe"
 
-1. Gehe zu *Suche*
-2. Suche nach person:"jane-doe"
-
-![Screenshot](img/view-person-2.png)
+    ![Screenshot](img/view-person-2.png)
 
 ## Personen umbenennen ##
 
@@ -91,7 +93,7 @@ Oder
 ## Gesicht einer anderen Person zuordnen ##
 Wenn einem Gesicht die falsche Person zugeordnet ist, kannst du dies ändern.
 
-!!!info
+!!!attention ""
     Jedes Mal, wenn du ein Gesicht aus einem Cluster aussortierst, werden die Gesichts-Cluster im Hintergrund aktualisiert.
 
 1. Öffne den [*Bearbeitungs-Dialog*](edit.md)

@@ -16,7 +16,7 @@ Dieser Pfad wird mit `PHOTOPRISM_STORAGE_PATH` gesetzt.
 Die Ordner: `cache`, `sidecar` und `config` befinden sich innerhalb des `storage` Ordners, falls nicht anders definiert.
 Zusätzlich werden [Album Backups](./backups.md#album-backups) und Datenbank-Dateien in `storage` gespeichert
 
-!!! attention
+!!! attention ""
     Der `storage` Ordner darf sich nicht innerhalb von `originals` befinden, da sonst auch Thumbnails indexiert werden.
 
 ### Cache

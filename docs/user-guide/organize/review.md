@@ -8,23 +8,29 @@ Die Qualität wird anhand der folgenden Kriterien bestimmt:
 * Bild ist nicht als *Info* oder *Screenshot* eingestuft
 * Bild ist ein Favorit, wurde editiert oder bestätigt.
 
-!!! Info
+!!! info ""
     In den [Einstellungen](../settings/general.md) kann der Qualitätsfilter und somit auch der Überprüfungs-Prozess deaktiviert werden.
 
 ### Bilder übernehmen ###
-1. Öffne den [*Bearbeitungs-Dialog*](edit.md) des Bildes
-2. Klicke auf *Übernehmen*
+=== "Im Bearbeitungs-Dialog"
+     1. Öffne den [*Bearbeitungs-Dialog*](edit.md) des Bildes
+     2. Klicke auf *Übernehmen*
 
-    ![Screenshot](img/review.png)
-    
-**oder:**
+     ![Screenshot](img/review.png)
 
-1. Öffne die *Karteikarten Ansicht*
-2. Klicke auf *Übernehmen*
+=== " In der Karteikarten Ansicht"
+     1. Gehe zu *Überprüfen*     
+     2. Öffne die *Karteikarten Ansicht*
+     3. Klicke auf *Übernehmen*
 
-    ![Screenshot](img/review-2.png)
+        ![Screenshot](img/review-2.png)
 
-!!! Info
+=== "Über das Kontext-Menü"
+    1. Gehe zu *Überprüfen*
+    2. Selektiere Bilder und öffne das Kontext-Menu
+    3. Klicke :material-check:
+
+!!! attention ""
     Die Qualitätsbewertung wird automatisch aktualisiert.
     Wenn Datums- oder Ortsinformationen zu einem Bild hinzugefügt werden oder ein Bild als Favorit markiert wird, erhöht sich die Bewertung automatisch.
     Falls dadurch der Qualitätswert größer oder gleich 3 ist, wird das Bild automatisch übernommen.

@@ -23,6 +23,6 @@ so dass du Dateien von deinem Computer aus öffnen, bearbeiten und löschen kann
 
 <p style="text-align: center; padding: 20px 4px;">
 <a class="md-button" style="background-color: #546e7a; font-size: 0.66rem; font-weight: normal; color: white" href="https://demo.photoprism.org/" target="_blank">DEMO</a>
-<a class="md-button" style="background-color: #546e7a; font-size: 0.66rem; font-weight: normal; color: white" href="/user-guide/">ANLEITUNG</a>
+<a class="md-button" style="background-color: #546e7a; font-size: 0.66rem; font-weight: normal; color: white" href="./user-guide/">ANLEITUNG</a>
 <a class="md-button" style="background-color: #546e7a; font-size: 0.66rem; font-weight: normal; color: white" href="https://docs.photoprism.org/getting-started/">LEGE LOS</a>
 </p>

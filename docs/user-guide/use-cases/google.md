@@ -30,5 +30,5 @@ Um deine Originalbilder mit Metadaten von Google Photos zu bekommen wird [Google
 - Koordinaten (lat/long)
 - Erstellungsdatum
 
-!!! Info
+!!! info ""
     Google Photos Alben werden noch nicht gänzlich in PhotoPrism übernommen. Wir arbeiten daran.

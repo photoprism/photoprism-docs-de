@@ -32,7 +32,7 @@ Sobald alle Dateien hinzugefügt sind, können sie [importiert oder indexiert](i
 
  -->
 
-!!! Info 
+!!! tip "" 
     WebDAV kann auch verwendet werden, um Bilder vom Server herunterzuladen. 
     Verbinden dich einfach mit http://servername/originals/ und kopiere die Dateien.
 

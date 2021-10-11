@@ -1,7 +1,6 @@
 # Main navigation.
 nav:
-  - Einleitung:
-      - PhotoPrism: index.md
+  - Über PhotoPrism: index.md
   - Handbuch:
       - Einleitung: user-guide/index.md
       # - Setting up: user-guide/setup.md

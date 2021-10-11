@@ -7,7 +7,7 @@ Gruppierte Dateien werden im Bereich *Bildstapel* dargestellt.
 
 ![Screenshot](img/stacks-1.png)
 
-!!! Info
+!!! info ""
     Dateien können in folgenden Fällen gruppiert werden:
 
     1. Dateien haben fortlaufende Namen: Beispielsweise `IMG_1234` und `IMG_1234 (2)`.

@@ -23,7 +23,7 @@ Sind mehrere Filter gesetzt, werden nur Bilder von der Suche berücksichtigt, di
 
  ![Screenshot](img/color-red.png)
 
-!!! Info
+!!! tip ""
     Filter können auch im Suchfeld angegeben werden:
 
     `label:cat`
@@ -62,7 +62,7 @@ Diese Suche resultiert in allen Bildern, die die Suchbegriffe buffalo **UND** wa
 
 * albums, keywords, subject/person, subjects/people.
 
-!!!info
+!!!info ""
     Der label Suchfilter funktioniert nicht mit &. Du kannst alternativ den keywords Filter verwenden, da 
     alle Labels auch Suchbegriffe sind.
 
@@ -96,7 +96,7 @@ name:"*_23*"
 
 Hier werden alle Bilder gefunden, die  `_23` im Namen enthalten, beispielsweise `IMG_2356.MOV` , `2021_02_23.jpg`, etc.
 
-!!!info
+!!!info ""
     Wildcards können mit & oder | verwendet werden : `filename:"*IMG123*|*_22F6FC19.jpg"`
 
 ## Suchfilter Übersicht ##

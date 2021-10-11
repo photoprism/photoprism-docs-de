@@ -1,23 +1,27 @@
 # Bilder herunterladen #
-### Einzelnes Bild herunterladen ###
 
-1. Klicke auf das Bild
+=== "Kontext-Menü"
+     1. Selektiere Bilder und Videos
+     2. Öffne das Kontext-Menü
+     3. Klicke :material-cloud-download:
 
-    ![Screenshot](img/download-1.png)
+    ![Screenshot](img/multi-download.png)
     
-2. Im Vollbild Modus klicke :material-download:
+    !!! tip ""
+        Du kannst mehrere Bilder auf einmal selektieren, indem du die Shift Taste verwendest.
 
-    ![Screenshot](img/download-2.png)
+=== "Vollbild-Modus"
+     1. Klicke auf das Bild
 
-### Mehrere Bilder herunterladen ###
+        ![Screenshot](img/download-1.png)
+    
+     2. Im Vollbild Modus klicke :material-download:
 
-1. Selektiere Bilder und Videos
-2. Öffne das Kontext-Menü
-3. Klicke :material-cloud-download:
+        ![Screenshot](img/download-2.png)
 
-Bilder werden in Originalgröße heruntergeladen.
+=== "Bearbeitungs-Dialog"
+     1. Öffne den [*Bearbeitungs-Dialog*](edit.md)
+     2. Gehe zu *Dateien*
+     3. Klicke *Download*
 
-   ![Screenshot](img/multi-download.png)
 
-!!! Info
-    Du kannst mehrere Bilder auf einmal selektieren, indem du die Shift Taste verwendest.

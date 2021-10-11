@@ -11,7 +11,7 @@ Das Importieren ist dagegen deutlich effizienter, wenn später neue Dateien hinz
 Verwende *Indexieren*, wenn du deine Bilder und Videos direkt im Ordner *Originals* indexieren möchtest, ohne sie zu kopieren,
 zu verschieben oder umzubenennen.
 
-!!! Info
+!!! tip ""
     Um bestimmte Dateien oder Ordner von der Indexierung auszuschließen, kannst du [eine Ignorieren Liste konfigurieren](indexing.md#verzeichnisse-und-dateien-ignorieren),
     bevor du die Indexierung startest.
 
@@ -67,7 +67,7 @@ zu verschieben oder umzubenennen.
 * Keine Duplikate im Originals Verzeichnis
 
 
-!!! Info
+!!! info ""
     Original Datei- und Ordnernamen werden zum Erstellen von Suchbegriffen verwendet. 
     Falls du ein Verzeichnis mit dem Pfad "Urlaub/Afrika" importierst oder indexierst erhalten alle Dateien aus diesem Ordner die Suchbegriffe "Urlaub" und "Afrika".
 

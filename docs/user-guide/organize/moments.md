@@ -3,7 +3,7 @@
 PhotoPrism erstellt automatisch *Erlebnisse* aus deinen Erinnerungen. 
 Deine *Erlebnisse* werden laufend aktualisiert, wenn neue Bilder hinzugefügt werden.
 
-!!! info
+!!! info ""
     Erlebnisse basieren auf Orts- und Zeitangaben z.B. *Germany 2020* oder auf Kategorien wie *Nature & Landscape* oder *Pets*
 
 ![Screenshot](img/moments.png)
@@ -15,7 +15,7 @@ Mithilfe des Kontext-Menüs kannst du die folgenden Aktionen durchführen:
 2. Öffne das Kontext-Menü und klicke :material-delete:
 3. Bestätige
 
-!!! Info
+!!! hint ""
     Nur das Erlebnis wird gelöscht. Deine Dateien werden nicht gelöscht oder verändert.
 
 ## Erlebnis als ZIP-Archiv herunterladen ##

@@ -6,7 +6,7 @@ Diese Seite ermöglicht dir erweiterte Einstellungen an deiner PhotoPrism Instan
 Alle Optionen können alternativ über die 
 [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) gesetzt werden.
 
-!!! Info
+!!! note ""
     Wenn du PhotoPrism im public Modus betreibst, sind die erweiterten Einstellungen nicht verfügbar.
 
 ## Optionen ##
@@ -125,7 +125,7 @@ Maximalgröße, für Thumbnails, die während des Import- bzw Indexiervorgangs e
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_THUMB_SIZE`.
 
-!!! warning
+!!! warning ""
     Wenn die eingestellte Maximalgröße überschritten wird (z.B. wenn Nutzer einen großen Bildschirm verwenden),
     und kein Thumbnail in der angefragten Größe vorhanden ist, wird das Originalbild angezeigt. Dies kann dazu führen, dass Bilder in der falschen Orientierung dargestellt werden.
 
@@ -136,7 +136,7 @@ Sollte der von Thumbnails belegte Speicherplatz allerdings ein Problem darstelle
 Setze in diesem Fall eine hohe dynamische Maximalgröße, damit dein Server bei Bedarf Vorschaubilder erstellen kann.
 Beachte, dass dies eine hohe Rechenleistung erfordert und es zu einer Verzögerung kommen kann, wenn du Bilder im Vollbildmodus betrachten willst.
 
-!!! Info
+!!! tip ""
     Falls du im Vollbildmodus deine Originalbilder angezeigt bekommen möchtest, aktiviere *Dynamische Vorschaubilder*,
     und setze niedrige dynamische und statische Maximalgrößen (z.B. 720).
 
@@ -177,7 +177,7 @@ Zusätzlich zu den oben genannten Formaten unterstützt PhotoPrism auch BMP-, GI
 
 ![](img/editPhoto.png)
 
-!!! info
+!!! info ""
     Von PhotoPrism erstellte Sidecar-Dateien werden außerhalb des Originals Verzeichnis gespeichert, so dass die RAW zu JPEG Konvertierung auch im
     Read-Only Modus verfügbar ist.
 

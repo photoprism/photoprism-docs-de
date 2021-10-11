@@ -1,15 +1,21 @@
 # Ansichten #
 PhotoPrism bietet drei schöne Ansichten, um deine Bilder und Videos anzuzeigen.
 
-* In der *Karteikarten Ansicht* findest du unter jedem Bild wichtige Metadaten wie Titel, Aufnahmezeit und -Ort.
+=== "Karteikarten Ansicht"
+
+    In der *Karteikarten Ansicht* findest du unter jedem Bild wichtige Metadaten wie Titel, Aufnahmezeit und -Ort.
 
     ![Screenshot](img/card.png)
 
-* Die *Mosaik Ansicht* zeigt dir deine Bilder ohne Ablenkung.
+=== "Mosaik Ansicht"
+
+    Die *Mosaik Ansicht* zeigt dir deine Bilder ohne Ablenkung.
 
     ![Screenshot](img/mosaic.png)
-    
-* Die *Listen Ansicht* stellt Bilder und Metadaten in einer übersichtlichen Liste dar.
+
+=== "Listen Ansich"
+
+    Die *Listen Ansicht* stellt Bilder und Metadaten in einer übersichtlichen Liste dar.
 
     ![Screenshot](img/list.png)
 

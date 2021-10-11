@@ -1,21 +1,20 @@
 # Album-Link teilen #
 
 ## Freigabelink erstellen ##
-1. Gehe zu *Alben*
-2. Selektiere das Album, das du teilen möchtest
-3. Öffne das Kontext-Menü
-4. Klicke :material-share-variant:
+=== "Kontext-Menü"
+     1. Gehe zu *Alben*
+     2. Selektiere das Album, das du teilen möchtest
+     3. Öffne das Kontext-Menü
+     4. Klicke :material-share-variant:
 
     ![Screenshot](img/share-1.png)
 
+=== "Album-Suchleiste"
+     1. Gehe zu *Alben*
+     2. Öffne das Album, das du teilen möchtest
+     3. Klicke :material-share-variant:
 
-Oder
-
-1. Gehe zu *Alben*
-2. Öffne das Album, das du teilen möchtest
-3. Klicke :material-share-variant:
-
-   ![Screenshot](img/share-5.png)
+      ![Screenshot](img/share-5.png)
 
 Dann
 
@@ -33,7 +32,7 @@ Dann
 
 
 
-!!!Info
+!!!tip ""
     Du kannst zusätzliche Links mit unterschiedlichen Codes und Ablaufdaten erstellen, indem du auf :material-link-plus: klickst
 
 ## Freigabelink löschen ##

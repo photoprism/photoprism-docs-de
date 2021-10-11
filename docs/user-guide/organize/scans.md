@@ -1,7 +1,7 @@
 # Scans #
 Eingescannte Bilder können als *Scan* markiert werden.
 
-!!! Info
+!!! info ""
     Wir arbeiten daran, eingescannte Bilder in Zukunft automatisch zu erkennen.
 
 ## Bild als Scan markieren ##

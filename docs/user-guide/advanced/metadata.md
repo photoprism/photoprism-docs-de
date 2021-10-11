@@ -14,7 +14,7 @@ Zusätzlich lesen wir noch einige XMP Felder aus.
 
 Die folgende Tabelle zeigt alle Exiftool bzw. XMP Tags, die von PhotoPrism unterstützt werden.
 
-!!!attention
+!!!attention ""
     Falls ein Feld mit Daten aus einer XMP Datei gefüllt ist, ist diese Datei die einzige Datenquelle für dieses Feld.
     Das heißt, dass beispielsweise Keywords aus einer XMP Datei andere Keywords, die von PhotoPrism selbst kommen (z.B. Farben oder Ordnernamen) überschreiben.
 

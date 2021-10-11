@@ -11,7 +11,7 @@ Wenn diese Option aktiviert ist, musst du Bilder und Videos mit geringer Qualit�
 #### :material-camera: Automatische Konvertierung zu JPEG ####
 Wenn diese Option aktiviert ist, werden während der [*Indexierung*](../library/indexing.md) automatisch *JPEG*-Vorschaubilder deiner *RAW*-Dateien erstellt.
 
-!!! Attention
+!!! attention ""
     Falls diese Option deaktiviert ist, und es RAW, PNG oder Video Dateien ohne dazugehöriges JPEG gibt, wird es für diese Dateien keine Vorschau geben.
 
 ## Bildstapel ##

@@ -11,23 +11,25 @@
     ![Screenshot](img/album-name-1.png)
 
 ### Album bearbeiten ###
+Gehe zu *Alben* und öffne den *Album-Bearbeitungs-Dialog*
 
-1. Gehe zu *Alben*
-2. Klicke auf den *Album Titel*, um den *Bearbeitungs-Dialog* zu öffnen
+=== "Titel"
+    Klicke auf den *Album Titel*.
+      ![Screenshot](img/edit-album-1.png)
 
-    ![Screenshot](img/edit-album-1.png)
-    
-    Alternativ kannst du auch ein Album selektieren, das Kontext-Menü öffnen und :material-pencil: klicken
+=== "Kontext-Menü"
+    Selektiere ein Album, öffne das Kontext-Menü und klicke :material-pencil:.
     
     ![Screenshot](img/album-edit-2.png)
-    
-    Oder das Album öffnen und :material-pencil: rechts oben klicken
+
+=== "Album-Suchleiste"
+    Öffne das Album und klicke :material-pencil: rechts oben.
     
     ![Screenshot](img/album-edit-3.png)
     
-3. Bearbeite die Album Details und klicke *Speichern*
+Dann bearbeite die Album Details und klicke *Speichern*
 
-    ![Screenshot](img/album-edit-4.png)
+![Screenshot](img/album-edit-4.png)
     
 
 ### Bilder zu Album hinzufügen ###
@@ -46,7 +48,7 @@
 
     ![Screenshot](img/add-photo-album-3.png)
 
-!!! Info
+!!! tip ""
     Du kannst mehrere Bilder auf einmal selektieren, indem du die Shift Taste verwendest.
 
 ### Bilder aus Album entfernen ###

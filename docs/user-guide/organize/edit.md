@@ -4,60 +4,38 @@ Der Bearbeitungs-Dialog ermöglicht es dir, Metadaten zu deinen Bildern hinzuzuf
 Während der [*Indexierung*](../library/indexing.md) liest PhotoPrism so viele Daten wie möglich aus Sidecar-Dateien oder den Bildern selbst aus.
 
 ### Bearbeitungs-Dialog öffnen ###
-#### Karteikarten Ansicht ####
-1. Klicke auf den Titel, den Aufnahmezeitpunkt oder die Kamerainformationen
 
-    ![Screenshot](img/edit-open-1.png)
+=== "Karteikarten Ansicht"
+     Klicke auf den Titel, den Aufnahmezeitpunkt oder die Kamerainformationen
 
-#### Vollbildmodus ####
-1. Klicke auf :material-pencil:, in der rechten oberen Ecke des Bildschirms
-    ![Screenshot](img/edit-open-2.png)
+     ![Screenshot](img/edit-open-1.png)
 
-#### Anderen Ansichten ####
-1. Selektiere ein oder mehrere Bilder
-2. Öffne das Kontext-Menü
-3. Klicke auf :material-pencil:
+=== "Vollbild-Modus"
+      Klicke auf :material-pencil:, in der rechten oberen Ecke des Bildschirms
+        ![Screenshot](img/edit-open-2.png)
 
-![Screenshot](img/edit-open-3.png)
+=== "Kontext-Menü"
+     1. Selektiere ein oder mehrere Bilder
+     2. Öffne das Kontext-Menü
+     3. Klicke auf :material-pencil:
+
+    ![Screenshot](img/edit-open-3.png)
 
 ### Bilddetails bearbeiten ###
 Im *Detail-Tab* des *Bearbeitungs-Dialogs* können die folgenden Daten angezeigt und verändert werden:
 
-* Titel
-* Tag 
-* Monat
-* Jahr 
-* Zeit in UTC
-* Datum in UTC
-* Zeitzone
-* Breitengrad
-* Längengrad
-* Höhe über NN
-* Land
-* Kamera
-* ISO
-* Belichtungszeit
-* Objektiv
-* F Nummer
-* Brennweite
-* Thema
-* Künstler
-* Copyright
-* Lizenz
-* Beschreibung
-* Suchbegriffe
-* Notizen
+* Titel, Tag, Monat, Jahr, Zeit in UTC, Datum in UTC, Zeitzone, Breitengrad, Längengrad, Höhe über NN, Land, Kamera, ISO, Belichtungszeit, Objektiv, F Nummer, Brennweite, Thema, Künstler, Copyright, Lizenz, Beschreibung, Suchbegriffe, Notizen
 
 ![Screenshot](img/edit-details.png)
 
 *Speichern* speichert die aktuellen Änderungen.
 *Fertig* speichert die Änderungen und schließt den Dialog.
 
-!!! Info
+!!! info ""
     Viele Metadaten, wie Suchbegriffe, Titel, Ort der Aufnahme oder Kameradetails werden von PhotoPrism während der [*Indexierung*](../library/indexing.md) automatisch hinzugefügt.
     Nimmst du manuell Änderungen an den Metadaten vor, werden diese von PhotoPrism bei einer erneuten Indexierung nicht überschrieben.
 
-!!! Info
+!!! tip ""
     Die Suchbegriffe können im Suchfeld verwendet werden, um Bilder und Videos zu finden.
 
 #### Geolocation Plugin ####

@@ -18,7 +18,7 @@ Um ausschließlich *Kategorien* mit einer hohen Priorität angezeigt zu bekommen
     ![Screenshot](img/labels-2.png)
     ![Screenshot](img/labels-3.png)
 
-!!! Info
+!!! info ""
     Alternativ kannst du auch das Suchfeld verwenden. Um beispielsweise nach der *Kategorie* "Hund" zu suchen, verwende den Suchbegriff `label:dog`.
 
 ### Kategorie hinzufügen ###
@@ -40,12 +40,12 @@ Automatisch zugewiesene *Kategorien* können entfernt werden. Manuell hinzugefü
 
     ![Screenshot](img/remove-label-1.png)
     
-!!! Info
+!!! info ""
     Entfernte *Kategorien* bekommen die Wahrscheinlichkeit 0% zugewiesen. Sie können jederzeit durch klicken auf :material-plus: wieder aktiviert werden.
     
    ![Screenshot](img/remove-label-2.png)
 
-!!! Info
+!!! info ""
     In den [Einstellungen](../settings/general.md) kann der Bereich *Kategorien* ausgeblendet werden.
 
 ### Kategorie umbenennen ###
@@ -66,7 +66,7 @@ Automatisch zugewiesene *Kategorien* können entfernt werden. Manuell hinzugefü
 
     ![Screenshot](img/edit-label-4.png)
 
-!!! Attention
+!!! attention ""
     Beachte, dass diese Änderung alle Bilder betrifft, die mit dieser *Kategorie* verknüpft sind.
 
 ### Kategorie löschen ###
@@ -77,5 +77,5 @@ Automatisch zugewiesene *Kategorien* können entfernt werden. Manuell hinzugefü
 3. Öffne das Kontext-Menü und klicke auf :material-delete:
 4. Bestätige
 
-!!! Attention
+!!! attention ""
     Wenn eine gelöschte *Kategorie* wieder hergestellt werden soll, muss diese einem Bild hinzugefügt sowie die [*Indexierung*](../library/indexing.md) gestartet werden.

@@ -1,7 +1,7 @@
 # Navigation
 Unsere Bild- und Videosuche basiert auf den folgenden Komponenten. 
 
-!!! Info
+!!! info ""
     PhotoPrism ist auf alle Bildschirmgrößen angepasst. Unsere Screenshots zeigen die App in einem Desktop-Browser mit mittlerer Auflösung.
 
 ![Screenshot](img/nav1edited.png)
