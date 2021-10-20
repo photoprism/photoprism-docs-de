@@ -9,8 +9,5 @@ Bereits indexierte Fotos und Videos werden in der [Suche](organize/browse.md) an
 Falls deine Fotos nicht auftauchen, kann es sein, dass sie im Bereich [Überprüfen](organize/review.md) sind, da die Qualität niedrig ist oder keine Metadaten vorhanden sind. Du kannst diese und andere Funktionen in den  [Einstellungen](settings/general.md) deaktivieren, um PhotoPrism an deine Bedürfnisse anzupassen.
 
 !!! example ""
-    **Dieses Open-Source-Projekt wird durch [unsere Sponsoren](https://github.com/photoprism/photoprism/blob/develop/SPONSORS.md) ermöglicht.**
-    Wenn dir PhotoPrism gefällt, unterstütze uns gerne auf [Patreon](https://www.patreon.com/photoprism)
-    oder [GitHub Sponsors](https://github.com/sponsors/photoprism).
-    Deine kontinuierliche Unterstützung hilft uns, die Betriebskosten zu finanzieren, Dienste wie Satellitenkarten anzubieten,
-    und neue Funktionen zu entwickeln. Vielen Dank! 💜
+    **Unterstütze uns auf [Patreon](https://www.patreon.com/photoprism) oder [GitHub Sponsors](https://github.com/sponsors/photoprism).**
+    Deine kontinuierliche Unterstützung hilft uns, Dienste wie Satellitenkarten anzubieten und neue Funktionen zu entwickeln. Vielen Dank! 💜
