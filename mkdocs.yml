@@ -88,7 +88,7 @@ site_dir: site
 
 # Project information.
 site_name: PhotoPrism
-site_description: Handbuch
+site_description: Dokumentation
 site_author: PhotoPrism.org
 site_url: https://docs.photoprism.de
 
