@@ -122,7 +122,8 @@ Wenn einem Gesicht die falsche Person zugeordnet ist, kannst du dies ändern.
 
 ![Screenshot](img/reject.png)
 
-## Falsch erkannte Gesichter entfernen ##
+## Gesichter entfernen ##
+Falls etwas Falsches als Gesicht erkannt wurde, oder dich ein Gesicht nicht interessiert, kannst du es entfernen.
 
 1. Öffne den [*Bearbeitungs-Dialog*](edit.md)
 2. Gehe zu *Personen*
