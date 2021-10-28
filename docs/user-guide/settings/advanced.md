@@ -8,8 +8,6 @@ Wenn du PhotoPrism im public Modus betreibst, sind die erweiterten Einstellungen
     Änderungen von erweiterten Einstellungen erfordern immer einen Neustart.
     Wenn du die Thumbnail-Qualität oder Größen Einstellungen änderst, werden bereits erstellte Thumbnails nicht gelöscht.
     Thumbnails können über die [Kommandozeile](https://docs.photoprism.org/getting-started/docker-compose/#command-line-interface) neu generiert werden.
-    
-Sie können sie über die Befehlszeilenschnittstelle neu generieren.
 
 ![](img/advanced-settings.jpg)
 
