@@ -1,19 +1,24 @@
-# Soll ich meine Dateien Importieren oder Indexieren?
+# Bildersammlung verwalten #
+
+## Soll ich meine Dateien importieren oder indexieren? ##
 
 
-Das *Import* Verzeichnis ist ein temporärer Ordner, aus welchem Dateien strukturiert in den *Originals* Ordner verschoben oder kopiert werden, um Duplikate in *Originals* zu vermeiden. 
+Das *Import* Verzeichnis ist ein temporärer Ordner, aus welchem Dateien strukturiert in den *Originals* Ordner verschoben oder kopiert werden, um Duplikate in *Originals* zu vermeiden.
+Importierte Dateien erhalten einen kanonischen Dateinamen und werden nach Jahr und Monat sortiert.
+
 Die meisten Nutzer mit bereits gut strukturierten Bildsammlungen möchten ihre Originaldateien direkt indexieren, ohne sie zu importieren, 
 damit vorhandene Datei- und Verzeichnisnamen erhalten bleiben. 
 Das Importieren ist dagegen deutlich effizienter, wenn später neue Dateien hinzugefügt werden, da nicht alle schon vorhandenen Dateien in *Originals* neu indexiert werden müssen, um die neu hinzugefügten Bilder und Videos zu finden.
+
+!!! tip ""
+    Versteckte Dateien sowie Ordner, die mit ```.``` oder ```@``` beginnen, werden automatisch ignoriert. 
+    Andere Namen, die ignoriert werden sollen, können in einer .ppignore Datei im Originals oder Import Verzeichnis konfiguriert werden. 
+    Diese Datei kann im Hauptordner oder in einem Unterordner ablegt werden.
 
 ### Indexieren ###
 
 Verwende *Indexieren*, wenn du deine Bilder und Videos direkt im Ordner *Originals* indexieren möchtest, ohne sie zu kopieren,
 zu verschieben oder umzubenennen.
-
-!!! tip ""
-    Um bestimmte Dateien oder Ordner von der Indexierung auszuschließen, kannst du [eine Ignorieren Liste konfigurieren](indexing.md#verzeichnisse-und-dateien-ignorieren),
-    bevor du die Indexierung startest.
 
 **Deine Ordnerstruktur in *Originals* könnte so aussehen:**
 

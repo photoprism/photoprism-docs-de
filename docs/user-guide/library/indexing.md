@@ -1,4 +1,4 @@
-# Das Originals-Verzeichnis indexieren #
+# Dateien indexieren #
 
 !!! info ""
     Wenn du PhotoPrism zum ersten Mal verwendest, stelle sicher, dass deine Bild und Video 

@@ -1,4 +1,4 @@
-# Dateien nach Originals importieren #
+# Dateien importieren #
 
 1. Stelle sicher, dass sich alle Dateien, die du importieren willst, im *Import* Verzeichnis befinden
 
