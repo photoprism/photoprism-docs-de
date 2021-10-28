@@ -4,13 +4,13 @@ nav:
   - Handbuch:
       - Einleitung: user-guide/index.md
       # - Setting up: user-guide/setup.md
-      - Indexieren:
+      - Dateien:
           - Einleitung: user-guide/library/import-vs-index.md
           - Originale indexieren: user-guide/library/indexing.md
-          - Importieren: user-guide/library/import.md
+          - Dateien importieren: user-guide/library/import.md
           - Web Upload: user-guide/library/upload.md
-          - WebDAV Upload: user-guide/library/webdav.md
-          - Originale: user-guide/library/files.md
+          - WebDAV Sync: user-guide/library/webdav.md
+          - Datei Browser: user-guide/library/files.md
         #- Import from camera: user-guide.md
         #- Import from Facebook: user-guide.md
         #- Import from NAS: user-guide.md
