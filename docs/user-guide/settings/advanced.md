@@ -1,13 +1,21 @@
 # Erweiterte Einstellungen #
-Diese Seite ermöglicht dir erweiterte Einstellungen an deiner PhotoPrism Instanz vorzunehmen, sowie die Vorschaubild-Erstellung zu konfigurieren.
+In den erweiterten Einstellungen kannst du grundlegende Systemkonfigurationen, wie die Qualität der Vorschaubilder vornehmen. 
+Hier können auch bestimmte Funktionen deaktiviert, sowie der Debug- oder der Schreibgeschützte-Modus aktiviert werden.
+
+Wenn du PhotoPrism im public Modus betreibst, sind die erweiterten Einstellungen aus Sicherheitsgründen nicht verfügbar.
+
+!!! attention ""
+    Änderungen von erweiterten Einstellungen erfordern immer einen Neustart.
+    Wenn du die Thumbnail-Qualität oder Größen Einstellungen änderst, werden bereits erstellte Thumbnails nicht gelöscht.
+    Thumbnails können über die [Kommandozeile](https://docs.photoprism.org/getting-started/docker-compose/#command-line-interface) neu generiert werden.
+    
+Sie können sie über die Befehlszeilenschnittstelle neu generieren.
 
 ![](img/advanced-settings.jpg)
 
 Alle Optionen können alternativ über die 
 [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) gesetzt werden.
-
-!!! note ""
-    Wenn du PhotoPrism im public Modus betreibst, sind die erweiterten Einstellungen nicht verfügbar.
+ 
 
 ## Optionen ##
 
@@ -63,36 +71,17 @@ Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting
 ## Bilder##
 Mit folgenden Einstellungen kannst du die Generierung von Vorschaubildern kontrollieren.
 
-### Skalierungsfilter
+### Skalierungsfilter ###
 Du kannst den Algorithmus wählen, der verwendet werden soll, um JPEG Vorschaubilder ('Thumbnails') zu erstellen.
 
-Der *Lanczos* Filter erstellt die qualitativ hochwertigsten Thumbnails, ist aber etwas langsamer, als die anderen. 
+Der *Lanczos* Filter erstellt die qualitativ hochwertigsten Thumbnails, ist aber etwas langsamer, als die anderen.
 Der *Cubic* Filter ist ca 30% schneller.
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_THUMB_FILTER`.
 
-#### Beispiele ####
-
-Originalbild:
-
-![](img/branches.png)
-
-Dieses Bild wurde unter der Verwendung von verschiedenen Filtern von 600x400 Pixeln auf 150x100 Pixel skaliert.
-Die Liste ist sortiert nach Rechengeschwindigkeit.
-
-An erster Stelle steht der schnellste Filter mit der niedgrigsten Qualität, an letzer Stelle der langsamste Filter mit der besten Qualität.
-
-Filter                    | Ergebnis
---------------------------|---------------------------------------------
-Nächster Nachbar          | ![](img/out_resize_nearest.png)
-Bilinear                  | ![](img/out_resize_linear.png)
-Bikubisch (Scharf)        | ![](img/out_resize_catrom.png)
-Lanczos                   | ![](img/out_resize_lanczos.png)
-
-Source: [A Comparative Analysis of Image Interpolation Algorithms](https://ijarcce.com/wp-content/uploads/2016/02/IJARCCE-7.pdf)
-
 ### Dynamische Vorschaubilder
-Vorschaubilder können on-demand erstellt werden, also erst, wenn sie gebraucht werden. Dies ist beispielsweise beim Betrachten der Bilder der Fall.
+Vorschaubilder können on-demand erstellt werden, also erst, wenn sie gebraucht werden. 
+Dies ist beispielsweise beim Betrachten der Bilder der Fall.
 Diese Einstellung spart Speicherplatz (da die Thumbnails nicht gespeichert werden), braucht allerdings viel Rechenleistung.
 Wir empfehlen diese Einstellung nicht, wenn PhotoPrism auf einem nicht leistungsstarken Gerät betrieben wird.
 
@@ -100,16 +89,21 @@ Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting
 
 ### JPG Qualität
 
-Um Thumbnails in best möglicher Qualität zu erhalten, solltest du die *JPEG*-Qualität auf ein Minimum von 90 einstellen und den *Lanczos*-Filter verwenden. 
+Um Thumbnails in bestmöglicher Qualität zu erhalten, solltest du die *JPEG*-Qualität auf ein Minimum von 90 einstellen. 
 Generell gilt: je höher die Qualität, desto mehr Speicherplatz brauchen die Thumbnails und desto länger dauert die Generierung.
 
-Qualitäts-Level von >90% werden als hoch eingestuft.
-80%-90% gilt als mittlere und 70-80% als niedrige Qualität (z.B. stark komprimierte Bilder auf Social Media). 
+* Qualitäts-Level von >90% werden als hoch eingestuft.
+* 80%-90% gilt als mittlere Qualität
+* 70-80% gilt als niedrige Qualität (z.B. stark komprimierte Bilder auf Social Media). 
+
 Alles mit einer Qualität von unter 70% gilt als sehr niedrig.
 
-Bei einer JPEG-Qualität von 95 sind die Vorschaubilder ca 500kB groß. Bei einer Qualität von 80 ist die Größe auf ca 100kB reduziert.
+Beispiel: Bei einer JPEG-Qualität von 95 sind die Vorschaubilder ca 500kB groß. Bei einer Qualität von 80 ist die Größe auf ca 100kB reduziert.
 
-Die Objekterkennung funktioniert mit scharfen Bildern besser, mit hoher Kompression werden also auch die Kategorien ungenauer.
+!!! tldr ""
+    **Das Qualitätsempfinden hängt stark davon ab, wie viele Informationen ein Bild enthält.** 
+    Leere Flächen oder Himmel, lassen sich leicht komprimieren. Während Bilder mit vielen Details am meisten unter der Komprimierung leiden.
+    Deshalb wirkt sich eine Verringerung der Qualität der Thumbnails auch negativ auf die Ergebnisse der Gesichtserkennung und Bildklassifizierung aus. 
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_JPEG_QUALITY`.
 
@@ -125,11 +119,17 @@ Maximalgröße, für Thumbnails, die während des Import- bzw Indexiervorgangs e
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.org/getting-started/config-options/) ist `PHOTOPRISM_THUMB_SIZE`.
 
+!!! danger ""
+    Die Verringerung des statischen Größenlimits hat erhebliche Auswirkungen auf die Ergebnisse der [Gesichtserkennung](../organize/people.md) und Bildklassifizierung. 
+    Einfach ausgedrückt, bedeutet das, dass der Indexer nicht mehr richtig sehen kann.
+
+
 !!! warning ""
     Wenn die eingestellte Maximalgröße überschritten wird (z.B. wenn Nutzer einen großen Bildschirm verwenden),
-    und kein Thumbnail in der angefragten Größe vorhanden ist, wird das Originalbild angezeigt. Dies kann dazu führen, dass Bilder in der falschen Orientierung dargestellt werden.
+    und kein Thumbnail in der angefragten Größe vorhanden ist, wird das Originalbild angezeigt. 
+    **Dies kann dazu führen, dass Bilder in der falschen Orientierung dargestellt werden.**
 
-Die Maximalgröße muss mindestens 720px sein, um zu gewährleisten, dass Thumbnails für die Bildansichten und die Objekterkennung vorhanden sind.
+Die Maximalgröße muss mindestens 720px sein, um zu gewährleisten, dass Thumbnails für Farberkennung, Gesichtserkennung, Bildklassifizierung sowie die Ansichten vorhanden sind.
 
 Wir empfehlen eine hohe Maximalgröße.
 Sollte der von Thumbnails belegte Speicherplatz allerdings ein Problem darstellen, kannst du eine niedrigere statische Maximalgröße einstellen.
@@ -140,7 +140,7 @@ Beachte, dass dies eine hohe Rechenleistung erfordert und es zu einer Verzögeru
     Falls du im Vollbildmodus deine Originalbilder angezeigt bekommen möchtest, aktiviere *Dynamische Vorschaubilder*,
     und setze niedrige dynamische und statische Maximalgrößen (z.B. 720).
 
-## Welche Dateien werden von PhotoPrism erstellt? ##
+### Welche Dateien werden von PhotoPrism erstellt? ###
 Die Minimalgröße für statische Thumbnails ist 720px. Wenn diese gesetzt ist, werden alle Bilder bis zu `720x720` erstellt.
 Wenn höhere statische Maximalgrößen gesetzt sind, werden zusätzlich Vorschaubilder bis zur eingestellten Größe erstellt.
 
@@ -167,13 +167,34 @@ fit_3840  | 3840   | 2400    | Ultra HD                 |
 fit_4096  | 4096   | 4096    | Ultra HD, Retina 4K      |
 fit_7680  | 7680   | 4320    | 8K Ultra HD 2, Retina 6K |
 
+## Skalierungsfilter Beispiele##
+
+Originalbild:
+
+![](img/branches.png)
+
+Dieses Bild wurde unter der Verwendung von verschiedenen Filtern von 600x400 Pixeln auf 150x100 Pixel skaliert.
+Die Liste ist sortiert nach Rechengeschwindigkeit.
+
+An erster Stelle steht der schnellste Filter mit der niedgrigsten Qualität, an letzer Stelle der langsamste Filter mit der besten Qualität.
+
+Filter                    | Ergebnis
+--------------------------|---------------------------------------------
+Nächster Nachbar          | ![](img/out_resize_nearest.png)
+Bilinear                  | ![](img/out_resize_linear.png)
+Bikubisch (Scharf)        | ![](img/out_resize_catrom.png)
+Lanczos                   | ![](img/out_resize_lanczos.png)
+
+Source: [A Comparative Analysis of Image Interpolation Algorithms](https://ijarcce.com/wp-content/uploads/2016/02/IJARCCE-7.pdf)
+
 ## Umwandlung von RAW zu JPEG ##
-Viele Fotografen, insbeondere Nutzer einer digitalen SLR, verwenden ein verlustfreies RAW-Format anstelle des verlustbehafteten JPEG-Formats. Es gibt auch [Handies](https://www.fredericpaulussen.be/how-to-raw-photos-huawei-p30-pro/), die RAW-Daten abspeichern können oder das Format HEIC/HEIF nutzen.
-Das Ziel von PhotoPrism ist eine umfangreiche Unterstützung für alle [RAW-Formate](https://en.wikipedia.org/wiki/Raw_image_format), unabhängig vom verwendeten Kameramodell. Deshalb bitten wir dich uns eine Nachricht zu schicken, falls du ein Problem mit den Dateien von einem deiner Geräte hast.
+Viele Fotografen, insbesondere Nutzer einer digitalen SLR, verwenden ein verlustfreies RAW-Format anstelle des verlustbehafteten JPEG-Formats. Es gibt auch [Handies](https://www.fredericpaulussen.be/how-to-raw-photos-huawei-p30-pro/), die RAW-Daten abspeichern können oder das Format HEIC/HEIF nutzen.
+
+Unser Ziel ist eine umfangreiche Unterstützung für alle [RAW-Formate](https://en.wikipedia.org/wiki/Raw_image_format), unabhängig vom verwendeten Kameramodell. Deshalb bitten wir dich uns eine Nachricht zu schicken, falls du ein Problem mit den Dateien von einem deiner Geräte hast.
 
 Webbrowser können keine RAW-Formate anzeigen. Deshalb muss PhotoPrism diese Dateien zu JPEGs *konvertieren*. Falls du das nicht möchtest, kannst du das in den [Einstellungen](library.md) ausschalten.
 
-Zusätzlich zu den oben genannten Formaten unterstützt PhotoPrism auch BMP-, GIF-, PNG- und TIFF-Dateien. Bevor du diese Formate zur Speicherung nutzt, solltest du bedenken, dass sie oft keine Metadaten speichern können. Deshalb werden sie in der Regel für Screenshots, Diagramme und Icons verwendet.
+Zusätzlich zu den oben genannten Formaten unterstützt PhotoPrism auch BMP-, GIF-, PNG- und TIFF-Dateien. Bevor du diese Formate zur Speicherung nutzt, solltest du bedenken, dass diese oft keine Metadaten speichern können. Deshalb werden sie in der Regel für Screenshots, Diagramme und Icons verwendet.
 
 ![](img/editPhoto.png)
 
