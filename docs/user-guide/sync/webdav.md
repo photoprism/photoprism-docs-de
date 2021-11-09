@@ -9,6 +9,14 @@ Die Url des *Originals* Verzeichnis für öffentliche Server lautet:
 https://admin@example.com/originals/
 ```
 
+oder
+
+```
+\\example.com@SSL\originals\
+```
+
+für Windows 10.
+
 Bitte ersetze *example.com* mit deiner Domain.
 Der `/` am Ende ist wichtig und darf nicht weggelassen werden.
 
