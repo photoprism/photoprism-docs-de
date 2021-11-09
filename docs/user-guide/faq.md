@@ -126,7 +126,7 @@
     Support f̈́ür HTTP ohne SSL eingestellt.
     
     Wenn du PhotoPrism auf einem öffentlichen Server außerhalb deines Heimnetzwerks installierst, führe es bitte **immer hinter einem sicheren Reverse HTTP Proxy** ,
-     wie [Traefik](../getting-started/proxies/traefik.md),
-    [Caddy](../getting-started/proxies/caddy-2.md), oder [NGINX](../getting-started/proxies/nginx.md) aus. 
+     wie [Traefik](https://docs.photoprism.org/getting-started/proxies/traefik/),
+    [Caddy](https://docs.photoprism.org/getting-started/proxies/caddy-2/), oder [NGINX](https://docs.photoprism.org/getting-started/proxies/nginx/) aus. 
     Deine Dateien und Passwörter werden sonst im Klartext übermittelt und können
     abgefangen werden.

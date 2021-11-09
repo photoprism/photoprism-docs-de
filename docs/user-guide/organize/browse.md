@@ -61,7 +61,7 @@ Hier sind deine Bilder nach Erstellungsdatum sortiert.
 
 ![Screenshot](img/calendar.jpg)
 
-#### :material-map-marker: [Karten](places.jpg) ####
+#### :material-map-marker: [Karten](places.md) ####
 Hier sind alle Bilder und Videos, die Geodaten haben, auf einer Weltkarte dargestellt.
 
 ![Screenshot](img/places.jpg)

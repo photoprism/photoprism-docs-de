@@ -15,7 +15,7 @@ Bitte nutze [GitHub Issues](https://github.com/photoprism/photoprism/issues) nur
 Wenn du dir nicht sicher bist, nutze [GitHub Discussions](https://github.com/photoprism/photoprism/discussions)
 oder melde dich in unserem [Community Chat](https://gitter.im/browseyourlife/community). 
 
-[Sponsoren](../funding.md) erhalten direkten [technischen Support](https://photoprism.app/contact) per E-Mail.
+[Sponsoren](https://docs.photoprism.org/funding/) erhalten direkten [technischen Support](https://photoprism.app/contact) per E-Mail.
 
 Wenn du ein Problem meldest, gib bitte die Software-Version, sowie Informationen zu Browser, Betriebssystem, Memory und
 Prozessortyp an.
