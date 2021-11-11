@@ -71,6 +71,13 @@ extra_css:
 
 # External links.
 extra:
+  alternate:
+    - name: 🇬🇧 English
+      link: https://docs.photoprism.org/
+      lang: en
+    - name: 🇩🇪 Deutsch
+      link: /
+      lang: de
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/photoprism
