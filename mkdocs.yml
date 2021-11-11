@@ -72,10 +72,10 @@ extra_css:
 # External links.
 extra:
   alternate:
-    - name: 🇬🇧 English
+    - name: 🇬🇧 English
       link: https://docs.photoprism.org/
       lang: en
-    - name: 🇩🇪 Deutsch
+    - name: 🇩🇪 Deutsch
       link: /
       lang: de
   social:
