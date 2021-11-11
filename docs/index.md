@@ -8,7 +8,7 @@ Du kannst PhotoPrism zu Hause, auf einem privaten Server oder in der Cloud insta
 
 ## Grenzenlose Möglichkeiten ##
 
-* Betrachte deine :material-film: [Fotos](user-guide/organize/browse.md) und :material-play-circle-outline: [Videos](https://demo.photoprism.org/videos), ohne dir Gedanken über [RAW-Konvertierung, Duplikate oder Videoformate zu machen](user-guide/settings/library.md)
+* Betrachte deine :material-film: [Fotos](user-guide/organize/browse.md) und :material-movie: [Videos](https://demo.photoprism.org/videos), ohne dir Gedanken über [RAW-Konvertierung, Duplikate oder Videoformate zu machen](user-guide/settings/library.md)
 * Finde Bilder mit Hilfe unserer umfangreichen :material-filter-variant: [Suchfilter](https://demo.photoprism.org/browse?view=cards&q=flower%20color%3Ared)
 * Erkennt die :material-account-supervisor: [Gesichter](https://demo.photoprism.org/people) deiner Familie und Freunde
 * :material-tag-outline: [Automatische Klassifizierung](https://demo.photoprism.org/labels) von Bildern anhand des Inhalts und Standorts
