@@ -1,4 +1,4 @@
-# PhotoPrism Anleitung
+# Deutsche Dokumentation
 
 Unsere Schritt-für-Schritt Installationsanweisungen für die Community Version findest du [hier](https://docs.photoprism.org/getting-started/) - alles, was du brauchst, ist ein Webbrowser sowie Docker, um den Server zu betreiben. Docker ist für Mac, Linux und Windows verfügbar.
 

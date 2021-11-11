@@ -1,7 +1,7 @@
 # Main navigation.
 nav:
-  - Über PhotoPrism: index.md
-  - Handbuch:
+  - Übersicht: index.md
+  - Dokumentation:
       - Einleitung: user-guide/index.md
       # - Setting up: user-guide/setup.md
       - Dateien:
@@ -66,6 +66,9 @@ nav:
       - FAQ: user-guide/faq.md
     # - Metadata: user-guide/metadata.md
 
+extra_css:
+  - css/custom.css
+
 # External links.
 extra:
   social:
@@ -90,12 +93,12 @@ site_dir: site
 site_name: PhotoPrism
 site_description: Dokumentation
 site_author: PhotoPrism.org
-site_url: https://docs.photoprism.de
+site_url: https://docs.photoprism.de/
 
 # Repository information.
 repo_name: photoprism/photoprism
 repo_url: https://github.com/photoprism/photoprism
-edit_uri: ""
+edit_uri: https://github.com/photoprism/photoprism-docs-de/tree/master/docs
 copyright: 'Made with ❤ in Berlin'
 
 # Theme configuration.
@@ -150,6 +153,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink
@@ -161,4 +167,5 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.tasklist:
       custom_checkbox: true
+      clickable_checkbox: true
   - pymdownx.tilde
