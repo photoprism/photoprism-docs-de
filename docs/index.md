@@ -24,5 +24,5 @@ Du kannst PhotoPrism zu Hause, auf einem privaten Server oder in der Cloud insta
 <p style="text-align: center; padding: 20px 4px;">
   <a class="action-button" href="https://demo.photoprism.org/" target="_blank">Demo testen</a>
   <a class="action-button" href="https://docs.photoprism.org/getting-started/" target="_blank">Installation (Englisch)</a>
-  <a class="action-button" href="user-guide/" target="_blank">Deutsche Dokumentation</a>
+  <a class="action-button" href="user-guide/">Deutsche Dokumentation</a>
 </p>
