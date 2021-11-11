@@ -19,7 +19,7 @@ Du kannst PhotoPrism zu Hause, auf einem privaten Server oder in der Cloud insta
 * Metadaten werden aus Exif-, XMP- und proprietären Formaten, wie von Google Photos, ausgelesen und zusammengeführt
 * Viele weitere Bildeigenschaften wie [Farbe](https://demo.photoprism.org/browse?view=cards&q=color:red), [Chroma](https://demo.photoprism.org/browse?view=cards&q=mono%3Atrue) und [Qualität](https://demo.photoprism.org/review) können ebenfalls als Suchfilter verwendet werden
 * Nutze :material-sync: [PhotoSync](https://www.photosync-app.com/) um sichere Backups deiner Bilder auf iOS- und Android-Geräten zu erstellen
-* WebDAV-Clients wie Microsofts Windows Explorer und Apples Finder können eine direkte :material-cloud-outline: [Verbindung](https://docs.photoprism.org/user-guide/sync/webdav/) zu PhotoPrism herstellen, so dass du Dateien auf deinem Computer öffnen, bearbeiten und löschen kannst, als wären sie auf der lokalen Festplatte
+* WebDAV-Clients wie Microsofts Windows Explorer und Apples Finder können eine direkte :material-cloud-outline: [Verbindung](https://docs.photoprism.org/user-guide/sync/webdav/) zu PhotoPrism herstellen, so dass du Dateien auf deinem Computer öffnen, bearbeiten und löschen kannst, als wären sie lokal gespeichert
 
 <p style="text-align: center; padding: 20px 4px;">
   <a class="action-button" href="https://demo.photoprism.org/" target="_blank">Demo testen</a>
