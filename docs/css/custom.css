@@ -32,3 +32,16 @@ html .md-footer-meta.md-typeset .md-footer-info a {
     color: var(--md-footer-fg-color--lighter);
 }
 
+.md-announce a,
+.md-announce a:focus,
+.md-announce a:hover {
+    color:currentColor;
+}
+
+.md-announce strong {
+    white-space:nowrap;
+}
+
+.md-announce__inner {
+    margin: .3rem auto;
+}
