@@ -63,6 +63,7 @@ nav:
           - Metadaten: user-guide/advanced/metadata.md
           - Backups: user-guide/advanced/backups.md
           - Verzeichnisse: user-guide/advanced/folders.md
+      - Mobile App (PWA): user-guide/pwa.md
       - FAQ: user-guide/faq.md
     # - Metadata: user-guide/metadata.md
 
