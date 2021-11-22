@@ -8,8 +8,9 @@ Du kannst PhotoPrism zu Hause, auf einem privaten Server oder in der Cloud insta
 
 ## Grenzenlose Möglichkeiten ##
 
-* Genieße deine :material-film: [Foto](user-guide/organize/browse.md)- und :material-movie: [Video](https://demo.photoprism.org/videos)-Sammlung ohne dir Gedanken über [RAW-Konvertierung, Duplikate oder Videoformate machen zu müssen](user-guide/settings/library.md)
+* Genieße deine [Foto](user-guide/organize/browse.md)- und [Video](https://demo.photoprism.org/videos)-Sammlung ohne dir Gedanken über [RAW-Konvertierung, Duplikate oder Videoformate machen zu müssen](user-guide/settings/library.md)
 * Finde Bilder mithilfe von umfangreichen :material-filter-variant: [Suchfiltern](https://demo.photoprism.org/browse?view=cards&q=flower%20color%3Ared)
+* Privatsphäre: PhotoPrism sendet keine Daten an Google, Amazon, Facebook oder Apple, es sei denn, du lädst explizit Dateien auf einen dieser Dienste hoch :closed_lock_with_key:.
 * PhotoPrism erkennt die :material-account-supervisor: [Gesichter](https://demo.photoprism.org/people) deiner Familie und Freunde
 * :material-tag-outline: [Automatische Klassifizierung](https://demo.photoprism.org/labels) von Bildern anhand des Inhalts und Standorts
 * Spiele :custom-live-photo: [Live Photos](https://demo.photoprism.org/browse?view=cards&q=type%3Alive) ab, indem du in :material-bookmark-multiple-outline: [Alben]((https://demo.photoprism.org/albums)) oder Suchergebnissen über sie fährst
