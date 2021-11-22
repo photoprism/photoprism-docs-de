@@ -71,12 +71,12 @@
 
 ??? question "Warum zeigt die Navigation unterschiedliche Zahlen für *Suche* und *Originale* an?"
 
-    Der Bereich *Originale* zeigt Dateien an, während in *Suche* Bilder und Videos dargestellt werden.
+    Der Bereich *Dateien > Originale* zeigt Dateien an, während in *Suche* Bilder und Videos dargestellt werden.
     
     Bilder und Videos können aus mehreren Dateien bestehen:
 
-    * RAW + JPG + XMP = 1 Bild, aber 3 Dateien
-    * MP4 + JPG = 1 Video, aber 2 Dateien
+    * RAW + JPG + XMP = 1 Bild, 3 Dateien
+    * MP4 + JPG = 1 Video, 2 Dateien
 
     Es kann auch sein, dass mehrere JPG Dateien zu einem Bild gruppiert sind (z.B. eine original und eine bearbeitete Version).
 
