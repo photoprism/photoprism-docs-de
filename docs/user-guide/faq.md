@@ -59,11 +59,14 @@
     Haben mehrere Dateien den gleichen Namen oder exakt das gleiche Datum und den gleichen Aufnahmeort oder die gleiche ID,
     werden diese zu einem Bildstapel gruppiert. Du findest sie im Bereich *Bildstapel* und kannst die Gruppierung dort aufheben, sofern sie fehlerhaft ist.
 
-??? question "Warum sind einige meiner Dateien zu Bildstapeln gruppiert?" 
+??? question "Unter welchen Bedingungen können Dateien gruppiert werden?" 
 
-    Dateien, mit gleicher *XMP Instanz ID* oder *Eindeutigen Bild ID*, sowie Dateien mit mit identischem Aufnahmeort und Zeit werden standardmäßig gruppiert.
-    Dieses Verhalten kann in den [*Einstellungen*](settings/library.md) ausgeschaltet werden. 
-    Sidecar-Dateien werden in jedem Fall gruppiert.
+    1. Gleichnamige Dateien, die sich im selben Ordner befinden, z.B. `/2018/IMG_1234.jpg` und  `/2018/IMG_1234.avi`, werden immer gruppiert.
+    2. Dateien mit fortlaufenden Namen, wie `/2018/IMG_1234 (2).jpg` und `/2018/IMG_1234 (3).jpg`, können optional gruppiert werden.
+    3. Dateien, deren Metadaten zeigen, dass sie am selben Ort und in der selben Sekunde aufgenommen wurden, können optional gruppiert werden.
+    4. Dateien mit der gleichen *Unique Image ID* oder *XMP Instance ID* können optional gruppiert werden.
+
+    Du kannst das Verhalten der Punkte 2-4 in den [*Einstellungen*](../settings/general.md) konfigurieren.
 
 ??? question "Es sind bereits einige meiner Bilder indexiert. Warum befinden sich noch keine Bilder in den Bereichen Ordner, Kalender und Erlebnisse?"
    

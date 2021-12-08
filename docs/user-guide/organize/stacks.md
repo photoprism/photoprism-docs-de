@@ -1,20 +1,19 @@
 # Bildstapel #
 
-## Gruppierte Dateien ##
-
 Zusammengehörige Dateien werden gruppiert, wenn in den [*Einstellungen*](../settings/general.md) die Option "Bildstapel" aktiviert ist.
+
 Gruppierte Dateien werden im Bereich *Bildstapel* dargestellt.
 
-![Screenshot](img/stacks-1.png)
+![Screenshot](img/stack-page.png)
 
-!!! info ""
-    Dateien können in folgenden Fällen gruppiert werden:
+### Unter welchen Bedingungen können Dateien gruppiert werden? ###
 
-    1. Dateien haben fortlaufende Namen: Beispielsweise `IMG_1234` und `IMG_1234 (2)`.
-    2. Bilder wurden am gleichen Ort und in der selben Sekunde aufgenommen.
-    3. Dateien haben die gleiche eindeutige Bild-ID.
+1. Gleichnamige Dateien, die sich im selben Ordner befinden, z.B. `/2018/IMG_1234.jpg` und  `/2018/IMG_1234.avi`, werden immer gruppiert.
+2. Dateien mit fortlaufenden Namen, wie `/2018/IMG_1234 (2).jpg` und `/2018/IMG_1234 (3).jpg`, können optional gruppiert werden.
+3. Dateien, deren Metadaten zeigen, dass sie am selben Ort und in der selben Sekunde aufgenommen wurden, können optional gruppiert werden.
+4. Dateien mit der gleichen *Unique Image ID* oder *XMP Instance ID* können optional gruppiert werden.
 
-    Diese Optionen kannst du in [*Einstellungen*](../settings/general.md) konfigurieren.
+Du kannst das Verhalten der Punkte 2-4 in den [*Einstellungen*](../settings/general.md) konfigurieren.
 
 
 ### Gruppierte Bilder anschauen ###
@@ -39,16 +38,16 @@ Um die Primärdatei zu ändern:
 3. Klicke auf :material-chevron-down: der Datei, die du als primär markieren willst
 4. Klicke *Primärdatei*
 
-      ![Screenshot](img/group-3.png) 
+      ![Screenshot](img/unstack-1.png) 
 
 
 ### Gruppierung von Dateien aufheben ###
 1. Öffne den [*Bearbeitungs-Dialog*](edit.md) des Bildes
 2. Gehe zu *Dateien*
 3. Klicke auf :material-chevron-down: der Datei, die nicht als primär markiert ist
-4. Klicke *Entfernen*
+4. Klicke *Einzelaufnahme*
 
-      ![Screenshot](img/group-3.png)
+      ![Screenshot](img/unstack-1.png)
 
 Das Bild wird nun separat von der anderen Datei in den Ansichten angezeigt.
 
