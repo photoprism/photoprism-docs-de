@@ -47,7 +47,7 @@
     PhotoPrism kann [Darktable](https://www.darktable.org/) und [RawTherapee](https://rawtherapee.com/) für die RAW zu JPEG Konvertierung nutzen. 
     Auf Mac OS, wird möglicherweise auch [Sips](https://ss64.com/osx/sips.html) verwendet.
     
-    Wir unterstützen [alle gängigen Videodateien](https://docs.photoprism.org/developer-guide/media/videos/).
+    Wir unterstützen [alle gängigen Videodateien](https://docs.photoprism.app/developer-guide/media/videos/).
     Du solltest PhotoPrism so konfigurieren, dass automatisch JSON Sidecar-Dateien erstellt werden, damit Metadaten deiner Videos, wie Aufnahmeort und Dauer indexiert werden können.
     
     Falls du Probleme mit einem bestimmten Dateiformat hast, öffne gerne ein Ticket.
@@ -129,7 +129,7 @@
     Support f̈́ür HTTP ohne SSL eingestellt.
     
     Wenn du PhotoPrism auf einem öffentlichen Server außerhalb deines Heimnetzwerks installierst, führe es bitte **immer hinter einem sicheren Reverse HTTP Proxy** ,
-     wie [Traefik](https://docs.photoprism.org/getting-started/proxies/traefik/),
-    [Caddy](https://docs.photoprism.org/getting-started/proxies/caddy-2/), oder [NGINX](https://docs.photoprism.org/getting-started/proxies/nginx/) aus. 
+     wie [Traefik](https://docs.photoprism.app/getting-started/proxies/traefik/),
+    [Caddy](https://docs.photoprism.app/getting-started/proxies/caddy-2/), oder [NGINX](https://docs.photoprism.app/getting-started/proxies/nginx/) aus. 
     Deine Dateien und Passwörter werden sonst im Klartext übermittelt und können
     abgefangen werden.

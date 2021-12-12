@@ -74,7 +74,7 @@ extra_css:
 extra:
   alternate:
     - name: 🇬🇧 English
-      link: https://docs.photoprism.org/
+      link: https://docs.photoprism.app/
       lang: en
     - name: 🇩🇪 Deutsch
       link: /
@@ -134,9 +134,9 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
+  favicon: icons/favicon.ico
   icon:
     logo: logo
-  favicon: img/favicon.png
 
 plugins:
   - search

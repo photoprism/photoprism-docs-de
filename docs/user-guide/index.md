@@ -1,8 +1,8 @@
 # Deutsche Dokumentation
 
-Unsere Schritt-für-Schritt Installationsanweisungen für die Community Version findest du [hier](https://docs.photoprism.org/getting-started/) - alles, was du brauchst, ist ein Webbrowser sowie Docker, um den Server zu betreiben. Docker ist für Mac, Linux und Windows verfügbar.
+Unsere Schritt-für-Schritt Installationsanweisungen für die Community Version findest du [hier](https://docs.photoprism.app/getting-started/) - alles, was du brauchst, ist ein Webbrowser sowie Docker, um den Server zu betreiben. Docker ist für Mac, Linux und Windows verfügbar.
 
-![Progressive Web App](https://dl.photoprism.org/img/ui/iphone-index-360px.png){ align=right }
+![Progressive Web App](https://dl.photoprism.app/img/ui/iphone-index-360px.png){ align=right }
 
 Nach der Installation kannst du deine vorhandenen Dateien [indexieren oder importieren](library/import-vs-index.md). Bitte habe etwas Geduld, je nachdem wie groß deine Bildsammlung ist, wird das eine Weile dauern.
 
@@ -15,7 +15,7 @@ Bitte nutze [GitHub Issues](https://github.com/photoprism/photoprism/issues) nur
 Wenn du dir nicht sicher bist, nutze [GitHub Discussions](https://github.com/photoprism/photoprism/discussions)
 oder melde dich in unserem [Community Chat](https://gitter.im/browseyourlife/community). 
 
-[Sponsoren](https://docs.photoprism.org/funding/) erhalten direkten [technischen Support](https://photoprism.app/contact) per E-Mail.
+[Sponsoren](https://docs.photoprism.app/funding/) erhalten direkten [technischen Support](https://photoprism.app/contact) per E-Mail.
 
 Wenn du ein Problem meldest, gib bitte die Software-Version, sowie Informationen zu Browser, Betriebssystem, Memory und
 Prozessortyp an.

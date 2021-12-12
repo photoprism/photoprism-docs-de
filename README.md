@@ -9,7 +9,7 @@ PhotoPrism German User Guide
 
 This repository contains the source files of the german user guide for [PhotoPrism](https://photoprism.org) in markdown.
 
-They are meant to be parsed with the [Mkdocs](https://www.mkdocs.org/) documentation builder to build the HTML documentation on [docs.photoprism.org](https://docs.photoprism.org/de).
+They are meant to be parsed with the [Mkdocs](https://www.mkdocs.org/) documentation builder to build the HTML documentation on [docs.photoprism.app](https://docs.photoprism.app/de).
 
 ## Contributing changes
 
