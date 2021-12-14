@@ -101,7 +101,7 @@ site_dir: site
 site_name: PhotoPrism
 site_description: Dokumentation
 site_author: PhotoPrism.org
-site_url: https://docs.photoprism.de/
+site_url: https://docs-de.photoprism.app/
 
 # Repository information.
 repo_name: photoprism/photoprism

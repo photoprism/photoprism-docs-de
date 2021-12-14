@@ -50,7 +50,7 @@ To edit an existing page, locate its .md source file and open it in your favouri
 All the content of this repository is licensed under the Attribution-ShareAlike 4.0 International license ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)).
 
 [paypal]: https://www.paypal.me/photoprism
-[docs]: https://docs.photoprism.de/
+[docs]: https://docs-de.photoprism.app/
 [chat]: https://gitter.im/browseyourlife/community
 [ask]: https://github.com/photoprism/photoprism/discussions
 [twitter]: https://twitter.com/photoprism_app
