@@ -1,5 +1,46 @@
 # Häufig gestellte Fragen
 
+## Allgemein ##
+
+??? question "Wann genau werden neuen Funktionen veröffentlicht?"
+    Wir haben eine Zero Bug Policy und geben unser Bestes, Nuztern zu helfen, wenn sie Fragen haben.
+    Auch das Schreiben und Aktualisieren der Dokumentation, die du gerade liest, nimmt Zeit in Anspruch.
+
+    Aus diesen Gründen können wir keine exakten Deadlines für neue Funktionen geben. Hinzu kommt, dass
+    umfangreiche Funktionen, wie z.B. die Mehrbenutzer-Unterstützung nicht in nur einem Update released werden können.
+    Die Arbeit an solchen Funktionen ist ein kontinuierlicher Prozess und es kann Monate oder Jahre dauern, bis alle Anwendungsfälle abgedeckt sind.
+
+    Davon abgesehen, haben Spenden den größten Einfluss auf die Entwicklungsgeschwindigkeit. 
+    Als Nutzer kannst du deinen Teil beitragen, indem du [Sponsor wirst](https://docs.photoprism.app/funding/).
+
+??? question "Gibt es Pläne Premium-Funktionen einzuführen?"
+    Ja, wir planen nicht essentielle Premium Funktionen und Dienstleistungen anzubieten, da freiwillige Spenden momentan nicht einmal unsere Basiskosten decken.
+    Eine nachhaltige Finanzierung ist im besten Interesse aller Nutzer.
+
+    Sofern dein Plan keinen zusätzlichen Cloud-Speicher enthält, kannst du jeder Zeit ein Up- oder Downgrade durchführen, ohne Daten zu verlieren.
+    Für diejenigen, die keine Abos mögen, wird es vergünstigte Mehrjahres-Bezahloptionen geben.
+    Um Einkommensunterschieden entgegen zu wirken, können Preise je nach Region variieren.
+    Sobald wir mehr Details haben, werden wir sie öffentlich bekannt geben.
+
+    Bis dahin hast du die Möglichkeit uns einmalig auf [Github Sponsors](https://github.com/sponsors/photoprism?frequency=one-time) zu unterstützen, falls du keinen Support nach der Installation benötigst
+    und keine Updates mit zusätzlichen Funktionen für mehr als 12 Monate erwartest.
+
+    Wir ermutigen jeden, der es sich leisten kann, [Sponsor zu werden](../funding.md). Dies ist langfristig das Beste für
+    das Produkt und die Community. 
+    Denke bei "freie Software" an "Freiheit", nicht an "Freibier".
+
+
+??? question "Warum kann ich nicht einfach eine einzelne Version kaufen und herunterladen?"
+    Es wäre unverantwortlich, einzelne Versionen zum einmaligen Kauf ohne laufende Updates anzubieten.
+    Anders als herkömmliche Offline-Anwendungen wie Microsoft Office muss Software, die mit dem Internet verbunden ist,
+    regelmäßig aktualisiert werden, um sicher und mit den neuesten Standards kompatibel zu bleiben.
+
+    Updates sind auch deshalb wichtig, weil praktisch alle Dateiformat-Parser Schwachstellen haben, die nur noch nicht entdeckt wurden. 
+    Dies ist ein bekanntes Risiko, das dich auch betreffen kann, wenn dein Computer nicht direkt mit dem Internet verbunden ist.
+
+    Es ist essentiell, dass du Betriebssystem, Webbrowser und alle anderen Programme auf dem neuesten Stand hälst. 
+    Fordere dein Glück nicht heraus und erwarte nicht, dass Entwickler Zeit darauf verwenden, einzelne Updates für alte Versionen bereitzustellen, die nichts außer kritischen Sicherheitsaktualisierungen enthalten.
+
 ## Benutzer-Oberfläche ##
 
 ??? question "Kann ich meine Bilder und Alben in Baumstrukturen organisieren?" 
