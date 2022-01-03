@@ -25,7 +25,7 @@
     Bis dahin hast du die Möglichkeit uns einmalig auf [Github Sponsors](https://github.com/sponsors/photoprism?frequency=one-time) zu unterstützen, falls du keinen Support nach der Installation benötigst
     und keine Updates mit zusätzlichen Funktionen für mehr als 12 Monate erwartest.
 
-    Wir ermutigen jeden, der es sich leisten kann, [Sponsor zu werden](../funding.md). Dies ist langfristig das Beste für
+    Wir ermutigen jeden, der es sich leisten kann, [Sponsor zu werden](https://docs.photoprism.app/funding/). Dies ist langfristig das Beste für
     das Produkt und die Community. 
     Denke bei "freie Software" an "Freiheit", nicht an "Freibier".
 
@@ -107,7 +107,7 @@
     3. Dateien, deren Metadaten zeigen, dass sie am selben Ort und in der selben Sekunde aufgenommen wurden, können optional gruppiert werden.
     4. Dateien mit der gleichen *Unique Image ID* oder *XMP Instance ID* können optional gruppiert werden.
 
-    Du kannst das Verhalten der Punkte 2-4 in den [*Einstellungen*](../settings/general.md) konfigurieren.
+    Du kannst das Verhalten der Punkte 2-4 in den [*Einstellungen*](./settings/general.md) konfigurieren.
 
 ??? question "Es sind bereits einige meiner Bilder indexiert. Warum befinden sich noch keine Bilder in den Bereichen Ordner, Kalender und Erlebnisse?"
    
