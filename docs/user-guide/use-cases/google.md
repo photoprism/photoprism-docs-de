@@ -30,5 +30,11 @@ Um deine Originalbilder mit Metadaten von Google Photos zu bekommen wird [Google
 - Koordinaten (lat/long)
 - Erstellungsdatum
 
+## Google Photos Alben ##
+
 !!! info ""
-    Google Photos Alben werden noch nicht gänzlich in PhotoPrism übernommen. Wir arbeiten daran.
+    Google Photos Alben werden noch nicht automatisch in PhotoPrism übernommen. Wir arbeiten daran.
+
+Dieses von einem Community-Mitglied erstellte Skript kann Alben aus einem Google Takeout Export in PhotoPrism übertragen:
+
+https://github.com/inthreedee/photoprism-transfer-album
