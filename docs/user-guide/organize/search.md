@@ -146,5 +146,6 @@ PhotoPrism unterstützt die folgenden Filter im Suchfeld.
 | subjects/people  |"Jane Doe" | Subject Name|
 | title     | "Holiday*", "Holiday / 2012" | |
 | type     |   image, video, raw, live     | |
+| uid       |  pqbcf5j446s0futy       | |
 | unsorted     |    yes, no    | |
 | video | yes, no | |
