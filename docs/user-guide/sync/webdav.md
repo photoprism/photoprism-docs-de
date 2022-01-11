@@ -48,15 +48,41 @@ http://admin@localhost:2342/originals/
      1. Öffne den **Windows Explorer**
      2. Klicke mit der rechten Maustaste auf **Mein PC**
      3. Wähle **Netzwerklaufwerk hinzufügen...**
+
+		![Screenshot](img/webdav-1.png)
+
      4. Wähle den Laufwerksbuchstaben sowie das Verzeichnis, das mit WebDAV verknüpft werden soll
      5. Wähle die Optionen **Verbindung bei Anmeldung wiederherstellen** und **Verbindung mit anderen Anmeldeinformationen herstellen** aus
      6. Öffne folgenden Link: **Verbindung mit einer Webseite herstellen, auf der Sie Dokumente und Bilder speichern können**
-     7. Klicke  **Weiter**
+    
+		![Screenshot](img/webdav-2.png) 
+		
+	 7. Klicke  **Weiter**
+
+		![Screenshot](img/webdav-3.png)
+
      8. Klicke **Eine benutzerdefinierte Netzwerkadresse auswählen** und dann auf **Weiter**
-     9. Trage die URL in das Feld **Internet oder Netzwerkadresse** ein
-     10. Klicke **Weiter** und dann **Fertig stellen**
+     
+		![Screenshot](img/webdav-4.png)	
+	
+	 9. Trage die URL, wie oben beschrieben, in das Feld **Internet oder Netzwerkadresse** ein und klicke **Weiter**
+
+		![Screenshot](img/webdav-5.png)
+
+     10. Gib deinen Nutzernamen und dein Passwort ein und klicke **OK**
+		
+		![Screenshot](img/webdav-6.png)
+
+	11. Gib einen Namen für die Netzwerkverbindung ein und klicke **Weiter**
+
+		![Screenshot](img/webdav-7.png)
+
+	10. Klicke **Fertig stellen**
+
+		![Screenshot](img/webdav-8.png)
 
 	Der *Originals* Ordner ist nun als Netzwerklaufwerk im Windows Explorer eingebunden und du kannst direkt Dateien oder Verzeichnisse hinzufügen, bearbeiten oder löschen.
 	
+	![Screenshot](img/webdav-9.png)
 	
 	Wenn du Probleme bei der Verbindung mit WebDav hast, musst du eventuell das Basic-Authentication Level in der Registry [aktualisieren](https://help.dreamhost.com/hc/en-us/articles/216473357-Accessing-WebDAV-with-Windows).
