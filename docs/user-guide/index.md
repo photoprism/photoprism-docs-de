@@ -1,4 +1,4 @@
-# Deutsche Dokumentation
+# Anleitung
 
 Unsere Schritt-für-Schritt Installationsanweisungen für die Community Version findest du [hier](https://docs.photoprism.app/getting-started/) - alles, was du brauchst, ist ein Webbrowser sowie Docker, um den Server zu betreiben. Docker ist für Mac, Linux und Windows verfügbar.
 PhotoPrism läuft auf [DigitalOcean](https://docs.photoprism.app/getting-started/cloud/digitalocean/),
@@ -17,7 +17,8 @@ Falls deine Fotos nicht auftauchen, kann es sein, dass sie im Bereich [Überprü
 Bitte lies den [Troubleshooting Guide](https://docs.photoprism.app/getting-started/troubleshooting/), bevor du dich mit einem Problem an uns wendest.
 Falls dieser deine Frage nicht beantwortet:
 
-* melde dich gerne in unseren [Community Chat](https://gitter.im/browseyourlife/community)
+* melde dich in unseren [Community Chat](https://gitter.im/browseyourlife/community)
+* werde Teil unserer [Reddit Community](https://www.reddit.com/r/photoprism/)
 * oder poste deine Frage in [Github Discussions](https://github.com/photoprism/photoprism/discussions)
 
 [Sponsoren](https://docs.photoprism.app/funding/) erhalten direkten [technischen Support](https://photoprism.app/contact) per E-Mail.
