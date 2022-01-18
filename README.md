@@ -1,5 +1,5 @@
-PhotoPrism German User Guide
-========================
+PhotoPrism: User Guide (German)
+===============================
 
 [![GitHub contributors](https://img.shields.io/github/contributors/photoprism/photoprism-docs-de.svg)](https://github.com/photoprism/photoprism-docs-de/graphs/contributors/)
 [![Documentation](https://img.shields.io/badge/read-the%20docs-4aa087.svg)][docs]
@@ -7,50 +7,59 @@ PhotoPrism German User Guide
 [![GitHub Discussions](https://img.shields.io/badge/ask-%20on%20github-4d6a91.svg)][ask]
 [![Twitter](https://img.shields.io/badge/follow-@photoprism_app-00acee.svg)][twitter]
 
-This repository contains the source files of the german user guide for [PhotoPrism](https://photoprism.org) in markdown.
+This repository contains the source files of [PhotoPrism's](https://photoprism.app/) documentation for editing in human-friendly Markdown files.
+They are intended to be parsed with the [Mkdocs documentation builder](https://www.mkdocs.org/) to generate the final HTML pages available at [docs-de.photoprism.app](https://docs-de.photoprism.app/).
 
-They are meant to be parsed with the [Mkdocs](https://www.mkdocs.org/) documentation builder to build the HTML documentation on [docs.photoprism.app](https://docs.photoprism.app/de).
+Although arguably less convenient to work with than a Wiki, this Git repository enables us to easily merge pull requests and constantly improve our documentation in a transparent way.
+Direct access to the source files in a revision control system is a big plus to ensure the quality of our documentation.
 
-## Contributing changes
+## Editing Content ##
 
-**Pull Requests should use the `master` branch by default.**
+At the top of each generated page is an *edit this page* link to the corresponding page on GitHub, where you can make changes (and submit pull requests with a few clicks) without needing to know Git or run anything on your system.
 
-Though arguably less convenient to edit than a wiki, this git repository is meant to receive pull requests to always improve the documentation, add new pages, etc. Having direct access to the source files in a revision control system is a big plus to ensure the quality of our documentation.
+To make more extensive changes, fork this repository, modify the corresponding `.md` source files (or create new ones), commit the changes, push them back to your fork, and then submit a pull request to our `master` branch.
 
-## Project layout
+### Project Layout ###
 
     mkdocs.yml    # The configuration file.
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
 
-## Building with Mkdocs
+### Using Mkdocs ###
 
 First make sure you have Docker and common development tools like `make` installed on your computer.
 
-Then use this command in the main project directory to download and run the latest version of 
+Then use this command in the main project directory to download and run the latest version of
 [mkdocs-material](https://github.com/squidfunk/mkdocs-material):
 
 ```sh
 make pull watch
 ```
 
-Now open http://localhost:8000/ in a Web browser to browse the docs.
+Now open [http://localhost:8000/](http://localhost:8000/) in a browser to view the rendered documentation.
 
-### Editing existing pages
+**The content will be updated automatically when changes are detected.**
 
-To edit an existing page, locate its .md source file and open it in your favourite text editor. You can then commit the changes, push them to your fork and make a pull request.
+### Contributor License Agreement (CLA) ###
 
-## Other repositories on GitHub
-  * [photoprism](https://github.com/photoprism/photoprism) - main repository
-  * [photoprism.github.io](https://github.com/photoprism/photoprism.github.io) - public homepage hosted by GitHub Pages on [photoprism.org](https://photoprism.org)
+After submitting your first pull request, you will automatically be asked to [accept our CLA](https://cla-assistant.io/photoprism/photoprism):
 
-## License
+- This gives us the ability to [(re-)license all code and documentation](https://en.wikipedia.org/wiki/Software_relicensing) at any time, *almost* as if we had created it ourselves (you retain the rights to your own work, which may be different for other CLAs)
+- Otherwise, we cannot accept pull requests, as this would mean that we are not able to change the license of our software and documentation at a later time, even though most of it was developed and written by us
+- This may be necessary, for example, if the license is incompatible with a larger combined work, we want to remove some restrictions on the AGPL/Creative Commons license, or it turns out that someone is abusing the existing license in a way we don't yet know about
+- The lack of a formal contract would also lead to legal uncertainty for us and all users, as some contributors could later claim that they did not intend to license their code in any way and that it was stolen
 
-All the content of this repository is licensed under the Attribution-ShareAlike 4.0 International license ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)).
+## Related Repositories
 
-[paypal]: https://www.paypal.me/photoprism
-[docs]: https://docs-de.photoprism.app/
+- [photoprism/photoprism-docs](https://github.com/photoprism/photoprism-docs) - Official Documentation (English)
+- [photoprism/photoprism](https://github.com/photoprism/photoprism) - Application Source Code
+
+----
+
+*PhotoPrism® is a [registered trademark](https://photoprism.app/trademark). Docs are available under the [CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/); additional terms may apply. By using our software and services, you agree to our [terms & conditions](https://photoprism.app/terms).*
+
+[docs]: https://docs.photoprism.app/
 [chat]: https://gitter.im/browseyourlife/community
 [ask]: https://github.com/photoprism/photoprism/discussions
 [twitter]: https://twitter.com/photoprism_app
