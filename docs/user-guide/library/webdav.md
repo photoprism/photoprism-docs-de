@@ -1,6 +1,5 @@
 # Dateien mit WebDAV zum Originals oder Import Ordner hinzufügen #
-Falls PhotoPrism auf einem Server ausgeführt wird, kann WebDAV benutzt werden, um Dateien in die Ordner *Import* oder *Originals* zu laden.
-
+WebDAV-kompatible Apps und Clients wie [PhotoSync](../sync/sync-phone.md), der Windows Explorer von Microsoft oder der Finder von Apple können sich direkt mit PhotoPrism verbinden:
 
 Folge hierzu dieser [Anleitung](../sync/webdav.md).
 

@@ -1,6 +1,6 @@
 # Verbindung via WebDAV #
 
-WebDAV Clients, wie der Microsoft Windows Explorer oder der Apple Finder, können sich direkt mit PhotoPrism verbinden.
+WebDAV-kompatible Apps und Clients wie [PhotoSync](./sync-phone.md), der Windows Explorer von Microsoft oder der Finder von Apple, können sich direkt mit PhotoPrism verbinden.
 Dazu wird der *Originals* Ordner als Netzwerklaufwerk verbunden, so kannst du Dateien von deinem Computer oder Smartphone aus öffnen, bearbeiten oder löschen.
 
 Die Url des *Originals* Verzeichnis für öffentliche Server lautet:
