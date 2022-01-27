@@ -14,7 +14,7 @@
     Als Nutzer kannst du deinen Teil beitragen, indem du [Sponsor wirst](https://docs.photoprism.app/funding/).
 
 ??? question "Gibt es Pläne Premium-Funktionen einzuführen?"
-    Ja, wir planen nicht essentielle Premium Funktionen und Dienstleistungen anzubieten, da freiwillige Spenden momentan nicht einmal unsere Basiskosten decken.
+    PhotoPrism ist zu 100% selbstfinanziert und unabhängig. Wir planen nicht essentielle Premium Funktionen und Dienstleistungen anzubieten, da freiwillige Spenden momentan nicht einmal unsere Basiskosten decken.
     Eine nachhaltige Finanzierung ist im besten Interesse aller Nutzer.
 
     Sofern dein Plan keinen zusätzlichen Cloud-Speicher enthält, kannst du jeder Zeit ein Up- oder Downgrade durchführen, ohne Daten zu verlieren.
