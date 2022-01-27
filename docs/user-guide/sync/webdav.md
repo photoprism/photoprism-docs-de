@@ -1,8 +1,20 @@
 # Verbindung via WebDAV #
 
 WebDAV-kompatible Apps und Clients wie [PhotoSync](./sync-phone.md), der Windows Explorer von Microsoft oder der Finder von Apple, können sich direkt mit PhotoPrism verbinden.
-Dazu wird der *Originals* Ordner als Netzwerklaufwerk verbunden, so kannst du Dateien von deinem Computer oder Smartphone aus öffnen, bearbeiten oder löschen.
 
+Dazu wird der *Originals* oder *Import* Ordner als Netzwerklaufwerk verbunden, so kannst du Dateien von deinem Computer oder Smartphone aus öffnen, bearbeiten oder löschen.
+
+Sobald alle Dateien hinzugefügt sind, können sie [importiert oder indexiert](import-vs-index.md) werden.
+Nachdem Dateien über WebDAV hochgeladen wurden, beginnt die Indexierung beziehungsweise der Import automatisch nach einer kurzen Verzögerung.
+
+!!! info ""
+	WebDAV kann in den [Erweiterten Einstellungen](../settings/advanced.md) deaktiviert werden.
+	Wenn du PhotoPrism im [public-Modus](https://docs.photoprism.app/getting-started/config-options/) ohne Authentifizierung betreibst, ist WebDAV aus Sicherheitsgründen automatisch deaktiviert.
+
+!!! info ""
+	Es ist auch möglich, Dateien mit [externen WebDAV-Servern](../settings/sync.md) wie ownCloud oder anderen PhotoPrism-Instanzen zu synchronisieren.
+
+## Server Url ##
 Die Url des *Originals* Verzeichnis für öffentliche Server lautet:
 
 ```

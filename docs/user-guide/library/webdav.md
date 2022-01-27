@@ -4,6 +4,7 @@ WebDAV-kompatible Apps und Clients wie [PhotoSync](../sync/sync-phone.md), der W
 Folge hierzu dieser [Anleitung](../sync/webdav.md).
 
 Sobald alle Dateien hinzugefügt sind, können sie [importiert oder indexiert](import-vs-index.md) werden.
+Nachdem Dateien über WebDAV hochgeladen wurden, beginnt die Indexierung beziehungsweise der Import automatisch nach einer kurzen Verzögerung.
 
 !!! info ""
     WebDAV kann in den [Erweiterten Einstellungen](../settings/advanced.md) deaktiviert werden.
