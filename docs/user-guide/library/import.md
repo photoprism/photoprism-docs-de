@@ -17,7 +17,7 @@
     Das ist besonders hilfreich, wenn PhotoPrism auf einem Remote-Server ausgeführt wird.
 
 !!! attention ""
-    Importieren ist im [read-only Modus](../settings/advanced.md#schreibgeschutzter-modus) (schreibgeschützt) nicht möglich, da Schreibrechte benötigt werden.
+    Importieren ist im [read-only Modus](../settings/advanced.md#schreibgeschutzter-modus) (schreibgeschützt) nicht möglich, da [Schreibrechte](https://docs.photoprism.app/getting-started/troubleshooting/docker/#file-permissions) benötigt werden.
     
 #### Option "Dateien Verschieben" ####
 
