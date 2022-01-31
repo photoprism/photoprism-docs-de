@@ -4,7 +4,7 @@ WebDAV-kompatible Apps und Clients wie [PhotoSync](./sync-phone.md), der Windows
 
 Dazu wird der *Originals* oder *Import* Ordner als Netzwerklaufwerk verbunden, so kannst du Dateien von deinem Computer oder Smartphone aus öffnen, bearbeiten oder löschen.
 
-Sobald alle Dateien hinzugefügt sind, können sie [importiert oder indexiert](import-vs-index.md) werden.
+Sobald alle Dateien hinzugefügt sind, können sie [importiert oder indexiert](../library/import-vs-index.md) werden.
 Nachdem Dateien über WebDAV hochgeladen wurden, beginnt die Indexierung beziehungsweise der Import automatisch nach einer kurzen Verzögerung.
 
 !!! info ""
