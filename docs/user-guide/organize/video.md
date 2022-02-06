@@ -4,6 +4,10 @@ Im Bereich *Videos* findest du alle Videos deiner Sammlung. Um ein Video abzuspi
 Videos mit dem MPEG-4 AVC Format können von den meisten modernen Browsern abgespielt werden.
 Andere Formate werden im Hintergrund automatisch mit [Ffmpeg](https://www.ffmpeg.org/documentation.html) transkodiert, damit sie ohne Probleme abgespielt werden können.
 
+Beachte, dass nicht alle [Video- und Audioformate](https://caniuse.com/?search=video%20format) von jedem [Browser abgespielt](https://docs.photoprism.app/getting-started/troubleshooting/browsers/) werden können. 
+So wird beispielsweise [AAC](https://caniuse.com/aac) - der Standard-Audiocodec für [MPEG-4 AVC / H.264](https://caniuse.com/mpeg4) - in Chrome, Safari und Edge nativ unterstützt, 
+während er in Firefox und Opera nur optional vom Betriebssystem unterstützt wird.
+
 ![Screenshot](img/video-1.png)
 
 ### Live-Fotos ###
