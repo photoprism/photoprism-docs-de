@@ -1,19 +1,24 @@
-# Anleitung
+# Erste Schritte
 
-Unsere Schritt-für-Schritt Installationsanweisungen für die Community Version findest du [hier](https://docs.photoprism.app/getting-started/) - alles, was du brauchst, ist ein Webbrowser sowie Docker, um den Server zu betreiben. Docker ist für Mac, Linux und Windows verfügbar.
-PhotoPrism läuft auf [DigitalOcean](https://docs.photoprism.app/getting-started/cloud/digitalocean/),
-[Raspberry Pi](https://docs.photoprism.app/getting-started/raspberry-pi/), [FreeBSD](https://docs.photoprism.app/getting-started/freebsd/), und vielen
+Unsere schrittweise Installationsanleitung für die Community-Version ist in englischer Sprache unter [docs.photoprism.app/getting-started](https://docs.photoprism.app/getting-started/) zu finden
+Alles, was dazu benötigt wird, ist ein Webbrowser und Docker, um den Server zu starten.
+Docker ist für Mac, Linux und Windows verfügbar.
+
+PhotoPrism läuft auch auf [DigitalOcean](https://docs.photoprism.app/getting-started/cloud/digitalocean/),
+[Raspberry Pi](https://docs.photoprism.app/getting-started/raspberry-pi/), [FreeBSD](https://docs.photoprism.app/getting-started/freebsd/) sowie vielen
 [NAS Geräten](https://docs.photoprism.app/getting-started/nas/synology/).
 
 ![Progressive Web App](https://dl.photoprism.app/img/ui/iphone-index-360px.png){ align=right }
 
-Nach der Installation kannst du deine vorhandenen Dateien [indexieren oder importieren](library/import-vs-index.md). Bitte habe etwas Geduld, je nachdem wie groß deine Bildsammlung ist, wird das eine Weile dauern.
+Wenn die Einrichtung abgeschlossen ist, kannst du mit der [Indexierung](library/import-vs-index.md) deiner Bilder beginnen.
+Dies kann je nach der Leistungsfähigkeit des Servers und der Anzahl der Dateien einige Zeit in Anspruch nehmen.
 
-Bereits indexierte Fotos und Videos werden in der [Suche](organize/browse.md) angezeigt. Die Anzahlsanzeige deiner Fotos und Videos in der Navigation wird laufend aktualisiert.
+Fotos und Videos werden nach und nach in den [Suchergebnissen](organize/browse.md) und anderen Teilen der Benutzeroberfläche sichtbar. Die Angaben in der Navigation werden ständig aktualisiert, so dass der Fortschritt verfolgt werden kann.
 
-Falls deine Fotos nicht auftauchen, kann es sein, dass sie im Bereich [Überprüfen](organize/review.md) sind, da die Qualität niedrig ist oder keine Metadaten vorhanden sind. Du kannst diese und andere Funktionen in den  [Einstellungen](settings/general.md) deaktivieren, um PhotoPrism an deine Bedürfnisse anzupassen.
+Falls einige Bilder nach Abschluss der Indexierung immer noch [nicht sichtbar](https://docs.photoprism.app/getting-started/troubleshooting/#missing-pictures) sind, sind sie möglicherweise aufgrund von schlechter Qualität oder unvollständigen Metadaten in [*Überprüfen*](organize/review.md). Sie können diese und andere Funktionen in den [Einstellungen](settings/general.md) deaktivieren, je nach Bedarf.
 
 ## Support ##
+
 Bitte lies den [Troubleshooting Guide](https://docs.photoprism.app/getting-started/troubleshooting/), bevor du dich mit einem Problem an uns wendest.
 Falls dieser deine Frage nicht beantwortet:
 

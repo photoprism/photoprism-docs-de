@@ -1,72 +1,71 @@
 # Main navigation.
 nav:
-  - Übersicht: index.md
-  - Dokumentation:
-      - Einleitung: user-guide/index.md
-      # - Setting up: user-guide/setup.md
-      - Dateien:
-          - Einleitung: user-guide/library/import-vs-index.md
-          - Originale indexieren: user-guide/library/indexing.md
-          - Dateien importieren: user-guide/library/import.md
-          - Web Upload: user-guide/library/upload.md
-          - WebDAV Sync: user-guide/library/webdav.md
-          - Datei Browser: user-guide/library/files.md
-        #- Import from camera: user-guide.md
-        #- Import from Facebook: user-guide.md
-        #- Import from NAS: user-guide.md
-        #- Import from Apple Photos: user-guide.md
-        #- Import from One Drive: user-guide.md
-      # - Sync and Back Up:
-      # - WebDAV Sync
-      #    - Nextcloud: user-guide/nextcloud.md
-      - Entdecken & Suchen:
-          - Navigation: user-guide/navigate.md
-          - Ansichten: user-guide/organize/views.md
-          - Suche & Filter: user-guide/organize/search.md
-          - Bereiche: user-guide/organize/browse.md
-      - Organisation:
-          - Alben: user-guide/organize/albums.md
-          - Personen: user-guide/organize/people.md
-          - Kategorien: user-guide/organize/labels.md
-          - Archiv: user-guide/organize/archive.md
-          - Bilder löschen: user-guide/organize/delete.md
-          - Privat: user-guide/organize/private.md
-          - Überprüfen: user-guide/organize/review.md
-          - Bildstapel: user-guide/organize/stacks.md
-          - Bilder bearbeiten: user-guide/organize/edit.md
-          - Bilder herunterladen: user-guide/organize/download.md
-          - Videos: user-guide/organize/video.md
-          - Karten: user-guide/organize/places.md
-          - Erlebnisse: user-guide/organize/moments.md
-          - Kalender: user-guide/organize/calendar.md
-          - Ordner: user-guide/organize/folders.md
-          - Panoramas: user-guide/organize/panoramas.md
-          - Scans: user-guide/organize/scans.md
-      - Sync & Backup:
-          - Verbindung via WebDAV:  user-guide/sync/webdav.md
-          - Smartphone Backup:  user-guide/sync/sync-phone.md
-      - Teilen:
-          - Album-Link teilen: user-guide/share/share.md
-      - Einstellungen:
-          - Allgemein: user-guide/settings/general.md
-          - Dateien: user-guide/settings/library.md
-          - Erweitert: user-guide/settings/advanced.md
-          - Sync:  user-guide/settings/sync.md
-          - Konto: user-guide/settings/account.md
-          #- Places: user-guide/settings/places.md
-      - Migrieren:
-          - Google Photos: user-guide/use-cases/google.md
-          - Apple Photos: user-guide/use-cases/apple.md
-          - Flickr: user-guide/use-cases/flickr.md
-          #- Link directories from remote:
-      - Weiteres:
-          - Metadaten: user-guide/advanced/metadata.md
-          - Backups: user-guide/advanced/backups.md
-          - Export: user-guide/advanced/export.md
-          - Verzeichnisse: user-guide/advanced/folders.md
-      - Mobile App (PWA): user-guide/pwa.md
-      - FAQ: user-guide/faq.md
-    # - Metadata: user-guide/metadata.md
+  - Einleitung: index.md
+  - Erste Schritte: user-guide/index.md
+  # - Setting up: user-guide/setup.md
+  - Dateien:
+      - Einleitung: user-guide/library/import-vs-index.md
+      - Originale indexieren: user-guide/library/indexing.md
+      - Dateien importieren: user-guide/library/import.md
+      - Web Upload: user-guide/library/upload.md
+      - WebDAV Sync: user-guide/library/webdav.md
+      - Datei Browser: user-guide/library/files.md
+    #- Import from camera: user-guide.md
+    #- Import from Facebook: user-guide.md
+    #- Import from NAS: user-guide.md
+    #- Import from Apple Photos: user-guide.md
+    #- Import from One Drive: user-guide.md
+  # - Sync and Back Up:
+  # - WebDAV Sync
+  #    - Nextcloud: user-guide/nextcloud.md
+  - Entdecken & Suchen:
+      - Navigation: user-guide/navigate.md
+      - Ansichten: user-guide/organize/views.md
+      - Suche & Filter: user-guide/organize/search.md
+      - Bereiche: user-guide/organize/browse.md
+  - Organisation:
+      - Alben: user-guide/organize/albums.md
+      - Personen: user-guide/organize/people.md
+      - Kategorien: user-guide/organize/labels.md
+      - Archiv: user-guide/organize/archive.md
+      - Bilder löschen: user-guide/organize/delete.md
+      - Privat: user-guide/organize/private.md
+      - Überprüfen: user-guide/organize/review.md
+      - Bildstapel: user-guide/organize/stacks.md
+      - Bilder bearbeiten: user-guide/organize/edit.md
+      - Bilder herunterladen: user-guide/organize/download.md
+      - Videos: user-guide/organize/video.md
+      - Karten: user-guide/organize/places.md
+      - Erlebnisse: user-guide/organize/moments.md
+      - Kalender: user-guide/organize/calendar.md
+      - Ordner: user-guide/organize/folders.md
+      - Panoramas: user-guide/organize/panoramas.md
+      - Scans: user-guide/organize/scans.md
+  - Sync & Backup:
+      - Verbindung via WebDAV:  user-guide/sync/webdav.md
+      - Smartphone Backup:  user-guide/sync/sync-phone.md
+  - Teilen:
+      - Album-Link teilen: user-guide/share/share.md
+  - Einstellungen:
+      - Allgemein: user-guide/settings/general.md
+      - Dateien: user-guide/settings/library.md
+      - Erweitert: user-guide/settings/advanced.md
+      - Sync:  user-guide/settings/sync.md
+      - Konto: user-guide/settings/account.md
+      #- Places: user-guide/settings/places.md
+  - Migrieren:
+      - Google Photos: user-guide/use-cases/google.md
+      - Apple Photos: user-guide/use-cases/apple.md
+      - Flickr: user-guide/use-cases/flickr.md
+      #- Link directories from remote:
+  - Weiteres:
+      - Metadaten: user-guide/advanced/metadata.md
+      - Backups: user-guide/advanced/backups.md
+      - Export: user-guide/advanced/export.md
+      - Verzeichnisse: user-guide/advanced/folders.md
+  - Mobile App (PWA): user-guide/pwa.md
+  - FAQ: user-guide/faq.md
+  # - Metadata: user-guide/metadata.md
 
 extra_css:
   - css/custom.css
@@ -173,7 +172,8 @@ markdown_extensions:
   - pymdownx.snippets:
       check_paths: true
   - pymdownx.superfences
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
       clickable_checkbox: true
