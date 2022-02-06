@@ -11,7 +11,7 @@ PhotoPrism läuft auch auf [DigitalOcean](https://docs.photoprism.app/getting-st
 ![Progressive Web App](https://dl.photoprism.app/img/ui/iphone-index-360px.png){ align=right }
 
 Wenn die Einrichtung abgeschlossen ist, kannst du mit der [Indexierung](library/import-vs-index.md) deiner Bilder beginnen.
-Dies kann je nach der Leistungsfähigkeit des Servers und der Anzahl der Dateien einige Zeit in Anspruch nehmen.
+Dies kann je nach Server-Performance und Anzahl der Dateien einige Zeit in Anspruch nehmen.
 
 Fotos und Videos werden nach und nach in den [Suchergebnissen](organize/browse.md) und anderen Teilen der Benutzeroberfläche sichtbar. Die Angaben in der Navigation werden ständig aktualisiert, so dass der Fortschritt verfolgt werden kann.
 
