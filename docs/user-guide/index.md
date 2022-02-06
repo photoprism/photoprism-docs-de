@@ -1,7 +1,7 @@
 # Erste Schritte
 
-Unsere schrittweise Installationsanleitung für die Community-Version ist in englischer Sprache unter [docs.photoprism.app/getting-started](https://docs.photoprism.app/getting-started/) zu finden
-Alles, was dazu benötigt wird, ist ein Webbrowser und Docker, um den Server zu starten.
+Unsere schrittweise Installationsanleitung für die Community-Version ist in englischer Sprache unter [docs.photoprism.app/getting-started](https://docs.photoprism.app/getting-started/) zu finden.
+Alles, was benötigt wird, ist ein Webbrowser und Docker, um den Server zu starten.
 Docker ist für Mac, Linux und Windows verfügbar.
 
 PhotoPrism läuft auch auf [DigitalOcean](https://docs.photoprism.app/getting-started/cloud/digitalocean/),
