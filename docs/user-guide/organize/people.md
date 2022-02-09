@@ -62,7 +62,7 @@ Du kannst Personen im Bereich *Erkannt* ausblenden, indem du :material-close: kl
 
 !!! example ""
     **Dies ist ein Sponsor-Feature, mit dem wir uns bei unseren Sponsoren und Mitwirkenden bedanken wollen.**
-    Du erfährst, wie es aktiviert werden kann, sobald du uns bei [Patreon](https://www.patreon.com/photoprism) oder [GitHub Sponsors](https://github.com/sponsors/photoprism) unterstützt.
+    Du erfährst, wie es aktiviert werden kann, sobald du uns bei [Patreon](https://link.photoprism.app/patreon) oder [GitHub Sponsors](https://link.photoprism.app/sponsor) unterstützt.
     Deine kontinuierliche Unterstützung hilft uns, Dienste wie Satellitenkarten anzubieten und neue Funktionen zu entwickeln. Vielen Dank! 💜
 
 !!! attention ""

@@ -22,7 +22,7 @@
     Um Einkommensunterschieden entgegen zu wirken, können Preise je nach Region variieren.
     Sobald wir mehr Details haben, werden wir sie öffentlich bekannt geben.
 
-    Bis dahin hast du die Möglichkeit uns einmalig auf [Github Sponsors](https://github.com/sponsors/photoprism?frequency=one-time) zu unterstützen, falls du keinen Support nach der Installation benötigst
+    Bis dahin hast du die Möglichkeit uns einmalig auf [Github Sponsors](https://link.photoprism.app/donate) zu unterstützen, falls du keinen Support nach der Installation benötigst
     und keine Updates mit zusätzlichen Funktionen für mehr als 12 Monate erwartest.
 
     Wir ermutigen jeden, der es sich leisten kann, [Sponsor zu werden](https://docs.photoprism.app/funding/). Dies ist langfristig das Beste für

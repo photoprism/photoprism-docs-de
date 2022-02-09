@@ -6,7 +6,7 @@ Um Bilder und Videos von deinem Handy mit PhotoPrism zu synchronisieren, kannst 
     Wenn du PhotoPrism im [public-Modus](https://docs.photoprism.app/getting-started/config-options/) ohne Authentifizierung betreibst, ist WebDAV aus Sicherheitsgründen automatisch deaktiviert.
 
 ## PhotoSync ##
-Wir empfehlen die, für iOS und Android verfügbare, App [PhotoSync](https://www.photosync-app.com/home.html).
+Wir empfehlen die, für iOS und Android verfügbare, App [PhotoSync](https://link.photoprism.app/photosync).
 
 ### Übertragungsziel einrichten ###
 1. Öffne PhotoSync und klicke :material-cog-outline:
