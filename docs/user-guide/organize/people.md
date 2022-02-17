@@ -13,8 +13,8 @@ Der Bereich Personen zeigt dir bereits identifizierte Personen sowie neue Gesich
 
 Klicke :material-star:, um eine Person als Favorit zu markieren. Favoriten werden ganz oben angezeigt.
 
-![Screenshot](img/recognized.png)
-![Screenshot](img/new.png)
+![Screenshot](img/recognized-new.png)
+![Screenshot](img/new-new.png)
 
 !!!info ""
     **Im Bereich *NEU* werden nur erkannte Gesichts-Cluster angezeigt.** In deiner Sammlung kann es noch tausende weitere, nicht gruppierte Gesichter, geben, wie z.B. Gesichter auf Shampooflaschen
@@ -43,7 +43,7 @@ Gesichter können aus mehreren Gründen nicht erkannt werden:
      4. Beginne einen Namen einzugeben
      5. Drücke *Enter*
 
-    ![Screenshot](img/add-name-new.png)
+    ![Screenshot](img/add-name-new-new.png)
 
 === " Im Bearbeitungs-Dialog"
 
@@ -53,7 +53,7 @@ Gesichter können aus mehreren Gründen nicht erkannt werden:
      4. Beginne einen Namen einzugeben
      5. Drücke *Enter*
 
-    ![Screenshot](img/add-name-edit.png)
+    ![Screenshot](img/add-name-edit-new.png)
 
 Die Person wird nun unter *Erkannt* angezeigt
 
@@ -69,15 +69,15 @@ Du kannst Personen im Bereich *Erkannt* ausblenden, indem du :material-close: kl
     Bilder von ausgeblendeten Personen tauchen weiterhin in Suchergebnissen auf.
 
 
-![Screenshot](img/person-hide.png)
+![Screenshot](img/person-hide-new.png)
 
 Um alle Personen, inklusive ausgeblendete, zu sehen klicke :material-eye:.
 
-![Screenshot](img/person-show-all.png)
+![Screenshot](img/person-show-all-new.png)
 
 Ausgeblendete Personen werden wieder angezeigt, wenn du :material-eye-off: klickst.
 
-![Screenshot](img/person-recover.png)
+![Screenshot](img/person-recover-new.png)
 
 
 ## Gesichter ausblenden ##
@@ -89,13 +89,13 @@ Du kannst Gesichts-Cluster im Bereich *Neu* auf die gleiche Weise wie [Personen]
      2. Gehe zu *Erkannt*
      3. Klicke auf eine Person
 
-    ![Screenshot](img/view-person.png)
+    ![Screenshot](img/view-person-new.png)
 
 === "Über die Suche"
      1. Gehe zu *Suche*
      2. Suche nach person:"jane-doe"
 
-    ![Screenshot](img/view-person-2.png)
+    ![Screenshot](img/view-person-2-new.png)
 
 ## Personen umbenennen ##
 
@@ -105,9 +105,9 @@ Du kannst Gesichts-Cluster im Bereich *Neu* auf die gleiche Weise wie [Personen]
 4. Gib einen neuen Namen ein
 5. Drücke *Enter*
 
-![Screenshot](img/rename-recognized-0.png)
+![Screenshot](img/rename-recognized-0-new.png)
 
-![Screenshot](img/rename-recognized.png)
+![Screenshot](img/rename-recognized-new.png)
 
 ## Gesicht einer anderen Person zuordnen ##
 Wenn einem Gesicht die falsche Person zugeordnet ist, kannst du dies ändern.
@@ -120,7 +120,7 @@ Wenn einem Gesicht die falsche Person zugeordnet ist, kannst du dies ändern.
 3. Klicke :material-eject:
 4. Nun kannst du einen neuen Namen eingeben, oder das Feld leer lassen
 
-![Screenshot](img/reject.png)
+![Screenshot](img/reject-new.png)
 
 ## Gesichter entfernen ##
 Falls etwas Falsches als Gesicht erkannt wurde, oder dich ein Gesicht nicht interessiert, kannst du es entfernen.
@@ -149,7 +149,7 @@ Bevor die Seite neu geladen wird kannst du diese Aktion rückgängig machen.
 5. Wähle ein existierendes Album oder gib einen neuen Albumnamen ein
 6. Klicke auf *Hinzufügen*
 
-![Screenshot](img/people-context-menu.png)
+![Screenshot](img/people-context-menu-new.png)
 
 ## Suche ##
 Du kannst Bilder von bestimmten Personen mit Hilfe der folgenden Suchanfragen finden
