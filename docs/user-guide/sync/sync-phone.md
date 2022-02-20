@@ -9,6 +9,10 @@ Um Bilder und Videos von deinem Handy mit PhotoPrism zu synchronisieren, kannst 
 Wir empfehlen die, für iOS und Android verfügbare, App [PhotoSync](https://link.photoprism.app/photosync).
 
 ### Übertragungsziel einrichten ###
+
+!!! attention ""
+    Falls du PhotoSync auf Android nutzt, wähle WebDAV als Übertragungsziel. 
+
 1. Öffne PhotoSync und klicke :material-cog-outline:
 2. Klicke *Konfigurieren*
 3. Wähle PhotoPrism als Übertragungsziel
@@ -25,9 +29,6 @@ Wir empfehlen die, für iOS und Android verfügbare, App [PhotoSync](https://lin
    
       ![Screenshot](img/photosync-4.png){: style="width:35%"}
       ![Screenshot](img/photosync-5.png){: style="width:35%"}
-
-!!! attention ""
-      Falls du PhotoSync auf Android nutzt, wähle WebDAV als Übertragungsziel.
    
 ### Automatische Synchronisation einrichten ###
 1. Öffne PhotoSync und klicke :material-cog-outline:
