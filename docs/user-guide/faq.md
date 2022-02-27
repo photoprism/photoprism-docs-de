@@ -93,6 +93,49 @@
     
     Falls du Probleme mit einem bestimmten Dateiformat hast, öffne gerne ein Ticket.
 
+??? question "Welche Metadaten-Dateitypen werden unterstützt?"
+    
+    Derzeit werden folgende Metadaten-Formate unterstützt
+
+    #### JSON ####
+    
+    Wenn [Exiftool](https://exiftool.org/) nicht über `PHOTOPRISM_DISABLE_EXIFTOOL` oder `--disable-exiftool` deaktiviert ist, wird es verwendet,
+    um automatisch eine JSON-Sidecar-Datei für jede Mediendatei zu erstellen. 
+
+    **Auf diese Weise können auch eingebettete XMP- und Video-Metadaten ausgelesen werden.**
+    Die native Metadatenextraktion ist auf die üblichen Exif-Header beschränkt. Beachte, dass dies bei der ersten Indexierung einen geringen Overhead erzeugt.
+    
+    JSON-Dateien können auch für die Fehlersuche nützlich sein, da sie die vollständigen Metadaten enthalten und mit gängigen Entwicklungswerkzeugen und Texteditoren verarbeitet werden können.
+    
+    *JSON-Dateien, die aus Google Photos exportiert wurden, können ebenfalls gelesen werden. Die Unterstützung für weitere Schemata kann im Laufe der Zeit hinzugefügt werden.*
+ 
+    #### YAML ####
+    
+    Sofern Metadaten Backups nicht über `PHOTOPRISM_DISABLE_BACKUPS` oder `--disable-backups` deaktiviert sind, erstellt/aktualisiert PhotoPrism automatisch
+    [menschenlesbare YAML-Dateien](https://docs.photoprism.app/developer-guide/technologies/yaml/) während der Indexierung und nach manueller Bearbeitung von Feldern wie Titel, Datum oder Ort. 
+    Sie dienen als Backup, falls die Datenbank (Index) verloren geht, oder bei der Synchronisation von Ordnern mit einer anderen Instanz.
+    
+    Wie JSON können auch [YAML-Dateien](https://docs.photoprism.app/developer-guide/technologies/yaml/) mit gängigen Entwicklungswerkzeugen und
+    Texteditoren geöffnet werden. Änderungen werden jedoch nicht mit dem ursprünglichen Index synchronisiert, da dadurch bestehende Daten überschrieben werden könnten.
+ 
+    #### XMP ####
+    
+    XMP (Extensible Metadata Platform) ist ein XML-basiertes Metadaten-Containerformat [entwickelt von Adobe](https://www.adobe.com/products/xmp.html).
+    Es bietet deutlich mehr Felder (als Teil von eingebetteten Modellen wie Dublin Core) als Exif. Dies macht es auch schwierig - wenn nicht
+    wenn nicht gar unmöglich - eine vollständige Unterstützung zu bieten. Das Lesen von Titel, Copyright, Künstler und Beschreibung aus XMP-Sidecar-Dateien ist
+    als Proof-of-Concept implementiert, [Contributions sind willkommen](https://docs.photoprism.app/developer-guide/metadata/xmp/). Die Indexierung von
+    eingebetteten XMP-Dateien ist nur über Exiftool möglich, siehe oben.
+
+??? question "Werden JPEGs aktualisiert, wenn sich RAW- oder XMP-Dateien ändern?"
+    
+    JPEGs werden derzeit nicht neu generiert, wenn sich zugehörige RAW- oder XMP-Dateien ändern. RAW-Dateien sind von vornherein digitale Negative. PhotoPrism geht daher davon aus, dass ihre Bildinformationen unveränderlich sind.
+
+    XMP-Dateien können das Erscheinungsbild beeinflussen, aber die meisten der darin enthaltenen Metadaten, wie z. B. Titel und Beschreibung, sind davon nicht betroffen. 
+    Die Erstellung von JPEGs aus RAW-Dateien ist eine zeitaufwändige Aufgabe und würde in den meisten Fällen einen enormen, nicht zu rechtfertigenden Overhead verursachen. 
+    Hinzu kommt, dass die Rendering-Informationen in XMP-Dateien nicht gut standardisiert sind. So sind beispielsweise Änderungen, die Sie in Photoshop vornehmen, möglicherweise nicht mit Darktable kompatibel.
+
+    Wir empfehlen, vorhandene JPEG-Sidecar-Dateien bei Bedarf manuell zu aktualisieren oder zusätzliche JPEGs zu erstellen, damit Sie zwischen verschiedenen Versionen wählen können. Neue Dateien und andere Metadatenänderungen werden wie üblich beim Scannen Ihrer Bibliothek erkannt und in den Index aufgenommen.
+
 ??? question "Ich vermisse einige Dateien, wo könnten sie sein?"
    
     Falls du den [Qualitätsfilter](organize/review.md) aktiviert hast, findest du deine Bilder eventuell im Bereich *Überprüfen*.
