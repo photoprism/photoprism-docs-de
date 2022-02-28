@@ -17,11 +17,11 @@ Probier es einfach aus!
 ## Suchfilter ##
 Zusätzlich zur Suche können auf der Filterleiste folgende Filter gesetzt werden:
 
-* Land, Jahr, Reihenfolge, Kamera, Linse, Farbe, Kategorie
+* Land, Jahr, Monat, Reihenfolge, Kamera, Farbe, Kategorie
 
 Sind mehrere Filter gesetzt, werden nur Bilder von der Suche berücksichtigt, die allen Filterkriterien entsprechen.
 
- ![Screenshot](img/color-red.png)
+ ![Screenshot](img/search-1.png)
 
 !!! tip ""
     Filter können auch im Suchfeld angegeben werden:
@@ -33,7 +33,7 @@ Sind mehrere Filter gesetzt, werden nur Bilder von der Suche berücksichtigt, di
     Die komplette Liste der Filter findest du weiter unten.
     
    
-   ![Screenshot](img/color-green.png)
+   ![Screenshot](img/search-2.png)
 
 ## UND Suche ##
 Du kannst verschiedene Filter kombinieren:
