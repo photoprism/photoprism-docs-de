@@ -76,22 +76,43 @@
 
     Du kannst Dateien über die Web-Oberfläche [löschen](./organize/delete.md).
 
+## Suche ##
+
+??? question "Warum kann ich Live Fotos nicht abspielen oder Bildstapel finden, wenn ich nach bestimmten Bildern suche? "
+    
+    Unsere Such-API und die Benutzeroberfläche führen eine Dateisuche durch. Dies ist beabsichtigt, da "Bildstapel" Dateien unterschiedlichen Typs und unterschiedlicher Eigenschaften, wie z. B. Farbe, enthalten können.
+
+    So kann es beispielsweise Farb- und Schwarzweißversionen geben. Wenn nach diesen gesucht wird oder Bilder nach Farbe sortiert werden, muss die Benutzeroberfläche nun einzelne Dateien anzeigen. Andernfalls würden die Ergebnisse, die ein Farbbild/Video anzeigen, wenn nach Schwarzweiß gefiltert wird, keinen Sinn ergeben.    
+    
+    Ebenso finden Sie bei der Suche nach `Dateiname.mp4.*` nur JPEGs ohne Video, da die Videodateierweiterung `.mp4` nicht mit einem Punkt endet.
+
+    Wir empfehlen die Verwendung der Filter `path:` und/oder `name:` mit Wildcards, wenn die Suche nach einzelnen Dateien die Suchergebnisse zu sehr einschränkt. Die meisten Nutzer werden alle zusammengehörigen Dateien finden wollen, damit sie zusammen angezeigt werden können, z. B. als Live-Fotos, die aus einem Video und einem Bild bestehen.    
+    Sie können diese Filter mit anderen Filtern wie `live` kombinieren, um sicherzustellen, dass die Ergebnisse nur Bilder mit einem bestimmten Medientyp enthalten. Alternativ können Sie auch den Filter "filename:" mit einem freizügigeren Platzhalter verwenden, der die Dateierweiterung ausschließt.
+
 ## Dateien und Anzahlsanzeigen ##
 
 ??? question "Welche Datei Typen werden unterstützt?"
 
-    PhotoPrism's primäres Dateiformat ist JPEG.
-    Während der Indexierung werden für RAW, HEIF, TIFF, PNG, BMP und GIF Dateien JPEG Dateien erstellt.
-    Diese werden für die Klassifizierung und das Resampling benötigt.
+    PhotoPrism unterstützt Indexieren, Anzeigen und [Konvertierung](./settings/library.md) der meisten gängigen Bild-, Video- und RAW-Dateiformate, einschließlich JPEG, PNG, GIF, BMP, HEIF, HEIC, MP4, MOV, WebP und WebM. [TIFF wird teilweise unterstützt](https://github.com/golang/go/issues?q=is%3Aissue+image%2Ftiff+) ohne Erweiterungen wie GeoTIFF.
+
+    Das intern verwendete Bildformat ist JPEG. Die Unterstützung von JPEG XL ist geplant, aber noch nicht verfügbar. Beim Indexieren kann für Videos und Bilder in anderen Formaten automatisch eine JPEG-Sidecar-Datei erstellt werden. Sie wird für die Erstellung von Thumbnails, die Bildklassifizierung und die Gesichtserkennung benötigt.
     
-    Unterstützung spezieller RAW Formate ist abhängig von der Laufzeitumgebung sowie der Konfiguration. 
-    PhotoPrism kann [Darktable](https://www.darktable.org/) und [RawTherapee](https://rawtherapee.com/) für die RAW zu JPEG Konvertierung nutzen. 
-    Auf Mac OS, wird möglicherweise auch [Sips](https://ss64.com/osx/sips.html) verwendet.
-    
-    Wir unterstützen [alle gängigen Videodateien](https://docs.photoprism.app/developer-guide/media/videos/).
-    Du solltest PhotoPrism so konfigurieren, dass automatisch JSON Sidecar-Dateien erstellt werden, damit Metadaten deiner Videos, wie Aufnahmeort und Dauer indexiert werden können.
-    
+    Falls installiert, ist die Konvertierung von RAW-Dateien mit den folgenden Konvertern möglich (unser Docker-Image enthält beide):
+
+    - [Darktable](https://www.darktable.org/) ([unterstützte Kameras](https://www.darktable.org/resources/camera-support/))
+    - [RawTherapee](https://rawtherapee.com/) ([unterstützte Kameras](https://www.libraw.org/supported-cameras))
+
+    Auf einem Mac können RAW-Dateien auch mit [Sips](https://ss64.com/osx/sips.html) ([unterstützte Kameras](https://support.apple.com/en-us/HT211241)) konvertiert werden.
+    Unser Ziel ist es, erstklassige Unterstützung für alle RAW-Formate zu bieten, unabhängig von Kameramarke und -modell.
     Falls du Probleme mit einem bestimmten Dateiformat hast, öffne gerne ein Ticket.
+
+    
+    Von [FFmpeg](https://en.wikipedia.org/wiki/FFmpeg#Supported_codecs_and_formats) unterstützte [Videoformate](../developer-guide/media/index.md) können zu
+    [MPEG-4 AVC](https://en.wikipedia.org/wiki/Advanced_Video_Coding) transkodiert werden, um maximale Browser-Kompatibilität zu gewährleisten. Aus den meisten Videos können auch Standbilder für die Erstellung von Thumbnails extrahiert werden.
+    
+    Du solltest PhotoPrism so konfigurieren, dass automatisch JSON Sidecar-Dateien erstellt werden, wenn Du Videos, Live-Fotos und/oder [animierte GIFs](https://github.com/photoprism/photoprism/issues/590) hast, damit videospezifische Metadaten wie Codec, Frames und Dauer extrahiert, indexiert und durchsucht werden können.
+
+    Eine vollständige Liste der Dateiformate und -erweiterungen findest du in unserem [Fact Sheet](https://dl.photoprism.app/factsheets/PhotoPrism%2520Factsheet%2520-%2520File%2520Format%2520Support.pdf) und [Developer Guide](../developer-guide/media/index.md).
 
 ??? question "Welche Metadaten-Dateitypen werden unterstützt?"
     
