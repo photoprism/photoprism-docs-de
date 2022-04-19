@@ -3,8 +3,10 @@ Freue dich darauf, lang vergessene Bilder wieder zu entdecken! Wenn du deine Sam
 Ähnlichkeit gruppiert, so dass du sie schnell Personen zuordnen kannst.
 
 !!! tldr ""
-    Das Gruppieren von Gesichtern zu Clustern kann, abängig von Hardware und Bildanzahl, eine Weile dauern.
-    Es kann vorübergehend zu einer hohen CPU-Last kommen. Vorhandene Cluster werden automatisch im Hintergrund optimiert , 
+    Die Erkennung beginnt erst, wenn deine Bibliothek vollständig indexiert wurde. Das Suchen und Aktualisieren von Gesichtern verursacht vorübergehend eine hohe CPU-Belastung und kann je nach Hardware und Anzahl der Bilder eine Weile dauern.
+
+!!! tldr ""
+    Vorhandene Cluster werden automatisch im Hintergrund optimiert , 
     z. B. wenn neue Gesichter identifiziert, Gesichter aus einem Cluster entfernt oder neue
     Dateien zur Bibliothek hinzugefügt werden.
 
@@ -16,19 +18,24 @@ Klicke :material-star:, um eine Person als Favorit zu markieren. Favoriten werde
 ![Screenshot](img/recognized-new.png)
 ![Screenshot](img/new-new.png)
 
-!!!info ""
-    **Im Bereich *NEU* werden nur erkannte Gesichts-Cluster angezeigt.** In deiner Sammlung kann es noch tausende weitere, nicht gruppierte Gesichter, geben, wie z.B. Gesichter auf Shampooflaschen
-    oder im Fernsehen. Du kannst diese Bilder finden, indem du nach `face:new` suchst. Falls du bestimmte Bilder suchst, empfehlen wir die Suche mit anderen Filtern, wie `year` or `country`,
-    zu kombinieren. Im [Bearbeitungs-Dialog](edit.md) werden immer alle Gesichter angezeigt. Hier kannst du den Gesichtern Personen zuordnen.
+### Warum werdem im Bereich NEU nicht alle erkannten Gesichter angezeigt?
+
+Im Bereich *NEU* werden nur erkannte Gesichts-Cluster angezeigt. In deiner Sammlung kann es noch tausende weitere, nicht gruppierte Gesichter, geben, wie z.B. Gesichter auf Shampooflaschen
+oder im Fernsehen. 
+
+Du kannst diese Bilder finden, indem du nach `face:new` suchst. Falls du bestimmte Bilder suchst, empfehlen wir die Suche mit anderen Filtern, wie `year` or `country`,
+zu kombinieren. Im [Bearbeitungs-Dialog](edit.md) werden immer alle Gesichter angezeigt. Hier kannst du den Gesichtern Personen zuordnen.
 
 ### Wenn ein Gesicht nicht erkannt wurde... ###
 
 Gesichter können aus mehreren Gründen nicht erkannt werden:
 
+- Möglicherweise musst du warten, bis die Indexierung abgeschlossen ist, da die Gesichtserkennung erst danach beginnt
 - Bei Bildstapeln, wird nur die Primärdatei nach Gesichtern durchsucht
 - Gesichter können kleiner als die konfigurierte Mindestgröße sein
 - Unsere Gesichtserkennung hat das Bild nicht gründlich genug gescannt
 - Eine reduzierte Auflösung sowie Qualität von generierten [Vorschaubildern](../settings/advanced.md) führt zu schlechteren Gesichtserkennungs-Ergebnissen
+- Der Kontrast spielt eine große Rolle, so dass ein helles Gesicht mit grauen Haaren auf einem grauen Hintergrund für unsere Gesichtserkennung weniger auffällig sein kann als für dich
 - In sehr seltenen Fällen kann ein Gesicht mit unserer Black-List von falsch positiven Ergebnissen übereinstimmen
 
 !!! info ""
