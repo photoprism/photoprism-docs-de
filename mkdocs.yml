@@ -7,6 +7,8 @@ nav:
       - Einleitung: user-guide/library/import-vs-index.md
       - Originale indexieren: user-guide/library/indexing.md
       - Dateien importieren: user-guide/library/import.md
+      - Metadaten: user-guide/advanced/metadata.md
+      - Duplikate: user-guide/library/duplicates.md
       - Web Upload: user-guide/library/upload.md
       - WebDAV Sync: user-guide/library/webdav.md
       - Datei Browser: user-guide/library/files.md
@@ -59,7 +61,6 @@ nav:
       - Flickr: user-guide/use-cases/flickr.md
       #- Link directories from remote:
   - Weiteres:
-      - Metadaten: user-guide/advanced/metadata.md
       - Backups: user-guide/advanced/backups.md
       - Export: user-guide/advanced/export.md
       - Verzeichnisse: user-guide/advanced/folders.md
