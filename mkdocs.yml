@@ -62,6 +62,7 @@ nav:
       #- Link directories from remote:
   - Weiteres:
       - Backups: user-guide/advanced/backups.md
+      - Backups Wiederherstellen: user-guide/advanced/restore.md
       - Export: user-guide/advanced/export.md
       - Verzeichnisse: user-guide/advanced/folders.md
   - Mobile App (PWA): user-guide/pwa.md
