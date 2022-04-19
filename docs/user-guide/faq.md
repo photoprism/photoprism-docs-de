@@ -107,12 +107,12 @@
     Falls du Probleme mit einem bestimmten Dateiformat hast, öffne gerne ein Ticket.
 
     
-    Von [FFmpeg](https://en.wikipedia.org/wiki/FFmpeg#Supported_codecs_and_formats) unterstützte [Videoformate](../developer-guide/media/index.md) können zu
+    Von [FFmpeg](https://en.wikipedia.org/wiki/FFmpeg#Supported_codecs_and_formats) unterstützte [Videoformate](https://docs.photoprism.app/developer-guide/media/) können zu
     [MPEG-4 AVC](https://en.wikipedia.org/wiki/Advanced_Video_Coding) transkodiert werden, um maximale Browser-Kompatibilität zu gewährleisten. Aus den meisten Videos können auch Standbilder für die Erstellung von Thumbnails extrahiert werden.
     
     Du solltest PhotoPrism so konfigurieren, dass automatisch JSON Sidecar-Dateien erstellt werden, wenn Du Videos, Live-Fotos und/oder [animierte GIFs](https://github.com/photoprism/photoprism/issues/590) hast, damit videospezifische Metadaten wie Codec, Frames und Dauer extrahiert, indexiert und durchsucht werden können.
 
-    Eine vollständige Liste der Dateiformate und -erweiterungen findest du in unserem [Fact Sheet](https://dl.photoprism.app/factsheets/PhotoPrism%2520Factsheet%2520-%2520File%2520Format%2520Support.pdf) und [Developer Guide](../developer-guide/media/index.md).
+    Eine vollständige Liste der Dateiformate und -erweiterungen findest du in unserem [Fact Sheet](https://dl.photoprism.app/factsheets/PhotoPrism%2520Factsheet%2520-%2520File%2520Format%2520Support.pdf) und [Developer Guide](https://docs.photoprism.app/developer-guide/).
 
 ??? question "Welche Metadaten-Dateitypen werden unterstützt?"
     
