@@ -9,6 +9,9 @@ Deshalb legt PhotoPrism neben einem Datenbank-Backup zusätzlich YAML-Backupdate
 
 Backups können in den [Einstellungen](../settings/advanced.md) deaktiviert werden. 
 
+Beachte, dass sich die Daten immer noch in der Datenbank befinden und dass Änderungen an den YAML Dateien nicht in PhotoPrism übernommen werden.
+Dies ist vergleichbar mit einem Backup, allerdings in einem für Menschen lesbaren Format.
+
 ## Album Backups
 Backups werden für alle Albentypen erstellt: Album, Ordner, Bundesland, Erlebnis und Monat.
 
