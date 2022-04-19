@@ -1,13 +1,25 @@
-## Backups 
+# Backup Erstellen
 
-PhotoPrism erstellt automatisch  [YAML Backups](./export.md).
-Falls du die Album Backups updaten, oder ein Datenbank Backup erstellen möchtest, kannst du folgenden Befehl verwenden.
+Ein komplettes Backup deiner PhotoPrism-Instanz umfasst:
 
-`docker-compose exec photoprism photoprism backup -a --albums-path PATH -i --index-path PATH [FILENAME]`
+1. Alle Inhalte aus dem "Originals"-Ordner
+2. Ein SQL-Dump der Datenbank
 
-* -a = create album backups
-* --albums-path = optional, path where album backups will be stored
-* -i = create database backup
-* --index-path = optional, path for the database backup
-* -f = overwrite existing backup files
-* A custom index sql backup FILENAME may be passed as first argument. Use - for stdout.
+Um einen SQL Dump der Datenbank zu erstellen führe folgenden Befehl im Terminal aus:
+
+```
+photoprism backup -i [filename]
+```
+
+Oder für [docker-compose](https://docs.photoprism.app/getting-started/docker-compose/):
+
+```
+docker-compose exec -T photoprism photoprism backup -i - > photoprism-db.sql
+```
+
+Wie oben zu sehen, kann man `-` als Dateinamen verwenden, um das Datenbank-Backup nach stdout zu schreiben.
+Damit wird sichergestellt, dass die Backup-Datei außerhalb der Containerumgebung gespeichert wird.
+
+Wenn Sie den Dateinamen leer lassen, wird die Backup-Datei in den Standard-Backup-Ordner geschrieben, der über [`PHOTOPRISM_BACKUP_PATH`](https://docs.photoprism.app/getting-started/config-options/#storage-folders) konfiguriert ist.
+
+Optional, können auch die [Cache und Thumbnail Ordner](./folders.md)  gesichert werden, dies spart Zeit bei der Wiederherstellung, da nicht alle Thumbnails neu generiert werden müssen.
