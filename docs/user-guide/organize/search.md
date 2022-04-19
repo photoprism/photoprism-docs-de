@@ -102,50 +102,77 @@ Hier werden alle Bilder gefunden, die  `_23` im Namen enthalten, beispielsweise 
 ## Suchfilter Übersicht ##
 PhotoPrism unterstützt die folgenden Filter im Suchfeld.
 
-| Filter      | Examples | Notes |
-| ----------- | ----------- | - |
-| after      |    2015-06-30    | |
-| albums | "Holiday 2020" | Album Name |
-| archived     |    yes, no    | |
-| before      |   2016-12-22     | |
-| chroma     |   5     | |
-| color  | purple, magenta, pink, red, orange, gold, yellow, lime, green, teal, cyan, blue, brown, white, grey, black       | |
-| country     | de | |
-| day     |  23    | |
-| dist     | 5 | Distanz zu den Koordinaten (radius in km). Nur in Kombination mit den lat/lng Filtern relevant.|
-| month     |  5    | |
-| year     |  2012    | |
-| error     |    yes, no    | |
-| faces     |  yes, no, 1, 3    | faces:2 sucht Bilder mit mindestens 2 Gesichtern |
-| favorite     |    yes, no    | |
-| filename | 2021/07/12345.jpg | |
-| fmax     |    4.5  | |
-| fmin     |    1.8    | |
-| folder | "2020/Holiday", "2020/*" | |
-| geo | yes, no | |
-| hidden     |    yes, no    | |
-| keywords    | love | |
-| label      |    cat    | |
-| lat     |    38.300457    | Längengrad |
-| lng     |   8.931358   | Breitengrad |
-| mono     |    yes, no  | Einfarbige Bilder |
-| name     | "IMG_9831-112*", "IMG_9831-112" | |
-| original     | "IMG_9831-112*", "IMG_9831-112" | Nur relevant, wenn Import verwendet wird |
-| panorama     |    yes, no    | |
-| path | "2020/Holiday" | |
-| photo | yes, no | |
-| portrait     |    yes, no  | |
-| primary | yes, no | |
-| private     |    yes, no    | |
-| quality     |   1, 2, 3, 4, 5   | |
-| review     |   yes, no   | |
-| scan     |    yes, no    | |
-| stack     |    yes, no    | |
-| state     | "Baden-Württemberg", "Baden*" | |
-| subject/person  |"Jane Doe" | Subject Name --> Findet nur exakte Übereinstimmungen|
-| subjects/people  |"Jane Doe" | Subject Name|
-| title     | "Holiday*", "Holiday / 2012" | |
-| type     |   image, video, raw, live     | |
-| uid       |  pqbcf5j446s0futy       | |
-| unsorted     |    yes, no    | |
-| video | yes, no | |
+|  Filter   |   Type    |           Examples            |                                                                   Notes                                                                    |
+|-----------|-----------|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| fmax      | decimal   | fmax:1.245                    | F-number (max)                                                                                                                             |
+| fmin      | decimal   | fmin:1.245                    | F-number (min)                                                                                                                             |
+| lat       | decimal   | lat:1.245                     | Latitude (GPS Position)                                                                                                                    |
+| lng       | decimal   | lng:1.245                     | Longitude (GPS Position)                                                                                                                   |
+| chroma    | number    | chroma:70                     | Chroma (0-100)                                                                                                                             |
+| diff      | number    | diff:-1 diff:2                | Differential Perceptual Hash (000000-FFFFFF)                                                                                               |
+| dist      | number    | dist:5                        | Distance in km in combination with lat/lng                                                                                                 |
+| quality   | number    | quality:0 quality:3           | Quality Score (0-7)                                                                                                                        |
+| album     | string    | album:berlin                  | Album UID or Name, supports* wildcard                                                                                                      |
+| albums    | string    | albums:"South Africa & Birds" | Album Names, can be combined with & and \|                                                                                                 |
+| camera    | string    | camera:canon                  | Camera Make/Model Name                                                                                                                     |
+| category  | string    | category:"name"               | Location Category Name                                                                                                                     |
+| color     | string    | color:"red\|blue"             | Color Name (purple, magenta, pink, red, orange, gold, yellow, lime, green, teal, cyan, blue, brown, white, grey, black), OR search with \| |
+| country   | string    | country:"de\|us"              | Coountry Code, OR search with \|                                                                                                           |
+| day       | string    | day:3\|13                     | Day of Month (1-31), OR search with \|                                                                                                     |
+| faces     | string    | faces:yes faces:3             | Minimum number of Faces (yes = 1)                                                                                                          |
+| filename  | string    | filename:"2021/07/12345.jpg"  | File Name with path and extension, OR search with \|                                                                                       |
+| folder    | string    | folder:"*/2020"               | Path Name, OR search with \|, supports * wildcards                                                                                         |
+| hash      | string    | hash:2fd4e1c67a2d             | SHA1 File Hash, OR search with \|                                                                                                          |
+| keywords  | string    | keywords:"buffalo&water"      | Keywords, can be combined with & and \|                                                                                                    |
+| label     | string    | label:cat\|dog                | Label Name, OR search with \|                                                                                                              |
+| lens      | string    | lens:ef24                     | Lens make/Model Name                                                                                                                       |
+| month     | string    | month:7\|10                   | Month (1-12), OR search with \|                                                                                                            |
+| name      | string    | name:"IMG_9831-112*"          | File Name without path and extension, OR search with \|                                                                                    |
+| original  | string    | original:"IMG_9831-112*"      | Original file name of imported files, OR search with \|                                                                                    |
+| path      | string    | path:2020/Holiday             | Path Name, OR search with \|, supports * wildcards                                                                                         |
+| people    | string    | people:"Jane & John"          | Subject Names, can be combined with & and \|                                                                                               |
+| person    | string    | person:"Jane Doe & John Doe"  | Subject Names, exact matches, can be combined with & and \|                                                                                |
+| state     | string    | state:"Baden-Württemberg"     | OR search with \|                                                                                                                          |
+| subject   | string    | subject:"Jane Doe & John Doe" | Alias for person                                                                                                                           |
+| subjects  | string    | subjects:"Jane & John"        | Alias for people                                                                                                                           |
+| title     | string    | title:"Lake*"                 | Title, OR search with \|                                                                                                                   |
+| type      | string    | type:raw                      | Media Type (image, video, raw, live, animated); OR search with \|                                                                          |
+| uid       | string    | uid:pqbcf5j446s0futy          | Internal Unique ID, only exact matches                                                                                                     |
+| year      | string    | year:1990\|2003               | Year Number, OR search with \|                                                                                                             |
+| animated  | switch    | animated:yes                  | Finds animated GIFs                                                                                                                        |
+| archived  | switch    | archived:yes                  | Finds archived pictures                                                                                                                    |
+| error     | switch    | error:yes                     | Finds pictures with errors                                                                                                                 |
+| favorite  | switch    | favorite:yes                  | Finds pictures marked as favorite                                                                                                          |
+| geo       | switch    | geo:yes                       | Finds pictures with GPS location                                                                                                           |
+| hidden    | switch    | hidden:yes                    | Finds hidden pictures (broken or unsupported)                                                                                              |
+| landscape | switch    | landscape:yes                 | Finds pictures in landscape format                                                                                                         |
+| live      | switch    | live:yes                      | Finds Live Photos and short videos                                                                                                         |
+| mono      | switch    | mono:yes                      | Finds pictures with few or no colors                                                                                                       |
+| panorama  | switch    | panorama:yes                  | Finds pictures with an aspect ratio > 1.9:1                                                                                                |
+| photo     | switch    | photo:yes                     | Finds only photos, no videos                                                                                                               |
+| portrait  | switch    | portrait:yes                  | Finds pictures in portrait format                                                                                                          |
+| primary   | switch    | primary:yes                   | Finds primary JPEG files only                                                                                                              |
+| private   | switch    | private:yes                   | Finds private pictures                                                                                                                     |
+| public    | switch    | public:yes                    | Excludes private pictures                                                                                                                  |
+| raw       | switch    | raw:yes                       | Finds pictures with RAW image file                                                                                                         |
+| review    | switch    | review:yes                    | Finds pictures in review                                                                                                                   |
+| scan      | switch    | scan:yes                      | Finds scanned images and documents                                                                                                         |
+| square    | switch    | square:yes                    | Finds images with an aspect ratio of 1:1                                                                                                   |
+| stack     | switch    | stack:yes                     | Finds pictures with more than one media file                                                                                               |
+| stackable | switch    | stackable:yes                 | Finds pictures that can be stacked with additional media files                                                                             |
+| unsorted  | switch    | unsorted:yes                  | Finds pictures not in an album                                                                                                             |
+| unstacked | switch    | unstacked:yes                 | Finds pictures with a file that has been removed from a stack                                                                              |
+| vector    | switch    | vector:yes                    | Finds vector graphics only                                                                                                                 |
+| video     | switch    | video:yes                     | Finds video files only                                                                                                                     |
+| after     | timestamp | after:"2022-01-30 15:23:42"   | Finds pictures taken after this date                                                                                                       |
+| before    | timestamp | before:"2022-01-30 15:23:42"  | Finds pictures taken before this date                                                                                                      |
+
+!!! question "Warum kann ich Live Fotos nicht abspielen oder Bildstapel finden, wenn ich nach bestimmten Bildern suche?"
+    Unsere Such-API und die Benutzeroberfläche führen eine Dateisuche durch. Dies ist beabsichtigt, da "Bildstapel" Dateien unterschiedlichen Typs und unterschiedlicher Eigenschaften, wie z. B. Farbe, enthalten können.
+
+    So kann es beispielsweise Farb- und Schwarzweißversionen geben. Wenn nach diesen gesucht wird oder Bilder nach Farbe sortiert werden, muss die Benutzeroberfläche nun einzelne Dateien anzeigen. Andernfalls würden die Ergebnisse, die ein Farbbild/Video anzeigen, wenn nach Schwarzweiß gefiltert wird, keinen Sinn ergeben.    
+    
+    Ebenso finden Sie bei der Suche nach `Dateiname.mp4.*` nur JPEGs ohne Video, da die Videodateierweiterung `.mp4` nicht mit einem Punkt endet.
+
+    Wir empfehlen die Verwendung der Filter `path:` und/oder `name:` mit Wildcards, wenn die Suche nach einzelnen Dateien die Suchergebnisse zu sehr einschränkt. Die meisten Nutzer werden alle zusammengehörigen Dateien finden wollen, damit sie zusammen angezeigt werden können, z. B. als Live-Fotos, die aus einem Video und einem Bild bestehen.    
+    Sie können diese Filter mit anderen Filtern wie `live` kombinieren, um sicherzustellen, dass die Ergebnisse nur Bilder mit einem bestimmten Medientyp enthalten. Alternativ können Sie auch den Filter "filename:" mit einem freizügigeren Platzhalter verwenden, der die Dateierweiterung ausschließt.
