@@ -4,7 +4,7 @@ PhotoPrism erkennt exakte Duplikate automatisch.
 
 Wenn du Dateien [importierst](./import.md), werden Duplikate übersprungen, so dass sich keine doppelten Dateien im Originals Verzeichnis befinden.
 
-Wenn du deine Dateien [indexierst](./originals.md), werden Duplikate erkannt und erscheinen nur einmal in PhotoPrism's Ansichten.
+Wenn du deine Dateien [indexierst](./indexing.md), werden Duplikate erkannt und erscheinen nur einmal in PhotoPrism's Ansichten.
 Anzeigen und Löschen von doppelten Dateien über die Benutzeroberfläche ist [geplant](https://github.com/photoprism/photoprism/issues/1308).
 
 ## Zusammengehörige Dateien ##
