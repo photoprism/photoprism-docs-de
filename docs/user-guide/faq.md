@@ -95,7 +95,7 @@
 
     PhotoPrism unterstützt Indexieren, Anzeigen und [Konvertierung](./settings/library.md) der meisten gängigen Bild-, Video- und RAW-Dateiformate, einschließlich JPEG, PNG, GIF, BMP, HEIF, HEIC, MP4, MOV, WebP und WebM. [TIFF wird teilweise unterstützt](https://github.com/golang/go/issues?q=is%3Aissue+image%2Ftiff+) ohne Erweiterungen wie GeoTIFF.
 
-    Das intern verwendete Bildformat ist JPEG. Die Unterstützung von JPEG XL ist geplant, aber noch nicht verfügbar. Beim Indexieren kann für Videos und Bilder in anderen Formaten automatisch eine JPEG-Sidecar-Datei erstellt werden. Sie wird für die Erstellung von Thumbnails, die Bildklassifizierung und die Gesichtserkennung benötigt.
+    Das intern verwendete Bildformat ist JPEG. Beim Indexieren kann für Videos und Bilder in anderen Formaten automatisch eine JPEG-Sidecar-Datei erstellt werden. Sie wird für die Erstellung von Thumbnails, die Bildklassifizierung und die Gesichtserkennung benötigt. Die Unterstützung von JPEG XL ist geplant, sobald es allgemein verfügbar ist und genügend kompatible Programme existieren.
     
     Falls installiert, ist die Konvertierung von RAW-Dateien mit den folgenden Konvertern möglich (unser Docker-Image enthält beide):
 
@@ -112,7 +112,7 @@
     
     Du solltest PhotoPrism so konfigurieren, dass automatisch JSON Sidecar-Dateien erstellt werden, wenn Du Videos, Live-Fotos und/oder [animierte GIFs](https://github.com/photoprism/photoprism/issues/590) hast, damit videospezifische Metadaten wie Codec, Frames und Dauer extrahiert, indexiert und durchsucht werden können.
 
-    Eine vollständige Liste der Dateiformate und -erweiterungen findest du in unserem [Fact Sheet](https://dl.photoprism.app/factsheets/PhotoPrism%2520Factsheet%2520-%2520File%2520Format%2520Support.pdf) und [Developer Guide](https://docs.photoprism.app/developer-guide/).
+    Eine vollständige Liste der Dateiformate und -erweiterungen findest du in unserer [Funktionsübersicht](https://link.photoprism.app/overview).
 
 ??? question "Welche Metadaten-Dateitypen werden unterstützt?"
     
@@ -187,11 +187,6 @@
     * MP4 + JPG = 1 Video, 2 Dateien
 
     Es kann auch sein, dass mehrere JPG Dateien zu einem Bild gruppiert sind (z.B. eine original und eine bearbeitete Version).
-
-??? question "Warum ist die Anzahl in *Originals* höher, als die Anzahl an Dateien in meinem Originals Verzeichnis?"
-
-    Während der Indexierung erstellt Photoprism JPG Dateien, falls diese nicht vorhanden sind (beispielsweise für RAWs, Videos oder PNGs).
-    Diese Dateien werden in /storage/sidecar gespeichert. In der Benutzeroberfläche werden sie allerdings im Bereich Originale angezeigt.
 
 ## Metadaten ##
 ??? question "Warum haben manche meiner Bilder ohne GPS Informationen trotzdem einen Ort gesetzt?"
