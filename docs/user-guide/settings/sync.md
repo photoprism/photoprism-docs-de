@@ -41,7 +41,7 @@ neue Bilder von deiner ownCloud Instanz in PhotoPrism geladen werden.
 	Auf Grund von Problemen bei bestimmten Nextcloud Einstellungen kann es vorkommen, dass nach dem Upload bei Nextcloud nur 0 Byte große Dateien ankommen. 
 	[Hier](https://github.com/photoprism/photoprism/issues/443) findest du Informationen, die dir helfen, das Problem zu beheben.
 
-## Backup/Synchronisation von Dateien mit einem WebDAV Server ##
+## Dateien von/zu einem WebDAV Server herunterladen/hochladen##
 **Synchronisation einrichten:**
 
 1. Gehe zu *Einstellungen*
@@ -57,6 +57,6 @@ neue Bilder von deiner ownCloud Instanz in PhotoPrism geladen werden.
 
 ### Backup Optionen ###
 * *Dateien herunterladen*  - alle Dateien, die noch nicht in PhotoPrism existieren, werden regelmäßig von deinem Server heruntergeladen
-* *Dateien hochladen* - alle Dateien, die auf deinem Server noch nicht existieren, werden regelmäßig von PhotoPrism auf deinen Server geladen
+* *Dateien hochladen* - alle Dateien (auch als privat markierte oder archivierte), die auf deinem Server noch nicht existieren, werden regelmäßig von PhotoPrism auf deinen Server geladen
 * *Namen beibehalten* - Dateinamen von deinem Server werden beibehalten
 * *RAWs und Videos kopieren* - Neben JPEGs werden auch RAW Dateien und Videos synchronisiert
