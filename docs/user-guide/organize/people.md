@@ -173,3 +173,15 @@ Suchfilter können auch kombiniert werden.
 `person:"John Doe&Jane Doe" faces:3` findet alle Bilder auf denen John und Jane Doe und mindestens eine weitere Person abgebildet sind.
 
 ![Screenshot](img/people-search.png)
+
+## Performance Tipps ##
+
+### Background Worker ###
+
+Die Gesichtserkennung wurde unter der Annahme entwickelt und getestet, dass der Background Worker alle 15 Minuten läuft, es sei denn, das Backend ist mit anderen Aufgaben wie der Indexierung beschäftigt. Sie wurde nicht mit viel längeren Intervallen getestet und ist dafür auch nicht ausgelegt.
+
+Der Background Worker gruppiert neue Gesichter nach Ähnlichkeit, vergleicht Gesichter mit Clustern und optimiert bei Bedarf bestehende Cluster. Ohne diese Routineaufgaben wird die Anzahl der zu verarbeitenden Gesichter zu groß. Bei der ersten und nächsten Ausführung des Workers kann es dann zu einer starken Serverbelastung kommen, bis alle Gesichter, Gesichtscluster und zugehörigen Bilder aktualisiert wurden. Je länger du wartest, desto mehr CPU wird benötigt und desto länger dauert es.
+
+### Ältere Hardware ###
+
+Es ist ein [bekanntes Problem](https://docs.photoprism.app/getting-started/troubleshooting/performance/#legacy-hardware), dass die Benutzeroberfläche und Backend-Vorgänge, insbesondere die Gesichtserkennung, auf älterer Hardware aufgrund mangelnder Ressourcen langsam sein oder sogar abstürzen können. Wie die meisten Anwendungen hat auch PhotoPrism bestimmte Anforderungen und unser Entwicklungsprozess beinhaltet keine Tests auf nicht unterstützter oder ungewöhnlicher Hardware.
