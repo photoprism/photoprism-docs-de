@@ -41,6 +41,14 @@
     Es ist essentiell, dass du Betriebssystem, Webbrowser und alle anderen Programme auf dem neuesten Stand hälst. 
     Fordere dein Glück nicht heraus und erwarte nicht, dass Entwickler Zeit darauf verwenden, einzelne Updates für alte Versionen bereitzustellen, die nichts außer kritischen Sicherheitsaktualisierungen enthalten.
 
+??? question "Wird die selbst gehostete Version weiterhin unterstützt, wenn eine gehostete Version verfügbar ist?"
+
+    Auf jeden Fall! Selbst zu hosten ist der einfachste Weg, um die Kontrolle zu behalten und deine [Privatsphäre](https://photoprism.app/privacy) zu schützen (ein wichtiger Teil unserer Mission). Es bietet auch die beste Erfahrung für fortgeschrittene Nutzer, die oft auf eine lokale Toolchain angewiesen sind, um ihre Bilder auszuwählen, zu bearbeiten und zu veröffentlichen.    
+    
+    Da es eine große Nachfrage und viele praktische Anwendungen für eine gehostete Version gibt, wollen wir diese zusätzlich anbieten, damit unsere Nutzer mehr Auswahl haben. Ausgewählte Hosting-Partner werden sicherstellen, dass die Privatsphäre unserer Nutzer so weit wie technisch möglich geschützt wird, auch in der Cloud.    
+
+    Ebenso haben Unternehmen Bedarf an einem kommerziellen Angebot mit Funktionen und Support-Optionen, die sich an professionelle Nutzer richten. Sie sind bereit, für den Mehrwert zu zahlen, den sie erhalten, was uns hilft, die Entwicklung zu finanzieren und unser Team zu erweitern.
+
 ## Benutzer-Oberfläche ##
 
 ??? question "Kann ich meine Bilder und Alben in Baumstrukturen organisieren?" 
