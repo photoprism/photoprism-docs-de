@@ -13,7 +13,7 @@ PhotoPrism bietet drei schöne Ansichten, um deine Bilder und Videos anzuzeigen.
 
     ![Screenshot](img/mosaic.png)
 
-=== "Listen Ansich"
+=== "Listen Ansicht"
 
     Die *Listen Ansicht* stellt Bilder und Metadaten in einer übersichtlichen Liste dar.
 
