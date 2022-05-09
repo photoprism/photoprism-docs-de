@@ -1,5 +1,5 @@
 # Suche #
-Mit Hilfe des *Suchfelds* kann  in allen Bereichen nach Bildern, Videos, Alben oder Labels gesucht werden.
+Finde bestimmte Bilder und Videos mithilfe von umfangreichen Suchfiltern.
 
 Du kannst nach unerschiedlichsten Kriterien suchen:
 
@@ -8,34 +8,30 @@ Du kannst nach unerschiedlichsten Kriterien suchen:
 * Hauptfarbe eines Bildes
 * Dateiname oder Verzeichnisname
 * Ort der Aufnahme
-* ...
+* Andere Metadaten wie Kamera, Linse oder Chroma...
 
 Probier es einfach aus!
 
-   ![Screenshot](img/search-beach.png)
+   ![Screenshot](img/fulltext-search-1.png)
 
 ## Suchfilter ##
-Zusätzlich zur Suche können auf der Filterleiste folgende Filter gesetzt werden:
+Folgende Filter können auf der Filterleiste gesetzt werden:
 
 * Land, Jahr, Monat, Reihenfolge, Kamera, Farbe, Kategorie
 
 Sind mehrere Filter gesetzt, werden nur Bilder von der Suche berücksichtigt, die allen Filterkriterien entsprechen.
 
- ![Screenshot](img/search-1.png)
+ ![Screenshot](img/filter-bar-new.png)
 
-!!! tip ""
-    Filter können auch im Suchfeld angegeben werden:
+Filter können auch im Suchfeld angegeben werden:
 
-    `label:cat`
-    `color:green`
-    `type:live`
+    `label:cat color:green type:live`
 
-    Die komplette Liste der Filter findest du weiter unten.
-    
-   
-   ![Screenshot](img/search-2.png)
+Die komplette Liste der Filter findest du weiter [unten](#suchfilter-ubersicht).
 
-## UND Suche ##
+   ![Screenshot](img/search-filters.png)
+
+### UND Suche ###
 Du kannst verschiedene Filter kombinieren:
 
 ```
@@ -66,7 +62,7 @@ Diese Suche resultiert in allen Bildern, die die Suchbegriffe buffalo **UND** wa
     Der label Suchfilter funktioniert nicht mit &. Du kannst alternativ den keywords Filter verwenden, da 
     alle Labels auch Suchbegriffe sind.
 
-## ODER Suche ##
+### ODER Suche ###
 Für eine ODER Suche verwende |:
 
 ```
@@ -80,7 +76,7 @@ Folgende Suchfilter unterstützen |:
 * albums, color, country, day, month, year, keywords, label, path, state, subject/person, subjects/people, title, type, name, filename, original, hash
 
 
-## Wildcard ##
+### Wildcard ###
 Das `*` fungiert in der Suche als Wildcard:
 
 ```
@@ -99,7 +95,7 @@ Hier werden alle Bilder gefunden, die  `_23` im Namen enthalten, beispielsweise 
 !!!info ""
     Wildcards können mit & oder | verwendet werden : `filename:"*IMG123*|*_22F6FC19.jpg"`
 
-## Suchfilter Übersicht ##
+### Suchfilter Übersicht ###
 PhotoPrism unterstützt die folgenden Filter im Suchfeld.
 
 |  Filter   |   Type    |           Examples            |                                                                   Notes                                                                    |
