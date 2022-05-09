@@ -1,5 +1,12 @@
 # Album-Link teilen #
 
+Erstelle Freigabelinks, um Alben, Momente oder Ordner mit deinen Freunden zu teilen.
+
+Deine Freunde können Bilder und Videos aus freigegebenen Alben anzeigen und herunterladen.
+Bilder, die als privat markiert sind, werden nicht angezeigt.
+
+![Screenshot](img/shared-album.png)
+
 ## Freigabelink erstellen ##
 === "Kontext-Menü"
      1. Gehe zu *Alben*
