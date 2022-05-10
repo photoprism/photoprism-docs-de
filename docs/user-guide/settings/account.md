@@ -7,4 +7,4 @@
 4. Gib das neue Passwort ein und bestätige es durch eine erneute Eingabe
 5. Klicke auf *Ändern*
 
-![Screenshot](img/account-settings.jpg) 
+![Screenshot](img/account-settings.jpg){ class="shadow" } 

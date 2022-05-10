@@ -22,7 +22,7 @@ zu verschieben oder umzubenennen.
 
 **Deine Ordnerstruktur in *Originals* könnte so aussehen:**
 
-![Screenshot](img/originals-before-after.png)
+![Screenshot](img/originals-before-after.png){ class="shadow" }
      
 **Während der Indexierung:**
 
@@ -34,7 +34,7 @@ zu verschieben oder umzubenennen.
 
 **Der *Originals* Ordner nach der Indexierung:**
 
-![Screenshot](img/originals-before-after.png)
+![Screenshot](img/originals-before-after.png){ class="shadow" }
 
     
 
@@ -51,7 +51,7 @@ zu verschieben oder umzubenennen.
 
 **Deine anfängliche Ordnerstruktur in *Import* könnte wie folgt aussehen:**
 
-   ![Screenshot](img/before-import.png)
+   ![Screenshot](img/before-import.png){ class="shadow" }
    
 **Während dem Import:**
  
@@ -61,11 +61,11 @@ zu verschieben oder umzubenennen.
 
 **Ordnerstruktur in *Import* und *Originals* nach Import mit der "Kopieren" Option:**
 
-   ![Screenshot](img/copy-import.png)
+   ![Screenshot](img/copy-import.png){ class="shadow" }
 
 **Ordnerstruktur in *Import* und *Originals* nach Import mit der "Verschieben" Option:**
 
-   ![Screenshot](img/move-import.png)
+   ![Screenshot](img/move-import.png){ class="shadow" }
 
 #### Vorteile ####
 * Nicht unterstützte Dateien bleiben unberührt im Import Verzeichnis

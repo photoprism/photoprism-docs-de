@@ -9,7 +9,7 @@ Wenn du PhotoPrism im public Modus betreibst, sind die erweiterten Einstellungen
     Wenn du die Thumbnail-Qualität oder Größen Einstellungen änderst, werden bereits erstellte Thumbnails nicht gelöscht.
     Thumbnails können über die [Kommandozeile](https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface) neu generiert werden.
 
-![](img/advanced-settings.jpg)
+![](img/advanced-settings.jpg){ class="shadow" }
 
 Alle Optionen können alternativ über die 
 [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) gesetzt werden.
@@ -169,7 +169,7 @@ fit_7680  | 7680   | 4320    | 8K Ultra HD 2, Retina 6K |
 
 Originalbild:
 
-![](img/branches.png)
+![](img/branches.png){ class="shadow" }
 
 Dieses Bild wurde unter der Verwendung von verschiedenen Filtern von 600x400 Pixeln auf 150x100 Pixel skaliert.
 Die Liste ist sortiert nach Rechengeschwindigkeit.
@@ -194,7 +194,7 @@ Webbrowser können keine RAW-Formate anzeigen. Deshalb muss PhotoPrism diese Dat
 
 Zusätzlich zu den oben genannten Formaten unterstützt PhotoPrism auch BMP-, GIF-, PNG- und TIFF-Dateien. Bevor du diese Formate zur Speicherung nutzt, solltest du bedenken, dass diese oft keine Metadaten speichern können. Deshalb werden sie in der Regel für Screenshots, Diagramme und Icons verwendet.
 
-![](img/editPhoto.png)
+![](img/editPhoto.png){ class="shadow" }
 
 !!! info ""
     Von PhotoPrism erstellte Sidecar-Dateien werden außerhalb des Originals Verzeichnis gespeichert, so dass die RAW zu JPEG Konvertierung auch im

@@ -2,7 +2,7 @@
 
 Im Bereich *Kalender* findest du deine Bilder nach Jahr und Monat sortiert.
 
-![Screenshot](img/calendar.png)
+![Screenshot](img/calendar.png){ class="shadow" }
 
 Das Kontext-Menü ermöglicht die folgenden Aktionen:
 

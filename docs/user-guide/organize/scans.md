@@ -10,4 +10,4 @@ Eingescannte Bilder können als *Scan* markiert werden.
  2. Klicke :material-cog:
  3. Setze oder entferne den *Scan*-Status
 
-![Screenshot](img/scan-1.png)
+![Screenshot](img/scan-1.png){ class="shadow" }

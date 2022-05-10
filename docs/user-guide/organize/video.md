@@ -8,7 +8,7 @@ Beachte, dass nicht alle [Video- und Audioformate](https://caniuse.com/?search=v
 So wird beispielsweise [AAC](https://caniuse.com/aac) - der Standard-Audiocodec für [MPEG-4 AVC / H.264](https://caniuse.com/mpeg4) - in Chrome, Safari und Edge nativ unterstützt, 
 während er in Firefox und Opera nur optional vom Betriebssystem unterstützt wird.
 
-![Screenshot](img/video-1.png)
+![Screenshot](img/video-1.png){ class="shadow" }
 
 ### Live-Fotos ###
 Kurze Videos von bis zu 3 Sekunden, werden unabhängig vom Handy-Model als Live Foto kategorisiert.
@@ -16,7 +16,7 @@ Sie sind mit :material-adjust: in der linken oberen Ecke markiert.
 
 Um nach Live-Fotos zu filtern, nutze den Filter `type:live`. Um ein Live-Foto abzuspielen, bewege den Mauszeiger auf das Bild.
 
-![Screenshot](img/live-photo.png)
+![Screenshot](img/live-photo.png){ class="shadow" }
 
 ### Transkodierung ###
 

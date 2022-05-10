@@ -15,8 +15,8 @@ Der Bereich Personen zeigt dir bereits identifizierte Personen sowie neue Gesich
 
 Klicke :material-star:, um eine Person als Favorit zu markieren. Favoriten werden ganz oben angezeigt.
 
-![Screenshot](img/recognized-new.png)
-![Screenshot](img/new-new.png)
+![Screenshot](img/recognized-new.png){ class="shadow" }
+![Screenshot](img/new-new.png){ class="shadow" }
 
 ### Warum werdem im Bereich NEU nicht alle erkannten Gesichter angezeigt?
 
@@ -50,7 +50,7 @@ Gesichter können aus mehreren Gründen nicht erkannt werden:
      4. Beginne einen Namen einzugeben
      5. Drücke *Enter*
 
-    ![Screenshot](img/add-name-new-new.png)
+    ![Screenshot](img/add-name-new-new.png){ class="shadow" }
 
 === " Im Bearbeitungs-Dialog"
 
@@ -60,7 +60,7 @@ Gesichter können aus mehreren Gründen nicht erkannt werden:
      4. Beginne einen Namen einzugeben
      5. Drücke *Enter*
 
-    ![Screenshot](img/add-name-edit-new.png)
+    ![Screenshot](img/add-name-edit-new.png){ class="shadow" }
 
 Die Person wird nun unter *Erkannt* angezeigt
 
@@ -76,15 +76,15 @@ Du kannst Personen im Bereich *Erkannt* ausblenden, indem du :material-close: kl
     Bilder von ausgeblendeten Personen tauchen weiterhin in Suchergebnissen auf.
 
 
-![Screenshot](img/person-hide-new.png)
+![Screenshot](img/person-hide-new.png){ class="shadow" }
 
 Um alle Personen, inklusive ausgeblendete, zu sehen klicke :material-eye:.
 
-![Screenshot](img/person-show-all-new.png)
+![Screenshot](img/person-show-all-new.png){ class="shadow" }
 
 Ausgeblendete Personen werden wieder angezeigt, wenn du :material-eye-off: klickst.
 
-![Screenshot](img/person-recover-new.png)
+![Screenshot](img/person-recover-new.png){ class="shadow" }
 
 
 ## Gesichter ausblenden ##
@@ -96,13 +96,13 @@ Du kannst Gesichts-Cluster im Bereich *Neu* auf die gleiche Weise wie [Personen]
      2. Gehe zu *Erkannt*
      3. Klicke auf eine Person
 
-    ![Screenshot](img/view-person-new.png)
+    ![Screenshot](img/view-person-new.png){ class="shadow" }
 
 === "Über die Suche"
      1. Gehe zu *Suche*
      2. Suche nach person:"jane-doe"
 
-    ![Screenshot](img/view-person-2-new.png)
+    ![Screenshot](img/view-person-2-new.png){ class="shadow" }
 
 ## Personen umbenennen ##
 
@@ -112,9 +112,9 @@ Du kannst Gesichts-Cluster im Bereich *Neu* auf die gleiche Weise wie [Personen]
 4. Gib einen neuen Namen ein
 5. Drücke *Enter*
 
-![Screenshot](img/rename-recognized-0-new.png)
+![Screenshot](img/rename-recognized-0-new.png){ class="shadow" }
 
-![Screenshot](img/rename-recognized-new.png)
+![Screenshot](img/rename-recognized-new.png){ class="shadow" }
 
 ## Gesicht einer anderen Person zuordnen ##
 Wenn einem Gesicht die falsche Person zugeordnet ist, kannst du dies ändern.
@@ -127,7 +127,7 @@ Wenn einem Gesicht die falsche Person zugeordnet ist, kannst du dies ändern.
 3. Klicke :material-eject:
 4. Nun kannst du einen neuen Namen eingeben, oder das Feld leer lassen
 
-![Screenshot](img/reject-new.png)
+![Screenshot](img/reject-new.png){ class="shadow" }
 
 ## Gesichter entfernen ##
 Falls etwas Falsches als Gesicht erkannt wurde, oder dich ein Gesicht nicht interessiert, kannst du es entfernen.
@@ -136,11 +136,11 @@ Falls etwas Falsches als Gesicht erkannt wurde, oder dich ein Gesicht nicht inte
 2. Gehe zu *Personen*
 3. Klicke :material-close:
 
-![Screenshot](img/remove-face.png)
+![Screenshot](img/remove-face.png){ class="shadow" }
 
 Bevor die Seite neu geladen wird kannst du diese Aktion rückgängig machen.
 
-![Screenshot](img/undo-remove-face.png)
+![Screenshot](img/undo-remove-face.png){ class="shadow" }
 
 ## Alle Bilder einer Person herunterladen ##
 1. Gehe zu *Personen*
@@ -156,7 +156,7 @@ Bevor die Seite neu geladen wird kannst du diese Aktion rückgängig machen.
 5. Wähle ein existierendes Album oder gib einen neuen Albumnamen ein
 6. Klicke auf *Hinzufügen*
 
-![Screenshot](img/people-context-menu-new.png)
+![Screenshot](img/people-context-menu-new.png){ class="shadow" }
 
 ## Suche ##
 Du kannst Bilder von bestimmten Personen mit Hilfe der folgenden Suchanfragen finden
@@ -172,7 +172,7 @@ Suchfilter können auch kombiniert werden.
 
 `person:"John Doe&Jane Doe" faces:3` findet alle Bilder auf denen John und Jane Doe und mindestens eine weitere Person abgebildet sind.
 
-![Screenshot](img/people-search.png)
+![Screenshot](img/people-search.png){ class="shadow" }
 
 ## Performance Tipps ##
 

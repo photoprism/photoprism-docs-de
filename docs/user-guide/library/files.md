@@ -4,7 +4,7 @@ Im Bereich *Originale* werden alle Dateien deines *Originals* Verzeichnis angeze
 
 Klicken auf eine Datei öffnet den Bearbeitungs-Dialog. 
 
-![Screenshot](img/files.png)
+![Screenshot](img/files.png){ class="shadow" }
 
 Über das Kontext-Menü können folgenden Aktionen ausgeführt werden:
 

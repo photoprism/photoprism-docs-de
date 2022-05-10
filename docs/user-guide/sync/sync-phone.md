@@ -17,33 +17,33 @@ Wir empfehlen die, für iOS und Android verfügbare, App [PhotoSync](https://lin
 2. Klicke *Konfigurieren*
 3. Wähle PhotoPrism als Übertragungsziel
 
-      ![Screenshot](img/photosync-1.png){: style="width:35%"}
-      ![Screenshot](img/photosync-2.png){: style="width:35%"}
+      ![Screenshot](img/photosync-1.png){: style="width:35%" class="shadow"}
+      ![Screenshot](img/photosync-2.png){: style="width:35%" class="shadow"}
    
 4. Trage deine PhotoPrism Konfiguration ein
 
-      ![Screenshot](img/photosync-3.png){: style="width:35%"}
+      ![Screenshot](img/photosync-3.png){: style="width:35%" class="shadow"}
 
 5. Klicke *Fertig*
 6. Du kannst die Übertragungsdetails deinen Wünschen anpassen
    
-      ![Screenshot](img/photosync-4.png){: style="width:35%"}
-      ![Screenshot](img/photosync-5.png){: style="width:35%"}
+      ![Screenshot](img/photosync-4.png){: style="width:35%" class="shadow"}
+      ![Screenshot](img/photosync-5.png){: style="width:35%" class="shadow"}
    
 ### Automatische Synchronisation einrichten ###
 1. Öffne PhotoSync und klicke :material-cog-outline:
 2. Klicke *Autotransfer*
 
-      ![Screenshot](img/photosync-1.png){: style="width:35%"}
+      ![Screenshot](img/photosync-1.png){: style="width:35%" class="shadow"}
 
 3. Klicke *Neuer Auslöser* und wähle mindestens einen Auslöser
    
-      ![Screenshot](img/photosync-6.png){: style="width:35%"}
+      ![Screenshot](img/photosync-6.png){: style="width:35%" class="shadow"}
    
 4. Wähle PhotoPrism als Übertragungsziel
 5. Klicke *Fertig*
 
-      ![Screenshot](img/photosync-7.png){: style="width:35%"}
+      ![Screenshot](img/photosync-7.png){: style="width:35%" class="shadow"}
 
 PhotoPrism startet den Import- bzw. Indexiervorgang automatisch, nachdem neue Dateien mit PhotoSync übertragen wurden.
 

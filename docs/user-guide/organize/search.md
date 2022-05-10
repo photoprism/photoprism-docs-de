@@ -12,7 +12,7 @@ Du kannst nach unerschiedlichsten Kriterien suchen:
 
 Probier es einfach aus!
 
-   ![Screenshot](img/fulltext-search-1.png)
+   ![Screenshot](img/fulltext-search-1.png){ class="shadow" }
 
 ## Suchfilter ##
 Folgende Filter können auf der Filterleiste gesetzt werden:
@@ -21,7 +21,7 @@ Folgende Filter können auf der Filterleiste gesetzt werden:
 
 Sind mehrere Filter gesetzt, werden nur Bilder von der Suche berücksichtigt, die allen Filterkriterien entsprechen.
 
- ![Screenshot](img/filter-bar-new.png)
+ ![Screenshot](img/filter-bar-new.png){ class="shadow" }
 
 Filter können auch im Suchfeld angegeben werden:
 
@@ -29,7 +29,7 @@ Filter können auch im Suchfeld angegeben werden:
 
 Die komplette Liste der Filter findest du weiter [unten](#suchfilter-ubersicht).
 
-   ![Screenshot](img/search-filters.png)
+   ![Screenshot](img/search-filters.png){ class="shadow" }
 
 ### UND Suche ###
 Du kannst verschiedene Filter kombinieren:

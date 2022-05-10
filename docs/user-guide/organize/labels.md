@@ -9,14 +9,14 @@ Hervorgehobene *Kategorien* werden in der Ansicht ganz oben angezeigt.
 
 Um ausschließlich *Kategorien* mit einer hohen Priorität angezeigt zu bekommen, klicke auf :material-eye:.
 
-![Screenshot](img/labels-1.png)
+![Screenshot](img/labels-1.png){ class="shadow" }
 
 ### Bilder einer bestimmten Kategorie anzeigen ###
 
 1. Gehe zu *Kategorien*
 2. Klicke auf eine *Kategorie*
-    ![Screenshot](img/labels-2.png)
-    ![Screenshot](img/labels-3.png)
+    ![Screenshot](img/labels-2.png){ class="shadow" }
+    ![Screenshot](img/labels-3.png){ class="shadow" }
 
 !!! info ""
     Alternativ kannst du auch das Suchfeld verwenden. Um beispielsweise nach der *Kategorie* "Hund" zu suchen, verwende den Suchbegriff `label:dog`.
@@ -28,7 +28,7 @@ Um ausschließlich *Kategorien* mit einer hohen Priorität angezeigt zu bekommen
 4. Gib den Kategorienamen ein
 5. Klicke auf :material-plus: in der rechten Spalte
 
-    ![Screenshot](img/add-label.png)
+    ![Screenshot](img/add-label.png){ class="shadow" }
     
 ### Kategorien von Bilder/Videos entfernen/löschen ###
 
@@ -38,12 +38,12 @@ Automatisch zugewiesene *Kategorien* können entfernt werden. Manuell hinzugefü
 2. Gehe zum Tab *Kategorien*
 3. Klicke auf :material-minus: oder :material-delete: um die Kategorie zu entfernen oder zu löschen
 
-    ![Screenshot](img/remove-label-1.png)
+    ![Screenshot](img/remove-label-1.png){ class="shadow" }
     
 !!! info ""
     Entfernte *Kategorien* bekommen die Wahrscheinlichkeit 0% zugewiesen. Sie können jederzeit durch klicken auf :material-plus: wieder aktiviert werden.
     
-   ![Screenshot](img/remove-label-2.png)
+   ![Screenshot](img/remove-label-2.png){ class="shadow" }
 
 !!! info ""
     In den [Einstellungen](../settings/general.md) kann der Bereich *Kategorien* ausgeblendet werden.
@@ -52,19 +52,19 @@ Automatisch zugewiesene *Kategorien* können entfernt werden. Manuell hinzugefü
 
 1. Öffne den [*Bearbeitungs-Dialog*](edit.md) eines beliebigen Bildes, das mit der *Kategorie* versehen ist, die umbenannt werden soll
 
-    ![Screenshot](img/edit-label-1.png)
+    ![Screenshot](img/edit-label-1.png){ class="shadow" }
 
 2. Gehe zum Tab *Kategorien*
 3. Klicke auf den Namen der *Kategorie*, die geändert werden soll
 4. Ändere den Namen und drücke *Enter*
 
-    ![Screenshot](img/edit-label-2.png)
+    ![Screenshot](img/edit-label-2.png){ class="shadow" }
     
-    ![Screenshot](img/edit-label-3.png)
+    ![Screenshot](img/edit-label-3.png){ class="shadow" }
 
 5. Nach der nächsten [*Indexierung*](../library/indexing.md) werden deine Änderungen für alle Bilder übernommen
 
-    ![Screenshot](img/edit-label-4.png)
+    ![Screenshot](img/edit-label-4.png){ class="shadow" }
 
 !!! attention ""
     Beachte, dass diese Änderung alle Bilder betrifft, die mit dieser *Kategorie* verknüpft sind.

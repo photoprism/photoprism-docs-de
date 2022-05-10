@@ -16,14 +16,14 @@ Die Qualität wird anhand der folgenden Kriterien bestimmt:
      1. Öffne den [*Bearbeitungs-Dialog*](edit.md) des Bildes
      2. Klicke auf *Übernehmen*
 
-     ![Screenshot](img/review.png)
+     ![Screenshot](img/review.png){ class="shadow" }
 
 === " In der Karteikarten Ansicht"
      1. Gehe zu *Überprüfen*     
      2. Öffne die *Karteikarten Ansicht*
      3. Klicke auf *Übernehmen*
 
-        ![Screenshot](img/review-2.png)
+        ![Screenshot](img/review-2.png){ class="shadow" }
 
 === "Über das Kontext-Menü"
     1. Gehe zu *Überprüfen*

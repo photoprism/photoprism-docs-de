@@ -8,7 +8,7 @@ Archivierte Dateien werden nicht gelöscht, sie werden allerdings ausschließlic
 2. Öffne das Kontext-Menü
 3. Klicke :material-archive-arrow-down:
 
-    ![Screenshot](img/archive.png)
+    ![Screenshot](img/archive.png){ class="shadow" }
     
     <!--![Screenshot](img/confirm-archive.png)-->
 
@@ -20,5 +20,5 @@ Archivierte Dateien werden nicht gelöscht, sie werden allerdings ausschließlic
 3. Öffne das Kontext-Menü
 4. Klicke :material-archive-arrow-up:
 
-    ![Screenshot](img/restore.png)
+    ![Screenshot](img/restore.png){ class="shadow" }
 

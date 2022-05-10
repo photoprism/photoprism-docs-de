@@ -61,40 +61,40 @@ http://admin@localhost:2342/originals/
      2. Klicke mit der rechten Maustaste auf **Mein PC**
      3. Wähle **Netzwerklaufwerk hinzufügen...**
 
-		![Screenshot](img/webdav-1.png)
+		![Screenshot](img/webdav-1.png){ class="shadow" }
 
      4. Wähle den Laufwerksbuchstaben sowie das Verzeichnis, das mit WebDAV verknüpft werden soll
      5. Wähle die Optionen **Verbindung bei Anmeldung wiederherstellen** und **Verbindung mit anderen Anmeldeinformationen herstellen** aus
      6. Öffne folgenden Link: **Verbindung mit einer Webseite herstellen, auf der Sie Dokumente und Bilder speichern können**
     
-		![Screenshot](img/webdav-2.png) 
+		![Screenshot](img/webdav-2.png){ class="shadow" } 
 		
 	 7. Klicke  **Weiter**
 
-		![Screenshot](img/webdav-3.png)
+		![Screenshot](img/webdav-3.png){ class="shadow" }
 
      8. Klicke **Eine benutzerdefinierte Netzwerkadresse auswählen** und dann auf **Weiter**
      
-		![Screenshot](img/webdav-4.png)	
+		![Screenshot](img/webdav-4.png){ class="shadow" }	
 	
 	 9. Trage die URL, wie oben beschrieben, in das Feld **Internet oder Netzwerkadresse** ein und klicke **Weiter**
 
-		![Screenshot](img/webdav-5.png)
+		![Screenshot](img/webdav-5.png){ class="shadow" }
 
      10. Gib deinen Nutzernamen und dein Passwort ein und klicke **OK**
 		
-		![Screenshot](img/webdav-6.png)
+		![Screenshot](img/webdav-6.png){ class="shadow" }
 
 	11. Gib einen Namen für die Netzwerkverbindung ein und klicke **Weiter**
 
-		![Screenshot](img/webdav-7.png)
+		![Screenshot](img/webdav-7.png){ class="shadow" }
 
 	10. Klicke **Fertig stellen**
 
-		![Screenshot](img/webdav-8.png)
+		![Screenshot](img/webdav-8.png){ class="shadow" }
 
 	Der *Originals* Ordner ist nun als Netzwerklaufwerk im Windows Explorer eingebunden und du kannst direkt Dateien oder Verzeichnisse hinzufügen, bearbeiten oder löschen.
 	
-	![Screenshot](img/webdav-9.png)
+	![Screenshot](img/webdav-9.png){ class="shadow" }
 	
 	Wenn du Probleme bei der Verbindung mit WebDav hast, musst du eventuell das Basic-Authentication Level in der Registry [aktualisieren](https://help.dreamhost.com/hc/en-us/articles/216473357-Accessing-WebDAV-with-Windows).

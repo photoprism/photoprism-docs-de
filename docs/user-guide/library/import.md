@@ -10,7 +10,7 @@
 
 5. Klicke *Import*
 
-![Screenshot](img/import.png)
+![Screenshot](img/import.png){ class="shadow" }
 
 !!! tip ""
     Zum Hinzufügen von Dateien zum *Import* Ordner kann [WebDAV](webdav.md) verwendet werden.

@@ -2,7 +2,7 @@
 Im Bereich *Ordner* werden automatisch die Unterordner deines *Originals* Verzeichnis angezeigt.
 Falls neue Dateien hinzugefügt werden, aktualisiert PhotoPrism die Ansicht automatisch.
 
-![Screenshot](img/folders-1.png)
+![Screenshot](img/folders-1.png){ class="shadow" }
 
 Das Kontext-Menü bietet die folgenden Aktionen:
 

@@ -15,7 +15,7 @@
 4. Klicke *Start*, um mit der Indexierung zu beginnen
 
 
-![Screenshot](img/index.png)
+![Screenshot](img/index.png){ class="shadow" }
 
 
 !!! tip ""
