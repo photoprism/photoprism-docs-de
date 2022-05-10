@@ -14,7 +14,7 @@ PhotoPrism nach `originals` verschoben oder kopiert.
 Dieser Pfad wird mit `PHOTOPRISM_STORAGE_PATH` gesetzt.
 
 Die Ordner: `cache`, `sidecar` und `config` befinden sich innerhalb des `storage` Ordners, falls nicht anders definiert.
-Zusätzlich werden [Album Backups](./backups.md#album-backups) und Datenbank-Dateien in `storage` gespeichert
+Zusätzlich werden [Album Backups](../export#album-backups) und Datenbank-Dateien in `storage` gespeichert
 
 !!! attention ""
     Der `storage` Ordner darf sich nicht innerhalb von `originals` befinden, da sonst auch Thumbnails indexiert werden.
@@ -33,7 +33,7 @@ PhotoPrism erstellt für jedes Bild Thumbnails in unterschiedlichen Größen. Di
 Mehr Informatione zu Thumbnails findest du [hier](../settings/advanced.md#images).
 
 ### Sidecar
-Das `sidecar` Verzeichnis enthält [YAML Backups](./backups.md) für jedes Bild, sowie JPEGs, die von PhotoPrism durch Konvertierung erstellt wurden.
+Das `sidecar` Verzeichnis enthält [YAML Backups](../export#bild-backups) für jedes Bild, sowie JPEGs, die von PhotoPrism durch Konvertierung erstellt wurden.
 Backups und RAW Kovertierung können in den [Einstellungen](../settings/advanced.md) deaktiviert werden.
 Dieser Pfad wird mit `PHOTOPRISM_SIDECAR_PATH` gesetzt.
 
@@ -42,7 +42,7 @@ Im `config` Ordner können Dateien mit Einstellungs-Details gespeichert sein.
 Dieser Pfad wird mit `PHOTOPRISM_CONFIG_PATH` gesetzt.
 
 ## Backup
-[Datenbank Backup Dateien](./backups.md#backup-command) werden in `backup` gespeichert.
+[Datenbank Backup Dateien](https://docs.photoprism.app/getting-started/advanced/backups/) werden in `backup` gespeichert.
 Dieser Pfad wird mit `PHOTOPRISM_BACKUP_PATH` gesetzt.
 
 ## Temp
