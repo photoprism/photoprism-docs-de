@@ -30,10 +30,16 @@ To make more extensive changes, fork this repository, modify the corresponding `
 
 #### Installing MkDocs ####
 
-Run this command the first time you work with this repository on your computer so that the dependencies are installed:
+When using a Debian, Ubuntu, or Mint Linux, run this command the first time you work with this repository on your computer so that the dependencies are installed:
 
 ```
 make deps
+```
+
+Otherwise, install Python 3 and Pip manually and run the following command:
+
+```
+make install
 ```
 
 #### Fixing Permissions ####
