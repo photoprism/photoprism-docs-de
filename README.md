@@ -94,7 +94,7 @@ After submitting your first pull request, you will automatically be asked to [ac
 
 *PhotoPrism® is a [registered trademark](https://photoprism.app/trademark). Docs are available under the [CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/); additional terms may apply. By using our software, you agree to our [terms of service](https://photoprism.app/terms).*
 
-[docs]: https://docs.photoprism.app/
+[docs]: https://docs-de.photoprism.app/
 [chat]: https://link.photoprism.app/chat
 [ask]: https://link.photoprism.app/discussions
 [twitter]: https://link.photoprism.app/twitter
