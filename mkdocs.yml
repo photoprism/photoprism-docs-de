@@ -1,6 +1,6 @@
 # Main navigation.
 nav:
-  - Einleitung: index.md
+  - Funktionen: index.md
   - Erste Schritte: user-guide/index.md
   # - Setting up: user-guide/setup.md
   - Dateien:
