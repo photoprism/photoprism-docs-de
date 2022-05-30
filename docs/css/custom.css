@@ -12,25 +12,92 @@
     --md-admonition-icon--verified: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M17.3 45 13.5 38.5 5.95 36.95 6.8 29.6 2 24 6.8 18.45 5.95 11.1 13.5 9.55 17.3 3 24 6.1 30.7 3 34.55 9.55 42.05 11.1 41.2 18.45 46 24 41.2 29.6 42.05 36.95 34.55 38.5 30.7 45 24 41.9ZM24 24ZM21.85 30.65 33.2 19.4 30.95 17.35 21.85 26.35 17.1 21.4 14.8 23.65ZM18.65 41.05 24 38.8 29.5 41.05 32.85 36.05 38.7 34.55 38.1 28.6 42.15 24 38.1 19.3 38.7 13.35 32.85 11.95 29.4 6.95 24 9.2 18.5 6.95 15.15 11.95 9.3 13.35 9.9 19.3 5.85 24 9.9 28.6 9.3 34.65 15.15 36.05Z"/></svg>')
 }
 
-a.action-button {
-    border-radius: 5px;
-    background-color: #4d5966;
-    text-transform: uppercase;
+/* General Button Styles */
+
+button {
+    user-select: none;
     text-decoration: none;
-    font-size: 0.6rem;
-    color: white;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 500;
-    padding: 6px 20px;
-    margin: 0 0 3px 0;
 }
 
-a.action-button:hover {
-    text-decoration: none;
+a.btn,
+a.btn-small,
+a.btn-large,
+a.action-button {
+    text-decoration: none !important;
+}
+
+/* Action Button Styles */
+
+div.action-buttons {
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+}
+
+.action-button {
+    background-color: #54437c;
+    color: #ffffff;
+    font-size: 12px;
     font-weight: 500;
-    background-color: #fa0;
-    color: #000000;
+    line-height: 18px;
+    margin: 2px 0;
+    padding: 8px 26px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+}
+
+p .action-button {
+    color: #ffffff!important;
+}
+
+.action-button.bold {
+    font-weight: bold !important;
+}
+
+.center-align.action-buttons {
+    text-align: center;
+    user-select: none;
+}
+
+p.action-buttons {
+    padding-bottom: 1em;
+}
+
+p.center-align.action-buttons {
+    padding: 20px 5px 25px;
+}
+
+p.action-buttons .action-button,
+.md-content article .action-button,
+.center-align.action-buttons .action-button {
+    background-color: #54437c;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+p.center-align.action-buttons .action-button {
+    min-width: 138px;
+}
+
+p.action-buttons .action-button:hover,
+.center-align.action-buttons .action-button:hover,
+.action-button.prominent:hover,
+.action-button:hover {
+    background-color: #fa0!important;
+    color: #000000!important;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 601px) {
+    .center-align.action-buttons .action-button {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
 
 .footer-info {
