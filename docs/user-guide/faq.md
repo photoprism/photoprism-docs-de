@@ -3,47 +3,39 @@
 ## Allgemein ##
 
 ??? question "Wann genau werden neuen Funktionen veröffentlicht?"
+    Unsere [Roadmap](https://link.photoprism.app/roadmap) zeigt, welche Aufgaben in Arbeit sind und welche Funktionen als nächstes implementiert werden. 
+    Du kannst Ideen, die dir gefallen, mit einem Daumen hoch bewerten, damit wir wissen, was am beliebtesten ist.
+
     Wir haben eine Zero Bug Policy und geben unser Bestes, Nuztern zu helfen, wenn sie Fragen haben.
-    Auch das Schreiben und Aktualisieren der Dokumentation, die du gerade liest, nimmt Zeit in Anspruch.
+    Aus diesem Grund können wir keine exakten Veröffentlichungstermine für neue Funktionen geben. 
+    
+    Unser Team erhält viel mehr Anfragen als umgesetzt werden können. Wir möchten daher betonen, dass wir in keiner Weise verpflichtet sind, die von dir angeforderten Funktionen, Verbesserungen oder sonstigen Änderungen umzusetzen. 
+    Wir freuen uns jedoch über dein Feedback und werden alle Anfragen sorgfältig prüfen.
 
-    Aus diesen Gründen können wir keine exakten Deadlines für neue Funktionen geben. Hinzu kommt, dass
-    umfangreiche Funktionen, wie z.B. die Mehrbenutzer-Unterstützung nicht in nur einem Update released werden können.
-    Die Arbeit an solchen Funktionen ist ein kontinuierlicher Prozess und es kann Monate oder Jahre dauern, bis alle Anwendungsfälle abgedeckt sind.
+    **Da eine nachhaltige Finanzierung der Schlüssel zur schnellen Veröffentlichung neuer Funktionen ist, ermutigen wir alle Nutzer, unsere Mission zu unterstützen, indem sie [sich als Sponsor anmelden](https://photoprism.app/membership) oder eine kommerzielle Lizenz erwerben. Letztendlich ist das das Beste für das Produkt und die Community.**
 
-    Davon abgesehen, haben Spenden den größten Einfluss auf die Entwicklungsgeschwindigkeit. 
-    Als Nutzer kannst du deinen Teil beitragen, indem du [Sponsor wirst](https://docs.photoprism.app/funding/).
+??? question "Welche Zusatzleistungen bekommen Sponsoren?"
+    Unsere Sponsoren kommen zusätzlich in den Genuss aller Funktionen, die mit einem [sponsor-feature](https://github.com/photoprism/photoprism/issues?q=label%3Asponsor-feature) Label versehen sind oder in der Dokumentation als [sponsors only](https://docs.photoprism.app/getting-started/config-options/) gekennzeichnet sind, einschließlich [Interaktiver Weltkarten](https://demo.photoprism.app/places). 
+    Besuche [photoprism.app/membership](https://photoprism.app/membership) um mehr zu erfahren.
 
-??? question "Gibt es Pläne Premium-Funktionen einzuführen?"
-    PhotoPrism ist zu 100% selbstfinanziert und unabhängig. Wir planen nicht essentielle Premium Funktionen und Dienstleistungen anzubieten, da freiwillige Spenden momentan nicht einmal unsere Basiskosten decken.
-    Eine nachhaltige Finanzierung ist im besten Interesse aller Nutzer.
-
-    Sofern dein Plan keinen zusätzlichen Cloud-Speicher enthält, kannst du jeder Zeit ein Up- oder Downgrade durchführen, ohne Daten zu verlieren.
-    Für diejenigen, die keine Abos mögen, wird es vergünstigte Mehrjahres-Bezahloptionen geben.
-    Um Einkommensunterschieden entgegen zu wirken, können Preise je nach Region variieren.
-    Sobald wir mehr Details haben, werden wir sie öffentlich bekannt geben.
-
-    Bis dahin hast du die Möglichkeit uns einmalig auf [Github Sponsors](https://link.photoprism.app/donate) zu unterstützen, falls du keinen Support nach der Installation benötigst
-    und keine Updates mit zusätzlichen Funktionen für mehr als 12 Monate erwartest.
-
-    Wir ermutigen jeden, der es sich leisten kann, [Sponsor zu werden](https://docs.photoprism.app/funding/). Dies ist langfristig das Beste für
-    das Produkt und die Community. 
-    Denke bei "freie Software" an "Freiheit", nicht an "Freibier".
-
+??? question "Sollte freie Software nicht kostenlos sein?"
+    Denke an "freie Software" wie an "freie Rede", nicht wie an "Freibier". Die [Free Software Foundation](https://www.gnu.org/philosophy/free-sw.en.html) nennt es manchmal "libre software", in Anlehnung an das französische oder spanische Wort für "frei", um zu zeigen, dass sie nicht meint, dass die Software kostenlos ist.
 
 ??? question "Warum kann ich nicht einfach eine einzelne Version kaufen und herunterladen?"
-    Es wäre unverantwortlich, einzelne Versionen zum einmaligen Kauf ohne laufende Updates anzubieten.
     Anders als herkömmliche Offline-Anwendungen wie Microsoft Office muss Software, die mit dem Internet verbunden ist,
-    regelmäßig aktualisiert werden, um sicher und mit den neuesten Standards kompatibel zu bleiben.
+    [regelmäßig aktualisiert](https://docs.photoprism.app/release-notes/) werden, um sicher und mit den neuesten Standards kompatibel zu bleiben.
 
     Updates sind auch deshalb wichtig, weil praktisch alle Dateiformat-Parser Schwachstellen haben, die nur noch nicht entdeckt wurden. 
     Dies ist ein bekanntes Risiko, das dich auch betreffen kann, wenn dein Computer nicht direkt mit dem Internet verbunden ist.
 
     Es ist essentiell, dass du Betriebssystem, Webbrowser und alle anderen Programme auf dem neuesten Stand hälst. 
-    Fordere dein Glück nicht heraus und erwarte nicht, dass Entwickler Zeit darauf verwenden, einzelne Updates für alte Versionen bereitzustellen, die nichts außer kritischen Sicherheitsaktualisierungen enthalten.
+    In der Vergangenheit haben selbst große Technologieunternehmen ihre alten Produkte bis auf wenige Ausnahmen nicht über einen längeren Zeitraum hinweg unterstützt. 
+    Windows XP zum Beispiel wurde 400 Millionen Mal verkauft, weshalb Microsoft so lange Zeit Updates anbieten konnte.
 
 ??? question "Wird die selbst gehostete Version weiterhin unterstützt, wenn eine gehostete Version verfügbar ist?"
 
-    Auf jeden Fall! Selbst zu hosten ist der einfachste Weg, um die Kontrolle zu behalten und deine [Privatsphäre](https://photoprism.app/privacy) zu schützen (ein wichtiger Teil unserer Mission). Es bietet auch die beste Erfahrung für fortgeschrittene Nutzer, die oft auf eine lokale Toolchain angewiesen sind, um ihre Bilder auszuwählen, zu bearbeiten und zu veröffentlichen.    
+    Auf jeden Fall! Wir haben es uns zur Aufgabe gemacht, deine Freiheit und deine Privatsphäre zu schützen.
+    Selbst zu hosten ist der einfachste Weg, um die Kontrolle zu behalten und deine [Privatsphäre](https://photoprism.app/privacy) zu schützen. Es bietet auch die beste Erfahrung für fortgeschrittene Nutzer, die oft auf eine lokale Toolchain angewiesen sind, um ihre Bilder auszuwählen, zu bearbeiten und zu veröffentlichen.    
     
     Da es eine große Nachfrage und viele praktische Anwendungen für eine gehostete Version gibt, wollen wir diese zusätzlich anbieten, damit unsere Nutzer mehr Auswahl haben. Ausgewählte Hosting-Partner werden sicherstellen, dass die Privatsphäre unserer Nutzer so weit wie technisch möglich geschützt wird, auch in der Cloud.    
 
