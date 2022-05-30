@@ -22,7 +22,11 @@ Du kannst PhotoPrism zu Hause, auf einem privaten Server oder in der Cloud insta
 * Übertrage mit :material-sync: [PhotoSync](https://link.photoprism.app/photosync) deine Bilder von Apple iOS- und Android-Geräten
 * WebDAV-Clients wie Microsofts Windows Explorer und Apples Finder können eine direkte [Verbindung](https://docs.photoprism.app/user-guide/sync/webdav/) zu PhotoPrism herstellen, so dass du Dateien auf deinem Computer öffnen, bearbeiten und löschen kannst, als wären sie lokal gespeichert
 
-<p style="text-align: center; padding: 20px 4px;">
+### 100% Privatsphäre :lock:
+Da PhotoPrism sich zu [**100 % selbst finanziert und unabhängig**](https://photoprism.app/membership) ist, können wir versprechen, dass wir [**niemals deine Daten verkaufen werden**](https://photoprism.app/privacy) und dass wir unsere Software und Dienste [**stets transparent**](https://photoprism.app/terms) gestalten. 
+Deine Daten werden auch niemals an Google, Amazon, Facebook oder Apple weitergegeben, es sei denn, du lädst absichtlich Dateien auf einen dieser Dienste hoch.
+
+<p class="center-align action-buttons">
   <a class="action-button" href="https://demo-de.photoprism.app/" target="_blank">Demo testen</a>
   <a class="action-button" href="https://docs.photoprism.app/getting-started/" target="_blank">🇬🇧  Setup</a>
   <a class="action-button" href="user-guide/">Erste Schritte</a>
