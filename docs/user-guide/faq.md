@@ -32,7 +32,7 @@
     In der Vergangenheit haben selbst große Technologieunternehmen ihre alten Produkte bis auf wenige Ausnahmen nicht über einen längeren Zeitraum hinweg unterstützt. 
     Windows XP zum Beispiel wurde 400 Millionen Mal verkauft, weshalb Microsoft so lange Zeit Updates anbieten konnte.
 
-??? question "Wird die selbst gehostete Version weiterhin unterstützt, wenn eine gehostete Version verfügbar ist?"
+??? question "Wird die selbst gehostete Version weiterhin unterstützt?"
 
     Auf jeden Fall! Wir haben es uns zur Aufgabe gemacht, deine Freiheit und deine Privatsphäre zu schützen.
     Selbst zu hosten ist der einfachste Weg, um die Kontrolle zu behalten und deine [Privatsphäre](https://photoprism.app/privacy) zu schützen. Es bietet auch die beste Erfahrung für fortgeschrittene Nutzer, die oft auf eine lokale Toolchain angewiesen sind, um ihre Bilder auszuwählen, zu bearbeiten und zu veröffentlichen.    
@@ -41,6 +41,11 @@
 
     Ebenso haben Unternehmen Bedarf an einem kommerziellen Angebot mit Funktionen und Support-Optionen, die sich an professionelle Nutzer richten. Sie sind bereit, für den Mehrwert zu zahlen, den sie erhalten, was uns hilft, die Entwicklung zu finanzieren und unser Team zu erweitern.
 
+??? question "Was sind die Vorteile des Kaufs einer kommerziellen Lizenz?"
+    
+    Ein wesentlicher Unterschied zwischen der Open Source- und der kommerziellen Lizenz besteht darin, dass du Zugang zu zusätzlichen Support- und Konfigurationsoptionen sowie das Recht erhälst, die Funktionalität an deine Bedürfnisse anzupassen, ohne dass du deine Änderungen veröffentlichen musst. 
+
+    Wir arbeiten außerdem daran, die Standardkonfiguration, den Funktionsumfang und die Skalierbarkeit der Pro Edition zu optimieren, um die Anforderungen professioneller Anwender und Unternehmen zu erfüllen.
 ## Benutzer-Oberfläche ##
 
 ??? question "Kann ich meine Bilder und Alben in Baumstrukturen organisieren?" 
