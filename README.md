@@ -7,7 +7,7 @@ PhotoPrism: User Guide (German)
 [![GitHub Discussions](https://img.shields.io/badge/ask-%20on%20github-4d6a91.svg)][ask]
 [![Twitter](https://img.shields.io/badge/follow-@photoprism_app-00acee.svg)][twitter]
 
-**The German version of the User Guide is available at [docs-de.photoprism.app](https://docs-de.photoprism.app/). We appreciate help with improving the translation and keeping it up to date!**
+**The German version of the [User Guide](https://docs.photoprism.app/) is published at [docs-de.photoprism.app](https://docs-de.photoprism.app/). We appreciate your help with improving the translation and keeping it up to date!**
 
 These source files are written in [human-friendly Markdown](https://squidfunk.github.io/mkdocs-material/reference/). They are meant to be parsed with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) to generate the final HTML pages.
 
