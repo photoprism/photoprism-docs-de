@@ -2,8 +2,8 @@
 Um Bilder und Videos von deinem Handy mit PhotoPrism zu synchronisieren, kannst du jede App, die Datei-Synchronisation mit WebDAV unterstützt, verwenden.
 
 !!! info ""
-    WebDAV kann in den [Erweiterten Einstellungen](../settings/advanced.md) deaktiviert werden. 
-    Wenn du PhotoPrism im [public-Modus](https://docs.photoprism.app/getting-started/config-options/) ohne Authentifizierung betreibst, ist WebDAV aus Sicherheitsgründen automatisch deaktiviert.
+    WebDAV kann in den [Erweiterten Einstellungen](../settings/advanced.md) deaktiviert werden.
+    Da der WebDAV-Server Schreibrechte und Authentifizierung erfordert, wird er automatisch deaktiviert, wenn du PhotoPrism im [public](https://docs.photoprism.app/getting-started/config-options/#authentication) und/oder [schreibgeschützten Modus](https://docs.photoprism.app/getting-started/config-options/#feature-flags) betreibst.
 
 ## PhotoSync ##
 Wir empfehlen die, für iOS und Android verfügbare, App [PhotoSync](https://link.photoprism.app/photosync).

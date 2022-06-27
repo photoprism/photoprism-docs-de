@@ -8,7 +8,7 @@ Nachdem Dateien über WebDAV hochgeladen wurden, beginnt die Indexierung beziehu
 
 !!! info ""
     WebDAV kann in den [Erweiterten Einstellungen](../settings/advanced.md) deaktiviert werden.
-    Wenn du PhotoPrism im [public-Modus](https://docs.photoprism.app/getting-started/config-options/) ohne Authentifizierung betreibst, ist WebDAV aus Sicherheitsgründen automatisch deaktiviert.
+    Da der WebDAV-Server Schreibrechte und Authentifizierung erfordert, wird er automatisch deaktiviert, wenn du PhotoPrism im [public](https://docs.photoprism.app/getting-started/config-options/#authentication) und/oder [schreibgeschützten Modus](https://docs.photoprism.app/getting-started/config-options/#feature-flags) betreibst.
 
 !!! tip "" 
     WebDAV kann auch verwendet werden, um Bilder vom Server herunterzuladen. 
