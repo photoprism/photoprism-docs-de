@@ -1,9 +1,6 @@
 ### Videos ###
 Im Bereich *Videos* findest du alle Videos deiner Sammlung. Um ein Video abzuspielen, klicke auf :material-play:.
 
-Videos mit dem MPEG-4 AVC Format können von den meisten modernen Browsern abgespielt werden.
-Andere Formate werden im Hintergrund automatisch mit [Ffmpeg](https://www.ffmpeg.org/documentation.html) transkodiert, damit sie ohne Probleme abgespielt werden können.
-
 Beachte, dass nicht alle [Video- und Audioformate](https://caniuse.com/?search=video%20format) von jedem [Browser abgespielt](https://docs.photoprism.app/getting-started/troubleshooting/browsers/) werden können. 
 So wird beispielsweise [AAC](https://caniuse.com/aac) - der Standard-Audiocodec für [MPEG-4 AVC / H.264](https://caniuse.com/mpeg4) - in Chrome, Safari und Edge nativ unterstützt, 
 während er in Firefox und Opera nur optional vom Betriebssystem unterstützt wird.
@@ -20,7 +17,16 @@ Um nach Live-Fotos zu filtern, nutze den Filter `type:live`. Um ein Live-Foto ab
 
 ### Transkodierung ###
 
-Videos, die nicht das AVC Format haben, werden bei Bedarf transkodiert.
+PhotoPrism kann [ffmpeg](https://www.ffmpeg.org/documentation.html) verwenden, um gängige Videoformate in MPEG-4 AVC zu transkodieren.
+
+Videos im MPEG-4 AVC-Format können von praktisch allen modernen Browsern nativ abgespielt werden.
+
+OGV-, VP8-, VP9-, AV1-, WebM- und HEVC-Videos werden direkt gestreamt, sofern sie von Ihrem Browser unterstützt werden und die konfigurierte 
+[Bitratengrenze](https://docs.photoprism.app/getting-started/config-options/#file-converters) nicht überschreiten. 
+Andernfalls werden diese Formate ebenfalls transcodiert.
+
+
+Falls notwendig, werden Videos bei der Abfrage transkodiert.
 Bei sehr langen Videos kann das zu längeren Ladezeiten führen, wenn das Video zum ersten Mal abgespielt wird.
 
 Du kannst den Befehl
