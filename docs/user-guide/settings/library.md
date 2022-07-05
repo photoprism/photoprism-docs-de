@@ -24,6 +24,9 @@ Du kannst folgende Optionen nutzen, um Bilder zu gruppieren:
 * :material-clock-outline: Gleicher Ort und Zeit
 * :material-fingerprint: Gleiche eindeutige Bild-ID
 
+!!! attention ""
+    Das Ändern der Bildstapel-Einstellungen führt nicht dazu, dass bereits gruppierte Dateien wieder getrennt werden.
+
 
 <!--## Umwandlung von RAW zu JPEG ##
 Viele Fotografen, insbeondere Nutzer einer digitalen SLR, verwenden ein verlustfreies RAW-Format anstelle des verlustbehafteten JPEG-Formats. Es gibt auch [Handies](https://www.fredericpaulussen.be/how-to-raw-photos-huawei-p30-pro/) die RAW-Daten abspeichern können oder das Format HEIC/HEIF nutzen.
