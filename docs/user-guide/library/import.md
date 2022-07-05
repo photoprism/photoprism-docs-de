@@ -28,7 +28,7 @@ Wähle diese Option nur, wenn du die Dateien nicht als Backup oder aus einem and
 
 #### Automatisch Importieren ####
 15 Minuten, nachdem Änderungen über WebDAV am Import Verzeichnis vorgnommen wurden, wird der Importer automatisch gestartet.
-Die Standardeinstllung von 15 Minuten kann über die [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) angepasst werden.
+Die Standardeinstllung von 15 Minuten kann über die [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options#index-workers) angepasst werden.
 
 !!! info "Kann ich mit PhotoPrism Dateien in einer konfigurierbaren Ordnerstruktur sortieren?"
     Du kannst deine Dateien sortieren, wie du möchtest. Falls dir die Ordner- und Namenskonvention unserer Importfunktion nicht gefällt,
