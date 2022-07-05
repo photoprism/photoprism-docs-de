@@ -48,6 +48,10 @@
     Wir arbeiten außerdem daran, die Standardkonfiguration, den Funktionsumfang und die Skalierbarkeit der Pro Edition zu optimieren, um die Anforderungen professioneller Anwender und Unternehmen zu erfüllen.
 ## Benutzer-Oberfläche ##
 
+??? question "Kann ich mehrere Bilder auf einmal auswählen?"
+
+    Ja, du kannst [mehrere Bilder auf einmal auswählen](./navigate.md#auswahlmodus-und-mehrfachauswahl)
+
 ??? question "Kann ich meine Bilder und Alben in Baumstrukturen organisieren?" 
     
     Außerhalb der Bereiche *Dateien > Originale* und *Kategorien* unterstützt PhotoPrism aus folgenden Gründen keine hierarchische Organisation von Dateien:
