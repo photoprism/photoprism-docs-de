@@ -57,4 +57,4 @@ Das kann nach einem Upgrade auf eine neue Hauptversion erforderlich sein.
 
 #### Automatisch Indexieren ####
 15 Minuten, nachdem Änderungen über WebDAV am Originals Verzeichnis vorgnommen wurden, wird der Indexer automatisch gestartet.
-Die Standardeinstellung von 15 Minuten kann über die [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) angepasst werden.
+Die Standardeinstellung von 15 Minuten kann über die [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options#index-workers) angepasst werden.
