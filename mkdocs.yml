@@ -75,6 +75,7 @@ extra_css:
 # External links.
 extra:
   generator: false
+  homepage: https://photoprism.app
   alternate:
     - name: 🇬🇧 English
       link: https://docs.photoprism.app/
@@ -181,13 +182,19 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.snippets:
       check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+      - name: mermaid
+        class: mermaid
+        format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
       clickable_checkbox: true
-  - pymdownx.tilde
-  - attr_list
-  - abbr
   - md_in_html
+  - attr_list
+  - tables
+  - abbr
+  - meta
