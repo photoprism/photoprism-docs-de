@@ -29,5 +29,5 @@ Deine Daten werden auch niemals an Google, Amazon, Facebook oder Apple weitergeg
 <p class="center-align action-buttons">
   <a class="action-button" href="https://demo-de.photoprism.app/" target="_blank">Demo testen</a>
   <a class="action-button" href="https://docs.photoprism.app/getting-started/" target="_blank">🇬🇧  Setup</a>
-  <a class="action-button" href="user-guide/">Erste Schritte</a>
+  <a class="action-button bold" href="user-guide/">Erste Schritte</a>
 </p>
