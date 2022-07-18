@@ -1,5 +1,5 @@
 # Ansichten #
-PhotoPrism bietet drei schöne Ansichten, um deine Bilder und Videos anzuzeigen.
+PhotoPrism bietet dir drei verschiedene Ansichten zum Betrachten deiner Fotos und Videos:
 
 === "Karteikarten Ansicht"
 
