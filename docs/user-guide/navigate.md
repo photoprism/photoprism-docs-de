@@ -1,5 +1,6 @@
-# Navigation
-Unsere Bild- und Videosuche basiert auf den folgenden Komponenten. 
+# Benutzeroberfläche
+
+Die Benutzeroberfläche zum Durchsuchen deiner Bilder basiert auf den folgenden Komponenten.
 
 !!! info ""
     PhotoPrism ist auf alle Bildschirmgrößen angepasst. Unsere Screenshots zeigen die App in einem Desktop-Browser mit mittlerer Auflösung.
