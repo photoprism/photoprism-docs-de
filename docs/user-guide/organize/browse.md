@@ -1,4 +1,4 @@
-# Bereiche #
+# Funktionen und Bereiche #
 Unsere Bild und Video Ansichten bieten die dir Möglichkeit vergessene Bilder wieder zu entdecken, ganz bestimmte Bilder zu finden oder
 deine Bilder zu organisieren.
 

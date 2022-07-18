@@ -1,13 +1,13 @@
-# Suche #
+# Suchfilter benutzen #
 Finde bestimmte Bilder und Videos mithilfe von umfangreichen Suchfiltern.
 
-Du kannst nach unerschiedlichsten Kriterien suchen:
+Mit den leistungsstarken Suchfiltern von PhotoPrism kannst du ganz einfach bestimmte Fotos und Videos finden:
 
-* Personen
-* Auf dem Bild abgebildete Objekte
-* Hauptfarbe eines Bildes
-* Dateiname oder Verzeichnisname
-* Ort der Aufnahme
+* Bilder von bestimmten Personen
+* Bilder von bestimmten Motiven, z.B. Blume oder Katze
+* Bilder mit einer bestimmten Hauptfarbe
+* Bilder mit bestimmten Datei- oder Verzeichnisnamen
+* Bilder von bestimmten Orten 
 * Andere Metadaten wie Kamera, Linse oder Chroma...
 
 Probier es einfach aus!
