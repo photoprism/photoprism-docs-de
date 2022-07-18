@@ -3,14 +3,14 @@ nav:
   - Funktionen: index.md
   - Erste Schritte: user-guide/index.md
   # - Setting up: user-guide/setup.md
-  - Dateien:
+  - Deine Dateien:
       - Einleitung: user-guide/library/import-vs-index.md
       - Originale indexieren: user-guide/library/indexing.md
       - Dateien importieren: user-guide/library/import.md
-      - Metadaten: user-guide/advanced/metadata.md
-      - Duplikate: user-guide/library/duplicates.md
-      - Web Upload: user-guide/library/upload.md
-      - WebDAV Sync: user-guide/library/webdav.md
+      - Doppelte Dateien: user-guide/library/duplicates.md
+      - Bild Metadaten: user-guide/advanced/metadata.md
+      - Web Datei Upload: user-guide/library/upload.md
+      - WebDAV Datei Sync: user-guide/library/webdav.md
       - Datei Browser: user-guide/library/files.md
     #- Import from camera: user-guide.md
     #- Import from Facebook: user-guide.md
@@ -20,12 +20,12 @@ nav:
   # - Sync and Back Up:
   # - WebDAV Sync
   #    - Nextcloud: user-guide/nextcloud.md
-  - Entdecken & Suchen:
-      - Navigation: user-guide/navigate.md
+  - Bilder entdecken:
+      - Benutzeroberfläche: user-guide/navigate.md
+      - Funktionen & Bereiche: user-guide/organize/browse.md
       - Ansichten: user-guide/organize/views.md
-      - Suche & Filter: user-guide/organize/search.md
-      - Bereiche: user-guide/organize/browse.md
-  - Organisation:
+      - Suchfilter verwenden: user-guide/organize/search.md
+  - Bilder organisieren:
       - Alben: user-guide/organize/albums.md
       - Personen: user-guide/organize/people.md
       - Kategorien: user-guide/organize/labels.md
@@ -34,20 +34,20 @@ nav:
       - Privat: user-guide/organize/private.md
       - Überprüfen: user-guide/organize/review.md
       - Bildstapel: user-guide/organize/stacks.md
-      - Bilder bearbeiten: user-guide/organize/edit.md
+      - Metadaten bearbeiten: user-guide/organize/edit.md
       - Bilder herunterladen: user-guide/organize/download.md
       - Videos: user-guide/organize/video.md
-      - Karten: user-guide/organize/places.md
+      - Orte: user-guide/organize/places.md
       - Erlebnisse: user-guide/organize/moments.md
       - Kalender: user-guide/organize/calendar.md
       - Ordner: user-guide/organize/folders.md
       - Panoramas: user-guide/organize/panoramas.md
       - Scans: user-guide/organize/scans.md
-  - Sync & Backup:
-      - Verbindung via WebDAV:  user-guide/sync/webdav.md
-      - Smartphone Backup:  user-guide/sync/sync-phone.md
-  - Teilen:
-      - Album-Link teilen: user-guide/share/share.md
+  - Linkfreigabe:
+      - Alben: user-guide/share/share.md
+  - Fern-Synchronisation:
+      - WebDAV Verbindung:  user-guide/sync/webdav.md
+      - Smartphones:  user-guide/sync/sync-phone.md
   - Einstellungen:
       - Allgemein: user-guide/settings/general.md
       - Dateien: user-guide/settings/library.md
@@ -55,16 +55,16 @@ nav:
       - Sync:  user-guide/settings/sync.md
       - Konto: user-guide/settings/account.md
       #- Places: user-guide/settings/places.md
-  - Migrieren:
+  - Backup Anleitung:
+      - Backups erstellen: user-guide/advanced/backups.md
+      - Backups wiederherstellen: user-guide/advanced/restore.md
+      - Metadaten Export: user-guide/advanced/export.md
+      - Verzeichnis Übersicht: user-guide/advanced/folders.md
+  - Cloud Migration:
       - Google Photos: user-guide/use-cases/google.md
       - Apple Photos: user-guide/use-cases/apple.md
       - Flickr: user-guide/use-cases/flickr.md
       #- Link directories from remote:
-  - Weiteres:
-      - Backups: user-guide/advanced/backups.md
-      - Backups Wiederherstellen: user-guide/advanced/restore.md
-      - Export: user-guide/advanced/export.md
-      - Verzeichnisse: user-guide/advanced/folders.md
   - Mobile App (PWA): user-guide/pwa.md
   - FAQ: user-guide/faq.md
   # - Metadata: user-guide/metadata.md
