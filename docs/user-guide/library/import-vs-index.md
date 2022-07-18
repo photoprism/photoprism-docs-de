@@ -1,24 +1,23 @@
-# Bildersammlung verwalten #
+# Dateien einlesen #
 
-## Soll ich meine Dateien importieren oder indexieren? ##
+Die meisten Benutzer mit einer bestehenden Ordnerstruktur werden ihre Originale direkt [indexieren](./indexing.md) wollen, ohne die optionale Importfunktion zu verwenden, 
+sodass die Datei- und Ordnernamen unverändert bleiben.
 
+Beim [Importieren](./import.md) werden die Dateien zunächst aus einem temporären Ordner in den Originals Ordner  übertragen. 
+Dabei werden Duplikate automatisch übersprungen, und die importierten Dateien erhalten einen eindeutigen Dateinamen und werden nach Jahr 
+und Monat sortiert.
 
-Das *Import* Verzeichnis ist ein temporärer Ordner, aus welchem Dateien strukturiert in den *Originals* Ordner verschoben oder kopiert werden, um Duplikate in *Originals* zu vermeiden.
-Importierte Dateien erhalten einen kanonischen Dateinamen und werden nach Jahr und Monat sortiert.
-
-Die meisten Nutzer mit bereits gut strukturierten Bildsammlungen möchten ihre Originaldateien direkt indexieren, ohne sie zu importieren, 
-damit vorhandene Datei- und Verzeichnisnamen erhalten bleiben. 
-Das Importieren ist dagegen deutlich effizienter, wenn später neue Dateien hinzugefügt werden, da nicht alle schon vorhandenen Dateien in *Originals* neu indexiert werden müssen, um die neu hinzugefügten Bilder und Videos zu finden.
+Der Import ist auch eine effiziente Methode zum Hinzufügen von Dateien, da PhotoPrism das Originals Verzeichnis nicht durchsuchen muss, 
+um neue Dateien zu finden.
 
 !!! tip ""
     Versteckte Dateien sowie Ordner, die mit ```.``` oder ```@``` beginnen, werden automatisch ignoriert. 
     Andere Namen, die ignoriert werden sollen, können in einer .ppignore Datei im Originals oder Import Verzeichnis konfiguriert werden. 
     Diese Datei kann im Hauptordner oder in einem Unterordner ablegt werden.
 
-### Indexieren ###
+## Originale Indexieren ##
 
-Verwende *Indexieren*, wenn du deine Bilder und Videos direkt im Ordner *Originals* indexieren möchtest, ohne sie zu kopieren,
-zu verschieben oder umzubenennen.
+Verwende *Indexieren*, wenn du deine Bilder und Videos direkt im Ordner *Originals* indexieren möchtest,  wobei die Datei- und Ordnernamen unverändert bleiben.
 
 **Deine Ordnerstruktur in *Originals* könnte so aussehen:**
 
@@ -32,19 +31,23 @@ zu verschieben oder umzubenennen.
 * Für JPEGs werden Thumbnails erstellt
 * Optional werden JSON- und oder YAML-Dateien mit Metadaten erstellt
 
-**Der *Originals* Ordner nach der Indexierung:**
+Das *Originals* Verzeichnis nach der Indexierung, es wurde in keiner Weise verändert:
 
 ![Screenshot](img/originals-before-after.png){ class="shadow" }
 
     
 
-#### Vorteile ####
+### Vorteile ###
 
 * Deine vorhandene Ordnerstruktur wird beibehalten
 * Deine vorhandene Ordnerstruktur kann in PhotoPrism anzeigt werden
-* Du kannst deine Dateien innerhalb von *Originals* verschieben. PhotoPrism erkennt den neuen Pfad bei der nächsten Indexierung automatisch
+* Du kannst deine Bilder nach ihrem aktuellen Namen und Speicherort suchen
+* Indexieren ist in der Regel schneller, da keine Dateien kopiert oder verschoben werden müssen
 
-### Importieren ###
+!!! tldr ""
+    Du kannst deine Dateien innerhalb von *Originals* verschieben. PhotoPrism erkennt den neuen Pfad bei der nächsten Indexierung automatisch
+
+## Dateien Importieren ##
 
 *Importieren* ist effizienter beim Hinzufügen von Dateien, da nicht alle Dateien im *Originals* Ordner neu indexiert werden müssen, um die neuen Bilder und Videos zu finden.
 [*Uploads*](upload.md) werden automatisch importiert, du kannst (noch) keine Dateien direkt in das *Originals* Verzeichnis hochladen.
@@ -56,8 +59,10 @@ zu verschieben oder umzubenennen.
 **Während dem Import:**
  
 * Dateien werden aus dem *Import* Verzeichnis in das *Originals* Verzeichnis verschoben oder kopiert
-* Im *Originals* Verzeichnis werden die Dateien umbenannt und umstrukturiert. Der ursprüngliche Dateiname wird in den Metadaten der Datei gespeichert
-* Alle importierten Dateien werden indexiert
+* Duplikate werden automatisch übersprungen, "Verschieben" löscht sie auch im Ursprungsverzeichnis
+* Importierte Dateien erhalten einen eindeutigen Dateinamen und werden nach Jahr und Monat sortiert
+* Der ursprüngliche Dateiname wird als Datei-Eigenschaft gespeichert
+* Alle importierten Dateien werden indexiert, der Rest bleibt im Import Verzeichnis
 
 **Ordnerstruktur in *Import* und *Originals* nach Import mit der "Kopieren" Option:**
 
@@ -67,7 +72,7 @@ zu verschieben oder umzubenennen.
 
    ![Screenshot](img/move-import.png){ class="shadow" }
 
-#### Vorteile ####
+### Vorteile ###
 * Nicht unterstützte Dateien bleiben unberührt im Import Verzeichnis
 * Keine Duplikate im Originals Verzeichnis
 
@@ -77,13 +82,9 @@ zu verschieben oder umzubenennen.
     Falls du ein Verzeichnis mit dem Pfad "Urlaub/Afrika" importierst oder indexierst erhalten alle Dateien aus diesem Ordner die Suchbegriffe "Urlaub" und "Afrika".
 
 
-### Fazit ###
-Deine Bildersammlung ist noch nicht organisiert und du gehst davon aus, dass du viele Duplikate, beispielsweise verteilt auf verschiedenen Festplatten, hast?
+## Fazit ##
+Falls deine Bildersammlung nicht gut organisiert ist und/oder du viele Duplikate hast, kannst du in Erwägung ziehen, deine Dateien zu importieren, da dadurch Duplikate entfernt werden. 
+Beachte, dass importierte Dateien einen eindeutigen Dateinamen erhalten und nach Jahr und Monat sortiert werden.
 
-Dann ist *Importieren* die bessere Wahl.
-Der Importvorgang wird deine Dateien nach Erstellungsdatum sortieren und Duplikate vermeiden.
-
-
-Ist deine Bildersammlung bereits gut in Ordnern organisiert und du möchtest diese Organisation auch im Dateisystem beibehalten?
-
-Dann ist *Indexieren* ist die richtige Option für dich.
+Wenn du über eine gut organisierte Bibliothek mit aussagekräftigen Datei- und Ordnernamen verfügst, ist es am besten, wenn du deine Originale direkt indexierst 
+und die Datei- und Ordnernamen unverändert lässt.
