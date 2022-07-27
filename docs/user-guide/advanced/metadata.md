@@ -1,72 +1,31 @@
-## Auslesen
-Wir haben uns zum Ziel gesetzt, so viele Metadaten wie möglich aus deinen Original Dateien auszulesen.
+Originaldateien und Sidecar-Dateien werden nach Exif- und XMP-Daten sowie nach proprietären Metadaten, einschließlich Google Photos JSON, gescannt. 
+Zu diesem Zweck verfügt PhotoPrism über einen [integrierten Exif-Parser](https://docs.photoprism.app/developer-guide/metadata/exif/), einen einfachen [XMP-Leser](https://docs.photoprism.app/developer-guide/metadata/xmp/) und kann auch Exiftool verwenden,
+um Metadaten in verschiedenen Formaten wie Exif, XMP und IPTC zu extrahieren:
 
-Falls du bestimmte EXIF oder XMP Felder nutzt, die wir noch nicht unterstützten, erstelle gerne ein [Ticket](https://github.com/photoprism/photoprism/issues) oder einen Pull Request.
+↪  [Unterstützte Exif, XMP, IPTC und DCMI Tags](https://photoprism.app/kb/metadata)
+
+Die kombinierten Informationen werden dann normalisiert, kombiniert und mit [zusätzlichen Informationen angereichert](#anreicherung).
+
+!!! tldr ""
+    Falls du bestimmte EXIF oder XMP Felder nutzt, die wir noch nicht unterstützten, erstelle gerne ein [Ticket](https://github.com/photoprism/photoprism/issues) oder einen Pull Request.
 
 
-### Unterstützte Exiftool & XMP Tags
+### Externe Änderungen
+Wenn du eines dieser Tags mit externen Tools wie Exiftool oder Digikam aktualisierst, liest PhotoPrism die Änderungen bei der nächsten Indexierung der Datei, sofern das Änderungsdatum der Datei aktualisiert wurde.
 
-PhotoPrism verwendet  [Exiftool](https://exiftool.org/) um Metadaten aus unterschiedlichen Dateitypen wie EXIF, XMP, IPTC etc. zu extrahieren.
-Zusätzlich lesen wir noch einige XMP Felder aus.
+### XMP Sidecar Dateien
+Falls ein Feld mit Daten aus einer XMP Datei gefüllt ist, ist diese Datei die einzige Datenquelle für dieses Feld.
+Das heißt, dass beispielsweise Keywords aus einer XMP Datei andere Keywords, die von PhotoPrism selbst kommen (z.B. Farben oder Ordnernamen) überschreiben.
 
-Die folgende Tabelle zeigt alle Exiftool bzw. XMP Tags, die von PhotoPrism unterstützt werden.
 
-!!!attention ""
-    Falls ein Feld mit Daten aus einer XMP Datei gefüllt ist, ist diese Datei die einzige Datenquelle für dieses Feld.
-    Das heißt, dass beispielsweise Keywords aus einer XMP Datei andere Keywords, die von PhotoPrism selbst kommen (z.B. Farben oder Ordnernamen) überschreiben.
-
-|    PhotoPrism     |   Type    |                                                                       Exiftool                                                                        |          Adobe XMP           |       DCMI       |
-|--------------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|------------------|
-| Aperture     | decimal   | ApertureValue, Aperture                                                                                                                               |                              |                  |
-| FNumber      | decimal   | FNumber                                                                                                                                               |                              |                  |
-| FPS          | decimal   | VideoFrameRate, VideoAvgFrameRate                                                                                                                     |                              |                  |
-| Duration     | duration  | Duration, MediaDuration, TrackDuration                                                                                                                |                              |                  |
-| Flash        | flag      | FlashFired                                                                                                                                            |                              |                  |
-| Keywords     | list      | Keywords                                                                                                                                              |                              |                  |
-| Altitude     | number    | GlobalAltitude, GPSAltitude                                                                                                                           |                              |                  |
-| FocalLength  | number    | FocalLength                                                                                                                                           |                              |                  |
-| Frames       | number    | FrameCount                                                                                                                                            |                              |                  |
-| Height       | number    | PixelYDimension, ImageHeight, ImageLength, ExifImageHeight, SourceImageHeight                                                                         |                              |                  |
-| ImageType    | number    | HDRImageType                                                                                                                                          |                              |                  |
-| Iso          | number    | ISO                                                                                                                                                   |                              |                  |
-| Rotation     | number    | Rotation                                                                                                                                              |                              |                  |
-| Width        | number    | PixelXDimension, ImageWidth, ExifImageWidth, SourceImageWidth                                                                                         |                              |                  |
-| Artist       | text      | Artist, Creator, OwnerName, Owner                                                                                                                     | Creator                      |                  |
-| CameraMake   | text      | CameraMake, Make                                                                                                                                      | Make                         |                  |
-| CameraModel  | text      | CameraModel, Model                                                                                                                                    | Model                        |                  |
-| CameraOwner  | text      | OwnerName                                                                                                                                             |                              |                  |
-| CameraSerial | text      | SerialNumber                                                                                                                                          |                              |                  |
-| Codec        | text      | CompressorID, FileType                                                                                                                                |                              |                  |
-| ColorProfile | text      | ICCProfileName, ProfileDescription                                                                                                                    |                              |                  |
-| Copyright    | text      | Rights, Copyright, WebStatement                                                                                                                       | Rights, Rights.Alt           |                  |
-| Description  | text      | Description                                                                                                                                           | Description, Description.Alt |                  |
-| DocumentID   | text      | BurstUUID, MediaGroupUUID, ImageUniqueID, OriginalDocumentID, DocumentID                                                                              |                              |                  |
-| Exposure     | text      | ExposureTime, ShutterSpeedValue, ShutterSpeed, TargetExposureTime                                                                                     |                              |                  |
-| FileName     | text      | FileName                                                                                                                                              |                              |                  |
-| GPSLatitude  | text      | GPSLatitude                                                                                                                                           |                              |                  |
-| GPSLongitude | text      | GPSLongitude                                                                                                                                          |                              |                  |
-| GPSPosition  | text      | GPSPosition                                                                                                                                           |                              |                  |
-| InstanceID   | text      | InstanceID, DocumentID                                                                                                                                |                              |                  |
-| LensMake     | text      | LensMake                                                                                                                                              |                              |                  |
-| LensModel    | text      | Lens, LensModel                                                                                                                                       | LensModel                    |                  |
-| License      | text      | UsageTerms, License                                                                                                                                   |                              |                  |
-| Notes        | text      | Comment                                                                                                                                               |                              |                  |
-| Projection   | text      | ProjectionType                                                                                                                                        |                              |                  |
-| Software     | text      | Software, HistorySoftwareAgent, ProcessingSoftware                                                                                                    |                              |                  |
-| Subject      | text      | Subject, PersonInImage, ObjectName, HierarchicalSubject, CatalogSets                                                                                  | Subject                      |                  |
-| Title        | text      | Title                                                                                                                                                 | dc:title                     | title, title.Alt |
-| TakenAt      | timestamp | DateTimeOriginal, CreationDate, CreateDate, MediaCreateDate, ContentCreateDate, DateTimeDigitized, DateTime, SubSecDateTimeOriginal, SubSecCreateDate | DateCreated                  |                  |
-| TakenAtLocal | timestamp | DateTimeOriginal, CreationDate, CreateDate, MediaCreateDate, ContentCreateDate, DateTimeDigitized, DateTime, SubSecDateTimeOriginal, SubSecCreateDate |                              |                  |
-| TakenGps     | timestamp | GPSDateTime, GPSDateStamp                                                                                                                             |                              |                  |
-
-### Migration von anderen Anwendungen
+### Migration von Clouddiensten
 PhotoPrism liest auch Metadaten aus Google Photo's JSON und Apple's XMP Dateien.
 
-- [Google Photos](../use-cases/google.md)
-- [Apple Photos](../use-cases/apple.md)
+- [Von Google Photos migrieren](../use-cases/google.md)
+- [Von Apple Photos migrieren](../use-cases/apple.md)
 
 
-## Anreichern
+## Anreicherung
 PhotoPrism liest nicht nur Metadaten aus Original- und Sidecar-Dateien, sondern reichert die Metadaten mit zusätzlichen Informationen an:
 
 - Datum/Zeit oder Keywords aus Ordner und Dateinamen
@@ -75,7 +34,9 @@ PhotoPrism liest nicht nur Metadaten aus Original- und Sidecar-Dateien, sondern 
 - Keywords aus Ortsdetails
 
 ## Export
-Änderungen werden noch nicht in EXIF oder XMP zurück geschrieben (siehe [Diskussion](https://github.com/photoprism/photoprism/discussions/1092)).
+Wir möchten, dass du unabhängig von PhotoPrism und dessen Datenbank auf deine Metadaten zugreifen kannst. 
+Deshalb erstellt der Indexer zusätzlich menschenlesbare [YAML-Sidecar-Dateien](./export.md), die du bei Bedarf mit einem Texteditor oder anderen Tools öffnen kannst.
 
-Damit Metadaten auch unabhängig von PhotoPrism oder der Datenbank verfügbar sind, erstellt PhotoPrism [YAML Backups](./backups.md).
-Diese Dateien enthalten alle Metadaten, die du in PhotoPrism setzt, in menschenlesbarer Form.
+!!! tldr ""
+    PhotoPrism bietet noch nicht die Möglichkeit, geänderte Metadaten in die Originaldateien zurückzuschreiben, um eventuelle Datenverluste und Konflikte mit Drittanbieter-Apps zu vermeiden. 
+    Siehe [GitHub-Diskussionen](https://github.com/photoprism/photoprism/discussions/1092).
