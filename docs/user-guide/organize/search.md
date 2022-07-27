@@ -1,5 +1,4 @@
 # Suchfilter benutzen #
-Finde bestimmte Bilder und Videos mithilfe von umfangreichen Suchfiltern.
 
 Mit den leistungsstarken Suchfiltern von PhotoPrism kannst du ganz einfach bestimmte Fotos und Videos finden:
 
@@ -14,7 +13,7 @@ Probier es einfach aus!
 
    ![Screenshot](img/fulltext-search-1.png){ class="shadow" }
 
-## Suchfilter ##
+## Einleitung ##
 Folgende Filter können auf der Filterleiste gesetzt werden:
 
 * Land, Jahr, Monat, Reihenfolge, Kamera, Farbe, Kategorie
@@ -23,7 +22,7 @@ Sind mehrere Filter gesetzt, werden nur Bilder von der Suche berücksichtigt, di
 
  ![Screenshot](img/filter-bar-new.png){ class="shadow" }
 
-Filter können auch im Suchfeld angegeben werden:
+Darüber hinaus können diese und viele andere Filter wie folgt in das Suchfeld der Toolbar eingegeben werden:
 
     `label:cat color:green type:live`
 
@@ -32,8 +31,7 @@ Die komplette Liste der Filter findest du weiter [unten](#suchfilter-ubersicht).
    ![Screenshot](img/search-filters.png){ class="shadow" }
 
 ### UND Suche ###
-Du kannst verschiedene Filter kombinieren:
-
+Um verschiedene Filter zu kombinieren, verwende ein Leerzeichen als Trennzeichen:
 ```
 mono:true review:false
 ```
@@ -95,8 +93,8 @@ Hier werden alle Bilder gefunden, die  `_23` im Namen enthalten, beispielsweise 
 !!!info ""
     Wildcards können mit & oder | verwendet werden : `filename:"*IMG123*|*_22F6FC19.jpg"`
 
-### Suchfilter Übersicht ###
-PhotoPrism unterstützt die folgenden Filter im Suchfeld.
+## Suchfilter Übersicht ##
+Dies ist eine vollständige Liste der unterstützten Suchfilter mit Beispielen. Filter können in der Regel kombiniert werden, es sei denn, sie widersprechen sich, z.B. können die Ergebnisse nicht gleichzeitig einfarbig sein und eine hohe Farbsättigung haben.
 
 |  Filter   |   Type    |           Examples            |                                                                   Notes                                                                    |
 |-----------|-----------|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|

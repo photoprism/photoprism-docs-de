@@ -1,10 +1,12 @@
-# Funktionen und Bereiche #
-Unsere Bild und Video Ansichten bieten die dir Möglichkeit vergessene Bilder wieder zu entdecken, ganz bestimmte Bilder zu finden oder
-deine Bilder zu organisieren.
+# Stöbern und Suchen in deiner Bibliothek
+PhotoPrism bietet viele Ansichten und Suchfilter, damit du deine Fotosammlung in mehreren Dimensionen erkunden kannst, anstatt sie nur Tag für Tag durchzuscrollen.
 
-Über die Hauptnavigation erreichst du folgende Bereiche:
+So kannst du längst vergessene Aufnahmen wiederentdecken, bestimmte Bilder finden oder schnell Alben auf der Grundlage von Suchergebnissen erstellen.
 
-#### :material-magnify: Suche ####
+## Bereiche und Filter
+Über die Hauptnavigation erreichst du folgende Bereiche deiner Bildersammlung:
+
+### :material-magnify: Suche ###
 Hier findest du alle Bilder und Videos, die nicht in *Überprüfen*, *Archiv* oder *Privat* sind.
 
 !!! hint ""
@@ -30,57 +32,57 @@ Zeigt all Bilder, die überprüft werden müssen.
 ##### [Archiv](archive.md) #####
 Zeigt archivierte Bilder.
 
-#### :material-image-album: [Alben](albums.md) ####
+### :material-image-album: [Alben](albums.md) ###
 Hier befinden sich deine Alben.
 
 ![Screenshot](img/albums.jpg){ class="shadow" }
 
-##### Unsortiert #####
+#### Unsortiert ####
 Hier werden alle Bilder, die nicht Teil eines Albums sind, angezeigt.
 
-#### :material-movie: [Videos](video.md) ####
+### :material-movie: [Videos](video.md) ###
 Hier findest du alle Videos, die nicht in *Überprüfen*, *Archiv* oder *Privat* sind.
 
 ![Screenshot](img/videos.jpg){ class="shadow" }
 
-#### :material-account: Personen ####
+### :material-account: Personen ###
 Zeigt deine Bilder gruppiert nach abgebildeten Personen.
 
-#### :material-heart: Favoriten ####
+### :material-heart: Favoriten ###
 Hier befinden sich alle Bilder, die du als Favorit markiert hast.
 
 ![Screenshot](img/favorites.jpg){ class="shadow" }
 
-#### :material-compass: [Erlebnisse](moments.md)  ####
+### :material-compass: [Erlebnisse](moments.md)  ###
 Entdecke Alben von Erlebnissen, die wir automatisch für dich erstellt haben.
 
 ![Screenshot](img/moments.jpg){ class="shadow" }
 
-#### :material-calendar-range: [Kalender](calendar.md) ####
+### :material-calendar-range: [Kalender](calendar.md) ###
 Hier sind deine Bilder nach Erstellungsdatum sortiert.
 
 ![Screenshot](img/calendar.jpg){ class="shadow" }
 
-#### :material-map-marker: [Karten](places.md) ####
+### :material-map-marker: [Karten](places.md) ###
 Hier sind alle Bilder und Videos, die Geodaten haben, auf einer Weltkarte dargestellt.
 
 ![Screenshot](img/places.jpg){ class="shadow" }
 
-##### Länder #####
+#### Länder ####
 Zeigt deine Bilder gruppiert nach Ländern.
 
-#### :material-label: [Kategorien](labels.md) ####
+### :material-label: [Kategorien](labels.md) ###
 Zeigt deine Bilder und Videos gruppiert nach Kategorien wie *Katze*, *Hund* oder *Strand*.
 
 ![Screenshot](img/labels.jpg){ class="shadow" }
 
-#### :material-folder: [Ordner](folders.md) ####
+### :material-folder: [Ordner](folders.md) ###
 Hier werden automatisch die Unterordner deines *Originals* Verzeichnis angezeigt.
 
-#### :material-lock: [Privat](private.md) ####
+### :material-lock: [Privat](private.md) ###
 Hier befinden sich alle Bilder, die du als privat markiert hast.
 
-#### :material-film: [Originale](../library/files.md) ####
+### :material-film: [Originale](../library/files.md) ###
 Hier werden alle Dateien deines *Originals* Verzeichnis angezeigt
 
 ![Screenshot](img/originals.jpg){ class="shadow" }
