@@ -1,11 +1,12 @@
+Doppelte Dateien werden erkannt und bei der [Indexierung](./indexing.md) automatisch übersprungen, so dass sie in den Suchergebnissen und Alben nur einmal erscheinen. 
+Ihre SHA1-Prüfsummen und Größen werden zum Vergleich herangezogen.
 
-## Exakte Duplikate ##
-PhotoPrism erkennt exakte Duplikate automatisch. 
+!!! tldr ""
+    Das Durchsuchen, Analysieren und Löschen von Duplikaten über das Web UI ist für eine zukünftige Version [geplant](https://github.com/photoprism/photoprism/issues/1308).
 
-Wenn du Dateien [importierst](./import.md), werden Duplikate übersprungen, so dass sich keine doppelten Dateien im Originals Verzeichnis befinden.
-
-Wenn du deine Dateien [indexierst](./indexing.md), werden Duplikate erkannt und erscheinen nur einmal in PhotoPrism's Ansichten.
-Anzeigen und Löschen von doppelten Dateien über die Benutzeroberfläche ist [geplant](https://github.com/photoprism/photoprism/issues/1308).
+## Datei Import
+Beim [Importieren](./import.md) werden die Dateien zunächst aus einem temporären Ordner in das Originals Verzeichnis kopiert oder verschoben. Dabei werden Duplikate automatisch übersprungen. 
+Beim "Verschieben" werden sie auch im Quellverzeichnis gelöscht, als wären sie erfolgreich verschoben worden.
 
 ## Zusammengehörige Dateien ##
 Neben Duplikaten, kann es weitere zusammengehörige Dateien in deiner Sammlung geben: 
@@ -16,4 +17,8 @@ Neben Duplikaten, kann es weitere zusammengehörige Dateien in deiner Sammlung g
 - Original + komprimierte Version
 - Zeitraffer Aufnahmen
 
-Zusammengehörige Dateien können automatisch [gruppiert](../organize/stacks.md) werden.
+Je nach den Dateieinstellungen können solche Dateien automatisch in Stapeln gruppiert werden
+
+↪ [Funktionen > Bildstapel](../organize/stacks.md)
+
+↪ [Einstellungen > Dateien](../settings/library.md)

@@ -1,14 +1,15 @@
 # Main navigation.
 nav:
   - Funktionen: index.md
-  - Erste Schritte: user-guide/index.md
+  - Installation: user-guide/index.md
+  - Erste Schritte 👣: user-guide/first-steps.md
   # - Setting up: user-guide/setup.md
   - Deine Dateien:
-      - Einleitung: user-guide/library/import-vs-index.md
+      - Übersicht: user-guide/library/import-vs-index.md
       - Originale indexieren: user-guide/library/indexing.md
       - Dateien importieren: user-guide/library/import.md
-      - Doppelte Dateien: user-guide/library/duplicates.md
-      - Bild Metadaten: user-guide/advanced/metadata.md
+      - Duplikat Erkennung: user-guide/library/duplicates.md
+      - Unterstützung von Metadaten: user-guide/advanced/metadata.md
       - Web Datei Upload: user-guide/library/upload.md
       - WebDAV Datei Sync: user-guide/library/webdav.md
       - Datei Browser: user-guide/library/files.md
@@ -20,22 +21,22 @@ nav:
   # - Sync and Back Up:
   # - WebDAV Sync
   #    - Nextcloud: user-guide/nextcloud.md
-  - Bilder entdecken:
+  - Bilder finden:
       - Benutzeroberfläche: user-guide/navigate.md
-      - Funktionen & Bereiche: user-guide/organize/browse.md
+      - Bereiche: user-guide/organize/browse.md
       - Ansichten: user-guide/organize/views.md
       - Suchfilter verwenden: user-guide/organize/search.md
-  - Bilder organisieren:
+  - Funktionen:
       - Alben: user-guide/organize/albums.md
       - Personen: user-guide/organize/people.md
       - Kategorien: user-guide/organize/labels.md
       - Archiv: user-guide/organize/archive.md
-      - Bilder löschen: user-guide/organize/delete.md
+      - Löschen: user-guide/organize/delete.md
       - Privat: user-guide/organize/private.md
       - Überprüfen: user-guide/organize/review.md
       - Bildstapel: user-guide/organize/stacks.md
       - Metadaten bearbeiten: user-guide/organize/edit.md
-      - Bilder herunterladen: user-guide/organize/download.md
+      - Herunterladen: user-guide/organize/download.md
       - Videos: user-guide/organize/video.md
       - Orte: user-guide/organize/places.md
       - Erlebnisse: user-guide/organize/moments.md
