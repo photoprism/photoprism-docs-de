@@ -1,4 +1,4 @@
-# Benutzeroberfläche
+# Navigieren in der Benutzeroberfläche
 
 Die Benutzeroberfläche zum Durchsuchen deiner Bilder basiert auf den folgenden Komponenten.
 
