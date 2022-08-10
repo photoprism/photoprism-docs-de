@@ -13,7 +13,7 @@ Du kannst PhotoPrism zu Hause, auf einem privaten Server oder in der Cloud insta
 * Privatsphäre: PhotoPrism sendet keine Daten an Google, Amazon, Facebook oder Apple, es sei denn, du lädst explizit Dateien auf einen dieser Dienste hoch :closed_lock_with_key:
 * PhotoPrism erkennt die [Gesichter](https://demo-de.photoprism.app/people) deiner Familie und Freunde
 * [Automatische Klassifizierung](https://demo-de.photoprism.app/labels) von Bildern anhand des Inhalts und Standorts
-* Spiele [Live Photos](https://demo-de.photoprism.app/browse?view=cards&q=type%3Alive) ab, indem du in [Alben]((https://demo-de.photoprism.app/albums)) oder Suchergebnissen über sie fährst
+* Spiele [Live Photos](https://demo-de.photoprism.app/browse?view=cards&q=type%3Alive) ab, indem du in [Alben](https://demo-de.photoprism.app/albums) oder Suchergebnissen über sie fährst
 * Da die [Benutzeroberfläche](https://demo-de.photoprism.app/) eine :material-language-html5: [Progressive Web App](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) ist,
   verhält sie sich wie eine [native App](https://en.wikipedia.org/wiki/Progressive_web_application) und du kannst sie bequem auf dem Startbildschirm aller gängigen Geräte und Betriebssysteme installieren
 * Vier hochauflösende [Weltkarten](https://demo-de.photoprism.app/places) lassen Erinnerungen an deine Lieblingsreisen wieder aufleben
