@@ -25,3 +25,6 @@
 Dieses von einem Community-Mitglied erstellte Skript kann Alben aus einem Google Takeout Export in PhotoPrism übertragen:
 
 https://github.com/inthreedee/photoprism-transfer-album
+
+!!! example ""
+    **Hilf mit, diese Dokumentation zu verbessern!** Du kannst dazu beitragen, indem du auf :material-pencil: klickst, um einen Pull Request mit deinen Änderungen zu senden.
