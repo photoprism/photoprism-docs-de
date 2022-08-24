@@ -1,4 +1,4 @@
-.PHONY: all deps fix pip build serve install install-venv upgrade upgrade-venv replace replace-venv reinstall watch deploy;
+.PHONY: all deps fix pip build serve install replace upgrade venv install-venv upgrade upgrade-venv replace replace-venv reinstall watch deploy;
 
 UID := $(shell id -u)
 GID := $(shell id -g)
@@ -12,31 +12,21 @@ export
 
 all: deploy
 deps: pip upgrade
-install: venv install-venv
-upgrade: venv upgrade-venv
-replace: venv replace-venv
+install: install-venv
+upgrade: remove-venv install-venv
 watch: serve
 fix:
 	sudo chown -R $(UID):$(GID) .
 	sudo chmod -R a+rwX .
 pip:
-	sudo apt install pip
-venv:
-	python3 -m venv venv
-	. ./venv/bin/activate
-upgrade-venv:
-	python3 -m venv venv
-ifdef GH_TOKEN
-	@echo "Found GH_TOKEN, upgrading mkdocs-material-insiders"
-	pip3 install --disable-pip-version-check -U git+https://${GH_TOKEN}@github.com/photoprism/mkdocs-material-insiders.git
-else
-	@echo "GH_TOKEN not set in .env file, upgrading regular mkdocs-material"
-	pip3 install --disable-pip-version-check -U mkdocs-material
-endif
-	pip3 install --disable-pip-version-check -U -r requirements.txt
+	sudo apt-get install -y git python3 python3-pip python3-venv python3-wheel
+venv: install-venv
+remove-venv:
+	rm -rf ./venv
 install-venv:
 	python3 -m venv venv
 	. ./venv/bin/activate
+	pip3 install wheel
 ifdef GH_TOKEN
 	@echo "Found GH_TOKEN, installing mkdocs-material-insiders"
 	pip3 install --disable-pip-version-check git+https://${GH_TOKEN}@github.com/photoprism/mkdocs-material-insiders.git
@@ -45,8 +35,6 @@ else
 	pip3 install --disable-pip-version-check mkdocs-material
 endif
 	pip3 install --disable-pip-version-check -r requirements.txt
-replace-venv:
-	pip3 install --disable-pip-version-check -U --force-reinstall  -r requirements.txt
 serve:
 	mkdocs serve -a 0.0.0.0:8000
 build:
