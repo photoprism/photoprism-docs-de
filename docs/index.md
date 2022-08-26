@@ -24,6 +24,7 @@ Du kannst PhotoPrism zu Hause, auf einem privaten Server oder in der Cloud insta
 
 [Vollständige Funktionsübersicht ›](https://photoprism.app/teams#compare)
 
+
 ### 100% Privatsphäre :lock:
 Da PhotoPrism sich zu [**100 % selbst finanziert und unabhängig**](https://photoprism.app/membership) ist, können wir versprechen, dass wir [**niemals deine Daten verkaufen werden**](https://photoprism.app/privacy) und dass wir unsere Software und Dienste [**stets transparent**](https://photoprism.app/terms) gestalten. 
 Deine Daten werden auch niemals an Google, Amazon, Facebook oder Apple weitergegeben, es sei denn, du lädst absichtlich Dateien auf einen dieser Dienste hoch.
