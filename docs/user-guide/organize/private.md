@@ -8,13 +8,17 @@ Mit der Standardeinstellung werden alle Bilder, die als privat markiert sind, in
 
  * Suche
  * Videos
- * Kategorien
- * Karten
+ * Personen
  * Favoriten
+ * Orte
+ * Kategorien
+ * Autogenerierten Alben (Erlebnisse, Kalender, Länder, Ordner)
  * In geteilten Alben
+
+Private Fotos werden in nutzergenerierten Alben und im Dateibrowser angezeigt.
  
 !!! info ""
-    In den [Einstellungen](../settings/general.md) kannst du diese Funktion deaktivieren.
+     Wenn du möchtest, dass private Bilder überall erscheinen, kannst du das in den  [Einstellungen](../settings/general.md) konfigurieren.
 
 ## Privat Status ändern ##
 === "Kontext-Menü"
