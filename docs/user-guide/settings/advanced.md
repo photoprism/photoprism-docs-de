@@ -1,8 +1,8 @@
 # Erweiterte Einstellungen #
-In den erweiterten Einstellungen kannst du grundlegende Systemkonfigurationen, wie die Qualität der Vorschaubilder vornehmen. 
-Hier können auch bestimmte Funktionen deaktiviert, sowie der Debug- oder der Schreibgeschützte-Modus aktiviert werden.
+Systemkonfigurationsoptionen wie die Bildqualität können in den erweiterten Einstellungen geändert werden. Du kannst auch bestimmte Funktionen deaktivieren und den Debug- oder schreibgeschützten Modus aktivieren.
 
-Wenn du PhotoPrism im public Modus betreibst, sind die erweiterten Einstellungen aus Sicherheitsgründen nicht verfügbar.
+!!! tldr ""
+    Da diese Einstellungen ohne Authentifizierung nicht sicher sind, sind sie nicht verfügbar, wenn du PhotoPrism im [public Modus](https://docs.photoprism.app/getting-started/config-options/#authentication) verwendest. Das [Ändern von Konfigurationsoptionen](https://docs.photoprism.app/getting-started/config-options/) ist weiterhin über Konfigurationsdateien und Befehlsparameter möglich.
 
 !!! attention ""
     Änderungen von erweiterten Einstellungen erfordern immer einen Neustart.
@@ -11,9 +11,8 @@ Wenn du PhotoPrism im public Modus betreibst, sind die erweiterten Einstellungen
 
 ![](img/advanced-settings.jpg){ class="shadow" }
 
-Alle Optionen können alternativ über die 
-[Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) gesetzt werden.
- 
+Alle [Optionen](https://docs.photoprism.app/getting-started/config-options/) können in deiner `docker-compose.yml` oder auch über Kommandozeilenparameter gesetzt werden. 
+Manuell geänderte Werte werden in einer Konfigurationsdatei gespeichert. Sie wird standardmäßig im Ordner `storage/config` gespeichert. 
 
 ## Optionen ##
 
@@ -67,21 +66,25 @@ TensorFlow nicht zur automatischen Bild-Kategorisierung verwenden.
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_TENSORFLOW`.
 
 ## Bilder##
-Mit folgenden Einstellungen kannst du die Generierung von Vorschaubildern kontrollieren.
+In diesem Bereich wird festgelegt, wie JPEG-Vorschaubilder und Miniaturansichten gerendert werden. Das sind hochwertige, verkleinerte Versionen deiner Originale.
+
+[Vorschaubilder sind notwendig](https://docs.photoprism.app/getting-started/faq/#why-is-my-storage-folder-so-large-what-is-in-it), weil Webbrowser große Bilder nur schlecht an den Bildschirm anpassen können. 
+Die Verwendung von Originalen in voller Auflösung für Diashows und in Suchergebnissen würde außerdem viel Speicherplatz im Browser verbrauchen und die Geschwindigkeit der Indexierung deutlich verringern.
 
 ### Skalierungsfilter ###
 Du kannst den Algorithmus wählen, der verwendet werden soll, um JPEG Vorschaubilder ('Thumbnails') zu erstellen.
 
-Der *Lanczos* Filter erstellt die qualitativ hochwertigsten Thumbnails, ist aber etwas langsamer, als die anderen.
-Der *Cubic* Filter ist ca 30% schneller.
+Beispiele der verfügbaren Filter findest du im [folgenden Abschnitt](#skalierungsfilter-beispiele).
+
+Um einen guten Kompromiss zwischen Qualität und Leistung zu finden, empfehlen wir den *Lanczos-Filter*. 
+Er ist zwar etwas langsamer bei der Erstellung von Miniaturansichten, erzeugt aber Bilder von sehr hoher Qualität. Im Vergleich dazu kann der weniger anspruchsvolle *kubische Filter* 30 % schneller sein.
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_THUMB_FILTER`.
 
 ### Dynamische Vorschaubilder
 Vorschaubilder können on-demand erstellt werden, also erst, wenn sie gebraucht werden. 
 Dies ist beispielsweise beim Betrachten der Bilder der Fall.
-Diese Einstellung spart Speicherplatz (da die Thumbnails nicht gespeichert werden), braucht allerdings viel Rechenleistung.
-Wir empfehlen diese Einstellung nicht, wenn PhotoPrism auf einem nicht leistungsstarken Gerät betrieben wird.
+Das spart Speicherplatz, ist aber rechenintensiver und wird daher nicht empfohlen, wenn du auf weniger leistungsfähigen Geräten (wie dem Raspberry Pi) arbeitest.
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_THUMB_UNCACHED`.
 
@@ -147,23 +150,23 @@ Die Bilder werden in `storage/cache/thumbnails`gespeichert. Der genaue Pfad ist 
 
 Folgende Tabelle listet die verschiedenen Thumbnailgrößen sowie ihre Anwendung:
 
-Name      | Breite  | Höhe  | Anwendung                     |
-:---------|:------:|:-------:|:-------------------------|
-colors    | 3      | 3       | Color Detection          |
-tile_50   | 50     | 50      | List Preview             |
-tile_100  | 100    | 100     | Maps Preview             |
-tile_224  | 224    | 224     | Mosaic Preview           |
-left_224  | 224    | 224     | TensorFlow               |
-right_224 | 224    | 224     | TensorFlow               |
-tile_500  | 500    | 500     | Cards Preview            |
-fit_720   | 720    | 720     | Mobile, TV               |
-fit_1280  | 1280   | 1024    | Mobile, HD Ready TV      |
-fit_1920  | 1920   | 1200    | Mobile, Full HD TV       |
-fit_2048  | 2048   | 2048    | Tablets, Cinema 2K       |
-fit_2560  | 2560   | 1600    | Quad HD, Retina Display  |
-fit_3840  | 3840   | 2400    | Ultra HD                 |
-fit_4096  | 4096   | 4096    | Ultra HD, Retina 4K      |
-fit_7680  | 7680   | 4320    | 8K Ultra HD 2, Retina 6K |
+| Name      | Breite  | Höhe  | Anwendung                     |
+|:---------|:------:|:-------:|:-------------------------|
+| colors    | 3      | 3       | Color Detection          |
+| tile_50   | 50     | 50      | List Preview             |
+| tile_100  | 100    | 100     | Maps Preview             |
+| tile_224  | 224    | 224     | Mosaic Preview           |
+| left_224  | 224    | 224     | TensorFlow               |
+| right_224 | 224    | 224     | TensorFlow               |
+| tile_500  | 500    | 500     | Cards Preview            |
+| fit_720   | 720    | 720     | Mobile, TV               |
+| fit_1280  | 1280   | 1024    | Mobile, HD Ready TV      |
+| fit_1920  | 1920   | 1200    | Mobile, Full HD TV       |
+| fit_2048  | 2048   | 2048    | Tablets, Cinema 2K       |
+| fit_2560  | 2560   | 1600    | Quad HD, Retina Display  |
+| fit_3840  | 3840   | 2400    | Ultra HD                 |
+| fit_4096  | 4096   | 4096    | Ultra HD, Retina 4K      |
+| fit_7680  | 7680   | 4320    | 8K Ultra HD 2, Retina 6K |
 
 ## Skalierungsfilter Beispiele##
 
