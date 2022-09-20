@@ -12,11 +12,35 @@
     Unser Team erhält viel mehr Anfragen als umgesetzt werden können. Wir möchten daher betonen, dass wir in keiner Weise verpflichtet sind, die von dir angeforderten Funktionen, Verbesserungen oder sonstigen Änderungen umzusetzen. 
     Wir freuen uns jedoch über dein Feedback und werden alle Anfragen sorgfältig prüfen.
 
-    **Da eine nachhaltige Finanzierung der Schlüssel zur schnellen Veröffentlichung neuer Funktionen ist, ermutigen wir alle Nutzer, unsere Mission zu unterstützen, indem sie [sich als Sponsor anmelden](https://photoprism.app/membership) oder eine [kommerzielle Lizenz](https://photoprism.app/teams) erwerben. Letztendlich ist das das Beste für das Produkt und die Community.**
+    **Da eine nachhaltige Finanzierung der Schlüssel zur schnellen Veröffentlichung neuer Funktionen ist, ermutigen wir alle Nutzer, unsere Mission zu unterstützen, indem sie [sich als Sponsor anmelden](https://photoprism.app/membership) oder eine [kommerzielle Lizenz](https://photoprism.app/teams) erwerben.**
 
-??? question "Welche Zusatzleistungen bekommen Sponsoren?"
-    Unsere Sponsoren kommen zusätzlich in den Genuss aller Funktionen, die mit einem [sponsor-feature](https://github.com/photoprism/photoprism/issues?q=label%3Asponsor-feature) Label versehen sind oder in der Dokumentation als [sponsors only](https://docs.photoprism.app/getting-started/config-options/) gekennzeichnet sind, einschließlich [Interaktiver Weltkarten](https://demo.photoprism.app/places).
-    [Funktionsübersicht ›](https://photoprism.app/editions#compare)
+??? question "Ist PhotoPrism von irgendwelchen externen Diensten abhängig?"
+
+    Wie in unserer [Datenschutzerklärung](https://photoprism.app/privacy) ausführlich erklärt, hängen die Reverse Geocodierung und die interaktiven Weltkarten davon ab, dass die erforderlichen Daten von externen Systemen [von uns](https://photoprism.app/contact) und der [MapTiler AG](https://www.maptiler.com/contacts/) mit Hauptsitz in der Schweiz abgerufen werden. Beide Dienste werden mit einem sehr hohen Maß an Datenschutz und Vertraulichkeit angeboten.
+    Bitte stelle sicher, dass du Anfragen an diese API-Endpunkte zulässt, wenn du eine Firewall installiert hast, und prüfe, ob deine Internetverbindung funktioniert.
+
+    Die Nutzung dieser Dienste ist derzeit vollständig durch uns abgedeckt. Je nach Verbrauch kannst du so jeden Monat Tausende von Euro sparen. Andere Anbieter berechnen in der Regel nutzungsabhängige Gebühren und erlauben möglicherweise auch nicht, die von ihnen bereitgestellten Daten zwischenzuspeichern, was deine Privatsphäre durch unnötige Anfragen gefährdet.
+
+    Wenn du einen oder beide Dienste in deinen eigenen Räumlichkeiten betreiben möchtest, [können wir eine solche völlig autonome Lösung für dich einrichten](https://photoprism.app/contact), sofern du bereit bist, die [anfänglichen Einrichtungskosten](https://photoprism.app/kb/compliance-faq#fully-autonomous-solution) sowie die laufenden Wartungsgebühren für Inhaltslizenzen und Updates zu übernehmen.
+   
+      ↪ [Datenschutzerklärung](https://photoprism.app/privacy#section-7){ class="pr-3" } ↪ [Compliance FAQ](https://photoprism.app/kb/compliance-faq#privacy)
+
+
+??? question "Werden die Keys zur Nutzung der interaktiven Weltkarten kostenlos zur Verfügung gestellt?"
+    
+    Die API-Keys, die für die Nutzung der Karten benötigt werden, sind für uns leider nicht kostenlos, da wir so viele Nutzer haben. Diese Kosten sind einer der Gründe, warum wir alle Nutzer dazu auffordern, unsere Mission zu unterstützen, indem sie sich als [Sponsor anmelden](https://photoprism.app/membership) oder eine [kommerzielle Lizenz erwerben](https://photoprism.app/teams).
+
+    Wir könnten zwar stattdessen mehrere "nicht-kommerzielle Testkonten" registrieren, aber das wäre unserer Meinung nach nicht fair und [Maptiler](https://www.maptiler.com/) könnte sie dann vielleicht nicht mehr für Bedürftige anbieten.
+    
+    ↪ [Funktionsübersicht Persönliche Editionen >](https://photoprism.app/editions#compare)
+
+??? question "Was sind die Vorteile des Kaufs einer kommerziellen Lizenz?"
+
+    Ein wesentlicher Unterschied zwischen der [Open Source Lizenz](https://docs.photoprism.app/license/agpl/) und  einem [kommerziellen Lizenzvertrag](https://photoprism.app/teams) besteht darin, dass du Zugang zu zusätzlichen Support- und Konfigurationsoptionen sowie das Recht erhälst, die Funktionalität an deine Bedürfnisse anzupassen, ohne dass du deine Änderungen veröffentlichen musst. 
+    Unsere [Compliance-FAQ](https://photoprism.app/kb/compliance-faq) geben Antworten auf die am häufigsten gestellten Fragen zur Produkt-Compliance und Skalierbarkeit.    
+
+    [Funktionsübersicht Kommerzielle Editionen ›](https://photoprism.app/teams#compare)
+
 
 ??? question "Sollte freie Software nicht kostenlos sein?"
     Denke an "freie Software" wie an "freie Rede", nicht wie an "Freibier". Die [Free Software Foundation](https://www.gnu.org/philosophy/free-sw.en.html) nennt es manchmal "libre software", in Anlehnung an das französische oder spanische Wort für "frei", um zu zeigen, dass sie nicht meint, dass die Software kostenlos ist.
@@ -24,9 +48,6 @@
 ??? question "Warum kann ich nicht einfach eine einzelne Version kaufen und herunterladen?"
     Anders als herkömmliche Offline-Anwendungen wie Microsoft Office muss Software, die mit dem Internet verbunden ist,
     [regelmäßig aktualisiert](https://docs.photoprism.app/release-notes/) werden, um sicher und mit den neuesten Standards kompatibel zu bleiben.
-
-    Updates sind auch deshalb wichtig, weil praktisch alle Dateiformat-Parser Schwachstellen haben, die nur noch nicht entdeckt wurden. 
-    Dies ist ein bekanntes Risiko, das dich auch betreffen kann, wenn dein Computer nicht direkt mit dem Internet verbunden ist.
 
     Es ist essentiell, dass du Betriebssystem, Webbrowser und alle anderen Programme auf dem neuesten Stand hälst. 
     In der Vergangenheit haben selbst große Technologieunternehmen ihre alten Produkte bis auf wenige Ausnahmen nicht über einen längeren Zeitraum hinweg unterstützt. 
@@ -38,24 +59,6 @@
     Selbst zu hosten ist der einfachste Weg, um die Kontrolle zu behalten und deine [Privatsphäre](https://photoprism.app/privacy) zu schützen. Es bietet auch die beste Erfahrung für fortgeschrittene Nutzer, die oft auf eine lokale Toolchain angewiesen sind, um ihre Bilder auszuwählen, zu bearbeiten und zu veröffentlichen.    
     
     Da es eine große Nachfrage und viele praktische Anwendungen für eine gehostete Version gibt, wollen wir diese zusätzlich anbieten, damit unsere Nutzer mehr Auswahl haben. Ausgewählte Hosting-Partner werden sicherstellen, dass die Privatsphäre unserer Nutzer so weit wie technisch möglich geschützt wird, auch in der Cloud.    
-
-    Ebenso haben Unternehmen Bedarf an einem kommerziellen Angebot mit Funktionen und Support-Optionen, die sich an professionelle Nutzer richten. Sie sind bereit, für den Mehrwert zu zahlen, den sie erhalten, was uns hilft, die Entwicklung zu finanzieren und unser Team zu erweitern.
-
-??? question "Was sind die Vorteile des Kaufs einer kommerziellen Lizenz?"
-    
-    Ein wesentlicher Unterschied zwischen der Open Source- und der [kommerziellen Lizenz](https://photoprism.app/teams) besteht darin, dass du Zugang zu zusätzlichen Support- und Konfigurationsoptionen sowie das Recht erhälst, die Funktionalität an deine Bedürfnisse anzupassen, ohne dass du deine Änderungen veröffentlichen musst. 
-
-    [Funktionsübersicht ›](https://photoprism.app/teams#compare)
-
-??? question "Ist PhotoPrism von irgendwelchen externen Diensten abhängig?"
-
-    Wie in unserer [Datenschutzerklärung](https://photoprism.app/privacy) ausführlich erklärt, hängen die Reverse Geocodierung und die interaktiven Weltkarten davon ab, dass die erforderlichen Daten von externen Systemen [von uns](https://photoprism.app/contact) und der [MapTiler AG](https://www.maptiler.com/contacts/) mit Hauptsitz in der Schweiz abgerufen werden. Beide Dienste werden mit einem sehr hohen Maß an Datenschutz und Vertraulichkeit angeboten.
-    
-    Deine Nutzung dieser Dienste wird von uns vollständig abgedeckt. Es fallen also keine nutzungsabhängigen Gebühren an, anders als bei anderen Anbietern, die möglicherweise zusätzliche Gebühren verlangen und dir auch nicht erlauben, das Caching zu nutzen, z. B. Google Maps.
-    
-    Wenn du einen oder beide Dienste in deinen eigenen Räumlichkeiten betreiben möchtest, [können wir eine solche völlig autonome Lösung für dich einrichten](https://photoprism.app/contact), sofern du bereit bist, die anfänglichen Einrichtungskosten sowie die laufenden Wartungsgebühren für Inhaltslizenzen und Updates zu übernehmen.
-   
-      ↪ [Datenschutzerklärung](https://photoprism.app/privacy#section-7){ class="pr-3" } ↪ [Compliance FAQ](https://photoprism.app/kb/compliance-faq#privacy)
 
 ## Benutzer-Oberfläche ##
 
