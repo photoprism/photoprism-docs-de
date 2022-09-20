@@ -1,4 +1,9 @@
 # Synchronisations Einstellungen #
+Diese Seite beschreibt, wie PhotoPrism Dateien von einem externen Speichersystem (wie ownCloud) über WebDAV synchronisieren kann.
+
+!!! tldr ""
+    Da diese Einstellungen ohne Authentifizierung nicht sicher sind, sind sie nicht verfügbar, wenn du PhotoPrism im [public Modus](https://docs.photoprism.app/getting-started/config-options/#authentication) verwendest.
+
 
 ## Mit WebDAV Server verbinden ##
 PhotoPrism kann mit anderen WebDAV Servern verbunden werden. So können zum Beispiel automatisch Backups auf deiner ownCloud Instanz erstellt oder
