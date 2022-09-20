@@ -1,4 +1,9 @@
 # Konto Einstellungen #
+
+!!! tldr ""
+    Da sie nicht benötigt werden, sind diese Einstellungen nicht verfügbar, wenn du PhotoPrism im [public Modus](https://docs.photoprism.app/getting-started/config-options/#authentication) verwendest.
+
+
 **Passwort ändern**
 
 1. Klicke auf *Einstellungen*
