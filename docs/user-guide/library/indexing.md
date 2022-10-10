@@ -27,7 +27,7 @@
     Beachte, dass der Mechanismus nicht 100% zuverlässig ist. 
 
 #### Verzeichnisse und Dateien ignorieren ####
-Versteckte Dateien oder Ordner, deren Namen mit `.` oder `@` beginnen, werden automatisch ignoriert.
+Versteckte Dateien oder Ordner, deren Namen mit  `.`, `@`, oder `_` wie `__MACOSX` beginnen, werden automatisch ignoriert.
 Falls bestimmte Dateien oder Ordner nicht indexiert werden sollen, erstelle eine `.ppignore` Datei im Verzeichnis, in welchem diese Dateien/Ordner liegen.
 In dieser Datei kannst du konfigurieren, welche Dateien oder Ordner ignoriert werden sollen.
 
