@@ -17,10 +17,11 @@
 ??? question "Ist PhotoPrism von irgendwelchen externen Diensten abhängig?"
 
     Wie in unserer [Datenschutzerklärung](https://photoprism.app/privacy) ausführlich erklärt, hängen die Reverse Geocodierung und die interaktiven Weltkarten davon ab, dass die erforderlichen Daten von externen Systemen [von uns](https://photoprism.app/contact) und der [MapTiler AG](https://www.maptiler.com/contacts/) mit Hauptsitz in der Schweiz abgerufen werden. Beide Dienste werden mit einem sehr hohen Maß an Datenschutz und Vertraulichkeit angeboten.
-    Bitte stelle sicher, dass du Anfragen an diese API-Endpunkte zulässt, wenn du eine Firewall installiert hast, und prüfe, ob deine Internetverbindung funktioniert.
 
-    Die Nutzung dieser Dienste ist derzeit vollständig durch uns abgedeckt. Je nach Verbrauch kannst du so jeden Monat Tausende von Euro sparen. Andere Anbieter berechnen in der Regel nutzungsabhängige Gebühren und erlauben möglicherweise auch nicht, die von ihnen bereitgestellten Daten zwischenzuspeichern, was deine Privatsphäre durch unnötige Anfragen gefährdet.
+    Die Nutzung dieser Dienste ist derzeit [vollständig durch uns abgedeckt](https://docs.photoprism.app/getting-started/faq/#are-the-keys-for-using-interactive-world-maps-provided-free-of-charge). Abhängig von deiner Nutzung kannst du damit viel mehr sparen als die Kosten für eine [PhotoPrism+ Mitgliedschaft](https://photoprism.app/membership). Andere Anbieter berechnen in der Regel nutzungsabhängige Gebühren und erlauben möglicherweise auch nicht, die von ihnen bereitgestellten Daten zwischenzuspeichern, was deine Privatsphäre durch unnötige Anfragen gefährdet.
 
+    Um die Karten zu verwenden und Standortdetails in PhotoPrism anzuzeigen, musst du Anfragen an diese API-Endpunkte zulassen, wenn du eine Firewall installiert hast, und überprüfen, ob deine Internetverbindung funktioniert.
+    
     Wenn du einen oder beide Dienste in deinen eigenen Räumlichkeiten betreiben möchtest, [können wir eine solche völlig autonome Lösung für dich einrichten](https://photoprism.app/contact), sofern du bereit bist, die [anfänglichen Einrichtungskosten](https://photoprism.app/kb/compliance-faq#fully-autonomous-solution) sowie die laufenden Wartungsgebühren für Inhaltslizenzen und Updates zu übernehmen.
    
       ↪ [Datenschutzerklärung](https://photoprism.app/privacy#section-7){ class="pr-3" } ↪ [Compliance FAQ](https://photoprism.app/kb/compliance-faq#privacy)
