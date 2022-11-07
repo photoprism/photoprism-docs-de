@@ -11,7 +11,7 @@ Der Import ist auch eine effiziente Methode zum Hinzufügen von Dateien, da Phot
 um neue Dateien zu finden.
 
 !!! tip ""
-    Versteckte Dateien sowie Ordner, die mit `.`, `@`, oder `_` wie `__MACOSX` beginnen, werden automatisch ignoriert. 
+    Versteckte Dateien sowie Ordner, die mit `.`, `@`, `_.` oder `__` wie `__MACOSX` beginnen, werden automatisch ignoriert. 
     Andere Namen, die ignoriert werden sollen, können in einer .ppignore Datei im Originals oder Import Verzeichnis konfiguriert werden. 
     Diese Datei kann im Hauptordner oder in einem Unterordner ablegt werden.
 
