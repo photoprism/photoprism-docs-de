@@ -9,7 +9,7 @@ Systemkonfigurationsoptionen wie die Bildqualität können in den erweiterten Ei
     Wenn du die Thumbnail-Qualität oder Größen Einstellungen änderst, werden bereits erstellte Thumbnails nicht gelöscht.
     Thumbnails können über die [Kommandozeile](https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface) neu generiert werden.
 
-![](img/advanced-settings.jpg){ class="shadow" }
+![Screenshot](img/settings-advanced-german.png){ class="shadow" }
 
 Alle [Optionen](https://docs.photoprism.app/getting-started/config-options/) können in deiner `docker-compose.yml` oder auch über Kommandozeilenparameter gesetzt werden. 
 Manuell geänderte Werte werden in einer Konfigurationsdatei gespeichert. Sie wird standardmäßig im Ordner `storage/config` gespeichert. 

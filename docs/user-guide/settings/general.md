@@ -2,7 +2,7 @@
 
 In den *Allgemeinen Einstellungen* kannst du die Eigenschaften der Benutzeroberfläche sowie der Karten konfigurieren.
 
-![Screenshot](img/general-settings.jpg){ class="shadow" }
+![Screenshot](img/settings-general-german.png){ class="shadow" }
 
 ### Benutzeroberfläche ###
 Hier kannst du das *Design* und die *Sprache* der Benutzeroberfläche ändern.

@@ -1,5 +1,7 @@
 # Bibliotheks Einstellungen #
 
+![Screenshot](img/settings-library-german.png){ class="shadow" }
+
 ##Indexierung ##
 
 #### :material-chart-timeline-variant: Schätzungen ####
