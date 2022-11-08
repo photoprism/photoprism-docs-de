@@ -32,6 +32,9 @@ für Windows 10.
 Bitte ersetze *example.com* mit deiner Domain.
 Der `/` am Ende ist wichtig und darf nicht weggelassen werden.
 
+!!! tip ""
+	Du findest deine Server-Url auf der [Account-Seite](../settings/account.md) in den Einstellungen.
+
 Wenn du dich verbindest, musst du dich mit deinem Passwort authentifizieren.
 Das Passwort kann in den *Einstellungen* geändert werden. Der Nutzername ist `admin`.
 
