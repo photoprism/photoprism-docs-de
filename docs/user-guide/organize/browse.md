@@ -12,10 +12,12 @@ Hier findest du alle Bilder und Videos, die nicht in *Überprüfen*, *Archiv* od
 !!! hint ""
     Wenn die Funktionen Qualitätsfilter, Privat oder Archiv deaktiviert sind, findest du hier alle deine Bilder und Videos.
     
-![Screenshot](img/search-section.jpg){ class="shadow" }
+![Screenshot](img/search-section-german.png){ class="shadow" }
 
 ##### Monochrom #####
 Zeigt alle einfarbigen Bilder und Videos.
+
+![Screenshot](img/monochrome-section-german.png){ class="shadow" }
 
 ##### [Panoramas](panoramas.md) #####
 Zeigt alle Panoramas.
@@ -35,15 +37,18 @@ Zeigt archivierte Bilder.
 ### :material-image-album: [Alben](albums.md) ###
 Hier befinden sich deine Alben.
 
-![Screenshot](img/albums.jpg){ class="shadow" }
+![Screenshot](img/albums-section-german.png){ class="shadow" }
 
 #### Unsortiert ####
 Hier werden alle Bilder, die nicht Teil eines Albums sind, angezeigt.
 
+![Screenshot](img/unsorted-section-german.png){ class="shadow" }
+
 ### :material-movie: [Videos](video.md) ###
 Hier findest du alle Videos, die nicht in *Überprüfen*, *Archiv* oder *Privat* sind.
 
-![Screenshot](img/videos.jpg){ class="shadow" }
+#### Live Photos ####
+Hier findest du alle Live Photos.
 
 ### :material-account: Personen ###
 Zeigt deine Bilder gruppiert nach abgebildeten Personen.
@@ -51,33 +56,37 @@ Zeigt deine Bilder gruppiert nach abgebildeten Personen.
 ### :material-heart: Favoriten ###
 Hier befinden sich alle Bilder, die du als Favorit markiert hast.
 
-![Screenshot](img/favorites.jpg){ class="shadow" }
-
 ### :material-compass: [Erlebnisse](moments.md)  ###
 Entdecke Alben von Erlebnissen, die wir automatisch für dich erstellt haben.
 
-![Screenshot](img/moments.jpg){ class="shadow" }
+![Screenshot](img/moments-section-german.png){ class="shadow" }
 
 ### :material-calendar-range: [Kalender](calendar.md) ###
 Hier sind deine Bilder nach Erstellungsdatum sortiert.
 
-![Screenshot](img/calendar.jpg){ class="shadow" }
+![Screenshot](img/calendar-section-german.png){ class="shadow" }
 
 ### :material-map-marker: [Karten](places.md) ###
 Hier sind alle Bilder und Videos, die Geodaten haben, auf einer Weltkarte dargestellt.
 
-![Screenshot](img/places.jpg){ class="shadow" }
+![Screenshot](img/places-section-german.png){ class="shadow" }
+
+![Screenshot](img/places-section-2-german.png){ class="shadow" }
 
 #### Länder ####
 Zeigt deine Bilder gruppiert nach Ländern.
 
+![Screenshot](img/states-section-german.png){ class="shadow" }
+
 ### :material-label: [Kategorien](labels.md) ###
 Zeigt deine Bilder und Videos gruppiert nach Kategorien wie *Katze*, *Hund* oder *Strand*.
 
-![Screenshot](img/labels.jpg){ class="shadow" }
+![Screenshot](img/labels-section-german.png){ class="shadow" }
 
 ### :material-folder: [Ordner](folders.md) ###
 Hier werden automatisch die Unterordner deines *Originals* Verzeichnis angezeigt.
+
+![Screenshot](img/folders-section-german.png){ class="shadow" }
 
 ### :material-lock: [Privat](private.md) ###
 Hier befinden sich alle Bilder, die du als privat markiert hast.
@@ -85,9 +94,9 @@ Hier befinden sich alle Bilder, die du als privat markiert hast.
 ### :material-film: [Originale](../library/files.md) ###
 Hier werden alle Dateien deines *Originals* Verzeichnis angezeigt
 
-![Screenshot](img/originals.jpg){ class="shadow" }
+![Screenshot](../library/img/files-german.png){ class="shadow" }
 
-![Screenshot](img/originals2.jpg){ class="shadow" }
+![Screenshot](../library/img/files-2-german.png){ class="shadow" }
 
 
 

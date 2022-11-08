@@ -56,7 +56,7 @@ Dann bearbeite die Album Details und klicke *Speichern*
 1. Gehe zu einem Album
 3. Selektiere Bilder, die du entfernen möchtest
 4. Öffne das Kontext-Menü
-5. Klicke :material-minus:
+5. Klicke :material-eject:
 
     ![Screenshot](img/remove-from-album-1.png){ class="shadow" }
 

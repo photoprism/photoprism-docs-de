@@ -7,7 +7,7 @@ Im Bereich *Kategorien* werden alle Bilder nach Kategorien sortiert dargestellt.
 Du kannst eine Kategorie hervorheben, indem du auf :material-star: klickst. 
 Hervorgehobene *Kategorien* werden in der Ansicht ganz oben angezeigt.
 
-Um ausschließlich *Kategorien* mit einer hohen Priorität angezeigt zu bekommen, klicke auf :material-eye:.
+Um auch *Kategorien* mit einer niedrigen Priorität angezeigt zu bekommen, klicke auf :material-unfold-more-horizontal:.
 
 ![Screenshot](img/labels-1.png){ class="shadow" }
 
