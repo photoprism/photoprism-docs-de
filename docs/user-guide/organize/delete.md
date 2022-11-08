@@ -9,3 +9,5 @@ Dateien, die du löschen möchtest, müssen zuvor [archiviert](./archive.md) wer
 2. Öffne das Kontext-Menü
 3. Klicke :material-delete:
 4. Bestätige
+
+   ![Screenshot](img/delete-german.png){ class="shadow" }

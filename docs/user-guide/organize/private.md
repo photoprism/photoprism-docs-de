@@ -15,7 +15,7 @@ Mit der Standardeinstellung werden alle Bilder, die als privat markiert sind, in
  * Autogenerierten Alben (Erlebnisse, Kalender, Länder, Ordner)
  * In geteilten Alben
 
-Private Fotos werden in nutzergenerierten Alben und im Dateibrowser angezeigt.
+Private Fotos werden im Beeich *Privat*, in nutzergenerierten Alben und im Dateibrowser angezeigt.
  
 !!! info ""
      Wenn du möchtest, dass private Bilder überall erscheinen, kannst du das in den  [Einstellungen](../settings/general.md) konfigurieren.
@@ -26,11 +26,11 @@ Private Fotos werden in nutzergenerierten Alben und im Dateibrowser angezeigt.
      2. Selektiere Bilder/Videos
      3. Öffne das Kontext-Menü und klicke :material-lock:
 
-    ![Screenshot](img/private-context-menu.png){ class="shadow" }
+    ![Screenshot](img/private-context-menu-light.png){ class="shadow" }
 
 === "Listen Ansicht"
      1. Gehe zu *Suche* oder *Privat*
      2. Wechsele zur *Listen-Ansicht*
      3. Klicke auf :material-lock-open: oder :material-lock-open: in der rechten Spalte
 
-    ![Screenshot](img/private-list.png){ class="shadow" }
+    ![Screenshot](img/private-list-german.png){ class="shadow" }

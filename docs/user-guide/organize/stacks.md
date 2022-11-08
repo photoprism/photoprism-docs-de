@@ -4,7 +4,7 @@ Zusammengehörige Dateien werden gruppiert, wenn in den [*Einstellungen*](../set
 
 Gruppierte Dateien werden im Bereich *Bildstapel* dargestellt.
 
-![Screenshot](img/stack-page.png){ class="shadow" }
+![Screenshot](img/stack-page-german.png){ class="shadow" }
 
 ## Unter welchen Bedingungen können Dateien gruppiert werden? ##
 
@@ -15,12 +15,14 @@ Gruppierte Dateien werden im Bereich *Bildstapel* dargestellt.
 
 Du kannst das Verhalten der Punkte 2-4 in den [*Einstellungen*](../settings/general.md) konfigurieren.
 
+!!! attention ""
+      Das Ändern der Bildstapel-Einstellungen führt nicht dazu, dass bereits gruppierte Dateien wieder getrennt werden.
 
 ## Gruppierte Bilder anschauen ##
 
 1. Klicke auf :material-camera-burst:
 
-    ![Screenshot](img/sequential1.png){ class="shadow" }
+    ![Screenshot](img/sequential1-dark.png){ class="shadow" }
 
 2. Mit Hilfe der Pfeile kannst du durch alle Bilder der Sequenz wechseln
 
@@ -38,7 +40,7 @@ Um die Primärdatei zu ändern:
 3. Klicke auf :material-chevron-down: der Datei, die du als primär markieren willst
 4. Klicke *Primärdatei*
 
-      ![Screenshot](img/unstack-1.png){ class="shadow" } 
+      ![Screenshot](img/stacks-edit-german.png){ class="shadow" } 
 
 
 ## Gruppierung von Dateien aufheben ##
@@ -47,11 +49,11 @@ Um die Primärdatei zu ändern:
 3. Klicke auf :material-chevron-down: der Datei, die nicht als primär markiert ist
 4. Klicke *Einzelaufnahme*
 
-      ![Screenshot](img/unstack-1.png){ class="shadow" }
+      ![Screenshot](img/stacks-edit-german.png){ class="shadow" }
 
 Das Bild wird nun separat von der anderen Datei in den Ansichten angezeigt.
 
-![Screenshot](img/group-4.png){ class="shadow" }
+![Screenshot](img/unstacked-dark.png){ class="shadow" }
 
 ## Nicht primäre Dateien endgültig löschen ##
 1. Öffne den [*Bearbeitungs-Dialog*](edit.md) des Bildes
@@ -60,4 +62,4 @@ Das Bild wird nun separat von der anderen Datei in den Ansichten angezeigt.
 4. Klicke *Löschen*
 5. Bestätige, dass du das Bild wirklich löschen möchtest
 
-      ![Screenshot](img/group-5.png){ class="shadow" }
+      ![Screenshot](img/stacks-edit-german.png){ class="shadow" }

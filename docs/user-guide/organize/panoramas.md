@@ -2,7 +2,7 @@
 Bilder, ab einem Größenverhältnis von 2:1, werden von PhotoPrism automatisch als *Panorama* markiert und im Bereich
 *Panoramas* angezeigt.
 
-![Screenshot](img/panorama-1.png){ class="shadow" }
+![Screenshot](img/panorama-1-german.png){ class="shadow" }
 
 ## Panorama Status bearbeiten ##
 
@@ -10,4 +10,4 @@ Bilder, ab einem Größenverhältnis von 2:1, werden von PhotoPrism automatisch 
 2. Klicke :material-cog:
 3. Setze oder entferne den Panorama-Status
 
-![Screenshot](img/panorama-2.png){ class="shadow" }
+![Screenshot](img/panorama-2-german.png){ class="shadow" }

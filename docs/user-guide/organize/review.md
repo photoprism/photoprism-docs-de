@@ -12,23 +12,28 @@ Die Qualität wird anhand der folgenden Kriterien bestimmt:
     In den [Einstellungen](../settings/general.md) kann der Qualitätsfilter und somit auch der Überprüfungs-Prozess deaktiviert werden.
 
 ### Bilder übernehmen ###
-=== "Im Bearbeitungs-Dialog"
-     1. Öffne den [*Bearbeitungs-Dialog*](edit.md) des Bildes
-     2. Klicke auf *Übernehmen*
 
-     ![Screenshot](img/review.png){ class="shadow" }
-
-=== " In der Karteikarten Ansicht"
-     1. Gehe zu *Überprüfen*     
-     2. Öffne die *Karteikarten Ansicht*
-     3. Klicke auf *Übernehmen*
-
-        ![Screenshot](img/review-2.png){ class="shadow" }
-
-=== "Über das Kontext-Menü"
+=== "Kontext-Menü"
     1. Gehe zu *Überprüfen*
     2. Selektiere Bilder und öffne das Kontext-Menu
     3. Klicke :material-check:
+
+    ![Screenshot](img/review-3-german.png){ class="shadow" }
+
+=== "Bearbeitungs-Dialog"
+     1. Öffne den [*Bearbeitungs-Dialog*](edit.md) des Bildes
+     2. Klicke auf *Übernehmen*
+
+     ![Screenshot](img/review-german.png){ class="shadow" }
+
+=== "Karteikarten Ansicht"
+     1. Gehe zu *Überprüfen*     
+     2. Öffne die *Karteikarten Ansicht*
+     3. Klicke :material-check:
+
+     ![Screenshot](img/review-2-german.png){ class="shadow" }
+
+
 
 !!! attention ""
     Die Qualitätsbewertung wird automatisch aktualisiert.
