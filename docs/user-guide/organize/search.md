@@ -71,7 +71,7 @@ Hier werden alle Bilder mit Kategorie Katze **ODER** Hund angezeigt.
 
 Folgende Suchfilter unterstützen |:
 
-* albums, color, country, day, month, year, keywords, label, path, state, subject/person, subjects/people, title, type, name, filename, original, hash
+* albums, color, country, state, city, day, month, year, keywords, label, path, subject/person, subjects/people, title, type, name, filename, original, hash
 
 
 ### Wildcard ###
