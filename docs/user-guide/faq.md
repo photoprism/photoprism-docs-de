@@ -249,7 +249,7 @@
 
 ??? question "Wenn ich mit meiner Synchronisations App eine WebDAV Verbindung aufbauen will, bekomme ich den Fehler "TLS Paket-Header können nicht gelesen werden"?"
 
-    Aufgrund von Sicherheitsbedenken haben einige Apps, wie [FolderSync](https://www.tacit.dk/foldersync/faq/#i-can-not-connect-to-a-non-https-webdav-server-why), den
+    Aufgrund von Sicherheitsbedenken haben einige Apps, wie [FolderSync](https://foldersync.io/docs/faq/#https-connection-errors), den
     Support f̈́ür HTTP ohne SSL eingestellt.
     
     Wenn du PhotoPrism auf einem öffentlichen Server außerhalb deines Heimnetzwerks installierst, führe es bitte **immer hinter einem sicheren Reverse HTTP Proxy** ,
