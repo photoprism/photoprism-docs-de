@@ -8,9 +8,9 @@ Archivierte Dateien werden nicht gelöscht, sie werden allerdings ausschließlic
 2. Öffne das Kontext-Menü
 3. Klicke :material-archive-arrow-down:
 
-    ![Screenshot](img/archive-german.png){ class="shadow" }
+    ![Screenshot](img/archive-german.jpg){ class="shadow" }
     
-    <!--![Screenshot](img/confirm-archive.png)-->
+    <!--![Screenshot](img/confirm-archive.jpg)-->
 
 
 ### Archivierte Bilder wieder herstellen ###
@@ -20,5 +20,5 @@ Archivierte Dateien werden nicht gelöscht, sie werden allerdings ausschließlic
 3. Öffne das Kontext-Menü
 4. Klicke :material-archive-arrow-up:
 
-    ![Screenshot](img/restore-german.png){ class="shadow" }
+    ![Screenshot](img/restore-german.jpg){ class="shadow" }
 

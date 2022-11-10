@@ -4,7 +4,7 @@ Zusammengehörige Dateien werden gruppiert, wenn in den [*Einstellungen*](../set
 
 Gruppierte Dateien werden im Bereich *Bildstapel* dargestellt.
 
-![Screenshot](img/stack-page-german.png){ class="shadow" }
+![Screenshot](img/stack-page-german.jpg){ class="shadow" }
 
 ## Unter welchen Bedingungen können Dateien gruppiert werden? ##
 
@@ -22,11 +22,11 @@ Du kannst das Verhalten der Punkte 2-4 in den [*Einstellungen*](../settings/gene
 
 1. Klicke auf :material-camera-burst:
 
-    ![Screenshot](img/sequential1-dark.png){ class="shadow" }
+    ![Screenshot](img/sequential1-dark.jpg){ class="shadow" }
 
 2. Mit Hilfe der Pfeile kannst du durch alle Bilder der Sequenz wechseln
 
-    ![Screenshot](img/sequential3.png){ class="shadow" } ![Screenshot](img/sequential4.png){ class="shadow" }
+    ![Screenshot](img/sequential3.jpg){ class="shadow" } ![Screenshot](img/sequential4.jpg){ class="shadow" }
 
 
 ## Das Anzeigebild wechseln ##
@@ -40,7 +40,7 @@ Um die Primärdatei zu ändern:
 3. Klicke auf :material-chevron-down: der Datei, die du als primär markieren willst
 4. Klicke *Primärdatei*
 
-      ![Screenshot](img/stacks-edit-german.png){ class="shadow" } 
+      ![Screenshot](img/stacks-edit-german.jpg){ class="shadow" } 
 
 
 ## Gruppierung von Dateien aufheben ##
@@ -49,11 +49,11 @@ Um die Primärdatei zu ändern:
 3. Klicke auf :material-chevron-down: der Datei, die nicht als primär markiert ist
 4. Klicke *Einzelaufnahme*
 
-      ![Screenshot](img/stacks-edit-german.png){ class="shadow" }
+      ![Screenshot](img/stacks-edit-german.jpg){ class="shadow" }
 
 Das Bild wird nun separat von der anderen Datei in den Ansichten angezeigt.
 
-![Screenshot](img/unstacked-dark.png){ class="shadow" }
+![Screenshot](img/unstacked-dark.jpg){ class="shadow" }
 
 ## Nicht primäre Dateien endgültig löschen ##
 1. Öffne den [*Bearbeitungs-Dialog*](edit.md) des Bildes
@@ -62,4 +62,4 @@ Das Bild wird nun separat von der anderen Datei in den Ansichten angezeigt.
 4. Klicke *Löschen*
 5. Bestätige, dass du das Bild wirklich löschen möchtest
 
-      ![Screenshot](img/stacks-edit-german.png){ class="shadow" }
+      ![Screenshot](img/stacks-edit-german.jpg){ class="shadow" }

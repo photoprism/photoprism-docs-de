@@ -9,7 +9,7 @@ Systemkonfigurationsoptionen wie die Bildqualität können in den erweiterten Ei
     Wenn du die Thumbnail-Qualität oder Größen Einstellungen änderst, werden bereits erstellte Thumbnails nicht gelöscht.
     Thumbnails können über die [Kommandozeile](https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface) neu generiert werden.
 
-![Screenshot](img/settings-advanced-german.png){ class="shadow" }
+![Screenshot](img/settings-advanced-german.jpg){ class="shadow" }
 
 Alle [Optionen](https://docs.photoprism.app/getting-started/config-options/) können in deiner `docker-compose.yml` oder auch über Kommandozeilenparameter gesetzt werden. 
 Manuell geänderte Werte werden in einer Konfigurationsdatei gespeichert. Sie wird standardmäßig im Ordner `storage/config` gespeichert. 
@@ -172,7 +172,7 @@ Folgende Tabelle listet die verschiedenen Thumbnailgrößen sowie ihre Anwendung
 
 Originalbild:
 
-![](img/branches.png){ class="shadow" }
+![](img/branches.jpg){ class="shadow" }
 
 Dieses Bild wurde unter der Verwendung von verschiedenen Filtern von 600x400 Pixeln auf 150x100 Pixel skaliert.
 Die Liste ist sortiert nach Rechengeschwindigkeit.
@@ -181,10 +181,10 @@ An erster Stelle steht der schnellste Filter mit der niedgrigsten Qualität, an 
 
 Filter                    | Ergebnis
 --------------------------|---------------------------------------------
-Nächster Nachbar          | ![](img/out_resize_nearest.png)
-Bilinear                  | ![](img/out_resize_linear.png)
-Bikubisch (Scharf)        | ![](img/out_resize_catrom.png)
-Lanczos                   | ![](img/out_resize_lanczos.png)
+Nächster Nachbar          | ![](img/out_resize_nearest.jpg)
+Bilinear                  | ![](img/out_resize_linear.jpg)
+Bikubisch (Scharf)        | ![](img/out_resize_catrom.jpg)
+Lanczos                   | ![](img/out_resize_lanczos.jpg)
 
 Source: [A Comparative Analysis of Image Interpolation Algorithms](https://dl.photoprism.app/pdf/20160201-Comparative_Analysis_of_Image_Interpolation.pdf)
 
@@ -197,7 +197,7 @@ Webbrowser können keine RAW-Formate anzeigen. Deshalb muss PhotoPrism diese Dat
 
 Zusätzlich zu den oben genannten Formaten unterstützt PhotoPrism auch BMP-, GIF-, PNG- und TIFF-Dateien. Bevor du diese Formate zur Speicherung nutzt, solltest du bedenken, dass diese oft keine Metadaten speichern können. Deshalb werden sie in der Regel für Screenshots, Diagramme und Icons verwendet.
 
-![](img/editPhoto.png){ class="shadow" }
+![](img/editPhoto.jpg){ class="shadow" }
 
 !!! info ""
     Von PhotoPrism erstellte Sidecar-Dateien werden außerhalb des Originals Verzeichnis gespeichert, so dass die RAW zu JPEG Konvertierung auch im

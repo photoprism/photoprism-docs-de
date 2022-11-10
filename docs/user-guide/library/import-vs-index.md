@@ -21,7 +21,7 @@ Verwende *Indexieren*, wenn du deine Bilder und Videos direkt im Ordner *Origina
 
 **Deine Ordnerstruktur in *Originals* könnte so aussehen:**
 
-![Screenshot](img/originals-before-after.png){ class="shadow" }
+![Screenshot](img/originals-before-after.jpg){ class="shadow" }
      
 **Während der Indexierung:**
 
@@ -33,7 +33,7 @@ Verwende *Indexieren*, wenn du deine Bilder und Videos direkt im Ordner *Origina
 
 Das *Originals* Verzeichnis nach der Indexierung, es wurde in keiner Weise verändert:
 
-![Screenshot](img/originals-before-after.png){ class="shadow" }
+![Screenshot](img/originals-before-after.jpg){ class="shadow" }
 
     
 
@@ -54,7 +54,7 @@ Das *Originals* Verzeichnis nach der Indexierung, es wurde in keiner Weise verä
 
 **Deine anfängliche Ordnerstruktur in *Import* könnte wie folgt aussehen:**
 
-   ![Screenshot](img/before-import.png){ class="shadow" }
+   ![Screenshot](img/before-import.jpg){ class="shadow" }
    
 **Während dem Import:**
  
@@ -66,11 +66,11 @@ Das *Originals* Verzeichnis nach der Indexierung, es wurde in keiner Weise verä
 
 **Ordnerstruktur in *Import* und *Originals* nach Import mit der "Kopieren" Option:**
 
-   ![Screenshot](img/copy-import.png){ class="shadow" }
+   ![Screenshot](img/copy-import.jpg){ class="shadow" }
 
 **Ordnerstruktur in *Import* und *Originals* nach Import mit der "Verschieben" Option:**
 
-   ![Screenshot](img/move-import.png){ class="shadow" }
+   ![Screenshot](img/move-import.jpg){ class="shadow" }
 
 ### Vorteile ###
 * Nicht unterstützte Dateien bleiben unberührt im Import Verzeichnis

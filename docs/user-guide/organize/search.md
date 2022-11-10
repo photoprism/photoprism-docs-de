@@ -11,7 +11,7 @@ Mit den leistungsstarken Suchfiltern von PhotoPrism kannst du ganz einfach besti
 
 Probier es einfach aus!
 
-   ![Screenshot](img/fulltext-search-1.png){ class="shadow" }
+   ![Screenshot](img/fulltext-search-1.jpg){ class="shadow" }
 
 ## Einleitung ##
 Folgende Filter können auf der Filterleiste gesetzt werden:
@@ -20,7 +20,7 @@ Folgende Filter können auf der Filterleiste gesetzt werden:
 
 Sind mehrere Filter gesetzt, werden nur Bilder von der Suche berücksichtigt, die allen Filterkriterien entsprechen.
 
- ![Screenshot](img/filter-bar-new.png){ class="shadow" }
+ ![Screenshot](img/filter-bar-new.jpg){ class="shadow" }
 
 Darüber hinaus können diese und viele andere Filter wie folgt in das Suchfeld der Toolbar eingegeben werden:
 
@@ -28,7 +28,7 @@ Darüber hinaus können diese und viele andere Filter wie folgt in das Suchfeld 
 
 Die komplette Liste der Filter findest du weiter [unten](#suchfilter-ubersicht).
 
-   ![Screenshot](img/search-filters.png){ class="shadow" }
+   ![Screenshot](img/search-filters.jpg){ class="shadow" }
 
 ### UND Suche ###
 Um verschiedene Filter zu kombinieren, verwende ein Leerzeichen als Trennzeichen:

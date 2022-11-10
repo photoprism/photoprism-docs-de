@@ -1,6 +1,6 @@
 # Konto Einstellungen #
 
-![Screenshot](img/settings-account-german.png){ class="shadow" }
+![Screenshot](img/settings-account-german.jpg){ class="shadow" }
 
 
 !!! tldr ""
@@ -16,7 +16,7 @@
 5. Gib das neue Passwort ein und bestätige es durch eine erneute Eingabe
 6. Klicke auf *Speichern*
 
-![Screenshot](img/change-password-german.png){ class="shadow" } 
+![Screenshot](img/change-password-german.jpg){ class="shadow" } 
 
 
 ##WebDAV Url anzeigen##
@@ -25,4 +25,4 @@
 2. Klicke auf *Konto*
 3. Klicke *Mit WebDAV verbinden*
 
-![Screenshot](img/show-webdav-german.png){ class="shadow" } 
+![Screenshot](img/show-webdav-german.jpg){ class="shadow" } 

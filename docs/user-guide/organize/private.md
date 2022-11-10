@@ -26,11 +26,11 @@ Private Fotos werden im Beeich *Privat*, in nutzergenerierten Alben und im Datei
      2. Selektiere Bilder/Videos
      3. Öffne das Kontext-Menü und klicke :material-lock:
 
-    ![Screenshot](img/private-context-menu-light.png){ class="shadow" }
+    ![Screenshot](img/private-context-menu-light.jpg){ class="shadow" }
 
 === "Listen Ansicht"
      1. Gehe zu *Suche* oder *Privat*
      2. Wechsele zur *Listen-Ansicht*
      3. Klicke auf :material-lock-open: oder :material-lock-open: in der rechten Spalte
 
-    ![Screenshot](img/private-list-german.png){ class="shadow" }
+    ![Screenshot](img/private-list-german.jpg){ class="shadow" }

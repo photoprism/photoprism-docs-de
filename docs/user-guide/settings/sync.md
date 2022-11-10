@@ -14,7 +14,7 @@ Das kann nützlich sein, wenn du Dateien zwischen mehreren Diensten [teilen](../
 3. Klicke auf *Verbinden*
 4. Trage die Server URL, den Nutzernamen sowie das Passwort ein
 5. Klicke *Verbinden*
-   ![Screenshot](img/services-connect-2-german.png){ class="shadow" }
+   ![Screenshot](img/services-connect-2-german.jpg){ class="shadow" }
 6. Dein Server ist jetzt mit PhotoPrism verbunden
 
 
@@ -24,7 +24,7 @@ Das kann nützlich sein, wenn du Dateien zwischen mehreren Diensten [teilen](../
 3. Klicke :material-pencil:
 4. Bearbeite die Konto-Details und klicke *Speichern*
 
-   ![Screenshot](img/services-edit-german.png){ class="shadow" }
+   ![Screenshot](img/services-edit-german.jpg){ class="shadow" }
 
 ## Upload Einstellunegn bearbeiten ##
 
@@ -32,10 +32,10 @@ Das kann nützlich sein, wenn du Dateien zwischen mehreren Diensten [teilen](../
 2. Öffne das *Dienste* Tab
 3. Klicke in den Upload Bereich deines Dienstes
 
-![Screenshot](img/services-upload-1-german.png){ class="shadow" }
+![Screenshot](img/services-upload-1-german.jpg){ class="shadow" }
 4. Wähle den Ordner, in den die Dateien hochgeladen werden sollen und klicke *Speichern*
 
-![Screenshot](img/services-upload-2-german.png){ class="shadow" }
+![Screenshot](img/services-upload-2-german.jpg){ class="shadow" }
 
 Du kannst jetzt [Alben oder Dateien mit diesem Dienst teilen](../share/services-share.md).
 
@@ -48,13 +48,13 @@ Du kannst jetzt [Alben oder Dateien mit diesem Dienst teilen](../share/services-
 1. Gehe zu *Einstellungen*
 2. Öffne das *Sync* Tab
 3. Klicke in den Sync Bereich deines Servers
-   ![Screenshot](img/services-sync-1-german.png){ class="shadow" }
+   ![Screenshot](img/services-sync-1-german.jpg){ class="shadow" }
 4. Aktiviere die Synchronisation in der Ecke oben rechts
 5. Wähle den Ordner, in welchem sich deine Bilder befinden
 6. Entscheide wie oft die Dateien synchronisiert werden sollen
 7. Selektiere alle Optionen, die zu deinem Anwendungsfall passen und klicke *Speichern*
 
-![Screenshot](img/services-sync-2-german.png){ class="shadow" }
+![Screenshot](img/services-sync-2-german.jpg){ class="shadow" }
 
 ### Synchronisations-Optionen ###
 * *Dateien herunterladen*  - alle Dateien, die noch nicht in PhotoPrism existieren, werden regelmäßig von deinem Dienst heruntergeladen

@@ -4,13 +4,13 @@
 
     1. Klicke :material-cloud-upload: in der oberen rechten Ecke
 
-         ![Screenshot](img/upload-3-german.png){ class="shadow" }
+         ![Screenshot](img/upload-3-german.jpg){ class="shadow" }
     
     2. Wähle oder erstelle ein Album, falls deine Dateien automatisch einem Album hinzugefügt werden sollen
 
     3. Klicke auf *Upload*
 
-         ![Screenshot](img/upload-to-album-german.png){ class="shadow" }
+         ![Screenshot](img/upload-to-album-german.jpg){ class="shadow" }
 
     4. Wähle Dateien aus
 
@@ -22,13 +22,13 @@
 
       2. Klicke auf *Upload*
 
-         ![Screenshot](img/upload-1-german.png){ class="shadow" }
+         ![Screenshot](img/upload-1-german.jpg){ class="shadow" }
 
       3. Wähle oder erstelle ein Album, falls deine Dateien automatisch einem Album hinzugefügt werden sollen
 
       4. Klicke auf *Upload*
 
-         ![Screenshot](img/upload-to-album-german.png){ class="shadow" }
+         ![Screenshot](img/upload-to-album-german.jpg){ class="shadow" }
 
       5. Wähle Dateien aus
 

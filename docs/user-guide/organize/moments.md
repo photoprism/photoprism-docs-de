@@ -6,7 +6,7 @@ Deine *Erlebnisse* werden laufend aktualisiert, wenn neue Bilder hinzugefügt we
 !!! info ""
     Erlebnisse basieren auf Orts- und Zeitangaben z.B. *Germany 2020* oder auf Kategorien wie *Nature & Landscape* oder *Pets*
 
-![Screenshot](img/moments-german.png){ class="shadow" }
+![Screenshot](img/moments-german.jpg){ class="shadow" }
 
 Mithilfe des Kontext-Menüs kannst du die folgenden Aktionen durchführen:
 
