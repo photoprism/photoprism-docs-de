@@ -53,3 +53,6 @@ merge:
 	git merge master
 	git push origin deploy
 	git checkout master
+img-resize:
+	mogrify -resize '688x860>' docs/user-guide/img/*.jpg
+	mogrify -resize '688x860>' docs/user-guide/**/img/*.jpg
