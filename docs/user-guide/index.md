@@ -5,7 +5,7 @@ Docker ist für Mac, Linux und Windows verfügbar.
 
 PhotoPrism ist auch als Cloud-Lösung auf [PikaPods](https://docs.photoprism.app/getting-started/cloud/pikapods/) und [DigitalOcean](https://docs.photoprism.app/getting-started/cloud/digitalocean/) verfügbar.
 
-![Progressive Web App](https://dl.photoprism.app/img/ui/iphone-index-360px.jpg){ align=right }
+![Progressive Web App](https://dl.photoprism.app/img/ui/iphone-index-360px.png){ align=right }
 
 
 ## Support ##
