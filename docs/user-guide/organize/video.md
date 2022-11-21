@@ -7,6 +7,10 @@ während er in Firefox und Opera nur optional vom Betriebssystem unterstützt wi
 
 ![Screenshot](img/videos-german.jpg){ class="shadow" }
 
+!!! tldr ""
+    Wenn [FFmpeg deaktiviert](../settings/advanced.md#deaktiviere-ffmpeg) oder nicht installiert ist, können Videos nicht indexiert werden, da keine Standbilder erstellt werden können.
+    Außerdem solltest du [Exiftool](../settings/advanced.md#deaktiviere-exiftool) aktiviert haben, um Metadaten wie Dauer, Auflösung und Codec zu extrahieren.
+
 ### Live-Fotos ###
 Kurze Videos von bis zu 3 Sekunden, werden unabhängig vom Handy-Model als Live Foto kategorisiert.
 Sie sind mit :material-adjust: in der linken oberen Ecke markiert.
@@ -17,26 +21,24 @@ Um nach Live-Fotos zu filtern, nutze den Filter `type:live`. Um ein Live-Foto ab
 
 ### Transkodierung ###
 
-PhotoPrism kann [ffmpeg](https://www.ffmpeg.org/documentation.html) verwenden, um gängige Videoformate in MPEG-4 AVC zu transkodieren.
+Für maximale Browserkompatibilität kann PhotoPrism Videocodecs und Container [unterstützt von FFmpeg](https://www.ffmpeg.org/documentation.html) in [MPEG-4 AVC](https://en.wikipedia.org/wiki/MPEG-4) transkodieren und Standbilder für die Erstellung von Vorschaubildern extrahieren:
 
-Videos im MPEG-4 AVC-Format können von praktisch allen modernen Browsern nativ abgespielt werden.
+- wenn [FFmpeg deaktiviert](../settings/advanced.md#deaktiviere-ffmpeg) oder nicht installiert ist, ist das Indexieren und Importieren von Videos nicht möglich, da keine Standbilder erstellt werden können
+- wenn [Exiftool deaktiviert](../settings/advanced.md#deaktiviere-exiftool) oder nicht installiert ist, ist das Indexieren und Importieren von Videos nur teilweise möglich, da die Video-Metadaten nicht extrahiert werden können und somit die Dauer, die Auflösung und der Codec unbekannt sind
+- [MPEG-4 AVC](https://en.wikipedia.org/wiki/MPEG-4) muss nicht transcodiert werden, da es von den meisten modernen Browsern nativ abgespielt werden kann, siehe https://caniuse.com/mpeg4
+- OGV-, VP8-, VP9-, AV1-, WebM- und HEVC-Videos können direkt gestreamt werden, wenn sie von deinem Browser unterstützt werden und die [konfigurierte Bitratengrenze](https://docs.photoprism.app/getting-started/config-options/#file-converters) nicht überschreiten.
+- andere Formate müssen immer transcodiert werden
 
-OGV-, VP8-, VP9-, AV1-, WebM- und HEVC-Videos werden direkt gestreamt, sofern sie von Ihrem Browser unterstützt werden und die konfigurierte 
-[Bitratengrenze](https://docs.photoprism.app/getting-started/config-options/#file-converters) nicht überschreiten. 
-Andernfalls werden diese Formate ebenfalls transcodiert.
 
+**Falls erforderlich, werden Videos bei Bedarf transkodiert. Das kann zu unerwünschten Verzögerungen führen, wenn große Videodateien zum ersten Mal abgespielt werden.**
 
-Falls notwendig, werden Videos bei der Abfrage transkodiert.
-Bei sehr langen Videos kann das zu längeren Ladezeiten führen, wenn das Video zum ersten Mal abgespielt wird.
-
-Du kannst den Befehl
-
+In diesem Fall kannst du [den folgenden Befehl in einem Terminal ausführen](https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface), um alle Videodateien vorzutranskodieren:
 
 ```
-docker-compose exec photoprism photoprism convert
+docker compose exec photoprism photoprism convert
 ```
 
-verwenden, um deine Videos schon vor dem Abspielen zu transkodieren.
+In unserer Setup-Anleitung für fortgeschrittene Nutzer wird erklärt, wie du die [Hardware-Videotranskodierung](https://docs.photoprism.app/getting-started/advanced/transcoding/) konfigurieren kannst .
 
 !!! note ""
     Vergewissere dich, dass dein Server genug freien Speicherplatz zur verfügung hat, bevor du deine Videos transkodierst. 

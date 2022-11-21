@@ -16,7 +16,7 @@ Gruppierte Dateien werden im Bereich *Bildstapel* dargestellt.
 Du kannst das Verhalten der Punkte 2-4 in den [*Einstellungen*](../settings/general.md) konfigurieren.
 
 !!! attention ""
-      Das Ändern der Bildstapel-Einstellungen führt nicht dazu, dass bereits gruppierte Dateien wieder getrennt werden.
+      Wenn du die Stacking-Einstellungen änderst, werden bereits gruppierte Dateien nicht automatisch wieder getrennt.
 
 ## Gruppierte Bilder anschauen ##
 
