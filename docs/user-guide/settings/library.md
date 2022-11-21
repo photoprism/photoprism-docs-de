@@ -27,7 +27,7 @@ Du kannst folgende Optionen nutzen, um Bilder zu gruppieren:
 * :material-fingerprint: Gleiche eindeutige Bild-ID
 
 !!! attention ""
-    Das Ändern der Bildstapel-Einstellungen führt nicht dazu, dass bereits gruppierte Dateien wieder getrennt werden.
+    Wenn du die Stacking-Einstellungen änderst, werden bereits gruppierte Dateien nicht automatisch wieder getrennt.
 
 
 <!--## Umwandlung von RAW zu JPEG ##

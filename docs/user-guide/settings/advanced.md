@@ -56,7 +56,9 @@ Die Karten Ansicht ist nicht sichtbar.
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_PLACES`.
 
 ### Deaktiviere ExifTool ###
-Keine JSON-Dateien  in `storage/sidecar` mit ExifTool erstellen. Diese werden für die Indexierung zusätzlicher Metadaten, z.B. von Videos, benötigt.
+Keine JSON-Dateien  in `storage/sidecar` mit ExifTool erstellen.
+
+Beachte, dass du Exiftool aktiviert haben musst, um Videometadaten wie Dauer, Auflösung und Codec zu extrahieren.
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_EXIFTOOL`.
 
@@ -205,7 +207,10 @@ Zusätzlich zu den oben genannten Formaten unterstützt PhotoPrism auch BMP-, GI
 
 ### Maximale JPEG-Größe
 
-Maximalgröße für JPEGs die, bei der RAW Konvertierung erstellt werden.
+Hiermit wird die maximale Größe der JPEG-Dateien festgelegt, die bei der Umwandlung von Original-RAW-Bildern erstellt werden.
+
+!!! tldr ""
+    [RawTherapee und "heif-convert" können die Auflösung von JPEG-Dateien nicht begrenzen](https://docs.photoprism.app/known-issues/#jpeg-size-limit) , wenn sie Dateien aus anderen Formaten wie RAW, DNG, HEIC oder AVIF konvertieren.
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_JPEG_SIZE`.
 
@@ -217,19 +222,18 @@ Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting
 
 ### Deaktiviere Darktable
 
-Darktable nicht zum Konvertieren von Bildern verwenden.
+Wenn diese Funktion deaktiviert ist, wird [Darktable](https://www.darktable.org/) nicht für die RAW-Konvertierung verwendet.
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_DARKTABLE`.
 
 ### Deaktiviere RawTherapee
 
-RawTherapee nicht zum Konvertieren von Bildern verwenden.
-
+Wenn diese Funktion deaktiviert ist, wird [RawTherapee](https://www.rawtherapee.com/) nicht für die RAW-Konvertierung verwendet.
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_RAWTHERAPEE`.
 
 ### Deaktiviere FFmpeg
 
-FFmpeg nicht zum Konvertieren von Videos verwenden.
+Wenn diese Funktion deaktiviert ist, wird [FFmpeg](https://www.ffmpeg.org/documentation.html) nicht zum Transkodieren von Videos oder zum Extrahieren von Standbildern für die Erstellung von Vorschaubildern verwendet, und das Indexieren oder Importieren von Videodateien ist nicht möglich.
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_FFMPEG`.
 
