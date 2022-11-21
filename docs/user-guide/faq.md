@@ -171,6 +171,11 @@
     als Proof-of-Concept implementiert, [Contributions sind willkommen](https://docs.photoprism.app/developer-guide/metadata/xmp/). Die Indexierung von
     eingebetteten XMP-Dateien ist nur über Exiftool möglich, siehe oben.
 
+??? question "Warum werden meine Videos nicht indexiert?"
+
+    Wenn [FFmpeg deaktiviert](settings/advanced.md#deaktiviere-ffmpeg) oder nicht installiert ist, können Videos nicht indexiert werden, da keine Standbilder erstellt werden können.
+    Außerdem solltest du [Exiftool](settings/advanced.md#deaktiviere-exiftool) aktiviert haben, um Metadaten wie Dauer, Auflösung und Codec zu extrahieren.
+
 ??? question "Werden JPEGs aktualisiert, wenn sich RAW- oder XMP-Dateien ändern?"
     
     JPEGs werden derzeit nicht neu generiert, wenn sich zugehörige RAW- oder XMP-Dateien ändern. RAW-Dateien sind von vornherein digitale Negative. PhotoPrism geht daher davon aus, dass ihre Bildinformationen unveränderlich sind.
@@ -196,6 +201,7 @@
     4. Dateien mit der gleichen *Unique Image ID* oder *XMP Instance ID* können optional gruppiert werden.
 
     Du kannst das Verhalten der Punkte 2-4 in den [*Einstellungen*](./settings/general.md) konfigurieren.
+    Beachte, dass bereits gruppierte Dateien nicht automatisch getrennt werden, wenn du die Stacking-Einstellungen änderst.
 
 ??? question "Es sind bereits einige meiner Bilder indexiert. Warum befinden sich noch keine Bilder in den Bereichen Ordner, Kalender und Erlebnisse?"
    
