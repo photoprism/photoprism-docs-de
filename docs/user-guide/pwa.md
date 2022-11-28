@@ -28,13 +28,13 @@ Es gibt noch keine offizielle native PhotoPrism App. Du kannst PhotoPrism als Pr
 
         ![Screenshot](img/android-1.jpg){: style="width:35%" class="shadow"} 
 
-    3. Klicke *Add to Home screen*
+    3. Klicke *Install app*
 
-        ![Screenshot](img/android-2.jpg){: style="width:35%" class="shadow"}
+        ![Screenshot](img/android-install-app.jpg){: style="width:35%" class="shadow"}
 
     4.Wähle einen Namen und klicke *Add*
 
-        ![Screenshot](img/android-3.jpg){: style="width:35%" class="shadow"}
+      ![Screenshot](img/android-3.jpg){: style="width:35%" class="shadow"}
 
 
 PhotoPrism ist jetzt auf deinem Startbildschirm verfügbar.
