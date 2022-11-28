@@ -26,7 +26,7 @@ Für maximale Browserkompatibilität kann PhotoPrism Videocodecs und Container [
 - wenn [FFmpeg deaktiviert](../settings/advanced.md#deaktiviere-ffmpeg) oder nicht installiert ist, ist das Indexieren und Importieren von Videos nicht möglich, da keine Standbilder erstellt werden können
 - wenn [Exiftool deaktiviert](../settings/advanced.md#deaktiviere-exiftool) oder nicht installiert ist, ist das Indexieren und Importieren von Videos nur teilweise möglich, da die Video-Metadaten nicht extrahiert werden können und somit die Dauer, die Auflösung und der Codec unbekannt sind
 - [MPEG-4 AVC](https://en.wikipedia.org/wiki/MPEG-4) muss nicht transcodiert werden, da es von den meisten modernen Browsern nativ abgespielt werden kann, siehe https://caniuse.com/mpeg4
-- OGV-, VP8-, VP9-, AV1-, WebM- und HEVC-Videos können direkt gestreamt werden, wenn sie von deinem Browser unterstützt werden und die [konfigurierte Bitratengrenze](https://docs.photoprism.app/getting-started/config-options/#file-converters) nicht überschreiten.
+- OGV-, VP8-, VP9-, AV1-, WebM- und HEVC-Videos können direkt gestreamt werden, wenn sie von deinem Browser unterstützt werden und die [konfigurierte Bitratengrenze](https://docs.photoprism.app/getting-started/advanced/transcoding/#bitrate-limiting) nicht überschreiten.
 - andere Formate müssen immer transcodiert werden
 
 
