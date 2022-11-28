@@ -193,6 +193,8 @@
     Haben mehrere Dateien den gleichen Namen oder exakt das gleiche Datum und den gleichen Aufnahmeort oder die gleiche ID,
     werden diese zu einem Bildstapel gruppiert. Du findest sie im Bereich *Bildstapel* und kannst die Gruppierung dort aufheben, sofern sie fehlerhaft ist.
 
+    [Checklist ansehen ›](https://docs.photoprism.app/getting-started/troubleshooting/#missing-pictures)
+
 ??? question "Unter welchen Bedingungen können Dateien gruppiert werden?" 
 
     1. Gleichnamige Dateien, die sich im selben Ordner befinden, z.B. `/2018/IMG_1234.jpg` und  `/2018/IMG_1234.avi`, werden immer gruppiert.
