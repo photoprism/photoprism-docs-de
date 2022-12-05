@@ -55,6 +55,11 @@ Hast du Dateien, die du ignorieren willst, bereits indexiert, kannst du die Date
 Wenn die Option "Index vollständig aktualisieren" gewählt ist, werden alle Dateien in *Originals* neu indexiert. Also auch Dateien, die bereits indexiert und nicht verändert wurden. 
 Das kann nach einem Upgrade auf eine neue Hauptversion erforderlich sein.
 
+!!! tldr ""
+    Manuell eingegebene Informationen wie Kategorien, Personen, Titel oder Beschreibungen werden bei der Indexierung nicht verändert, selbst wenn du den Index vollständig aktualisierst.
+
+
 #### Automatisch Indexieren ####
-15 Minuten, nachdem Änderungen über WebDAV am Originals Verzeichnis vorgnommen wurden, wird der Indexer automatisch gestartet.
-Die Standardeinstellung von 15 Minuten kann über die [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options#index-workers) angepasst werden.
+Die Indexierung wird automatisch ausgelöst, wenn Dateien [über WebDAV](../sync/webdav.md) mit dem Ordner Originals synchronisiert werden.
+
+Die Standard-Sicherheitsverzögerung für die automatische Indexierung beträgt 5 Minuten. Du kannst sie über die Konfigurationsoption [PHOTOPRISM_AUTO_INDEX](https://docs.photoprism.app/getting-started/config-options#index-workers) ändern.

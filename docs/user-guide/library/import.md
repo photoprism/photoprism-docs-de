@@ -21,8 +21,8 @@
     Das ist besonders hilfreich, wenn PhotoPrism auf einem Remote-Server ausgeführt wird.
 
 !!! attention ""
-    Importieren ist im [read-only Modus](../settings/advanced.md#schreibgeschutzter-modus) (schreibgeschützt) nicht möglich, da [Schreibrechte](https://docs.photoprism.app/getting-started/troubleshooting/docker/#file-permissions) benötigt werden.
-    
+    Importieren ist im [schreibgeschützten Modus](../settings/library.md) nicht möglich, da er [Schreibrechte](https://docs.photoprism.app/getting-started/troubleshooting/docker/#file-permissions) für den Ordner *originals* benötigt.    
+
 #### Option "Dateien Verschieben" ####
 
 Wenn diese Option ausgewählt ist, werden Dateien, die in den Ordner *Originals* verschoben wurden oder dort bereits vorhanden sind,
@@ -31,8 +31,10 @@ Dadurch wird weniger Speicherplatz benötigt.
 Wähle diese Option nur, wenn du die Dateien nicht als Backup oder aus einem anderen Grund in *Import* behalten möchtest.
 
 #### Automatisch Importieren ####
-15 Minuten, nachdem Änderungen über WebDAV am Import Verzeichnis vorgnommen wurden, wird der Importer automatisch gestartet.
-Die Standardeinstllung von 15 Minuten kann über die [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options#index-workers) angepasst werden.
+Ein Import wird automatisch ausgelöst, wenn Dateien mit dem *Import*-Ordner [über WebDAV](../sync/webdav.md) synchronisiert werden.
+
+Die Standard-Sicherheitsverzögerung für den automatischen Import beträgt 3 Minuten. 
+Du kannst sie mit der Konfigurationsoption [PHOTOPRISM_AUTO_IMPORT](https://docs.photoprism.app/getting-started/config-options#index-workers) ändern.
 
 !!! info "Kann ich mit PhotoPrism Dateien in einer konfigurierbaren Ordnerstruktur sortieren?"
     Du kannst deine Dateien sortieren, wie du möchtest. Falls dir die Ordner- und Namenskonvention unserer Importfunktion nicht gefällt,
