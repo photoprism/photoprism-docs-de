@@ -205,6 +205,15 @@
     Du kannst das Verhalten der Punkte 2-4 in den [*Einstellungen*](./settings/general.md) konfigurieren.
     Beachte, dass bereits gruppierte Dateien nicht automatisch getrennt werden, wenn du die Stacking-Einstellungen änderst.
 
+??? question "Wann sollte ich meinen Index vollständig aktualisieren?"
+    
+    Wir empfehlen, nach größeren Aktualisierungen einen kompletten Rescan durchzuführen, um die Vorteile der neuen Suchfilter und Sortieroptionen zu nutzen. 
+    Lies unbedingt [die Hinweise zu jeder Version](https://docs.photoprism.app/release-notes/), um herauszufinden, welche Änderungen vorgenommen wurden und ob sie sich auf deine Bibliothek auswirken könnten, z. B. wegen der Dateitypen, die du hast, oder weil neue Suchfunktionen hinzugefügt wurden. 
+    Wenn du auf Probleme stößt, die du anders nicht lösen kannst (also bevor du einen Fehler meldest), versuche bitte auch einen Rescan und schaue, ob das Problem dadurch gelöst wird.
+
+    Du kannst einen [Rescan über die Benutzeroberfläche](library/indexing.md) starten, indem du zu *Dateien* > *Index* navigierst, "Index vollständig aktualisieren" auswählst und dann auf "Start" klickst.
+    Manuell eingegebene Informationen wie Kategorien, Personen, Titel oder Beschreibungen werden bei der Indexierung nicht verändert, selbst wenn du den Index vollständig aktualisierst.
+
 ??? question "Es sind bereits einige meiner Bilder indexiert. Warum befinden sich noch keine Bilder in den Bereichen Ordner, Kalender und Erlebnisse?"
    
     Bilder werden erst am Ende der Indexierung zu den Bereichen Ordner, Kalender und Erlebnisse hinzugefügt.
