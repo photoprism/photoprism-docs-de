@@ -22,6 +22,21 @@ Wir empfehlen die, für iOS und Android verfügbare, App [PhotoSync](https://lin
    
 4. Trage deine PhotoPrism Konfiguration ein
 
+    !!! info ""
+        *Server:* Deine Server Url, z.B. "example.com".
+
+        *Port:* Dein Port. Falls du HTTPS verwendest ist der Port 443.
+
+        *Login:* Dein Benutzername, z.B. "admin".
+        
+        *Password:* Dein Admin Passwort.
+
+        *Directory:* /import/ oder /originals/ jenachdem, wie du deine Dateien [einlesen möchtest](../library/import-vs-index.md).
+        
+        *Use SSL:* Sollte aktiviert sein.
+
+        [PikaPods](https://docs.photoprism.app/getting-started/cloud/pikapods/) Benutzer können [hier](https://docs.pikapods.com/apps/photoprism/#sync-from-mobile-apps) weitere Informationen finden. 
+
       ![Screenshot](img/photosync-3.jpg){: style="width:35%" class="shadow"}
 
 5. Klicke *Fertig*
