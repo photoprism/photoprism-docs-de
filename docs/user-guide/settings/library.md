@@ -5,28 +5,30 @@
 ##Indexierung ##
 
 #### :material-chart-timeline-variant: Schätzungen ####
-Den ungefähren Standort von Bildern ohne Koordinaten automatisch schätzen.
+Schätzt den Standort von Bildern, die ohne GPS-Informationen aufgenommen wurden, indem er aus dem Standort anderer Bilder, die am selben Tag aufgenommen wurden, extrapoliert wird.
 
 #### :material-eye: Qualitätsfilter ####
-Wenn diese Option aktiviert ist, musst du Bilder und Videos mit geringer Qualität [*überprüfen*](../organize/review.md), bevor sie in *Suche* oder *Videos* angezeigt werden.
+Erfordert eine [Überprüfung von nicht fotografischen und qualitativ schlechten Bildern](../organize/review.md), bevor sie in den Suchergebnissen erscheinen.
 
 #### :material-camera: Automatische Konvertierung zu JPEG ####
-Wenn diese Option aktiviert ist, werden während der [*Indexierung*](../library/indexing.md) automatisch *JPEG*-Vorschaubilder deiner *RAW*-Dateien erstellt.
+Erstellt automatisch JPEG-Vorschaubilder für andere Dateitypen, damit sie in den Suchergebnissen und im Vollbildmodus angezeigt werden können.
 
-!!! attention ""
-    Falls diese Option deaktiviert ist, und es RAW, PNG oder Video Dateien ohne dazugehöriges JPEG gibt, wird es für diese Dateien keine Vorschau geben.
+!!! danger ""
+    Die Option *Automatisch konvertieren* sollte nicht deaktiviert werden, da sie PhotoPrism daran hindert, andere Dateitypen als JPEG zu indexieren, es sei denn, es gibt bereits JPEG-Sidecar-Dateien mit demselben Dateinamenpräfix. Siehe *Bildstapel*, um mehr über die Namenskonventionen von Sidecar-Dateien zu erfahren.
 
 ## Bildstapel ##
 PhotoPrism gruppiert zusammengehörige Dateien automatisch zu Bildstapeln.
-Ein Bildstapel hat ein primäres Bild, das in den Ansichten angezeigt wird. Deine gruppierten Dateien findest du unter  [*Bildstapel*](../organize/stacks.md).
+Bildstapel sind Gruppen von Dateien, die den gleichen Ursprung haben, sich aber in Qualität, Format, Größe oder Farbe unterscheiden. Gehe zu *[Einstellungen > Dateien](../settings/library.md)*, um die Stacking-Einstellungen für deine Bibliothek zu ändern.
 
 Du kannst folgende Optionen nutzen, um Bilder zu gruppieren:
 
-* :material-format-list-numbered-rtl: Fortlaufende Dateinamen
-* :material-clock-outline: Gleicher Ort und Zeit
-* :material-fingerprint: Gleiche eindeutige Bild-ID
+* :material-format-list-numbered-rtl: **Fortlaufende Dateinamen** zum Beispiel `/2018/IMG_1234 (2).jpg` und `/2018/IMG_1234 (3).jpg`
+* :material-clock-outline: **Gleicher Ort und Zeit** Gruppiert Bilder, die an derselben GPS-Position und in derselben Sekunde aufgenommen wurden
+* :material-fingerprint: **Gleiche eindeutige Bild-ID**  vergleicht die *Unique Image ID* (Exif), *Document ID*, oder *Instance ID* (XMP)
 
-!!! attention ""
+Gleichnamige Dateien, die sich im selben Ordner befinden, z.B. `/2018/IMG_1234.jpg` und  `/2018/IMG_1234.avi`, werden immer gruppiert.
+
+!!! warning ""
     Wenn du die Stacking-Einstellungen änderst, werden bereits gruppierte Dateien nicht automatisch wieder getrennt.
 
 
