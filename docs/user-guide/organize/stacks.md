@@ -1,10 +1,12 @@
 # Bildstapel #
 
-Zusammengehörige Dateien werden gruppiert, wenn in den [*Einstellungen*](../settings/general.md) die Option "Bildstapel" aktiviert ist.
+Bildstapel sind Gruppen von Dateien, die den gleichen Ursprung haben, sich aber in Qualität, Format, Größe oder Farbe unterscheiden. Gehe zu *[Einstellungen > Dateien](../settings/library.md)*, um die Stacking-Einstellungen für deine Bibliothek zu ändern.
 
-Gruppierte Dateien werden im Bereich *Bildstapel* dargestellt.
+Bildstapel werden im Bereich *Bildstapel* dargestellt.
 
 ![Screenshot](img/stack-page-german.jpg){ class="shadow" }
+
+Beachte, dass *[Videos](video.md)* und *[Live-Fotos](video.md#live-photos)*, die immer mit einem Vorschaubild gruppiert sind, nicht auf der Seite *Bildstapel* angezeigt werden.
 
 ## Unter welchen Bedingungen können Dateien gruppiert werden? ##
 
@@ -13,9 +15,9 @@ Gruppierte Dateien werden im Bereich *Bildstapel* dargestellt.
 3. Dateien, deren Metadaten zeigen, dass sie am selben Ort und in der selben Sekunde aufgenommen wurden, können gruppiert werden (optional)
 4. Dateien mit der gleichen *Unique Image ID* oder *XMP Instance ID* können gruppiert werden (optional)
 
-Du kannst das Verhalten der Punkte 2-4 in den [*Einstellungen*](../settings/general.md) konfigurieren.
+Du kannst das Verhalten der Punkte 2-4 in *[Einstellungen > Dateien](../settings/general.md)* konfigurieren.
 
-!!! attention ""
+!!! warning ""
       Wenn du die Stacking-Einstellungen änderst, werden bereits gruppierte Dateien nicht automatisch wieder getrennt.
 
 ## Gruppierte Bilder anschauen ##
