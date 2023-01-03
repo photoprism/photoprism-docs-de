@@ -2,18 +2,6 @@
 
 ## Allgemein ##
 
-??? question "Wann genau werden neuen Funktionen veröffentlicht?"
-    Unsere [Roadmap](https://link.photoprism.app/roadmap) zeigt, welche Aufgaben in Arbeit sind und welche Funktionen als nächstes implementiert werden. 
-    Du kannst Ideen, die dir gefallen, mit einem Daumen hoch bewerten, damit wir wissen, was am beliebtesten ist.
-
-    Wir haben eine Zero Bug Policy und geben unser Bestes, Nuztern zu helfen, wenn sie Fragen haben.
-    Aus diesem Grund können wir keine exakten Veröffentlichungstermine für neue Funktionen geben. 
-    
-    Unser Team erhält viel mehr Anfragen als umgesetzt werden können. Wir möchten daher betonen, dass wir in keiner Weise verpflichtet sind, die von dir angeforderten Funktionen, Verbesserungen oder sonstigen Änderungen umzusetzen. 
-    Wir freuen uns jedoch über dein Feedback und werden alle Anfragen sorgfältig prüfen.
-
-    **Da eine nachhaltige Finanzierung der Schlüssel zur schnellen Veröffentlichung neuer Funktionen ist, ermutigen wir alle Nutzer, unsere Mission zu unterstützen, indem sie [sich als Sponsor anmelden](https://photoprism.app/membership) oder eine [kommerzielle Lizenz](https://photoprism.app/teams) erwerben.**
-
 ??? question "Ist PhotoPrism von irgendwelchen externen Diensten abhängig?"
 
     Wie in unserer [Datenschutzerklärung](https://photoprism.app/privacy) ausführlich erklärt, hängen die Reverse Geocodierung und die interaktiven Weltkarten davon ab, dass die erforderlichen Daten von externen Systemen [von uns](https://photoprism.app/contact) und der [MapTiler AG](https://www.maptiler.com/contacts/) mit Hauptsitz in der Schweiz abgerufen werden. Beide Dienste werden mit einem sehr hohen Maß an Datenschutz und Vertraulichkeit angeboten.
@@ -26,14 +14,24 @@
    
       ↪ [Datenschutzerklärung](https://photoprism.app/privacy#section-7){ class="pr-3" } ↪ [Compliance FAQ](https://photoprism.app/kb/compliance-faq#privacy)
 
+??? question "Wann genau werden neuen Funktionen veröffentlicht?"
 
-??? question "Werden die Keys zur Nutzung der interaktiven Weltkarten kostenlos zur Verfügung gestellt?"
-    
-    Die API-Keys, die für die Nutzung der Karten benötigt werden, sind für uns leider nicht kostenlos, da wir so viele Nutzer haben. Diese Kosten sind einer der Gründe, warum wir alle Nutzer dazu auffordern, unsere Mission zu unterstützen, indem sie sich als [Sponsor anmelden](https://photoprism.app/membership) oder eine [kommerzielle Lizenz erwerben](https://photoprism.app/teams).
+    Unsere [Roadmap](https://link.photoprism.app/roadmap) zeigt, welche Aufgaben in Arbeit sind und welche Funktionen als nächstes implementiert werden. 
+    Du kannst Ideen, die dir gefallen, mit einem Daumen hoch bewerten, damit wir wissen, was am beliebtesten ist.
 
-    Wir könnten zwar stattdessen mehrere "nicht-kommerzielle Testkonten" registrieren, aber das wäre unserer Meinung nach nicht fair und [Maptiler](https://www.maptiler.com/) könnte sie dann vielleicht nicht mehr für Bedürftige anbieten.
+    Wir haben eine Zero Bug Policy und geben unser Bestes, Nuztern zu helfen, wenn sie Fragen haben.
+    Aus diesem Grund können wir keine exakten Veröffentlichungstermine für neue Funktionen geben. 
     
-    ↪ [Funktionsübersicht Persönliche Editionen >](https://photoprism.app/editions#compare)
+    Unser Team erhält viel mehr Anfragen als umgesetzt werden können. Wir möchten daher betonen, dass wir in keiner Weise verpflichtet sind, die von dir angeforderten Funktionen, Verbesserungen oder sonstigen Änderungen umzusetzen. 
+    Wir freuen uns jedoch über dein Feedback und werden alle Anfragen sorgfältig prüfen.
+
+    **Da eine nachhaltige Finanzierung der Schlüssel zur schnellen Veröffentlichung neuer Funktionen ist, ermutigen wir alle Nutzer, unsere Mission zu unterstützen, indem sie [sich als Sponsor anmelden](https://photoprism.app/membership) oder eine [kommerzielle Lizenz](https://photoprism.app/teams) erwerben.**
+
+??? question "Welche Funktionen sind allgemein verfügbar?"
+
+    Unser Team entscheidet dies kontinuierlich, abhängig vom erforderlichen Supportaufwand, den Server- und Lizenzkosten und davon, ob die Funktionen generell von allen benötigt oder hauptsächlich von Organisationen und fortgeschrittenen Nutzern angefordert werden. Da wir auf diese Weise der Öffentlichkeit mehr Funktionen zur Verfügung stellen können, ermutigen wir alle Nutzer, [unsere Mission zu unterstützen](https://photoprism.app/editions#compare).
+
+    [Vergleiche Personal Editions >](https://photoprism.app/editions#compare)
 
 ??? question "Was sind die Vorteile des Kaufs einer kommerziellen Lizenz?"
 
@@ -41,7 +39,6 @@
     Unsere [Compliance-FAQ](https://photoprism.app/kb/compliance-faq) geben Antworten auf die am häufigsten gestellten Fragen zur Produkt-Compliance und Skalierbarkeit.    
 
     [Funktionsübersicht Kommerzielle Editionen ›](https://photoprism.app/teams#compare)
-
 
 ??? question "Sollte freie Software nicht kostenlos sein?"
     Denke an "freie Software" wie an "freie Rede", nicht wie an "Freibier". Die [Free Software Foundation](https://www.gnu.org/philosophy/free-sw.en.html) nennt es manchmal "libre software", in Anlehnung an das französische oder spanische Wort für "frei", um zu zeigen, dass sie nicht meint, dass die Software kostenlos ist.
@@ -113,7 +110,7 @@
     Wir empfehlen die Verwendung der Filter `path:` und/oder `name:` mit Wildcards, wenn die Suche nach einzelnen Dateien die Suchergebnisse zu sehr einschränkt. Die meisten Nutzer werden alle zusammengehörigen Dateien finden wollen, damit sie zusammen angezeigt werden können, z. B. als Live-Fotos, die aus einem Video und einem Bild bestehen.    
     Sie können diese Filter mit anderen Filtern wie `live` kombinieren, um sicherzustellen, dass die Ergebnisse nur Bilder mit einem bestimmten Medientyp enthalten. Alternativ können Sie auch den Filter "filename:" mit einem freizügigeren Platzhalter verwenden, der die Dateierweiterung ausschließt.
 
-## Dateien und Anzahlsanzeigen ##
+## Bibliothek ##
 
 ??? question "Welche Datei Typen werden unterstützt?"
 
@@ -205,15 +202,6 @@
     Du kannst das Verhalten der Punkte 2-4 in den [*Einstellungen*](./settings/general.md) konfigurieren.
     Beachte, dass bereits gruppierte Dateien nicht automatisch getrennt werden, wenn du die Stacking-Einstellungen änderst.
 
-??? question "Wann sollte ich meinen Index vollständig aktualisieren?"
-    
-    Wir empfehlen, nach größeren Aktualisierungen einen kompletten Rescan durchzuführen, um die Vorteile der neuen Suchfilter und Sortieroptionen zu nutzen. 
-    Lies unbedingt [die Hinweise zu jeder Version](https://docs.photoprism.app/release-notes/), um herauszufinden, welche Änderungen vorgenommen wurden und ob sie sich auf deine Bibliothek auswirken könnten, z. B. wegen der Dateitypen, die du hast, oder weil neue Suchfunktionen hinzugefügt wurden. 
-    Wenn du auf Probleme stößt, die du anders nicht lösen kannst (also bevor du einen Fehler meldest), versuche bitte auch einen Rescan und schaue, ob das Problem dadurch gelöst wird.
-
-    Du kannst einen [Rescan über die Benutzeroberfläche](library/indexing.md) starten, indem du zu *Dateien* > *Index* navigierst, "Index vollständig aktualisieren" auswählst und dann auf "Start" klickst.
-    Manuell eingegebene Informationen wie Kategorien, Personen, Titel oder Beschreibungen werden bei der Indexierung nicht verändert, selbst wenn du den Index vollständig aktualisierst.
-
 ??? question "Es sind bereits einige meiner Bilder indexiert. Warum befinden sich noch keine Bilder in den Bereichen Ordner, Kalender und Erlebnisse?"
    
     Bilder werden erst am Ende der Indexierung zu den Bereichen Ordner, Kalender und Erlebnisse hinzugefügt.
@@ -229,12 +217,22 @@
 
     Es kann auch sein, dass mehrere JPG Dateien zu einem Bild gruppiert sind (z.B. eine original und eine bearbeitete Version).
 
+??? question "Wann sollte ich meinen Index vollständig aktualisieren?"
+
+    Wir empfehlen, nach größeren Aktualisierungen einen kompletten Rescan durchzuführen, um die Vorteile der neuen Suchfilter und Sortieroptionen zu nutzen. 
+    Lies unbedingt [die Hinweise zu jeder Version](https://docs.photoprism.app/release-notes/), um herauszufinden, welche Änderungen vorgenommen wurden und ob sie sich auf deine Bibliothek auswirken könnten, z. B. wegen der Dateitypen, die du hast, oder weil neue Suchfunktionen hinzugefügt wurden. 
+    Wenn du auf Probleme stößt, die du anders nicht lösen kannst (also bevor du einen Fehler meldest), versuche bitte auch einen Rescan und schaue, ob das Problem dadurch gelöst wird.
+
+    Du kannst einen [Rescan über die Benutzeroberfläche](library/indexing.md) starten, indem du zu *Dateien* > *Index* navigierst, "Index vollständig aktualisieren" auswählst und dann auf "Start" klickst.
+    Manuell eingegebene Informationen wie Kategorien, Personen, Titel oder Beschreibungen werden bei der Indexierung nicht verändert, selbst wenn du den Index vollständig aktualisierst.
+
+
+## Karten & Orte ##
+??? question "Warum sind einige Bilder an nicht besuchten Orten auf der Karte positioniert?"
+
+    PhotoPrism kann den Standort von Bildern, die ohne GPS-Informationen aufgenommen wurden, schätzen, indem es ihn aus dem Standort anderer Bilder, die am selben Tag aufgenommen wurden, extrapoliert. Diese Schätzungen können [in den Einstellungen] (./settings/library.md) deaktiviert werden, wenn du sie nicht möchtest.
+
 ## Metadaten ##
-??? question "Warum haben manche meiner Bilder ohne GPS Informationen trotzdem einen Ort gesetzt?"
-
-    Für Bilder ohne Orts-Informationen wird anhand von anderen Bilder, die am gleichen Tag gemacht wurden, ein Ort geschätzt. 
-    Die Schätzungen können in den [Einstellungen](./settings/general.md) deaktiviert werden.
-
 ??? question "Warum haben manche Bilder ein komisches Datum wie 01/01/1980?"
 
     Das kommt vor, wenn es zum Aufnahmezeitpunkt Probleme mit deinen Kameraeinstellungen gab.
@@ -242,7 +240,18 @@
     
     Um das Datum direkt in deiner Originaldatei zu ändern nutze bitte andere Apps wie Photoshop oder Exiftool und indexiere deine Dateien anschließend erneut.
 
-## WebDAV, Sync & Upload ##
+## Vorschaubilder ##
+??? question "Ist es nicht unsicher, dass die URLs von Vorschaubildern auch dann funktionieren, wenn du nicht eingeloggt bist?"
+
+    Wie die meisten kommerziellen Bild-Hosting-Dienste haben wir uns für eine **cookiefreie Thumbnail-API** entschieden, um die Anfrage-Latenz zu minimieren und unnötigen Netzwerkverkehr zu vermeiden. Wenn du private Sitzungscookies kopieren und in einem anderen Browserfenster verwenden würdest, hättest du ein ähnliches Problem, nur dass sie auch für andere API-Endpunkte funktionieren und nicht nur für ein einzelnes Bild.
+
+    Selbst wenn die URLs jede Minute ungültig werden würden: Digitale Kopien sind so gut wie Originale. Einmal geteilt und heruntergeladen, sollten solche Bilder als "durchgesickert" betrachtet werden, weil sie zwischengespeichert werden und vom Empfänger jederzeit erneut geteilt werden können, ohne dass es eine sichere Möglichkeit gibt, alle Kopien zurückzubekommen. Jede Form des Schutzes, die wir anbieten könnten, wäre im Grunde "Schlangenöl", könnte umgangen werden und hätte negative Auswirkungen auf das Nutzererlebnis, wie z. B. die Deaktivierung des Browser-Caches oder des Kontextmenüs.
+
+    Um ein Höchstmaß an Schutz zu gewährleisten, wird empfohlen, deinen privaten Server vom öffentlichen Internet abzuschirmen. Verwende immer **HTTPS, ein VPN und/oder idealerweise TLS-Client-Zertifikate** und stelle sicher, dass nur Personen, denen du vertraust, Zugang zu deiner Instanz haben.
+
+    Unter [docs.photoprism.app/developer-guide/media/thumbnails/](https://docs.photoprism.app/developer-guide/media/thumbnails/) erfährst du mehr.
+
+## WebDAV ##
 ??? question "Warum bekomme ich eine Fehlermeldung, wenn ich versuche einen Remote Server als Synchronisationsziel hinzuzufügen?"
    
     PhotoPrism testet einige [übliche Endpoints](https://raw.githubusercontent.com/photoprism/photoprism/develop/internal/remote/heuristic.go), wenn ein neuer Remote Server
