@@ -5,7 +5,14 @@ Es gibt noch keine offizielle native PhotoPrism App. Du kannst PhotoPrism als Pr
 !!! info ""
     Du kannst die PWA auf deinem Handy, Tablet oder Computer installieren.
 
-## PWA installieren
+## Installations Voraussetzungen
+
+Die Kompatibilität unserer PWA wurde mit Apple Safari und Google Chrome getestet, aber auch andere moderne Browser wie Firefox oder Microsoft Edge können grundsätzlich kompatibel sein.
+
+!!! note ""
+    Wenn du PhotoPrism selbst hostest, musst du sicherstellen, dass die [Site-URL richtig konfiguriert ist](https://docs.photoprism.app/getting-started/config-options/#site-information). Außerdem müssen PWAs auf einer eigenen Domain mit HTTPS gehostet werden, damit sie installiert werden können. Wenn das nicht möglich ist, kannst du immer noch "Verknüpfung erstellen...", "Zum Startbildschirm hinzufügen..." oder eine ähnlich benannte Aktion aus dem Browsermenü wählen, um die App über deinen Startbildschirm zugänglich zu machen.
+
+## Schritt für Schritt Anleitung
 === "iOS/Safari"
 
     1. Öffne PhotoPrism im Browser deines Geräts (auf iOS, in Safari)
