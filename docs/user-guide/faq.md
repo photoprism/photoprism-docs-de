@@ -6,13 +6,16 @@
 
     Wie in unserer [Datenschutzerklärung](https://photoprism.app/privacy) ausführlich erklärt, hängen die Reverse Geocodierung und die interaktiven Weltkarten davon ab, dass die erforderlichen Daten von externen Systemen [von uns](https://photoprism.app/contact) und der [MapTiler AG](https://www.maptiler.com/contacts/) mit Hauptsitz in der Schweiz abgerufen werden. Beide Dienste werden mit einem sehr hohen Maß an Datenschutz und Vertraulichkeit angeboten.
 
+      ↪ [Datenschutzerklärung](https://photoprism.app/privacy#section-7){ class="pr-3" } ↪ [Compliance FAQ](https://photoprism.app/kb/compliance-faq#privacy)    
+
     Die Nutzung dieser Dienste ist derzeit [vollständig durch uns abgedeckt](https://docs.photoprism.app/getting-started/faq/#are-the-keys-for-using-interactive-world-maps-provided-free-of-charge). Abhängig von deiner Nutzung kannst du damit viel mehr sparen als die Kosten für eine [PhotoPrism+ Mitgliedschaft](https://photoprism.app/membership). Andere Anbieter berechnen in der Regel nutzungsabhängige Gebühren und erlauben möglicherweise auch nicht, die von ihnen bereitgestellten Daten zwischenzuspeichern, was deine Privatsphäre durch unnötige Anfragen gefährdet.
 
     Um die Karten zu verwenden und Standortdetails in PhotoPrism anzuzeigen, musst du Anfragen an diese API-Endpunkte zulassen, wenn du eine Firewall installiert hast, und überprüfen, ob deine Internetverbindung funktioniert.
     
+    ![](https://dl.photoprism.app/img/diagrams/proxy-cdn.svg)
+
     Wenn du einen oder beide Dienste in deinen eigenen Räumlichkeiten betreiben möchtest, [können wir eine solche völlig autonome Lösung für dich einrichten](https://photoprism.app/contact), sofern du bereit bist, die [anfänglichen Einrichtungskosten](https://photoprism.app/kb/compliance-faq#fully-autonomous-solution) sowie die laufenden Wartungsgebühren für Inhaltslizenzen und Updates zu übernehmen.
-   
-      ↪ [Datenschutzerklärung](https://photoprism.app/privacy#section-7){ class="pr-3" } ↪ [Compliance FAQ](https://photoprism.app/kb/compliance-faq#privacy)
+
 
 ??? question "Wann genau werden neuen Funktionen veröffentlicht?"
 
@@ -62,7 +65,25 @@
 
 ??? question "Kann ich mehrere Bilder auf einmal auswählen?"
 
-    Ja, du kannst [mehrere Bilder auf einmal auswählen](./navigate.md#auswahlmodus-und-mehrfachauswahl)
+    Ja, das ist möglich. Wie es funktioniert, hängt davon ab, welche Art von Gerät du benutzt.
+
+    **Desktop Browser**
+    
+    Wähle das erste Bild aus, indem du auf :material-checkbox-blank-circle-outline: in der unteren rechten Ecke klickst.
+
+    Die Benutzeroberfläche befindet sich jetzt im Auswahlmodus:
+
+    - Um zusätzlich einzelne Bilder auszuwählen, klickst du irgendwo auf sie, außer auf die Wiedergabe-/Ansichtssymbole in der Ecke
+    - Um mehrere Bilder auf einmal auszuwählen, drücke Umschalt+Klick, damit alle Bilder zwischen dem zuletzt ausgewählten Bild und dem Bild, auf das du mit Umschalt+Klick klickst, ausgewählt werden
+
+    **Mobile Geräte**
+
+    Wähle das erste Bild mit einem langen Klick aus.
+
+    Die Benutzeroberfläche befindet sich jetzt im Auswahlmodus:
+
+    - Um zusätzlich einzelne Bilder auszuwählen, berühre sie irgendwo, außer auf den Wiedergabe-/Ansichtssymbolen in der Ecke
+    - Um mehrere Bilder auf einmal auszuwählen, mache einen langen Klick, damit alle Bilder zwischen dem zuletzt ausgewählten Bild und dem Bild, auf das du lange klickst, ausgewählt werden
 
 ??? question "Kann ich meine Bilder und Alben in Baumstrukturen organisieren?" 
     
@@ -82,33 +103,16 @@
     Benutzeroberfläche sein sollten.
     Die meisten Nutzer können ihre Erinnerungen nicht strikt hierarchisch sortieren und bevorzugen es ihre Bilder in mehreren Dimensionen zu entdecken.
 
-??? question "Was ist der Unterschied zwischen Suchbegriffen und Kategorien"
-    
-    Suchbegriffe bestehen aus einer Liste von Begriffen, welche aus Metadaten, Dateinamen und anderen Quellen, wie Geoddaten, extrahiert wurden.
-    Bilder mit passenden Suchbegriffen tauchen automatisch auch in den entsprechenden Kategorien auf.
-    
-    Auch wenn sich Suchbegriffe und Kategorien überschneiden können, dienen sie unterschiedlichen Zwecken:
+## Karten & Orte ##
+??? question "Warum werden die Straßen auf der Ortskarte nicht mehr geladen?"
 
-    * **Kategorien** können übergeordnete Kategorien haben und werden primär für die Klassifizierung verwendet, z.B. "Tier", "Katze", "Boot".
-    Duplikate und Unstimmigkeiten sollten vermieden werden.
-    * **Suchbegriffe** werden hauptsächlich zum Suchen verwendet. Sie können ähnliche Begriffe und Übersetzungen enthalten wie "Kätzchen", "Katze", "Kater".
+    Die qualitativ hochwertigen Karten waren lange Zeit ein kostenpflichtiges Feature, standen aber weiterhin zum Testen zur Verfügung. Da viele Nutzer das nicht wussten und die kommerziellen Karten einfach kostenlos nutzten, wurde dies [kürzlich](https://github.com/photoprism/photoprism/issues/2998) geändert. Bitte sieh dir den [Funktionsvergleich auf unserer Website](https://photoprism.app/editions#compare) als Referenz an. 
 
-??? question "Wie kann ich Dateien endgültig löschen?"
+    [Vergleiche Personal Editions >](https://photoprism.app/editions#compare)
 
-    Du kannst Dateien über die Web-Oberfläche [löschen](./organize/delete.md).
+??? question "Warum sind einige Bilder an nicht besuchten Orten auf der Karte positioniert?"
 
-## Suche ##
-
-??? question "Warum kann ich Live Fotos nicht abspielen oder Bildstapel finden, wenn ich nach bestimmten Bildern suche? "
-    
-    Unsere Such-API und die Benutzeroberfläche führen eine Dateisuche durch. Dies ist beabsichtigt, da "Bildstapel" Dateien unterschiedlichen Typs und unterschiedlicher Eigenschaften, wie z. B. Farbe, enthalten können.
-
-    So kann es beispielsweise Farb- und Schwarzweißversionen geben. Wenn nach diesen gesucht wird oder Bilder nach Farbe sortiert werden, muss die Benutzeroberfläche nun einzelne Dateien anzeigen. Andernfalls würden die Ergebnisse, die ein Farbbild/Video anzeigen, wenn nach Schwarzweiß gefiltert wird, keinen Sinn ergeben.    
-    
-    Ebenso finden Sie bei der Suche nach `Dateiname.mp4.*` nur JPEGs ohne Video, da die Videodateierweiterung `.mp4` nicht mit einem Punkt endet.
-
-    Wir empfehlen die Verwendung der Filter `path:` und/oder `name:` mit Wildcards, wenn die Suche nach einzelnen Dateien die Suchergebnisse zu sehr einschränkt. Die meisten Nutzer werden alle zusammengehörigen Dateien finden wollen, damit sie zusammen angezeigt werden können, z. B. als Live-Fotos, die aus einem Video und einem Bild bestehen.    
-    Sie können diese Filter mit anderen Filtern wie `live` kombinieren, um sicherzustellen, dass die Ergebnisse nur Bilder mit einem bestimmten Medientyp enthalten. Alternativ können Sie auch den Filter "filename:" mit einem freizügigeren Platzhalter verwenden, der die Dateierweiterung ausschließt.
+    PhotoPrism kann den Standort von Bildern, die ohne GPS-Informationen aufgenommen wurden, schätzen, indem es ihn aus dem Standort anderer Bilder, die am selben Tag aufgenommen wurden, extrapoliert. Diese Schätzungen können [in den Einstellungen] (./settings/library.md) deaktiviert werden, wenn du sie nicht möchtest.
 
 ## Bibliothek ##
 
@@ -226,11 +230,9 @@
     Du kannst einen [Rescan über die Benutzeroberfläche](library/indexing.md) starten, indem du zu *Dateien* > *Index* navigierst, "Index vollständig aktualisieren" auswählst und dann auf "Start" klickst.
     Manuell eingegebene Informationen wie Kategorien, Personen, Titel oder Beschreibungen werden bei der Indexierung nicht verändert, selbst wenn du den Index vollständig aktualisierst.
 
+??? question "Wie kann ich Dateien endgültig löschen?"
 
-## Karten & Orte ##
-??? question "Warum sind einige Bilder an nicht besuchten Orten auf der Karte positioniert?"
-
-    PhotoPrism kann den Standort von Bildern, die ohne GPS-Informationen aufgenommen wurden, schätzen, indem es ihn aus dem Standort anderer Bilder, die am selben Tag aufgenommen wurden, extrapoliert. Diese Schätzungen können [in den Einstellungen] (./settings/library.md) deaktiviert werden, wenn du sie nicht möchtest.
+    Du kannst Dateien über die Web-Oberfläche [löschen](./organize/delete.md).
 
 ## Metadaten ##
 ??? question "Warum haben manche Bilder ein komisches Datum wie 01/01/1980?"
@@ -239,6 +241,31 @@
     Du kannst das Datum im [Bearbeitungs-Dialog](organize/edit.md) ändern. Hier wird allerdings nur der Index in PhotoPrism geändert.
     
     Um das Datum direkt in deiner Originaldatei zu ändern nutze bitte andere Apps wie Photoshop oder Exiftool und indexiere deine Dateien anschließend erneut.
+
+??? question "Was ist der Unterschied zwischen Suchbegriffen und Kategorien"
+
+    Suchbegriffe bestehen aus einer Liste von Begriffen, welche aus Metadaten, Dateinamen und anderen Quellen, wie Geoddaten, extrahiert wurden.
+    Bilder mit passenden Suchbegriffen tauchen automatisch auch in den entsprechenden Kategorien auf.
+    
+    Auch wenn sich Suchbegriffe und Kategorien überschneiden können, dienen sie unterschiedlichen Zwecken:
+
+    * **Kategorien** können übergeordnete Kategorien haben und werden primär für die Klassifizierung verwendet, z.B. "Tier", "Katze", "Boot".
+    Duplikate und Unstimmigkeiten sollten vermieden werden.
+    * **Suchbegriffe** werden hauptsächlich zum Suchen verwendet. Sie können ähnliche Begriffe und Übersetzungen enthalten wie "Kätzchen", "Katze", "Kater".
+
+## Live Photos ##
+
+??? question "Warum kann ich Live Fotos nicht abspielen oder Bildstapel finden, wenn ich nach bestimmten Bildern suche? "
+
+    Unsere Such-API und die Benutzeroberfläche führen eine Dateisuche durch. Dies ist beabsichtigt, da "Bildstapel" Dateien unterschiedlichen Typs und unterschiedlicher Eigenschaften, wie z. B. Farbe, enthalten können.
+
+    So kann es beispielsweise Farb- und Schwarzweißversionen geben. Wenn nach diesen gesucht wird oder Bilder nach Farbe sortiert werden, muss die Benutzeroberfläche nun einzelne Dateien anzeigen. Andernfalls würden die Ergebnisse, die ein Farbbild/Video anzeigen, wenn nach Schwarzweiß gefiltert wird, keinen Sinn ergeben.    
+    
+    Ebenso finden Sie bei der Suche nach `Dateiname.mp4.*` nur JPEGs ohne Video, da die Videodateierweiterung `.mp4` nicht mit einem Punkt endet.
+
+    Wir empfehlen die Verwendung der Filter `path:` und/oder `name:` mit Wildcards, wenn die Suche nach einzelnen Dateien die Suchergebnisse zu sehr einschränkt. Die meisten Nutzer werden alle zusammengehörigen Dateien finden wollen, damit sie zusammen angezeigt werden können, z. B. als Live-Fotos, die aus einem Video und einem Bild bestehen.    
+    Sie können diese Filter mit anderen Filtern wie `live` kombinieren, um sicherzustellen, dass die Ergebnisse nur Bilder mit einem bestimmten Medientyp enthalten. Alternativ können Sie auch den Filter "filename:" mit einem freizügigeren Platzhalter verwenden, der die Dateierweiterung ausschließt.
+
 
 ## Vorschaubilder ##
 ??? question "Ist es nicht unsicher, dass die URLs von Vorschaubildern auch dann funktionieren, wenn du nicht eingeloggt bist?"
