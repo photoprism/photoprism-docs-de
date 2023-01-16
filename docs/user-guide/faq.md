@@ -245,7 +245,8 @@
 
 ??? question "Warum haben einige Bilder den 08.12.2002 als Datum, wenn sie an diesem Tag nicht aufgenommen wurden?"
 
-    Das liegt wahrscheinlich an einem [Fehler in Android](https://issuetracker.google.com/issues/36963276), der dazu führte, dass Fotos mit einem falschen CreateDate erstellt wurden. Du kannst [Exiftool](https://exiftool.org/install.html) verwenden, um die falschen Daten zu korrigieren.
+    Das liegt wahrscheinlich an einem [Fehler in Android](https://issuetracker.google.com/issues/36963276), der dazu führte, dass Fotos mit einem falschen CreateDate erstellt wurden. Du kannst das Datum im [Bearbeitungs-Dialog](organize/edit.md) ändern. Hier wird allerdings nur der Index in PhotoPrism geändert.
+    Um das Datum direkt in deiner Originaldatei zu ändern nutze bitte andere Apps wie Photoshop oder Exiftool und indexiere deine Dateien anschließend erneut.
 
 ??? question "Warum haben manche Bilder ein komisches Datum wie 01/01/1980?"
 
