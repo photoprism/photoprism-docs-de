@@ -6,13 +6,13 @@
 
     Wie in unserer [Datenschutzerklärung](https://photoprism.app/privacy) ausführlich erklärt, hängen die Reverse Geocodierung und die interaktiven Weltkarten davon ab, dass die erforderlichen Daten von externen Systemen [von uns](https://photoprism.app/contact) und der [MapTiler AG](https://www.maptiler.com/contacts/) mit Hauptsitz in der Schweiz abgerufen werden. Beide Dienste werden mit einem sehr hohen Maß an Datenschutz und Vertraulichkeit angeboten.
 
-      ↪ [Datenschutzerklärung](https://photoprism.app/privacy#section-7){ class="pr-3" } ↪ [Compliance FAQ](https://photoprism.app/kb/compliance-faq#privacy)    
-
     Die Nutzung dieser Dienste ist derzeit [vollständig durch uns abgedeckt](https://docs.photoprism.app/getting-started/faq/#are-the-keys-for-using-interactive-world-maps-provided-free-of-charge). Abhängig von deiner Nutzung kannst du damit viel mehr sparen als die Kosten für eine [PhotoPrism+ Mitgliedschaft](https://photoprism.app/membership). Andere Anbieter berechnen in der Regel nutzungsabhängige Gebühren und erlauben möglicherweise auch nicht, die von ihnen bereitgestellten Daten zwischenzuspeichern, was deine Privatsphäre durch unnötige Anfragen gefährdet.
 
-    Um die Karten zu verwenden und Standortdetails in PhotoPrism anzuzeigen, musst du Anfragen an diese API-Endpunkte zulassen, wenn du eine Firewall installiert hast, und überprüfen, ob deine Internetverbindung funktioniert.
-    
-    ![](https://dl.photoprism.app/img/diagrams/proxy-cdn.svg)
+      ↪ [Datenschutzerklärung](https://photoprism.app/privacy#section-7){ class="pr-3" } ↪ [Compliance FAQ](https://photoprism.app/kb/compliance-faq#privacy)
+
+    Um deine Installation erfolgreich einzurichten und Standortdetails in PhotoPrism anzuzeigen, musst du [Anfragen an diese API-Endpunkte zulassen](https://docs.photoprism.app/getting-started/troubleshooting/firewall), wenn du eine Firewall installiert hast, und sicherstellen, dass deine Internetverbindung funktioniert:    
+
+    [![](https://dl.photoprism.app/img/diagrams/proxy-cdn.svg){ class="w100" }](https://docs.photoprism.app/getting-started/troubleshooting/firewall)
 
     Wenn du einen oder beide Dienste in deinen eigenen Räumlichkeiten betreiben möchtest, [können wir eine solche völlig autonome Lösung für dich einrichten](https://photoprism.app/contact), sofern du bereit bist, die [anfänglichen Einrichtungskosten](https://photoprism.app/kb/compliance-faq#fully-autonomous-solution) sowie die laufenden Wartungsgebühren für Inhaltslizenzen und Updates zu übernehmen.
 
@@ -28,7 +28,7 @@
     Unser Team erhält viel mehr Anfragen als umgesetzt werden können. Wir möchten daher betonen, dass wir in keiner Weise verpflichtet sind, die von dir angeforderten Funktionen, Verbesserungen oder sonstigen Änderungen umzusetzen. 
     Wir freuen uns jedoch über dein Feedback und werden alle Anfragen sorgfältig prüfen.
 
-    **Da eine nachhaltige Finanzierung der Schlüssel zur schnellen Veröffentlichung neuer Funktionen ist, ermutigen wir alle Nutzer, unsere Mission zu unterstützen, indem sie [sich als Sponsor anmelden](https://photoprism.app/membership) oder eine [kommerzielle Lizenz](https://photoprism.app/teams) erwerben.**
+    **Da eine [nachhaltige Finanzierung](https://photoprism.app/kb/oss) der Schlüssel zur schnellen Veröffentlichung neuer Funktionen ist, ermutigen wir alle Nutzer, unsere Mission zu unterstützen, indem sie [sich als Sponsor anmelden](https://photoprism.app/membership) oder eine [kommerzielle Lizenz](https://photoprism.app/teams) erwerben.**
 
 ??? question "Welche Funktionen sind allgemein verfügbar?"
 
@@ -44,7 +44,9 @@
     [Funktionsübersicht Kommerzielle Editionen ›](https://photoprism.app/teams#compare)
 
 ??? question "Sollte freie Software nicht kostenlos sein?"
-    Denke an "freie Software" wie an "freie Rede", nicht wie an "Freibier". Die [Free Software Foundation](https://www.gnu.org/philosophy/free-sw.en.html) nennt es manchmal "libre software", in Anlehnung an das französische oder spanische Wort für "frei", um zu zeigen, dass sie nicht meint, dass die Software kostenlos ist.
+    Denke an "freie Software" wie an "freie Rede", nicht wie an "Freibier". Die [Free Software Foundation](https://www.gnu.org/philosophy/free-sw.en.html) nennt es manchmal "libre software", in Anlehnung an das französische oder spanische Wort für "frei", um zu zeigen, [dass sie nicht meint, dass die Software kostenlos ist](https://www.gnu.org/philosophy/selling.html).
+
+    [Open Source FAQ ›](https://photoprism.app/kb/oss)
 
 ??? question "Warum kann ich nicht einfach eine einzelne Version kaufen und herunterladen?"
     Anders als herkömmliche Offline-Anwendungen wie Microsoft Office muss Software, die mit dem Internet verbunden ist,
@@ -235,6 +237,13 @@
     Du kannst Dateien über die Web-Oberfläche [löschen](./organize/delete.md).
 
 ## Metadaten ##
+??? question "Windows zeigt andere Metadaten an. Könnte das ein Fehler in PhotoPrism sein?"
+
+    Wir empfehlen, dass du [Exiftool](https://exiftool.org/install.html) verwendest, um alle Metadatenfelder und -werte zu prüfen, da Windows nur eine begrenzte Funktionalität hat.
+    
+    Vielleicht wird dann klar, warum es Unterschiede gibt. Es könnte zum Beispiel sein, dass Windows einige Felder nicht unterstützt und sie deshalb ignoriert oder dass die angezeigten Daten tatsächlich aus dem Dateisystem und nicht aus den Dateien stammen. Wenn du immer noch glaubst, einen Fehler gefunden zu haben, stelle uns bitte [Beispieldateien](https://photoprism.app/contact#file-samples) zur Verfügung, damit wir das Problem reproduzieren können.
+
+
 ??? question "Warum haben manche Bilder ein komisches Datum wie 01/01/1980?"
 
     Das kommt vor, wenn es zum Aufnahmezeitpunkt Probleme mit deinen Kameraeinstellungen gab.
