@@ -9,7 +9,7 @@ nav:
       - Originale indexieren: user-guide/library/indexing.md
       - Dateien importieren: user-guide/library/import.md
       - Duplikat Erkennung: user-guide/library/duplicates.md
-      - Unterstützung von Metadaten: user-guide/advanced/metadata.md
+      - Unterstützung von Metadaten: user-guide/library/metadata.md
       - Web Datei Upload: user-guide/library/upload.md
       - WebDAV Datei Sync: user-guide/library/webdav.md
       - Datei Browser: user-guide/library/files.md
@@ -59,10 +59,10 @@ nav:
       - Konto: user-guide/settings/account.md
       #- Places: user-guide/settings/places.md
   - Backup Anleitung:
-      - Backups erstellen: user-guide/advanced/backups.md
-      - Backups wiederherstellen: user-guide/advanced/restore.md
-      - Metadaten Export: user-guide/advanced/export.md
-      - Verzeichnis Übersicht: user-guide/advanced/folders.md
+      - Backups erstellen: user-guide/backups/index.md
+      - Backups wiederherstellen: user-guide/backups/restore.md
+      - Metadaten Export: user-guide/backups/export.md
+      - Verzeichnis Übersicht: user-guide/backups/folders.md
   - Cloud Migration:
       - Google Photos: user-guide/use-cases/google.md
       - Apple Photos: user-guide/use-cases/apple.md

@@ -35,7 +35,7 @@ PhotoPrism liest nicht nur Metadaten aus Original- und Sidecar-Dateien, sondern 
 
 ## Export
 Wir möchten, dass du unabhängig von PhotoPrism und dessen Datenbank auf deine Metadaten zugreifen kannst. 
-Deshalb erstellt der Indexer zusätzlich menschenlesbare [YAML-Sidecar-Dateien](./export.md), die du bei Bedarf mit einem Texteditor oder anderen Tools öffnen kannst.
+Deshalb erstellt der Indexer zusätzlich menschenlesbare [YAML-Sidecar-Dateien](../backups/export.md), die du bei Bedarf mit einem Texteditor oder anderen Tools öffnen kannst.
 
 !!! tldr ""
     PhotoPrism bietet noch nicht die Möglichkeit, geänderte Metadaten in die Originaldateien zurückzuschreiben, um eventuelle Datenverluste und Konflikte mit Drittanbieter-Apps zu vermeiden. 
