@@ -58,6 +58,13 @@ http://admin@localhost:2342/originals/
      2. Trage die Url in das Feld **Serveradresse** ein
      3. Klicke  **Verbinden**
 
+		[Wenn du Probleme bei der Verbindung mit WebDav hast](https://docs.photoprism.app/getting-started/troubleshooting/windows/#connecting-via-webdav):
+
+     	- [ ] Du hast nicht genügend Benutzerrechte (versuche es als Admin)
+     	- [ ] Es gibt ein [allgemeines Authentifizierungsproblem](https://docs.photoprism.app/getting-started/troubleshooting/#cannot-log-in)
+     	- [ ] Deine Instanz oder dein Reverse Proxy verwendet ein ungültiges HTTPS-Zertifikat
+     	- [ ] Du versuchst, dich mit dem falschen Netzwerk oder Server zu verbinden
+
 === "Windows 10"
 
      1. Öffne den **Windows Explorer**
@@ -99,5 +106,11 @@ http://admin@localhost:2342/originals/
 	Der *Originals* Ordner ist nun als Netzwerklaufwerk im Windows Explorer eingebunden und du kannst direkt Dateien oder Verzeichnisse hinzufügen, bearbeiten oder löschen.
 	
 	![Screenshot](img/webdav-9.jpg){ class="shadow" }
-	
-	Wenn du Probleme bei der Verbindung mit WebDav hast, musst du eventuell das Basic-Authentication Level in der Registry [aktualisieren](https://help.dreamhost.com/hc/en-us/articles/216473357-Accessing-WebDAV-with-Windows).
+
+  	[Wenn du Probleme bei der Verbindung mit WebDav hast](https://docs.photoprism.app/getting-started/troubleshooting/windows/#connecting-via-webdav):
+
+     - [ ] Möglicherweise musst du **[die grundlegende Authentifizierungsstufe](https://docs.photoprism.app/getting-started/troubleshooting/windows/#connecting-via-webdav)** in der Registrierung ändern
+     - [ ] Du hast nicht genügend Benutzerrechte (versuche es als Admin)
+     - [ ] Es gibt ein [allgemeines Authentifizierungsproblem](https://docs.photoprism.app/getting-started/troubleshooting/#cannot-log-in)
+     - [ ] Deine Instanz oder dein Reverse Proxy verwendet ein ungültiges HTTPS-Zertifikat
+     - [ ] Du versuchst, dich mit dem falschen Netzwerk oder Server zu verbinden
