@@ -243,6 +243,9 @@
     
     Vielleicht wird dann klar, warum es Unterschiede gibt. Es könnte zum Beispiel sein, dass Windows einige Felder nicht unterstützt und sie deshalb ignoriert oder dass die angezeigten Daten tatsächlich aus dem Dateisystem und nicht aus den Dateien stammen. Wenn du immer noch glaubst, einen Fehler gefunden zu haben, stelle uns bitte [Beispieldateien](https://photoprism.app/contact#file-samples) zur Verfügung, damit wir das Problem reproduzieren können.
 
+??? question "Warum haben einige Bilder den 08.12.2002 als Datum, wenn sie an diesem Tag nicht aufgenommen wurden?"
+
+    Das liegt wahrscheinlich an einem [Fehler in Android](https://issuetracker.google.com/issues/36963276), der dazu führte, dass Fotos mit einem falschen CreateDate erstellt wurden. Du kannst [Exiftool](https://exiftool.org/install.html) verwenden, um die falschen Daten zu korrigieren.
 
 ??? question "Warum haben manche Bilder ein komisches Datum wie 01/01/1980?"
 
