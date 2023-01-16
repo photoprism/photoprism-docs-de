@@ -3,7 +3,7 @@
 Um deine Instanz wiederherzustellen, brauchst du die Dateien in [deinem *originals* Ordner](https://docs.photoprism.app/getting-started/docker-compose/#photoprismoriginals) und eine Kopie der Index-Datenbank. Wir empfehlen außerdem, [eine Sicherungskopie](./index.md) des Ordners [*storage*](https://docs.photoprism.app/getting-started/docker-compose/#photoprismstorage) anzulegen, damit du keine Thumbnail- oder Sidecar-Dateien neu erstellen musst und deine Sicherungskopie die komplette Konfiguration enthält:
 
 - Wenn du eine Sicherungskopie deiner Ordner *storage* und *originals* hast, ist es am einfachsten, zuerst diese Ordner wiederherzustellen und dann den Befehl restore auszuführen, falls du MariaDB verwendest
-- Andernfalls musst du zusätzlich einen [kompletten Rescan deiner Bibliothek](../../user-guide/library/originals.md) durchführen, um fehlende Sidecar- und Thumbnail-Dateien wiederherzustellen
+- Andernfalls musst du zusätzlich einen [kompletten Rescan deiner Bibliothek](../../user-guide/library/indexing.md) durchführen, um fehlende Sidecar- und Thumbnail-Dateien wiederherzustellen
 - Einige der Metadaten und deine Alben können auch [aus YAML-Sidecar-Dateien](export.md) wiederhergestellt werden, selbst wenn du keine Kopie der Indexdatenbank hast, es sei denn, du hast [diese Funktion deaktiviert](https://docs.photoprism.app/getting-started/config-options/#feature-flags)
 
 ## Restore Command
