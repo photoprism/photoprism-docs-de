@@ -51,17 +51,17 @@ Um die aktuelle Selektion aufzuheben, klicke auf das x.
 ## Auswahlmodus und Mehrfachauswahl ##
 
 ### Desktop ###
-Wähle das erste Foto aus, indem du auf :material-checkbox-blank-circle-outline: in der unteren rechten Ecke klickst.
+Wähle das erste Bild aus, indem du auf :material-checkbox-blank-circle-outline: in der unteren rechten Ecke klickst.
 
 PhotoPrism befindet sich jetzt im Auswahlmodus.
 
-- Um weitere einzelne Bilder auszuwählen, klicke auf die Bilder.
-- Um mehrere Fotos auf einmal auszuwählen, drücke Umschalttaste+Klick. Alle Fotos zwischen dem zuletzt ausgewählten Foto und dem Foto, auf das du mit Umschalt+Klick klickst, werden ausgewählt.
+- Um zusätzlich einzelne Bilder auszuwählen, klicke irgendwo auf sie, außer auf die Symbole in der Ecke.
+- Um mehrere Bilder auf einmal auszuwählen, drücke Umschalttaste+Klick. Alle Bilder zwischen dem zuletzt ausgewählten Bild und dem Bild, auf das du mit Umschalt+Klick klickst, werden ausgewählt.
 
 ### Tablet / Handy ###
-Wähle das erste Foto mit einem langen Klick/Touch aus.
+Wähle das erste Bild mit einem langen Klick/Touch aus.
 
 PhotoPrism befindet sich jetzt im Auswahlmodus.
 
-- Um weitere einzelne Bilder auszuwählen, verwende einen normalen Klick/Touch.
-- Um mehrere Fotos auf einmal auszuwählen, verwende einen langen Klick/Touch. Alle Fotos zwischen dem zuletzt ausgewählten Foto und dem Foto, auf das du lange klickst, werden ausgewählt.
+- Um zusätzlich einzelne Bilder auszuwählen, klicke/touche irgendwo auf sie, außer auf die Symbole in der Ecke.
+- Um mehrere Bilder auf einmal auszuwählen, verwende einen langen Klick/Touch. Alle Bilder zwischen dem zuletzt ausgewählten Bild und dem Bild, auf das du lange klickst, werden ausgewählt.
