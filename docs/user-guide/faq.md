@@ -34,7 +34,7 @@
 
     Unser Team entscheidet dies kontinuierlich, abhängig vom erforderlichen Supportaufwand, den Server- und Lizenzkosten und davon, ob die Funktionen generell von allen benötigt oder hauptsächlich von Organisationen und fortgeschrittenen Nutzern angefordert werden. Da wir auf diese Weise der Öffentlichkeit mehr Funktionen zur Verfügung stellen können, ermutigen wir alle Nutzer, [unsere Mission zu unterstützen](https://photoprism.app/editions#compare).
 
-    [Vergleiche Personal Editions >](https://photoprism.app/editions#compare)
+    [Funktionen Vergleichen >](https://photoprism.app/editions#compare){ class="pr-3" }     [Open Source FAQ ›](https://photoprism.app/kb/oss)
 
 ??? question "Was sind die Vorteile des Kaufs einer kommerziellen Lizenz?"
 
@@ -75,7 +75,7 @@
 
     Die Benutzeroberfläche befindet sich jetzt im Auswahlmodus:
 
-    - Um zusätzlich einzelne Bilder auszuwählen, klickst du irgendwo auf sie, außer auf die Wiedergabe-/Ansichtssymbole in der Ecke
+    - Um zusätzlich einzelne Bilder auszuwählen, klicke irgendwo auf sie, außer auf die Symbole in der Ecke.
     - Um mehrere Bilder auf einmal auszuwählen, drücke Umschalt+Klick, damit alle Bilder zwischen dem zuletzt ausgewählten Bild und dem Bild, auf das du mit Umschalt+Klick klickst, ausgewählt werden
 
     **Mobile Geräte**
@@ -84,7 +84,7 @@
 
     Die Benutzeroberfläche befindet sich jetzt im Auswahlmodus:
 
-    - Um zusätzlich einzelne Bilder auszuwählen, berühre sie irgendwo, außer auf den Wiedergabe-/Ansichtssymbolen in der Ecke
+    - Um zusätzlich einzelne Bilder auszuwählen, klicke/touche irgendwo auf sie, außer auf die Symbole in der Ecke.
     - Um mehrere Bilder auf einmal auszuwählen, mache einen langen Klick, damit alle Bilder zwischen dem zuletzt ausgewählten Bild und dem Bild, auf das du lange klickst, ausgewählt werden
 
 ??? question "Kann ich meine Bilder und Alben in Baumstrukturen organisieren?" 
