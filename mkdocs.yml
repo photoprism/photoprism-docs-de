@@ -134,6 +134,7 @@ theme:
   # Default values, taken from mkdocs_theme.yml
   language: de
   features:
+    - content.action.edit
     - navigation.top
   palette:
     scheme: default
