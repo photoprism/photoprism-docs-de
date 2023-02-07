@@ -28,13 +28,13 @@
     Unser Team erhält viel mehr Anfragen als umgesetzt werden können. Wir möchten daher betonen, dass wir in keiner Weise verpflichtet sind, die von dir angeforderten Funktionen, Verbesserungen oder sonstigen Änderungen umzusetzen. 
     Wir freuen uns jedoch über dein Feedback und werden alle Anfragen sorgfältig prüfen.
 
-    **Da eine [nachhaltige Finanzierung](https://photoprism.app/kb/oss) der Schlüssel zur schnellen Veröffentlichung neuer Funktionen ist, ermutigen wir alle Nutzer, unsere Mission zu unterstützen, indem sie [sich als Sponsor anmelden](https://photoprism.app/membership) oder eine [kommerzielle Lizenz](https://photoprism.app/teams) erwerben.**
+    **Da eine [nachhaltige Finanzierung](https://photoprism.app/oss/faq) der Schlüssel zur schnellen Veröffentlichung neuer Funktionen ist, ermutigen wir alle Nutzer, unsere Mission zu unterstützen, indem sie [sich als Sponsor anmelden](https://photoprism.app/membership) oder eine [kommerzielle Lizenz](https://photoprism.app/teams) erwerben.**
 
 ??? question "Welche Funktionen sind allgemein verfügbar?"
 
     Unser Team entscheidet dies kontinuierlich, abhängig vom erforderlichen Supportaufwand, den Server- und Lizenzkosten und davon, ob die Funktionen generell von allen benötigt oder hauptsächlich von Organisationen und fortgeschrittenen Nutzern angefordert werden. Da wir auf diese Weise der Öffentlichkeit mehr Funktionen zur Verfügung stellen können, ermutigen wir alle Nutzer, [unsere Mission zu unterstützen](https://photoprism.app/editions#compare).
 
-    [Funktionen Vergleichen >](https://photoprism.app/editions#compare){ class="pr-3" }     [Open Source FAQ ›](https://photoprism.app/kb/oss)
+    [Funktionen Vergleichen >](https://photoprism.app/editions#compare){ class="pr-3" }     [Open Source FAQ ›](https://photoprism.app/oss/faq)
 
 ??? question "Was sind die Vorteile des Kaufs einer kommerziellen Lizenz?"
 
@@ -46,7 +46,7 @@
 ??? question "Sollte freie Software nicht kostenlos sein?"
     Denke an "freie Software" wie an "freie Rede", nicht wie an "Freibier". Die [Free Software Foundation](https://www.gnu.org/philosophy/free-sw.en.html) nennt es manchmal "libre software", in Anlehnung an das französische oder spanische Wort für "frei", um zu zeigen, [dass sie nicht meint, dass die Software kostenlos ist](https://www.gnu.org/philosophy/selling.html).
 
-    [Open Source FAQ ›](https://photoprism.app/kb/oss)
+    [Open Source FAQ ›](https://photoprism.app/oss/faq)
 
 ??? question "Warum kann ich nicht einfach eine einzelne Version kaufen und herunterladen?"
     Anders als herkömmliche Offline-Anwendungen wie Microsoft Office muss Software, die mit dem Internet verbunden ist,

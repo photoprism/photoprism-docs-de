@@ -51,4 +51,4 @@ SQLite-, Config-, Cache-, Thumbnail- und Sidecar-Dateien werden im Ordner [*stor
 Wir empfehlen dir, auch diesen Ordner zu sichern, damit du die Vorschaubilder nicht neu erstellen musst und eine vollständige Sicherung deiner Konfiguration hast. Dafür kannst du ein beliebiges Standardprogramm zur Dateisicherung verwenden.
 
 !!! example ""
-    Abhängig von den [uns zur Verfügung stehenden Ressourcen](https://photoprism.app/kb/oss) kann eine zukünftige Version zusätzliche Funktionen enthalten, damit du nicht mehr auf externe Tools angewiesen bist, um Dateisicherungen durchzuführen, sondern ein Webinterface nutzen kannst.
+    Abhängig von den [uns zur Verfügung stehenden Ressourcen](https://photoprism.app/oss/faq) kann eine zukünftige Version zusätzliche Funktionen enthalten, damit du nicht mehr auf externe Tools angewiesen bist, um Dateisicherungen durchzuführen, sondern ein Webinterface nutzen kannst.
