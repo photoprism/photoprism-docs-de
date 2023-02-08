@@ -10,4 +10,5 @@ plugins:
         - www.photoprism.app/*
         - docs.photoprism.app/*
         - a.photoprism.app/*
+        - i.photoprism.app/*
         - goreportcard.com/*
