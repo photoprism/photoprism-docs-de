@@ -2,7 +2,7 @@ Originaldateien und Sidecar-Dateien werden nach Exif- und XMP-Daten sowie nach p
 Zu diesem Zweck verfügt PhotoPrism über einen [integrierten Exif-Parser](https://docs.photoprism.app/developer-guide/metadata/exif/), einen einfachen [XMP-Leser](https://docs.photoprism.app/developer-guide/metadata/xmp/) und kann auch Exiftool verwenden,
 um Metadaten in verschiedenen Formaten wie Exif, XMP und IPTC zu extrahieren:
 
-↪  [Unterstützte Exif, XMP, IPTC und DCMI Tags](https://photoprism.app/kb/metadata)
+↪  [Unterstützte Exif, XMP, IPTC und DCMI Tags](https://www.photoprism.app/kb/metadata)
 
 Die kombinierten Informationen werden dann normalisiert, kombiniert und mit [zusätzlichen Informationen angereichert](#anreicherung).
 

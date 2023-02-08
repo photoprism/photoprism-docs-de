@@ -17,7 +17,7 @@ Falls dieser deine Frage nicht beantwortet:
 * poste deine Frage in [Github Discussions](https://link.photoprism.app/discussions)
 * melde dich in unseren [Community Chat](https://link.photoprism.app/chat)
 
-[Sponsoren](https://docs.photoprism.app/funding/) erhalten direkten [technischen Support](https://photoprism.app/contact) per E-Mail.
+[Sponsoren](https://docs.photoprism.app/funding/) erhalten direkten [technischen Support](https://www.photoprism.app/contact) per E-Mail.
 
 Wir geben unser Bestes, um alle deine Fragen zu beantworten. 
 Im Gegenzug bitten wir dich, uns auf [Patreon](hhttps://link.photoprism.app/patreon) oder [GitHub Sponsors](https://link.photoprism.app/sponsor) zu unterstützen. 
@@ -26,4 +26,4 @@ Vielen Dank! 💜
 
 !!! tldr ""
     **Bitte erstelle keine Bug Reports in Github Issues, außer du bist sicher, dass du ein Problem gefunden hast, das direkt in der App behoben werden muss.**
-    [Kontaktiere uns](https://photoprism.app/contact) oder ein [Community-Mitglied](https://link.photoprism.app/discussions), wenn du Hilfe brauchst. Es könnte sich um ein lokales Konfigurationsproblem oder um ein Missverständnis bei der Funktionsweise der Software handeln.
+    [Kontaktiere uns](https://www.photoprism.app/contact) oder ein [Community-Mitglied](https://link.photoprism.app/discussions), wenn du Hilfe brauchst. Es könnte sich um ein lokales Konfigurationsproblem oder um ein Missverständnis bei der Funktionsweise der Software handeln.

@@ -4,17 +4,17 @@
 
 ??? question "Ist PhotoPrism von irgendwelchen externen Diensten abhängig?"
 
-    Wie in unserer [Datenschutzerklärung](https://photoprism.app/privacy) ausführlich erklärt, hängen die Reverse Geocodierung und die interaktiven Weltkarten davon ab, dass die erforderlichen Daten von externen Systemen [von uns](https://photoprism.app/contact) und der [MapTiler AG](https://www.maptiler.com/contacts/) mit Hauptsitz in der Schweiz abgerufen werden. Beide Dienste werden mit einem sehr hohen Maß an Datenschutz und Vertraulichkeit angeboten.
+    Wie in unserer [Datenschutzerklärung](https://www.photoprism.app/privacy) ausführlich erklärt, hängen die Reverse Geocodierung und die interaktiven Weltkarten davon ab, dass die erforderlichen Daten von externen Systemen [von uns](https://www.photoprism.app/contact) und der [MapTiler AG](https://www.maptiler.com/contacts/) mit Hauptsitz in der Schweiz abgerufen werden. Beide Dienste werden mit einem sehr hohen Maß an Datenschutz und Vertraulichkeit angeboten.
 
-    Die Nutzung dieser Dienste ist derzeit [vollständig durch uns abgedeckt](https://docs.photoprism.app/getting-started/faq/#are-the-keys-for-using-interactive-world-maps-provided-free-of-charge). Abhängig von deiner Nutzung kannst du damit viel mehr sparen als die Kosten für eine [PhotoPrism+ Mitgliedschaft](https://photoprism.app/membership). Andere Anbieter berechnen in der Regel nutzungsabhängige Gebühren und erlauben möglicherweise auch nicht, die von ihnen bereitgestellten Daten zwischenzuspeichern, was deine Privatsphäre durch unnötige Anfragen gefährdet.
+    Die Nutzung dieser Dienste ist derzeit [vollständig durch uns abgedeckt](https://docs.photoprism.app/getting-started/faq/#are-the-keys-for-using-interactive-world-maps-provided-free-of-charge). Abhängig von deiner Nutzung kannst du damit viel mehr sparen als die Kosten für eine [PhotoPrism+ Mitgliedschaft](https://www.photoprism.app/membership). Andere Anbieter berechnen in der Regel nutzungsabhängige Gebühren und erlauben möglicherweise auch nicht, die von ihnen bereitgestellten Daten zwischenzuspeichern, was deine Privatsphäre durch unnötige Anfragen gefährdet.
 
-      ↪ [Datenschutzerklärung](https://photoprism.app/privacy#section-7){ class="pr-3" } ↪ [Compliance FAQ](https://photoprism.app/kb/compliance-faq#privacy)
+      ↪ [Datenschutzerklärung](https://www.photoprism.app/privacy#section-7){ class="pr-3" } ↪ [Compliance FAQ](https://www.photoprism.app/kb/compliance-faq#privacy)
 
     Um deine Installation erfolgreich einzurichten und Standortdetails in PhotoPrism anzuzeigen, musst du [Anfragen an diese API-Endpunkte zulassen](https://docs.photoprism.app/getting-started/troubleshooting/firewall), wenn du eine Firewall installiert hast, und sicherstellen, dass deine Internetverbindung funktioniert:    
 
     [![](https://dl.photoprism.app/img/diagrams/proxy-cdn.svg){ class="w100" }](https://docs.photoprism.app/getting-started/troubleshooting/firewall)
 
-    Wenn du einen oder beide Dienste in deinen eigenen Räumlichkeiten betreiben möchtest, [können wir eine solche völlig autonome Lösung für dich einrichten](https://photoprism.app/contact), sofern du bereit bist, die [anfänglichen Einrichtungskosten](https://photoprism.app/kb/compliance-faq#fully-autonomous-solution) sowie die laufenden Wartungsgebühren für Inhaltslizenzen und Updates zu übernehmen.
+    Wenn du einen oder beide Dienste in deinen eigenen Räumlichkeiten betreiben möchtest, [können wir eine solche völlig autonome Lösung für dich einrichten](https://www.photoprism.app/contact), sofern du bereit bist, die [anfänglichen Einrichtungskosten](https://www.photoprism.app/kb/compliance-faq#fully-autonomous-solution) sowie die laufenden Wartungsgebühren für Inhaltslizenzen und Updates zu übernehmen.
 
 
 ??? question "Wann genau werden neuen Funktionen veröffentlicht?"
@@ -28,25 +28,25 @@
     Unser Team erhält viel mehr Anfragen als umgesetzt werden können. Wir möchten daher betonen, dass wir in keiner Weise verpflichtet sind, die von dir angeforderten Funktionen, Verbesserungen oder sonstigen Änderungen umzusetzen. 
     Wir freuen uns jedoch über dein Feedback und werden alle Anfragen sorgfältig prüfen.
 
-    **Da eine [nachhaltige Finanzierung](https://photoprism.app/oss/faq) der Schlüssel zur schnellen Veröffentlichung neuer Funktionen ist, ermutigen wir alle Nutzer, unsere Mission zu unterstützen, indem sie [sich als Sponsor anmelden](https://photoprism.app/membership) oder eine [kommerzielle Lizenz](https://photoprism.app/teams) erwerben.**
+    **Da eine [nachhaltige Finanzierung](https://www.photoprism.app/oss/faq) der Schlüssel zur schnellen Veröffentlichung neuer Funktionen ist, ermutigen wir alle Nutzer, unsere Mission zu unterstützen, indem sie [sich als Sponsor anmelden](https://www.photoprism.app/membership) oder eine [kommerzielle Lizenz](https://www.photoprism.app/teams) erwerben.**
 
 ??? question "Welche Funktionen sind allgemein verfügbar?"
 
-    Unser Team entscheidet dies kontinuierlich, abhängig vom erforderlichen Supportaufwand, den Server- und Lizenzkosten und davon, ob die Funktionen generell von allen benötigt oder hauptsächlich von Organisationen und fortgeschrittenen Nutzern angefordert werden. Da wir auf diese Weise der Öffentlichkeit mehr Funktionen zur Verfügung stellen können, ermutigen wir alle Nutzer, [unsere Mission zu unterstützen](https://photoprism.app/editions#compare).
+    Unser Team entscheidet dies kontinuierlich, abhängig vom erforderlichen Supportaufwand, den Server- und Lizenzkosten und davon, ob die Funktionen generell von allen benötigt oder hauptsächlich von Organisationen und fortgeschrittenen Nutzern angefordert werden. Da wir auf diese Weise der Öffentlichkeit mehr Funktionen zur Verfügung stellen können, ermutigen wir alle Nutzer, [unsere Mission zu unterstützen](https://www.photoprism.app/editions#compare).
 
-    [Funktionen Vergleichen >](https://photoprism.app/editions#compare){ class="pr-3" }     [Open Source FAQ ›](https://photoprism.app/oss/faq)
+    [Funktionen Vergleichen >](https://www.photoprism.app/editions#compare){ class="pr-3" }     [Open Source FAQ ›](https://www.photoprism.app/oss/faq)
 
 ??? question "Was sind die Vorteile des Kaufs einer kommerziellen Lizenz?"
 
-    Ein wesentlicher Unterschied zwischen der [Open Source Lizenz](https://docs.photoprism.app/license/agpl/) und  einem [kommerziellen Lizenzvertrag](https://photoprism.app/teams) besteht darin, dass du Zugang zu zusätzlichen Support- und Konfigurationsoptionen sowie das Recht erhälst, die Funktionalität an deine Bedürfnisse anzupassen, ohne dass du deine Änderungen veröffentlichen musst. 
-    Unsere [Compliance-FAQ](https://photoprism.app/kb/compliance-faq) geben Antworten auf die am häufigsten gestellten Fragen zur Produkt-Compliance und Skalierbarkeit.    
+    Ein wesentlicher Unterschied zwischen der [Open Source Lizenz](https://docs.photoprism.app/license/agpl/) und  einem [kommerziellen Lizenzvertrag](https://www.photoprism.app/teams) besteht darin, dass du Zugang zu zusätzlichen Support- und Konfigurationsoptionen sowie das Recht erhälst, die Funktionalität an deine Bedürfnisse anzupassen, ohne dass du deine Änderungen veröffentlichen musst. 
+    Unsere [Compliance-FAQ](https://www.photoprism.app/kb/compliance-faq) geben Antworten auf die am häufigsten gestellten Fragen zur Produkt-Compliance und Skalierbarkeit.    
 
-    [Funktionsübersicht Kommerzielle Editionen ›](https://photoprism.app/teams#compare)
+    [Funktionsübersicht Kommerzielle Editionen ›](https://www.photoprism.app/teams#compare)
 
 ??? question "Sollte freie Software nicht kostenlos sein?"
     Denke an "freie Software" wie an "freie Rede", nicht wie an "Freibier". Die [Free Software Foundation](https://www.gnu.org/philosophy/free-sw.en.html) nennt es manchmal "libre software", in Anlehnung an das französische oder spanische Wort für "frei", um zu zeigen, [dass sie nicht meint, dass die Software kostenlos ist](https://www.gnu.org/philosophy/selling.html).
 
-    [Open Source FAQ ›](https://photoprism.app/oss/faq)
+    [Open Source FAQ ›](https://www.photoprism.app/oss/faq)
 
 ??? question "Warum kann ich nicht einfach eine einzelne Version kaufen und herunterladen?"
     Anders als herkömmliche Offline-Anwendungen wie Microsoft Office muss Software, die mit dem Internet verbunden ist,
@@ -59,7 +59,7 @@
 ??? question "Wird die selbst gehostete Version weiterhin unterstützt?"
 
     Auf jeden Fall! Wir haben es uns zur Aufgabe gemacht, deine Freiheit und deine Privatsphäre zu schützen.
-    Selbst zu hosten ist der einfachste Weg, um die Kontrolle zu behalten und deine [Privatsphäre](https://photoprism.app/privacy) zu schützen. Es bietet auch die beste Erfahrung für fortgeschrittene Nutzer, die oft auf eine lokale Toolchain angewiesen sind, um ihre Bilder auszuwählen, zu bearbeiten und zu veröffentlichen.    
+    Selbst zu hosten ist der einfachste Weg, um die Kontrolle zu behalten und deine [Privatsphäre](https://www.photoprism.app/privacy) zu schützen. Es bietet auch die beste Erfahrung für fortgeschrittene Nutzer, die oft auf eine lokale Toolchain angewiesen sind, um ihre Bilder auszuwählen, zu bearbeiten und zu veröffentlichen.    
     
     Da es eine große Nachfrage und viele praktische Anwendungen für eine gehostete Version gibt, wollen wir diese zusätzlich anbieten, damit unsere Nutzer mehr Auswahl haben. Ausgewählte Hosting-Partner werden sicherstellen, dass die Privatsphäre unserer Nutzer so weit wie technisch möglich geschützt wird, auch in der Cloud.    
 
@@ -108,9 +108,9 @@
 ## Karten & Orte ##
 ??? question "Warum werden die Straßen auf der Ortskarte nicht mehr geladen?"
 
-    Die qualitativ hochwertigen Karten waren lange Zeit ein kostenpflichtiges Feature, standen aber weiterhin zum Testen zur Verfügung. Da viele Nutzer das nicht wussten und die kommerziellen Karten einfach kostenlos nutzten, wurde dies [kürzlich](https://github.com/photoprism/photoprism/issues/2998) geändert. Bitte sieh dir den [Funktionsvergleich auf unserer Website](https://photoprism.app/editions#compare) als Referenz an. 
+    Die qualitativ hochwertigen Karten waren lange Zeit ein kostenpflichtiges Feature, standen aber weiterhin zum Testen zur Verfügung. Da viele Nutzer das nicht wussten und die kommerziellen Karten einfach kostenlos nutzten, wurde dies [kürzlich](https://github.com/photoprism/photoprism/issues/2998) geändert. Bitte sieh dir den [Funktionsvergleich auf unserer Website](https://www.photoprism.app/editions#compare) als Referenz an. 
 
-    [Vergleiche Personal Editions >](https://photoprism.app/editions#compare)
+    [Vergleiche Personal Editions >](https://www.photoprism.app/editions#compare)
 
 ??? question "Warum sind einige Bilder an nicht besuchten Orten auf der Karte positioniert?"
 
@@ -241,7 +241,7 @@
 
     Wir empfehlen, dass du [Exiftool](https://exiftool.org/install.html) verwendest, um alle Metadatenfelder und -werte zu prüfen, da Windows nur eine begrenzte Funktionalität hat.
     
-    Vielleicht wird dann klar, warum es Unterschiede gibt. Es könnte zum Beispiel sein, dass Windows einige Felder nicht unterstützt und sie deshalb ignoriert oder dass die angezeigten Daten tatsächlich aus dem Dateisystem und nicht aus den Dateien stammen. Wenn du immer noch glaubst, einen Fehler gefunden zu haben, stelle uns bitte [Beispieldateien](https://photoprism.app/contact#file-samples) zur Verfügung, damit wir das Problem reproduzieren können.
+    Vielleicht wird dann klar, warum es Unterschiede gibt. Es könnte zum Beispiel sein, dass Windows einige Felder nicht unterstützt und sie deshalb ignoriert oder dass die angezeigten Daten tatsächlich aus dem Dateisystem und nicht aus den Dateien stammen. Wenn du immer noch glaubst, einen Fehler gefunden zu haben, stelle uns bitte [Beispieldateien](https://www.photoprism.app/contact#file-samples) zur Verfügung, damit wir das Problem reproduzieren können.
 
 ??? question "Warum haben einige Bilder den 08.12.2002 als Datum, wenn sie an diesem Tag nicht aufgenommen wurden?"
 
