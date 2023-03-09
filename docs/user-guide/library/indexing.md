@@ -26,7 +26,7 @@
     Ein NSFW-Detektor kann aktiviert werden, um Bilder, mit anstößigem Inhalt, automatisch als privat zu kennzeichnen. 
     Beachte, dass der Mechanismus nicht 100% zuverlässig ist.
     
-    Bilder, die bereits indexiert wurden, bevor der NSWF-Detektor aktiviert wird, werden vom Detektor nicht gescannt.
+    Bilder, die bereits indexiert wurden, bevor der NSFW-Detektor aktiviert wird, werden vom Detektor nicht gescannt.
 
 #### Verzeichnisse und Dateien ignorieren ####
 Versteckte Dateien oder Ordner, deren Namen mit  `.`, `@`, `_.` oder `__` wie `__MACOSX` beginnen, werden automatisch ignoriert.
