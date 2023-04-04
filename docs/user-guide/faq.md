@@ -28,20 +28,20 @@
     Unser Team erhält viel mehr Anfragen als umgesetzt werden können. Wir möchten daher betonen, dass wir in keiner Weise verpflichtet sind, die von dir angeforderten Funktionen, Verbesserungen oder sonstigen Änderungen umzusetzen. 
     Wir freuen uns jedoch über dein Feedback und werden alle Anfragen sorgfältig prüfen.
 
-    **Da eine [nachhaltige Finanzierung](https://www.photoprism.app/oss/faq) der Schlüssel zur schnellen Veröffentlichung neuer Funktionen ist, ermutigen wir alle Nutzer, unsere Mission zu unterstützen, indem sie [sich als Sponsor anmelden](https://www.photoprism.app/membership) oder eine [kommerzielle Lizenz](https://www.photoprism.app/teams) erwerben.**
+    **Da eine [nachhaltige Finanzierung](https://www.photoprism.app/oss/faq) der Schlüssel zur schnellen Veröffentlichung neuer Funktionen ist, ermutigen wir alle Nutzer, unsere Mission zu unterstützen, indem sie [sich als Mitglied anmelden](https://www.photoprism.app/membership) oder eine [kommerzielle Lizenz](https://www.photoprism.app/teams) erwerben.**
 
 ??? question "Welche Funktionen sind allgemein verfügbar?"
 
     Unser Team entscheidet dies kontinuierlich, abhängig vom erforderlichen Supportaufwand, den Server- und Lizenzkosten und davon, ob die Funktionen generell von allen benötigt oder hauptsächlich von Organisationen und fortgeschrittenen Nutzern angefordert werden. Da wir auf diese Weise der Öffentlichkeit mehr Funktionen zur Verfügung stellen können, ermutigen wir alle Nutzer, [unsere Mission zu unterstützen](https://www.photoprism.app/editions#compare).
 
-    [Funktionen Vergleichen >](https://www.photoprism.app/editions#compare){ class="pr-3" }     [Open Source FAQ ›](https://www.photoprism.app/oss/faq)
+    [Mitgliedschaften Vergleichen >](https://www.photoprism.app/editions#compare){ class="pr-3" }     [Open Source FAQ ›](https://www.photoprism.app/oss/faq)
 
 ??? question "Was sind die Vorteile des Kaufs einer kommerziellen Lizenz?"
 
     Ein wesentlicher Unterschied zwischen der [Open Source Lizenz](https://docs.photoprism.app/license/agpl/) und  einem [kommerziellen Lizenzvertrag](https://www.photoprism.app/teams) besteht darin, dass du Zugang zu zusätzlichen Support- und Konfigurationsoptionen sowie das Recht erhälst, die Funktionalität an deine Bedürfnisse anzupassen, ohne dass du deine Änderungen veröffentlichen musst. 
     Unsere [Compliance-FAQ](https://www.photoprism.app/kb/compliance-faq) geben Antworten auf die am häufigsten gestellten Fragen zur Produkt-Compliance und Skalierbarkeit.    
 
-    [Funktionsübersicht Kommerzielle Editionen ›](https://www.photoprism.app/teams#compare)
+    [Team Editionen Vergleichen ›](https://www.photoprism.app/teams#compare)
 
 ??? question "Sollte freie Software nicht kostenlos sein?"
     Denke an "freie Software" wie an "freie Rede", nicht wie an "Freibier". Die [Free Software Foundation](https://www.gnu.org/philosophy/free-sw.en.html) nennt es manchmal "libre software", in Anlehnung an das französische oder spanische Wort für "frei", um zu zeigen, [dass sie nicht meint, dass die Software kostenlos ist](https://www.gnu.org/philosophy/selling.html).
@@ -110,11 +110,11 @@
 
     Die qualitativ hochwertigen Karten waren lange Zeit ein kostenpflichtiges Feature, standen aber weiterhin zum Testen zur Verfügung. Da viele Nutzer das nicht wussten und die kommerziellen Karten einfach kostenlos nutzten, wurde dies [kürzlich](https://github.com/photoprism/photoprism/issues/2998) geändert. Bitte sieh dir den [Funktionsvergleich auf unserer Website](https://www.photoprism.app/editions#compare) als Referenz an. 
 
-    [Vergleiche Personal Editions >](https://www.photoprism.app/editions#compare)
+    [Mitgliedschaften vergleichen >](https://www.photoprism.app/editions#compare)
 
 ??? question "Warum sind einige Bilder an nicht besuchten Orten auf der Karte positioniert?"
 
-    PhotoPrism kann den Standort von Bildern, die ohne GPS-Informationen aufgenommen wurden, schätzen, indem es ihn aus dem Standort anderer Bilder, die am selben Tag aufgenommen wurden, extrapoliert. Diese Schätzungen können [in den Einstellungen] (./settings/library.md) deaktiviert werden, wenn du sie nicht möchtest.
+    PhotoPrism kann den Standort von Bildern, die ohne GPS-Informationen aufgenommen wurden, schätzen, indem es ihn aus dem Standort anderer Bilder, die am selben Tag aufgenommen wurden, extrapoliert. Diese Schätzungen können [in den Einstellungen](./settings/library.md) deaktiviert werden, wenn du sie nicht möchtest.
 
 ## Bibliothek ##
 
