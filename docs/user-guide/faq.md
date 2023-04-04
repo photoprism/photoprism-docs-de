@@ -236,6 +236,12 @@
 
     Du kannst Dateien über die Web-Oberfläche [löschen](./organize/delete.md).
 
+??? question "In welchen Fällen können Dateien im Originals Ordner geändert werden?"
+
+    PhotoPrism schreibt in der Regel nicht im *Originals* Ordner, mit folgenden Ausnahmen: (1) Wenn du ein Bild in der Benutzeroberfläche rotierst, muss sein Exif-Header aktualisiert werden. (2) Du hebst die Stapelung von Dateien auf, die aufgrund ihres Namens gestapelt wurden, so dass sie umbenannt werden müssen. (3) Du fügst Dateien über die Importfunktion oder den Web-Upload hinzu. (4) Du löschst Dateien manuell über die Benutzeroberfläche. (5) Du hast den Ordner *Originals* als deinen Sidecar-Ordner konfiguriert. (6) Du greifst mit einem WebDAV-Client auf den *Originals* Ordner zu, um deine Dateien zu verwalten, ohne dass der *Schreibschutzmodus* aktiviert ist.
+
+
+
 ## Metadaten ##
 ??? question "Windows zeigt andere Metadaten an. Könnte das ein Fehler in PhotoPrism sein?"
 
