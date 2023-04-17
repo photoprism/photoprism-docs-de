@@ -21,8 +21,9 @@ Falls dieser deine Frage nicht beantwortet:
 
 Wir geben unser Bestes, um alle deine Fragen zu beantworten. 
 Im Gegenzug bitten wir dich, uns auf [Patreon](hhttps://link.photoprism.app/patreon) oder [GitHub Sponsors](https://link.photoprism.app/sponsor) zu unterstützen. 
-Denke bei "freier Software" an "Freiheit", nicht an "Freibier". 
 Vielen Dank! 💜
+
+[Mitgliedschaften Vergleichen ›](https://www.photoprism.app/editions#compare){ class="pr-3" }     [Open Source FAQ ›](https://www.photoprism.app/oss/faq)
 
 !!! tldr ""
     **Bitte erstelle keine Bug Reports in Github Issues, außer du bist sicher, dass du ein Problem gefunden hast, das direkt in der App behoben werden muss.**
