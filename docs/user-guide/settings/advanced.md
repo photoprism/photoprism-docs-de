@@ -214,6 +214,12 @@ Hiermit wird die maximale Größe der JPEG-Dateien festgelegt, die bei der Umwan
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_JPEG_SIZE`.
 
+### Maximale PNG Größe
+
+Hiermit wird die maximale Größe der PNG-Dateien festgelegt, die bei der Umwandlung von Original-Dateien erstellt werden.
+
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_PNG_SIZE`.
+
 ### Presets anwenden
 
 Aktiviert Benutzerdefinierte Voreinstellungen. Dateien werden möglicherweise langsamer konvertiert.
@@ -237,6 +243,11 @@ Wenn diese Funktion deaktiviert ist, wird [FFmpeg](https://www.ffmpeg.org/docume
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_FFMPEG`.
 
+### Deaktiviere ImageMagick
+
+Wenn diese Funktion deaktiviert ist, wird [ImageMagick](https://imagemagick.org/) nicht für die Konvertierung verwendet.
+
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_IMAGEMAGICK`.
 
 <!--## Filter ##
 

@@ -65,3 +65,20 @@ Um deinen Bildern Informationen wie Land, Stadt oder Kategorie hinzuzufügen, ha
 PhotoPrism Places ist unsere eigene Geocoding API, basierend auf  OpenStreetMap.
 Zusätzlich werden wir in Zukunft Informationen über öffentliche Events bereitstellen, die an bestimmten Orten stattgefunden haben.
 Dadurch können beispielsweise automatisch Alben von Musikfestivals oder Sportevents erzeugt werden.
+
+## Downloads ##
+
+!!! info ""
+    Diese neue Funktion wird in unserer kommenden stabilen Version verfügbar sein.
+
+!!! info ""
+    Beachte, dass deine Einstellungen keine Auswirkungen auf ZIP-Archive haben, wenn du komplette Alben herunterlädst.
+
+#### :material-camera-iris: Originals ####
+Nur Dateien aus dem Ordner *originals* werden heruntergeladen, nicht aber Dateien, die automatisch im Ordner *sidecar* erstellt wurden. Dies ist die empfohlene Standardeinstellung.
+
+#### :material-raw: RAW ####
+RAW Dateien herunterladen.
+
+#### :material-paperclip: Sidecar ####
+Sidecar-Dateien herunterladen, z.B. XMP-Metadaten. Dies wird im Allgemeinen nicht empfohlen, außer für professionelle Workflows.
