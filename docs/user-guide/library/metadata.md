@@ -38,5 +38,5 @@ Wir möchten, dass du unabhängig von PhotoPrism und dessen Datenbank auf deine 
 Deshalb erstellt der Indexer zusätzlich menschenlesbare [YAML-Sidecar-Dateien](../backups/export.md), die du bei Bedarf mit einem Texteditor oder anderen Tools öffnen kannst.
 
 !!! tldr ""
-    PhotoPrism bietet noch nicht die Möglichkeit, geänderte Metadaten in die Originaldateien zurückzuschreiben, um eventuelle Datenverluste und Konflikte mit Drittanbieter-Apps zu vermeiden. 
+    Abgesehen von der [Bildorientierung](../organize/rotate.md) bietet PhotoPrism noch nicht die Möglichkeit, geänderte Metadaten in die Originaldateien zurückzuschreiben, um eventuelle Datenverluste und Konflikte mit Drittanbieter-Apps zu vermeiden. 
     Siehe [GitHub-Diskussionen](https://github.com/photoprism/photoprism/discussions/1092).
