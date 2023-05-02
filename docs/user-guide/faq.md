@@ -63,6 +63,26 @@
     
     Da es eine große Nachfrage und viele praktische Anwendungen für eine gehostete Version gibt, wollen wir diese zusätzlich anbieten, damit unsere Nutzer mehr Auswahl haben. Ausgewählte Hosting-Partner werden sicherstellen, dass die Privatsphäre unserer Nutzer so weit wie technisch möglich geschützt wird, auch in der Cloud.    
 
+## Mitgliedschaften ##
+
+??? question "Wie kann ich meine Mitgliedschaft aktivieren?"
+
+    Um eine neue Instanz mit deinem Mitgliedskonto zu verbinden, musst du dich mit dem Admin-Benutzer anmelden, der bei der Einrichtung automatisch erstellt wird (siehe deine `docker-compose.yml`-Datei oder die App-Store-Dokumentation), und dann die in unserem Aktivierungs-Guide beschriebenen Schritte ausführen.    
+    
+    [Aktivierungs-Guide ›](https://www.photoprism.app/kb/activation)
+
+??? question "Gibt es Alternativen zu einem wiederkehrenden Abonnement?"
+
+    PhotoPrism+-Mitglieder erhalten nach 24 Monaten automatisch eine kostenlose Essentials-Mitgliedschaft auf Lebenszeit. Ebenso erhalten Silbermitglieder nach 24 Monaten eine lebenslange Plus-Mitgliedschaft, Goldmitglieder nach 12 Monaten und Platinmitglieder nach nur 6 Monaten. Um Abonnements ganz zu vermeiden, können die Mitgliedsbeiträge auch im Voraus bezahlt werden.
+    
+    [Mitgliedschaften FAQ ›](https://www.photoprism.app/kb/membership)
+
+??? question "Was passiert, wenn ich meine Mitgliedschaft kündige?"
+
+    Wenn du Anspruch auf eine lebenslange Essentials- oder Plus-Mitgliedschaft hast, kannst du diese Funktionen weiterhin nutzen, auch wenn du dich entscheidest, uns nicht mehr zu unterstützen. Ansonsten kannst du weiterhin alle frei verfügbaren Funktionen nutzen. In keinem Fall verlierst du den Zugriff auf deine Bilder.
+    
+    [Mitgliedschaften Vergleichen >](https://www.photoprism.app/editions#compare)
+
 ## Benutzer-Oberfläche ##
 
 ??? question "Kann ich mehrere Bilder auf einmal auswählen?"
