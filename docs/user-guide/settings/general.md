@@ -69,9 +69,6 @@ Dadurch können beispielsweise automatisch Alben von Musikfestivals oder Sportev
 ## Downloads ##
 
 !!! info ""
-    Diese neue Funktion wird in unserer kommenden stabilen Version verfügbar sein.
-
-!!! info ""
     Beachte, dass deine Einstellungen keine Auswirkungen auf ZIP-Archive haben, wenn du komplette Alben herunterlädst.
 
 #### :material-camera-iris: Originals ####

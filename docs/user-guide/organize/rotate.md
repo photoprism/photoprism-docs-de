@@ -1,8 +1,5 @@
 # Bilder drehen #
 
-!!! info ""
-    Diese neue Funktion wird in unserer kommenden stabilen Version verfügbar sein.
-
 PhotoPrism bietet dir die Möglichkeit, JPG- und PNG-Bilder zu drehen.
 
 1. Öffne den [*Bearbeitungsdialog*](edit.md)
