@@ -122,7 +122,7 @@
 
     PhotoPrism unterstützt Indexieren, Anzeigen und [Konvertierung](./settings/library.md) der meisten gängigen Bild-, Video- und RAW-Dateiformate, einschließlich JPEG, PNG, GIF, BMP, HEIF, HEIC, MP4, MOV, WebP und WebM. [TIFF wird teilweise unterstützt](https://github.com/golang/go/issues?q=is%3Aissue+image%2Ftiff+) ohne Erweiterungen wie GeoTIFF.
 
-    Das intern verwendete Bildformat ist JPEG. Beim Indexieren kann für Videos und Bilder in anderen Formaten automatisch eine JPEG-Sidecar-Datei erstellt werden. Sie wird für die Erstellung von Thumbnails, die Bildklassifizierung und die Gesichtserkennung benötigt. Die Unterstützung von JPEG XL ist geplant, sobald es allgemein verfügbar ist und genügend kompatible Programme existieren.
+    Bei der Indexierung wird automatisch eine JPEG- oder PNG-Sidecar-Datei für Videos und Bilder in anderen Formaten, wie RAW oder Vektorgrafiken, erstellt. Sie wird für die Erstellung von Thumbnails, die Bildklassifizierung und die Gesichtserkennung benötigt. Die Unterstützung von JPEG XL ist geplant, sobald es allgemein verfügbar ist und genügend kompatible Programme existieren.
     
     Falls installiert, ist die Konvertierung von RAW-Dateien mit den folgenden Konvertern möglich (unser Docker-Image enthält beide):
 
