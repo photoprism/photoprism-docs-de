@@ -67,11 +67,6 @@ Die Person wird nun unter *Erkannt* angezeigt
 ## Personen ausblenden ##
 Du kannst Personen im Bereich *Erkannt* ausblenden, indem du :material-close: klickst.
 
-!!! example ""
-    **Diese Funktion ist derzeit nur für Mitglieder verfügbar, um allen zu danken, die die Entwicklung dieser Anwendung unterstützen.**
-    Du erfährst, wie sie aktiviert werden kann, sobald du uns bei [Patreon](https://link.photoprism.app/patreon) oder [GitHub Sponsors](https://link.photoprism.app/sponsor) unterstützt.
-    Wir ermutigen alle Nutzer, [unsere Mission zu unterstützen](https://www.photoprism.app/membership) , da uns dies [dabei hilft, mehr Funktionen für die Öffentlichkeit bereitzustellen](https://www.photoprism.app/oss/faq). Vielen Dank!  💜
-
 !!! attention ""
     Bilder von ausgeblendeten Personen tauchen weiterhin in Suchergebnissen auf.
 
