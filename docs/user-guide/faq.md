@@ -16,6 +16,18 @@
 
     Wenn du einen oder beide Dienste in deinen eigenen Räumlichkeiten betreiben möchtest, [können wir eine solche völlig autonome Lösung für dich einrichten](https://www.photoprism.app/contact), sofern du bereit bist, die [anfänglichen Einrichtungskosten](https://www.photoprism.app/kb/compliance-faq#fully-autonomous-solution) sowie die laufenden Wartungsgebühren für Inhaltslizenzen und Updates zu übernehmen.
 
+??? question "Warum sind einige Funktionen nur für Mitglieder verfügbar?"
+
+    PhotoPrism ist **100% selbstfinanziert und unabhängig**. Freiwillige Spenden decken nicht die Kosten für ein Team, das Vollzeit arbeitet, um dich mit Updates, Dokumentation und Support zu versorgen. Es ist deine Entscheidung, ob du dich anmelden möchtest, um zusätzliche Vorteile zu genießen.
+    
+    [Mitgliedschafts FAQ ›](https://www.photoprism.app/kb/membership)
+
+??? question "Was sind die Vorteile des Kaufs einer kommerziellen Lizenz?"
+
+    Ein wesentlicher Unterschied zwischen der [Open Source Lizenz](https://docs.photoprism.app/license/agpl/) und  einem [kommerziellen Lizenzvertrag](https://www.photoprism.app/teams) besteht darin, dass du Zugang zu zusätzlichen Support- und Konfigurationsoptionen sowie das Recht erhälst, die Funktionalität an deine Bedürfnisse anzupassen, ohne dass du deine Änderungen veröffentlichen musst. 
+    Unsere [Compliance-FAQ](https://www.photoprism.app/kb/compliance-faq) geben Antworten auf die am häufigsten gestellten Fragen zur Produkt-Compliance und Skalierbarkeit.    
+
+    [Team Editionen Vergleichen ›](https://www.photoprism.app/teams#compare)
 
 ??? question "Wann genau werden neuen Funktionen veröffentlicht?"
 
@@ -29,39 +41,6 @@
     Wir freuen uns jedoch über dein Feedback und werden alle Anfragen sorgfältig prüfen.
 
     **Da eine [nachhaltige Finanzierung](https://www.photoprism.app/oss/faq) der Schlüssel zur schnellen Veröffentlichung neuer Funktionen ist, ermutigen wir alle Nutzer, unsere Mission zu unterstützen, indem sie [sich als Mitglied anmelden](https://www.photoprism.app/membership) oder eine [kommerzielle Lizenz](https://www.photoprism.app/teams) erwerben.**
-
-??? question "Welche Funktionen sind allgemein verfügbar?"
-
-    Unser Team entscheidet dies kontinuierlich, abhängig vom erforderlichen Supportaufwand, den Server- und Lizenzkosten und davon, ob die Funktionen generell von allen benötigt oder hauptsächlich von Organisationen und fortgeschrittenen Nutzern angefordert werden. Da wir auf diese Weise der Öffentlichkeit mehr Funktionen zur Verfügung stellen können, ermutigen wir alle Nutzer, [unsere Mission zu unterstützen](https://www.photoprism.app/editions#compare).
-
-    [Mitgliedschaften Vergleichen >](https://www.photoprism.app/editions#compare){ class="pr-3" }     [Open Source FAQ ›](https://www.photoprism.app/oss/faq)
-
-??? question "Was sind die Vorteile des Kaufs einer kommerziellen Lizenz?"
-
-    Ein wesentlicher Unterschied zwischen der [Open Source Lizenz](https://docs.photoprism.app/license/agpl/) und  einem [kommerziellen Lizenzvertrag](https://www.photoprism.app/teams) besteht darin, dass du Zugang zu zusätzlichen Support- und Konfigurationsoptionen sowie das Recht erhälst, die Funktionalität an deine Bedürfnisse anzupassen, ohne dass du deine Änderungen veröffentlichen musst. 
-    Unsere [Compliance-FAQ](https://www.photoprism.app/kb/compliance-faq) geben Antworten auf die am häufigsten gestellten Fragen zur Produkt-Compliance und Skalierbarkeit.    
-
-    [Team Editionen Vergleichen ›](https://www.photoprism.app/teams#compare)
-
-??? question "Sollte freie Software nicht kostenlos sein?"
-    Denke an "freie Software" wie an "freie Rede", nicht wie an "Freibier". Die [Free Software Foundation](https://www.gnu.org/philosophy/free-sw.en.html) nennt es manchmal "libre software", in Anlehnung an das französische oder spanische Wort für "frei", um zu zeigen, [dass sie nicht meint, dass die Software kostenlos ist](https://www.gnu.org/philosophy/selling.html).
-
-    [Open Source FAQ ›](https://www.photoprism.app/oss/faq)
-
-??? question "Warum kann ich nicht einfach eine einzelne Version kaufen und herunterladen?"
-    Anders als herkömmliche Offline-Anwendungen wie Microsoft Office muss Software, die mit dem Internet verbunden ist,
-    [regelmäßig aktualisiert](https://docs.photoprism.app/release-notes/) werden, um sicher und mit den neuesten Standards kompatibel zu bleiben.
-
-    Es ist essentiell, dass du Betriebssystem, Webbrowser und alle anderen Programme auf dem neuesten Stand hälst. 
-    In der Vergangenheit haben selbst große Technologieunternehmen ihre alten Produkte bis auf wenige Ausnahmen nicht über einen längeren Zeitraum hinweg unterstützt. 
-    Windows XP zum Beispiel wurde 400 Millionen Mal verkauft, weshalb Microsoft so lange Zeit Updates anbieten konnte.
-
-??? question "Wird die selbst gehostete Version weiterhin unterstützt?"
-
-    Auf jeden Fall! Wir haben es uns zur Aufgabe gemacht, deine Freiheit und deine Privatsphäre zu schützen.
-    Selbst zu hosten ist der einfachste Weg, um die Kontrolle zu behalten und deine [Privatsphäre](https://www.photoprism.app/privacy) zu schützen. Es bietet auch die beste Erfahrung für fortgeschrittene Nutzer, die oft auf eine lokale Toolchain angewiesen sind, um ihre Bilder auszuwählen, zu bearbeiten und zu veröffentlichen.    
-    
-    Da es eine große Nachfrage und viele praktische Anwendungen für eine gehostete Version gibt, wollen wir diese zusätzlich anbieten, damit unsere Nutzer mehr Auswahl haben. Ausgewählte Hosting-Partner werden sicherstellen, dass die Privatsphäre unserer Nutzer so weit wie technisch möglich geschützt wird, auch in der Cloud.    
 
 ## Mitgliedschaften ##
 
