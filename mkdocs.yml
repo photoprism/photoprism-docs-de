@@ -64,6 +64,10 @@ nav:
       - Backups wiederherstellen: user-guide/backups/restore.md
       - Metadaten Export: user-guide/backups/export.md
       - Verzeichnis Übersicht: user-guide/backups/folders.md
+  - Benutzer verwalten:
+      - Admin Web UI: user-guide/users/index.md
+      - CLI Commands: user-guide/users/cli.md
+      - Mehrere Bibliotheken: user-guide/users/libraries.md
   - Cloud Migration:
       - Google Photos: user-guide/use-cases/google.md
       - Apple Photos: user-guide/use-cases/apple.md
