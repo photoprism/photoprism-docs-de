@@ -140,6 +140,7 @@ theme:
   language: de
   features:
     - content.action.edit
+    - content.tooltips
     - navigation.top
   palette:
     scheme: default
