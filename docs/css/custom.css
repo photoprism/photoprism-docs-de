@@ -42,15 +42,51 @@ footer.md-footer  .footer-info a:hover {
     text-decoration: underline;
 }
 
-p.announce-banner a,
-p.announce-banner a:focus,
-p.announce-banner a:hover {
-    color:currentColor;
+body > div > aside.md-banner {
+    display: none;
+    background-color: #894ada;
+    background-size: 110% 110%;
+    background-image: -o-repeating-linear-gradient(315deg,#a0f,#304ffe);
+    background-image: repeating-linear-gradient(135deg,#a0f,#304ffe);
+    padding: 0;
+}
+
+.md-banner__inner {
+    background-color: #00000010;
+    padding: .23rem 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+@media (min-width: 600px) {
+    body > div > aside.md-banner {
+        display: block;
+    }
 }
 
 p.announce-banner {
     margin: 0;
     padding: 0;
+    text-align: center;
+}
+
+p.announce-banner a {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    vertical-align: baseline;
+    margin: 0;
+}
+
+p.announce-banner a,
+p.announce-banner a:focus,
+p.announce-banner a:hover {
+    color: #ffffff;
+}
+
+p.announce-banner a span {
+    font-size: 14px;
+    vertical-align: baseline;
 }
 
 p.announce-banner strong {
