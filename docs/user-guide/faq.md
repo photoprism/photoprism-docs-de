@@ -52,9 +52,13 @@
 
 ??? question "Gibt es Alternativen zu einem wiederkehrenden Abonnement?"
 
-    PhotoPrism+-Mitglieder erhalten nach 24 Monaten automatisch eine kostenlose Essentials-Mitgliedschaft auf Lebenszeit. Ebenso erhalten Silbermitglieder nach 24 Monaten eine lebenslange Plus-Mitgliedschaft, Goldmitglieder nach 12 Monaten und Platinmitglieder nach nur 6 Monaten. Um Abonnements ganz zu vermeiden, können die Mitgliedsbeiträge auch im Voraus bezahlt werden.
+    Ja, unsere Plus-Mitglieder erhalten nach 24 Monaten automatisch eine kostenlose Essentials-Mitgliedschaft auf Lebenszeit. Ebenso erhalten Silber-Mitglieder nach 24 Monaten eine lebenslange Plus-Mitgliedschaft, Gold-Mitglieder nach 12 Monaten und Platin-Mitglieder nach nur 6 Monaten.
+
+    Wenn du dich für eine Silber-, Gold- oder Platin-Mitgliedschaft anmelden möchtest, kannst du das entweder [direkt auf unserer Website](https://my.photoprism.app/register) oder [auf Patreon](https://www.patreon.com/photoprism) tun, wo du auch jährlich mit einem Rabatt von 15% zahlen kannst.
+
+    Beachte, dass du als Lifetime-Mitglied Updates und Support für deinen persönlichen Gebrauch von uns erhältst, anders als bei sogenannten "Lifetime"-Lizenzen, die vielleicht nur bis zur Veröffentlichung der nächsten Hauptversion gültig sind.    
     
-    [Mitgliedschaften FAQ ›](https://www.photoprism.app/kb/membership)
+    [Mitgliedschaften FAQ ›](https://www.photoprism.app/kb/membership) [Anmelden ›](https://link.photoprism.app/membership)
 
 ??? question "Was passiert, wenn ich meine Mitgliedschaft kündige?"
 
