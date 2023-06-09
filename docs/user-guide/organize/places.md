@@ -18,3 +18,11 @@ In den [Einstellungen](../settings/general.md) kannst du zwischen verschiedenen 
 
    ![Screenshot](img/places-animation-1-dark.jpg){ class="shadow" }
    ![Screenshot](img/places-animation-2-dark.jpg){ class="shadow" }
+
+## 3D Modus aktivieren
+
+Die Karten "Satellit", "Outdoor" und "Topographisch" können auch in 3D betrachtet werden.
+
+Um den 3D Modus zu aktivieren klicke auf :material-image-filter-hdr-outline:. Um die Perspektive zu ändern, kannst du die rechte Maustaste gedrückt halten und bewegen.
+
+![Screenshot](img/terrain-maps-1.jpg){ class="shadow" }
