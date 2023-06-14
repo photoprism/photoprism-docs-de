@@ -10,9 +10,6 @@ Wir empfehlen die, für iOS und Android verfügbare, App [PhotoSync](https://lin
 
 ### Übertragungsziel einrichten ###
 
-!!! attention ""
-    Falls du PhotoSync auf Android nutzt, wähle WebDAV als Übertragungsziel. 
-
 1. Öffne PhotoSync und klicke :material-cog-outline:
 2. Klicke *Konfigurieren*
 3. Wähle PhotoPrism als Übertragungsziel
