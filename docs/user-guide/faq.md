@@ -8,7 +8,7 @@
 
     Die Nutzung dieser Dienste ist derzeit [vollständig durch uns abgedeckt](https://docs.photoprism.app/getting-started/faq/#are-the-keys-for-using-interactive-world-maps-provided-free-of-charge). Abhängig von deiner Nutzung kannst du damit viel mehr sparen als die Kosten für eine [PhotoPrism+ Mitgliedschaft](https://www.photoprism.app/membership). Andere Anbieter berechnen in der Regel nutzungsabhängige Gebühren und erlauben möglicherweise auch nicht, die von ihnen bereitgestellten Daten zwischenzuspeichern, was deine Privatsphäre durch unnötige Anfragen gefährdet.
 
-      ↪ [Datenschutzerklärung](https://www.photoprism.app/privacy#section-7){ class="pr-3" } ↪ [Compliance FAQ](https://www.photoprism.app/kb/compliance-faq#privacy)
+      ↪ [Datenschutzerklärung](https://www.photoprism.app/privacy#section-7){ class="pr-3 block-xs" } ↪ [Compliance FAQ](https://www.photoprism.app/kb/compliance-faq#privacy)
 
     Um deine Installation erfolgreich einzurichten und Standortdetails in PhotoPrism anzuzeigen, musst du [Anfragen an diese API-Endpunkte zulassen](https://docs.photoprism.app/getting-started/troubleshooting/firewall), wenn du eine Firewall installiert hast, und sicherstellen, dass deine Internetverbindung funktioniert:    
 

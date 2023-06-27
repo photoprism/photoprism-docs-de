@@ -1,34 +1,23 @@
 Unsere schrittweise Installationsanleitung für die Community-Edition ist in englischer Sprache unter [docs.photoprism.app/getting-started](https://docs.photoprism.app/getting-started/) zu finden.
 
-PhotoPrism kann auf allen Betriebssystemen installiert werden, die Docker unterstützen, sowie auf [FreeBSD](https://docs.photoprism.app/getting-started/ports/freebsd/), [Raspberry Pi](https://docs.photoprism.app/getting-started/raspberry-pi/) und vielen [NAS Geräten](https://docs.photoprism.app/getting-started/nas/synology/).
-Docker ist für Mac, Linux und Windows verfügbar.
+PhotoPrism kann auf allen Betriebssystemen installiert werden, die Docker unterstützen, sowie auf [FreeBSD](https://docs.photoprism.app/getting-started/ports/freebsd/), [Raspberry Pi](https://docs.photoprism.app/getting-started/raspberry-pi/) sowie vielen [NAS Geräten](https://docs.photoprism.app/getting-started/nas/synology/). Docker ist für Mac, Linux und Windows verfügbar.
 
-PhotoPrism ist auch als Cloud-Lösung auf [PikaPods](https://docs.photoprism.app/getting-started/cloud/pikapods/) und [DigitalOcean](https://docs.photoprism.app/getting-started/cloud/digitalocean/) verfügbar.
+PikaPods hat sich mit uns zusammengetan, um dir alternativ [eine offiziell unterstützte, in der Cloud gehostete App anzubieten](https://docs.photoprism.app/getting-started/cloud/pikapods/). Auch auf [DigitalOcean](https://docs.photoprism.app/getting-started/cloud/digitalocean/) steht PhotoPhoto als fertiges Image zur Installation bereit.
 
 ![Progressive Web App](https://dl.photoprism.app/img/ui/iphone-index-360px.png){ align=right }
 
+## PhotoPrism® Plus ##
 
-## Support ##
+Als Mitglied kannst du [zusätzliche Funktionen](https://link.photoprism.app/membership) aktivieren, indem du dich mit dem [bei der Installation angelegten Admin-Benutzer](https://docs.photoprism.app/getting-started/config-options/#authentication) anmeldest und dann den [in unserer Aktivierungsanleitung beschriebenen](https://www.photoprism.app/kb/activation) Schritten folgst. Wir empfehlen neuen Nutzern, [PhotoPrism zu installieren](https://docs.photoprism.app/getting-started/), bevor sie sich [für eine Mitgliedschaft anmelden](https://link.photoprism.app/membership). Vielen Dank für deine Unterstützung, die für den Erfolg des Projekts unerlässlich war und ist! :octicons-heart-fill-24:{ .heart .purple }
 
-Bitte lies den [Troubleshooting Guide](https://docs.photoprism.app/getting-started/troubleshooting/), bevor du dich mit einem Problem an uns wendest.
-Falls dieser deine Frage nicht beantwortet:
+[Mitgliedschaften vergleichen ›](https://link.photoprism.app/membership){ class="pr-3 block-xs" } [FAQ ansehen ›](https://www.photoprism.app/membership/faq) 
 
-* werde Teil unserer [Reddit Community](https://link.photoprism.app/reddit)
-* poste deine Frage in [Github Discussions](https://link.photoprism.app/discussions)
-* melde dich in unseren [Community Chat](https://link.photoprism.app/chat)
+## Unterstützung erhalten ##
 
-Wir geben unser Bestes, um alle deine Fragen zu beantworten. 
-Im Gegenzug bitten wir dich, uns auf [Patreon](hhttps://link.photoprism.app/patreon) oder [GitHub Sponsors](https://link.photoprism.app/sponsor) zu unterstützen. 
-Vielen Dank! 💜
+Wenn du bei der Installation unserer Software bei dir zu Hause Hilfe brauchst, kannst du deine Frage gerne in [GitHub Discussions](https://link.photoprism.app/discussions) stellen oder [in unserem Community Chat fragen](https://link.photoprism.app/chat). Häufige Probleme lassen sich mit unseren [Checklisten zur Fehlerbehebung](https://docs.photoprism.app/getting-started/troubleshooting/) schnell diagnostizieren und lösen. [Silber-, Gold- und Platin-Mitglieder](https://link.photoprism.app/membership) können sich auch gerne per E-Mail an uns wenden, wenn sie technische Unterstützung und Beratung benötigen.
 
-[Mitgliedschaften Vergleichen ›](https://www.photoprism.app/editions#compare){ class="pr-3" }     [Open Source FAQ ›](https://www.photoprism.app/oss/faq)
+[Support-Optionen ansehen ›](https://www.photoprism.app/kb/getting-support)
 
 !!! tldr ""
     **Bitte erstelle keine Bug Reports in Github Issues, außer du bist sicher, dass du ein Problem gefunden hast, das direkt in der App behoben werden muss.**
-    [Kontaktiere uns](https://www.photoprism.app/contact) oder ein [Community-Mitglied](https://link.photoprism.app/discussions), wenn du Hilfe brauchst. Es könnte sich um ein lokales Konfigurationsproblem oder um ein Missverständnis bei der Funktionsweise der Software handeln.
-
-## Mitgliedschaft aktivieren ##
-
-Um eine neue PhotoPrism Instanz mit deinem [Mitgliedskonto](https://my.photoprism.app/) zu verbinden, musst du dich mit dem Admin-Benutzer anmelden, der bei der Einrichtung automatisch erstellt wird, und dann die in unserer Aktivierungs-Anleitung beschriebenen Schritte ausführen.
-
-[Aktivierungs Guide ›](https://www.photoprism.app/kb/activation){ class="pr-2" } [Mitgliedschaften FAQ ›](https://www.photoprism.app/kb/membership)
+    [Wende dich an uns](https://www.photoprism.app/contact) oder ein [Community-Mitglied](https://link.photoprism.app/discussions), wenn du Hilfe brauchst. Es könnte sich um ein lokales Konfigurationsproblem oder um ein Missverständnis bei der Funktionsweise der Software handeln.
