@@ -30,7 +30,7 @@ Da PhotoPrism sich zu [**100 % selbst finanziert und unabhängig**](https://www.
 Deine Daten werden auch niemals an Google, Amazon, Facebook oder Apple weitergegeben, es sei denn, du lädst absichtlich Dateien auf einen dieser Dienste hoch.
 
 <p class="center-align action-buttons">
-  <a class="action-button" href="https://demo-de.photoprism.app/" target="_blank">Demo testen</a>
-  <a class="action-button" href="https://docs.photoprism.app/getting-started/" target="_blank">🇬🇧  Setup</a>
-  <a class="action-button bold" href="user-guide/">Erste Schritte</a>
+  <a class="action-button action-secondary" href="https://demo-de.photoprism.app/" target="_blank">Demo testen</a>
+  <a class="action-button action-secondary" href="https://docs.photoprism.app/getting-started/" target="_blank">🇬🇧  Setup</a>
+  <a class="action-button action-primary" href="user-guide/">Erste Schritte</a>
 </p>

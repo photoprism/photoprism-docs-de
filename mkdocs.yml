@@ -142,6 +142,7 @@ theme:
     - content.action.edit
     - content.tooltips
     - navigation.top
+    - navigation.footer
   palette:
     scheme: default
     primary: white
