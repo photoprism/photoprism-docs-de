@@ -1,6 +1,8 @@
 # Benutzerverwaltung Command-Line Interface
 
-Alternativ zur Web-Benutzeroberfläche kannst du Benutzerkonten auch verwalten, indem du die folgenden Befehle in einem Terminal ausführst:
+## Benutzerkonten verwalten
+
+Alternativ zur [Web-Benutzeroberfläche](index.md) kannst du Benutzerkonten auch verwalten, indem du die folgenden Befehle [in einem Terminal](https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface) ausführst:
 
 | CLI Command                                 | Description                                  |
 |---------------------------------------------|----------------------------------------------|
@@ -12,7 +14,7 @@ Alternativ zur Web-Benutzeroberfläche kannst du Benutzerkonten auch verwalten, 
 | `photoprism users rm [username]`            | Removes a user account                       |
 | `photoprism users reset`                    | Removes all accounts and resets the database |
 
-#### Hinzufügen und Ändern von Konten
+### Optionen
 
 Du kannst die Unterbefehle `add` und `mod` mit diesen Flags kombinieren, um Kontoeigenschaften zu setzen oder zu ändern:
 
@@ -34,12 +36,12 @@ docker compose exec photoprism photoprism users add -p mysecret -n "Bob" bob
 ```
 
 !!! example ""
-    Benutzer-Rollen und das Admin-Web-UI sind derzeit nur in [PhotoPrism® Plus](https://www.photoprism.app/editions#compare) verfügbar.
+    Zusätzliche [Benutzer Rollen](roles.md) wie user, viewer und guest sind derzeit [nur mit einer Mitgliedschaft](https://www.photoprism.app/editions#compare) verfügbar, um die Entwicklung und Pflege des Projekts zu unterstützen.
 
 !!! info ""
     Beachte, dass unsere Anleitungen jetzt standardmäßig den neuen Befehl "docker compose" verwenden. Wenn dein Server diesen Befehl noch nicht unterstützt, funktioniert der alte Befehl "docker-compose" weiterhin.
 
-#### Kontodetails anzeigen
+### Kontodetails anzeigen
 
 Um alle Kontoeigenschaften eines bestimmten Benutzers zu sehen, verwende den Unterbefehl `show`:
 
@@ -47,7 +49,7 @@ Um alle Kontoeigenschaften eines bestimmten Benutzers zu sehen, verwende den Unt
 docker compose exec photoprism photoprism users show bob
 ```
 
-#### Benutzerkonten suchen
+### Benutzerkonten suchen
 
 Um alle bestehenden Konten aufzulisten, kannst du Folgendes ausführen:
 
@@ -66,3 +68,43 @@ Um eine Beschreibung und die verfügbaren Optionen für einen Befehl anzuzeigen,
 ```
 docker compose exec photoprism photoprism users ls --help
 ```
+
+## Login Versuche anzeigen
+
+Aus Sicherheitsgründen sind die Authentifizierungs-Logs nicht im regulären Web-UI sichtbar und können nur in den Anwendungs-Logs eingesehen oder in einem Terminal mit folgendem Befehl durchsucht werden:
+```
+photoprism logins ls [search]
+```
+
+### Optionen
+
+Du kannst ihn mit folgenden Flags kombinieren, um das Ausgabeformat und die maximale Anzahl der Suchergebnisse zu ändern:
+
+| Command Flag | Description                            |
+|--------------|----------------------------------------|
+| `--md, -m `  | format as machine-readable Markdown    |
+| `--csv, -c`  | export as semicolon separated values   |
+| `--tsv, -t`  | export as tab separated values         |
+| `-n LIMIT`   | LIMIT number of results (default: 100) |
+
+### Beispiel Bericht
+
+| Client IP  | User Name | Realm | Status |     Last Login      | Failed At |
+|------------|-----------|-------|--------|---------------------|-----------|
+| 172.19.0.1 | user      | api   | OK     | 2023-02-03 07:17:46 |           |
+| 172.19.0.1 | viewer    | api   | OK     | 2023-02-03 07:16:55 |           |
+| 172.19.0.1 | admin     | api   | OK     | 2023-02-03 06:55:06 |           |
+
+!!! tldr ""
+    Führe `photoprism logins clear` aus, um alle aufgezeichneten Einträge zu löschen und die Datenbank auf einen sauberen Zustand zurückzusetzen.
+
+## Siztungen überwachen
+
+Du kannst die folgenden Befehle verwenden, um Browsersitzungen zu finden, zu untersuchen und ggf. zu löschen:
+
+| CLI Command                   | Description                        |
+|-------------------------------|------------------------------------|
+| `photoprism sess ls [search]` | Finds and displays sessions        |
+| `photoprism sess show [id]`   | Shows detailed session information |
+| `photoprism sess rm [id]`     | Deletes the specified session      |
+| `photoprism sess clear`       | Removes all sessions               |
