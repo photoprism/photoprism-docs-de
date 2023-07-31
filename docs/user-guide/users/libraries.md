@@ -6,4 +6,5 @@ Wir empfehlen, mehrere Instanzen einzurichten, wenn du mehrere Nutzer hast, z. B
 
 In zukünftigen Versionen werden Nutzer/innen in der Lage sein, Alben und andere Inhalte dezentral zu teilen, unabhängig davon, wo ihre Bibliothek gehostet wird. Wir arbeiten außerdem an einer speziellen Weboberfläche für die Verwaltung mehrerer Bibliotheken und Benutzerkonten, die als separates Tool zur Verfügung gestellt wird.
 
-Unser Ziel ist es, das persönliche Teilen mit anderen Apps wie [Pixelfed](https://pixelfed.org/) und [Mastodon](https://joinmastodon.org/) kompatibel zu machen.
+!!! tldr ""
+    Unser Ziel ist es, das persönliche Teilen mit anderen Apps wie [Pixelfed](https://pixelfed.org/) und [Mastodon](https://joinmastodon.org/) kompatibel zu machen.
