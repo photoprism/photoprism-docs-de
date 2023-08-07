@@ -252,6 +252,10 @@
     
     Vielleicht wird dann klar, warum es Unterschiede gibt. Es könnte zum Beispiel sein, dass Windows einige Felder nicht unterstützt und sie deshalb ignoriert oder dass die angezeigten Daten tatsächlich aus dem Dateisystem und nicht aus den Dateien stammen. Wenn du immer noch glaubst, einen Fehler gefunden zu haben, stelle uns bitte [Beispieldateien](https://www.photoprism.app/contact#file-samples) zur Verfügung, damit wir das Problem reproduzieren können.
 
+??? question "Warum wird das Datum von Bildern ohne Metadaten in den Suchergebnissen als *Unbekannt* angezeigt?"
+
+    Wenn in den Metadaten oder den Originaldateinamen keine Datumsangaben vorhanden sind, wird die Modifikationszeit des Dateisystems verwendet, um die Bilder in den Suchergebnissen zu sortieren und um [beim Import kanonische Dateinamen für sie zu erstellen](library/import.md). Dabei handelt es sich jedoch in der Regel nicht um das tatsächliche Aufnahmedatum eines Fotos ( oder um das Datum, an dem eine Grafik vom ursprünglichen Autor erstellt wurde), sondern lediglich um den Zeitpunkt, an dem es heruntergeladen oder kopiert wurde. Daher wird das Datum von Bildern ohne zuverlässiges Erstellungsdatum als "Unbekannt" angezeigt, bis du manuell [im Bearbeitungsdialog ein Datum festlegst](organize/edit.md).
+
 ??? question "Warum haben einige Bilder den 08.12.2002 als Datum, wenn sie an diesem Tag nicht aufgenommen wurden?"
 
     Das liegt wahrscheinlich an einem [Fehler in Android](https://issuetracker.google.com/issues/36963276), der dazu führte, dass Fotos mit einem falschen CreateDate erstellt wurden. Du kannst das Datum im [Bearbeitungs-Dialog](organize/edit.md) ändern. Hier wird allerdings nur der Index in PhotoPrism geändert.
