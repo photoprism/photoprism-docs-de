@@ -21,7 +21,7 @@ Wenn *Superadmins* Einstellungen wie die Sprache oder das Theme ändern, werden 
 
 ## Benutzer
 
-*Benutzer* haben vollen Zugriff auf die Bibliothek und können alle Bilder und Alben ansehen, bearbeiten und löschen. Anders als *Admins* können *Benutzer* die [Bibliotheks-](../settings/library) und die [Erweiterten Einstellungen](../settings/advanced) nicht einsehen oder ändern, sondern nur persönliche Einstellungen wie Theme, Sprache und Passwort. Außerdem kann ihr WebDAV-Zugang deaktiviert werden. Zukünftige Versionen werden möglicherweise weitere Möglichkeiten bieten, die Benutzerrechte anzupassen, z. B. mit individuellen Kontoattributen.
+*Benutzer* haben vollen Zugriff auf die Bibliothek und können alle Bilder und Alben ansehen, bearbeiten und löschen. Anders als *Admins* können *Benutzer* die [Bibliotheks-](../settings/library.md) und die [Erweiterten Einstellungen](../settings/advanced.md) nicht einsehen oder ändern, sondern nur persönliche Einstellungen wie Theme, Sprache und Passwort. Außerdem kann ihr WebDAV-Zugang deaktiviert werden. Zukünftige Versionen werden möglicherweise weitere Möglichkeiten bieten, die Benutzerrechte anzupassen, z. B. mit individuellen Kontoattributen.
 
 ## Betrachter
 
