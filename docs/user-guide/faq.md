@@ -182,16 +182,6 @@
     Wenn [FFmpeg deaktiviert](settings/advanced.md#deaktiviere-ffmpeg) oder nicht installiert ist, können Videos nicht indexiert werden, da keine Standbilder erstellt werden können.
     Außerdem solltest du [Exiftool](settings/advanced.md#deaktiviere-exiftool) aktiviert haben, um Metadaten wie Dauer, Auflösung und Codec zu extrahieren.
 
-??? question "Werden JPEGs aktualisiert, wenn sich RAW- oder XMP-Dateien ändern?"
-    
-    JPEGs werden derzeit nicht neu generiert, wenn sich zugehörige RAW- oder XMP-Dateien ändern. RAW-Dateien sind von vornherein digitale Negative. PhotoPrism geht daher davon aus, dass ihre Bildinformationen unveränderlich sind.
-
-    XMP-Dateien können das Erscheinungsbild beeinflussen, aber die meisten der darin enthaltenen Metadaten, wie z. B. Titel und Beschreibung, sind davon nicht betroffen. 
-    Die Erstellung von JPEGs aus RAW-Dateien ist eine zeitaufwändige Aufgabe und würde in den meisten Fällen einen enormen, nicht zu rechtfertigenden Overhead verursachen. 
-    Hinzu kommt, dass die Rendering-Informationen in XMP-Dateien nicht gut standardisiert sind. So sind beispielsweise Änderungen, die Sie in Photoshop vornehmen, möglicherweise nicht mit Darktable kompatibel.
-
-    Wir empfehlen, vorhandene JPEG-Sidecar-Dateien bei Bedarf manuell zu aktualisieren oder zusätzliche JPEGs zu erstellen, damit Sie zwischen verschiedenen Versionen wählen können. Neue Dateien und andere Metadatenänderungen werden wie üblich beim Scannen Ihrer Bibliothek erkannt und in den Index aufgenommen.
-
 ??? question "Ich vermisse einige Dateien, wo könnten sie sein?"
    
     Falls du den [Qualitätsfilter](organize/review.md) aktiviert hast, findest du deine Bilder eventuell im Bereich *Überprüfen*.
@@ -243,6 +233,44 @@
 
     PhotoPrism schreibt in der Regel nicht im *Originals* Ordner, mit folgenden Ausnahmen: (1) Wenn du ein Bild in der Benutzeroberfläche rotierst, muss sein Exif-Header aktualisiert werden. (2) Du hebst die Stapelung von Dateien auf, die aufgrund ihres Namens gestapelt wurden, so dass sie umbenannt werden müssen. (3) Du fügst Dateien über die Importfunktion oder den Web-Upload hinzu. (4) Du löschst Dateien manuell über die Benutzeroberfläche. (5) Du hast den Ordner *Originals* als deinen Sidecar-Ordner konfiguriert. (6) Du greifst mit einem WebDAV-Client auf den *Originals* Ordner zu, um deine Dateien zu verwalten, ohne dass der *Schreibschutzmodus* aktiviert ist.
 
+## RAW Dateien ##
+
+??? question "Was ist eine RAW-Bilddatei?"
+
+    Professionelle und semiprofessionelle Fotografen bewahren ihre Originale oft in einem [verlustfreien RAW-Format](https://en.wikipedia.org/wiki/Raw_image_format) auf, das den Aufnahmen mit dem physischen Sensor entspricht, und nicht in einem komprimierten Bildformat wie JPEG, besonders wenn sie mit einer digitalen Spiegelreflexkamera fotografieren. Auch neuere Handys können Bilder im RAW-Format aufnehmen. Unser Ziel ist es, erstklassige Unterstützung für [alle RAW-Dateien](https://docs.photoprism.app/getting-started/faq/#what-media-file-types-are-supported) zu bieten, unabhängig von Kameramarke und -modell. Eine vollständige Liste der Dateitypen und -erweiterungen findest du in unserer [Knowledge Base](https://www.photoprism.app/kb/file-formats).
+    
+    Da Webbrowser RAW-Dateien in der Regel nicht direkt anzeigen können, müssen sie konvertiert werden. Das geschieht beim [Import](library/import.md) oder beim [initialen Indexieren](library/indexing.md). Die Konvertierung kann auch manuell [in einem Terminal](https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface) mit dem Befehl `photoprism convert` durchgeführt werden.
+
+??? question "Werden JPEGs aktualisiert, wenn sich RAW- oder XMP-Dateien ändern?"
+
+    JPEGs werden derzeit nicht neu generiert, wenn sich zugehörige RAW- oder XMP-Dateien ändern. RAW-Dateien sind von vornherein digitale Negative. PhotoPrism geht daher davon aus, dass ihre Bildinformationen unveränderlich sind.
+
+    XMP-Dateien können das Erscheinungsbild beeinflussen, aber die meisten der darin enthaltenen Metadaten, wie z. B. Titel und Beschreibung, sind davon nicht betroffen. 
+    Die Erstellung von JPEGs aus RAW-Dateien ist eine zeitaufwändige Aufgabe und würde in den meisten Fällen einen enormen, nicht zu rechtfertigenden Overhead verursachen. 
+    Hinzu kommt, dass die Rendering-Informationen in XMP-Dateien nicht gut standardisiert sind. So sind beispielsweise Änderungen, die Sie in Photoshop vornehmen, möglicherweise nicht mit Darktable kompatibel.
+
+    Wir empfehlen, vorhandene JPEG-Sidecar-Dateien bei Bedarf manuell zu aktualisieren oder zusätzliche JPEGs zu erstellen, damit Sie zwischen verschiedenen Versionen wählen können. Neue Dateien und andere Metadatenänderungen werden wie üblich beim Scannen Ihrer Bibliothek erkannt und in den Index aufgenommen.
+
+??? question "Bleiben Bearbeitungen bei der Konvertierung eines RAW-Bildes mit einer XMP-Sidecar-Datei erhalten?"
+
+    PhotoPrism unterstützt derzeit Darktable und RawTherapee als RAW-Konverter. Darktable unterstützt XMP-Sidecar-Dateien vollständig, RawTherapee nur teilweise. XMP ist jedoch nur ein "Container"-Format, daher unterscheiden sich die Felder (Namensräume), die dort verwendet werden, um anzugeben, wie ein Bild konvertiert werden soll (sowie andere Metadaten) zwischen Lightroom/Photoshop, Darktable und RawTherapee.    
+
+    Mit anderen Worten: Nur weil eine Anwendung generell XMP unterstützt, heißt das nicht, dass sie Metadaten verwenden kann, die mit einer anderen Anwendung oder von einem anderen Anbieter wie Adobe erstellt wurden. Wenn du denkst, dass das verwirrend ist, dann stimmt das auch. Du hast zwar ein offenes Format, bist aber immer noch an einen bestimmten Anbieter gebunden - wahrscheinlich nicht ganz unbeabsichtigt von Adobe.
+
+    Unserer Erfahrung nach werden einige grundlegende Bearbeitungen, die mit Adobe-Werkzeugen vorgenommen wurden - wie z. B. das Zuschneiden - möglicherweise beibehalten, wenn du das gleiche RAW-Bild mit einer anderen Software wie Darktable konvertierst. Erweiterte Bearbeitungen, wie Objektiv- oder Farbkorrekturen, werden wahrscheinlich nicht übernommen.
+
+## Live Photos ##
+
+??? question "Warum kann ich Live Fotos nicht abspielen oder Bildstapel finden, wenn ich nach bestimmten Bildern suche? "
+
+    Unsere Such-API und die Benutzeroberfläche führen eine Dateisuche durch. Dies ist beabsichtigt, da "Bildstapel" Dateien unterschiedlichen Typs und unterschiedlicher Eigenschaften, wie z. B. Farbe, enthalten können.
+
+    So kann es beispielsweise Farb- und Schwarzweißversionen geben. Wenn nach diesen gesucht wird oder Bilder nach Farbe sortiert werden, muss die Benutzeroberfläche nun einzelne Dateien anzeigen. Andernfalls würden die Ergebnisse, die ein Farbbild/Video anzeigen, wenn nach Schwarzweiß gefiltert wird, keinen Sinn ergeben.    
+    
+    Ebenso finden Sie bei der Suche nach `Dateiname.mp4.*` nur JPEGs ohne Video, da die Videodateierweiterung `.mp4` nicht mit einem Punkt endet.
+
+    Wir empfehlen die Verwendung der Filter `path:` und/oder `name:` mit Wildcards, wenn die Suche nach einzelnen Dateien die Suchergebnisse zu sehr einschränkt. Die meisten Nutzer werden alle zusammengehörigen Dateien finden wollen, damit sie zusammen angezeigt werden können, z. B. als Live-Fotos, die aus einem Video und einem Bild bestehen.    
+    Sie können diese Filter mit anderen Filtern wie `live` kombinieren, um sicherzustellen, dass die Ergebnisse nur Bilder mit einem bestimmten Medientyp enthalten. Alternativ können Sie auch den Filter "filename:" mit einem freizügigeren Platzhalter verwenden, der die Dateierweiterung ausschließt.
 
 
 ## Metadaten ##
@@ -278,20 +306,6 @@
     * **Kategorien** können übergeordnete Kategorien haben und werden primär für die Klassifizierung verwendet, z.B. "Tier", "Katze", "Boot".
     Duplikate und Unstimmigkeiten sollten vermieden werden.
     * **Suchbegriffe** werden hauptsächlich zum Suchen verwendet. Sie können ähnliche Begriffe und Übersetzungen enthalten wie "Kätzchen", "Katze", "Kater".
-
-## Live Photos ##
-
-??? question "Warum kann ich Live Fotos nicht abspielen oder Bildstapel finden, wenn ich nach bestimmten Bildern suche? "
-
-    Unsere Such-API und die Benutzeroberfläche führen eine Dateisuche durch. Dies ist beabsichtigt, da "Bildstapel" Dateien unterschiedlichen Typs und unterschiedlicher Eigenschaften, wie z. B. Farbe, enthalten können.
-
-    So kann es beispielsweise Farb- und Schwarzweißversionen geben. Wenn nach diesen gesucht wird oder Bilder nach Farbe sortiert werden, muss die Benutzeroberfläche nun einzelne Dateien anzeigen. Andernfalls würden die Ergebnisse, die ein Farbbild/Video anzeigen, wenn nach Schwarzweiß gefiltert wird, keinen Sinn ergeben.    
-    
-    Ebenso finden Sie bei der Suche nach `Dateiname.mp4.*` nur JPEGs ohne Video, da die Videodateierweiterung `.mp4` nicht mit einem Punkt endet.
-
-    Wir empfehlen die Verwendung der Filter `path:` und/oder `name:` mit Wildcards, wenn die Suche nach einzelnen Dateien die Suchergebnisse zu sehr einschränkt. Die meisten Nutzer werden alle zusammengehörigen Dateien finden wollen, damit sie zusammen angezeigt werden können, z. B. als Live-Fotos, die aus einem Video und einem Bild bestehen.    
-    Sie können diese Filter mit anderen Filtern wie `live` kombinieren, um sicherzustellen, dass die Ergebnisse nur Bilder mit einem bestimmten Medientyp enthalten. Alternativ können Sie auch den Filter "filename:" mit einem freizügigeren Platzhalter verwenden, der die Dateierweiterung ausschließt.
-
 
 ## Vorschaubilder ##
 ??? question "Ist es nicht unsicher, dass die URLs von Vorschaubildern auch dann funktionieren, wenn du nicht eingeloggt bist?"
