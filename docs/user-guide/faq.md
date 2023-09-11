@@ -109,11 +109,6 @@
     Die meisten Nutzer können ihre Erinnerungen nicht strikt hierarchisch sortieren und bevorzugen es ihre Bilder in mehreren Dimensionen zu entdecken.
 
 ## Karten & Orte ##
-??? question "Warum werden die Straßen auf der Ortskarte nicht mehr geladen?"
-
-    Die qualitativ hochwertigen Karten waren lange Zeit ein kostenpflichtiges Feature, standen aber weiterhin zum Testen zur Verfügung. Da viele Nutzer das nicht wussten und die kommerziellen Karten einfach kostenlos nutzten, wurde dies [kürzlich](https://github.com/photoprism/photoprism/issues/2998) geändert. Bitte sieh dir den [Funktionsvergleich auf unserer Website](https://www.photoprism.app/editions#compare) als Referenz an. 
-
-    [Mitgliedschaften vergleichen >](https://www.photoprism.app/editions#compare)
 
 ??? question "Warum sind einige Bilder an nicht besuchten Orten auf der Karte positioniert?"
 
