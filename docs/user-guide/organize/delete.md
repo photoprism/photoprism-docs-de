@@ -11,3 +11,11 @@ Dateien, die du löschen möchtest, müssen zuvor [archiviert](./archive.md) wer
 4. Bestätige
 
    ![Screenshot](img/delete-german.jpg){ class="shadow" }
+
+### Alle archivierten Bilder löschen ###
+
+1. Gehe zu *Archiv*
+2. Klicke :material-delete-sweep:
+3. Klicke *Alle Löschen*
+
+   ![Screenshot](img/delete-all-german.jpg){ class="shadow" }

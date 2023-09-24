@@ -17,6 +17,10 @@ Erstellt automatisch JPEG-Vorschaubilder für andere Dateitypen, damit sie in de
     Die Option *Automatisch konvertieren* sollte nicht deaktiviert werden, da sie PhotoPrism daran hindert, andere Dateitypen als JPEG zu indexieren, es sei denn, es gibt bereits JPEG-Sidecar-Dateien mit demselben Dateinamenpräfix. Siehe *Bildstapel*, um mehr über die Namenskonventionen von Sidecar-Dateien zu erfahren.
 
 ## Bildstapel ##
+
+!!! warning ""
+    Wenn du die Stacking-Einstellungen änderst, werden bereits gruppierte Dateien nicht automatisch wieder getrennt.
+
 PhotoPrism gruppiert zusammengehörige Dateien automatisch zu Bildstapeln.
 Bildstapel sind Gruppen von Dateien, die den gleichen Ursprung haben, sich aber in Qualität, Format, Größe oder Farbe unterscheiden. Gehe zu *[Einstellungen > Dateien](../settings/library.md)*, um die Stacking-Einstellungen für deine Bibliothek zu ändern.
 
@@ -28,9 +32,15 @@ Du kannst folgende Optionen nutzen, um Bilder zu gruppieren:
 
 Gleichnamige Dateien, die sich im selben Ordner befinden, z.B. `/2018/IMG_1234.jpg` und  `/2018/IMG_1234.avi`, werden immer gruppiert.
 
-!!! warning ""
-    Wenn du die Stacking-Einstellungen änderst, werden bereits gruppierte Dateien nicht automatisch wieder getrennt.
 
+!!! info "Beispiele für fortlaufende Dateinamen"
+    Dateien mit folgenden Namen werden mit `/2018/IMG_1234.jpg` gruppiert, falls Gruppieren bei **fortlaufenden Dateinamen** aktiviert ist.
+
+    - `/2018/IMG_1234 (2).jpg` `/2018/IMG_1234 (3).jpg`
+     
+    - `/2018/IMG_1234 copy.jpg` `/2018/IMG_1234 copy 1.jpg` `/2018/IMG_1234 copy 2.jpg`
+    
+    - `/2018/IMG_1234 (-2.7)` `/2018/IMG_1234 (+3.3).jpg` `/2018/IMG_1234(-2.7).jpg`  `/2018/IMG_1234(+3.3).jpg`
 
 <!--## Umwandlung von RAW zu JPEG ##
 Viele Fotografen, insbeondere Nutzer einer digitalen SLR, verwenden ein verlustfreies RAW-Format anstelle des verlustbehafteten JPEG-Formats. Es gibt auch [Handies](https://www.fredericpaulussen.be/how-to-raw-photos-huawei-p30-pro/) die RAW-Daten abspeichern können oder das Format HEIC/HEIF nutzen.
