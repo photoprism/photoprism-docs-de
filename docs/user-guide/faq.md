@@ -14,7 +14,7 @@
 
     [![](https://dl.photoprism.app/img/diagrams/proxy-cdn.svg){ class="w100" }](https://docs.photoprism.app/getting-started/troubleshooting/firewall)
 
-    Wenn du einen oder beide Dienste in deinen eigenen Räumlichkeiten betreiben möchtest, [können wir eine solche völlig autonome Lösung für dich einrichten](https://www.photoprism.app/contact), sofern du bereit bist, die [anfänglichen Einrichtungskosten](https://www.photoprism.app/kb/compliance-faq#fully-autonomous-solution) sowie die laufenden Wartungsgebühren für Inhaltslizenzen und Updates zu übernehmen.
+    *Andere Open-Source-Anwendungen nutzen manchmal den kostenlosen Kartendienst, der von [openstreetmap.org](https://operations.osmfoundation.org/policies/tiles/) betrieben wird. In diesem Fall gelten deren [Nutzungs-](https://operations.osmfoundation.org/policies/tiles/) und [Datenschutzrichtlinien](https://wiki.osmfoundation.org/wiki/Privacy_Policy), was bedeutet, dass deine Anfragedaten gespeichert und zur [Erstellung öffentlich zugänglicher Berichte](https://planet.openstreetmap.org/tile_logs/) verwendet werden. Dies unterscheidet sich von unserem Ansatz, der sich auf deine Privatsphäre und dein Benutzererlebnis konzentriert.*
 
 ??? question "Warum sind einige Funktionen nur für Mitglieder verfügbar?"
 
