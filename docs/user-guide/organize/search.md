@@ -99,8 +99,6 @@ Dies ist eine vollständige Liste der unterstützten Suchfilter mit Beispielen. 
 |  Filter   |   Type    |               Examples                |                                                                   Notes                                                                    |
 |-----------|-----------|---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | dist      | decimal   | dist:50                               | Distance to Position (km)                                                                                                                  |
-| fmax      | decimal   | fmax:1.245                            | F-number (max)                                                                                                                             |
-| fmin      | decimal   | fmin:1.245                            | F-number (min)                                                                                                                             |
 | lat       | decimal   | lat:41.894043                         | GPS Position (Latitude)                                                                                                                    |
 | lng       | decimal   | lng:-87.62448                         | GPS Position (Longitude)                                                                                                                   |
 | chroma    | number    | chroma:70                             | Chroma (0-100)                                                                                                                             |
@@ -108,12 +106,14 @@ Dies ist eine vollständige Liste der unterstützten Suchfilter mit Beispielen. 
 | quality   | number    | quality:0 quality:3                   | Minimum quality score (1-7)                                                                                                                |
 | album     | string    | album:berlin                          | Album UID or Name, supports * wildcards                                                                                                    |
 | albums    | string    | albums:"South Africa & Birds"         | Album Names (combinable with & and \|)                                                                                                     |
+| alt       | string    | alt:300-500                           | GPS Altitude (m)                                                                                                                           |
 | camera    | string    | camera:canon                          | Camera Make/Model Name                                                                                                                     |
 | category  | string    | category:airport                      | Location Category                                                                                                                          |
 | city      | string    | city:"Berlin"                         | Location City (separate with \|)                                                                                                           |
 | color     | string    | color:"red\|blue"                     | Color Name (purple, magenta, pink, red, orange, gold, yellow, lime, green, teal, cyan, blue, brown, white, grey, black) (separate with \|) |
 | country   | string    | country:"de\|us"                      | Location Country Code (separate with \|)                                                                                                   |
 | day       | string    | day:3\|13                             | Day of Month (1-31, separate with \|)                                                                                                      |
+| f         | string    | f:2.8-4.5                             | Aperture (f-number)                                                                                                                        |
 | face      | string    | face:PN6QO5INYTUSAATOFL43LL2ABAV5ACZG | Face ID, yes, no, new, or kind                                                                                                             |
 | faces     | string    | faces:yes faces:3                     | Minimum number of Faces (yes = 1)                                                                                                          |
 | favorite  | string    | favorite:true favorite:false          | Finds images by favorite status                                                                                                            |
@@ -122,10 +122,12 @@ Dies ist eine vollständige Liste der unterstützten Suchfilter mit Beispielen. 
 | geo       | string    | geo:yes                               | Finds pictures with or without coordinates                                                                                                 |
 | hash      | string    | hash:2fd4e1c67a2d                     | SHA1 File Hash (separate with \|)                                                                                                          |
 | id        | string    | id:123e4567-e89b-...                  | Finds pictures by Exif UID, XMP Document ID or Instance ID                                                                                 |
+| iso       | string    | iso:200-400                           | ISO Number (light sensitivity)                                                                                                             |
 | keywords  | string    | keywords:"sand&water"                 | Keywords (combinable with & and \|)                                                                                                        |
 | label     | string    | label:cat\|dog                        | Label Names (separate with \|)                                                                                                             |
 | latlng    | string    | latlng:"name"                         | GPS Bounding Box (Lat N, Lng E, Lat S, Lng W)                                                                                              |
 | lens      | string    | lens:ef24                             | Lens Make/Model Name                                                                                                                       |
+| mm        | string    | mm:28-35                              | Focal Length (35mm equivalent)                                                                                                             |
 | month     | string    | month:7\|10                           | Month (1-12, separate with \|)                                                                                                             |
 | name      | string    | name:"IMG_9831-112*"                  | File Name without path and extension (separate with \|)                                                                                    |
 | near      | string    | near:pqbcf5j446s0futy                 | Finds nearby pictures (UID)                                                                                                                |
@@ -166,7 +168,8 @@ Dies ist eine vollständige Liste der unterstützten Suchfilter mit Beispielen. 
 | vector    | switch    | vector:yes                            | Finds vector graphics only                                                                                                                 |
 | video     | switch    | video:yes                             | Finds video files only                                                                                                                     |
 | after     | timestamp | after:"2022-01-30"                    | Finds pictures taken after this date                                                                                                       |
-| before    | timestamp | before:"2022-01-30"                   | Finds pictures taken before this date    
+| before    | timestamp | before:"2022-01-30"                   | Finds pictures taken before this date                                                                                                      |
+
 
 !!! question "Warum kann ich Live Fotos nicht abspielen oder Bildstapel finden, wenn ich nach bestimmten Bildern suche?"
     Unsere Such-API und die Benutzeroberfläche führen eine Dateisuche durch. Dies ist beabsichtigt, da "Bildstapel" Dateien unterschiedlichen Typs und unterschiedlicher Eigenschaften, wie z. B. Farbe, enthalten können.
