@@ -10,11 +10,14 @@ Schätzt den Standort von Bildern, die ohne GPS-Informationen aufgenommen wurden
 #### :material-eye: Qualitätsfilter ####
 Erfordert eine [Überprüfung von nicht fotografischen und qualitativ schlechten Bildern](../organize/review.md), bevor sie in den Suchergebnissen erscheinen.
 
-#### :material-camera: Automatische Konvertierung zu JPEG ####
+#### :material-camera: Vorschaubilder ####
 Erstellt automatisch JPEG-Vorschaubilder für andere Dateitypen, damit sie in den Suchergebnissen und im Vollbildmodus angezeigt werden können.
 
 !!! danger ""
-    Die Option *Automatisch konvertieren* sollte nicht deaktiviert werden, da sie PhotoPrism daran hindert, andere Dateitypen als JPEG zu indexieren, es sei denn, es gibt bereits JPEG-Sidecar-Dateien mit demselben Dateinamenpräfix. Siehe *Bildstapel*, um mehr über die Namenskonventionen von Sidecar-Dateien zu erfahren.
+    Die Option *Vorschaubilder* sollte nicht deaktiviert werden, da sie PhotoPrism daran hindert, andere Dateitypen als JPEG zu indexieren, es sei denn, es gibt bereits JPEG-Sidecar-Dateien mit demselben Dateinamenpräfix. Siehe *Bildstapel*, um mehr über die Namenskonventionen von Sidecar-Dateien zu erfahren.
+
+!!! info ""
+    Um zu verhindern, dass unerfahrene Benutzer versehentlich die Erstellung von Vorschaubildern deaktivieren, können *Vorschaubilder* nur deaktiviert werden, wenn [Experimentelle Funktionen](advanced.md#expermientelle-funktionen) aktiviert sind.
 
 ## Bildstapel ##
 
