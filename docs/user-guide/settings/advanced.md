@@ -63,7 +63,7 @@ Beachte, dass du Exiftool aktiviert haben musst, um Videometadaten wie Dauer, Au
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_EXIFTOOL`.
 
 ### Deaktiviere TensorFlow ###
-TensorFlow nicht zur automatischen Bild-Kategorisierung verwenden.
+TensorFlow nicht zur automatischen Bild-Kategorisierung und zur Gesichtserkennung verwenden.
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_TENSORFLOW`.
 
