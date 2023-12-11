@@ -1,5 +1,24 @@
 # Benutzerverwaltung Command-Line Interface
 
+## Passwort ändern
+
+Wenn du folgenden Befehl in einem Terminal ausführst, änderst du das Passwort eines bestehenden Benutzers, ohne andere Kontoeinstellungen zu beeinflussen, z. B. wenn du dich nicht mehr an das aktuell eingestellte Passwort erinnern kannst oder wenn es ein Problem [bei der Konfiguration des anfänglichen Admin-Kontos](https://docs.photoprism.app/getting-started/config-options/#authentication) gab (ersetze `[username]` durch den Benutzernamen des Kontos, das du aktualisieren möchtest):
+
+```bash
+photoprism passwd [username]
+```
+
+Beachte, dass du, wenn du [Docker Compose](https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface) verwendest und nicht [bereits eine Terminal-Sitzung geöffnet hast](https://docs.photoprism.app/getting-started/docker-compose/#opening-a-terminal), `docker compose exec photoprism` voranstellen musst, damit der Befehl z.B. innerhalb des `photoprism` Containers ausgeführt wird:
+
+```bash
+docker compose exec photoprism photoprism passwd admin
+```
+
+Dies gilt auch für [andere Befehle](https://docs.photoprism.app/getting-started/docker-compose/#examples), einschließlich der unten aufgeführten.
+
+!!! tldr ""
+    Die Beispiele in unserer Dokumentation verwenden standardmäßig den neuen Befehl `docker compose`. Wenn dein Server ihn noch nicht unterstützt, kannst du trotzdem `docker-compose` oder alternativ `podman-compose` auf Red Hat-kompatiblen Linux-Distributionen verwenden.
+
 ## Benutzerkonten verwalten
 
 Alternativ zur [Web-Benutzeroberfläche](index.md) kannst du Benutzerkonten auch verwalten, indem du die folgenden Befehle [in einem Terminal](https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface) ausführst:
@@ -29,6 +48,8 @@ Du kannst die Unterbefehle `add` und `mod` mit diesen Flags kombinieren, um Kont
 | `--webdav`, `-w`                     | allow to sync files via WebDAV                  |
 | `--upload-path value`, `-u value`    | upload files to this sub-folder                 |
 
+### Neuen Benutzer erstellen
+
 Du könntest zum Beispiel wie folgt vorgehen, um einen neuen Admin mit dem Benutzernamen "bob" und dem Passwort "mysecret" hinzuzufügen:
 
 ```
@@ -37,9 +58,6 @@ docker compose exec photoprism photoprism users add -p mysecret -n "Bob" bob
 
 !!! example ""
     Zusätzliche [Benutzer Rollen](roles.md) wie user, viewer und guest sind derzeit [nur mit einer Mitgliedschaft](https://www.photoprism.app/editions#compare) verfügbar, um die Entwicklung und Pflege des Projekts zu unterstützen.
-
-!!! info ""
-    Beachte, dass unsere Anleitungen jetzt standardmäßig den neuen Befehl "docker compose" verwenden. Wenn dein Server diesen Befehl noch nicht unterstützt, funktioniert der alte Befehl "docker-compose" weiterhin.
 
 ### Kontodetails anzeigen
 
