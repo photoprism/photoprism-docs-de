@@ -38,6 +38,8 @@ In dieser Datei kannst du konfigurieren, welche Dateien oder Ordner ignoriert we
 foo
 # Ignoriere alle Dateien in diesem Ordner
 *.*
+# Ignoriere alle Ordner, die mit # starten
+[#]*
 # Ignoriere alle Dateien, die auf .gif enden
 *.gif
 # Ignoriere Videos, deren Name mit MVI beginnt

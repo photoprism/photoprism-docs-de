@@ -15,7 +15,7 @@ Wenn diese Option deaktiviert ist, können keine Dateien über [*Upload*](../lib
 Diese Einstellung kann hilfreich sein, wenn du anderen Personen Zugriff auf dein PhotoPrism gibst, diese aber keine Dateien hochladen dürfen.
 
 #### :material-download: Download ####
-Wenn diese Option deaktiviert ist, können Dateien nicht über die App heruntergeladen werden.
+Wenn diese Option deaktiviert ist, können keine Dateien über die PhotoPrism-Benutzeroberfläche heruntergeladen werden. Bitte beachte, dass es trotzdem möglich sein kann, Dateien mit den integrierten Browserfunktionen herunterzuladen.
 
 #### :material-share-variant: Teilen ####
 Wenn diese Option deaktiviert ist, können Alben weder geteilt noch zu anderen Diensten (wie ownCloud) hochgeladen werden.
