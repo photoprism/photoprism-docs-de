@@ -145,6 +145,8 @@ theme:
     - content.tooltips
     - navigation.top
     - navigation.footer
+    - navigation.instant
+    - navigation.instant.progress
   palette:
     scheme: default
     primary: white
