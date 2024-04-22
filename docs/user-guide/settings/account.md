@@ -1,13 +1,11 @@
 # Konto Einstellungen #
 
+!!! tldr ""
+    Aus Sicherheitsgründen erfordert das Ändern von kontobezogenen Einstellungen über die Benutzeroberfläche eine Passwortauthentifizierung, sodass diese Einstellungen nicht verfügbar sind, wenn der [public Modus](https://docs.photoprism.app/getting-started/config-options/#authentication) aktiviert ist.
+
 ![Screenshot](img/settings-account-german.jpg){ class="shadow" }
 
-
-!!! tldr ""
-    Da sie nicht benötigt werden, sind diese Einstellungen nicht verfügbar, wenn du PhotoPrism im [public Modus](https://docs.photoprism.app/getting-started/config-options/#authentication) verwendest.
-
-
-##Passwort ändern##
+## Passwort ändern
 
 1. Klicke auf *Einstellungen*
 2. Klicke auf *Konto*
@@ -18,8 +16,27 @@
 
 ![Screenshot](img/change-password-german.jpg){ class="shadow" } 
 
+## 2-Faktor Authentifizierung
 
-##WebDAV Url anzeigen##
+Zwei-Faktor  Authentifizierung (2FA) kann eine zusätzliche Sicherheitsebene für dein Konto schaffen, für den Fall, dass sich jemand Zugang zu deinem Passwort verschafft. Wenn sie aktiviert ist, brauchst du zusätzlich zu deinem Passwort einen zufällig generierten Verifizierungscode, um dich einzuloggen:
+
+[Learn more ›](../users/2fa.md)
+
+## Apps und Geräte
+
+Wenn 2FA für dein Konto aktiviert ist, können andere Apps und Dienste dein Passwort nicht mehr verwenden, da sie keinen Zugriff auf die Verifizierungscodes haben.
+
+Du kannst daher app-spezifische Passwörter für sie erstellen, indem du auf die Schaltfläche *Apps und Geräte* klickst. Wir empfehlen, app-spezifische Passwörter auch dann zu verwenden, wenn 2FA für dein Konto nicht aktiviert ist.
+
+Beispiel für die Erstellung eines App-Passworts, das du mit [WebDAV-kompatiblen](../sync/webdav.md) Dateisynchronisierungs-Apps wie [PhotoSync](../sync/sync-phone.md) verwenden kannst:
+
+![Screenshot](../users/img/app-password.jpg){ class="shadow" }
+
+!!! tldr ""
+    Wenn du die Berechtigung *WebDAV* auswählst, stellst du sicher, dass das App-Passwort nicht für die Anmeldung über die reguläre Benutzeroberfläche oder für andere Aktionen verwendet werden kann. Apps können auch nicht dein Passwort ändern oder Benutzerkonten verwalten, selbst wenn du ihnen *Vollen Zugriff* gewährst.
+
+
+## WebDAV Url anzeigen
 
 1. Klicke auf *Einstellungen*
 2. Klicke auf *Konto*

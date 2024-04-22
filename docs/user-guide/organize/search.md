@@ -128,6 +128,7 @@ Dies ist eine vollständige Liste der unterstützten Suchfilter mit Beispielen. 
 | latlng    | string    | latlng:"name"                         | GPS Bounding Box (Lat N, Lng E, Lat S, Lng W)                                                                                              |
 | lens      | string    | lens:ef24                             | Lens Make/Model Name                                                                                                                       |
 | mm        | string    | mm:28-35                              | Focal Length (35mm equivalent)                                                                                                             |
+| mp        | string    | mp:3-6                                | Resolution in Megapixels (MP)                                                                                                              |
 | month     | string    | month:7\|10                           | Month (1-12, separate with \|)                                                                                                             |
 | name      | string    | name:"IMG_9831-112*"                  | File Name without path and extension (separate with \|)                                                                                    |
 | near      | string    | near:pqbcf5j446s0futy                 | Finds nearby pictures (UID)                                                                                                                |
