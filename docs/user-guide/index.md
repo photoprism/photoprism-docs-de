@@ -27,4 +27,4 @@ Wenn du bei der Installation unserer Software bei dir zu Hause Hilfe brauchst, k
 
 !!! tldr ""
     **Bitte erstelle keine Bug Reports in Github Issues, außer du bist sicher, dass du ein Problem gefunden hast, das direkt in der App behoben werden muss.**
-    [Wende dich an uns](https://www.photoprism.app/contact) oder ein [Community-Mitglied](https://link.photoprism.app/discussions), wenn du Hilfe brauchst. Es könnte sich um ein lokales Konfigurationsproblem oder um ein Missverständnis bei der Funktionsweise der Software handeln.
+    [Wende dich an uns](https://www.photoprism.app/contact) oder ein [Community-Mitglied](https://link.photoprism.app/discussions), wenn du Hilfe brauchst. Es könnte sich um ein Konfigurationsproblem oder um ein Missverständnis bei der Funktionsweise der Software handeln.

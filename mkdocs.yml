@@ -70,6 +70,7 @@ nav:
       - Benutzer Rollen: user-guide/users/roles.md
       - Teilen mit Gastnuztern: user-guide/users/sharing.md
       - Mehrere Bibliotheken: user-guide/users/libraries.md
+      - 2FA einrichten: user-guide/users/2fa.md
   - Cloud Migration:
       - Google Photos: user-guide/use-cases/google.md
       - Apple Photos: user-guide/use-cases/apple.md
