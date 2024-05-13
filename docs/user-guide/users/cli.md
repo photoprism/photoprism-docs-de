@@ -33,6 +33,9 @@ Alternativ zur [Web-Benutzeroberfläche](index.md) kannst du Benutzerkonten auch
 | `photoprism users rm [username]`            | Removes a user account                       |
 | `photoprism users reset --yes`              | Removes all accounts and resets the database |
 
+!!! tldr ""
+    Benutzer, die nach einem Upgrade von [Entwicklungs-Builds](https://docs.photoprism.app/getting-started/updates/#development-preview) oder [alten Versionen von vor November 2022](https://docs.photoprism.app/known-issues/#new-user-management) Probleme bei der Anmeldung haben, können den Befehl `photoprism users reset --yes` ausführen, um [die Sitzung](#sessions-verwalten) und die Datenbanktabellen der Benutzerverwaltung neu zu erstellen, damit sie mit der aktuellen Version kompatibel sind. Beachte, dass alle [Client Access Token](https://docs.photoprism.app/user-guide/users/client-credentials/#access-tokens) und [App-Passwörter](../settings/account.md#apps-und-geräte), die Benutzer möglicherweise erstellt haben, ebenfalls gelöscht werden und neu erstellt werden müssen.
+
 ### Optionen
 
 Du kannst die Unterbefehle `add` und `mod` mit diesen Flags kombinieren, um Kontoeigenschaften zu setzen oder zu ändern:
@@ -92,7 +95,7 @@ docker compose exec photoprism photoprism users ls --help
 
 Aus Sicherheitsgründen sind die Authentifizierungs-Logs nicht im regulären Web-UI sichtbar und können nur in den Anwendungs-Logs eingesehen oder in einem Terminal mit folgendem Befehl durchsucht werden:
 ```
-photoprism logins ls [search]
+docker compose exec photoprism photoprism audit logins [username]
 ```
 
 ### Optionen
@@ -115,7 +118,7 @@ Du kannst ihn mit folgenden Flags kombinieren, um das Ausgabeformat und die maxi
 | 172.19.0.1 | admin     | api   | OK     | 2023-02-03 06:55:06 |           |
 
 !!! tldr ""
-    Führe `photoprism logins clear` aus, um alle aufgezeichneten Einträge zu löschen und die Datenbank auf einen sauberen Zustand zurückzusetzen.
+    Führe `photoprism auth reset --yes` aus, um alle aufgezeichneten Einträge zu löschen und die Datenbank auf einen sauberen Zustand zurückzusetzen.
 
 ## Sessions verwalten
 

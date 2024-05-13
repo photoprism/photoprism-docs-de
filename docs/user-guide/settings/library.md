@@ -21,29 +21,35 @@ Erstellt automatisch JPEG-Vorschaubilder für andere Dateitypen, damit sie in de
 
 ## Bildstapel ##
 
-!!! warning ""
-    Wenn du die Stacking-Einstellungen änderst, werden bereits gruppierte Dateien nicht automatisch wieder getrennt.
-
 PhotoPrism gruppiert zusammengehörige Dateien automatisch zu Bildstapeln.
-Bildstapel sind Gruppen von Dateien, die den gleichen Ursprung haben, sich aber in Qualität, Format, Größe oder Farbe unterscheiden. Gehe zu *[Einstellungen > Dateien](../settings/library.md)*, um die Stacking-Einstellungen für deine Bibliothek zu ändern.
+Bildstapel sind Gruppen von Dateien, die den gleichen Ursprung haben, sich aber in Qualität, Format, Größe oder Farbe unterscheiden.
 
 Du kannst folgende Optionen nutzen, um Bilder zu gruppieren:
 
 * :material-format-list-numbered-rtl: **Fortlaufende Dateinamen** zum Beispiel `/2018/IMG_1234 (2).jpg` und `/2018/IMG_1234 (3).jpg`
 * :material-clock-outline: **Gleicher Ort und Zeit** Gruppiert Bilder, die an derselben GPS-Position und in derselben Sekunde aufgenommen wurden
-* :material-fingerprint: **Gleiche eindeutige Bild-ID**  vergleicht die *Unique Image ID* (Exif), *Document ID*, oder *Instance ID* (XMP)
+* :material-fingerprint: **Gleiche eindeutige Bild-ID**  vergleicht die *ImageUniqueID* (Exif) oder *Instance ID*
 
 Gleichnamige Dateien, die sich im selben Ordner befinden, z.B. `/2018/IMG_1234.jpg` und  `/2018/IMG_1234.avi`, werden immer gruppiert.
 
+!!! note ""
+    Beachte, dass es **nicht möglich ist, die Gruppierung von Dateien mit demselben Namen zu deaktivieren**, da sonst wichtige Funktionen nicht mehr funktionieren würden. Beipsielsweise die Unterstützung von Apple [Live Photos](../organize/video.md#live-fotos) (die aus einer Foto- und einer Videodatei bestehen) sowie anderen Multidatei-/Hybridformaten wie RAW/JPEG und die Indexierung von Metadaten aus XMP/JSON Sidecar-Dateien.
 
-!!! info "Beispiele für fortlaufende Dateinamen"
-    Dateien mit folgenden Namen werden mit `/2018/IMG_1234.jpg` gruppiert, falls Gruppieren bei **fortlaufenden Dateinamen** aktiviert ist.
+## Werden gruppierte Dateien automatisch getrennt, wenn die ich Einstellungen ändere?
 
-    - `/2018/IMG_1234 (2).jpg` `/2018/IMG_1234 (3).jpg`
-     
-    - `/2018/IMG_1234 copy.jpg` `/2018/IMG_1234 copy 1.jpg` `/2018/IMG_1234 copy 2.jpg`
-    
-    - `/2018/IMG_1234 (-2.7)` `/2018/IMG_1234 (+3.3).jpg` `/2018/IMG_1234(-2.7).jpg`  `/2018/IMG_1234(+3.3).jpg`
+Wenn du die Bildstapel-Einstellungen änderst, werden Dateien, die bereits gruppiert sind, **nicht automatisch voneinander getrennt**. Das liegt daran, dass das Entstapeln ein ressourcenintensiver Vorgang ist, bei dem jede Datei neu indexiert werden muss.
+
+Das Ergebnis hängt auch von der genauen Reihenfolge ab, in der du die Dateien entstapelst, da z. B. Nicht-Medien-Sidecar-Dateien an die verbleibende Mediendatei in einem Stapel gebunden bleiben. Wir denken darüber nach, in einer zukünftigen Version einen entsprechenden Befehl bereitzustellen.
+
+!!! note ""
+    Wenn du PhotoPrism zum ersten Mal verwendest und deine Bibliothek mit anderen Einstellungen neu indexieren möchtest, kannst du den Befehl `photoprism reset` [in einem Terminal](https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface) ausführen, um den Index zurückzusetzen und von vorne zu beginnen. [Mehr erfahren >](https://docs.photoprism.app/getting-started/docker-compose/#examples)
+
+## Welche fortlaufenden Dateinamen werden unterstützt?
+Dateien mit folgenden Namen werden mit `/2018/IMG_1234.jpg` gruppiert, falls Gruppieren bei **fortlaufenden Dateinamen** aktiviert ist.
+
+- `/2018/IMG_1234 (2).jpg` `/2018/IMG_1234 (3).jpg`
+- `/2018/IMG_1234 copy.jpg` `/2018/IMG_1234 copy 1.jpg` `/2018/IMG_1234 copy 2.jpg`
+- `/2018/IMG_1234 (-2.7)` `/2018/IMG_1234 (+3.3).jpg` `/2018/IMG_1234(-2.7).jpg`  `/2018/IMG_1234(+3.3).jpg`
 
 <!--## Umwandlung von RAW zu JPEG ##
 Viele Fotografen, insbeondere Nutzer einer digitalen SLR, verwenden ein verlustfreies RAW-Format anstelle des verlustbehafteten JPEG-Formats. Es gibt auch [Handies](https://www.fredericpaulussen.be/how-to-raw-photos-huawei-p30-pro/) die RAW-Daten abspeichern können oder das Format HEIC/HEIF nutzen.

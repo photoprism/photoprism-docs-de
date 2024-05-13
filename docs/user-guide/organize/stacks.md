@@ -15,10 +15,26 @@ Beachte, dass *[Videos](video.md)* und *[Live-Fotos](video.md#live-photos)*, die
 3. Dateien, deren Metadaten zeigen, dass sie am selben Ort und in der selben Sekunde aufgenommen wurden, können gruppiert werden (optional)
 4. Dateien mit der gleichen *Unique Image ID* oder *XMP Instance ID* können gruppiert werden (optional)
 
-Du kannst das Verhalten der Punkte 2-4 in *[Einstellungen > Dateien](../settings/general.md)* konfigurieren.
+Du kannst das Verhalten der Punkte 2-4 in *[Einstellungen > Dateien](../settings/library.md#bildstapel)* konfigurieren.
 
-!!! warning ""
-      Wenn du die Stacking-Einstellungen änderst, werden bereits gruppierte Dateien nicht automatisch wieder getrennt.
+!!! note ""
+    Beachte, dass es **nicht möglich ist, die Gruppierung von Dateien mit demselben Namen zu deaktivieren**, da sonst wichtige Funktionen nicht mehr funktionieren würden. Beipsielsweise die Unterstützung von Apple [Live Photos](organize/video.md#live-fotos) (die aus einer Foto- und einer Videodatei bestehen) sowie anderen Multidatei-/Hybridformaten wie RAW/JPEG und die Indexierung von Metadaten aus XMP/JSON Sidecar-Dateien.
+
+## Werden gruppierte Dateien automatisch getrennt, wenn die ich Einstellungen ändere?
+
+Wenn du die Bildstapel-Einstellungen unter *[Einstellungen > Dateien](../settings/library.md#bildstapel)* änderst, werden Dateien, die bereits gruppiert sind, **nicht automatisch voneinander getrennt**. Das liegt daran, dass das Entstapeln ein ressourcenintensiver Vorgang ist, bei dem jede Datei neu indexiert werden muss.
+
+Das Ergebnis hängt auch von der genauen Reihenfolge ab, in der du die Dateien entstapelst, da z. B. Nicht-Medien-Sidecar-Dateien an die verbleibende Mediendatei in einem Stapel gebunden bleiben. Wir denken darüber nach, in einer zukünftigen Version einen entsprechenden Befehl bereitzustellen.
+ 
+!!! note ""
+    Wenn du PhotoPrism zum ersten Mal verwendest und deine Bibliothek mit anderen Einstellungen neu indexieren möchtest, kannst du den Befehl `photoprism reset` [in einem Terminal](https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface) ausführen, um den Index zurückzusetzen und von vorne zu beginnen. [Mehr erfahren >](https://docs.photoprism.app/getting-started/docker-compose/#examples)
+
+## Welche fortlaufenden Dateinamen werden unterstützt?
+Dateien mit folgenden Namen werden mit `/2018/IMG_1234.jpg` gruppiert, falls Gruppieren bei **fortlaufenden Dateinamen** aktiviert ist.
+
+- `/2018/IMG_1234 (2).jpg` `/2018/IMG_1234 (3).jpg`
+- `/2018/IMG_1234 copy.jpg` `/2018/IMG_1234 copy 1.jpg` `/2018/IMG_1234 copy 2.jpg`
+- `/2018/IMG_1234 (-2.7)` `/2018/IMG_1234 (+3.3).jpg` `/2018/IMG_1234(-2.7).jpg`  `/2018/IMG_1234(+3.3).jpg`
 
 ## Gruppierte Bilder anschauen ##
 
