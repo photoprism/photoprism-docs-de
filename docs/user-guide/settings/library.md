@@ -35,7 +35,7 @@ Gleichnamige Dateien, die sich im selben Ordner befinden, z.B. `/2018/IMG_1234.j
 !!! note ""
     Beachte, dass es **nicht möglich ist, die Gruppierung von Dateien mit demselben Namen zu deaktivieren**, da sonst wichtige Funktionen nicht mehr funktionieren würden. Beipsielsweise die Unterstützung von Apple [Live Photos](../organize/video.md#live-fotos) (die aus einer Foto- und einer Videodatei bestehen) sowie anderen Multidatei-/Hybridformaten wie RAW/JPEG und die Indexierung von Metadaten aus XMP/JSON Sidecar-Dateien.
 
-## Werden gruppierte Dateien automatisch getrennt, wenn die ich Einstellungen ändere?
+### Werden gruppierte Dateien automatisch getrennt, wenn die ich Einstellungen ändere?
 
 Wenn du die Bildstapel-Einstellungen änderst, werden Dateien, die bereits gruppiert sind, **nicht automatisch voneinander getrennt**. Das liegt daran, dass das Entstapeln ein ressourcenintensiver Vorgang ist, bei dem jede Datei neu indexiert werden muss.
 
@@ -44,7 +44,7 @@ Das Ergebnis hängt auch von der genauen Reihenfolge ab, in der du die Dateien e
 !!! note ""
     Wenn du PhotoPrism zum ersten Mal verwendest und deine Bibliothek mit anderen Einstellungen neu indexieren möchtest, kannst du den Befehl `photoprism reset` [in einem Terminal](https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface) ausführen, um den Index zurückzusetzen und von vorne zu beginnen. [Mehr erfahren >](https://docs.photoprism.app/getting-started/docker-compose/#examples)
 
-## Welche fortlaufenden Dateinamen werden unterstützt?
+### Welche fortlaufenden Dateinamen werden unterstützt?
 Dateien mit folgenden Namen werden mit `/2018/IMG_1234.jpg` gruppiert, falls Gruppieren bei **fortlaufenden Dateinamen** aktiviert ist.
 
 - `/2018/IMG_1234 (2).jpg` `/2018/IMG_1234 (3).jpg`
