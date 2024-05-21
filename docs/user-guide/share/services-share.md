@@ -18,7 +18,7 @@ In den [Einstellungen](../settings/sync.md) kannst du deine PhotoPrism-Instanz m
 
 ## Alben mit anderen Apps teilen ##
 
-1. Gehe zu *Alben* / *Erlebnisse* / *Kalender* / *Länder* / *Ordner*
+1. Gehe zu *Alben* / *Ereignisse* / *Kalender* / *Länder* / *Ordner*
 2. Wähle ein Album aus
 3. Öffne das Kontext-Menü
 4. Klicke :material-share-variant:

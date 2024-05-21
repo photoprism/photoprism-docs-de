@@ -56,8 +56,8 @@ Zeigt deine Bilder gruppiert nach abgebildeten Personen.
 ### :material-heart: Favoriten ###
 Hier befinden sich alle Bilder, die du als Favorit markiert hast.
 
-### :material-compass: [Erlebnisse](moments.md)  ###
-Entdecke Alben von Erlebnissen, die wir automatisch für dich erstellt haben.
+### :material-compass: [Ereignisse](moments.md)  ###
+Entdecke Alben von Ereignissen, die wir automatisch für dich erstellt haben.
 
 ![Screenshot](img/moments-section-german.jpg){ class="shadow" }
 

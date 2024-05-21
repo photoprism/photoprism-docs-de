@@ -39,8 +39,8 @@ Wenn diese Option aktiviert ist, können Dateien endgültig aus dem Archiv gelö
 #### :material-file: Originale  ####
 Wenn diese Option deaktiviert ist, wird der Bereich *Originale* nicht angezeigt.
 
-#### :material-compass: Erlebnisse ####
-Wenn diese Option deaktiviert ist, wird der Bereich *Erlebnisse* nicht angezeigt.
+#### :material-compass: Ereignisse ####
+Wenn diese Option deaktiviert ist, wird der Bereich *Ereignisse* nicht angezeigt.
 
 #### :material-label: Kategorien ####
 Wenn diese Option deaktiviert ist, wird der Bereich *Kategorien* nicht angezeigt. Außerdem kannst du keine *Kategorien* hinzufügen oder bearbeiten.

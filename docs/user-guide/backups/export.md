@@ -13,7 +13,7 @@ Beachte, dass sich die Daten immer noch in der Datenbank befinden und dass Ände
 Dies ist vergleichbar mit einem Backup, allerdings in einem für Menschen lesbaren Format.
 
 ## Album Backups
-Backups werden für alle Albentypen erstellt: Album, Ordner, Bundesland, Erlebnis und Monat.
+Backups werden für alle Albentypen erstellt: Album, Ordner, Bundesland, Ereignis und Monat.
 
 Du findest sie in deinem `storage path` in `/albums`.
 
@@ -37,8 +37,8 @@ Für Bundesland-Alben werden folgende Metadaten in den YAML Dateien gespeichert:
 
 * UID, Slug, Type, Title, Location, Category, Description, Filter, Sort Order, Country, CreatedAt, UpdatedAt
 
-### Erlebnis-Alben
-Für Erlebnis-Alben werden folgende Metadaten in den YAML Dateien gespeichert:
+### Ereignis-Alben
+Für Ereignis-Alben werden folgende Metadaten in den YAML Dateien gespeichert:
 
 * UID, Slug, Type, Title, Location, Category, Description, Filter, Sort Order, Country, Year, CreatedAt, UpdatedAt
 

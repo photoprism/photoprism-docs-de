@@ -1,29 +1,29 @@
-# Erlebnisse #
+# Ereignisse #
 
-PhotoPrism erstellt automatisch *Erlebnisse* aus deinen Erinnerungen. 
-Deine *Erlebnisse* werden laufend aktualisiert, wenn neue Bilder hinzugefügt werden.
+PhotoPrism erstellt automatisch *Ereignisse* aus deinen Erinnerungen. 
+Deine *Ereignisse* werden laufend aktualisiert, wenn neue Bilder hinzugefügt werden.
 
 !!! info ""
-    Erlebnisse basieren auf Orts- und Zeitangaben z.B. *Germany 2020* oder auf Kategorien wie *Nature & Landscape* oder *Pets*
+    Ereignisse basieren auf Orts- und Zeitangaben z.B. *Germany 2020* oder auf Kategorien wie *Nature & Landscape* oder *Pets*
 
 ![Screenshot](img/moments-german.jpg){ class="shadow" }
 
 Mithilfe des Kontext-Menüs kannst du die folgenden Aktionen durchführen:
 
-## Erlebnis löschen ##
-1. Selektiere ein *Erlebnis*
+## Ereignis löschen ##
+1. Selektiere ein *Ereignis*
 2. Öffne das Kontext-Menü und klicke :material-delete:
 3. Bestätige
 
 !!! hint ""
-    Nur das Erlebnis wird gelöscht. Deine Dateien werden nicht gelöscht oder verändert.
+    Nur das Ereignis wird gelöscht. Deine Dateien werden nicht gelöscht oder verändert.
 
-## Erlebnis als ZIP-Archiv herunterladen ##
-1. Wähle ein *Erlebnis* aus
+## Ereignis als ZIP-Archiv herunterladen ##
+1. Wähle ein *Ereignis* aus
 2. Öffne das Kontext-Menü und klicke auf :material-download:
 
-## Album aus einem Erlebnis erstellen##
-1. Selektiere ein *Erlebnis*
+## Album aus einem Ereignis erstellen##
+1. Selektiere ein *Ereignis*
 2. Öffne das Kontext-Menü und klicke auf :material-bookmark:
 3. Wähle ein existierendes Album oder gib einen neuen Albumnamen ein
 4. Klicke auf *Hinzufügen*
