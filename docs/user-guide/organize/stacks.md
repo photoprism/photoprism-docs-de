@@ -6,7 +6,7 @@ Bildstapel werden im Bereich *Bildstapel* dargestellt.
 
 ![Screenshot](img/stack-page-german.jpg){ class="shadow" }
 
-Beachte, dass *[Videos](video.md)* und *[Live-Fotos](video.md#live-photos)*, die immer mit einem Vorschaubild gruppiert sind, nicht auf der Seite *Bildstapel* angezeigt werden.
+Beachte, dass *[Videos](./video.md)* und *[Live-Fotos](./video.md#live-fotos)*, die immer mit einem Vorschaubild gruppiert sind, nicht auf der Seite *Bildstapel* angezeigt werden.
 
 ## Unter welchen Bedingungen können Dateien gruppiert werden? ##
 

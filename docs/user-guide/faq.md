@@ -157,7 +157,7 @@
  
     #### YAML ####
     
-    Sofern Metadaten Backups nicht über `PHOTOPRISM_DISABLE_BACKUPS` oder `--disable-backups` deaktiviert sind, erstellt/aktualisiert PhotoPrism automatisch
+    Sofern Metadaten Backups nicht über `PHOTOPRISM_SIDECAR_YAML` deaktiviert sind, erstellt/aktualisiert PhotoPrism automatisch
     [menschenlesbare YAML-Dateien](https://docs.photoprism.app/developer-guide/technologies/yaml/) während der Indexierung und nach manueller Bearbeitung von Feldern wie Titel, Datum oder Ort. 
     Sie dienen als Backup, falls die Datenbank (Index) verloren geht, oder bei der Synchronisation von Ordnern mit einer anderen Instanz.
     

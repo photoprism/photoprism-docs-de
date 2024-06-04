@@ -29,7 +29,7 @@ Du kannst diese und andere Funktionen in den [Einstellungen](./settings/library.
 
 Natürlich kannst du weiterhin deine bevorzugten Programme zur Verarbeitung von RAW-Dateien, zur Bearbeitung von Metadaten oder zum Importieren neuer Aufnahmen verwenden.
 Gehe zu *Dateien> Index* und klicke auf Start, um den Index zu aktualisieren, nachdem Dateien geändert, hinzugefügt oder entfernt wurden.
-Dies kann auch mit CLI-Befehlen und einem [Scheduler](https://dl.photoprism.app/docker/scheduler/) automatisiert werden.
+Dies kann auch über die Konfigurationsoption [`PHOTOPRISM_INDEX_SCHEDULE`](https://docs.photoprism.app/getting-started/config-options/#indexing) automatisiert werden.
 
 !!! tldr ""
     Bei der Indexierung können JPEG-Sidecar-Dateien für Originale in anderen Formaten wie RAW und HEIF erstellt werden. Dies ist für die Bildklassifizierung, die Gesichtserkennung und für die Anzeige in einem Webbrowser erforderlich.

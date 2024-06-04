@@ -36,7 +36,7 @@ Gesichter können aus mehreren Gründen nicht erkannt werden:
 - Unsere Gesichtserkennung hat das Bild nicht gründlich genug gescannt
 - Eine reduzierte Auflösung sowie Qualität von generierten [Vorschaubildern](../settings/advanced.md) führt zu schlechteren Gesichtserkennungs-Ergebnissen
 - Der Kontrast spielt eine große Rolle, so dass ein helles Gesicht mit grauen Haaren auf einem grauen Hintergrund für unsere Gesichtserkennung weniger auffällig sein kann als für dich
-- In sehr seltenen Fällen kann ein Gesicht mit unserer Black-List von falsch positiven Ergebnissen übereinstimmen
+- In sehr seltenen Fällen kann ein Gesicht als falsch-positiv eingestuft und daher ignoriert werden
 
 !!! info ""
     Die Gesichtserkennung vergleicht die Ähnlichkeit von Gesichtern. Der Ähnlichkeits-Treshold für ein Gesicht

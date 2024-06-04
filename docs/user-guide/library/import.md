@@ -4,6 +4,8 @@
     Die meisten Benutzer mit einer bestehenden Bibliothek werden ihre [Originale](./indexing.md) direkt indexieren wollen, ohne die optionale Importfunktion zu verwenden, wobei die Datei- und Ordnernamen unverändert bleiben. 
     Beim Importieren werden zunächst Kopien oder Verschiebungen aus dem Quellverzeichnis in den *Originals*-Ordner vorgenommen, was optional ist.
 
+## Manueller Import
+
 1. Stelle sicher, dass sich alle Dateien, die du importieren willst, im *Import* Verzeichnis befinden
 
 2. Öffne den Bereich *Dateien*, indem du auf den Link in der Hauptnavigation klickst, dann wechsle zum Tab *Import*
@@ -23,18 +25,17 @@
 !!! attention ""
     Importieren ist im [schreibgeschützten Modus](../settings/library.md) nicht möglich, da er [Schreibrechte](https://docs.photoprism.app/getting-started/troubleshooting/docker/#file-permissions) für den Ordner *originals* benötigt.    
 
-#### Option "Dateien Verschieben" ####
+### Option "Dateien Verschieben" ###
 
 Wenn diese Option ausgewählt ist, werden Dateien, die in den Ordner *Originals* verschoben wurden oder dort bereits vorhanden sind,
 automatisch aus dem *Import* Verzeichnis gelöscht.
 Dadurch wird weniger Speicherplatz benötigt.
 Wähle diese Option nur, wenn du die Dateien nicht als Backup oder aus einem anderen Grund in *Import* behalten möchtest.
 
-#### Automatisch Importieren ####
-Ein Import wird automatisch ausgelöst, wenn Dateien mit dem *Import*-Ordner [über WebDAV](../sync/webdav.md) synchronisiert werden.
+## Automatisch Importieren ##
+Der automatische Import ist standardmäßig deaktiviert, da eine falsche Konfiguration oder eine nicht unterstützte Verwendung dazu führen kann, dass Dateien oder Dateigruppen unvollständig importiert werden, z. B. wenn du eine langsame oder unzuverlässige Internetverbindung verwendest, was besonders bei [großen Video- oder RAW-Dateien](https://github.com/photoprism/photoprism/issues/4310) von Bedeutung ist.
 
-Die Standard-Sicherheitsverzögerung für den automatischen Import beträgt 3 Minuten. 
-Du kannst sie mit der Konfigurationsoption [PHOTOPRISM_AUTO_IMPORT](https://docs.photoprism.app/getting-started/config-options#index-workers) ändern.
+Wenn du den automatischen Import aktivierst, indem du die Konfigurationsoption [`PHOTOPRISM_AUTO_IMPORT`](https://docs.photoprism.app/getting-started/config-options#indexing) auf eine positive Zahl setzt, die die Sicherheitsverzögerung in Sekunden angibt, wird ein Import automatisch nach der Sicherheitsverzögerung ausgelöst, wenn Dateien [über WebDAV](../sync/webdav.md) zum *Import*-Ordner hinzugefügt werden.
 
 !!! info "Kann ich mit PhotoPrism Dateien in einer konfigurierbaren Ordnerstruktur sortieren?"
     Du kannst deine Dateien sortieren, wie du möchtest. Falls dir die Ordner- und Namenskonvention unserer Importfunktion nicht gefällt,
