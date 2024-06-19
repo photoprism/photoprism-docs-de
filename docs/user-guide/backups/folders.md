@@ -1,20 +1,21 @@
-#Verzeichnisse
-Hier findest du eine Übersicht über die Verzeichnisse, die PhotoPrism verwendet.
+# Verzeichnisse
+Hier findest du eine Übersicht über die wichtigsten Verzeichnisse, die PhotoPrism verwendet.
 
 ## Originals
-Dieser Pfad wird mit `PHOTOPRISM_ORIGINALS_PATH` gesetzt.
-Der `originals` Ordner enthält deine  Bildersammlung. PhotoPrism schreibt nicht in dieses Verzeichnis.
+Der Ordner `originals` enthält die originalen Foto- und Videodateien deiner Bibliothek. PhotoPrism wird die Dateien in diesem Ordner nicht verschieben oder umbenennen, ohne dass ein Benutzer dies anfordert. Wenn der schreibgeschützte Modus nicht aktiviert ist, können neue Dateien über den [Web-Upload-Dialog](../library/upload.md), die [Importfunktion](../library/import.md) oder durch ["Einbinden des Ordners über WebDAV"](../sync/webdav.md) hinzugefügt werden.
+
+Dieser Pfad kann mit `PHOTOPRISM_ORIGINALS_PATH` geändert werden.
 
 ## Import
-Dieser Pfad wird mit `PHOTOPRISM_IMPORT_PATH` gesetzt.
-Falls du die [Import Funktion](../library/import-vs-index.md) verwendest, befindet sich deine Bildersammlung im `import` Ordner. Von hier werden die Dateien von
-PhotoPrism nach `originals` verschoben oder kopiert.
+Beim [Importieren](../library/import-vs-index.md) werden die Dateien aus dem `import` Ordner in den `originals` Ordner kopiert oder verschoben. Dabei werden Duplikate automatisch übersprungen, und die importierten Dateien erhalten einen eindeutigen Dateinamen und werden nach Jahr und Monat sortiert.
+
+Dieser Pfad kann mit `PHOTOPRISM_IMPORT_PATH` geändert werden.
+
 
 ## Storage
-Dieser Pfad wird mit `PHOTOPRISM_STORAGE_PATH` gesetzt.
+Die Ordner: [`config`](#config), [`cache`](#cache), [`backup`](#backup), [`thumbnails`](#thumbnails) und [`sidecar`](#sidecar)  befinden sich innerhalb des `storage` Ordners, falls nicht anders konfiguriert.
 
-Die Ordner: `cache`, `sidecar` und `config` befinden sich innerhalb des `storage` Ordners, falls nicht anders definiert.
-Zusätzlich werden [Album Backups](export.md#album-backups) und Datenbank-Dateien in `storage` gespeichert
+Dieser Pfad kann mit `PHOTOPRISM_STORAGE_PATH` geändert werden.
 
 !!! attention ""
     Der `storage` Ordner darf sich nicht innerhalb von `originals` befinden, da sonst auch Thumbnails indexiert werden.
@@ -22,7 +23,7 @@ Zusätzlich werden [Album Backups](export.md#album-backups) und Datenbank-Dateie
 ### Cache
 Im `cache` Verzeichnis liegen die `json` and `thumbnails` Verzeichnisse.
 
-Dieser Pfad wird mit `PHOTOPRISM_CACHE_PATH` gesetzt.
+Dieser Pfad kann mit `PHOTOPRISM_CACHE_PATH` geändert werden.
 
 #### JSON
 Hier erstellt PhotoPrism JSON Dateien. Diese Dateien enthalten von Exiftool ausgelesene Metadaten.
@@ -30,27 +31,35 @@ Du kannst Exiftool in den [Einstellungen](../settings/advanced.md) deaktivieren.
 
 #### Thumbnails
 PhotoPrism erstellt für jedes Bild Thumbnails in unterschiedlichen Größen. Diese werden in `thumbnails` gespeichert.
-Mehr Informatione zu Thumbnails findest du [hier](../settings/advanced.md#images).
+Mehr Informationen zu Thumbnails findest du [hier](../settings/advanced.md#images).
 
 ### Sidecar
-Das `sidecar` Verzeichnis enthält [YAML Backups](export.md#bild-backups) für jedes Bild, sowie JPEGs, die von PhotoPrism durch Konvertierung erstellt wurden.
-Backups und RAW Kovertierung können in den [Einstellungen](../settings/advanced.md) deaktiviert werden.
-Dieser Pfad wird mit `PHOTOPRISM_SIDECAR_PATH` gesetzt.
+Der `sidecar` Ordner enthält [YAML-Backup-Dateien](export.md#bild-backups) für jedes Bild sowie automatisch generierte JPEG-Versionen von z.B. RAW-Bildern. Beides kann unter [Einstellungen > Erweitert](../settings/advanced.md) konfiguriert werden.
+
+Dieser Pfad kann mit `PHOTOPRISM_SIDECAR_PATH` geändert werden.
+
 
 ### Config
-Im `config` Ordner können Dateien mit Einstellungs-Details gespeichert sein.
-Dieser Pfad wird mit `PHOTOPRISM_CONFIG_PATH` gesetzt.
+Der `config` Ordner enthält Konfigurationsdateien und Zertifikate.
 
-## Backup
-[Datenbank Backup Dateien](https://docs.photoprism.app/getting-started/advanced/backups/) werden in `backup` gespeichert.
-Dieser Pfad wird mit `PHOTOPRISM_BACKUP_PATH` gesetzt.
+Dieser Pfad kann mit `PHOTOPRISM_CONFIG_PATH` geändert werden.
+
+
+### Backup
+Der `backup` Ordner enthält sowohl [Datenbank-Dumps als auch Album-Backup-Dateien](index.md#automatische-backups) und befindet sich standardmäßig im `storage` Ordner.
+
+Dieser Pfad kann mit `PHOTOPRISM_BACKUP_PATH` geändert werden.
+
 
 ## Temp
-In `temp` werden Uploads und Downloads temporär gespeichert.
-Dieser Pfad wird mit `PHOTOPRISM_TEMP_PATH` gesetzt.
+Uploads, Downloads und andere temporäre Dateien können vorübergehend im `temp` Ordner gespeichert werden.
+
+Dieser Pfad kann mit `PHOTOPRISM_TEMP_PATH` geändert werden.
 
 
-## Asset
-Der Asset Ordner enthält statische Resourcen wie Models und Templates.
-Dieser Pfad wird mit `PHOTOPRISM_ASSETS_PATH` gesetzt.
+
+## Assets
+Der `assets` Ordner enthält statische Resourcen wie Models, Icons und Templates.
+
+Dieser Pfad kann mit `PHOTOPRISM_ASSETS_PATH` geändert werden.
 

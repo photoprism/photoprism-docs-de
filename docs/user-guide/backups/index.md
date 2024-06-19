@@ -2,18 +2,12 @@
 
 Ein Backup von PhotoPrism sollte mindestens die Dateien in [deinem *originals* Ordner](https://docs.photoprism.app/getting-started/docker-compose/#photoprismoriginals) und eine Kopie der Indexdatenbank enthalten. Wir empfehlen außerdem, eine Sicherungskopie des [*storage* Ordners](https://docs.photoprism.app/getting-started/docker-compose/#photoprismstorage) zu erstellen, damit du keine Thumbnail- oder Sidecar-Dateien neu erstellen musst und deine Sicherungskopie die komplette Konfiguration enthält.
 
-=== "MariaDB"
+## Automatische Backups
 
-    1. Der einfachste Weg, ein vollständiges Backup zu erstellen, ist, zuerst den Backup-Befehl auszuführen, um einen MariaDB-Datenbank-Dump zu erzeugen (siehe unten).
-    2. Dann sichere die Ordner *originals* und *storage* mit einem normalen Datensicherungsprogramm.
-
-=== "SQLite"
-
-    Ein vollständiges Backup beider Ordner ist obligatorisch, aber es ist nicht notwendig, zuerst [einen Dump zu erstellen](https://docs.photoprism.app/getting-started/advanced/backups/#sqlite-backups), da sich bereits eine Kopie der Indexdatenbank im Ordner *storage* befindet.
+Standardmäßig erstellt PhotoPrism ab Version [PhotoPrism 240523-923ee0cf7](https://docs.photoprism.app/release-notes/#may-23-2024) automatisch tägliche Datenbanksicherungen für dich, wobei bis zu 3 Backups aufbewahrt werden. Der Zeitplan, die Art der Backups und die Anzahl der aufzubewahrenden Backups können in der [Konfiguration geändert werden](https://docs.photoprism.app/getting-started/config-options/#backup).
 
 ## Backup Command
-
-Der einfachste Weg, einen Index-SQL-Dump von MariaDB zu erstellen, ist, den Backup-Befehl in einem Terminal auszuführen:
+Du kannst folgenden Befehl in einem Terminal ausführen, um ein Datenbank-Backup von MariaDB oder Sqlite zu erstellen:
 
 ```
 docker compose exec photoprism photoprism backup -i -f
@@ -25,7 +19,7 @@ Wenn du Podman auf einer Red Hat-kompatiblen Linux-Distribution verwendest:
 podman-compose exec photoprism photoprism backup -i -f
 ```
 
-Standardmäßig wird ein Backup in `storage/backup/mysql/[JJJJ-MM-TT].sql` erstellt. Ein eigener Backup-Ordner kann mit [`PHOTOPRISM_BACKUP_PATH`](https://docs.photoprism.app/getting-started/config-options/#storage) konfiguriert werden.
+Standardmäßig wird ein Backup in `storage/backup/mysql/[JJJJ-MM-TT].sql` erstellt. Ein benutzerdefinierter Backup-Basis-Ordner kann mit [`PHOTOPRISM_BACKUP_PATH`](https://docs.photoprism.app/getting-started/config-options/#storage) konfiguriert werden.
 
 Lass das `-f` Flag weg, wenn du keine bestehenden Dateien überschreiben willst. Du kannst auch einen eigenen Dateinamen als Argument angeben (oder `-`, um den SQL-Dump nach [stdout](https://docs.photoprism.app/getting-started/advanced/backups/) zu schreiben):
 
@@ -33,7 +27,7 @@ Lass das `-f` Flag weg, wenn du keine bestehenden Dateien überschreiben willst.
 docker compose exec photoprism photoprism backup -i [filename]
 ```
 
-Wie du SQL-Dumps von SQLite erstellst, erfährst du in unserer [erweiterten Backup-Anleitung](https://docs.photoprism.app/getting-started/advanced/backups).
+Alternative Möglichkeiten zur Erstellung von SQL-Dumps aus SQLite findest du in unserer [erweiterten Backup-Anleitung](https://docs.photoprism.app/getting-started/advanced/backups).
 
 !!! tldr ""
     Beachte, dass unsere Anleitungen jetzt standardmäßig den neuen Befehl `docker compose` verwenden. Wenn dein Server diesen Befehl noch nicht unterstützt, kannst du trotzdem `docker-compose` verwenden.

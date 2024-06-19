@@ -19,7 +19,7 @@ Wenn du Podman auf einer Red Hat-kompatiblen Linux-Distribution verwendest:
 podman-compose exec photoprism photoprism restore -i -f
 ```
 
-Dadurch wird der Backup-Ordner automatisch nach dem neuesten Index-Dump durchsucht und dieser wiederhergestellt. Ein benutzerdefinierter Backup-Ordner kann mit [`PHOTOPRISM_BACKUP_PATH`](https://docs.photoprism.app/getting-started/config-options/#storage) konfiguriert werden.
+Dadurch wird der Backup-Ordner automatisch nach dem neuesten Index-Dump durchsucht und dieser wiederhergestellt. Ein benutzerdefinierter Backup-Basis-Ordner kann mit [`PHOTOPRISM_BACKUP_PATH`](https://docs.photoprism.app/getting-started/config-options/#storage) konfiguriert werden.
 
 Lass das `-f`-Flag weg, um das Überschreiben eines bestehenden Index zu verhindern. Wie beim Backup-Befehl kannst du auch einen bestimmten Dateinamen für den Dump als Argument angeben:
 
