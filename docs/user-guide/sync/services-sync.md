@@ -1,11 +1,12 @@
 # Dateien mit anderen Apps synchronisieren #
 
-In den [Einstellungen](../settings/sync.md) kannst du deine PhotoPrism-Instanz mit anderen Diensten mit WebDAV-Unterstützung verbinden, zum Beispiel mit anderen PhotoPrism-Instanzen, Nextcloud oder ownCloud.
+In den [Einstellungen > Dienste](../settings/sync.md) kannst du deine PhotoPrism-Instanz mit anderen Diensten mit WebDAV-Unterstützung verbinden, zum Beispiel mit anderen PhotoPrism-Instanzen, Nextcloud oder ownCloud.
 
 !!! attention ""
-      Bei der Synchronisierung werden deine Dateien zu/von einem anderen Dienst hoch- oder heruntergeladen, sodass deine Dateien dupliziert werden.
+      Bei der Synchronisierung werden deine Dateien zu/von einem anderen Dienst hoch- oder heruntergeladen, was zusätzlichen Speicherplatz erfordert.
 
-      Wenn du möchtest, dass PhotoPrism aus demselben Ordner wie ein anderer Dienst liest, ohne Kopien zu erstellen, kannst du einfach [diesen Ordner als PhotoPrisms originals Verzeichnis einbinden](https://docs.photoprism.app/getting-started/docker-compose/#photoprismoriginals).
+    Wenn PhotoPrism Dateien aus einer anderen lokalen Anwendung, z. B. Nextcloud, indexieren soll, empfehlen wir, deren Speicherordner [als originals Ordner einzubinden]((https://docs.photoprism.app/getting-started/docker-compose/#photoprismoriginals)), anstatt die Dateien über WebDAV zu synchronisieren. Dadurch wird verhindert, dass unnötige Kopien deiner Dateien erstellt werden.
+
 
 ## Dateien von/zu einerApp herunterladen/hochladen##
 1. Gehe zu *Einstellungen*
