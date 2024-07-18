@@ -19,6 +19,16 @@ Dies gilt auch für [andere Befehle](https://docs.photoprism.app/getting-started
 !!! tldr ""
     Die Beispiele in unserer Dokumentation verwenden standardmäßig den neuen Befehl `docker compose`. Wenn dein Server ihn noch nicht unterstützt, kannst du trotzdem `docker-compose` oder alternativ `podman-compose` auf Red Hat-kompatiblen Linux-Distributionen verwenden.
 
+## Passwort entfernen
+
+Wenn du die Authentifizierung eines bestehenden Kontos auf einen passwortlosen Anbieter wie [*OIDC*](https://docs.photoprism.app/getting-started/advanced/openid-connect) änderst, wird ein zuvor vergebenes Passwort nicht entfernt, so dass es weiterhin zur Anmeldung verwendet werden kann (optional auch mit [2FA](2fa.md)).
+
+Wenn für [ein solches Konto](https://docs.photoprism.app/getting-started/advanced/openid-connect#existing-accounts) ein lokales Passwort gesetzt wurde, das nicht mehr verwendet werden soll, kannst du es mit folgendem Befehl [in einem Terminal](https://docs.photoprism.app/getting-started/docker-compose#opening-a-terminal) entfernen:
+
+```bash
+photoprism passwd --rm [username]
+```
+
 ## Benutzerkonten verwalten
 
 Alternativ zur [Web-Benutzeroberfläche](index.md) kannst du Benutzerkonten auch verwalten, indem du die folgenden Befehle [in einem Terminal](https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface) ausführst:
@@ -42,15 +52,17 @@ Du kannst die Unterbefehle `add` und `mod` mit diesen Flags kombinieren, um Kont
 
 | Command Flag                         | Description                                                      |
 |--------------------------------------|------------------------------------------------------------------|
-| `--name NAME`, `-n NAME`             | full NAME for display in the interface                           |
-| `--email EMAIL`, `-m EMAIL`          | unique EMAIL address of the user                                 |
-| `--password PASSWORD`, `-p PASSWORD` | PASSWORD for local authentication                                |
-| `--role value`, `-r value`           | user role NAME (admin, user, viewer or guest) (default: "admin") |
-| `--superadmin`, `-s`                 | make user super admin with full access                           |
-| `--no-login`, `-l`                   | disable login on the web interface                               |
-| `--webdav`, `-w`                     | allow to sync files via WebDAV                                   |
-| `--upload-path value`, `-u value`    | upload files to this sub-folder                                  |
-| `--disable-2fa`                      | deactivate two-factor authentication                             |
+| `--name NAME`, `-n NAME`             | full NAME for display in the interface                              |
+| `--email EMAIL`, `-m EMAIL`          | unique EMAIL address of the user                                    |
+| `--password PASSWORD`, `-p PASSWORD` | PASSWORD for local authentication (8-72 characters)                 |
+| `--role value`, `-r value`           | user account ROLE (admin, user, viewer or guest) (default: "admin") |
+| `--auth PROVIDER`, `-A PROVIDER`     | authentication PROVIDER (default, local, oidc or none)              |
+| `--auth-id ID`                       | authentication ID e.g. Subject ID or Distinguished Name (DN)        |
+| `--superadmin`, `-s`                 | make user super admin with full access                              |
+| `--no-login`, `-l`                   | disable login on the web interface                                  |
+| `--webdav`, `-w`                     | allow to sync files via WebDAV                                      |
+| `--upload-path value`, `-u value`    | upload files to this sub-folder                                     |
+| `--disable-2fa`                      | deactivate two-factor authentication                                |
 
 ### Neuen Benutzer erstellen
 
@@ -61,7 +73,7 @@ docker compose exec photoprism photoprism users add -p mysecret -n "Bob" bob
 ```
 
 !!! example ""
-    Zusätzliche [Benutzer Rollen](roles.md) wie user, viewer und guest sind derzeit [nur mit einer Mitgliedschaft](https://www.photoprism.app/editions#compare) verfügbar, um die Entwicklung und Pflege des Projekts zu unterstützen.
+    Einige Benutzer Rollen wie Benutzer und Betrachter sind derzeit [nur mit einer Mitgliedschaft](https://www.photoprism.app/editions#compare) verfügbar, um die Entwicklung und Pflege des Projekts zu unterstützen.
 
 ### Kontodetails anzeigen
 

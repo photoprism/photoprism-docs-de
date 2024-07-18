@@ -16,9 +16,6 @@ Reguläre *Admins* können ihre Privilegien durch einen absichtlichen oder verse
 
 Wenn *Superadmins* Einstellungen wie die Sprache oder das Theme ändern, werden diese automatisch zu den Standardeinstellungen für andere Nutzer/innen, es sei denn, sie haben ausdrücklich eine andere Wahl getroffen. Außerdem können globale Funktionsflags nur von *Superadmins* geändert werden.
 
-!!! example ""
-    Zusätzliche Benutzer Rollen wie Benutzer, Betrachter und Gast sind derzeit [nur mit einer Mitgliedschaft](https://www.photoprism.app/editions#compare) verfügbar, um die Entwicklung und Pflege des Projekts zu unterstützen.
-
 ## Benutzer
 
 *Benutzer* haben vollen Zugriff auf die Bibliothek und können alle Bilder und Alben ansehen, bearbeiten und löschen. Anders als *Admins* können *Benutzer* die [Bibliotheks-](../settings/library.md) und die [Erweiterten Einstellungen](../settings/advanced.md) nicht einsehen oder ändern, sondern nur persönliche Einstellungen wie Theme, Sprache und Passwort. Außerdem kann ihr WebDAV-Zugang deaktiviert werden. Zukünftige Versionen werden möglicherweise weitere Möglichkeiten bieten, die Benutzerrechte anzupassen, z. B. mit individuellen Kontoattributen.
@@ -35,3 +32,5 @@ Wenn *Superadmins* Einstellungen wie die Sprache oder das Theme ändern, werden 
 
 *Besucher* können nicht manuell hinzugefügt werden. Diese spezielle Rolle ist an ein Systemkonto gebunden, das anonyme Nutzer/innen repräsentiert, die Links verwenden, um Alben oder andere Inhalte anzusehen, die für sie freigegeben wurden. Besucher können nur auf diese Ressourcen zugreifen und sich nicht mit einem Benutzernamen oder Passwort anmelden. Anders als Gäste können sie auch ihre persönlichen Einstellungen nicht länger behalten, als ihre Browser-Sitzung andauert.
 
+!!! example ""
+    Einige Benutzer Rollen wie Benutzer und Betrachter sind derzeit [nur mit einer Mitgliedschaft](https://www.photoprism.app/editions#compare) verfügbar, um die Entwicklung und Pflege des Projekts zu unterstützen.

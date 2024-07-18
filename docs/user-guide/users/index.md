@@ -15,6 +15,7 @@ Du kannst Benutzerkonten hinzufügen, bearbeiten und löschen, indem du als [Adm
 
 ![Screenshot](img/users-edit-german.jpg){ class="shadow" }
 
+Nur [Super-Admins](roles.md#admin) können [den Authentifizierungs-Provider](cli.md#optionen) eines Kontos über die Weboberfläche ändern, ausgenommen von ihrem eigenen Konto, damit sie sich nicht versehentlich selbst aussperren, indem sie ihn z. B. auf „none“ setzen.
 ## Passwörter ändern
 
 Super-Admins können das Passwort eines Nutzers zurücksetzen, während normale Admins Passwörter nur ändern können, wenn sie das aktuelle Passwort kennen.
