@@ -267,14 +267,14 @@ Die Liste ist sortiert nach Rechengeschwindigkeit.
 
 An erster Stelle steht der schnellste Filter mit der niedgrigsten Qualität, an letzer Stelle der langsamste Filter mit der besten Qualität.
 
-Filter                    | Ergebnis
---------------------------|---------------------------------------------
-Nächster Nachbar          | ![](img/out_resize_nearest.jpg)
-Bilinear                  | ![](img/out_resize_linear.jpg)
-Bikubisch (Scharf)        | ![](img/out_resize_catrom.jpg)
-Lanczos                   | ![](img/out_resize_lanczos.jpg)
+| Filter             | Ergebnis                        |
+|--------------------|---------------------------------|
+| Nächster Nachbar   | ![](img/out_resize_nearest.jpg) |
+| Bilinear           | ![](img/out_resize_linear.jpg)  |
+| Bikubisch (Scharf) | ![](img/out_resize_catrom.jpg)  |
+| Lanczos            | ![](img/out_resize_lanczos.jpg) |
 
-Source: [A Comparative Analysis of Image Interpolation Algorithms](https://dl.photoprism.app/pdf/20160201-Comparative_Analysis_of_Image_Interpolation.pdf)
+Source: [A Comparative Analysis of Image Interpolation Algorithms](https://dl.photoprism.app/pdf/publications/20160201-Comparative_Analysis_of_Image_Interpolation.pdf)
 
 
 <!--## Filter ##
