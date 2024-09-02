@@ -5,52 +5,72 @@ WebDAV-kompatible Apps und Clients wie [PhotoSync](./sync-phone.md), der Windows
 Dazu wird der *Originals* oder *Import* Ordner als Netzwerklaufwerk verbunden, so kannst du Dateien von deinem Computer oder Smartphone aus öffnen, bearbeiten oder löschen.
 
 Sobald alle Dateien hinzugefügt sind, können sie [importiert oder indexiert](../library/import-vs-index.md) werden.
-Nachdem Dateien über WebDAV hochgeladen wurden, beginnt die Indexierung beziehungsweise der Import automatisch nach einer kurzen Verzögerung.
+Nachdem Dateien über WebDAV hochgeladen wurden, beginnt die Indexierung nach einer kurzen Verzögerung.
+
+Es ist auch möglich, Dateien mit [externen WebDAV-Servern](../settings/sync.md) wie ownCloud oder anderen PhotoPrism-Instanzen zu synchronisieren.
+
 
 !!! info ""
 	WebDAV kann in den [Erweiterten Einstellungen](../settings/advanced.md) deaktiviert werden.
 	Wenn du PhotoPrism im [public-Modus](https://docs.photoprism.app/getting-started/config-options/) ohne Authentifizierung betreibst, ist WebDAV aus Sicherheitsgründen automatisch deaktiviert.
 
-!!! info ""
-	Es ist auch möglich, Dateien mit [externen WebDAV-Servern](../settings/sync.md) wie ownCloud oder anderen PhotoPrism-Instanzen zu synchronisieren.
+!!! danger ""
+	Verwende WebDAV nicht [ohne HTTPS](https://docs.photoprism.app/getting-started/using-https/) außerhalb deines lokalen, privaten Netzwerks, da dein Passwort im Klartext über das Internet übertragen werden würde. Backup-Tools und Apps zur Dateisynchronisation wie [FolderSync](https://foldersync.io/docs/faq/#https-connection-errors) können die Verbindung ebenfalls verweigern.
+
 
 ## Server Url ##
-Die Url des *Originals* Verzeichnis für öffentliche Server lautet:
+Wenn die Instanz mit dem öffentlichen Internet verbunden ist, hat die WebDAV-URL des *Originals*-Ordners das folgende Format, wobei `example.com` durch den tatsächlichen Hostnamen und `admin` durch den [tatsächlichen Benutzernamen](#zugangsdaten) ersetzt werden muss:
 
 ```
 https://admin@example.com/originals/
 ```
 
-oder
-
-```
-\\example.com@SSL\originals\
-```
-
-für Windows 10.
-
-Bitte ersetze *example.com* mit deiner Domain.
-Der `/` am Ende ist wichtig und darf nicht weggelassen werden.
-
-!!! tip ""
-	Du findest deine Server-Url auf der [Account-Seite](../settings/account.md) in den Einstellungen.
-
-Wenn du dich verbindest, musst du dich mit deinem Passwort authentifizieren.
-Das Passwort kann in den *Einstellungen* geändert werden. Der Nutzername ist `admin`.
-
-!!! note ""
-	Du kannst auch eine Verbindung zum *Import* Verzeichnis aufbauen, indem du in der URL `originals/` mit `import/` ersetzt.
-
-
-Für Nutzer, die PhotoPrism lokal auf Port *2342* betreiben, ist die Url:
+Für Benutzer, die eine lokale Instanz auf dem Standardport 2342 *ohne HTTPS* betreiben, lautet die URL des *Originals*-Ordners wie folgt (der Standardbenutzername für neue Instanzen ist `admin`, es sei denn, du hast ihn in der Konfiguration [geändert](https://docs.photoprism.app/getting-started/config-options/#authentication):
 
 ```
 http://admin@localhost:2342/originals/
 ```
 
-!!! attention ""
-	Benutze WebDAV **niemals ohne https** außerhalb deines lokalen, privaten
-	Netzwerks, da sonst das Passwort im Klartext über das Internet übertragen wird.
+Beachte, dass der Slash am Ende des Pfades nicht weggelassen werden darf und dass die WebDAV URL in deinen Client-Anwendungen aktualisiert werden muss, wenn sich der Hostname oder der Port des Servers ändert.
+
+!!! note ""
+	Du kannst die URL des *Originals*-Ordners einsehen, indem du zu [Einstellungen > Konto](../settings/account.md) navigierst und dann auf *Mit WebDAV Verbinden* klickst. Es ist möglich, sich alternativ mit dem *Import*-Ordner zu verbinden, indem du in der URL `/originals/` durch `/import/` ersetzst.
+
+
+### Microsoft Windows
+
+Unter Windows musst du einen [Ressourcenstring in folgendem Format eingeben](#mit-webdav-verbinden), um den WebDAV-Zugang zu [konfigurieren](https://docs.photoprism.app/getting-started/troubleshooting/windows/#connecting-via-webdav), wobei „example.com“ durch den tatsächlichen Hostnamen deiner Instanz ersetzt werden muss:
+
+```
+\\example.com@SSL\originals\
+```
+
+Wenn dein Server nicht den Standard-Port 443 für [HTTPS](https://docs.photoprism.app/getting-started/using-https/) verwendet, kannst du unter Windows direkt nach `@SSL` einen benutzerdefinierten Port wie 8443 angeben:
+
+```
+\\example.com@SSL@8443\originals\
+```
+
+Bei lokalen Installationen, die auf dem Standard-Port 2342 *ohne HTTPS* laufen, trage die folgende Ressource in den [Verbindungsdialog](#mit-webdav-verbinden) ein (eventuell musst du dafür die [Registry Einstellungen](https://docs.photoprism.app/getting-started/troubleshooting/windows/#connecting-via-webdav) aktualisieren):
+
+```
+\\localhost:2342\originals\
+```
+
+Bitte beachte, dass der Slash am Ende nicht weggelassen werden darf und dass die WebDAV-Ressource in Windows aktualisiert werden muss, wenn sich der Hostname oder Port des Servers ändert.
+
+!!! note ""
+	Du kannst die URL des *Originals*-Ordners einsehen, indem du zu [Einstellungen > Konto](../settings/account.md) navigierst und dann auf *Mit WebDAV Verbinden* klickst. Es ist möglich, sich alternativ mit dem *Import*-Ordner zu verbinden, indem du in der URL `/originals/` durch `/import/` ersetzst.
+
+## Zugangsdaten
+
+Um über WebDAV auf deine Instanz zuzugreifen, kannst du deinen Benutzernamen in Kombination mit deinem Kontopasswort oder [einem App-Passwort](../settings/account.md#apps-und-gerate) verwenden, falls du z.B. die [2-Faktor-Authentifizierung (2FA)](../users/2fa.md) für dein Konto aktiviert hast oder dich über [OpenID Connect (OIDC)](https://docs.photoprism.app/getting-started/advanced/openid-connect/) authentifizierst, da die Verwendung deines Kontopassworts in diesem Fall nicht möglich ist.
+
+Wenn der Zugriff verweigert wird, obwohl die Anmeldedaten korrekt sind, überprüfe bitte, ob das Konto eine [Rolle mit WebDAV-Zugriff](../users/roles.md) hat und [WebDAV für dieses Konto aktiviert ist](../users/cli.md#optionen).
+
+[Mehr erfahren ›](../users/index.md)
+
+## Mit WebDAV verbinden
 
 === "macOS"
 
@@ -58,12 +78,12 @@ http://admin@localhost:2342/originals/
      2. Trage die Url in das Feld **Serveradresse** ein
      3. Klicke  **Verbinden**
 
-		[Wenn du Probleme bei der Verbindung mit WebDav hast](https://docs.photoprism.app/getting-started/troubleshooting/windows/#connecting-via-webdav):
+	[Wenn du Probleme bei der Verbindung mit WebDav hast](https://docs.photoprism.app/getting-started/troubleshooting/windows/#connecting-via-webdav):
 
-     	- [ ] Du hast nicht genügend Benutzerrechte (versuche es als Admin)
-     	- [ ] Es gibt ein [allgemeines Authentifizierungsproblem](https://docs.photoprism.app/getting-started/troubleshooting/#cannot-log-in)
-     	- [ ] Deine Instanz oder dein Reverse Proxy verwendet ein ungültiges HTTPS-Zertifikat
-     	- [ ] Du versuchst, dich mit dem falschen Netzwerk oder Server zu verbinden
+	- [ ] Du hast nicht genügend Benutzerrechte (versuche es als Admin)
+  	- [ ] Es gibt ein [allgemeines Authentifizierungsproblem](https://docs.photoprism.app/getting-started/troubleshooting/#cannot-log-in)
+  	- [ ] Deine Instanz oder dein Reverse Proxy verwendet ein ungültiges HTTPS-Zertifikat
+  	- [ ] Du versuchst, dich mit dem falschen Netzwerk oder Server zu verbinden
 
 === "Windows 10"
 
