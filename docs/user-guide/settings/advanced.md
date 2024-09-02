@@ -135,7 +135,7 @@ Beachte, dass dies eine hohe Rechenleistung erfordert und es zu einer Verzögeru
 
 ### Welche Dateien werden von PhotoPrism erstellt? ###
 Das kleinste konfigurierbare statische und dynamische Maximalgröße ist 720px, so dass die meisten Größen bis zu `fit_720` standardmäßig **immer** erzeugt werden.
-[Höhere Maximalgrößen](#statische-und-dynamische-maximalgrößen) generieren Thumbnails mit mehr Details bei höheren Auflösungen - entweder statisch (vorgeneriert während der Indexierung) oder **on demand**, wenn die [Konfiguration es erlaubt](#dynamische-vorschaubilder).
+[Höhere Maximalgrößen](#statische-und-dynamische-maximalgroen) generieren Thumbnails mit mehr Details bei höheren Auflösungen - entweder statisch (vorgeneriert während der Indexierung) oder **on demand**, wenn die [Konfiguration es erlaubt](#dynamische-vorschaubilder).
 
 **Optionale** Vorschaubilder können nicht vorgeneriert werden und werden nur auf Anfrage gerendert, z. B. beim Teilen eines Bildes auf Instagram.
 

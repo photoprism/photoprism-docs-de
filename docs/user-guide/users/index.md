@@ -3,7 +3,7 @@
 !!! example ""
     [PhotoPrism® Plus](https://www.photoprism.app/editions#compare) verfügt zusätzlich zum in allen Editionen enthaltenen [Command-Line Interface](cli.md) über ein Admin-Web-UI zum Verwalten von Nutzern und Sitzungen.
 
-Du kannst Benutzerkonten hinzufügen, bearbeiten und löschen, indem du als [Admin](#admin) zu *Einstellungen > Benutzer* navigierst:
+Du kannst Benutzerkonten hinzufügen, bearbeiten und löschen, indem du als [Admin](roles.md#admin) zu *Einstellungen > Benutzer* navigierst:
 
 ![Screenshot](img/users-german.jpg){ class="shadow" }
 

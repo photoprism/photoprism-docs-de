@@ -8,8 +8,8 @@ während er in Firefox und Opera nur optional vom Betriebssystem unterstützt wi
 ![Screenshot](img/videos-german.jpg){ class="shadow" }
 
 !!! tldr ""
-    Wenn [FFmpeg deaktiviert](../settings/advanced.md#deaktiviere-ffmpeg) oder nicht installiert ist, können Videos nicht indexiert werden, da keine Standbilder erstellt werden können.
-    Außerdem solltest du [Exiftool](../settings/advanced.md#deaktiviere-exiftool) aktiviert haben, um Metadaten wie Dauer, Auflösung und Codec zu extrahieren.
+    Wenn [FFmpeg deaktiviert](../settings/advanced.md#ffmpeg-deaktivieren) oder nicht installiert ist, können Videos nicht indexiert werden, da keine Standbilder erstellt werden können.
+    Außerdem solltest du [Exiftool](../settings/advanced.md#exiftool-deaktivieren) aktiviert haben, um Metadaten wie Dauer, Auflösung und Codec zu extrahieren.
 
 ### Live-Fotos ###
 Kurze Videos von bis zu 3 Sekunden, werden unabhängig vom Handy-Model als Live Foto kategorisiert.
@@ -23,8 +23,8 @@ Um nach Live-Fotos zu filtern, nutze den Filter `type:live`. Um ein Live-Foto ab
 
 Für maximale Browserkompatibilität kann PhotoPrism Videocodecs und Container [unterstützt von FFmpeg](https://www.ffmpeg.org/documentation.html) in [MPEG-4 AVC](https://en.wikipedia.org/wiki/MPEG-4) transkodieren und Standbilder für die Erstellung von Vorschaubildern extrahieren:
 
-- wenn [FFmpeg deaktiviert](../settings/advanced.md#deaktiviere-ffmpeg) oder nicht installiert ist, ist das Indexieren und Importieren von Videos nicht möglich, da keine Standbilder erstellt werden können
-- wenn [Exiftool deaktiviert](../settings/advanced.md#deaktiviere-exiftool) oder nicht installiert ist, ist das Indexieren und Importieren von Videos nur teilweise möglich, da die Video-Metadaten nicht extrahiert werden können und somit die Dauer, die Auflösung und der Codec unbekannt sind
+- wenn [FFmpeg deaktiviert](../settings/advanced.md#ffmpeg-deaktivieren) oder nicht installiert ist, ist das Indexieren und Importieren von Videos nicht möglich, da keine Standbilder erstellt werden können
+- wenn [Exiftool deaktiviert](../settings/advanced.md#exiftool-deaktivieren) oder nicht installiert ist, ist das Indexieren und Importieren von Videos nur teilweise möglich, da die Video-Metadaten nicht extrahiert werden können und somit die Dauer, die Auflösung und der Codec unbekannt sind
 - [MPEG-4 AVC](https://en.wikipedia.org/wiki/MPEG-4) muss nicht transcodiert werden, da es von den meisten modernen Browsern nativ abgespielt werden kann, siehe https://caniuse.com/mpeg4
 - OGV-, VP8-, VP9-, AV1-, WebM- und HEVC-Videos können direkt gestreamt werden, wenn sie von deinem Browser unterstützt werden und die [konfigurierte Bitratengrenze](https://docs.photoprism.app/getting-started/advanced/transcoding/#bitrate-limiting) nicht überschreiten.
 - andere Formate müssen immer transcodiert werden

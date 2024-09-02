@@ -44,7 +44,7 @@ Alternativ zur [Web-Benutzeroberfläche](index.md) kannst du Benutzerkonten auch
 | `photoprism users reset --yes`              | Removes all accounts and resets the database |
 
 !!! tldr ""
-    Benutzer, die nach einem Upgrade von [Entwicklungs-Builds](https://docs.photoprism.app/getting-started/updates/#development-preview) oder [alten Versionen von vor November 2022](https://docs.photoprism.app/known-issues/#new-user-management) Probleme bei der Anmeldung haben, können den Befehl `photoprism users reset --yes` ausführen, um [die Sitzung](#sessions-verwalten) und die Datenbanktabellen der Benutzerverwaltung neu zu erstellen, damit sie mit der aktuellen Version kompatibel sind. Beachte, dass alle [Client Access Token](https://docs.photoprism.app/user-guide/users/client-credentials/#access-tokens) und [App-Passwörter](../settings/account.md#apps-und-geräte), die Benutzer möglicherweise erstellt haben, ebenfalls gelöscht werden und neu erstellt werden müssen.
+    Benutzer, die nach einem Upgrade von [Entwicklungs-Builds](https://docs.photoprism.app/getting-started/updates/#development-preview) oder [alten Versionen von vor November 2022](https://docs.photoprism.app/known-issues/#new-user-management) Probleme bei der Anmeldung haben, können den Befehl `photoprism users reset --yes` ausführen, um [die Sitzung](#sessions-verwalten) und die Datenbanktabellen der Benutzerverwaltung neu zu erstellen, damit sie mit der aktuellen Version kompatibel sind. Beachte, dass alle [Client Access Token](https://docs.photoprism.app/user-guide/users/client-credentials/#access-tokens) und [App-Passwörter](../settings/account.md#apps-und-gerate), die Benutzer möglicherweise erstellt haben, ebenfalls gelöscht werden und neu erstellt werden müssen.
 
 ### Optionen
 
@@ -134,7 +134,7 @@ Du kannst ihn mit folgenden Flags kombinieren, um das Ausgabeformat und die maxi
 
 ## Sessions verwalten
 
-Folgende Befehle können verwendet werden, um Access Token für die Authentifizierung von Browsern und anderen Clients (inklusive [App Passwörtern](2fa.md#schritt-3-app-passwörter)) zu erstellen, anzuzeigen und falls notwendig zu löschen:
+Folgende Befehle können verwendet werden, um Access Token für die Authentifizierung von Browsern und anderen Clients (inklusive [App Passwörtern](2fa.md#schritt-3-app-passworter)) zu erstellen, anzuzeigen und falls notwendig zu löschen:
 
 | CLI Command                         | Description                                              |
 |-------------------------------------|----------------------------------------------------------|
@@ -147,4 +147,4 @@ Folgende Befehle können verwendet werden, um Access Token für die Authentifizi
 Um anderen Anwendungen und Diensten eingeschränkten API-Zugang zu gewähren, kannst du mit dem Befehl `photoprism clients add` [OAuth2-Client-Zugangsdaten](https://docs.photoprism.app/user-guide/users/client-credentials/#client-credentials) für sie generieren. Den Befehl `photoprism auth add` kannst du verwenden, um [Access-Token](https://docs.photoprism.app/user-guide/users/client-credentials/#access-tokens) mit [eingeschränkter Berechtigung](https://docs.photoprism.app/user-guide/users/client-credentials/#authorization-scopes) und einer begrenzten Lebensdauer zu generieren.
 
 !!! tldr ""
-    Wenn beim Login Probleme auftreten, z. B. nach einem Upgrade von einer [früheren Version](https://docs.photoprism.app/release-notes/) oder [Entwicklungsversion](https://docs.photoprism.app/getting-started/updates/#development-preview), empfehlen wir, den Befehl `photoprism auth reset --yes` [in einem Terminal](https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface) auszuführen, um die Tabelle `auth_sessions` auf einen sauberen Zustand zurückzusetzen und eine Neuanmeldung aller Benutzer zu erzwingen. Beachte, dass dadurch auch alle Client Access Token und alle [App-Passwörter](2fa.md#schritt-3-app-passwörter) gelöscht werden, die Benutzer/innen möglicherweise erstellt haben.
+    Wenn beim Login Probleme auftreten, z. B. nach einem Upgrade von einer [früheren Version](https://docs.photoprism.app/release-notes/) oder [Entwicklungsversion](https://docs.photoprism.app/getting-started/updates/#development-preview), empfehlen wir, den Befehl `photoprism auth reset --yes` [in einem Terminal](https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface) auszuführen, um die Tabelle `auth_sessions` auf einen sauberen Zustand zurückzusetzen und eine Neuanmeldung aller Benutzer zu erzwingen. Beachte, dass dadurch auch alle Client Access Token und alle [App-Passwörter](2fa.md#schritt-3-app-passworter) gelöscht werden, die Benutzer/innen möglicherweise erstellt haben.

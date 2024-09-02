@@ -31,7 +31,7 @@ Du kannst Exiftool in den [Einstellungen](../settings/advanced.md) deaktivieren.
 
 #### Thumbnails
 PhotoPrism erstellt für jedes Bild Thumbnails in unterschiedlichen Größen. Diese werden in `thumbnails` gespeichert.
-Mehr Informationen zu Thumbnails findest du [hier](../settings/advanced.md#images).
+Mehr Informationen zu Thumbnails findest du [hier](../settings/advanced.md#vorschaubilder).
 
 ### Sidecar
 Der `sidecar` Ordner enthält [YAML-Backup-Dateien](export.md#bild-backups) für jedes Bild sowie automatisch generierte JPEG-Versionen von z.B. RAW-Bildern. Beides kann unter [Einstellungen > Erweitert](../settings/advanced.md) konfiguriert werden.

@@ -174,8 +174,8 @@
 
 ??? question "Warum werden meine Videos nicht indexiert?"
 
-    Wenn [FFmpeg deaktiviert](settings/advanced.md#deaktiviere-ffmpeg) oder nicht installiert ist, können Videos nicht indexiert werden, da keine Standbilder erstellt werden können.
-    Außerdem solltest du [Exiftool](settings/advanced.md#deaktiviere-exiftool) aktiviert haben, um Metadaten wie Dauer, Auflösung und Codec zu extrahieren.
+    Wenn [FFmpeg deaktiviert](settings/advanced.md#ffmpeg-deaktivieren) oder nicht installiert ist, können Videos nicht indexiert werden, da keine Standbilder erstellt werden können.
+    Außerdem solltest du [Exiftool](settings/advanced.md#exiftool-deaktivieren) aktiviert haben, um Metadaten wie Dauer, Auflösung und Codec zu extrahieren.
 
 ??? question "Ich vermisse einige Dateien, wo könnten sie sein?"
    
