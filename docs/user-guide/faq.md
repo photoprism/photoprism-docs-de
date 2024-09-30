@@ -114,6 +114,22 @@
 
     PhotoPrism kann den Standort von Bildern, die ohne GPS-Informationen aufgenommen wurden, schätzen, indem es ihn aus dem Standort anderer Bilder, die am selben Tag aufgenommen wurden, extrapoliert. Diese Schätzungen können [in den Einstellungen](./settings/library.md) deaktiviert werden, wenn du sie nicht möchtest.
 
+??? question "Werden die API Keys für die Nutzung der interaktiven Weltkarten kostenlos zur Verfügung gestellt?"
+
+    Alle Benutzer haben Zugriff auf eine [hochauflösende Vektorkarte](https://maps.photoprism.app/){:target="_blank"}, die wir auf [unserer eigenen Infrastruktur](https://github.com/photoprism/photoprism/issues/2998){:target="_blank"} hosten, sodass kein kommerzieller API-Schlüssel erforderlich ist. Sie basiert auf [von OpenStreetMap veröffentlichten Daten](https://planet.openstreetmap.org/){:target="_blank"} (OSM).
+
+    Darüber hinaus stellen wir [unseren Mitgliedern](https://www.photoprism.app/membership) und [Geschäftskunden](https://www.photoprism.app/teams#compare) automatisch einen API-Schlüssel für den kommerziellen Dienst von MapTiler zur Verfügung, der [Satelliten-, Outdoor- und 3D-Karten](https://www.photoprism.app/kb/personal#maps-and-places) umfasst. Du kannst diese auf [unserer öffentlichen Demo](https://try.photoprism.app/library/places){:target="_blank"} testen.
+    
+    [Mehr erfahren ›](https://www.photoprism.app/kb/personal#maps-and-places)
+
+??? question "Warum nutzt ihr nicht den kostenlosen Kartendienst von OpenStreetMap?"
+
+    Andere [freie und Open-Source-Software Projekte](https://en.wikipedia.org/wiki/Free_and_open-source_software){:target="_blank"} verwenden manchmal die öffentlichen Karten, die OpenStreetMap für die Entwicklung und das Testen bereitstellt. Diese sind [nicht für Endbenutzeranwendungen](https://operations.osmfoundation.org/policies/tiles/) wie unsere gedacht.
+
+    Die Nutzung dieser Dienste bedeutet auch, dass [ihre Nutzungs-](https://operations.osmfoundation.org/policies/tiles/) und [Datenschutzrichtlinien](https://wiki.osmfoundation.org/wiki/Privacy_Policy) gelten, da deine Anfragedaten gespeichert und zur Erstellung [öffentlich zugänglicher Berichte](https://planet.openstreetmap.org/tile_logs/) verwendet werden. Dies unterscheidet sich von unseren Diensten, die [ein hohes Maß an Datenschutz](https://www.photoprism.app/privacy) gewährleisten und eine bessere Benutzererfahrung mit schnelleren Ladezeiten bieten.
+
+    [Mehr erfahren ›](https://docs.photoprism.app/getting-started/faq/#are-the-keys-for-using-interactive-world-maps-provided-free-of-charge)
+
 ## Bibliothek ##
 
 ??? question "Welche Datei Typen werden unterstützt?"
