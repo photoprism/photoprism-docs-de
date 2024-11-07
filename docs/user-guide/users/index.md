@@ -26,3 +26,11 @@ Super-Admins können das Passwort eines Nutzers zurücksetzen, während normale 
 
 ![Screenshot](img/users-delete-german.jpg){ class="shadow" }
 
+## Sitzungen verwalten
+
+Du kannst aktive Sitzungen anzeigen und löschen, indem du als [Admin](roles.md#admin) zu *Einstellungen > Benutzer > Sessions* navigierst:
+
+![Screenshot](img/sessions-german.jpg){ class="shadow" }
+
+Um Sitzungsdetails anzuzeigen, klicke auf :material-magnify:.
+Um eine Sitzung zu löschen klicke :material-delete:.
