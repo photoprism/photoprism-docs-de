@@ -6,7 +6,7 @@ Bildstapel werden im Bereich *Bildstapel* dargestellt.
 
 ![Screenshot](img/stack-page-german.jpg){ class="shadow" }
 
-Beachte, dass *[Videos](./video.md)* und *[Live-Fotos](./video.md#live-fotos)*, die immer mit einem Vorschaubild gruppiert sind, nicht auf der Seite *Bildstapel* angezeigt werden.
+Beachte, dass *[Videos](./video.md)* und *[Live-Fotos](video.md#live-fotos)*, die immer mit einem Vorschaubild gruppiert sind, nicht auf der Seite *Bildstapel* angezeigt werden.
 
 ## Unter welchen Bedingungen können Dateien gruppiert werden? ##
 
@@ -18,7 +18,7 @@ Beachte, dass *[Videos](./video.md)* und *[Live-Fotos](./video.md#live-fotos)*, 
 Du kannst das Verhalten der Punkte 2-4 in *[Einstellungen > Dateien](../settings/library.md#bildstapel)* konfigurieren.
 
 !!! note ""
-    Beachte, dass es **nicht möglich ist, die Gruppierung von Dateien mit demselben Namen zu deaktivieren**, da sonst wichtige Funktionen nicht mehr funktionieren würden. Beipsielsweise die Unterstützung von Apple [Live Photos](organize/video.md#live-fotos) (die aus einer Foto- und einer Videodatei bestehen) sowie anderen Multidatei-/Hybridformaten wie RAW/JPEG und die Indexierung von Metadaten aus XMP/JSON Sidecar-Dateien.
+    Beachte, dass es **nicht möglich ist, die Gruppierung von Dateien mit demselben Namen zu deaktivieren**, da sonst wichtige Funktionen nicht mehr funktionieren würden. Beipsielsweise die Unterstützung von Apple [Live Photos](video.md#live-fotos) (die aus einer Foto- und einer Videodatei bestehen) sowie anderen Multidatei-/Hybridformaten wie RAW/JPEG und die Indexierung von Metadaten aus XMP/JSON Sidecar-Dateien.
 
 ## Werden gruppierte Dateien automatisch getrennt, wenn die ich Einstellungen ändere?
 
