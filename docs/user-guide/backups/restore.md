@@ -31,3 +31,9 @@ Wenn die Datenbank wiederhergestellt wird, werden auch alle Benutzerkonten und P
 
 !!! tldr ""
     Beachte, dass unsere Anleitungen jetzt standardmäßig den neuen Befehl `docker compose` verwenden. Wenn dein Server diesen Befehl noch nicht unterstützt, kannst du trotzdem `docker-compose` verwenden.
+
+## MariaDB Server Migration
+
+Detaillierte Informationen darüber, wie du deine [MariaDB-Datenbank](#database) auf einen anderen Server oder eine andere virtuelle Maschine verschieben kannst, findest du im Abschnitt [Server-Migration](https://docs.photoprism.app/getting-started/troubleshooting/mariadb/#server-migration) in unserem [MariaDB-Fehlerbehebungsleitfaden](https://docs.photoprism.app/getting-started/troubleshooting/mariadb.md).
+
+[Erfahre mehr ›](https://docs.photoprism.app/getting-started/troubleshooting/mariadb/#server-migration)
