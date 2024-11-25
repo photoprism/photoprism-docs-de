@@ -9,6 +9,7 @@ plugins:
         - dl.photoprism.app/*
         - www.photoprism.app/*
         - docs.photoprism.app/*
+        - docs-de.photoprism.app/*
         - a.photoprism.app/*
         - i.photoprism.app/*
         - goreportcard.com/*
