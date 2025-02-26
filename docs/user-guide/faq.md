@@ -153,7 +153,7 @@
     
     Du solltest PhotoPrism so konfigurieren, dass automatisch JSON Sidecar-Dateien erstellt werden, wenn Du Videos, Live-Fotos und/oder [animierte GIFs](https://github.com/photoprism/photoprism/issues/590) hast, damit videospezifische Metadaten wie Codec, Frames und Dauer extrahiert, indexiert und durchsucht werden können.
 
-    Eine vollständige Liste der Dateiformate und -erweiterungen findest du in unserer [Funktionsübersicht](https://link.photoprism.app/overview).
+    Eine vollständige Liste der Dateiformate und -erweiterungen findest du [hier](https://docs.photoprism.app/developer-guide/media/).
 
 ??? question "Welche Metadaten-Dateitypen werden unterstützt?"
     
