@@ -13,7 +13,7 @@
 **PhotoPrism liest die folgenden Metadaten aus den Bild JSON Dateien aus:**
 
 - Titel
-- Beschreibung
+- Bildunterschrift
 - Koordinaten (lat/long)
 - Erstellungsdatum
 

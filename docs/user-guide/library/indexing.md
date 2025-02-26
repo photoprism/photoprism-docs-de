@@ -32,7 +32,7 @@ Wenn die Option "Index vollständig aktualisieren" gewählt ist, werden alle Dat
 Das kann nach einem Upgrade auf eine neue Hauptversion erforderlich sein.
 
 !!! tldr ""
-    Manuell eingegebene Informationen wie Kategorien, Personen, Titel oder Beschreibungen werden bei der Indexierung nicht verändert, selbst wenn du den Index vollständig aktualisierst.
+    Manuell eingegebene Informationen wie Kategorien, Personen, Titel oder Bildunterschriften werden bei der Indexierung nicht verändert, selbst wenn du den Index vollständig aktualisierst.
 
 ### Aufräumen ###
 Admins können "Aufräumen" aktivieren, um ungenutzte Vorschaubilder aus dem Cache zu löschen und verwaiste Indexeinträge zu entfernen. Wenn du dies von Zeit zu Zeit tust, kann dies die Indexierung beschleunigen und die Speichernutzung reduzieren.

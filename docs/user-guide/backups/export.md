@@ -47,7 +47,7 @@ PhotoPrism erstellt für jedes Bild/Video eine YAML Datei in deinem `sidecar pat
 
 Folgende Metadaten werden für Bilder gespeichert:
 
-* TakenAt + Source, UID, Type, Title + Source, Description + Source, OriginalName, TimeZone, PlaceSrc, Altitude, 
+* TakenAt + Source, UID, Type, Title + Source, Caption + Source, OriginalName, TimeZone, PlaceSrc, Altitude, 
   Lat, Lng, Year, Month, Day, Iso, Exposure, FNumber, FocalLength, Quality, Favorite, Private, Keywords + Source, 
   Notes + Source, Subject + Source, Artist + Source, Copyright + Source, License + Source, CreatedAt, UpdatedAt, EditedAt, DeletedAt (Archived)
 

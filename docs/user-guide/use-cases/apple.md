@@ -13,7 +13,7 @@
 **Folgende Daten sind in den XMP Dateien enthalten:**
 
 - Titel
-- Beschreibung
+- Bildunterschrift
 - Erstellungsdatum
 - Suchbegriffe (diese enthalten auch Informationen zu Personen)
 - GPS Informationen
@@ -21,7 +21,7 @@
 **Davon liest PhotoPrism folgende Felder während der Indexierung aus:**
 
 - Titel
-- Beschreibung
+- Bildunterschrift
 - Erstellungsdatum
 - Suchbegriffe
 

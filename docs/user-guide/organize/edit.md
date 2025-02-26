@@ -24,7 +24,7 @@ Während der [*Indexierung*](../library/indexing.md) liest PhotoPrism so viele D
 ### Bilddetails bearbeiten ###
 Im *Detail-Tab* des *Bearbeitungs-Dialogs* können die folgenden Daten angezeigt und verändert werden:
 
-* Titel, Tag, Monat, Jahr, Zeit in UTC, Datum in UTC, Zeitzone, Breitengrad, Längengrad, Höhe über NN, Land, Kamera, ISO, Belichtungszeit, Objektiv, F Nummer, Brennweite, Thema, Künstler, Copyright, Lizenz, Beschreibung, Suchbegriffe, Notizen
+* Titel, Tag, Monat, Jahr, Zeit in UTC, Datum in UTC, Zeitzone, Breitengrad, Längengrad, Höhe über NN, Land, Kamera, ISO, Belichtungszeit, Objektiv, F Nummer, Brennweite, Thema, Künstler, Copyright, Lizenz, Bildunterschrift, Suchbegriffe, Notizen
 
 ![Screenshot](img/edit-details-german.jpg){ class="shadow" }
 

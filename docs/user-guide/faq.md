@@ -184,7 +184,7 @@
     
     XMP (Extensible Metadata Platform) ist ein XML-basiertes Metadaten-Containerformat [entwickelt von Adobe](https://www.adobe.com/products/xmp.html).
     Es bietet deutlich mehr Felder (als Teil von eingebetteten Modellen wie Dublin Core) als Exif. Dies macht es auch schwierig - wenn nicht
-    wenn nicht gar unmöglich - eine vollständige Unterstützung zu bieten. Das Lesen von Titel, Copyright, Künstler und Beschreibung aus XMP-Sidecar-Dateien ist
+    wenn nicht gar unmöglich - eine vollständige Unterstützung zu bieten. Das Lesen von Titel, Copyright, Künstler und Bildunterschrift aus XMP-Sidecar-Dateien ist
     als Proof-of-Concept implementiert, [Contributions sind willkommen](https://docs.photoprism.app/developer-guide/metadata/xmp/). Die Indexierung von
     eingebetteten XMP-Dateien ist nur über Exiftool möglich, siehe oben.
 
@@ -243,7 +243,7 @@
     Wenn du auf Probleme stößt, die du anders nicht lösen kannst (also bevor du einen Fehler meldest), versuche bitte auch einen Rescan und schaue, ob das Problem dadurch gelöst wird.
 
     Du kannst einen [Rescan über die Benutzeroberfläche](library/indexing.md) starten, indem du zu *Dateien* > *Index* navigierst, "Index vollständig aktualisieren" auswählst und dann auf "Start" klickst.
-    Manuell eingegebene Informationen wie Kategorien, Personen, Titel oder Beschreibungen werden bei der Indexierung nicht verändert, selbst wenn du den Index vollständig aktualisierst.
+    Manuell eingegebene Informationen wie Kategorien, Personen, Titel oder Bidlunterschriften werden bei der Indexierung nicht verändert, selbst wenn du den Index vollständig aktualisierst.
 
 ??? question "Wie kann ich Dateien endgültig löschen?"
 
@@ -265,7 +265,7 @@
 
     JPEGs werden derzeit nicht neu generiert, wenn sich zugehörige RAW- oder XMP-Dateien ändern. RAW-Dateien sind von vornherein digitale Negative. PhotoPrism geht daher davon aus, dass ihre Bildinformationen unveränderlich sind.
 
-    XMP-Dateien können das Erscheinungsbild beeinflussen, aber die meisten der darin enthaltenen Metadaten, wie z. B. Titel und Beschreibung, sind davon nicht betroffen. 
+    XMP-Dateien können das Erscheinungsbild beeinflussen, aber die meisten der darin enthaltenen Metadaten, wie z. B. Titel und Bildunterschrift, sind davon nicht betroffen. 
     Die Erstellung von JPEGs aus RAW-Dateien ist eine zeitaufwändige Aufgabe und würde in den meisten Fällen einen enormen, nicht zu rechtfertigenden Overhead verursachen. 
     Hinzu kommt, dass die Rendering-Informationen in XMP-Dateien nicht gut standardisiert sind. So sind beispielsweise Änderungen, die Sie in Photoshop vornehmen, möglicherweise nicht mit Darktable kompatibel.
 
