@@ -69,3 +69,6 @@ ENV/
 
 # MkDocs documentation
 site/
+
+# Apple
+.DS_Store
