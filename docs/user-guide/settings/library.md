@@ -1,6 +1,6 @@
 # Bibliotheks Einstellungen #
 
-![Screenshot](img/settings-library-german.jpg){ class="shadow" }
+![Screenshot](img/settings-library-2503-german.jpg){ class="shadow" }
 
 !!! info ""
     Die Bibliothek Einstellungen sind nur für [Super Admins](../users/roles.md) verfügbar.

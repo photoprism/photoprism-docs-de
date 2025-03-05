@@ -5,9 +5,9 @@ Die Benutzeroberfläche zum Durchsuchen deiner Bilder basiert auf den folgenden 
 !!! info ""
     PhotoPrism ist auf alle Bildschirmgrößen angepasst. Unsere Screenshots zeigen die App in einem Desktop-Browser mit mittlerer Auflösung.
 
-![Screenshot](img/nav1edited-german.jpg){ class="shadow" }
+![Screenshot](img/nav1edited-2503-german.jpg){ class="shadow" }
 
-![Screenshot](img/nav2edited-german.jpg){ class="shadow" }
+![Screenshot](img/nav2edited-2503-german.jpg){ class="shadow" }
 
 #### 1. Hauptnavigation
 
@@ -46,7 +46,7 @@ Wenn Bilder oder Videos selektiert sind, erscheint das Kontext-Menü in der Ecke
 
 Um die aktuelle Selektion aufzuheben, klicke auf das x.
 
-![Screenshot](img/nav3edited-german.jpg){ class="shadow" }
+![Screenshot](img/nav3edited-2503-german.jpg){ class="shadow" }
 
 ## Auswahlmodus und Mehrfachauswahl ##
 

@@ -14,7 +14,7 @@
 4. Klicke *Start*, um mit der Indexierung zu beginnen
 
 
-![Screenshot](img/index-german.jpg){ class="shadow" }
+![Screenshot](img/index-2503-german.jpg){ class="shadow" }
 
 
 !!! tip ""

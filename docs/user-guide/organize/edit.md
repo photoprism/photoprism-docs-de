@@ -8,25 +8,25 @@ Während der [*Indexierung*](../library/indexing.md) liest PhotoPrism so viele D
 === "Karteikarten Ansicht"
      Klicke auf den Titel, den Aufnahmezeitpunkt oder die Kamerainformationen
 
-     ![Screenshot](img/edit-open-1-light.jpg){ class="shadow" }
+     ![Screenshot](img/edit-open-1-2503-german.jpg){ class="shadow" }
 
 === "Vollbild-Modus"
       Klicke auf :material-pencil:, in der rechten oberen Ecke des Bildschirms
-        ![Screenshot](img/edit-open-3-light.jpg){ class="shadow" }
+        ![Screenshot](img/edit-open-3-2503-german.jpg){ class="shadow" }
 
 === "Kontext-Menü"
      1. Selektiere ein oder mehrere Bilder
      2. Öffne das Kontext-Menü
      3. Klicke auf :material-pencil:
 
-    ![Screenshot](img/edit-open-2-light.jpg){ class="shadow" }
+    ![Screenshot](img/edit-open-2-2503-german.jpg){ class="shadow" }
 
 ### Bilddetails bearbeiten ###
 Im *Detail-Tab* des *Bearbeitungs-Dialogs* können die folgenden Daten angezeigt und verändert werden:
 
 * Titel, Tag, Monat, Jahr, Zeit in UTC, Datum in UTC, Zeitzone, Breitengrad, Längengrad, Höhe über NN, Land, Kamera, ISO, Belichtungszeit, Objektiv, F Nummer, Brennweite, Thema, Künstler, Copyright, Lizenz, Bildunterschrift, Suchbegriffe, Notizen
 
-![Screenshot](img/edit-details-german.jpg){ class="shadow" }
+![Screenshot](img/edit-details-2503-german.jpg){ class="shadow" }
 
 *Speichern* speichert die aktuellen Änderungen.
 *Fertig* speichert die Änderungen und schließt den Dialog.
@@ -57,11 +57,11 @@ Im Tab *Personen* kannst du abgebildete [Personen](people.md) ansehen und editie
 Im Tab *Dateien* werden alle Dateien angezeigt, die zu einem Bild gehören.
 Ein Bild kann aus mehreren Dateien bestehen. Beispielsweise einer *RAW-Datei*, eine dazugehörige *JPEG-Version* sowie eine verknüpfte *XMP/JSON Datei*.
 
-![Screenshot](img/edit-files-1-german.jpg){ class="shadow" }
+![Screenshot](img/edit-files-1-2503-german.jpg){ class="shadow" }
 
 Um die Details einer Datei anzuzeigen, klicke auf :material-chevron-down:.
 
-![Screenshot](img/edit-files-2-german.jpg){ class="shadow" }
+![Screenshot](img/edit-files-2-2503-german.jpg){ class="shadow" }
 
 Falls du [*Bildstapel*](stacks.md) bearbeitest, kannst du in dieser Ansicht das Anzeigebild wechseln oder gruppierte Dateien trennen.
 

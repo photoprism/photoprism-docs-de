@@ -2,7 +2,7 @@
 
 Zwei-Faktor  Authentifizierung (2FA) kann eine zusätzliche Sicherheitsebene für [dein Konto](../settings/account.md) schaffen, für den Fall, dass sich jemand Zugang zu deinem Passwort verschafft. Wenn sie aktiviert ist, brauchst du zusätzlich zu deinem Passwort einen zufällig generierten Verifizierungscode, um dich einzuloggen:
 
-![Screenshot](img/login-with-2fa.jpg){ class="shadow" }
+![Screenshot](img/login-with-2fa-2503-german.jpg){ class="shadow" }
 
 ### Authentifizierungs-Apps
 

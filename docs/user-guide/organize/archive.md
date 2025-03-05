@@ -8,7 +8,7 @@ Archivierte Dateien werden nicht gelöscht, sie werden allerdings ausschließlic
 2. Öffne das Kontext-Menü
 3. Klicke :material-archive-arrow-down:
 
-    ![Screenshot](img/archive-german.jpg){ class="shadow" }
+    ![Screenshot](img/archive-2503-german.jpg){ class="shadow" }
     
     <!--![Screenshot](img/confirm-archive.jpg)-->
 
@@ -18,7 +18,7 @@ Archivierte Dateien werden nicht gelöscht, sie werden allerdings ausschließlic
 1. Gehe zu *Archiv*
 2. Selektiere Bilder/Videos
 3. Öffne das Kontext-Menü
-4. Klicke :material-archive-arrow-up:
+4. Klicke :material-check:
 
-    ![Screenshot](img/restore-german.jpg){ class="shadow" }
+    ![Screenshot](img/restore-2503-german.jpg){ class="shadow" }
 

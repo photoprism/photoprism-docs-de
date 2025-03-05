@@ -7,10 +7,10 @@ In den [Einstellungen](../settings/sync.md) kannst du deine PhotoPrism-Instanz m
 2. Wähle Bilder aus
 3. Öffne das Kontext-Menü
 4. Klicke :material-cloud:
-   ![Screenshot](img/services-photo-upload-1-german.jpg){ class="shadow" }
+   ![Screenshot](img/services-photo-upload-1-2503-german.jpg){ class="shadow" }
 5. Wähle ein Konto und klicke *Upload*
 
-![Screenshot](img/services-photo-upload-2-german.jpg){ class="shadow" }
+![Screenshot](img/services-photo-upload-2-2503-german.jpg){ class="shadow" }
 
 !!! attention ""
     Auf Grund von Problemen bei bestimmten Nextcloud Einstellungen kann es vorkommen, dass nach dem Upload bei Nextcloud nur 0 Byte große Dateien ankommen.
@@ -23,7 +23,7 @@ In den [Einstellungen](../settings/sync.md) kannst du deine PhotoPrism-Instanz m
 3. Öffne das Kontext-Menü
 4. Klicke :material-share-variant:
 5. Klicke *WebDAV Upload*
-   ![Screenshot](img/services-album-upload-1-german.jpg){ class="shadow" }
+   ![Screenshot](img/services-album-upload-1-2503-german.jpg){ class="shadow" }
 6. Wähle ein Konto und klicke *Upload*
 
-![Screenshot](img/services-album-upload-2-german.jpg){ class="shadow" }
+![Screenshot](img/services-album-upload-2-2503-german.jpg){ class="shadow" }

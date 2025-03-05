@@ -18,20 +18,20 @@ Die Qualität wird anhand der folgenden Kriterien bestimmt:
     2. Selektiere Bilder und öffne das Kontext-Menu
     3. Klicke :material-check:
 
-    ![Screenshot](img/review-3-german.jpg){ class="shadow" }
+    ![Screenshot](img/review-3-2503-german.jpg){ class="shadow" }
 
 === "Bearbeitungs-Dialog"
      1. Öffne den [*Bearbeitungs-Dialog*](edit.md) des Bildes
      2. Klicke auf *Übernehmen*
 
-     ![Screenshot](img/review-german.jpg){ class="shadow" }
+     ![Screenshot](img/review-2503-german.jpg){ class="shadow" }
 
 === "Karteikarten Ansicht"
      1. Gehe zu *Überprüfen*     
      2. Öffne die *Karteikarten Ansicht*
      3. Klicke :material-check:
 
-     ![Screenshot](img/review-2-german.jpg){ class="shadow" }
+     ![Screenshot](img/review-2-2503-german.jpg){ class="shadow" }
 
 
 

@@ -4,7 +4,7 @@ PhotoPrism® ist eine KI-gestützte App zum Durchsuchen, Organisieren und Teilen
 Sie nutzt die neuesten Technologien, um Bilder automatisch zu sortieren und zu finden, ohne dir dabei im Weg zu stehen.
 Du kannst PhotoPrism zu Hause, auf einem privaten Server oder in der Cloud installieren.
 
-![Screenshot](img/preview.jpg){ class="shadow" }
+![Screenshot](img/preview-2503-german.jpg){ class="shadow" }
 
 ## Grenzenlose Möglichkeiten ##
 

@@ -5,7 +5,7 @@ Beachte, dass nicht alle [Video- und Audioformate](https://caniuse.com/?search=v
 So wird beispielsweise [AAC](https://caniuse.com/aac) - der Standard-Audiocodec für [MPEG-4 AVC / H.264](https://caniuse.com/mpeg4) - in Chrome, Safari und Edge nativ unterstützt, 
 während er in Firefox und Opera nur optional vom Betriebssystem unterstützt wird.
 
-![Screenshot](img/videos-german.jpg){ class="shadow" }
+![Screenshot](img/videos-2503-german.jpg){ class="shadow" }
 
 !!! tldr ""
     Wenn [FFmpeg deaktiviert](../settings/advanced.md#ffmpeg-deaktivieren) oder nicht installiert ist, können Videos nicht indexiert werden, da keine Standbilder erstellt werden können.
@@ -17,7 +17,7 @@ Sie sind mit :material-adjust: in der linken oberen Ecke markiert.
 
 Um nach Live-Fotos zu filtern, nutze den Filter `type:live`. Um ein Live-Foto abzuspielen, bewege den Mauszeiger auf das Bild.
 
-![Screenshot](img/live-photo-german.jpg){ class="shadow" }
+![Screenshot](img/live-photo-2503-german.jpg){ class="shadow" }
 
 ### Transkodierung ###
 
