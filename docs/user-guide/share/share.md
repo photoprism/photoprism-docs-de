@@ -5,12 +5,12 @@ Erstelle Freigabelinks, um Alben, Ereignisse, Kalender Monate, Länder oder Ordn
 Deine Freunde können Bilder und Videos aus freigegebenen Alben anzeigen und herunterladen.
 Bilder, die als privat markiert sind, werden nicht angezeigt.
 
-![Screenshot](img/link-card-dark.jpg){ class="shadow" }
+![Screenshot](img/link-card-2503-german.jpg){ class="shadow" }
 
 !!! info ""
     Wenn Link-Besucher auf den Standort eines Fotos klicken, können sie die Fotos des freigegebenen Albums in der Kartenansicht betrachten.
 
-![Screenshot](img/link-places-dark.jpg){ class="shadow" }
+![Screenshot](img/link-places-2503-german.jpg){ class="shadow" }
 
 Durch klicken auf :material-power: können Link-Besucher ihre Sitzung beenden.
 
@@ -21,14 +21,14 @@ Durch klicken auf :material-power: können Link-Besucher ihre Sitzung beenden.
      3. Öffne das Kontext-Menü
      4. Klicke :material-share-variant:
 
-    ![Screenshot](img/share-menu-german.jpg){ class="shadow" }
+    ![Screenshot](img/share-menu-2503-german.jpg){ class="shadow" }
 
 === "Album-Suchleiste"
      1. Gehe zu *Alben* / *Ereignisse* / *Kalender* / *Länder* / *Ordner*
      2. Öffne das Album, das du teilen möchtest
      3. Klicke :material-share-variant:
 
-      ![Screenshot](img/share-toolbar-german.jpg){ class="shadow" }
+      ![Screenshot](img/share-toolbar-2503-german.jpg){ class="shadow" }
 
 Dann
 
@@ -36,11 +36,11 @@ Dann
 6. Setze den *Code* und das *Ablaufdatum*
 7. Klicke *Speichern*
 
-    ![Screenshot](img/share-dialog-add-german.jpg){ class="shadow" }
+    ![Screenshot](img/share-dialog-add-2503-german.jpg){ class="shadow" }
 
 8. Kopiere den Link, indem du auf ihn klickst
 
-    ![Screenshot](img/share-dialog-copy-german.jpg){ class="shadow" }
+    ![Screenshot](img/share-dialog-copy-2503-german.jpg){ class="shadow" }
 
 9. Teile ihn mit deinen Freunden
 
@@ -55,9 +55,9 @@ Dann
 1. Gehe zu *Alben*
 2. Klicke auf :material-share-variant: auf dem Albumcover 
 
-    ![Screenshot](img/share-delete-1-german.jpg)
+    ![Screenshot](img/share-delete-1-2503-german.jpg)
     
 3. Klicke :material-chevron-down:
 4. Klicke :material-delete:
 
-     ![Screenshot](img/share-delete-2-german.jpg)
+     ![Screenshot](img/share-delete-2-2503-german.jpg)

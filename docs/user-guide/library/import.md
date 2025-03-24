@@ -16,7 +16,7 @@
 
 5. Klicke *Import*
 
-![Screenshot](img/import-german.jpg){ class="shadow" }
+![Screenshot](img/import-2503-german.jpg){ class="shadow" }
 
 !!! tip ""
     Zum Hinzufügen von Dateien zum *Import* Ordner kann [WebDAV](webdav.md) verwendet werden.

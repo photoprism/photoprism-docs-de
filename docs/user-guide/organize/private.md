@@ -21,16 +21,12 @@ Private Fotos werden im Beeich *Privat*, in nutzergenerierten Alben und im Datei
      Wenn du möchtest, dass private Bilder überall erscheinen, kannst du das in den  [Einstellungen](../settings/general.md) konfigurieren.
 
 ## Privat Status ändern ##
-=== "Kontext-Menü"
-     1. Gehe zu *Suche* oder *Privat*
-     2. Selektiere Bilder/Videos
-     3. Öffne das Kontext-Menü und klicke :material-lock:
 
-    ![Screenshot](img/private-context-menu-light.jpg){ class="shadow" }
+1. Gehe zu *Suche* oder *Privat*
 
-=== "Listen Ansicht"
-     1. Gehe zu *Suche* oder *Privat*
-     2. Wechsele zur *Listen-Ansicht*
-     3. Klicke auf :material-lock-open: oder :material-lock-open: in der rechten Spalte
+2. Selektiere Bilder/Videos
 
-    ![Screenshot](img/private-list-german.jpg){ class="shadow" }
+3. Öffne das Kontext-Menü und klicke :material-lock:
+
+![Screenshot](img/private-context-menu-2503-german.jpg){ class="shadow" }
+

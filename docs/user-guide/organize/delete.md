@@ -10,7 +10,7 @@ Dateien, die du löschen möchtest, müssen zuvor [archiviert](./archive.md) wer
 3. Klicke :material-delete:
 4. Bestätige
 
-   ![Screenshot](img/delete-german.jpg){ class="shadow" }
+   ![Screenshot](img/delete-2503-german.jpg){ class="shadow" }
 
 ### Alle archivierten Bilder löschen ###
 
@@ -18,4 +18,4 @@ Dateien, die du löschen möchtest, müssen zuvor [archiviert](./archive.md) wer
 2. Klicke :material-delete-sweep:
 3. Klicke *Alle Löschen*
 
-   ![Screenshot](img/delete-all-german.jpg){ class="shadow" }
+   ![Screenshot](img/delete-all-2503-german.jpg){ class="shadow" }

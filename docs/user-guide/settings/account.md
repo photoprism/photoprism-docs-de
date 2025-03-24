@@ -3,7 +3,7 @@
 !!! tldr ""
     Aus Sicherheitsgründen erfordert das Ändern von kontobezogenen Einstellungen über die Benutzeroberfläche eine Passwortauthentifizierung, sodass diese Einstellungen nicht verfügbar sind, wenn der [public Modus](https://docs.photoprism.app/getting-started/config-options/#authentication) aktiviert ist.
 
-![Screenshot](img/settings-account-german.jpg){ class="shadow" }
+![Screenshot](img/settings-account-2503-german.jpg){ class="shadow" }
 
 ## Passwort ändern
 
@@ -14,7 +14,7 @@
 5. Gib das neue Passwort ein und bestätige es durch eine erneute Eingabe
 6. Klicke auf *Speichern*
 
-![Screenshot](img/change-password-german.jpg){ class="shadow" } 
+![Screenshot](img/change-password-2503-german.jpg){ class="shadow" } 
 
 ## 2-Faktor Authentifizierung
 
@@ -42,4 +42,4 @@ Beispiel für die Erstellung eines App-Passworts, das du mit [WebDAV-kompatiblen
 2. Klicke auf *Konto*
 3. Klicke *Mit WebDAV verbinden*
 
-![Screenshot](img/show-webdav-german.jpg){ class="shadow" } 
+![Screenshot](img/show-webdav-2503-german.jpg){ class="shadow" } 

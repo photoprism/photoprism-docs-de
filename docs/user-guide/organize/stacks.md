@@ -4,7 +4,7 @@ Bildstapel sind Gruppen von Dateien, die den gleichen Ursprung haben, sich aber 
 
 Bildstapel werden im Bereich *Bildstapel* dargestellt.
 
-![Screenshot](img/stack-page-german.jpg){ class="shadow" }
+![Screenshot](img/stack-page-2503-german.jpg){ class="shadow" }
 
 Beachte, dass *[Videos](./video.md)* und *[Live-Fotos](video.md#live-fotos)*, die immer mit einem Vorschaubild gruppiert sind, nicht auf der Seite *Bildstapel* angezeigt werden.
 
@@ -40,11 +40,11 @@ Dateien mit folgenden Namen werden mit `/2018/IMG_1234.jpg` gruppiert, falls Gru
 
 1. Klicke auf :material-camera-burst:
 
-    ![Screenshot](img/sequential1-dark.jpg){ class="shadow" }
+    ![Screenshot](img/sequential-1-2503-german.jpg){ class="shadow" }
 
 2. Mit Hilfe der Pfeile kannst du durch alle Bilder der Sequenz wechseln
 
-    ![Screenshot](img/sequential3.jpg){ class="shadow" } ![Screenshot](img/sequential4.jpg){ class="shadow" }
+    ![Screenshot](img/sequential-2-2503-german.jpg){ class="shadow" } ![Screenshot](img/sequential-3-2503-german.jpg){ class="shadow" }
 
 
 ## Das Anzeigebild wechseln ##
@@ -58,7 +58,7 @@ Um die Primärdatei zu ändern:
 3. Klicke auf :material-chevron-down: der Datei, die du als primär markieren willst
 4. Klicke *Primärdatei*
 
-      ![Screenshot](img/stacks-edit-german.jpg){ class="shadow" } 
+      ![Screenshot](img/stacks-edit-2503-german.jpg){ class="shadow" } 
 
 
 ## Gruppierung von Dateien aufheben ##
@@ -67,11 +67,11 @@ Um die Primärdatei zu ändern:
 3. Klicke auf :material-chevron-down: der Datei, die nicht als primär markiert ist
 4. Klicke *Einzelaufnahme*
 
-      ![Screenshot](img/stacks-edit-german.jpg){ class="shadow" }
+      ![Screenshot](img/stacks-edit-2503-german.jpg){ class="shadow" }
 
 Das Bild wird nun separat von der anderen Datei in den Ansichten angezeigt.
 
-![Screenshot](img/unstacked-dark.jpg){ class="shadow" }
+![Screenshot](img/unstacked-2503-german.jpg){ class="shadow" }
 
 ## Nicht primäre Dateien endgültig löschen ##
 1. Öffne den [*Bearbeitungs-Dialog*](edit.md) des Bildes
@@ -80,4 +80,4 @@ Das Bild wird nun separat von der anderen Datei in den Ansichten angezeigt.
 4. Klicke *Löschen*
 5. Bestätige, dass du das Bild wirklich löschen möchtest
 
-      ![Screenshot](img/stacks-edit-german.jpg){ class="shadow" }
+      ![Screenshot](img/stacks-edit-2503-german.jpg){ class="shadow" }
