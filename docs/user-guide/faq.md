@@ -215,7 +215,7 @@
 
 ??? question "Werden gruppierte Dateien automatisch getrennt, wenn die ich Einstellungen ändere?"
 
-    Wenn du die Bildstapel-Einstellungen unter *[Einstellungen > Bibliothek](settings/library.md)* änderst, werden Dateien, die bereits gruppiert sind, **nicht automatisch voneinander getrennt**. Das liegt daran, dass das Entstapeln ein ressourcenintensiver Vorgang ist, bei dem jede Datei neu indexiert werden muss.
+    Wenn du die Bildstapel-Einstellungen unter *[Einstellungen > Inhalte](settings/library.md)* änderst, werden Dateien, die bereits gruppiert sind, **nicht automatisch voneinander getrennt**. Das liegt daran, dass das Entstapeln ein ressourcenintensiver Vorgang ist, bei dem jede Datei neu indexiert werden muss.
 
     Das Ergebnis hängt auch von der genauen Reihenfolge ab, in der du die Dateien entstapelst, da z. B. Nicht-Medien-Sidecar-Dateien an die verbleibende Mediendatei in einem Stapel gebunden bleiben. Wir denken darüber nach, in einer zukünftigen Version einen entsprechenden Befehl bereitzustellen.
  

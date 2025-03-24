@@ -1,19 +1,25 @@
-# Bibliotheks Einstellungen #
+# Einstellungen > Inhalte #
 
 ![Screenshot](img/settings-library-2503-german.jpg){ class="shadow" }
 
 !!! info ""
-    Die Bibliothek Einstellungen sind nur für [Super Admins](../users/roles.md) verfügbar.
+    Einige dieser Einstellungen sind nur für [Super Admins](../users/roles.md) verfügbar.
 
-##Indexierung ##
-
-#### :material-chart-timeline-variant: Schätzungen ####
-Schätzt den Standort von Bildern, die ohne GPS-Informationen aufgenommen wurden, indem er aus dem Standort anderer Bilder, die am selben Tag aufgenommen wurden, extrapoliert wird.
+## Index ##
 
 #### :material-eye: Qualitätsfilter ####
 Erfordert eine [Überprüfung von nicht fotografischen und qualitativ schlechten Bildern](../organize/review.md), bevor sie in den Suchergebnissen erscheinen.
 
-#### :material-camera: Vorschaubilder ####
+#### :material-map-clock-outline: Schätzungen ####
+Schätzt den Standort von Bildern, die ohne GPS-Informationen aufgenommen wurden, indem er aus dem Standort anderer Bilder, die am selben Tag aufgenommen wurden, extrapoliert wird.
+
+!!! danger ""
+    Beachte, dass, wenn du Bilder von nicht zusammenhängenden Veranstaltungen an verschiedenen Orten hast, die GPS-Koordinaten der Bilder von einer Veranstaltung auf die Bilder der anderen Veranstaltung angewendet/extrapoliert werden, denen die Koordinaten fehlen (auch wenn diese in verschiedenen Ordnern sind).
+
+!!! note ""
+    Für nicht-fotografische Bilder oder Bilder ohne Kamerainformationen wird keine Standortbestimmung durchgeführt.
+
+#### :material-image-size-select-large: Vorschaubilder ####
 Erstellt automatisch JPEG-Vorschaubilder für andere Dateitypen, damit sie in den Suchergebnissen und im Vollbildmodus angezeigt werden können.
 
 !!! danger ""
@@ -53,6 +59,25 @@ Dateien mit folgenden Namen werden mit `/2018/IMG_1234.jpg` gruppiert, falls Gru
 - `/2018/IMG_1234 (2).jpg` `/2018/IMG_1234 (3).jpg`
 - `/2018/IMG_1234 copy.jpg` `/2018/IMG_1234 copy 1.jpg` `/2018/IMG_1234 copy 2.jpg`
 - `/2018/IMG_1234 (-2.7)` `/2018/IMG_1234 (+3.3).jpg` `/2018/IMG_1234(-2.7).jpg`  `/2018/IMG_1234(+3.3).jpg`
+
+## Suche
+
+In diesem Abschnitt kannst du die Listenansicht und das Anzeigen von Titeln und Bildunterschriften in den Suchergebnissen deaktivieren.
+
+## Download ##
+
+#### :material-camera: Originale ####
+Nur Dateien aus dem Ordner *originals* werden heruntergeladen, nicht aber Dateien, die automatisch im Ordner *sidecar* erstellt wurden. Dies ist die empfohlene Standardeinstellung.
+
+#### :material-raw: RAW ####
+RAW Dateien herunterladen.
+
+#### :material-paperclip: Sidecar ####
+Sidecar-Dateien herunterladen, z.B. XMP-Metadaten. Dies wird im Allgemeinen nicht empfohlen, außer für professionelle Workflows.
+
+!!! info ""
+    Beachte, dass deine Einstellungen keine Auswirkungen auf ZIP-Archive haben, wenn du komplette Alben herunterlädst. Um Album-Downloads zu konfigurieren, können fortgeschrittene Benutzer die Datei `settings.yml` in ihrem config Ordner bearbeiten. [Mehr erfahren ›](https://docs.photoprism.app/getting-started/config-files/settings/#albums)
+
 
 <!--## Umwandlung von RAW zu JPEG ##
 Viele Fotografen, insbeondere Nutzer einer digitalen SLR, verwenden ein verlustfreies RAW-Format anstelle des verlustbehafteten JPEG-Formats. Es gibt auch [Handies](https://www.fredericpaulussen.be/how-to-raw-photos-huawei-p30-pro/) die RAW-Daten abspeichern können oder das Format HEIC/HEIF nutzen.

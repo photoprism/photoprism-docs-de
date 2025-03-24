@@ -24,12 +24,12 @@ Während der [*Indexierung*](../library/indexing.md) liest PhotoPrism so viele D
 ### Bilddetails bearbeiten ###
 Im *Detail-Tab* des *Bearbeitungs-Dialogs* können die folgenden Daten angezeigt und verändert werden:
 
-* Titel, Tag, Monat, Jahr, Zeit in UTC, Datum in UTC, Zeitzone, Breitengrad, Längengrad, Höhe über NN, Land, Kamera, ISO, Belichtungszeit, Objektiv, F Nummer, Brennweite, Thema, Künstler, Copyright, Lizenz, Bildunterschrift, Suchbegriffe, Notizen
+* Titel, Bildunterschrift, Tag, Monat, Jahr, Ortszeit, Zeitzone, Land, Höhe, Breitengrad, Längengrad, Kamera, ISO, Belichtungszeit, Objektiv, F Nummer, Brennweite, Bildinhalt, Künstler, Copyright, Lizenz, Suchbegriffe, Notizen
 
 ![Screenshot](img/edit-details-2503-german.jpg){ class="shadow" }
 
 *Speichern* speichert die aktuellen Änderungen.
-*Fertig* speichert die Änderungen und schließt den Dialog.
+*Schließen* schließt den Dialog ohne Änderungen zu speichern.
 
 !!! info ""
     Kopierte Koordinaten im Format *48.265684, 7.721380* können in das Feld Längen- oder Breitengrad eingefügt werden.

@@ -256,6 +256,10 @@ Wenn diese Funktion deaktiviert ist, wird [ImageMagick](https://imagemagick.org/
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_IMAGEMAGICK`.
 
+### Vektorgrafiken deaktivieren
+
+Deaktiviert die Unterstützung von Vektorgrafiken.
+
 ## Skalierungsfilter Beispiele ##
 
 Originalbild:

@@ -41,7 +41,7 @@ Wenn du den automatischen Import aktivierst, indem du die Konfigurationsoption [
 
 ## Import Pfad Schema ändern
 
-Ab dem [nächsten Release](https://docs.photoprism.app/release-notes/) können fortgeschrittene Benutzer das von der Importfunktion verwendete Schema für den Zieldateipfad über die [`settings.yml`](https://docs.photoprism.app/getting-started/config-files/settings/#media-library) anpassen, wie in diesem Beispiel gezeigt:
+Seit [Release 250223-b79d21907](https://docs.photoprism.app/release-notes/#february-23-2025) können fortgeschrittene Benutzer das von der Importfunktion verwendete Schema für den Zieldateipfad über die [`settings.yml`](https://docs.photoprism.app/getting-started/config-files/settings/#media-library) anpassen, wie in diesem Beispiel gezeigt:
 
 ```yaml
 Import:

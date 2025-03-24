@@ -1,6 +1,6 @@
 # Bildstapel #
 
-Bildstapel sind Gruppen von Dateien, die den gleichen Ursprung haben, sich aber in Qualität, Format, Größe oder Farbe unterscheiden. Gehe zu *[Einstellungen > Dateien](../settings/library.md)*, um die Stacking-Einstellungen für deine Bibliothek zu ändern.
+Bildstapel sind Gruppen von Dateien, die den gleichen Ursprung haben, sich aber in Qualität, Format, Größe oder Farbe unterscheiden. Gehe zu *[Einstellungen > Inhalte](../settings/library.md)*, um die Stacking-Einstellungen für deine Bibliothek zu ändern.
 
 Bildstapel werden im Bereich *Bildstapel* dargestellt.
 
@@ -15,14 +15,14 @@ Beachte, dass *[Videos](./video.md)* und *[Live-Fotos](video.md#live-fotos)*, di
 3. Dateien, deren Metadaten zeigen, dass sie am selben Ort und in der selben Sekunde aufgenommen wurden, können gruppiert werden (optional)
 4. Dateien mit der gleichen *Unique Image ID* oder *XMP Instance ID* können gruppiert werden (optional)
 
-Du kannst das Verhalten der Punkte 2-4 in *[Einstellungen > Dateien](../settings/library.md#bildstapel)* konfigurieren.
+Du kannst das Verhalten der Punkte 2-4 in *[Einstellungen > Inhalte](../settings/library.md#bildstapel)* konfigurieren.
 
 !!! note ""
     Beachte, dass es **nicht möglich ist, die Gruppierung von Dateien mit demselben Namen zu deaktivieren**, da sonst wichtige Funktionen nicht mehr funktionieren würden. Beipsielsweise die Unterstützung von Apple [Live Photos](video.md#live-fotos) (die aus einer Foto- und einer Videodatei bestehen) sowie anderen Multidatei-/Hybridformaten wie RAW/JPEG und die Indexierung von Metadaten aus XMP/JSON Sidecar-Dateien.
 
 ## Werden gruppierte Dateien automatisch getrennt, wenn die ich Einstellungen ändere?
 
-Wenn du die Bildstapel-Einstellungen unter *[Einstellungen > Dateien](../settings/library.md#bildstapel)* änderst, werden Dateien, die bereits gruppiert sind, **nicht automatisch voneinander getrennt**. Das liegt daran, dass das Entstapeln ein ressourcenintensiver Vorgang ist, bei dem jede Datei neu indexiert werden muss.
+Wenn du die Bildstapel-Einstellungen unter *[Einstellungen > Inhalte](../settings/library.md#bildstapel)* änderst, werden Dateien, die bereits gruppiert sind, **nicht automatisch voneinander getrennt**. Das liegt daran, dass das Entstapeln ein ressourcenintensiver Vorgang ist, bei dem jede Datei neu indexiert werden muss.
 
 Das Ergebnis hängt auch von der genauen Reihenfolge ab, in der du die Dateien entstapelst, da z. B. Nicht-Medien-Sidecar-Dateien an die verbleibende Mediendatei in einem Stapel gebunden bleiben. Wir denken darüber nach, in einer zukünftigen Version einen entsprechenden Befehl bereitzustellen.
  

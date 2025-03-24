@@ -7,7 +7,7 @@ Docker ist für [Mac](https://docs.docker.com/desktop/install/mac-install/), [Li
 [Raspberry Pi](https://docs.photoprism.app/getting-started/raspberry-pi/), [Portainer](https://docs.photoprism.app/getting-started/portainer/), [FreeBSD](https://docs.photoprism.app/getting-started/ports/freebsd/), und vielen [NAS-Geräten](https://docs.photoprism.app/getting-started/nas/synology/).
 
 
-![Progressive Web App](https://dl.photoprism.app/img/ui/iphone-index-360px.png){ align=right }
+![Progressive Web App](./img/iphone-crocus.png){ align=right }
 
 Sobald die [Installation](https://docs.photoprism.app/getting-started/) abgeschlossen ist, führt dich unser [Erste Schritte 👣](./first-steps.md) Tutorial durch die Benutzeroberfläche und die Einstellungen, um sicherzustellen, dass deine Bibliothek nach deinen individuellen Präferenzen indexiert wird.
 

@@ -21,4 +21,4 @@ Je nach den Dateieinstellungen können solche Dateien automatisch in Stapeln gru
 
 ↪ [Funktionen > Bildstapel](../organize/stacks.md)
 
-↪ [Einstellungen > Dateien](../settings/library.md)
+↪ [Einstellungen > Inhalte](../settings/library.md)

@@ -12,7 +12,7 @@ Mit der Standardeinstellung werden alle Bilder, die als privat markiert sind, in
  * Favoriten
  * Orte
  * Kategorien
- * Autogenerierten Alben (Ereignisse, Kalender, Länder, Ordner)
+ * Autogenerierten Alben (Ereignisse, Kalender, Regionen, Ordner)
  * In geteilten Alben
 
 Private Fotos werden im Beeich *Privat*, in nutzergenerierten Alben und im Dateibrowser angezeigt.

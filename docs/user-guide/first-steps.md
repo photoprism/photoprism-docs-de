@@ -2,7 +2,7 @@
 Nach der [Installation](https://docs.photoprism.app/getting-started/) sind nur noch zwei weitere Schritte erforderlich,
 bevor du mit dem Durchsuchen deiner Bilder beginnen kannst:
 
-- Passe deine [Datei](./settings/library.md) und die [erweiterten Einstellungen](./settings/advanced.md) an deine persönlichen Vorlieben an
+- Passe deine [Inhalts](./settings/library.md) und die [erweiterten Einstellungen](./settings/advanced.md) an deine persönlichen Vorlieben an
 - [Wähle](./library/import-vs-index.md), ob du deine [Originale direkt indexieren](./library/indexing.md) willst, wobei alle Datei- und Ordnernamen unverändert bleiben,
   oder ob du die optionale [Importfunktion](./library/import.md) verwenden willst, die automatisch Duplikate entfernt,
   Dateien einen eindeutigen Namen gibt und sie nach Jahr und Monat sortiert

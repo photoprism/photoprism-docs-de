@@ -1,4 +1,4 @@
-# Mit anderen Apps teilen #
+# Dateien zu anderen Apps und Diensten hochladen #
 
 In den [Einstellungen](../settings/sync.md) kannst du deine PhotoPrism-Instanz mit anderen Diensten mit WebDAV-Unterstützung verbinden, zum Beispiel mit anderen PhotoPrism-Instanzen, Nextcloud oder ownCloud.
 
@@ -6,7 +6,7 @@ In den [Einstellungen](../settings/sync.md) kannst du deine PhotoPrism-Instanz m
 
 2. Wähle Bilder aus
 3. Öffne das Kontext-Menü
-4. Klicke :material-cloud:
+4. Klicke :material-arrow-top-right:
    ![Screenshot](img/services-photo-upload-1-2503-german.jpg){ class="shadow" }
 5. Wähle ein Konto und klicke *Upload*
 
@@ -18,7 +18,7 @@ In den [Einstellungen](../settings/sync.md) kannst du deine PhotoPrism-Instanz m
 
 ## Alben mit anderen Apps teilen ##
 
-1. Gehe zu *Alben* / *Ereignisse* / *Kalender* / *Länder* / *Ordner*
+1. Gehe zu *Alben* / *Ereignisse* / *Kalender* / *Regionen* / *Ordner*
 2. Wähle ein Album aus
 3. Öffne das Kontext-Menü
 4. Klicke :material-share-variant:

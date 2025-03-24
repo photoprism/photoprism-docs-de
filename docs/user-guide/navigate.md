@@ -37,7 +37,7 @@ Die Filterleise enthält zusätzliche Suchfilter wie Land, Jahr, Monat, Kamera, 
 
 Wenn Bilder oder Videos selektiert sind, erscheint das Kontext-Menü in der Ecke unten rechts. Die angezeigte Zahl ist die Anzahl der aktuell selektierten Ergebnisse. Das Menü bietet folgende Aktionen:
 
-* :material-archive-arrow-down: Bilder archivieren
+* :material-archive: Bilder archivieren
 * :material-bookmark: Bilder zu Alben hinzufügen
 * :material-cloud-download: Bilder herunterladen
 * :material-lock: Bilder als privat markieren

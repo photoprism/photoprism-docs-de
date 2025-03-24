@@ -1,9 +1,8 @@
-# Album-Link teilen #
+# Erstellen und Teilen von Album Links #
 
-Erstelle Freigabelinks, um Alben, Ereignisse, Kalender Monate, Länder oder Ordner mit deinen Freunden zu teilen.
+Geheime Links ermöglichen es, [manuell erstellte Alben](../organize/albums.md) sowie ausgewählte [Ereignisse](../organize/moments.md), [Monate](../organize/calendar.md), Regionen oder [Ordner](../organize/folders.md) mit deinen Liebsten zu teilen. Du kannst für jedes Album mehrere Links erstellen und optional ein Ablaufdatum festlegen. Für die Verwendung der Links ist zwar keine Registrierung erforderlich, aber [das Teilen von Alben mit Benutzern, die ein Konto haben](../users/sharing.md) ist auf diese Weise ebenfalls möglich.
 
-Deine Freunde können Bilder und Videos aus freigegebenen Alben anzeigen und herunterladen.
-Bilder, die als privat markiert sind, werden nicht angezeigt.
+Wenn du ein Album teilst, sind als privat markierte Bilder für andere nicht sichtbar. Nicht private Bilder können angesehen und heruntergeladen, aber ihre Metadaten nicht geändert werden.
 
 ![Screenshot](img/link-card-2503-german.jpg){ class="shadow" }
 
@@ -16,7 +15,7 @@ Durch klicken auf :material-power: können Link-Besucher ihre Sitzung beenden.
 
 ## Freigabelink erstellen ##
 === "Kontext-Menü"
-     1. Gehe zu *Alben* / *Ereignisse* / *Kalender* / *Länder* / *Ordner*
+     1. Gehe zu *Alben* / *Ereignisse* / *Kalender* / *Regionen* / *Ordner*
      2. Selektiere das Album, das du teilen möchtest
      3. Öffne das Kontext-Menü
      4. Klicke :material-share-variant:
@@ -24,7 +23,7 @@ Durch klicken auf :material-power: können Link-Besucher ihre Sitzung beenden.
     ![Screenshot](img/share-menu-2503-german.jpg){ class="shadow" }
 
 === "Album-Suchleiste"
-     1. Gehe zu *Alben* / *Ereignisse* / *Kalender* / *Länder* / *Ordner*
+     1. Gehe zu *Alben* / *Ereignisse* / *Kalender* / *Regionen* / *Ordner*
      2. Öffne das Album, das du teilen möchtest
      3. Klicke :material-share-variant:
 

@@ -8,7 +8,7 @@
     
     2. Wähle oder erstelle ein Album, falls deine Dateien automatisch einem Album hinzugefügt werden sollen
 
-    3. Klicke auf *Upload*
+    3. Klicke auf *Durchsuchen*
 
          ![Screenshot](img/upload-to-album-2503-german.jpg){ class="shadow" }
 
@@ -26,7 +26,7 @@
 
       3. Wähle oder erstelle ein Album, falls deine Dateien automatisch einem Album hinzugefügt werden sollen
 
-      4. Klicke auf *Upload*
+      4. Klicke auf *Durchsuchen*
 
          ![Screenshot](img/upload-to-album-import-2503-german.jpg){ class="shadow" }
 

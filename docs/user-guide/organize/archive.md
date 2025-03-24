@@ -6,7 +6,7 @@ Archivierte Dateien werden nicht gelöscht, sie werden allerdings ausschließlic
 
 1. Selektiere Bilder/Videos
 2. Öffne das Kontext-Menü
-3. Klicke :material-archive-arrow-down:
+3. Klicke :material-archive:
 
     ![Screenshot](img/archive-2503-german.jpg){ class="shadow" }
     

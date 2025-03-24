@@ -47,14 +47,14 @@ nav:
       - Scans: user-guide/organize/scans.md
   - Teilen:
       - Linkfreigabe: user-guide/share/share.md
-      - Mit Apps: user-guide/share/services-share.md
+      - Dateien hochladen: user-guide/share/services-share.md
   - Fern-Synchronisation:
       - WebDAV Zugriff:  user-guide/sync/webdav.md
       - Smartphones:  user-guide/sync/sync-phone.md
       - Andere Apps:  user-guide/sync/services-sync.md
   - Einstellungen:
       - Allgemein: user-guide/settings/general.md
-      - Dateien: user-guide/settings/library.md
+      - Inhalte: user-guide/settings/library.md
       - Erweitert: user-guide/settings/advanced.md
       - Dienste:  user-guide/settings/sync.md
       - Konto: user-guide/settings/account.md

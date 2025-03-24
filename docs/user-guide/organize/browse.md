@@ -34,7 +34,7 @@ Zeigt all Bilder, die überprüft werden müssen.
 ##### [Archiv](archive.md) #####
 Zeigt archivierte Bilder.
 
-### :material-image-album: [Alben](albums.md) ###
+### :material-bookmark: [Alben](albums.md) ###
 Hier befinden sich deine Alben.
 
 ![Screenshot](img/albums-section-2503-german.jpg){ class="shadow" }
@@ -44,7 +44,7 @@ Hier werden alle Bilder, die nicht Teil eines Albums sind, angezeigt.
 
 ![Screenshot](img/unsorted-section-2503-german.jpg){ class="shadow" }
 
-### :material-movie: [Videos](video.md) ###
+### :material-play-circle: [Videos](video.md) ###
 Hier findest du alle Videos, die nicht in *Überprüfen*, *Archiv* oder *Privat* sind.
 
 #### Live Photos ####
@@ -53,15 +53,15 @@ Hier findest du alle Live Photos.
 ### :material-account: Personen ###
 Zeigt deine Bilder gruppiert nach abgebildeten Personen.
 
-### :material-heart: Favoriten ###
+### :material-star: Favoriten ###
 Hier befinden sich alle Bilder, die du als Favorit markiert hast.
 
-### :material-compass: [Ereignisse](moments.md)  ###
+### :material-filmstrip-box: [Ereignisse](moments.md)  ###
 Entdecke Alben von Ereignissen, die wir automatisch für dich erstellt haben.
 
 ![Screenshot](img/moments-section-2503-german.jpg){ class="shadow" }
 
-### :material-calendar-range: [Kalender](calendar.md) ###
+### :material-calendar: [Kalender](calendar.md) ###
 Hier sind deine Bilder nach Erstellungsdatum sortiert.
 
 ![Screenshot](img/calendar-section-2503-german.jpg){ class="shadow" }
@@ -73,8 +73,8 @@ Hier sind alle Bilder und Videos, die Geodaten haben, auf einer Weltkarte darges
 
 ![Screenshot](img/places-section-2-2503-german.jpg){ class="shadow" }
 
-#### Länder ####
-Zeigt deine Bilder gruppiert nach Ländern.
+#### Regionen ####
+Zeigt deine Bilder gruppiert nach Regionen.
 
 ![Screenshot](img/states-section-2503-german.jpg){ class="shadow" }
 

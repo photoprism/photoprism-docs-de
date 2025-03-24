@@ -110,6 +110,7 @@ Dies ist eine vollständige Liste der unterstützten Suchfilter mit Beispielen. 
 | camera    | string    | camera:canon                          | Camera Make/Model Name                                                                                                                     |
 | category  | string    | category:airport                      | Location Category                                                                                                                          |
 | city      | string    | city:"Berlin"                         | Location City (separate with \|)                                                                                                           |
+| codec     | string    | codec:avc1                            | Media Codec (e.g. jpeg, avc1, hvc1); separate with \|                                                                                      |
 | color     | string    | color:"red\|blue"                     | Color Name (purple, magenta, pink, red, orange, gold, yellow, lime, green, teal, cyan, blue, brown, white, grey, black) (separate with \|) |
 | country   | string    | country:"de\|us"                      | Location Country Code (separate with \|)                                                                                                   |
 | day       | string    | day:3\|13                             | Day of Month (1-31, separate with \|)                                                                                                      |
@@ -128,8 +129,8 @@ Dies ist eine vollständige Liste der unterstützten Suchfilter mit Beispielen. 
 | latlng    | string    | latlng:"name"                         | GPS Bounding Box (Lat N, Lng E, Lat S, Lng W)                                                                                              |
 | lens      | string    | lens:ef24                             | Lens Make/Model Name                                                                                                                       |
 | mm        | string    | mm:28-35                              | Focal Length (35mm equivalent)                                                                                                             |
-| mp        | string    | mp:3-6                                | Resolution in Megapixels (MP)                                                                                                              |
 | month     | string    | month:7\|10                           | Month (1-12, separate with \|)                                                                                                             |
+| mp        | string    | mp:3-6                                | Resolution in Megapixels (MP)                                                                                                              |
 | name      | string    | name:"IMG_9831-112*"                  | File Name without path and extension (separate with \|)                                                                                    |
 | near      | string    | near:pqbcf5j446s0futy                 | Finds nearby pictures (UID)                                                                                                                |
 | olc       | string    | olc:8FWCHX7W+                         | OLC Position (Open Location Code)                                                                                                          |
@@ -146,20 +147,23 @@ Dies ist eine vollständige Liste der unterstützten Suchfilter mit Beispielen. 
 | type      | string    | type:raw                              | Media Type (image, video, raw, live, animated); separate with \|                                                                           |
 | uid       | string    | uid:pqbcf5j446s0futy                  | Limits results to the specified internal unique IDs                                                                                        |
 | year      | string    | year:1990\|2003                       | Year (separate with \|)                                                                                                                    |
-| animated  | switch    | animated:yes                          | Finds animated GIFs                                                                                                                        |
+| animated  | switch    | animated:yes                          | Finds animations only                                                                                                                      |
 | archived  | switch    | archived:yes                          | Finds archived pictures                                                                                                                    |
+| audio     | switch    | audio:yes                             | Finds audio recordings only                                                                                                                |
+| document  | switch    | document:yes                          | Finds documents only                                                                                                                       |
 | error     | switch    | error:yes                             | Finds pictures with errors                                                                                                                 |
 | hidden    | switch    | hidden:yes                            | Finds hidden pictures (broken or unsupported)                                                                                              |
+| image     | switch    | image:yes                             | Finds regular images only                                                                                                                  |
 | landscape | switch    | landscape:yes                         | Finds pictures in landscape format                                                                                                         |
 | live      | switch    | live:yes                              | Finds Live Photos and short videos                                                                                                         |
 | mono      | switch    | mono:yes                              | Finds pictures with few or no colors                                                                                                       |
 | panorama  | switch    | panorama:yes                          | Finds pictures with an aspect ratio > 1.9:1                                                                                                |
-| photo     | switch    | photo:yes                             | Finds only photos, no videos                                                                                                               |
+| photo     | switch    | photo:yes                             | Excludes videos and documents from search results                                                                                          |
 | portrait  | switch    | portrait:yes                          | Finds pictures in portrait format                                                                                                          |
 | primary   | switch    | primary:yes                           | Finds primary JPEG files only                                                                                                              |
 | private   | switch    | private:yes                           | Finds private pictures                                                                                                                     |
 | public    | switch    | public:yes                            | Excludes private pictures                                                                                                                  |
-| raw       | switch    | raw:yes                               | Finds pictures with RAW image file                                                                                                         |
+| raw       | switch    | raw:yes                               | Finds RAW images only                                                                                                                      |
 | review    | switch    | review:yes                            | Finds pictures in review                                                                                                                   |
 | square    | switch    | square:yes                            | Finds images with an aspect ratio of 1:1                                                                                                   |
 | stack     | switch    | stack:yes                             | Finds pictures with more than one media file                                                                                               |
@@ -167,9 +171,13 @@ Dies ist eine vollständige Liste der unterstützten Suchfilter mit Beispielen. 
 | unsorted  | switch    | unsorted:yes                          | Finds pictures not in an album                                                                                                             |
 | unstacked | switch    | unstacked:yes                         | Finds pictures with a file that has been removed from a stack                                                                              |
 | vector    | switch    | vector:yes                            | Finds vector graphics only                                                                                                                 |
-| video     | switch    | video:yes                             | Finds video files only                                                                                                                     |
-| after     | timestamp | after:"2022-01-30"                    | Finds pictures taken after this date                                                                                                       |
-| before    | timestamp | before:"2022-01-30"                   | Finds pictures taken before this date                                                                                                      |
+| video     | switch    | video:yes                             | Finds videos only                                                                                                                          |
+| added     | timestamp | added:"2006-01-02T15:04:05Z"          | Finds pictures added at or after this time                                                                                                 |
+| after     | timestamp | after:"2022-01-30"                    | Finds pictures taken on or after this date                                                                                                 |
+| before    | timestamp | before:"2022-01-30"                   | Finds pictures taken on or before this date                                                                                                |
+| edited    | timestamp | edited:"2006-01-02T15:04:05Z"         | Finds pictures edited at or after this time                                                                                                |
+| taken     | timestamp | taken:"2022-01-30"                    | Finds pictures taken on the specified date                                                                                                 |
+| updated   | timestamp | updated:"2006-01-02T15:04:05Z"        | Finds pictures updated at or after this time                                                                                               |
 
 
 !!! question "Warum kann ich Live Fotos nicht abspielen oder Bildstapel finden, wenn ich nach bestimmten Bildern suche?"

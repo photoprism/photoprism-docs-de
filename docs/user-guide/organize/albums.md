@@ -41,7 +41,7 @@ Dann bearbeite die Album Details und klicke *Speichern*
     ![Screenshot](img/add-photo-album-2503-german.jpg){ class="shadow" }
     
 4. Wähle ein Album
-5. Klicke *Hinzufügen*
+5. Klicke *Bestätigen*
 
     ![Screenshot](img/add-photo-album-2-2503-german.jpg){ class="shadow" }
 
