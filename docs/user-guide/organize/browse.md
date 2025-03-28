@@ -94,9 +94,9 @@ Hier befinden sich alle Bilder, die du als privat markiert hast.
 ### :material-film: [Originale](../library/files.md) ###
 Hier werden alle Dateien deines *Originals* Verzeichnis angezeigt
 
-![Screenshot](../library/img/files-german.jpg){ class="shadow" }
+![Screenshot](../library/img/files-2503-german.jpg){ class="shadow" }
 
-![Screenshot](../library/img/files-2-german.jpg){ class="shadow" }
+![Screenshot](../library/img/files-2-2503-german.jpg){ class="shadow" }
 
 
 

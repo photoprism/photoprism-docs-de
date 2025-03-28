@@ -15,8 +15,8 @@ Der Bereich Personen zeigt dir bereits identifizierte Personen sowie neue Gesich
 
 Klicke :material-star:, um eine Person als Favorit zu markieren. Favoriten werden ganz oben angezeigt.
 
-![Screenshot](img/recognized-new.jpg){ class="shadow" }
-![Screenshot](img/new-new.jpg){ class="shadow" }
+![Screenshot](img/recognized-2503-german.jpg){ class="shadow" }
+![Screenshot](img/recognized-new-2503-german.jpg){ class="shadow" }
 
 ### Warum werdem im Bereich NEU nicht alle erkannten Gesichter angezeigt?
 
@@ -50,7 +50,7 @@ Gesichter können aus mehreren Gründen nicht erkannt werden:
      4. Beginne einen Namen einzugeben
      5. Drücke *Enter*
 
-    ![Screenshot](img/add-name-new-new.jpg){ class="shadow" }
+    ![Screenshot](img/add-name-new-2503-german.jpg){ class="shadow" }
 
 === " Im Bearbeitungs-Dialog"
 
@@ -60,7 +60,7 @@ Gesichter können aus mehreren Gründen nicht erkannt werden:
      4. Beginne einen Namen einzugeben
      5. Drücke *Enter*
 
-    ![Screenshot](img/add-name-edit-new.jpg){ class="shadow" }
+    ![Screenshot](img/add-name-edit-new-2503-german.jpg){ class="shadow" }
 
 Die Person wird nun unter *Erkannt* angezeigt
 
@@ -71,15 +71,15 @@ Du kannst Personen im Bereich *Erkannt* ausblenden, indem du :material-close: kl
     Bilder von ausgeblendeten Personen tauchen weiterhin in Suchergebnissen auf.
 
 
-![Screenshot](img/person-hide-new.jpg){ class="shadow" }
+![Screenshot](img/person-hide-2503-german.jpg){ class="shadow" }
 
 Um alle Personen, inklusive ausgeblendete, zu sehen klicke :material-eye:.
 
-![Screenshot](img/person-show-all-new.jpg){ class="shadow" }
+![Screenshot](img/person-show-all-2503-german.jpg){ class="shadow" }
 
 Ausgeblendete Personen werden wieder angezeigt, wenn du :material-eye-off: klickst.
 
-![Screenshot](img/person-recover-new.jpg){ class="shadow" }
+![Screenshot](img/person-recover-2503-german.jpg){ class="shadow" }
 
 
 ## Gesichter ausblenden ##
@@ -91,13 +91,13 @@ Du kannst Gesichts-Cluster im Bereich *Neu* auf die gleiche Weise wie [Personen]
      2. Gehe zu *Erkannt*
      3. Klicke auf eine Person
 
-    ![Screenshot](img/view-person-new.jpg){ class="shadow" }
+    ![Screenshot](img/view-person-2503-german.jpg){ class="shadow" }
 
 === "Über die Suche"
      1. Gehe zu *Suche*
      2. Suche nach person:"jane-doe"
 
-    ![Screenshot](img/view-person-2-new.jpg){ class="shadow" }
+    ![Screenshot](img/view-person-2-2503-german.jpg){ class="shadow" }
 
 ## Personen umbenennen ##
 
@@ -105,11 +105,11 @@ Du kannst Gesichts-Cluster im Bereich *Neu* auf die gleiche Weise wie [Personen]
 2. Gehe zu *Erkannt*
 3. Klicke auf den Namen
 4. Gib einen neuen Namen ein
-5. Drücke *Enter*
+5. Klicke auf *Speichern*
 
-![Screenshot](img/rename-recognized-0-new.jpg){ class="shadow" }
+![Screenshot](img/rename-recognized-2503-german.jpg){ class="shadow" }
 
-![Screenshot](img/rename-recognized-new.jpg){ class="shadow" }
+![Screenshot](img/rename-recognized-2-2503-german.jpg){ class="shadow" }
 
 ## Gesicht einer anderen Person zuordnen ##
 Wenn einem Gesicht die falsche Person zugeordnet ist, kannst du dies ändern.
@@ -122,7 +122,7 @@ Wenn einem Gesicht die falsche Person zugeordnet ist, kannst du dies ändern.
 3. Klicke :material-eject:
 4. Nun kannst du einen neuen Namen eingeben, oder das Feld leer lassen
 
-![Screenshot](img/reject-new.jpg){ class="shadow" }
+![Screenshot](img/reject-2503-german.jpg){ class="shadow" }
 
 ## Gesichter entfernen ##
 Falls etwas Falsches als Gesicht erkannt wurde, oder dich ein Gesicht nicht interessiert, kannst du es entfernen.
@@ -131,17 +131,19 @@ Falls etwas Falsches als Gesicht erkannt wurde, oder dich ein Gesicht nicht inte
 2. Gehe zu *Personen*
 3. Klicke :material-close:
 
-![Screenshot](img/remove-face.jpg){ class="shadow" }
+![Screenshot](img/remove-face-2503-german.jpg){ class="shadow" }
 
 Bevor die Seite neu geladen wird kannst du diese Aktion rückgängig machen.
 
-![Screenshot](img/undo-remove-face.jpg){ class="shadow" }
+![Screenshot](img/undo-remove-face-2503-german.jpg){ class="shadow" }
 
 ## Alle Bilder einer Person herunterladen ##
 1. Gehe zu *Personen*
 2. Selektiere eine Person
 3. Öffne das Kontext-Menü
 4. Klicke :material-download:
+
+![Screenshot](img/people-context-menu-down-2503-german.jpg){ class="shadow" }
 
 ## Album aus Personen erstellen ##
 1. Gehe zu *Personen*
@@ -151,7 +153,7 @@ Bevor die Seite neu geladen wird kannst du diese Aktion rückgängig machen.
 5. Wähle ein existierendes Album oder gib einen neuen Albumnamen ein
 6. Klicke auf *Hinzufügen*
 
-![Screenshot](img/people-context-menu-new.jpg){ class="shadow" }
+![Screenshot](img/people-context-menu-album-2503-german.jpg){ class="shadow" }
 
 ## Suche ##
 Du kannst Bilder von bestimmten Personen mit Hilfe der folgenden Suchanfragen finden
@@ -167,7 +169,7 @@ Suchfilter können auch kombiniert werden.
 
 `person:"John Doe&Jane Doe" faces:3` findet alle Bilder auf denen John und Jane Doe und mindestens eine weitere Person abgebildet sind.
 
-![Screenshot](img/people-search.jpg){ class="shadow" }
+![Screenshot](img/people-search-2503-german.jpg){ class="shadow" }
 
 ## Performance Tipps ##
 

@@ -11,7 +11,7 @@ Mit den leistungsstarken Suchfiltern von PhotoPrism kannst du ganz einfach besti
 
 Probier es einfach aus!
 
-   ![Screenshot](img/fulltext-search-1-2503-german.jpg){ class="shadow" }
+   ![Screenshot](img/fulltext-search-2503-german.jpg){ class="shadow" }
 
 ## Einleitung ##
 Folgende Filter können auf der Filterleiste gesetzt werden:
