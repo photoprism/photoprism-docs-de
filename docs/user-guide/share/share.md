@@ -25,7 +25,8 @@ Durch klicken auf :material-power: können Link-Besucher ihre Sitzung beenden.
 === "Album-Suchleiste"
      1. Gehe zu *Alben* / *Ereignisse* / *Kalender* / *Regionen* / *Ordner*
      2. Öffne das Album, das du teilen möchtest
-     3. Klicke :material-share-variant:
+     3. Klicke :material-dots-vertical:
+     4. Klicke :material-share-variant:
 
       ![Screenshot](img/share-toolbar-2503-german.jpg){ class="shadow" }
 

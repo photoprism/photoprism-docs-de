@@ -2,7 +2,9 @@
 
 === "Über Suchleiste"
 
-    1. Klicke :material-cloud-upload: in der oberen rechten Ecke
+    1. Klicke auf :material-dots-vertical: in der oberen rechten Ecke
+
+    2. Klicke :material-cloud-upload: 
 
          ![Screenshot](img/upload-3-2503-german.jpg){ class="shadow" }
     

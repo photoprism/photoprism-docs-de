@@ -7,6 +7,9 @@ Du kannst deine PhotoPrism-Instanz mit anderen Diensten mit WebDAV-Unterstützun
 
 Das kann nützlich sein, wenn du Dateien zwischen mehreren Diensten [teilen](../share/services-share.md) oder [synchronisieren](../sync/services-sync.md) willst.
 
+![Screenshot](img/sync-account-2503-german.jpg){ class="shadow" }
+
+
 ## Dienst einrichten ##
 
 1. Gehe zu *Einstellungen*
