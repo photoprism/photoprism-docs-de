@@ -27,3 +27,16 @@ Mithilfe des Kontext-Menüs kannst du die folgenden Aktionen durchführen:
 2. Öffne das Kontext-Menü und klicke auf :material-bookmark:
 3. Wähle ein existierendes Album oder gib einen neuen Albumnamen ein
 4. Klicke auf *Hinzufügen*
+
+### Ereignis-Cover festlegen ###
+
+Um ein Titelbild für ein Ereignis festzulegen:
+
+1. Öffne das Ereignis, indem du darauf klickst.
+2. Klicke auf das Foto, das du als Cover verwenden möchtest.
+3. Wenn das Foto geöffnet ist, klicke oben rechts auf :material-dots-vertical:.
+4. Wähle im Menü **Als Albumcover verwenden** aus.
+
+    ![Screenshot](img/set-cover-2504-german.jpg){ class="shadow" }
+
+Dadurch wird das ausgewählte Foto als Titelbild für das Ereignis festgelegt.
