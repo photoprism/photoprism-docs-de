@@ -45,6 +45,7 @@ nav:
       - Ordner: user-guide/organize/folders.md
       - Panoramas: user-guide/organize/panoramas.md
       - Scans: user-guide/organize/scans.md
+      - Tastenkombinationen: user-guide/organize/keyboard-shortcuts.md
   - Teilen:
       - Linkfreigabe: user-guide/share/share.md
       - Dateien hochladen: user-guide/share/services-share.md

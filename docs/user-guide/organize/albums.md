@@ -57,3 +57,16 @@ Dann bearbeite die Album Details und klicke *Speichern*
 
     ![Screenshot](img/remove-from-album-2503-german.jpg){ class="shadow" }
 
+### Album-Cover festlegen ###
+
+Um ein Titelbild für ein Album festzulegen:
+
+1. Öffne das Album, indem du darauf klickst.
+2. Klicke auf das Foto, das du als Cover verwenden möchtest.
+3. Wenn das Foto geöffnet ist, klicke oben rechts auf :material-dots-vertical:.
+4. Wähle im Menü **Als Albumcover verwenden** aus.
+
+    ![Screenshot](img/set-cover-2504-german.jpg){ class="shadow" }
+
+Dadurch wird das ausgewählte Foto als Titelbild für das Album festgelegt.
+
