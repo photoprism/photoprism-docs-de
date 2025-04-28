@@ -16,7 +16,7 @@ Das Kontext-Menü bietet die folgenden Aktionen:
 3. Wähle ein existierendes Album aus oder gib einen neuen Albumnamen ein
 5. Klicke auf *Hinzufügen*
 
-### Ordner-Cover festlegen ###
+## Cover ändern ##
 
 Um ein Titelbild für einen Ordner festzulegen:
 

@@ -57,7 +57,7 @@ Dann bearbeite die Album Details und klicke *Speichern*
 
     ![Screenshot](img/remove-from-album-2503-german.jpg){ class="shadow" }
 
-### Album-Cover festlegen ###
+### Cover ändern ###
 
 Um ein Titelbild für ein Album festzulegen:
 

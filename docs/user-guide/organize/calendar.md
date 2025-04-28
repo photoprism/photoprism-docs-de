@@ -27,7 +27,7 @@ Das Kontext-Menü ermöglicht die folgenden Aktionen:
 4. Wähle ein existierendes Album oder gib einen neuen Albumnamen ein
 5. Klicke auf *Hinzufügen*
 
-### Monats-Cover festlegen ###
+## Cover ändern ##
 
 Um ein Titelbild für einen Monat festzulegen:
 

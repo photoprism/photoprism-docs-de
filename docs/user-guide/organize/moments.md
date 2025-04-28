@@ -28,7 +28,7 @@ Mithilfe des Kontext-Menüs kannst du die folgenden Aktionen durchführen:
 3. Wähle ein existierendes Album oder gib einen neuen Albumnamen ein
 4. Klicke auf *Hinzufügen*
 
-### Ereignis-Cover festlegen ###
+## Cover ändern ##
 
 Um ein Titelbild für ein Ereignis festzulegen:
 
