@@ -12,7 +12,7 @@ PhotoPrism bietet eine Vielzahl von Tastenkombinationen, mit denen du die App ef
 | Strg + F                 | Suche fokussieren             |
 | Strg + R                 | Seite neu laden               |
 | Strg + U                 | Upload-Dialog öffnen          |
-| Umschalt + Strg + F      | Erweiterungs-Panel umschalten |
+| Umschalt + Strg + F      | Erweiterungs-Panel öffnen     |
 | Strg + F (auf Personen-, Kategorien-, Bibliotheksfehler-Seiten) | Suchfeld fokussieren |
 
 ## Viewer-Kurzbefehle
@@ -25,7 +25,7 @@ PhotoPrism bietet eine Vielzahl von Tastenkombinationen, mit denen du die App ef
 | Strg + A                 | Archivieren                   |
 | Strg + D                 | Herunterladen                 |
 | Strg + E                 | Bearbeiten                    |
-| Strg + F                 | Vollbild umschalten           |
+| Strg + F                 | Vollbild öffnen               |
 | Strg + L                 | Liken/Entliken                |
 
 !!! tip ""
