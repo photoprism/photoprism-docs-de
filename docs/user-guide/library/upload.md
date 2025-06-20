@@ -1,5 +1,8 @@
 # Web Upload #
 
+!!! tip "Tastenkombination"
+    Du kannst den Upload-Dialog schnell öffnen, indem du **Strg + U** von überall in der Anwendung drückst.
+
 === "Über Suchleiste"
 
     1. Klicke auf :material-dots-vertical: in der oberen rechten Ecke

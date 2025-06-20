@@ -3,6 +3,7 @@ nav:
   - Funktionen: index.md
   - Installation: user-guide/index.md
   - Erste Schritte 👣: user-guide/first-steps.md
+  - Tastenkombinationen: user-guide/organize/keyboard-shortcuts.md
   # - Setting up: user-guide/setup.md
   - Deine Dateien:
       - Übersicht: user-guide/library/import-vs-index.md
@@ -45,7 +46,6 @@ nav:
       - Ordner: user-guide/organize/folders.md
       - Panoramas: user-guide/organize/panoramas.md
       - Scans: user-guide/organize/scans.md
-      - Tastenkombinationen: user-guide/organize/keyboard-shortcuts.md
   - Teilen:
       - Linkfreigabe: user-guide/share/share.md
       - Dateien hochladen: user-guide/share/services-share.md

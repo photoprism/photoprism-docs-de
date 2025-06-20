@@ -25,3 +25,12 @@ Um zwischen den Ansichten zu wechseln, kannst du den entsprechenden Filter in de
 Alternativ kannst du dir Bilder und Videos auch in der *Vollbild Ansicht* anzeigen lassen. Um eine Diashow zu starten, klicke auf :material-play:.
 
 ![Screenshot](img/slideshow-2503-german.jpg){ class="shadow" }
+
+!!! tip "Tastenkombinationen im Vollbildmodus"
+    Im Vollbildmodus kannst du diese Tastenkombinationen für schnelle Aktionen verwenden:
+    
+    - **Strg + F** : Vollbildmodus ein-/ausschalten
+    - **Strg + S** : Diashow abspielen/anhalten
+    - **Strg + I** : Info-Panel ein-/ausblenden    
+    - **Strg + M** : Stumm schalten/Stummschaltung aufheben
+    - **Strg + L** : Liken/Entliken

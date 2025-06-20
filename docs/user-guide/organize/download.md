@@ -22,6 +22,8 @@
     !!! info ""
         Du kannst [konfigurieren](../settings/general.md#downloads), welche Dateien jeweils heruntergeladen werden sollen.
 
+    !!! tip "Tastenkombination"
+        Im Vollbild-Viewer kannst du Dateien schnell herunterladen, indem du **Strg + D** drückst.
 === "Bearbeitungs-Dialog"
      1. Öffne den [*Bearbeitungs-Dialog*](edit.md)
      2. Gehe zu *Dateien*
