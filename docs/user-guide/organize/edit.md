@@ -14,6 +14,9 @@ Während der [*Indexierung*](../library/indexing.md) liest PhotoPrism so viele D
       Klicke auf :material-pencil:, in der rechten oberen Ecke des Bildschirms
         ![Screenshot](img/edit-open-3-2503-german.jpg){ class="shadow" }
 
+    !!! tip "Tastenkombination"
+        Im Vollbild-Viewer kannst du den Bearbeitungs-Dialog schnell öffnen, indem du **Strg + E** drückst.
+
 === "Kontext-Menü"
      1. Selektiere ein oder mehrere Bilder
      2. Öffne das Kontext-Menü

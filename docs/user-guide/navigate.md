@@ -17,9 +17,15 @@ Befindet sich auf der linken Seite und ist auf mobilen Geräten minimiert. Klick
 
 Befindet sich ganz oben. Finde Bilder oder Videos, indem du zum Beispiel nach `cats` oder `label:cat` suchst. Eine Übersicht über alle Suchfilter findest du [hier](organize/search.md).
 
+!!! tip "Tastenkombination"
+    Du kannst das Suchfeld schnell fokussieren, indem du **Strg + F** drückst.
+
 #### 3. Reload-Funktion
 
 :material-refresh: lädt die Suchergebnisse neu, ohne die komplette Seite neu zu laden.
+
+!!! tip "Tastenkombination"
+    Du kannst die Seite schnell neu laden, indem du **Strg + R** drückst.
 
 #### 4. Ansicht wechseln
 
@@ -29,9 +35,15 @@ Klicke, um zu einer anderen Ansicht zu wechseln (Karten: :material-view-column:,
 
 :material-cloud-upload: öffnet den Upload-Dialog. Diese Funktion ist auf den meisten Seiten verfügbar, sofern PhotoPrism nicht im read-only Modus (schreibgeschützt) betrieben wird und der Upload nicht in den  [Einstellungen](settings/general.md) deaktiviert wurde.
 
+!!! tip "Tastenkombination"
+    Du kannst den Upload-Dialog schnell öffnen, indem du **Strg + U** drückst.
+
 #### 6. Filterleiste
 
 Die Filterleise enthält zusätzliche Suchfilter wie Land, Jahr, Monat, Kamera, Farbe oder Kategorie.
+
+!!! tip "Tastenkombination"
+    Du kannst die erweiterte Symbolleiste öffnen, indem du **Umschalt + Strg + F** drückst.
 
 #### 7. Kontext-Menü
 

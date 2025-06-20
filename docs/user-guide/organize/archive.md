@@ -2,6 +2,9 @@
 Du kannst Dateien, die du nicht in deiner Sammlung behalten möchtest archivieren. 
 Archivierte Dateien werden nicht gelöscht, sie werden allerdings ausschließlich im Bereich *Archiv* angezeigt.
 
+!!! tip "Tastenkombination"
+    Im Vollbild-Viewer kannst du Fotos schnell archivieren oder wiederherstellen, indem du **Strg + A** drückst.
+    
 ### Bilder archivieren ###
 
 1. Selektiere Bilder/Videos
