@@ -46,7 +46,7 @@ PhotoPrism enthält eine Standortkomponente, mit der Sie die Standortkoordinaten
 ![Screenshot](img/location-component-2507-german.jpg){ class="shadow" }
 
 !!! note ""
-    Mit dieser integrierten Funktionalität wird das [externe Geolocation-Browser-Plugin](https://github.com/andyvalerio/photoprism-geolocation) nicht mehr benötigt. Wir danken unserer Community für ihren wertvollen Beitrag, der diese Funktion inspiriert hat!
+    Mit dieser integrierten Funktionalität wird das [externe Geolocation Plugin](https://github.com/andyvalerio/photoprism-geolocation) nicht mehr benötigt. Wir danken unserer Community für ihren wertvollen Beitrag, der diese Funktion inspiriert hat!
 
 ### Kategorien bearbeiten ###
 Im Tab *Kategorien* können die [*Kategorien*](labels.md) eines Bildes/Videos angesehen und verändert werden.
