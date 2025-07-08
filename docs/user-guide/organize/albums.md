@@ -25,7 +25,7 @@ Gehe zu *Alben* und öffne den *Album-Bearbeitungs-Dialog*
 === "Album-Suchleiste"
     Öffne das Album und klicke :material-pencil: rechts oben.
     
-    ![Screenshot](img/album-edit-toolbar-2503-german.jpg){ class="shadow" }
+    ![Screenshot](img/album-edit-toolbar-2507-german.jpg){ class="shadow" }
     
 Dann bearbeite die Album Details und klicke *Speichern*
 
@@ -69,4 +69,16 @@ Um ein Titelbild für ein Album festzulegen:
     ![Screenshot](img/set-cover-2504-german.jpg){ class="shadow" }
 
 Dadurch wird das ausgewählte Foto als Titelbild für das Album festgelegt.
+
+### Album löschen ###
+
+=== "Kontext-Menü"
+      Selektiere Album, öffne das Kontext-Menü und klicke :material-delete:
+
+      ![Screenshot](img/album-delete-menu-2507-german.jpg){ class="shadow" }
+
+=== "Album-Suchleiste"
+       Öffne das Album, klicke :material-dots-vertical: und dann klicke **Album löschen**
+
+       ![Screenshot](img/album-delete-toolbar-2507-german.jpg){ class="shadow" }
 
