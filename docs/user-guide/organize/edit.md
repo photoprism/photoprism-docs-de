@@ -25,30 +25,28 @@ Während der [*Indexierung*](../library/indexing.md) liest PhotoPrism so viele D
     ![Screenshot](img/edit-open-2-2503-german.jpg){ class="shadow" }
 
 ### Bilddetails bearbeiten ###
-Im *Detail-Tab* des *Bearbeitungs-Dialogs* können die folgenden Daten angezeigt und verändert werden:
 
-* Titel, Bildunterschrift, Tag, Monat, Jahr, Ortszeit, Zeitzone, Land, Höhe, Breitengrad, Längengrad, Kamera, ISO, Belichtungszeit, Objektiv, F Nummer, Brennweite, Bildinhalt, Künstler, Copyright, Lizenz, Suchbegriffe, Notizen
+Im *Details*-Tab können Sie allgemeine Metadaten wie Titel, Datum, Ort, Kamera, Objektiv, Bildunterschrift und Copyright anzeigen und bearbeiten:
 
-![Screenshot](img/edit-details-2503-german.jpg){ class="shadow" }
+![Screenshot](img/edit-details-2507-german.jpg){ class="shadow" }
 
-*Speichern* speichert die aktuellen Änderungen.
-*Schließen* schließt den Dialog ohne Änderungen zu speichern.
+Viele dieser Informationen werden während der Indexierung automatisch erkannt und aktualisiert. Wenn Sie diese Felder bearbeiten, werden die geänderten Werte beibehalten und auch bei einer erneuten Indexierung Ihrer Bibliothek nicht überschrieben.
 
-!!! info ""
-    Kopierte Koordinaten im Format *48.265684, 7.721380* können in das Feld Längen- oder Breitengrad eingefügt werden.
+Um schnell neue Koordinaten zu setzen, können Sie diese in das *Ort*-Feld einfügen, wenn sie das Format *48.265684, 7.721380* haben. Alternativ können Sie auf das Standortmarkierungs-Symbol neben diesem Feld klicken, um die integrierte Standortkomponente zu öffnen und einen Ort visuell auszuwählen.
 
-!!! info ""
-    Viele Metadaten, wie Suchbegriffe, Titel, Ort der Aufnahme oder Kameradetails werden von PhotoPrism während der [*Indexierung*](../library/indexing.md) automatisch hinzugefügt.
-    Nimmst du manuell Änderungen an den Metadaten vor, werden diese von PhotoPrism bei einer erneuten Indexierung nicht überschrieben.
+Durch Klicken auf die Schaltfläche *Anwenden* werden die vorgenommenen Änderungen gespeichert, ohne den Dialog zu schließen, während die Schaltfläche *Schließen* den Dialog schließt, ohne weitere Änderungen zu speichern.
 
-!!! tip ""
-    Die Suchbegriffe können im Suchfeld verwendet werden, um Bilder und Videos zu finden.
+!!! note ""
+    Bei einer Suche kann Text in den Feldern *Titel*, *Bildunterschrift* und *Suchbegriffe* gefunden werden, während *Notizen* privat sind und ignoriert werden.
+    
+**Standortauswahl**
 
-#### Geolocation Plugin ####
+PhotoPrism enthält eine Standortkomponente, mit der Sie die Standortkoordinaten eines Bildes einfach ändern können, indem Sie seinen Standort auf einer Karte auswählen. Klicken Sie einfach auf das :material-map-marker: Symbol neben dem *Ort*-Feld, um die interaktive Kartenoberfläche zu öffnen. Sie können auch nach Standorten suchen, indem Sie Stadt- oder Straßennamen direkt in die Kartenkomponente eingeben.
 
-Mit dem open source [Geolocation Plugin](https://github.com/andyvalerio/photoprism-geolocation) kann der Aufnahmeort auch auf einer Weltkarte eingetragen werden. Das Plugin kann [über den Chrome Webstore installiert werden](https://chrome.google.com/webstore/detail/geolocation-plugin-for-ph/oggmpodnbdcmfiognbkkeffacpeaifch).
+![Screenshot](img/location-component-2507-german.jpg){ class="shadow" }
 
-![Screenshot](https://valerio.nu/maps/geolocation.jpg){ class="shadow" }
+!!! note ""
+    Mit dieser integrierten Funktionalität wird das [externe Geolocation-Browser-Plugin](https://github.com/andyvalerio/photoprism-geolocation) nicht mehr benötigt. Wir danken unserer Community für ihren wertvollen Beitrag, der diese Funktion inspiriert hat!
 
 ### Kategorien bearbeiten ###
 Im Tab *Kategorien* können die [*Kategorien*](labels.md) eines Bildes/Videos angesehen und verändert werden.
