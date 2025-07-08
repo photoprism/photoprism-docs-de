@@ -11,7 +11,7 @@
         Du kannst [mehrere Bilder auf einmal selektieren](../navigate.md#auswahlmodus-und-mehrfachauswahl), indem du die Shift Taste verwendest.
 
     !!! info ""
-        Du kannst [konfigurieren](../settings/general.md#downloads), welche Dateien jeweils heruntergeladen werden sollen.
+        Du kannst [konfigurieren](../settings/library.md#download), welche Dateien jeweils heruntergeladen werden sollen.
 
 === "Vollbild-Modus"
      1. Klicke auf das Bild

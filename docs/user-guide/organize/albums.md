@@ -73,7 +73,7 @@ Dadurch wird das ausgewählte Foto als Titelbild für das Album festgelegt.
 ### Album löschen ###
 
 === "Kontext-Menü"
-      Selektiere Album, öffne das Kontext-Menü und klicke :material-delete:
+      Selektiere Alben, öffne das Kontext-Menü und klicke :material-delete:
 
       ![Screenshot](img/album-delete-menu-2507-german.jpg){ class="shadow" }
 

@@ -29,7 +29,7 @@ Wenn diese Option aktiviert ist, werden private Bilder und Videos nicht in *Such
 Wenn diese Option deaktiviert ist, können keine Dateien über [*Upload*](../library/upload.md) hochgeladen werden.
 Diese Einstellung kann hilfreich sein, wenn du anderen Personen Zugriff auf dein PhotoPrism gibst, diese aber keine Dateien hochladen dürfen.
 
-#### :material-download: Download #### {#downloads}
+#### :material-download: Download ####
 Wenn diese Option deaktiviert ist, können keine Dateien über die PhotoPrism-Benutzeroberfläche heruntergeladen werden. Bitte beachte, dass es trotzdem möglich sein kann, Dateien mit den integrierten Browserfunktionen herunterzuladen.
 
 #### :material-folder-plus: Import ####

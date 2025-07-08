@@ -26,13 +26,13 @@ Während der [*Indexierung*](../library/indexing.md) liest PhotoPrism so viele D
 
 ### Bilddetails bearbeiten ###
 
-Im *Details*-Tab können Sie allgemeine Metadaten wie Titel, Datum, Ort, Kamera, Objektiv, Bildunterschrift und Copyright anzeigen und bearbeiten:
+Im *Details*-Tab können allgemeine Metadaten wie Titel, Datum, Ort, Kamera, Objektiv, Bildunterschrift und Copyright angezeigt und bearbeitet werden:
 
 ![Screenshot](img/edit-details-2507-german.jpg){ class="shadow" }
 
-Viele dieser Informationen werden während der Indexierung automatisch erkannt und aktualisiert. Wenn Sie diese Felder bearbeiten, werden die geänderten Werte beibehalten und auch bei einer erneuten Indexierung Ihrer Bibliothek nicht überschrieben.
+Viele dieser Informationen werden während der Indexierung automatisch erkannt und aktualisiert. Wenn diese Felder bearbeitet werden, werden die geänderten Werte beibehalten und auch bei einer erneuten Indexierung Ihrer Bibliothek nicht überschrieben.
 
-Um schnell neue Koordinaten zu setzen, können Sie diese in das *Ort*-Feld einfügen, wenn sie das Format *48.265684, 7.721380* haben. Alternativ können Sie auf das Standortmarkierungs-Symbol neben diesem Feld klicken, um die integrierte Standortkomponente zu öffnen und einen Ort visuell auszuwählen.
+Um schnell neue Koordinaten zu setzen, können diese in das *Ort*-Feld eingefügt werden, wenn sie das Format *48.265684, 7.721380* haben. Alternativ kann auf das Standortmarkierungs-Symbol neben diesem Feld geklickt werden, um die integrierte Standortkomponente zu öffnen und einen Ort visuell auszuwählen.
 
 Durch Klicken auf die Schaltfläche *Anwenden* werden die vorgenommenen Änderungen gespeichert, ohne den Dialog zu schließen, während die Schaltfläche *Schließen* den Dialog schließt, ohne weitere Änderungen zu speichern.
 
@@ -41,7 +41,7 @@ Durch Klicken auf die Schaltfläche *Anwenden* werden die vorgenommenen Änderun
     
 **Standortauswahl**
 
-PhotoPrism enthält eine Standortkomponente, mit der Sie die Standortkoordinaten eines Bildes einfach ändern können, indem Sie seinen Standort auf einer Karte auswählen. Klicken Sie einfach auf das :material-map-marker: Symbol neben dem *Ort*-Feld, um die interaktive Kartenoberfläche zu öffnen. Sie können auch nach Standorten suchen, indem Sie Stadt- oder Straßennamen direkt in die Kartenkomponente eingeben.
+PhotoPrism enthält eine Standortkomponente, mit der Standortkoordinaten eines Bildes einfach geändert werden können, indem sein Standort auf einer Karte ausgewählt wird. Klicke einfach auf das :material-map-marker: Symbol neben dem *Ort*-Feld, um die interaktive Kartenoberfläche zu öffnen. Es kann auch nach Standorten gesucht werden, indem Stadt- oder Straßennamen direkt in die Kartenkomponente eingegeben werden.
 
 ![Screenshot](img/location-component-2507-german.jpg){ class="shadow" }
 
