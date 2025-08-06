@@ -1,0 +1,3861 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Dokumentation">
+      
+      
+        <meta name="author" content="PhotoPrism UG">
+      
+      
+        <link rel="canonical" href="https://docs-de.photoprism.app/user-guide/settings/advanced/">
+      
+      
+        <link rel="prev" href="../library/">
+      
+      
+        <link rel="next" href="../sync/">
+      
+      
+        
+          <link rel="alternate" href="https://docs.photoprism.app/" hreflang="en">
+        
+          <link rel="alternate" href="/" hreflang="de">
+        
+      
+      
+      <link rel="icon" href="../../../icons/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16+insiders-4.53.16">
+    
+    
+      
+        <title>Erweitert - PhotoPrism</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.1caf78d2.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="../../../assets/external/fonts.googleapis.com/css.49ea35f2.css">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/custom.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PhotoPrism - Erweitert">
+  <meta property="og:description" content="Dokumentation">
+  <meta property="og:url" content="https://docs-de.photoprism.app/user-guide/settings/advanced/">
+  <meta property="og:image" content="https://i.photoprism.app/prism?cover=64&amp;style=centered%20dark&amp;title=Erweitert">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@photoprism_app">
+  <meta name="twitter:creator" content="@photoprism_app">
+  <meta name="twitter:title" content="PhotoPrism - Erweitert">
+  <meta name="twitter:description" content="Dokumentation">
+  <meta name="twitter:image" content="https://i.photoprism.app/prism?cover=64&amp;style=centered%20dark&amp;title=Erweitert">
+  <link rel="shortcut icon" sizes="512x512" type="image/png" href="/icons/logo/512.png">
+  <link rel="shortcut icon" sizes="256x256" type="image/png" href="/icons/logo/256.png">
+  <link rel="shortcut icon" sizes="196x196" type="image/png" href="/icons/logo/196.png">
+  <link rel="shortcut icon" sizes="192x192" type="image/png" href="/icons/logo/192.png">
+  <link rel="shortcut icon" sizes="160x160" type="image/png" href="/icons/logo/160.png">
+  <link rel="shortcut icon" sizes="144x144" type="image/png" href="/icons/logo/144.png">
+  <link rel="shortcut icon" sizes="128x128" type="image/png" href="/icons/logo/128.png">
+  <link rel="shortcut icon" sizes="114x114" type="image/png" href="/icons/logo/114.png">
+  <link rel="shortcut icon" sizes="72x72" type="image/png" href="/icons/logo/72.png">
+  <link rel="shortcut icon" sizes="32x32" type="image/png" href="/icons/logo/32.png">
+  <link rel="shortcut icon" sizes="16x16" type="image/png" href="/icons/logo/16.png">
+  <script async="async" defer="defer" data-domain="docs-de.photoprism.app" src="https://a.photoprism.app/js/s.outbound-links.js"></script>
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#erweiterte-einstellungen" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href="https://www.photoprism.app/" title="PhotoPrism" class="md-header__button md-logo" aria-label="PhotoPrism" data-md-component="logo">
+      
+  
+  <svg id="b01a508d-b59d-44f0-8be5-eca2aadd9bc2" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 253.78 224.78"><defs><style>.abae6701-d59a-4183-bf31-f7ca6639fed3,.e9c06423-71c9-47d7-ac4f-57ab05968afa{fill:none;}.e9270bc6-2df5-4c14-bf42-90cfc87d474b{clip-path:url(#ba383851-496a-4a7b-95ff-56b7a97252c7);}.e9c06423-71c9-47d7-ac4f-57ab05968afa{stroke:#000;stroke-miterlimit:10;stroke-width:3px;}</style><clipPath id="ba383851-496a-4a7b-95ff-56b7a97252c7"><rect class="abae6701-d59a-4183-bf31-f7ca6639fed3" x="-47.38" y="5.33" width="370.54" height="215.11"/></clipPath></defs><g class="e9270bc6-2df5-4c14-bf42-90cfc87d474b"><path class="e9c06423-71c9-47d7-ac4f-57ab05968afa" d="M248.26,187.21l-5.79,32m-236.15-31,19.06,18.88M152.54,24.27,25.43,206.59a.13.13,0,0,0,.09.2l216.74,12.43a.13.13,0,0,0,.12-.18L152.76,24.29A.13.13,0,0,0,152.54,24.27ZM126.35,6.64,5.74,188a.16.16,0,0,0,.14.25l241.63-1a.16.16,0,0,0,.14-.25L126.63,6.64A.17.17,0,0,0,126.35,6.64Zm.15-.21,26.17,17.66"/></g></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PhotoPrism
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Erweitert
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Sprache wechseln">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="https://docs.photoprism.app/" hreflang="en" class="md-select__link">
+              🇬🇧 English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/" hreflang="de" class="md-select__link">
+              🇩🇪 Deutsch
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/photoprism/photoprism" title="Zum Repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    photoprism/photoprism
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://www.photoprism.app/" title="PhotoPrism" class="md-nav__button md-logo" aria-label="PhotoPrism" data-md-component="logo">
+      
+  
+  <svg id="b01a508d-b59d-44f0-8be5-eca2aadd9bc2" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 253.78 224.78"><defs><style>.abae6701-d59a-4183-bf31-f7ca6639fed3,.e9c06423-71c9-47d7-ac4f-57ab05968afa{fill:none;}.e9270bc6-2df5-4c14-bf42-90cfc87d474b{clip-path:url(#ba383851-496a-4a7b-95ff-56b7a97252c7);}.e9c06423-71c9-47d7-ac4f-57ab05968afa{stroke:#000;stroke-miterlimit:10;stroke-width:3px;}</style><clipPath id="ba383851-496a-4a7b-95ff-56b7a97252c7"><rect class="abae6701-d59a-4183-bf31-f7ca6639fed3" x="-47.38" y="5.33" width="370.54" height="215.11"/></clipPath></defs><g class="e9270bc6-2df5-4c14-bf42-90cfc87d474b"><path class="e9c06423-71c9-47d7-ac4f-57ab05968afa" d="M248.26,187.21l-5.79,32m-236.15-31,19.06,18.88M152.54,24.27,25.43,206.59a.13.13,0,0,0,.09.2l216.74,12.43a.13.13,0,0,0,.12-.18L152.76,24.29A.13.13,0,0,0,152.54,24.27ZM126.35,6.64,5.74,188a.16.16,0,0,0,.14.25l241.63-1a.16.16,0,0,0,.14-.25L126.63,6.64A.17.17,0,0,0,126.35,6.64Zm.15-.21,26.17,17.66"/></g></svg>
+
+    </a>
+    PhotoPrism
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/photoprism/photoprism" title="Zum Repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    photoprism/photoprism
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Funktionen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../first-steps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Erste Schritte 👣
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organize/keyboard-shortcuts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tastenkombinationen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deine Dateien
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Deine Dateien
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../library/import-vs-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Übersicht
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../library/indexing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Originale indexieren
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../library/import/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dateien importieren
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../library/duplicates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Duplikat Erkennung
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../library/metadata/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unterstützung von Metadaten
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../library/upload/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web Datei Upload
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../library/webdav/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WebDAV Datei Sync
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../library/files/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Datei Browser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bilder finden
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bilder finden
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../navigate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Benutzeroberfläche
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organize/browse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bereiche
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organize/views/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ansichten
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organize/search/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Suchfilter verwenden
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Funktionen
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Funktionen
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organize/albums/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alben
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organize/people/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Personen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organize/labels/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kategorien
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organize/archive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archiv
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organize/delete/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Löschen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organize/private/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Privat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organize/review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Überprüfen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organize/stacks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bildstapel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organize/edit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metadaten bearbeiten
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organize/rotate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bilder drehen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organize/download/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herunterladen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organize/video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Videos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organize/places/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Orte
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organize/moments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ereignisse
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organize/calendar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kalender
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organize/folders/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ordner
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organize/panoramas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Panoramas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organize/scans/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scans
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teilen
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Teilen
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../share/share/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linkfreigabe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../share/services-share/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dateien hochladen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fern-Synchronisation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fern-Synchronisation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sync/webdav/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WebDAV Zugriff
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sync/sync-phone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Smartphones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sync/services-sync/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Andere Apps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Einstellungen
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Einstellungen
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../general/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Allgemein
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../library/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inhalte
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Erweitert
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Erweitert
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gobale-optionen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gobale Optionen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gobale Optionen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#debug-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Debug Logs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expermientelle-funktionen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expermientelle Funktionen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schreibgeschutzter-modus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schreibgeschützter Modus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keine-datensicherung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keine Datensicherung
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webdav-deaktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WebDAV deaktivieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#karten-deaktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Karten deaktivieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exiftool-deaktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ExifTool deaktivieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tensorflow-deaktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TensorFlow deaktivieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datensicherung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Datensicherung
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Datensicherung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#datenbank-backups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Datenbank Backups
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#album-backups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Album Backups
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sidecar-dateien" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sidecar Dateien
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vorschaubilder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vorschaubilder
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vorschaubilder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#skalierungsfilter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skalierungsfilter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statische-und-dynamische-maximalgroen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Statische und Dynamische Maximalgrößen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#welche-dateien-werden-von-photoprism-erstellt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Welche Dateien werden von PhotoPrism erstellt?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamische-vorschaubilder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dynamische Vorschaubilder
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bildqualitat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bildqualität
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bildqualität">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jpg-qualitat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JPG Qualität
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maximale-jpeg-groe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Maximale JPEG-Größe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maximale-png-groe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Maximale PNG Größe
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dateikonvertierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dateikonvertierung
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dateikonvertierung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#darktable-deaktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Darktable deaktivieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rawtherapee-deaktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RawTherapee deaktivieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presets-anwenden" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presets anwenden
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ffmpeg-deaktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FFmpeg deaktivieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imagemagick-deaktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ImageMagick deaktivieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vektorgrafiken-deaktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vektorgrafiken deaktivieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skalierungsfilter-beispiele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skalierungsfilter Beispiele
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sync/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dienste
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../account/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Konto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Backup Anleitung
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Backup Anleitung
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backups/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Backups erstellen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backups/restore/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Backups wiederherstellen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backups/export/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metadaten Export
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backups/folders/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Verzeichnis Übersicht
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Benutzer verwalten
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Benutzer verwalten
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Admin Web UI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CLI Commands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/roles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Benutzer Rollen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/sharing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teilen mit Gastnuztern
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/libraries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mehrere Bibliotheken
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/2fa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2FA einrichten
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cloud Migration
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cloud Migration
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../use-cases/google/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Google Photos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../use-cases/apple/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apple Photos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../use-cases/flickr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flickr
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pwa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mobile App (PWA)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gobale-optionen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gobale Optionen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gobale Optionen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#debug-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Debug Logs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expermientelle-funktionen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expermientelle Funktionen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schreibgeschutzter-modus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schreibgeschützter Modus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keine-datensicherung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keine Datensicherung
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webdav-deaktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WebDAV deaktivieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#karten-deaktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Karten deaktivieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exiftool-deaktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ExifTool deaktivieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tensorflow-deaktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TensorFlow deaktivieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datensicherung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Datensicherung
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Datensicherung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#datenbank-backups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Datenbank Backups
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#album-backups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Album Backups
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sidecar-dateien" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sidecar Dateien
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vorschaubilder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vorschaubilder
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vorschaubilder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#skalierungsfilter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skalierungsfilter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statische-und-dynamische-maximalgroen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Statische und Dynamische Maximalgrößen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#welche-dateien-werden-von-photoprism-erstellt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Welche Dateien werden von PhotoPrism erstellt?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamische-vorschaubilder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dynamische Vorschaubilder
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bildqualitat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bildqualität
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bildqualität">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jpg-qualitat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JPG Qualität
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maximale-jpeg-groe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Maximale JPEG-Größe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maximale-png-groe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Maximale PNG Größe
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dateikonvertierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dateikonvertierung
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dateikonvertierung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#darktable-deaktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Darktable deaktivieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rawtherapee-deaktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RawTherapee deaktivieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presets-anwenden" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presets anwenden
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ffmpeg-deaktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FFmpeg deaktivieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imagemagick-deaktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ImageMagick deaktivieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vektorgrafiken-deaktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vektorgrafiken deaktivieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skalierungsfilter-beispiele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skalierungsfilter Beispiele
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/photoprism/photoprism-docs-de/tree/develop/docs/user-guide/settings/advanced.md" title="Seite editieren" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="erweiterte-einstellungen">Erweiterte Einstellungen<a class="headerlink" href="#erweiterte-einstellungen" title="Permanent link">&para;</a></h1>
+<p>Systemkonfigurationsoptionen wie die Bildqualität können in den erweiterten Einstellungen geändert werden. Du kannst auch bestimmte Funktionen deaktivieren und den Debug- oder schreibgeschützten Modus aktivieren.</p>
+<div class="admonition tldr">
+<p>Da diese Einstellungen ohne Authentifizierung nicht sicher sind, sind sie nicht verfügbar, wenn du PhotoPrism im <a href="https://docs.photoprism.app/getting-started/config-options/#authentication">public Modus</a> verwendest. Das <a href="https://docs.photoprism.app/getting-started/config-options/">Ändern von Konfigurationsoptionen</a> ist weiterhin über Konfigurationsdateien und Befehlsparameter möglich.</p>
+</div>
+<div class="admonition attention">
+<p>Änderungen von erweiterten Einstellungen erfordern immer einen Neustart.
+Wenn du die Thumbnail-Qualität oder Größen Einstellungen änderst, werden bereits erstellte Thumbnails nicht gelöscht.
+Thumbnails können über die <a href="https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface">Kommandozeile</a> neu generiert werden.</p>
+</div>
+<p><img alt="Screenshot" class="shadow" src="../img/settings-advanced-2503-german.jpg" /></p>
+<p>Alle <a href="https://docs.photoprism.app/getting-started/config-options/">Optionen</a> können in deiner <code>docker-compose.yml</code> oder auch über Kommandozeilenparameter gesetzt werden. 
+Manuell geänderte Werte werden in einer Konfigurationsdatei gespeichert. Sie wird standardmäßig im Ordner <code>storage/config</code> gespeichert. </p>
+<h2 id="gobale-optionen">Gobale Optionen<a class="headerlink" href="#gobale-optionen" title="Permanent link">&para;</a></h2>
+<h3 id="debug-logs">Debug Logs<a class="headerlink" href="#debug-logs" title="Permanent link">&para;</a></h3>
+<p>Debug Logs unter <em>Dateien&gt;Logs</em> anzeigen.
+Änderungen erfordern einen Neustart.</p>
+<p>Der entsprechende <a href="https://docs.photoprism.app/getting-started/config-options#logging">Konfigurations-Parameter</a> ist <code>PHOTOPRISM_DEBUG</code>.</p>
+<h3 id="expermientelle-funktionen">Expermientelle Funktionen<a class="headerlink" href="#expermientelle-funktionen" title="Permanent link">&para;</a></h3>
+<p>Aktiviert neue Funktionen, an denen derzeit noch entwickelt wird.</p>
+<p>Der entsprechende <a href="https://docs.photoprism.app/getting-started/config-options#feature-flags">Konfigurations-Parameter</a> ist <code>PHOTOPRISM_EXPERIMENTAL</code>.</p>
+<h3 id="schreibgeschutzter-modus">Schreibgeschützter Modus<a class="headerlink" href="#schreibgeschutzter-modus" title="Permanent link">&para;</a></h3>
+<p>Ist diese Option gewählt, können Dateien nicht importiert, über die Benutzeroberfläche hochgeladen oder gelöscht werden.</p>
+<p>Der entsprechende <a href="https://docs.photoprism.app/getting-started/config-options#feature-flags">Konfigurations-Parameter</a> ist <code>PHOTOPRISM_READONLY</code>.</p>
+<h3 id="keine-datensicherung">Keine Datensicherung<a class="headerlink" href="#keine-datensicherung" title="Permanent link">&para;</a></h3>
+<p>Diese Option verhindert die Erstellung von Datenbank-, Album- und YAML-Sidecar-Dateisicherungen.</p>
+<p>Der entsprechende <a href="https://docs.photoprism.app/getting-started/config-options/">Konfigurations-Parameter</a> ist <code>PHOTOPRISM_DISABLE_BACKUPS</code>.</p>
+<h3 id="webdav-deaktivieren">WebDAV deaktivieren<a class="headerlink" href="#webdav-deaktivieren" title="Permanent link">&para;</a></h3>
+<p>Deaktiviert den eingebauten WebDAV-Server. Änderungen erfordern einen Neustart.</p>
+<p>Der entsprechende <a href="https://docs.photoprism.app/getting-started/config-options#feature-flags">Konfigurations-Parameter</a> ist <code>PHOTOPRISM_DISABLE_WEBDAV</code>.</p>
+<h3 id="karten-deaktivieren">Karten deaktivieren<a class="headerlink" href="#karten-deaktivieren" title="Permanent link">&para;</a></h3>
+<p>Wenn Karten deaktiviert sind, liest PhotoPrism trotzdem noch Geo-Informationen (Längen- und Breitengrad) aus den Metadaten deiner Dateien aus.
+Es wird allerding kein Reverse Lookup mehr gemacht, um Informationen über die Orte, der Koordinaten, abzufragen.</p>
+<p>Die Karten Ansicht ist nicht sichtbar.</p>
+<p>Der entsprechende <a href="https://docs.photoprism.app/getting-started/config-options#feature-flags">Konfigurations-Parameter</a> ist <code>PHOTOPRISM_DISABLE_PLACES</code>.</p>
+<h3 id="exiftool-deaktivieren">ExifTool deaktivieren<a class="headerlink" href="#exiftool-deaktivieren" title="Permanent link">&para;</a></h3>
+<p>Keine JSON-Dateien  in <code>storage/sidecar</code> mit ExifTool erstellen.</p>
+<p>Beachte, dass du Exiftool aktiviert haben musst, um Videometadaten wie Dauer, Auflösung und Codec zu extrahieren.</p>
+<p>Der entsprechende <a href="https://docs.photoprism.app/getting-started/config-options/">Konfigurations-Parameter</a> ist <code>PHOTOPRISM_DISABLE_EXIFTOOL</code>.</p>
+<h3 id="tensorflow-deaktivieren">TensorFlow deaktivieren<a class="headerlink" href="#tensorflow-deaktivieren" title="Permanent link">&para;</a></h3>
+<p>TensorFlow nicht zur automatischen Bild-Kategorisierung und zur Gesichtserkennung verwenden.</p>
+<p>Der entsprechende <a href="https://docs.photoprism.app/getting-started/config-options/">Konfigurations-Parameter</a> ist <code>PHOTOPRISM_DISABLE_TENSORFLOW</code>.</p>
+<h2 id="datensicherung">Datensicherung<a class="headerlink" href="#datensicherung" title="Permanent link">&para;</a></h2>
+<h3 id="datenbank-backups">Datenbank Backups<a class="headerlink" href="#datenbank-backups" title="Permanent link">&para;</a></h3>
+<p>Datenbank-Backups werden nach dem konfigurierten Zeitplan erstellt.</p>
+<p>Der entsprechende <a href="https://docs.photoprism.app/getting-started/config-options.md#backup">Konfigurations-Parameter</a> ist <code>PHOTOPRISM_BACKUP_DATABASE</code>.
+Der Zeitplan sowie die Anzahl der Backups, die aufbewahrt werden, können mittels <code>PHOTOPRISM_BACKUP_SCHEDULE</code> und <code>PHOTOPRISM_BACKUP_RETAIN</code> <a href="https://docs.photoprism.app/getting-started/config-options.md#backup">konfiguriert</a> werden.</p>
+<h3 id="album-backups">Album Backups<a class="headerlink" href="#album-backups" title="Permanent link">&para;</a></h3>
+<p><a href="../../backups/export/">YAML-Dateien, die die Metadaten von Alben sichern</a> werden nach dem konfigurierten Zeitplan erstellt.</p>
+<p>Der entsprechende <a href="https://docs.photoprism.app/getting-started/config-options.md#backup">Konfigurations-Parameter</a> ist <code>PHOTOPRISM_BACKUP_ALBUMS</code>.
+Der Zeitplan kann mittels <a href="https://docs.photoprism.app/getting-started/config-options.md#backup"><code>PHOTOPRISM_BACKUP_SCHEDULE</code></a> konfiguriert werden.</p>
+<h3 id="sidecar-dateien">Sidecar Dateien<a class="headerlink" href="#sidecar-dateien" title="Permanent link">&para;</a></h3>
+<p><a href="../../backups/export/">YAML-Dateien, die die Metadaten von Bildern sichern</a> werden erstellt.</p>
+<p>Der entsprechende <a href="https://docs.photoprism.app/getting-started/config-options.md#sidecar-files">Konfigurations-Parameter</a> ist <code>PHOTOPRISM_SIDECAR_YAML</code>.</p>
+<h2 id="vorschaubilder">Vorschaubilder<a class="headerlink" href="#vorschaubilder" title="Permanent link">&para;</a></h2>
+<p>In diesem Bereich wird festgelegt, wie JPEG-Vorschaubilder und Miniaturansichten gerendert werden. Das sind hochwertige, verkleinerte Versionen deiner Originale.</p>
+<p><a href="https://docs.photoprism.app/getting-started/faq/#why-is-my-storage-folder-so-large-what-is-in-it">Vorschaubilder sind notwendig</a>, weil Webbrowser große Bilder nur schlecht an den Bildschirm anpassen können. 
+Die Verwendung von Originalen in voller Auflösung für Diashows und in Suchergebnissen würde außerdem viel Speicherplatz im Browser verbrauchen und die Geschwindigkeit der Indexierung deutlich verringern.</p>
+<h3 id="skalierungsfilter">Skalierungsfilter<a class="headerlink" href="#skalierungsfilter" title="Permanent link">&para;</a></h3>
+<p>Du kannst den Algorithmus wählen, der verwendet werden soll, um JPEG Vorschaubilder ('Thumbnails') zu erstellen.</p>
+<p>Beispiele der verfügbaren Filter findest du im <a href="#skalierungsfilter-beispiele">folgenden Abschnitt</a>.</p>
+<p>Um einen guten Kompromiss zwischen Qualität und Leistung zu finden, empfehlen wir den <em>Lanczos-Filter</em>. 
+Er ist zwar etwas langsamer bei der Erstellung von Miniaturansichten, erzeugt aber Bilder von sehr hoher Qualität. Im Vergleich dazu kann der weniger anspruchsvolle <em>kubische Filter</em> 30 % schneller sein.</p>
+<p>Der entsprechende <a href="https://docs.photoprism.app/getting-started/config-options/">Konfigurations-Parameter</a> ist <code>PHOTOPRISM_THUMB_FILTER</code>.</p>
+<div class="admonition info">
+<p>Diese Option ist nur verfügbar, wenn <code>PHOTOPRISM_THUMB_LIBRARY</code> in deiner Konfigurationsdatei <code>compose.yaml</code> oder <code>docker-compose.yml</code> auf <code>„imaging“</code> gesetzt ist.</p>
+</div>
+<h3 id="statische-und-dynamische-maximalgroen">Statische und Dynamische Maximalgrößen<a class="headerlink" href="#statische-und-dynamische-maximalgroen" title="Permanent link">&para;</a></h3>
+<p><strong>Statische Maximalgröße</strong>:
+Maximalgröße, für Thumbnails, die während des Import- bzw Indexiervorgangs erstellt werden.</p>
+<p>Der entsprechende <a href="https://docs.photoprism.app/getting-started/config-options/">Konfigurations-Parameter</a> ist <code>PHOTOPRISM_THUMB_SIZE</code>.</p>
+<p><strong>Dynamische Maximalgröße</strong>:
+Maximalgröße, für Thumbnails, die on demand erstellt werden.</p>
+<p>Der entsprechende <a href="https://docs.photoprism.app/getting-started/config-options/">Konfigurations-Parameter</a> ist <code>PHOTOPRISM_THUMB_SIZE_UNCACHED</code>.</p>
+<div class="admonition danger">
+<p>Die Verringerung des statischen Größenlimits hat erhebliche Auswirkungen auf die Ergebnisse der <a href="../../organize/people/">Gesichtserkennung</a> und Bildklassifizierung.
+Einfach ausgedrückt, bedeutet das, dass der Indexer nicht mehr richtig sehen kann.</p>
+</div>
+<div class="admonition warning">
+<p>Wenn die eingestellte Maximalgröße überschritten wird (z.B. wenn Nutzer einen großen Bildschirm verwenden),
+und kein Thumbnail in der angefragten Größe vorhanden ist, wird das Originalbild angezeigt.
+<strong>Dies kann dazu führen, dass Bilder in der falschen Orientierung dargestellt werden.</strong></p>
+</div>
+<p>Die Maximalgröße muss mindestens 720px sein, um zu gewährleisten, dass Thumbnails für Farberkennung, Gesichtserkennung, Bildklassifizierung sowie die Ansichten vorhanden sind.</p>
+<p>Wir empfehlen eine hohe Maximalgröße.
+Sollte der von Thumbnails belegte Speicherplatz allerdings ein Problem darstellen, kannst du eine niedrigere statische Maximalgröße einstellen.
+Setze in diesem Fall eine hohe dynamische Maximalgröße, damit dein Server bei Bedarf Vorschaubilder erstellen kann.
+Beachte, dass dies eine hohe Rechenleistung erfordert und es zu einer Verzögerung kommen kann, wenn du Bilder im Vollbildmodus betrachten willst.</p>
+<div class="admonition tip">
+<p>Falls du im Vollbildmodus deine Originalbilder angezeigt bekommen möchtest, aktiviere <em>Dynamische Vorschaubilder</em>,
+und setze niedrige dynamische und statische Maximalgrößen (z.B. 720).</p>
+</div>
+<h3 id="welche-dateien-werden-von-photoprism-erstellt">Welche Dateien werden von PhotoPrism erstellt?<a class="headerlink" href="#welche-dateien-werden-von-photoprism-erstellt" title="Permanent link">&para;</a></h3>
+<p>Das kleinste konfigurierbare statische und dynamische Maximalgröße ist 720px, so dass die meisten Größen bis zu <code>fit_720</code> standardmäßig <strong>immer</strong> erzeugt werden.
+<a href="#statische-und-dynamische-maximalgroen">Höhere Maximalgrößen</a> generieren Thumbnails mit mehr Details bei höheren Auflösungen - entweder statisch (vorgeneriert während der Indexierung) oder <strong>on demand</strong>, wenn die <a href="#dynamische-vorschaubilder">Konfiguration es erlaubt</a>.</p>
+<p><strong>Optionale</strong> Vorschaubilder können nicht vorgeneriert werden und werden nur auf Anfrage gerendert, z. B. beim Teilen eines Bildes auf Instagram.</p>
+<p>Folgende Tabelle listet die verschiedenen Thumbnailgrößen sowie ihre Anwendung:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Width</th>
+<th>Height</th>
+<th>Aspect Ratio</th>
+<th>Available</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>colors</td>
+<td>3</td>
+<td>3</td>
+<td>1:1</td>
+<td>Always</td>
+<td>Color Detection</td>
+</tr>
+<tr>
+<td>tile_50</td>
+<td>50</td>
+<td>50</td>
+<td>1:1</td>
+<td>Always</td>
+<td>List View</td>
+</tr>
+<tr>
+<td>tile_100</td>
+<td>100</td>
+<td>100</td>
+<td>1:1</td>
+<td>Always</td>
+<td>Places View</td>
+</tr>
+<tr>
+<td>left_224</td>
+<td>224</td>
+<td>224</td>
+<td>1:1</td>
+<td>On-Demand</td>
+<td>AI</td>
+</tr>
+<tr>
+<td>right_224</td>
+<td>224</td>
+<td>224</td>
+<td>1:1</td>
+<td>On-Demand</td>
+<td>AI</td>
+</tr>
+<tr>
+<td>tile_224</td>
+<td>224</td>
+<td>224</td>
+<td>1:1</td>
+<td>Always</td>
+<td>AI, Mosaic View</td>
+</tr>
+<tr>
+<td>left_384</td>
+<td>384</td>
+<td>384</td>
+<td>1:1</td>
+<td>Optional</td>
+<td>AI</td>
+</tr>
+<tr>
+<td>right_384</td>
+<td>384</td>
+<td>384</td>
+<td>1:1</td>
+<td>Optional</td>
+<td>AI</td>
+</tr>
+<tr>
+<td>tile_384</td>
+<td>384</td>
+<td>384</td>
+<td>1:1</td>
+<td>Optional</td>
+<td>AI</td>
+</tr>
+<tr>
+<td>left_480</td>
+<td>480</td>
+<td>480</td>
+<td>1:1</td>
+<td>Optional</td>
+<td>AI</td>
+</tr>
+<tr>
+<td>right_480</td>
+<td>480</td>
+<td>480</td>
+<td>1:1</td>
+<td>Optional</td>
+<td>AI</td>
+</tr>
+<tr>
+<td>tile_480</td>
+<td>480</td>
+<td>480</td>
+<td>1:1</td>
+<td>Optional</td>
+<td>AI</td>
+</tr>
+<tr>
+<td>tile_500</td>
+<td>500</td>
+<td>500</td>
+<td>1:1</td>
+<td>Always</td>
+<td>Cards View</td>
+</tr>
+<tr>
+<td>fit_720</td>
+<td>720</td>
+<td>720</td>
+<td>Preserved</td>
+<td>Always</td>
+<td>SD TV, Mobile</td>
+</tr>
+<tr>
+<td>tile_1080</td>
+<td>1080</td>
+<td>1080</td>
+<td>1:1</td>
+<td>Optional</td>
+<td>Instagram</td>
+</tr>
+<tr>
+<td>fit_1280</td>
+<td>1280</td>
+<td>1024</td>
+<td>Preserved</td>
+<td>On-Demand</td>
+<td>HD TV, SXGA</td>
+</tr>
+<tr>
+<td>fit_1600</td>
+<td>1600</td>
+<td>900</td>
+<td>Preserved</td>
+<td>Optional</td>
+<td>Social Media</td>
+</tr>
+<tr>
+<td>fit_1920</td>
+<td>1920</td>
+<td>1200</td>
+<td>Preserved</td>
+<td>On-Demand</td>
+<td>Full HD</td>
+</tr>
+<tr>
+<td>fit_2048</td>
+<td>2048</td>
+<td>2048</td>
+<td>Preserved</td>
+<td>Optional</td>
+<td>DCI 2K, Tablets</td>
+</tr>
+<tr>
+<td>fit_2560</td>
+<td>2560</td>
+<td>1600</td>
+<td>Preserved</td>
+<td>On-Demand</td>
+<td>Quad HD</td>
+</tr>
+<tr>
+<td>fit_3840</td>
+<td>3840</td>
+<td>2400</td>
+<td>Preserved</td>
+<td>Optional</td>
+<td>4K Ultra HD</td>
+</tr>
+<tr>
+<td>fit_4096</td>
+<td>4096</td>
+<td>4096</td>
+<td>Preserved</td>
+<td>On-Demand</td>
+<td>DCI 4K, Retina 4K</td>
+</tr>
+<tr>
+<td>fit_5120</td>
+<td>5120</td>
+<td>5120</td>
+<td>Preserved</td>
+<td>On-Demand</td>
+<td>Retina 5K</td>
+</tr>
+<tr>
+<td>fit_7680</td>
+<td>7680</td>
+<td>4320</td>
+<td>Preserved</td>
+<td>On-Demand</td>
+<td>8K Ultra HD 2</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tldr">
+<p>Die Thumbnails werden in <code>storage/cache/thumbnails</code>gespeichert. Der genaue Pfad ist abhängig von Thumbnail-Größe und Hash der Originaldatei z.B.
+<code>storage/cache/thumbnails/1/a/3/1a30c1f...9_100x100_center.jpg</code></p>
+</div>
+<h3 id="dynamische-vorschaubilder">Dynamische Vorschaubilder<a class="headerlink" href="#dynamische-vorschaubilder" title="Permanent link">&para;</a></h3>
+<p>Vorschaubilder können on-demand erstellt werden, also erst, wenn sie gebraucht werden. 
+Dies ist beispielsweise beim Betrachten der Bilder der Fall.
+Das spart Speicherplatz, ist aber rechenintensiver und wird daher nicht empfohlen, wenn du auf weniger leistungsfähigen Geräten (wie dem Raspberry Pi) arbeitest.</p>
+<p>Der entsprechende <a href="https://docs.photoprism.app/getting-started/config-options/">Konfigurations-Parameter</a> ist <code>PHOTOPRISM_THUMB_UNCACHED</code>.</p>
+<h2 id="bildqualitat">Bildqualität<a class="headerlink" href="#bildqualitat" title="Permanent link">&para;</a></h2>
+<h3 id="jpg-qualitat">JPG Qualität<a class="headerlink" href="#jpg-qualitat" title="Permanent link">&para;</a></h3>
+<p>Um Thumbnails in bestmöglicher Qualität zu erhalten, solltest du die <em>JPEG</em>-Qualität auf ein Minimum von 90 einstellen. 
+Generell gilt: je höher die Qualität, desto mehr Speicherplatz brauchen die Thumbnails und desto länger dauert die Generierung.</p>
+<ul>
+<li>Qualitäts-Level von &gt;90% werden als hoch eingestuft.</li>
+<li>80%-90% gilt als mittlere Qualität</li>
+<li>70-80% gilt als niedrige Qualität (z.B. stark komprimierte Bilder auf Social Media). </li>
+</ul>
+<p>Alles mit einer Qualität von unter 70% gilt als sehr niedrig.</p>
+<p>Beispiel: Bei einer JPEG-Qualität von 95 sind die Vorschaubilder ca 500kB groß. Bei einer Qualität von 80 ist die Größe auf ca 100kB reduziert.</p>
+<div class="admonition tldr">
+<p><strong>Das Qualitätsempfinden hängt stark davon ab, wie viele Informationen ein Bild enthält.</strong> 
+Leere Flächen oder Himmel, lassen sich leicht komprimieren. Während Bilder mit vielen Details am meisten unter der Komprimierung leiden.
+Deshalb wirkt sich eine Verringerung der Qualität der Thumbnails auch negativ auf die Ergebnisse der Gesichtserkennung und Bildklassifizierung aus. </p>
+</div>
+<p>Der entsprechende <a href="https://docs.photoprism.app/getting-started/config-options/">Konfigurations-Parameter</a> ist <code>PHOTOPRISM_JPEG_QUALITY</code>.</p>
+<h3 id="maximale-jpeg-groe">Maximale JPEG-Größe<a class="headerlink" href="#maximale-jpeg-groe" title="Permanent link">&para;</a></h3>
+<p>Hiermit wird die maximale Größe der JPEG-Dateien festgelegt, die bei der Umwandlung von Original-RAW-Bildern erstellt werden.</p>
+<div class="admonition tldr">
+<p><a href="https://docs.photoprism.app/known-issues/#jpeg-size-limit">RawTherapee und "heif-convert" können die Auflösung von JPEG-Dateien nicht begrenzen</a> , wenn sie Dateien aus anderen Formaten wie RAW, DNG, HEIC oder AVIF konvertieren.</p>
+</div>
+<p>Der entsprechende <a href="https://docs.photoprism.app/getting-started/config-options/">Konfigurations-Parameter</a> ist <code>PHOTOPRISM_JPEG_SIZE</code>.</p>
+<h3 id="maximale-png-groe">Maximale PNG Größe<a class="headerlink" href="#maximale-png-groe" title="Permanent link">&para;</a></h3>
+<p>Hiermit wird die maximale Größe der PNG-Dateien festgelegt, die bei der Umwandlung von Original-Dateien erstellt werden.</p>
+<p>Der entsprechende <a href="https://docs.photoprism.app/getting-started/config-options/">Konfigurations-Parameter</a> ist <code>PHOTOPRISM_PNG_SIZE</code>.</p>
+<h2 id="dateikonvertierung">Dateikonvertierung<a class="headerlink" href="#dateikonvertierung" title="Permanent link">&para;</a></h2>
+<p>Viele Fotografen, insbesondere Nutzer einer digitalen SLR, verwenden ein verlustfreies RAW-Format anstelle des verlustbehafteten JPEG-Formats. Es gibt auch <a href="https://www.fredericpaulussen.be/how-to-raw-photos-huawei-p30-pro/">Handies</a>, die RAW-Daten abspeichern können oder das Format HEIC/HEIF nutzen.</p>
+<p>Unser Ziel ist eine umfangreiche Unterstützung für alle <a href="https://en.wikipedia.org/wiki/Raw_image_format">RAW-Formate</a>, unabhängig vom verwendeten Kameramodell. Deshalb bitten wir dich uns eine Nachricht zu schicken, falls du ein Problem mit den Dateien von einem deiner Geräte hast.</p>
+<p>Webbrowser können keine RAW-Formate anzeigen. Deshalb muss PhotoPrism diese Dateien zu JPEGs <em>konvertieren</em>. Falls du das nicht möchtest, kannst du das in den <a href="../library/">Einstellungen</a> ausschalten.</p>
+<p>Zusätzlich zu den oben genannten Formaten unterstützt PhotoPrism auch BMP-, GIF-, PNG- und TIFF-Dateien. Bevor du diese Formate zur Speicherung nutzt, solltest du bedenken, dass diese oft keine Metadaten speichern können. Deshalb werden sie in der Regel für Screenshots, Diagramme und Icons verwendet.</p>
+<p><img alt="" class="shadow" src="../img/editPhoto.jpg" /></p>
+<div class="admonition info">
+<p>Von PhotoPrism erstellte Sidecar-Dateien werden außerhalb des Originals Verzeichnis gespeichert, so dass die RAW zu JPEG Konvertierung auch im
+Read-Only Modus verfügbar ist.</p>
+</div>
+<h3 id="darktable-deaktivieren">Darktable deaktivieren<a class="headerlink" href="#darktable-deaktivieren" title="Permanent link">&para;</a></h3>
+<p>Wenn diese Funktion deaktiviert ist, wird <a href="https://www.darktable.org/">Darktable</a> nicht für die RAW-Konvertierung verwendet.</p>
+<p>Der entsprechende <a href="https://docs.photoprism.app/getting-started/config-options/">Konfigurations-Parameter</a> ist <code>PHOTOPRISM_DISABLE_DARKTABLE</code>.</p>
+<h3 id="rawtherapee-deaktivieren">RawTherapee deaktivieren<a class="headerlink" href="#rawtherapee-deaktivieren" title="Permanent link">&para;</a></h3>
+<p>Wenn diese Funktion deaktiviert ist, wird <a href="https://www.rawtherapee.com/">RawTherapee</a> nicht für die RAW-Konvertierung verwendet.
+Der entsprechende <a href="https://docs.photoprism.app/getting-started/config-options/">Konfigurations-Parameter</a> ist <code>PHOTOPRISM_DISABLE_RAWTHERAPEE</code>.</p>
+<h3 id="presets-anwenden">Presets anwenden<a class="headerlink" href="#presets-anwenden" title="Permanent link">&para;</a></h3>
+<p>Aktiviert Benutzerdefinierte Voreinstellungen. Dateien werden möglicherweise langsamer konvertiert.</p>
+<p>Der entsprechende <a href="https://docs.photoprism.app/getting-started/config-options/">Konfigurations-Parameter</a> ist <code>PHOTOPRISM_RAW_PRESETS</code>.</p>
+<h3 id="ffmpeg-deaktivieren">FFmpeg deaktivieren<a class="headerlink" href="#ffmpeg-deaktivieren" title="Permanent link">&para;</a></h3>
+<p>Wenn diese Funktion deaktiviert ist, wird <a href="https://www.ffmpeg.org/documentation.html">FFmpeg</a> nicht zum Transkodieren von Videos oder zum Extrahieren von Standbildern für die Erstellung von Vorschaubildern verwendet, und das Indexieren oder Importieren von Videodateien ist nicht möglich.</p>
+<p>Der entsprechende <a href="https://docs.photoprism.app/getting-started/config-options/">Konfigurations-Parameter</a> ist <code>PHOTOPRISM_DISABLE_FFMPEG</code>.</p>
+<div class="admonition info">
+<p>Um zu verhindern, dass unerfahrene Benutzer versehentlich die Erstellung von Vorschaubildern für Videos deaktivieren, kann <em>FFmpeg</em> nur deaktiviert werden, wenn <a href="#expermientelle-funktionen">Experimentelle Funktionen</a> aktiviert sind.</p>
+</div>
+<h3 id="imagemagick-deaktivieren">ImageMagick deaktivieren<a class="headerlink" href="#imagemagick-deaktivieren" title="Permanent link">&para;</a></h3>
+<p>Wenn diese Funktion deaktiviert ist, wird <a href="https://imagemagick.org/">ImageMagick</a> nicht für die Konvertierung verwendet.</p>
+<p>Der entsprechende <a href="https://docs.photoprism.app/getting-started/config-options/">Konfigurations-Parameter</a> ist <code>PHOTOPRISM_DISABLE_IMAGEMAGICK</code>.</p>
+<h3 id="vektorgrafiken-deaktivieren">Vektorgrafiken deaktivieren<a class="headerlink" href="#vektorgrafiken-deaktivieren" title="Permanent link">&para;</a></h3>
+<p>Deaktiviert die Unterstützung von Vektorgrafiken.</p>
+<h2 id="skalierungsfilter-beispiele">Skalierungsfilter Beispiele<a class="headerlink" href="#skalierungsfilter-beispiele" title="Permanent link">&para;</a></h2>
+<p>Originalbild:</p>
+<p><img alt="" class="shadow" src="../img/branches.jpg" /></p>
+<p>Dieses Bild wurde unter der Verwendung von verschiedenen Filtern von 600x400 Pixeln auf 150x100 Pixel skaliert.
+Die Liste ist sortiert nach Rechengeschwindigkeit.</p>
+<p>An erster Stelle steht der schnellste Filter mit der niedgrigsten Qualität, an letzer Stelle der langsamste Filter mit der besten Qualität.</p>
+<table>
+<thead>
+<tr>
+<th>Filter</th>
+<th>Ergebnis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nächster Nachbar</td>
+<td><img alt="" src="../img/out_resize_nearest.jpg" /></td>
+</tr>
+<tr>
+<td>Bilinear</td>
+<td><img alt="" src="../img/out_resize_linear.jpg" /></td>
+</tr>
+<tr>
+<td>Bikubisch (Scharf)</td>
+<td><img alt="" src="../img/out_resize_catrom.jpg" /></td>
+</tr>
+<tr>
+<td>Lanczos</td>
+<td><img alt="" src="../img/out_resize_lanczos.jpg" /></td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://dl.photoprism.app/pdf/publications/20160201-Comparative_Analysis_of_Image_Interpolation.pdf">A Comparative Analysis of Image Interpolation Algorithms</a></p>
+<!--## Filter ##
+
+Quelle: https://ijarcce.com/wp-content/uploads/2016/02/IJARCCE-7.pdf
+
+### Linear ###
+
+Die bilineare Interpolation berechnet den Wert eines Pixels indem ein gewichteter Mittelwert der vier benachbarten Pixel berechnet wird. Das dabei entstehende Bild ist weicher als das Originalbild. Wenn die Distanzen zu den verwendeten Pixeln gleich sind, dann ist der interpolierte Wert eines Pixels gleich der Summe der Distanzen geteilt durch vier.
+Bei der bilinearen Interpolation wird die Interpolation in beiden Richtungen, horizontal und vertikal, durchgeführt. Das Ergebnis ist qualitativ besser als *Nächster Nachbar* und benötigt weniger Rechenzeit als die bikubische Interpolation.
+
+### Kubisch ###
+
+Catmull-Rom ist ein lokal interpolierendes Kurvenintervall was speziell für die Verwendung in der Computergrafik entwickelt wurde. Während die ursprüngliche Verwendung im Design von Oberflächen und Kurven lag, wird es mittlerweile auch in anderen Bereichen eingesetzt. Catmull-Rom Splines gehören zur Familie von kubischen, interpolierenden Splines, so dass die Tangente an jedem Punkt mithilfe des vorherigen und des nächsten Punkts auf dem Kurvenintervall berechnet wird. Das Ergebnis ist ähnlich dem der bikubischen Interpolation im Bezug auf die Schärfe des Ergebnisbildes, aber bei Regionen mit weichen Verläufen ist Catmull-Rom eindeutig überlegen.
+
+### Lanczos ###
+
+Die *Lanczos*-Interpolation ist eine mathematische Formel zur weichen Interpolation eines Bildes, basierend auf verschiedenen Teilen innerhalb des Bildes. Dabei wird jedes Sample auf eine verschobene und skalierte Kopie des Filter-Kerns angewandt. Die Summe dieser Kerne wird dann am aktuell zu berechnenden Pixel ausgewertet. Die *Lanczos*-Interpolation ist **am besten geeignet um Details beizubehalten und ein Minimum an Artefakten zu erhalten**. Jedoch benötigt eine höherwertige *Lanczos*-Interpolation sehr viel Rechenzeit, wodurch es für die meiste kommerzielle Software ungeeignet ist.
+
+### Blackman ###
+
+*Blackman* ist eine modifizierte *Lanczos*-Interpolation die eine bessere Kontrolle über bestimmte Artefakte hat.
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Zurück zum Seitenanfang
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
+        
+          
+          <a href="../library/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Inhalte">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Zurück
+              </span>
+              <div class="md-ellipsis">
+                Inhalte
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../sync/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Dienste">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Weiter
+              </span>
+              <div class="md-ellipsis">
+                Dienste
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="footer-info">
+    PhotoPrism® ist eine <a href="https://www.photoprism.app/trademark" target="_blank" rel="noopener">eingetragene Marke</a>.
+    Durch die Nutzung unserer Software und Services erklären Sie sich mit unseren
+    <a href="https://www.photoprism.app/terms" target="_blank" rel="noopener">Allgemeinen Geschäftsbedingungen</a>,
+    unserer <a href="https://www.photoprism.app/privacy" target="_blank" rel="noopener">Privacy Policy</a>,
+    und unserem <a href="https://www.photoprism.app/code-of-conduct" target="_blank" rel="noopener">Code of Conduct</a> einverstanden.
+    Diese Dokumentation ist unter der
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0-Lizenz</a>
+    verfügbar. Möglicherweise unterliegen einzelne Inhalte jeweils anderen Lizenzen.
+</div>
+
+<div class="md-copyright">
+    <div class="md-copyright__highlight" title="Made with ❤ in Berlin">
+        <a href="https://www.photoprism.app/contact">© 2018-2025 PhotoPrism UG</a>
+    </div>
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://link.photoprism.app/github" target="_blank" rel="noopener" title="link.photoprism.app" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://link.photoprism.app/patreon" target="_blank" rel="noopener" title="link.photoprism.app" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M490 153.8c-.1-65.4-51-119-110.7-138.3-74.2-24-172-20.5-242.9 12.9C50.6 68.9 23.6 157.7 22.6 246.2 21.8 319 29 510.6 137.2 512c80.3 1 92.3-102.5 129.5-152.3 26.4-35.5 60.5-45.5 102.4-55.9 72-17.8 121.1-74.7 121-150z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://link.photoprism.app/chat" target="_blank" rel="noopener" title="link.photoprism.app" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c5.5 0 10 3.58 10 8s-4.5 8-10 8c-1.24 0-2.43-.18-3.53-.5C5.55 21 2 21 2 21c2.33-2.33 2.7-3.9 2.75-4.5C3.05 15.07 2 13.13 2 11c0-4.42 4.5-8 10-8"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://link.photoprism.app/twitter" target="_blank" rel="noopener" title="link.photoprism.app" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://link.photoprism.app/reddit" target="_blank" rel="noopener" title="link.photoprism.app" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M0 256C0 114.6 114.6 0 256 0s256 114.6 256 256-114.6 256-256 256H37.1c-13.7 0-20.5-16.5-10.9-26.2L75 437C28.7 390.7 0 326.7 0 256m349.6-102.4c23.6 0 42.7-19.1 42.7-42.7s-19.1-42.7-42.7-42.7c-20.6 0-37.8 14.6-41.8 34-34.5 3.7-61.4 33-61.4 68.4v.2c-37.5 1.6-71.8 12.3-99 29.1-10.1-7.8-22.8-12.5-36.5-12.5-33 0-59.8 26.8-59.8 59.8 0 24 14.1 44.6 34.4 54.1 2 69.4 77.6 125.2 170.6 125.2s168.7-55.9 170.6-125.3c20.2-9.6 34.1-30.2 34.1-54 0-33-26.8-59.8-59.8-59.8-13.7 0-26.3 4.6-36.4 12.4-27.4-17-62.1-27.7-100-29.1v-.2c0-25.4 18.9-46.5 43.4-49.9 4.4 18.8 21.3 32.8 41.5 32.8zm-172.5 93.3c16.7 0 29.5 17.6 28.5 39.3s-13.5 29.6-30.3 29.6-31.4-8.8-30.4-30.5S160.3 247 177 247zm190.1 38.3c1 21.7-13.7 30.5-30.4 30.5s-29.3-7.9-30.3-29.6 11.8-39.3 28.5-39.3 31.2 16.6 32.1 38.3zm-48.1 56.7c-10.3 24.6-34.6 41.9-63 41.9s-52.7-17.3-63-41.9c-1.2-2.9.8-6.2 3.9-6.5 18.4-1.9 38.3-2.9 59.1-2.9s40.7 1 59.1 2.9c3.1.3 5.1 3.6 3.9 6.5"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://link.photoprism.app/linkedin" target="_blank" rel="noopener" title="link.photoprism.app" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.photoprism.app/" target="_blank" rel="noopener" title="www.photoprism.app" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.action.edit", "content.tooltips", "navigation.top", "navigation.footer", "navigation.instant", "navigation.instant.progress"], "search": "../../../assets/javascripts/workers/search.ad38c271.min.js", "tags": null, "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.b66b2b78.min.js"></script>
+      
+    
+  </body>
+</html>
