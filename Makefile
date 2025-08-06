@@ -42,17 +42,17 @@ build:
 deploy:
 	./venv/bin/mkdocs gh-deploy --force --config-file mkdocs.deploy.yml
 pull:
-	git checkout master
-	git pull origin master
+	git checkout develop
+	git pull origin develop
 push:
-	git checkout master
-	git push origin master
+	git checkout develop
+	git push origin develop
 merge:
 	git checkout deploy
 	git pull origin deploy
-	git merge master
+	git merge develop
 	git push origin deploy
-	git checkout master
+	git checkout develop
 img-resize:
 	mogrify -resize '1000x860>' docs/user-guide/img/*.jpg
 	mogrify -resize '1000x860>' docs/user-guide/**/img/*.jpg

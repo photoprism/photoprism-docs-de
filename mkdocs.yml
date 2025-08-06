@@ -124,7 +124,7 @@ site_url: https://docs-de.photoprism.app/
 # Repository information.
 repo_name: photoprism/photoprism
 repo_url: https://github.com/photoprism/photoprism
-edit_uri: https://github.com/photoprism/photoprism-docs-de/tree/master/docs
+edit_uri: https://github.com/photoprism/photoprism-docs-de/tree/develop/docs
 copyright: 'Made with ❤ in Berlin'
 
 # Theme configuration.
