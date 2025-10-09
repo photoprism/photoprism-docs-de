@@ -36,7 +36,7 @@ else
 endif
 	./venv/bin/pip3 install --disable-pip-version-check -r requirements.txt
 serve:
-	./venv/bin/mkdocs serve -a 0.0.0.0:8000
+	./venv/bin/mkdocs serve --livereload --watch docs --watch overrides --watch mkdocs.yml -a 0.0.0.0:8000
 build:
 	./venv/bin/mkdocs build --config-file mkdocs.deploy.yml
 deploy:
