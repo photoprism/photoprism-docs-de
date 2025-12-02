@@ -177,11 +177,11 @@ Dies ist eine vollständige Liste der unterstützten Suchfilter mit Beispielen. 
 | video       | switch    | video:yes                             | Finds video content only                                                                                                                       |
 | added       | timestamp | added:"2006-01-02T15:04:05Z"          | Finds content added at or after this time                                                                                                      |
 | after       | timestamp | after:"2022-01-30"                    | Finds content created on or after this date                                                                                                    |
-| before      | timestamp | before:"2022-01-30"                   | Finds content created on or before this date                                                                                                   |
+| before      | timestamp | before:"2022-01-30"                   | Finds content created before this date                                                                                                         |
 | edited      | timestamp | edited:"2006-01-02T15:04:05Z"         | Finds content edited at or after this time                                                                                                     |
 | taken       | timestamp | taken:"2022-01-30"                    | Finds content created on the specified date                                                                                                    |
 | updated     | timestamp | updated:"2006-01-02T15:04:05Z"        | Finds content updated at or after this time                                                                                                    |
-                                                                                                   |
+
 
 !!! question "Warum kann ich Live Fotos nicht abspielen oder Bildstapel finden, wenn ich nach bestimmten Bildern suche?"
     Unsere Such-API und die Benutzeroberfläche führen eine Dateisuche durch. Dies ist beabsichtigt, da "Bildstapel" Dateien unterschiedlichen Typs und unterschiedlicher Eigenschaften, wie z. B. Farbe, enthalten können.

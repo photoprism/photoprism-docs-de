@@ -64,6 +64,12 @@ Gesichter können aus mehreren Gründen nicht erkannt werden:
 
 Die Person wird nun unter *Erkannt* angezeigt
 
+## Cover für eine Person ändern ##
+1. Gehe zum Tab [Personen](./edit.md#personen-bearbeiten) im Bearbeitungs-Dialog des Bildes, auf dem das Gesicht zu sehen ist, das du als Titelbild verwenden möchtest
+2. Fahre mit der Maus über :material-dots-vertical: in der oberen rechten Ecke des Gesichts
+3. Klicke auf *Als Titelbild festlegen*
+
+
 ## Personen ausblenden ##
 Du kannst Personen im Bereich *Erkannt* ausblenden, indem du :material-close: klickst.
 
