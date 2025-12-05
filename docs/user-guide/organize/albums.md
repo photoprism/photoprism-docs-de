@@ -40,10 +40,10 @@ Dann bearbeite die Album Details und klicke *Speichern*
 
     ![Screenshot](img/add-photo-album-2503-german.jpg){ class="shadow" }
     
-4. Wähle ein Album
-5. Klicke *Bestätigen*
+4. Wählen Sie die Alben aus, zu denen die Bilder hinzugefügt werden sollen, oder erstellen Sie neue Alben. 
+    ![Screenshot](img/add-photo-album-2-0512-german.jpg){ class="shadow" }
 
-    ![Screenshot](img/add-photo-album-2-2503-german.jpg){ class="shadow" }
+5. Klicke *Bestätigen*
 
 !!! tip ""
     Du kannst mehrere Bilder auf einmal selektieren, indem du die Shift Taste verwendest.
