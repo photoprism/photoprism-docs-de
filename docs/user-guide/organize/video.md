@@ -9,7 +9,7 @@ während er in Firefox und Opera nur optional vom Betriebssystem unterstützt wi
 
 !!! tldr ""
     Wenn [FFmpeg deaktiviert](../settings/advanced.md#ffmpeg-deaktivieren) oder nicht installiert ist, können Videos nicht indexiert werden, da keine Standbilder erstellt werden können.
-    Außerdem solltest du [Exiftool](../settings/advanced.md#exiftool-deaktivieren) aktiviert haben, um Metadaten wie Dauer, Auflösung und Codec zu extrahieren.
+    Außerdem solltest du [ExifTool aktiviert haben](../../getting-started/config-options.md#feature-flags), um Metadaten wie Dauer, Auflösung und Codec zu extrahieren.
 
 ### Live-Fotos ###
 Kurze Videos von bis zu 3 Sekunden, werden unabhängig vom Handy-Model als Live Foto kategorisiert.

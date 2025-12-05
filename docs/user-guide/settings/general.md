@@ -1,4 +1,4 @@
-# Allgemeine Einstellungen#
+# Allgemeine Einstellungen
 
 In den *Allgemeinen Einstellungen* kannst du die Eigenschaften der Benutzeroberfläche sowie der Karten konfigurieren.
 
@@ -23,7 +23,7 @@ Wenn diese Option deaktiviert ist, wird der Bereich *Ereignisse* nicht angezeigt
 Wenn diese Option deaktiviert ist, wird der Bereich *Kategorien* nicht angezeigt. Außerdem kannst du keine *Kategorien* hinzufügen oder bearbeiten.
 
 #### :material-lock: Privat ####
-Wenn diese Option aktiviert ist, werden private Bilder und Videos nicht in *Suche*, *Videos*, *Favoriten*, *Kategorien*, *Karten* und *geteilten Alben* angezeigt.
+Schließt als privat markierte Inhalte aus Suchergebnissen, geteilten Alben, Kategorien und Karten aus.
 
 #### :material-cloud-upload: Upload ####
 Wenn diese Option deaktiviert ist, können keine Dateien über [*Upload*](../library/upload.md) hochgeladen werden.
@@ -33,22 +33,25 @@ Diese Einstellung kann hilfreich sein, wenn du anderen Personen Zugriff auf dein
 Wenn diese Option deaktiviert ist, können keine Dateien über die PhotoPrism-Benutzeroberfläche heruntergeladen werden. Bitte beachte, dass es trotzdem möglich sein kann, Dateien mit den integrierten Browserfunktionen herunterzuladen.
 
 #### :material-folder-plus: Import ####
-Wenn diese Option deaktiviert ist, gibt es keine Möglichkeit Bilder zu [*importieren*](../library/import.md). In diesem Fall musst du neue Bilder über eine [*Indexierung*](../library/indexing.md) hizufügen.
+Wenn diese Option deaktiviert ist, gibt es keine Möglichkeit Bilder zu [*importieren*](../library/import.md). Du musst stattdessen [*indexieren*](../library/originals.md) verwenden, um neue Bilder hinzuzufügen.
+
+#### :material-pencil: Bearbeiten ####
+Wenn diese Option deaktiviert ist, können keine Fotodetails bearbeitet werden.
+
+#### :material-form-select: Batch Edit ####
+Wenn diese Option deaktiviert ist, ist die Batch-Bearbeitung von Fotodetails nicht möglich.
 
 #### :material-share-variant: Teilen ####
 Wenn diese Option deaktiviert ist, können Alben weder geteilt noch zu anderen Diensten (wie ownCloud) hochgeladen werden.
 
-#### :material-pencil: Bearbeiten ####
-Wenn diese Option deaktiviert ist, kannst du keine Metadaten editieren.
-
-#### :material-package-down: Archiv ####
-Diese Option steuert das *Archiv*. Bilder die archiviert wurden, bevor du die Option deaktivierst, werden wieder in *Suche/Videos* dargestellt.
-
-#### :material-delete: Löschen ####
-Wenn diese Option aktiviert ist, können Dateien endgültig aus dem Archiv gelöscht werden, um Speicherplatz freizugeben.
-
 #### :material-sync: Dienste ####
 Erlaubt das Teilen von Bildern mit [Apps und Diensten](./sync.md).
+
+#### :material-package-down: Archiv ####
+Wenn diese Option deaktiviert ist, gibt es kein *Archiv*. Fotos, die zuvor archiviert wurden, erscheinen wieder in den Suchergebnissen.
+
+#### :material-delete: Löschen ####
+Wenn diese Option deaktiviert ist, ist eine dauerhafte Löschung von Dateien aus dem Archiv nicht möglich.
 
 #### :material-film: Dateien ####
 Wenn diese Option deaktiviert ist, wird der Bereich *Dateien* nicht angezeigt.
@@ -65,12 +68,11 @@ Wenn diese Option deaktiviert ist, wird der Bereich *Konto* nicht angezeigt.
 #### :material-map-marker: Karten ####
 Wenn diese Option deaktiviert ist, wird der Bereich *Karten* nicht angezeigt.
 
-### Karten ####
-Hier kannst du den Kartenstil und die Geschwindigkeit von Animationen einstellen.
-PhotoPrism bietet dir 4 hochauflösende Kartenansichten.
+## Karten ##
 
-Um deinen Bildern Informationen wie Land, Stadt oder Kategorie hinzuzufügen, haben wir kürzlich **PhotoPrism Places** in Betrieb genommen.
-PhotoPrism Places ist unsere eigene Geocoding API, basierend auf  OpenStreetMap.
-Zusätzlich werden wir in Zukunft Informationen über öffentliche Events bereitstellen, die an bestimmten Orten stattgefunden haben.
-Dadurch können beispielsweise automatisch Alben von Musikfestivals oder Sportevents erzeugt werden.
+Am Ende des Tabs *Allgemeine Einstellungen* kannst du deinen bevorzugten Kartenstil und die Animationslänge für *Karten* wählen.
+PhotoPrism enthält vier hochauflösende Weltkarten, um zu sehen, wo du warst, und um lang vergessene Aufnahmen wiederzuentdecken.
+
+Um deine Fotos mit Standortdaten wie Bundesland, Stadt und Kategorie anzureichern, haben wir auch unseren eigenen Geo-Informationsdienst auf Basis von OpenStreetMap gestartet.
+Eine zukünftige Version wird zusätzlich Daten zu öffentlichen Veranstaltungen bereitstellen, sodass Alben von beliebten Musikfestivals oder Sportveranstaltungen automatisch erstellt werden können.
 
