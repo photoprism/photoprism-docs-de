@@ -26,7 +26,7 @@ Erstellt automatisch JPEG-Vorschaubilder für andere Dateitypen, damit sie in de
     Die Option *Vorschaubilder* sollte nicht deaktiviert werden, da sie PhotoPrism daran hindert, andere Dateitypen als JPEG zu indexieren, es sei denn, es gibt bereits JPEG-Sidecar-Dateien mit demselben Dateinamenpräfix. Siehe *Bildstapel*, um mehr über die Namenskonventionen von Sidecar-Dateien zu erfahren.
 
 !!! info ""
-    Um zu verhindern, dass unerfahrene Benutzer versehentlich die Erstellung von Vorschaubildern deaktivieren, können *Vorschaubilder* nur deaktiviert werden, wenn [Experimentelle Funktionen](advanced.md#expermientelle-funktionen) aktiviert sind.
+    Um zu verhindern, dass unerfahrene Benutzer versehentlich die Erstellung von Vorschaubildern deaktivieren, können *Vorschaubilder* nur deaktiviert werden, wenn [Experimentelle Funktionen](advanced.md#experimentelle-funktionen) aktiviert sind.
 
 ## Bildstapel ##
 

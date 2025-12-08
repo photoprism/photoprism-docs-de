@@ -14,7 +14,7 @@ Systemkonfigurationsoptionen wie die Bildqualität können in den erweiterten Ei
 Alle [Optionen](https://docs.photoprism.app/getting-started/config-options/) können in deiner `docker-compose.yml` oder auch über Kommandozeilenparameter gesetzt werden. 
 Manuell geänderte Werte werden in einer Konfigurationsdatei gespeichert. Sie wird standardmäßig im Ordner `storage/config` gespeichert. 
 
-## Gobale Optionen ##
+## Globale Optionen ##
 
 ### Debug Logs ###
 Debug Logs unter *Dateien>Logs* anzeigen.
@@ -22,7 +22,7 @@ Debug Logs unter *Dateien>Logs* anzeigen.
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options#logging) ist `PHOTOPRISM_DEBUG`.
 
-### Expermientelle Funktionen ###
+### Experimentelle Funktionen ###
 Aktiviert neue Funktionen, an denen derzeit noch entwickelt wird.
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options#feature-flags) ist `PHOTOPRISM_EXPERIMENTAL`.
@@ -42,25 +42,33 @@ Deaktiviert den eingebauten WebDAV-Server. Änderungen erfordern einen Neustart.
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options#feature-flags) ist `PHOTOPRISM_DISABLE_WEBDAV`.
 
+### Gesichter deaktivieren ###
+Wenn diese Option aktiviert ist, werden alle Funktionen zur Gesichts­erkennung und zum Erkennen von Gesichtern deaktiviert.
+
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options#feature-flags) ist `PHOTOPRISM_DISABLE_FACES`.
+
 ### Karten deaktivieren ###
 Wenn Karten deaktiviert sind, liest PhotoPrism trotzdem noch Geo-Informationen (Längen- und Breitengrad) aus den Metadaten deiner Dateien aus.
-Es wird allerding kein Reverse Lookup mehr gemacht, um Informationen über die Orte, der Koordinaten, abzufragen.
+Es wird allerdings kein Reverse Lookup mehr gemacht, um Informationen über die Orte der Koordinaten abzufragen.
 
-Die Karten Ansicht ist nicht sichtbar.
+Die Karten-Ansicht ist dann nicht sichtbar.
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options#feature-flags) ist `PHOTOPRISM_DISABLE_PLACES`.
 
-### ExifTool deaktivieren###
-Keine JSON-Dateien  in `storage/sidecar` mit ExifTool erstellen.
+### ExifTool deaktivieren ###
+Keine JSON-Dateien in `storage/sidecar` mit ExifTool erstellen.
 
-Beachte, dass du Exiftool aktiviert haben musst, um Videometadaten wie Dauer, Auflösung und Codec zu extrahieren.
+Beachte, dass du ExifTool aktiviert haben musst, um Videometadaten wie Dauer, Auflösung und Codec zu extrahieren.
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_EXIFTOOL`.
 
-### TensorFlow deaktivieren ###
-TensorFlow nicht zur automatischen Bild-Kategorisierung und zur Gesichtserkennung verwenden.
+### TensorFlow deaktivieren – veraltet ###
+!!! warning ""
+    Diese Option ist veraltet. Um die automatische Bildklassifizierung und Gesichtserkennung zu deaktivieren, verwende stattdessen die Konfigurationsoptionen `PHOTOPRISM_DISABLE_FACES` und `PHOTOPRISM_DISABLE_CLASSIFICATION`. Weitere Details findest du im zugehörigen [GitHub Issue](https://github.com/photoprism/photoprism/issues/5310).
 
-Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_TENSORFLOW`.
+Wenn diese Option aktiviert ist, werden Bildklassifizierung und Gesichtserkennung deaktiviert, da beide auf TensorFlow basieren.
+
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options#feature-flags) ist `PHOTOPRISM_DISABLE_TENSORFLOW`.
 
 ## Datensicherung ##
 
@@ -255,7 +263,7 @@ Wenn diese Funktion deaktiviert ist, wird [FFmpeg](https://www.ffmpeg.org/docume
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_FFMPEG`.
 
 !!! info ""
-    Um zu verhindern, dass unerfahrene Benutzer versehentlich die Erstellung von Vorschaubildern für Videos deaktivieren, kann *FFmpeg* nur deaktiviert werden, wenn [Experimentelle Funktionen](#expermientelle-funktionen) aktiviert sind.
+    Um zu verhindern, dass unerfahrene Benutzer versehentlich die Erstellung von Vorschaubildern für Videos deaktivieren, kann *FFmpeg* nur deaktiviert werden, wenn [Experimentelle Funktionen](#experimentelle-funktionen) aktiviert sind.
 
 ### ImageMagick deaktivieren
 
