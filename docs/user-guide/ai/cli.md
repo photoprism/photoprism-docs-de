@@ -12,13 +12,13 @@ docker compose exec photoprism photoprism vision ls
 
 Du kannst den Befehl mit diesen Flags kombinieren, um das Ausgabeformat zu ändern:
 
-| Command Flag | Description                            |
+| Befehls-Flag | Beschreibung                           |
 |--------------|----------------------------------------|
-| `--md, -m`   | format as machine-readable Markdown    |
-| `--csv, -c`  | export as semicolon separated values   |
-| `--tsv, -t`  | export as tab separated values         |
+| `--md, -m`   | als maschinenlesbares Markdown formatieren |
+| `--csv, -c`  | als Semikolon-getrennte Werte exportieren |
+| `--tsv, -t`  | als Tabulator-getrennte Werte exportieren |
 
-## Vision‑Modelle ausführen
+## Vision-Modelle ausführen 
 
 Sobald du deine bevorzugten Computer‑Vision‑Modelle und Dienste in der Datei `vision.yml` konfiguriert hast, kannst du sie mit folgendem Befehl auf eine per Suchfilter ausgewählte Bildmenge anwenden:
 
@@ -28,12 +28,12 @@ photoprism vision run [options] [filter]
 
 ### Befehlsoptionen
 
-| Command Flag                   | Description                                                                                                          |
+| Befehls-Flag                   | Beschreibung                                                                                                         |
 |--------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| `--models MODELS`, `-m MODELS` | computer vision MODELS to run, e.g. caption, labels, or nsfw (default: "caption")                                    |
-| `--count value`, `-c value`    | maximum number of pictures to be processed (default: 100000)                                                         | 
-| `--source TYPE`, `-s TYPE`     | custom data source TYPE, e.g. estimate, image, meta, or manual (default: "image")                                    |
-| `--force`, `-f`                | force existing data to be updated if the source priority is equal to or higher than the current one (default: false) |
+| `--models MODELS`, `-m MODELS` | auszuführende Computer-Vision-MODELLE, z.B. caption, labels oder nsfw (Standard: "caption")                          |
+| `--count value`, `-c value`    | maximale Anzahl der zu verarbeitenden Bilder (Standard: 100000)                                                      | 
+| `--source TYPE`, `-s TYPE`     | benutzerdefinierter Datenquellen-TYP, z.B. estimate, image, meta oder manual (Standard: "image")                     |
+| `--force`, `-f`                | Aktualisierung vorhandener Daten erzwingen, wenn die Quellpriorität gleich oder höher als die aktuelle ist (Standard: false) |
 
 Um Captions für alle Fotos deiner Bibliothek zu generieren, kannst du zum Beispiel ausführen:
 
@@ -73,12 +73,12 @@ photoprism vision reset [options] [filter]
 
 ### Befehlsoptionen
 
-| Command Flag                   | Description                                                                                       |
+| Befehls-Flag                   | Beschreibung                                                                                      |
 |--------------------------------|---------------------------------------------------------------------------------------------------|
-| `--models MODELS`, `-m MODELS` | computer vision MODELS to reset, e.g. caption or labels                                           |
-| `--count NUMBER`, `-n NUMBER`  | maximum NUMBER of pictures to be processed (default: 100000)                                      |
-| `--source TYPE`, `-s TYPE`     | custom data source TYPE (auto, default, image, marker, ollama, openai, vision) (default: "image") |
-| `--yes`, `-y`                  | runs the command non-interactively (default: false)                                               |
+| `--models MODELS`, `-m MODELS` | zurückzusetzende Computer-Vision-MODELLE, z.B. caption oder labels                                |
+| `--count NUMBER`, `-n NUMBER`  | maximale ANZAHL der zu verarbeitenden Bilder (Standard: 100000)                                   |
+| `--source TYPE`, `-s TYPE`     | benutzerdefinierter Datenquellen-TYP (auto, default, image, marker, ollama, openai, vision) (Standard: "image") |
+| `--yes`, `-y`                  | führt den Befehl nicht-interaktiv aus (Standard: false)                                           |
 
 !!! warning ""
     Du solltest immer das Flag `--source` setzen, um Daten einer bestimmten Quelle zurückzusetzen. Ohne dieses Flag werden ggf. keine Bilder zurückgesetzt. Verwende die Quelle, aus der deine Daten stammen (z.B. `ollama` oder `image`).

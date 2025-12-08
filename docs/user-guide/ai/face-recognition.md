@@ -63,27 +63,27 @@ So werden euklidische Distanzen äquivalent zur Cosine‑Similarity ausgewertet,
 
 ### Detection Settings
 
-| Environment Variable           | CLI Flag              | Default                 | Description                                                                |
+| Umgebungsvariable              | CLI-Flag              | Standard                | Beschreibung                                                               |
 |--------------------------------|-----------------------|-------------------------|----------------------------------------------------------------------------|
-| PHOTOPRISM_FACE_ENGINE         | --face-engine         | auto                    | Detection engine (`auto`, `pigo`, `onnx`). `auto` uses ONNX when available |
-| PHOTOPRISM_FACE_ENGINE_THREADS | --face-engine-threads | runtime.NumCPU()/2 (≥1) | Number of ONNX inference threads; ignored by Pigo                          |
-| PHOTOPRISM_FACE_ANGLE          | --face-angle          | -0.3,0,0.3              | Detection angles in radians for Pigo multi-angle scanning                  |
-| PHOTOPRISM_FACE_SIZE           | --face-size           | 50                      | Minimum size of faces in `PIXELS` (20-10000)                               |
-| PHOTOPRISM_FACE_SCORE          | --face-score          | 9.0                     | Minimum face `QUALITY` score (1-100)                                       |
-| PHOTOPRISM_FACE_OVERLAP        | --face-overlap        | 42                      | Face area overlap threshold in `PERCENT` (1-100)                           |
+| PHOTOPRISM_FACE_ENGINE         | --face-engine         | auto                    | Erkennungs-Engine (`auto`, `pigo`, `onnx`). `auto` nutzt ONNX wenn verfügbar |
+| PHOTOPRISM_FACE_ENGINE_THREADS | --face-engine-threads | runtime.NumCPU()/2 (≥1) | Anzahl der ONNX-Inference-Threads; von Pigo ignoriert                      |
+| PHOTOPRISM_FACE_ANGLE          | --face-angle          | -0.3,0,0.3              | Erkennungswinkel in Radiant für Pigo Multi-Angle-Scanning                  |
+| PHOTOPRISM_FACE_SIZE           | --face-size           | 50                      | Minimale Größe von Gesichtern in `PIXELN` (20–10000)                       |
+| PHOTOPRISM_FACE_SCORE          | --face-score          | 9.0                     | Minimaler Gesichts-`QUALITÄTS`-Score (1–100)                               |
+| PHOTOPRISM_FACE_OVERLAP        | --face-overlap        | 42                      | Schwellwert für Gesichtsüberlappung in `PROZENT` (1–100)                   |
 
 ### Clustering Settings
 
 !!! danger ""
     Nach Änderungen an diesen Parametern solltest du im Terminal den Befehl `photoprism faces reset` ausführen, um vorhandene Cluster und Zuordnungen zu löschen. Andernfalls können Inkonsistenzen zu unerwartetem Verhalten oder Fehlern führen.
 
-| Environment Variable           | CLI Flag               | Default  | Description                                                                            |
+| Umgebungsvariable              | CLI-Flag               | Standard | Beschreibung                                                                           |
 |--------------------------------|------------------------|----------|----------------------------------------------------------------------------------------|
-| PHOTOPRISM_FACE_CLUSTER_SIZE   | --face-cluster-size    | 80       | Minimum size of automatically clustered faces in `PIXELS` (20-10000)                   |
-| PHOTOPRISM_FACE_CLUSTER_SCORE  | --face-cluster-score   | 15       | Minimum `QUALITY` score of automatically clustered faces (1-100)                       |
-| PHOTOPRISM_FACE_CLUSTER_CORE   | --face-cluster-core    | 4        | `NUMBER` of faces forming a cluster core (1-100)                                       |
-| PHOTOPRISM_FACE_CLUSTER_DIST   | --face-cluster-dist    | 0.64     | Similarity `DISTANCE` of faces forming a cluster core (0.1-1.5)                        |
-| PHOTOPRISM_FACE_MATCH_DIST     | --face-match-dist      | 0.46     | Similarity `OFFSET` for matching faces with existing clusters (0.1-1.5)                |
+| PHOTOPRISM_FACE_CLUSTER_SIZE   | --face-cluster-size    | 80       | Minimale Größe automatisch geclusterter Gesichter in `PIXELN` (20–10000)               |
+| PHOTOPRISM_FACE_CLUSTER_SCORE  | --face-cluster-score   | 15       | Minimaler `QUALITÄTS`-Score automatisch geclusterter Gesichter (1–100)                 |
+| PHOTOPRISM_FACE_CLUSTER_CORE   | --face-cluster-core    | 4        | `ANZAHL` der Gesichter, die einen Cluster-Kern bilden (1–100)                          |
+| PHOTOPRISM_FACE_CLUSTER_DIST   | --face-cluster-dist    | 0.64     | Ähnlichkeits-`DISTANZ` von Gesichtern, die einen Cluster-Kern bilden (0.1–1.5)         |
+| PHOTOPRISM_FACE_MATCH_DIST     | --face-match-dist      | 0.46     | Ähnlichkeits-`OFFSET` zum Abgleich von Gesichtern mit bestehenden Clustern (0.1–1.5)   |
 
 ### Tuning‑Tipps
 

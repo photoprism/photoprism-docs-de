@@ -2,10 +2,10 @@
 
 Wir empfehlen, ein [Vision‑Modell](https://ollama.com/search?c=vision) zu wählen, das Geschwindigkeit, Genauigkeit und Zuverlässigkeit gut ausbalanciert. Zwei Modelle, die diese Kriterien erfüllen und die wir besonders empfehlen können, sind [Gemma 3](https://ollama.com/library/gemma3) und [Qwen3‑VL](https://ollama.com/library/qwen3-vl):
 
-| Model        | Use Case                                                   | Notes                                                                |
+| Modell       | Anwendungsfall                                             | Anmerkungen                                                          |
 |--------------|------------------------------------------------------------|----------------------------------------------------------------------|
-| **Gemma 3**  | Standard caption and label generation                      | Light, reliable JSON output; good default.                           |
-| **Qwen3-VL** | Advanced vision and reasoning tasks (OCR, complex prompts) | Better visual grounding and multi-language support; needs more VRAM. |
+| **Gemma 3**  | Standard-Generierung von Bildunterschriften und Labels     | Leichte, zuverlässige JSON-Ausgabe; guter Standard.                  |
+| **Qwen3-VL** | Fortgeschrittene Bilderkennung und Reasoning (OCR, komplexe Prompts) | Bessere visuelle Verankerung (Grounding) und Multi-Language-Support; benötigt mehr VRAM. |
 
 [**Gemma 3**](https://ollama.com/library/gemma3) ist in Bezug auf Performance sehr konsistent; Fehler treten nur selten auf. Für sehr lange oder komplexe Prompts und Captions ist es jedoch weniger geeignet. Für die meisten [Anwendungsfälle](#gemma-3-labels) empfehlen wir die Standard‑Variante `gemma3:latest`.
 
@@ -20,11 +20,11 @@ Die Performance hängt außerdem von deiner Hardware ab. Auf Apple Silicon oder 
 
 Wenn du die Optionen `Temperature`, `TopK` und `TopP` bei Ollama‑Modellen setzt, kannst du Zufälligkeit und Kreativität generativer [Large‑Language‑Modelle](https://en.wikipedia.org/wiki/Large_language_model) gezielt steuern:
 
-| Parameter   | Effect on Output                           | When to Use                                    |
+| Parameter   | Auswirkung auf die Ausgabe                 | Wann verwenden                                 |
 |-------------|--------------------------------------------|------------------------------------------------|
-| Temperature | Adjusts overall randomness                 | Control creativity without limiting vocabulary |
-| TopK        | Restricts choices to most probable tokens  | Prevent rare or irrelevant tokens              |
-| TopP        | Adapts vocabulary size based on confidence | Dynamic control over diversity                 |
+| Temperature | Passt die allgemeine Zufälligkeit an       | Kreativität steuern ohne das Vokabular einzuschränken |
+| TopK        | Beschränkt Auswahl auf die wahrscheinlichsten Token | Seltene oder irrelevante Token verhindern      |
+| TopP        | Passt Vokabulargröße basierend auf Konfidenz an | Dynamische Kontrolle über Vielfalt             |
 
 ### Techniken kombinieren
 
@@ -113,15 +113,15 @@ Models:
     - Do NOT add any fields other than name, confidence, topicality.
     - Do NOT output any text before or after the JSON.
   Options:
-    Seed: 3407           # model default, see https://github.com/QwenLM/Qwen3-VL
-    Temperature: 0.01    # low randomness, fewer hallucinations
-    TopK: 40             # consider only top ~40 tokens
-    TopP: 0.9            # cut off tail of distribution
-    MinP: 0.05           # drop rare tokens
-    TypicalP: 1.0        # effectively off
-    RepeatLastN: 128     # look back to prevent repetition
-    RepeatPenalty: 1.2   # penalty to avoid simple loops
-    NumPredict: 512      # prevent runaway output
+    Seed: 3407           # Modell-Standard, siehe https://github.com/QwenLM/Qwen3-VL
+    Temperature: 0.01    # geringe Zufälligkeit, weniger Halluzinationen
+    TopK: 40             # berücksichtigt nur die Top ~40 Token
+    TopP: 0.9            # schneidet das Ende der Verteilung ab
+    MinP: 0.05           # verwirft seltene Token
+    TypicalP: 1.0        # effektiv deaktiviert
+    RepeatLastN: 128     # schaut zurück, um Wiederholungen zu vermeiden
+    RepeatPenalty: 1.2   # Strafe zur Vermeidung einfacher Schleifen
+    NumPredict: 512      # verhindert ausufernde Ausgaben
   Service:
     Uri: http://ollama:11434/api/generate
 ```
@@ -156,15 +156,15 @@ Models:
     - Do NOT include quotation marks around the caption.
     - Respond with the caption text only, and nothing else.
   Options:
-    Seed: 3407           # model default, see https://github.com/QwenLM/Qwen3-VL
-    Temperature: 0.25    # reduce randomness for fewer hallucinations
-    TopK: 20             # matches the model's default
-    TopP: 0.8            # matches the model's default
-    MinP: 0.05           # cut very low-probability, odd tokens
-    TypicalP: 1.0        # effectively disabled; TopP/MinP dominate
-    RepeatLastN: 64      # short history for 1–2 sentences
-    RepeatPenalty: 1.1   # penalty to avoid loops without harming fluency
-    NumPredict: 128      # prevent runaway output
+    Seed: 3407           # Modell-Standard, siehe https://github.com/QwenLM/Qwen3-VL
+    Temperature: 0.25    # reduziert Zufälligkeit für weniger Halluzinationen
+    TopK: 20             # entspricht dem Modell-Standard
+    TopP: 0.8            # entspricht dem Modell-Standard
+    MinP: 0.05           # schneidet sehr unwahrscheinliche, seltsame Token ab
+    TypicalP: 1.0        # effektiv deaktiviert; TopP/MinP dominieren
+    RepeatLastN: 64      # kurze Historie für 1–2 Sätze
+    RepeatPenalty: 1.1   # Strafe gegen Schleifen ohne den Sprachfluss zu stören
+    NumPredict: 128      # verhindert ausufernde Ausgaben
   Service:
     Uri: http://ollama:11434/api/generate
 ```

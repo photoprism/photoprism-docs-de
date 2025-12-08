@@ -13,7 +13,7 @@ PhotoPrism kann Dateien außerdem per WebDAV bereitstellen, sodass du sie direkt
 1. Gehe zu *Einstellungen*
 2. Öffne das *Dienste* Tab
 3. Klicke auf *Verbinden*
-   ![Screenshot](img/services-connect-1-2502.jpg){ class="shadow" }
+   ![Screenshot](img/services-connect-1-light.jpg){ class="shadow" }
 4. Trage die Server URL, den Nutzernamen sowie das Passwort ein
 5. Klicke *Verbinden*
    ![Screenshot](img/services-connect-2-2503-german.jpg){ class="shadow" }

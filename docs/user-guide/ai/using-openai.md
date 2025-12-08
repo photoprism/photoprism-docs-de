@@ -20,8 +20,8 @@ Models:
     Engine: openai
     Run: auto
     Options:
-      Detail: low           # optional: default is low
-      MaxOutputTokens: 512  # optional: change token limit
+      Detail: low           # optional: Standard ist low
+      MaxOutputTokens: 512  # optional: Token-Limit ändern
     Service:
       Key: ${OPENAI_API_KEY}
   - Type: labels
@@ -29,7 +29,7 @@ Models:
     Engine: openai
     Run: auto
     Options:
-      MaxOutputTokens: 1024 # optional: change token limit
+      MaxOutputTokens: 1024 # optional: Token-Limit ändern
     Service:
       Key: ${OPENAI_API_KEY}
 ```
