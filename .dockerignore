@@ -1,7 +1,10 @@
 .dockerignore
 .DS_Store
 .idea
-.env
+.env*
+.cache
+.config
+.local
 material
 site
 Dockerfile

@@ -24,7 +24,10 @@ var/
 .installed.cfg
 *.egg
 .idea
-.env
+.env*
+.cache
+.config
+.local
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -41,7 +44,6 @@ htmlcov/
 .tox/
 .coverage
 .coverage.*
-.cache
 nosetests.xml
 coverage.xml
 *,cover
