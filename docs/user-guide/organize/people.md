@@ -30,7 +30,7 @@ zu kombinieren. Im [Bearbeitungs-Dialog](edit.md) werden immer alle Gesichter an
 
 Gesichter können aus mehreren Gründen nicht erkannt werden:
 
-- Unsere [neueste Version](../../release-notes.md#november-30-2025) beinhaltet eine verbesserte Gesichtserkennung. Nach einem Update solltest du einen [kompletten Rescan](https://docs.photoprism.app/user-guide/library/originals/#when-should-complete-rescan-be-selected) durchführen oder `photoprism faces index` [im Terminal ausführen](https://docs.photoprism.app/getting-started/docker-compose/#opening-a-terminal), um weitere zuvor übersehene Gesichter zu finden
+- Unsere [neueste Version](https://docs.photoprism.app/release-notes/#november-30-2025) beinhaltet eine verbesserte Gesichtserkennung. Nach einem Update solltest du einen [kompletten Rescan](https://docs.photoprism.app/user-guide/library/originals/#when-should-complete-rescan-be-selected) durchführen oder `photoprism faces index` [im Terminal ausführen](https://docs.photoprism.app/getting-started/docker-compose/#opening-a-terminal), um weitere zuvor übersehene Gesichter zu finden
 - Möglicherweise musst du warten, bis die Indexierung abgeschlossen ist, da die Gesichtserkennung erst danach beginnt
 - Bei Bildstapeln wird nur die Primärdatei nach Gesichtern durchsucht
 - Gesichter können kleiner als die konfigurierte Mindestgröße sein

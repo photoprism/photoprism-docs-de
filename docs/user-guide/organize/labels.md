@@ -1,7 +1,7 @@
 # Kategorien #
 
 !!! tldr ""
-    Du möchtest genauere KI-Labels? Probiere unsere [Ollama](../ai/using-ollama.md) oder [OpenAI](../ai/using-openai.md) Integration aus oder konfiguriere ein [leistungsstärkeres TensorFlow Modell](../../developer-guide/vision/tensorflow/custom-models.md).
+    Du möchtest genauere KI-Labels? Probiere unsere [Ollama](../ai/using-ollama.md) oder [OpenAI](../ai/using-openai.md) Integration aus oder konfiguriere ein [leistungsstärkeres TensorFlow Modell](https://docs.photoprism.app/developer-guide/vision/tensorflow/custom-models/).
 
 PhotoPrism nutzt *Kategorien* (Labels), um Bilder und Videos zu klassifizieren. Viele andere Tools verwenden dafür den Begriff *Tags*.
 Kategorien werden automatisch gesetzt, wenn neue Bilder zu PhotoPrism hinzugefügt werden. Du kannst manuell neue Kategorien hinzufügen sowie bestehende Kategorien bearbeiten oder entfernen.

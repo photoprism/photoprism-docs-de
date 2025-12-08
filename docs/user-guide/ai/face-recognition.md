@@ -42,7 +42,7 @@ Die ONNX‑Engine wird automatisch aktiviert, wenn `FACE_ENGINE=auto` gesetzt is
 
 ### FaceNet
 
-Nach der Erkennung verwendet PhotoPrism [TensorFlow](index.md#model-engines), um [FaceNet](https://en.wikipedia.org/wiki/FaceNet) auszuführen, das 512‑dimensionale Embedding‑Vektoren für jedes Gesicht erzeugt. Diese Vektoren werden genutzt, um:
+Nach der Erkennung verwendet PhotoPrism [TensorFlow](index.md#modell-engines), um [FaceNet](https://en.wikipedia.org/wiki/FaceNet) auszuführen, das 512‑dimensionale Embedding‑Vektoren für jedes Gesicht erzeugt. Diese Vektoren werden genutzt, um:
 
 1. **Gesichter über verschiedene Bilder hinweg zu matchen**,
 2. **ähnliche Gesichter per DBSCAN‑Algorithmus zu Clustern zu gruppieren** und

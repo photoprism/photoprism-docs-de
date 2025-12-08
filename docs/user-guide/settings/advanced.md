@@ -263,7 +263,7 @@ Wenn diese Funktion deaktiviert ist, wird [FFmpeg](https://www.ffmpeg.org/docume
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_FFMPEG`.
 
 !!! info ""
-    Um zu verhindern, dass unerfahrene Benutzer versehentlich die Erstellung von Vorschaubildern für Videos deaktivieren, kann *FFmpeg* nur deaktiviert werden, wenn [Experimentelle Funktionen](#expermientelle-funktionen) aktiviert sind.
+    Um zu verhindern, dass unerfahrene Benutzer versehentlich die Erstellung von Vorschaubildern für Videos deaktivieren, kann *FFmpeg* nur deaktiviert werden, wenn [Experimentelle Funktionen](#experimentelle-funktionen) aktiviert sind.
 
 ### ImageMagick deaktivieren
 

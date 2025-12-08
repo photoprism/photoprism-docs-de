@@ -45,8 +45,8 @@ Empfehlungen:
 
 ## Nutzungstipps
 
-- Um unerwartete Kosten zu vermeiden – insbesondere beim Testen neuer Modelle oder Prompts – setze `Run: manual` und [führe die Modelle manuell aus](cli.md#run-vision-models), z.B. mit `photoprism vision run -m caption` oder `photoprism vision run -m labels`.
-- `Run: auto` führt das Modell automatisch aus, nachdem die Indexierung abgeschlossen ist, um den Import nicht auszubremsen. Gleichzeitig bleiben [manuelle](cli.md#run-vision-models) und [geplante Ausführungen](../../getting-started/config-options.md#computer-vision) möglich.
+- Um unerwartete Kosten zu vermeiden – insbesondere beim Testen neuer Modelle oder Prompts – setze `Run: manual` und [führe die Modelle manuell aus](cli.md#vision-modelle-ausfuhren), z.B. mit `photoprism vision run -m caption` oder `photoprism vision run -m labels`.
+- `Run: auto` führt das Modell automatisch aus, nachdem die Indexierung abgeschlossen ist, um den Import nicht auszubremsen. Gleichzeitig bleiben [manuelle](cli.md#vision-modelle-ausfuhren) und [geplante Ausführungen](https://docs.photoprism.app/getting-started/config-options/#computer-vision) möglich.
 - PhotoPrism wertet Modelle von unten nach oben aus. Wenn du die OpenAI‑Einträge ans Ende der Liste setzt, werden sie bevorzugt, während andere Modelle als Fallback dienen.
 - Falls du domänenspezifische Formulierungen benötigst, kannst du `System` oder `Prompt` in `vision.yml` überschreiben – halte die Texte möglichst kurz und behalte den Schema‑Hinweis für Labels bei.
 - Für andere Sprachen solltest du die Basisanweisungen im Prompt auf Englisch belassen und nur die gewünschte Sprache ergänzen (z.B. „Respond in German“). Das funktioniert sowohl für Captions als auch für Label‑Prompts.
@@ -65,7 +65,7 @@ Der Befehl gibt die Einstellungen aller unterstützten und konfigurierten Modell
 
 ### Testruns durchführen 
 
-Die folgenden [Terminal‑Befehle](../../getting-started/docker-compose.md#opening-a-terminal) führen jeweils einen einzelnen Lauf für den angegebenen Modelltyp aus:
+Die folgenden [Terminal‑Befehle](https://docs.photoprism.app/getting-started/docker-compose/#opening-a-terminal) führen jeweils einen einzelnen Lauf für den angegebenen Modelltyp aus:
 
 ```bash
 photoprism vision run -m labels --count 1 --force

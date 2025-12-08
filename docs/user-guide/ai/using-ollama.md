@@ -6,7 +6,7 @@ In diesem Abschnitt erfährst du, wie du eine selbst gehostete Ollama‑Instanz 
 
 Um Ollama auf demselben Server wie PhotoPrism auszuführen, fügst du den Dienst `ollama` im Abschnitt `services` deiner `compose.yaml`‑ (oder `docker-compose.yml`‑) Datei hinzu, wie im folgenden Beispiel gezeigt.[^1]
 
-Alternativ sind in den meisten [`compose.yaml`](../../getting-started/docker-compose.md) [Konfigurationsbeispielen](https://dl.photoprism.app/docker/compose.yaml) auf unserem Download‑Server Ollama‑Dienste bereits vorkonfiguriert. In diesem Fall kannst du Ollama mit folgendem Befehl starten (entferne `profiles: ["ollama"]` aus dem `ollama`‑Dienst, wenn er standardmäßig ohne `--profile ollama` gestartet werden soll):
+Alternativ sind in den meisten [`compose.yaml`](https://docs.photoprism.app/getting-started/docker-compose/) [Konfigurationsbeispielen](https://dl.photoprism.app/docker/compose.yaml) auf unserem Download‑Server Ollama‑Dienste bereits vorkonfiguriert. In diesem Fall kannst du Ollama mit folgendem Befehl starten (entferne `profiles: ["ollama"]` aus dem `ollama`‑Dienst, wenn er standardmäßig ohne `--profile ollama` gestartet werden soll):
 
 ```bash
 docker compose --profile ollama up -d
@@ -83,7 +83,7 @@ docker compose exec ollama ollama pull gemma3:latest
 
 ## Schritt 3: Modelle konfigurieren
 
-Erstelle nun eine neue Datei `config/vision.yml` oder bearbeite die vorhandene Datei im [*storage*‑Verzeichnis](../../getting-started/docker-compose.md#photoprismstorage) deiner PhotoPrism‑Instanz, wie im folgenden Beispiel. Aus Sicht des Containers befindet sich die Datei unter `/photoprism/storage/config/vision.yml`:
+Erstelle nun eine neue Datei `config/vision.yml` oder bearbeite die vorhandene Datei im [*storage*‑Verzeichnis](https://docs.photoprism.app/getting-started/docker-compose/#photoprismstorage) deiner PhotoPrism‑Instanz, wie im folgenden Beispiel. Aus Sicht des Containers befindet sich die Datei unter `/photoprism/storage/config/vision.yml`:
 
 !!! example "vision.yml"
     ```yaml
@@ -106,8 +106,8 @@ Erstelle nun eine neue Datei `config/vision.yml` oder bearbeite die vorhandene D
 
 ### Scheduling‑Optionen
 
-- `Run: auto` (empfohlen) führt das Modell automatisch aus, nachdem die Indexierung abgeschlossen ist, damit der Import nicht ausgebremst wird. Gleichzeitig bleiben [manuelle Aufrufe](cli.md#run-vision-models) und [zeitgesteuerte Ausführungen](../../getting-started/config-options.md#computer-vision) möglich.
-- `Run: manual` deaktiviert die automatische Ausführung, sodass du das Modell [nur manuell](cli.md#run-vision-models) über `photoprism vision run -m caption` oder `photoprism vision run -m labels` startest.
+- `Run: auto` (empfohlen) führt das Modell automatisch aus, nachdem die Indexierung abgeschlossen ist, damit der Import nicht ausgebremst wird. Gleichzeitig bleiben [manuelle Aufrufe](cli.md#vision-modelle-ausfuhren) und [zeitgesteuerte Ausführungen](https://docs.photoprism.app/getting-started/config-options/#computer-vision) möglich.
+- `Run: manual` deaktiviert die automatische Ausführung, sodass du das Modell [nur manuell](cli.md#vision-modelle-ausfuhren) über `photoprism vision run -m caption` oder `photoprism vision run -m labels` startest.
 
 [Mehr erfahren ›](index.md#run-modes)
 
@@ -129,9 +129,9 @@ docker compose stop photoprism
 docker compose up -d
 ```
 
-Anschließend kannst du die `photoprism vision`‑[CLI‑Befehle](./cli.md#run-vision-models) beim [Öffnen eines Terminals](../../getting-started/docker-compose.md#opening-a-terminal) verwenden, z.B. `photoprism vision run -m caption` zum Erzeugen von Captions oder `photoprism vision run -m labels` zum Erzeugen von Labels.
+Anschließend kannst du die `photoprism vision`‑[CLI‑Befehle](./cli.md#vision-modelle-ausfuhren) beim [Öffnen eines Terminals](https://docs.photoprism.app/getting-started/docker-compose/#opening-a-terminal) verwenden, z.B. `photoprism vision run -m caption` zum Erzeugen von Captions oder `photoprism vision run -m labels` zum Erzeugen von Labels.
 
-[Mehr erfahren ›](cli.md#run-vision-models)
+[Mehr erfahren ›](cli.md#vision-modelle-ausfuhren)
 
 ## Troubleshooting ##
 
@@ -147,7 +147,7 @@ Der Befehl gibt die Einstellungen aller unterstützten und konfigurierten Modell
 
 ### Testruns durchführen
 
-Die folgenden [Terminal‑Befehle](../../getting-started/docker-compose.md#opening-a-terminal) führen jeweils einen einzelnen Lauf für den angegebenen Modelltyp aus:
+Die folgenden [Terminal‑Befehle](https://docs.photoprism.app/getting-started/docker-compose/#opening-a-terminal) führen jeweils einen einzelnen Lauf für den angegebenen Modelltyp aus:
 
 ```bash
 photoprism vision run -m labels --count 1 --force

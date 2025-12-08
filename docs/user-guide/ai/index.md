@@ -10,7 +10,7 @@ PhotoPrism unterstützt derzeit die folgenden Laufzeiten und Dienste:
 
 | Engine                                                                 | Resolution | Runs        | Best For                                                                                                      |                      
 |------------------------------------------------------------------------|------------|-------------|---------------------------------------------------------------------------------------------------------------|
-| [TensorFlow](../../developer-guide/vision/tensorflow/custom-models.md) | 224 px     | Built-in    | Fast, offline default models for core features (labels, faces, NSFW)                                         | 
+| [TensorFlow](https://docs.photoprism.app/developer-guide/vision/tensorflow/custom-models/) | 224 px     | Built-in    | Fast, offline default models for core features (labels, faces, NSFW)                                         | 
 | [Ollama](using-ollama.md)                                              | 720 px     | Self-Hosted | Good for generating quality captions & labels; a server with GPU is recommended                               | 
 | [OpenAI API](using-openai.md)                                          | 720 px     | Cloud       | Highest quality captions & labels, also suitable for users without a GPU; requires API key and network access | 
 
@@ -143,6 +143,6 @@ Unter `Service` konfigurierst du Endpunkt‑URL, HTTP-Methode, Format und Authen
 !!! tldr ""
     **Authentifizierung:** Alle Zugangsdaten und Kennungen unterstützen `${ENV_VAR}`‑Ersetzung. `Service.Key` setzt z.B. den HTTP‑Header `Authorization: Bearer <token>`, während `Username`/`Password` für Basic Auth verwendet werden, falls die `Uri` keine Zugangsdaten enthält. Wenn `Service.Key` leer ist, verwendet PhotoPrism standardmäßig `OPENAI_API_KEY` (OpenAI Engine) bzw. `OLLAMA_API_KEY`[^1] (Ollama Engine) und berücksichtigt auch die jeweiligen `_FILE`‑Varianten.
 
-[^1]: Kann mit unserem [Preview Build](../../release-notes.md#development-preview) und in der nächsten stabilen Version verwendet werden.
+[^1]: Kann mit unserem [Preview Build](https://docs.photoprism.app/release-notes/#development-preview) und in der nächsten stabilen Version verwendet werden.
 
 

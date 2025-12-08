@@ -35,7 +35,7 @@ Diese Methoden lassen sich kombinieren, um das Ausgabe‑Verhalten weiter zu ver
 
 Zusätzlich kannst du **MinP** setzen, um Tokens mit sehr geringer Wahrscheinlichkeit abzuschneiden – typischerweise seltene Labels oder seltsame Formulierungen, die du für Klassifizierungsaufgaben nicht möchtest.
 
-## Caption‑Prompts
+## Caption-Prompts
 
 Mit den meisten Modellen erzeugt folgender Prompt prägnante Captions mit genau einem Satz:
 
@@ -56,7 +56,7 @@ Für andere Sprachen sollten die Basisanweisungen im Prompt auf Englisch bleiben
 
 ## Konfigurationsbeispiele
 
-Die folgenden Beispiele kannst du direkt in deiner `vision.yml` verwenden. Die Datei liegt im Verzeichnis `storage/config`. [Mehr erfahren ›](index.md#visionyml-reference).
+Die folgenden Beispiele kannst du direkt in deiner `vision.yml` verwenden. Die Datei liegt im Verzeichnis `storage/config`. [Mehr erfahren ›](index.md#visionyml-referenz).
 
 ### Gemma 3: Labels
 
@@ -97,7 +97,7 @@ Warum das funktioniert:
 - **Run:** `auto` erlaubt manuelle Läufe, Ausführungen nach der Indexierung und geplante Jobs ￫ [Run Modes](index.md#run-modes).
 - **Prompt:** Nutzt den eingebauten [Standard‑Prompt](#caption-prompts). Für andere Sprachen ergänze beispielsweise „Respond in German“.
 
-### Qwen3‑VL: Labels
+### Qwen3-VL: Labels
 
 ```yaml
 Models:
@@ -138,7 +138,7 @@ Warum das funktioniert:
 - **RepeatLastN** und **RepeatPenalty:** Stellen sicher, dass Labels eindeutig bleiben, indem Wiederholungen bestraft werden.
 - **NumPredict:** Begrenzt die maximale Ausgabelänge, um Endloswiederholungen zu vermeiden.
 
-### Qwen3‑VL: Caption
+### Qwen3-VL: Caption
 
 ```yaml
 Models:
