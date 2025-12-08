@@ -1,8 +1,6 @@
 # PhotoPrism: Browse Your Life in Pictures
 
-PhotoPrism® ist eine KI-gestützte App zum Durchsuchen, Organisieren und Teilen deiner Bildersammlung.
-Sie nutzt die neuesten Technologien, um Bilder automatisch zu sortieren und zu finden, ohne dir dabei im Weg zu stehen.
-Du kannst PhotoPrism zu Hause, auf einem privaten Server oder in der Cloud installieren.
+Mit PhotoPrism® lassen sich Bilder ganz einfach finden, organisieren und teilen. Dabei können die neuesten KI-Modelle für die Klassifizierung oder die Erstellung von Bildunterschriften genutzt werden. PhotoPrism lässt sich sowohl zu Hause als auch auf einem privaten Server oder in der Cloud nutzen.
 
 ![Screenshot](img/preview-2503-german.jpg){ class="shadow" }
 
