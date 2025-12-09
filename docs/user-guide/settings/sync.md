@@ -4,16 +4,18 @@ Du kannst deine PhotoPrism-Instanz mit anderen Diensten mit WebDAV-Unterstützun
 
 PhotoPrism kann Dateien außerdem per WebDAV bereitstellen, sodass du sie direkt unter macOS oder Windows im Dateimanager durchsuchen kannst. [Mehr erfahren ›](../sync/webdav.md)
 
+
+Das kann nützlich sein, wenn du Dateien zwischen mehreren Diensten [teilen](../share/services-share.md) oder [synchronisieren](../sync/services-sync.md) willst.
+
 !!! tldr ""
     Da diese Einstellungen ohne Authentifizierung nicht sicher sind, sind sie nicht verfügbar, wenn du PhotoPrism im [public Modus](https://docs.photoprism.app/getting-started/config-options/#authentication) verwendest.
-
 
 ## Dienst einrichten ##
 
 1. Gehe zu *Einstellungen*
 2. Öffne das *Dienste* Tab
 3. Klicke auf *Verbinden*
-   ![Screenshot](img/services-connect-1-light.jpg){ class="shadow" }
+   ![Screenshot](img/services-connect-1-0912-german.jpg){ class="shadow" }
 4. Trage die Server URL, den Nutzernamen sowie das Passwort ein
 5. Klicke *Verbinden*
    ![Screenshot](img/services-connect-2-2503-german.jpg){ class="shadow" }
