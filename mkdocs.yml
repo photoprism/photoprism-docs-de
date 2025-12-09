@@ -37,7 +37,7 @@ nav:
       - Überprüfen: user-guide/organize/review.md
       - Bildstapel: user-guide/organize/stacks.md
       - Metadaten bearbeiten: user-guide/organize/edit.md
-      - Batch Edit: user-guide/organize/batch-edit.md
+      - Batch Bearbeitung: user-guide/organize/batch-edit.md
       - Bilder drehen: user-guide/organize/rotate.md
       - Herunterladen: user-guide/organize/download.md
       - Videos: user-guide/organize/video.md
@@ -78,12 +78,11 @@ nav:
       - Apple Photos: user-guide/use-cases/apple.md
       - Flickr: user-guide/use-cases/flickr.md
       #- Link directories from remote:
-  - KI-Modelle:
+  - KI Modelle nutzen:
       - Einführung: user-guide/ai/index.md
       - Ollama Setup: user-guide/ai/using-ollama.md
       - Ollama Modelle: user-guide/ai/ollama-models.md
       - OpenAI API: user-guide/ai/using-openai.md
-      - Gesichtserkennung: user-guide/ai/face-recognition.md
       - CLI Befehle: user-guide/ai/cli.md
   - Mobile App (PWA): user-guide/pwa.md
   - FAQ: user-guide/faq.md

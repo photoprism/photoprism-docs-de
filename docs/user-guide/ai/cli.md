@@ -12,11 +12,11 @@ docker compose exec photoprism photoprism vision ls
 
 Du kannst den Befehl mit diesen Flags kombinieren, um das Ausgabeformat zu ändern:
 
-| Befehls-Flag | Beschreibung                           |
+| Command Flag | Description                            |
 |--------------|----------------------------------------|
-| `--md, -m`   | als maschinenlesbares Markdown formatieren |
-| `--csv, -c`  | als Semikolon-getrennte Werte exportieren |
-| `--tsv, -t`  | als Tabulator-getrennte Werte exportieren |
+| `--md, -m`   | format as machine-readable Markdown    |
+| `--csv, -c`  | export as semicolon separated values   |
+| `--tsv, -t`  | export as tab separated values         |
 
 ## Vision-Modelle ausführen 
 
@@ -28,14 +28,14 @@ photoprism vision run [options] [filter]
 
 ### Befehlsoptionen
 
-| Befehls-Flag                   | Beschreibung                                                                                                         |
-|--------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| `--models MODELS`, `-m MODELS` | auszuführende Computer-Vision-MODELLE, z.B. caption, labels oder nsfw (Standard: "caption")                          |
-| `--count value`, `-c value`    | maximale Anzahl der zu verarbeitenden Bilder (Standard: 100000)                                                      | 
-| `--source TYPE`, `-s TYPE`     | benutzerdefinierter Datenquellen-TYP, z.B. estimate, image, meta oder manual (Standard: "image")                     |
-| `--force`, `-f`                | Aktualisierung vorhandener Daten erzwingen, wenn die Quellpriorität gleich oder höher als die aktuelle ist (Standard: false) |
+| Command Flag                  | Description                                                                                                          |
+|-------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| `--models MODELS`, `-m MODELS`| computer vision MODELS to run, e.g. caption, labels, or nsfw (default: "caption")                                    |
+| `--count value`, `-c value`   | maximum number of pictures to be processed (default: 100000)                                                         | 
+| `--source TYPE`, `-s TYPE`    | custom data source TYPE, e.g. estimate, image, meta, or manual (default: "image")                                    |
+| `--force`, `-f`               | force existing data to be updated if the source priority is equal to or higher than the current one (default: false) |
 
-Um Captions für alle Fotos deiner Bibliothek zu generieren, kannst du zum Beispiel ausführen:
+Um Captions für alle Fotos deiner Bibliothek zu generieren, kannst du folgenden Befehl ausführen:
 
 ```bash
 docker compose exec photoprism photoprism vision run --models=caption
@@ -43,25 +43,25 @@ docker compose exec photoprism photoprism vision run --models=caption
 
 Hinweis: Die Laufzeit hängt stark von der Größe deiner Bibliothek und der verfügbaren Hardware ab und kann bei großen Sammlungen entsprechend hoch sein.
 
-Wenn du ein Label‑Modell in `vision.yml` konfiguriert hast, kannst du mit folgendem Befehl Labels erzeugen:
+Wenn du ein Label‑Modell in deiner `vision.yml` konfiguriert hast, kannst du mit folgendem Befehl Labels erzeugen:
 
 ```bash
 docker compose exec photoprism photoprism vision run --models=labels
 ```
 
-Um Captions nur für Bilder zu erzeugen, die einem bestimmten Suchfilter entsprechen (z.B. einem Album), kannst du:
+Um Captions nur für Bilder zu erzeugen, die einem bestimmten Suchfilter entsprechen (z.B. einem Album), kannst du folgenden Befehl verwenden:
 
 ```bash
 docker compose exec photoprism photoprism vision run --models=caption album:Holidays
 ```
 
-Wenn du Captions für Bilder neu generieren möchtest, die bereits welche haben, ergänze das Flag `--force`:
+Wenn du Captions für Bilder neu generieren möchtest, die bereits Captions haben, ergänze das Flag `--force`:
 
 ```bash
 docker compose exec photoprism photoprism vision run --models=caption --force
 ```
 
-Das ist besonders hilfreich, wenn du unterschiedliche Modelle oder Prompts testen möchtest. Beachte, dass die konfigurierte Quelle eine gleich hohe oder höhere Priorität haben muss als die Quelle der vorhandenen Daten, damit sie überschrieben werden.
+Das ist besonders hilfreich, wenn du unterschiedliche Modelle oder Prompts testen möchtest. Beachte, dass die konfigurierte Source eine gleich hohe oder höhere Priorität haben muss als die Source der vorhandenen Daten, damit sie überschrieben werden.
 
 ## Vision‑Daten zurücksetzen
 
@@ -73,15 +73,15 @@ photoprism vision reset [options] [filter]
 
 ### Befehlsoptionen
 
-| Befehls-Flag                   | Beschreibung                                                                                      |
+| Command Flag                   | Description                                                                                       |
 |--------------------------------|---------------------------------------------------------------------------------------------------|
-| `--models MODELS`, `-m MODELS` | zurückzusetzende Computer-Vision-MODELLE, z.B. caption oder labels                                |
-| `--count NUMBER`, `-n NUMBER`  | maximale ANZAHL der zu verarbeitenden Bilder (Standard: 100000)                                   |
-| `--source TYPE`, `-s TYPE`     | benutzerdefinierter Datenquellen-TYP (auto, default, image, marker, ollama, openai, vision) (Standard: "image") |
-| `--yes`, `-y`                  | führt den Befehl nicht-interaktiv aus (Standard: false)                                           |
+| `--models MODELS`, `-m MODELS` | computer vision MODELS to reset, e.g. caption or labels                                           |
+| `--count NUMBER`, `-n NUMBER`  | maximum NUMBER of pictures to be processed (default: 100000)                                      |
+| `--source TYPE`, `-s TYPE`     | custom data source TYPE (auto, default, image, marker, ollama, openai, vision) (default: "image") |
+| `--yes`, `-y`                  | runs the command non-interactively (default: false)                                               |
 
 !!! warning ""
-    Du solltest immer das Flag `--source` setzen, um Daten einer bestimmten Quelle zurückzusetzen. Ohne dieses Flag werden ggf. keine Bilder zurückgesetzt. Verwende die Quelle, aus der deine Daten stammen (z.B. `ollama` oder `image`).
+    Du solltest immer das Flag `--source` setzen, um Daten einer bestimmten Source zurückzusetzen. Ohne dieses Flag werden ggf. keine Bilder zurückgesetzt. Verwende die Source, aus der deine Daten stammen (z.B. `ollama` oder `image`).
 
 ### Beispiele
 
@@ -164,7 +164,5 @@ docker compose exec photoprism photoprism faces reset
 
 !!! danger ""
     Der Befehl `faces reset` löscht alle vorhandenen Gesichts‑Marker und Cluster. Stelle sicher, dass du bei Bedarf Backups hast – dieser Vorgang kann nicht rückgängig gemacht werden.
-
-[Mehr über Gesichtserkennung ›](face-recognition.md)
 
 

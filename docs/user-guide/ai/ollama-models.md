@@ -1,6 +1,6 @@
-# Ollama‑Modelle #
+# Ollama Modelle #
 
-Wir empfehlen, ein [Vision‑Modell](https://ollama.com/search?c=vision) zu wählen, das Geschwindigkeit, Genauigkeit und Zuverlässigkeit gut ausbalanciert. Zwei Modelle, die diese Kriterien erfüllen und die wir besonders empfehlen können, sind [Gemma 3](https://ollama.com/library/gemma3) und [Qwen3‑VL](https://ollama.com/library/qwen3-vl):
+Wir empfehlen, ein [Vision Modell](https://ollama.com/search?c=vision) zu wählen, das Geschwindigkeit, Genauigkeit und Zuverlässigkeit gut ausbalanciert. Zwei Modelle, die diese Kriterien erfüllen und die wir besonders empfehlen können, sind [Gemma 3](https://ollama.com/library/gemma3) und [Qwen3‑VL](https://ollama.com/library/qwen3-vl):
 
 | Modell       | Anwendungsfall                                             | Anmerkungen                                                          |
 |--------------|------------------------------------------------------------|----------------------------------------------------------------------|
@@ -18,13 +18,13 @@ Die Performance hängt außerdem von deiner Hardware ab. Auf Apple Silicon oder 
 
 ## Temperature, TopK und TopP
 
-Wenn du die Optionen `Temperature`, `TopK` und `TopP` bei Ollama‑Modellen setzt, kannst du Zufälligkeit und Kreativität generativer [Large‑Language‑Modelle](https://en.wikipedia.org/wiki/Large_language_model) gezielt steuern:
+Wenn du die Optionen `Temperature`, `TopK` und `TopP` bei Ollama Modellen setzt, kannst du Zufälligkeit und Kreativität generativer [Large Language Modelle](https://en.wikipedia.org/wiki/Large_language_model) gezielt steuern:
 
-| Parameter   | Auswirkung auf die Ausgabe                 | Wann verwenden                                 |
+| Parameter   | Effect on Output                           | When to Use                                    |
 |-------------|--------------------------------------------|------------------------------------------------|
-| Temperature | Passt die allgemeine Zufälligkeit an       | Kreativität steuern ohne das Vokabular einzuschränken |
-| TopK        | Beschränkt Auswahl auf die wahrscheinlichsten Token | Seltene oder irrelevante Token verhindern      |
-| TopP        | Passt Vokabulargröße basierend auf Konfidenz an | Dynamische Kontrolle über Vielfalt             |
+| Temperature | Adjusts overall randomness                 | Control creativity without limiting vocabulary |
+| TopK        | Restricts choices to most probable tokens  | Prevent rare or irrelevant tokens              |
+| TopP        | Adapts vocabulary size based on confidence | Dynamic control over diversity                 |
 
 ### Techniken kombinieren
 
@@ -33,9 +33,9 @@ Diese Methoden lassen sich kombinieren, um das Ausgabe‑Verhalten weiter zu ver
 - **Temperature + TopK:** steuert die Zufälligkeit, während nur die wahrscheinlichsten Tokens gewählt werden.
 - **Temperature + TopP:** regelt die Kreativität über die Temperatur und begrenzt gleichzeitig dynamisch den Token‑Raum.
 
-Zusätzlich kannst du **MinP** setzen, um Tokens mit sehr geringer Wahrscheinlichkeit abzuschneiden – typischerweise seltene Labels oder seltsame Formulierungen, die du für Klassifizierungsaufgaben nicht möchtest.
+Zusätzlich kannst du **MinP** setzen, um Tokens mit sehr geringer Wahrscheinlichkeit auszuschließen – typischerweise seltene Labels oder seltsame Formulierungen, die du für Klassifizierungsaufgaben nicht möchtest.
 
-## Caption-Prompts
+## Caption Prompts
 
 Mit den meisten Modellen erzeugt folgender Prompt prägnante Captions mit genau einem Satz:
 
@@ -54,7 +54,7 @@ Für andere Sprachen sollten die Basisanweisungen im Prompt auf Englisch bleiben
 !!! tldr ""
     Halte Prompts so kurz wie möglich. Übermäßig lange Prompts erhöhen die Halluzinationsrate und die Latenz.
 
-## Konfigurationsbeispiele
+## Konfigurations Beispiele
 
 Die folgenden Beispiele kannst du direkt in deiner `vision.yml` verwenden. Die Datei liegt im Verzeichnis `storage/config`. [Mehr erfahren ›](index.md#visionyml-referenz).
 
@@ -72,8 +72,8 @@ Models:
 
 Warum das funktioniert:
 
-- **Engine:** Wendet sinnvolle Standardwerte für **Resolution**, **Format**, **Prompt** und **Options** an (720 px‑Thumbnails, JSON‑Prompts für Labels). Ein eigener Prompt ist nicht zwingend nötig.
-- **Run:** `auto` erlaubt manuelle Läufe, Ausführungen nach der Indexierung und geplante Jobs ￫ [Run Modes](index.md#run-modes).
+- **Engine:** Verwendet sinnvolle Standardwerte für **Resolution**, **Format**, **Prompt** und **Options** (720 px‑Thumbnails, JSON‑Prompts für Labels). Ein eigener Prompt ist nicht notwendig.
+- **Run:** `auto` läuft automatisch nach der Indexierung und durch geplante Jobs. Kann zusätzlich manuell ausgeführt werden ￫ [Run Modes](index.md#run-modes).
 
 ### Gemma 3: Caption
 
@@ -94,7 +94,7 @@ Models:
 Warum das funktioniert:
 
 - **Engine:** Verwendet 720 px‑Thumbnails und sinnvolle Standardwerte für **Format**, **Prompt** und **Options**. Ein [eigener Prompt](#caption-prompts) ist nicht erforderlich, aber möglich.
-- **Run:** `auto` erlaubt manuelle Läufe, Ausführungen nach der Indexierung und geplante Jobs ￫ [Run Modes](index.md#run-modes).
+- **Run:** `auto` läuft automatisch nach der Indexierung und durch geplante Jobs. Kann zusätzlich manuell ausgeführt werden ￫ [Run Modes](index.md#run-modes).
 - **Prompt:** Nutzt den eingebauten [Standard‑Prompt](#caption-prompts). Für andere Sprachen ergänze beispielsweise „Respond in German“.
 
 ### Qwen3-VL: Labels
@@ -134,8 +134,8 @@ Warum das funktioniert:
 - **Prompt:** Begrenzte Latenz, keine Wiederholungen und klare Kontrolle über Art und Anzahl der zurückgegebenen Labels. Für andere Sprachen ergänze „Respond in …“ im Prompt.
 - **Seed:** Sorgt für stabile, reproduzierbare Labels. Im Beispiel wird der Default‑Seed der [instruct‑Variante](https://github.com/QwenLM/Qwen3-VL?tab=readme-ov-file#instruct-models) verwendet.
 - **Temperature, TopP und TopK:** Erzwingen eher häufige, hochwahrscheinliche Wörter statt kreativer Synonyme.
-- **MinP:** Schneidet sehr unwahrscheinliche Tokens ab, also jene seltenen Labels und merkwürdigen Formulierungen, die du für Klassifizierung nicht brauchst.
-- **RepeatLastN** und **RepeatPenalty:** Stellen sicher, dass Labels eindeutig bleiben, indem Wiederholungen bestraft werden.
+- **MinP:** Schließt unwahrscheinliche Tokens aus, also jene seltenen Labels und merkwürdigen Formulierungen, die du für Klassifizierung nicht brauchst.
+- **RepeatLastN** und **RepeatPenalty:** Stellen sicher, dass Labels eindeutig bleiben, indem Wiederholungen vermieden werden.
 - **NumPredict:** Begrenzt die maximale Ausgabelänge, um Endloswiederholungen zu vermeiden.
 
 ### Qwen3-VL: Caption
@@ -175,11 +175,33 @@ Warum das funktioniert:
 - **Engine:** Wendet sinnvolle Standardwerte für **Resolution**, **Format** und **Options** an.
 - **Run:** `on-schedule` erlaubt manuelle Läufe und geplante Jobs ￫ [Run Modes](index.md#run-modes).
 - **System:** Weist das Modell an, Bilder in natürlicher Sprache zu beschreiben.
-- **Prompt:** Fordert ein oder zwei Sätze an, die Motiv, Handlung und Umgebung beschreiben, und verbietet Meta‑Formulierungen wie „The image shows…“, Listen und Zusatzkommentare. So entstehen saubere Alt‑Text‑ähnliche Captions, die direkt in UIs angezeigt werden können. Regeln wie „nur sichtbar Inhalte beschreiben“ und „keine Namen/Alter/Backstories erfinden“ reduzieren Halluzinationen und halten die Beschreibungen sachlich.
+- **Prompt:** Fordert ein oder zwei Sätze an, die Motiv, Handlung und Umgebung beschreiben, und verbietet Meta‑Formulierungen wie „The image shows…“, Listen und Zusatzkommentare. So entstehen saubere Alt‑Text‑ähnliche Captions, die direkt in UIs angezeigt werden können. Regeln wie „describe only what is clearly visible“ und „do not invent names/ages/backstories“ reduzieren Halluzinationen und halten die Beschreibungen sachlich.
 - **Seed:** Sorgt für stabile, reproduzierbare Captions für dasselbe Bild‑/Prompt‑Paar – nützlich beim Indexieren oder erneuten Generieren. Für mehr Varianz kannst du den Seed weglassen oder variieren.
 - **Temperature** und **MinP:** Entfernen den „langen Schwanz“ sehr unwahrscheinlicher Tokens (ungewöhnliche Wörter, Bruchstücke) und halten die Auswahl nahe an den wahrscheinlichsten Formulierungen. So erhältst du eher einfache, verlässliche Captions als kreative Umschreibungen.
 - **TopK** und **TopP:** Erhöhen Stabilität und senken das Halluzinationsrisiko im Caption‑Kontext.
 - **RepeatPenalty** und **RepeatLastN:** Verhindern Wiederholungen, ohne den natürlichen Sprachfluss zu stören.
 - **NumPredict:** Hoch genug für ein bis zwei Sätze, aber niedrig genug, um Abschweifungen zu vermeiden.
 
+## Nutzungs Tipps
 
+### Run Modes
+
+Um unerwartete Kosten zu vermeiden – insbesondere beim Testen neuer Modelle oder Prompts – setze `Run: manual` und [führe die Modelle manuell aus](cli.md#vision-modelle-ausfuhren), z.B. mit `photoprism vision run -m caption` oder `photoprism vision run -m labels`.
+`Run: auto` führt das Modell automatisch aus, nachdem die Indexierung abgeschlossen ist, um den Import nicht auszubremsen. Gleichzeitig bleiben [manuelle](cli.md#vision-modelle-ausfuhren) und [geplante Ausführungen](https://docs.photoprism.app/getting-started/config-options/#computer-vision) möglich.
+
+[Learn more ›](index.md#run-modes)
+
+### Existierende Kategorien ersetzen
+Um Kategorien, die vom eingebauten Klassifizierungsmodell erstellt wurden, zu entfernen, kann folgender Befehl in einem Terminal ausgeführt werden
+
+```
+photoprism vision reset -m labels -s image
+```
+
+bevor neue Kategorien mit Ollama erstellt werden
+
+```
+photoprism vision run -m labels
+```
+
+[Learn more ›](cli.md)

@@ -6,12 +6,8 @@
 PhotoPrism nutzt *Kategorien* (Labels), um Bilder und Videos zu klassifizieren. Viele andere Tools verwenden dafür den Begriff *Tags*.
 Kategorien werden automatisch gesetzt, wenn neue Bilder zu PhotoPrism hinzugefügt werden. Du kannst manuell neue Kategorien hinzufügen sowie bestehende Kategorien bearbeiten oder entfernen.
 
-Im Bereich *Kategorien* werden alle Labels deiner Fotos und Videos angezeigt.
+Im Bereich *Kategorien* werden alle Kategorien deiner Fotos und Videos angezeigt.
 Du kannst eine Kategorie hervorheben, indem du auf :material-star: klickst. Hervorgehobene Kategorien werden in der Ansicht ganz oben angezeigt.
-
-PhotoPrism ordnet jedem automatisch erzeugten Label zusätzlich eine übergeordnete Kategorie zu. So gehört z.B. zur allgemeinen Kategorie `vehicle` eine Reihe von Labels wie `cab`, `catamaran`, `lifeboat` oder `bullet train`. Diese übergeordneten Kategorien können nicht bearbeitet werden, lassen sich aber genau wie normale Labels in der Suche verwenden.
-
-In der Ansicht *Kategorien* kannst du steuern, ob diese übergeordneten Kategorien zusätzlich zu den üblichen Labels angezeigt werden. Über das Symbol oben rechts wechselst du zwischen :material-eye: (*Mehr anzeigen*) und :material-eye-off: (*Weniger anzeigen*). Außerdem erscheinen diese Label-Kategorien in der Suchleiste als Auswahl unter *Alle Kategorien*, sodass du sie in komplexeren Filtern verwenden kannst.
 
 ![Screenshot](img/labels-1-2503-german.jpg){ class="shadow" }
 

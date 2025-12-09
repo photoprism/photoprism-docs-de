@@ -1,4 +1,4 @@
-Unsere neueste Version beeinhaltet Gesichtserkennung. Sie ermöglicht dir, Bilder deiner Familie und Freunde zu finden.
+PhotoPrism unterstützt Gesichtserkennung. Sie ermöglicht dir, Bilder deiner Familie und Freunde zu finden.
 Freue dich darauf, lang vergessene Bilder wieder zu entdecken! Wenn du deine Sammlung indexierst, werden Gesichter erkannt und nach
 Ähnlichkeit gruppiert, so dass du sie schnell Personen zuordnen kannst.
 

@@ -1,16 +1,18 @@
 # Ollama einrichten #
 
-In diesem Abschnitt erfährst du, wie du eine selbst gehostete Ollama‑Instanz einrichtest und mit PhotoPrism verbindest, um mit [vision‑fähigen LLMs](https://ollama.com/search?c=vision) detaillierte Bildunterschriften und präzise Labels zu erzeugen.
+In diesem Abschnitt erfährst du, wie du eine selbst gehostete Ollama Instanz einrichtest und mit PhotoPrism verbindest, um mit [vision‑fähigen LLMs](https://ollama.com/search?c=vision) detaillierte Bildunterschriften und präzise Kategorien zu erzeugen.
 
 ## Schritt 1: Ollama installieren
 
-Um Ollama auf demselben Server wie PhotoPrism auszuführen, fügst du den Dienst `ollama` im Abschnitt `services` deiner `compose.yaml`‑ (oder `docker-compose.yml`‑) Datei hinzu, wie im folgenden Beispiel gezeigt.[^1]
+Um Ollama auf demselben Server wie PhotoPrism zu installieren, füge den Dienst `ollama` im Abschnitt `services` deiner `compose.yaml` (oder `docker-compose.yml`) Datei hinzu, wie im folgenden Beispiel gezeigt.[^1]
 
-Alternativ sind in den meisten [`compose.yaml`](https://docs.photoprism.app/getting-started/docker-compose/) [Konfigurationsbeispielen](https://dl.photoprism.app/docker/compose.yaml) auf unserem Download‑Server Ollama‑Dienste bereits vorkonfiguriert. In diesem Fall kannst du Ollama mit folgendem Befehl starten (entferne `profiles: ["ollama"]` aus dem `ollama`‑Dienst, wenn er standardmäßig ohne `--profile ollama` gestartet werden soll):
+Alternativ ist Ollama in den meisten [`compose.yaml`](https://docs.photoprism.app/getting-started/docker-compose/) [Konfigurations Beispielen](https://dl.photoprism.app/docker/compose.yaml) auf unserem Download‑Server bereits vorkonfiguriert. In diesem Fall kannst du Ollama mit folgendem Befehl starten:
 
 ```bash
 docker compose --profile ollama up -d
 ```
+
+Wenn Ollama standardmäßeig ohne `--profile ollama` gestartet werden soll, entferne `profiles: ["ollama"]`.
 
 !!! example "compose.yaml"
     ```yaml
@@ -73,7 +75,7 @@ Beachte, dass das [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/
 
 ## Schritt 2: Modelle herunterladen
 
-Sobald der Ollama‑Dienst läuft (siehe [Schritt 1](#schritt-1-ollama-installieren)), kannst du [beliebige Vision‑Modelle](https://ollama.com/search?c=vision) herunterladen, die zu deiner Hardware und deinen Anforderungen passen. Zum Beispiel:
+Sobald der Ollama Dienst läuft (siehe [Schritt 1](#schritt-1-ollama-installieren)), kannst du [beliebige Vision‑Modelle](https://ollama.com/search?c=vision) herunterladen, die zu deiner Hardware und deinen Anforderungen passen. Zum Beispiel:
 
 ```bash
 docker compose exec ollama ollama pull gemma3:latest
@@ -83,7 +85,7 @@ docker compose exec ollama ollama pull gemma3:latest
 
 ## Schritt 3: Modelle konfigurieren
 
-Erstelle nun eine neue Datei `config/vision.yml` oder bearbeite die vorhandene Datei im [*storage*‑Verzeichnis](https://docs.photoprism.app/getting-started/docker-compose/#photoprismstorage) deiner PhotoPrism‑Instanz, wie im folgenden Beispiel. Aus Sicht des Containers befindet sich die Datei unter `/photoprism/storage/config/vision.yml`:
+Erstelle nun eine neue Datei `config/vision.yml` oder bearbeite die vorhandene Datei im *storage*‑Verzeichnis deiner PhotoPrism‑Instanz, wie im folgenden Beispiel. Aus Sicht des Containers befindet sich die Datei unter `/photoprism/storage/config/vision.yml`:
 
 !!! example "vision.yml"
     ```yaml
@@ -104,32 +106,32 @@ Erstelle nun eine neue Datei `config/vision.yml` oder bearbeite die vorhandene D
 
 [Mehr erfahren ›](ollama-models.md#gemma-3-labels)
 
-### Scheduling‑Optionen
+### Scheduling Optionen
 
-- `Run: auto` (empfohlen) führt das Modell automatisch aus, nachdem die Indexierung abgeschlossen ist, damit der Import nicht ausgebremst wird. Gleichzeitig bleiben [manuelle Aufrufe](cli.md#vision-modelle-ausfuhren) und [zeitgesteuerte Ausführungen](https://docs.photoprism.app/getting-started/config-options/#computer-vision) möglich.
+- `Run: auto` (empfohlen) führt das Modell automatisch aus, nachdem die Indexierung abgeschlossen ist, damit der Import bzw die Indexierung nicht ausgebremst wird. Gleichzeitig bleiben [manuelle Aufrufe](cli.md#vision-modelle-ausfuhren) und [zeitgesteuerte Ausführungen](https://docs.photoprism.app/getting-started/config-options/#computer-vision) möglich.
 - `Run: manual` deaktiviert die automatische Ausführung, sodass du das Modell [nur manuell](cli.md#vision-modelle-ausfuhren) über `photoprism vision run -m caption` oder `photoprism vision run -m labels` startest.
 
 [Mehr erfahren ›](index.md#run-modes)
 
-### Konfigurationstipps
+### Konfigurations Tipps
 
-PhotoPrism wertet Modelle von unten nach oben in der Liste aus. Wenn du die Ollama‑Einträge unterhalb anderer Modelle platzierst, werden Ollama‑Modelle bevorzugt, während andere als Fallback erhalten bleiben.
+PhotoPrism wertet Modelle von unten nach oben in der Liste aus. Wenn du die Ollama Einträge unterhalb anderer Modelle platzierst, werden Ollama‑Modelle bevorzugt, während andere als Fallback erhalten bleiben.
 
-Von Ollama generierte Captions und Labels werden automatisch mit der Metadatenquelle `ollama` gespeichert. Du musst daher in Schemata keinen speziellen `source`‑Wert setzen oder `--source` in der CLI angeben, außer du möchtest die Quelle explizit überschreiben.
+Von Ollama generierte Captions und Labels werden automatisch mit der Source `ollama` gespeichert. Du musst daher keinen speziellen `source`‑Wert angeben, außer du möchtest die Quelle explizit überschreiben.
 
 !!! tip "Prompt‑Lokalisierung"
     Wenn du Ausgaben in anderen Sprachen erzeugen möchtest, lasse die Basisanweisungen im Prompt auf Englisch und ergänze nur die gewünschte Sprache (z.B. „Respond in German“). Dieses Vorgehen funktioniert sowohl für [Caption‑Prompts](ollama-models.md#qwen3-vl-caption) als auch für [Label‑Prompts](ollama-models.md#qwen3-vl-labels).
 
 ## Schritt 4: PhotoPrism neu starten
 
-Führe die folgenden Befehle aus, um den Dienst `photoprism` neu zu starten und die neuen Einstellungen zu übernehmen:
+Führe die folgenden Befehle aus, um `photoprism` neu zu starten und die neuen Einstellungen zu übernehmen:
 
 ```bash
 docker compose stop photoprism
 docker compose up -d
 ```
 
-Anschließend kannst du die `photoprism vision`‑[CLI‑Befehle](./cli.md#vision-modelle-ausfuhren) beim [Öffnen eines Terminals](https://docs.photoprism.app/getting-started/docker-compose/#opening-a-terminal) verwenden, z.B. `photoprism vision run -m caption` zum Erzeugen von Captions oder `photoprism vision run -m labels` zum Erzeugen von Labels.
+Anschließend kannst du die `photoprism vision` [CLI‑Befehle](./cli.md#vision-modelle-ausfuhren) [im Terminal](https://docs.photoprism.app/getting-started/docker-compose/#opening-a-terminal) verwenden, z.B. `photoprism vision run -m caption` zum Erzeugen von Captions oder `photoprism vision run -m labels` zum Erzeugen von Kategorien.
 
 [Mehr erfahren ›](cli.md#vision-modelle-ausfuhren)
 
@@ -137,15 +139,15 @@ Anschließend kannst du die `photoprism vision`‑[CLI‑Befehle](./cli.md#visio
 
 ### Konfiguration überprüfen
 
-Wenn es Probleme gibt, solltest du zuerst prüfen, wie PhotoPrism deine `vision.yml` geladen hat. Das geht mit:
+Wenn es Probleme gibt, solltest du zuerst prüfen, ob die `vision.yml` richtig geladen wurde.
 
 ```bash
 docker compose exec photoprism photoprism vision ls
 ```
 
-Der Befehl gibt die Einstellungen aller unterstützten und konfigurierten Modelltypen aus. Vergleiche das Ergebnis mit deiner `vision.yml`, um zu prüfen, ob die Konfiguration korrekt übernommen wurde und ob Parse‑Fehler oder Tippfehler vorliegen.
+Der Befehl gibt die Einstellungen aller unterstützten und konfigurierten Modelltypen aus. Vergleiche das Ergebnis mit deiner `vision.yml`, um zu prüfen, ob die Konfiguration korrekt übernommen wurde oder Konfigurationsfehler vorliegen.
 
-### Testruns durchführen
+### Test Runs durchführen
 
 Die folgenden [Terminal‑Befehle](https://docs.photoprism.app/getting-started/docker-compose/#opening-a-terminal) führen jeweils einen einzelnen Lauf für den angegebenen Modelltyp aus:
 
@@ -154,9 +156,14 @@ photoprism vision run -m labels --count 1 --force
 photoprism vision run -m caption --count 1 --force
 ```
 
-Wenn keine Ausgabe erzeugt wird, aktiviere testweise ausführliches Logging (`PHOTOPRISM_LOG_LEVEL=trace`) und wiederhole den Aufruf, um Anfrage und Antwort zu prüfen.
+Wenn keine Ausgabe erzeugt wird, wiederhole den Aufruf mit einem höhreren Log Level.
 
-### GPU‑Performance‑Probleme
+```bash
+photoprism --log-level=trace vision run -m labels --count 1 --force
+photoprism --log-level=trace vision run -m caption --count 1 --force
+```
+
+### GPU Performance Probleme
 
 Bei der Verwendung von Ollama mit GPU‑Beschleunigung kann es mit der Zeit zu Leistungseinbrüchen durch Probleme im VRAM‑Management kommen. Typische Anzeichen sind langsamere Verarbeitung und der Eindruck, dass der Dienst „abstürzt“, obwohl er noch Anfragen beantwortet – dann allerdings ohne GPU‑Nutzung.
 
@@ -171,6 +178,6 @@ docker compose up -d ollama
 
 Dadurch wird der VRAM geleert und die normale GPU‑beschleunigte Verarbeitung wiederhergestellt.
 
-[^1]: Unzusammenhängende Konfigurationsdetails wurden zur besseren Lesbarkeit ausgelassen.
+[^1]: Nicht relevante Konfigurationsdetails wurden zur besseren Lesbarkeit ausgelassen.
 
 
