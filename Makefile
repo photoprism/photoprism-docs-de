@@ -27,13 +27,9 @@ install-venv:
 	python3 -m venv venv
 	. ./venv/bin/activate
 	./venv/bin/pip3 install wheel
-ifdef GH_TOKEN
-	@echo "Found GH_TOKEN, installing mkdocs-material-insiders"
-	./venv/bin/pip3 install --disable-pip-version-check git+https://${GH_TOKEN}@github.com/photoprism/mkdocs-material-insiders.git
-else
-	@echo "GH_TOKEN not set in .env file, installing regular mkdocs-material"
+	# Material for MkDocs Insiders is now free for everyone:
+	# https://squidfunk.github.io/mkdocs-material/blog/2025/11/11/insiders-now-free-for-everyone/#switching-from-insiders
 	./venv/bin/pip3 install --disable-pip-version-check mkdocs-material
-endif
 	./venv/bin/pip3 install --disable-pip-version-check -r requirements.txt
 serve:
 	./venv/bin/mkdocs serve --livereload --watch docs --watch overrides --watch mkdocs.yml -a 0.0.0.0:8000
@@ -47,6 +43,7 @@ pull:
 push:
 	git checkout develop
 	git push origin develop
+replace: upgrade
 merge:
 	git checkout deploy
 	git pull origin deploy

@@ -30,16 +30,7 @@ To make more extensive changes, fork this repository, modify the corresponding `
 
 ### Build Setup ###
 
-#### Create .env File ####
-
-If you have a personal access token for the MkDocs Material Insider edition,
-add you GitHub access token to an .env file in the main project directory:
-
-```env
-GH_TOKEN=[YOUR TOKEN]
-```
-
-New GitHub access tokens can be generated on https://github.com/settings/tokens. 
+MkDocs Material (including features that used to require the Insiders build) installs directly from PyPI, so `make deps` / `make install` work out of the box without adding anything to `.env`.
 
 #### Installing MkDocs ####
 

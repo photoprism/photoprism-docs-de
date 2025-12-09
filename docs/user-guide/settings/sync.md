@@ -1,6 +1,8 @@
 # Dienste #
 
-Du kannst deine PhotoPrism-Instanz mit anderen Diensten mit WebDAV-Unterstützung verbinden, zum Beispiel mit anderen PhotoPrism-Instanzen, Nextcloud oder ownCloud.
+Du kannst deine PhotoPrism-Instanz mit anderen Diensten mit WebDAV-Unterstützung verbinden, zum Beispiel mit anderen PhotoPrism-Instanzen, Nextcloud oder ownCloud. Dies ermöglicht es dir, Dateien zwischen mehreren Diensten zu [teilen](../share/services-share.md) oder zu [synchronisieren](../sync/services-sync.md).
+
+PhotoPrism kann Dateien außerdem per WebDAV bereitstellen, sodass du sie direkt unter macOS oder Windows im Dateimanager durchsuchen kannst. [Mehr erfahren ›](../sync/webdav.md)
 
 
 Das kann nützlich sein, wenn du Dateien zwischen mehreren Diensten [teilen](../share/services-share.md) oder [synchronisieren](../sync/services-sync.md) willst.
@@ -28,7 +30,7 @@ Das kann nützlich sein, wenn du Dateien zwischen mehreren Diensten [teilen](../
 
    ![Screenshot](img/services-edit-2503-german.jpg){ class="shadow" }
 
-## Upload Einstellunegn bearbeiten ##
+## Upload Einstellungen bearbeiten ##
 
 1. Gehe zu *Einstellungen*
 2. Öffne das *Dienste* Tab
@@ -41,15 +43,15 @@ Das kann nützlich sein, wenn du Dateien zwischen mehreren Diensten [teilen](../
 
 Du kannst jetzt [Alben oder Dateien mit diesem Dienst teilen](../share/services-share.md).
 
-!!! attention ""
-	Auf Grund von Problemen bei bestimmten Nextcloud Einstellungen kann es vorkommen, dass nach dem Upload bei Nextcloud nur 0 Byte große Dateien ankommen. 
-	[Hier](https://github.com/photoprism/photoprism/issues/443) findest du Informationen, die dir helfen, das Problem zu beheben.
+!!! danger ""
+    Auf Grund von Problemen bei bestimmten Nextcloud Einstellungen kann es vorkommen, dass nach dem Upload bei Nextcloud nur 0 Byte große Dateien ankommen. 
+    [Hier](https://github.com/photoprism/photoprism/issues/443) findest du Informationen, die dir helfen, das Problem zu beheben.
 
-## Synchronisation Einrichten##
+## Synchronisation bearbeiten ##
 
 1. Gehe zu *Einstellungen*
-2. Öffne das *Sync* Tab
-3. Klicke in den Sync Bereich deines Servers
+2. Öffne das *Dienste* Tab
+3. Klicke in den Sync Bereich deines Dienstes
    ![Screenshot](img/services-sync-1-2503-german.jpg){ class="shadow" }
 4. Aktiviere die Synchronisation in der Ecke oben rechts
 5. Wähle den Ordner, in welchem sich deine Bilder befinden
