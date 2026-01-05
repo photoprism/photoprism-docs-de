@@ -100,29 +100,21 @@ docker compose exec photoprism photoprism vision reset --models=labels --source=
 !!! note ""
     Das Flag `--yes` führt den Befehl nicht‑interaktiv ohne Rückfrage aus. Lass es weg, wenn du vor dem Zurücksetzen eine Bestätigung möchtest.
 
-!!! note "Captions nach Löschung in der Web‑UI neu generieren"
-    Wenn du Captions im Web‑Frontend gelöscht hast – entweder einzeln oder per Stapel‑Bearbeitung –, wird die Caption‑Quelle zu `manual` oder `batch`. In diesem Fall kann `photoprism vision reset` die internen Marker nicht vollständig zurücksetzen und ein anschließendes `vision run` mit der Standard‑Source überspringt diese Bilder möglicherweise.
+!!! info "Über das Web-UI manuell gelöschte Bildunterschriften neu generieren"
+    Bildunterschriften, die über den Bearbeitungs- oder Batch-Bearbeitungsdialog gelöscht wurden, haben Source `manual` oder `batch`. Der `photoprism vision reset` Befehl setzt diese nicht zurück.
 
-    Um Captions für diese Fotos dennoch neu zu erzeugen, führe das Caption‑Modell mit einer expliziten `vision`‑Source aus, anstatt `vision reset` zu verwenden:
+    Um Bildunterschriften für diese Fotos dennoch neu zu erzeugen, führe das Caption‑Modell mit source `vision ` aus:
 
     ```bash
     docker compose exec photoprism photoprism vision run --models=caption --source=vision
     ```
 
-    Die Source `vision` hat eine hohe Priorität (64) und kann `manual` und `batch` überschreiben, sofern das Modell das Ersetzen vorhandener Daten unterstützt (z.B. in Kombination mit `--force`). Eine Übersicht aller verfügbaren Sources und ihrer Prioritäten erhältst du mit:
+    Die Source `vision` hat eine hohe Priorität (64) und kann leere Bildunterschriften mit Source `manual` und `batch` überschreiben.
+    Eine Übersicht aller verfügbaren Sources und ihrer Prioritäten erhältst du mit:
 
     ```bash
-    photoprism vision sources show
+    docker compose exec photoprism photoprism vision sources show
     ```
-
-    Relevante Caption‑bezogene Sources haben derzeit standardmäßig folgende Prioritäten:
-
-    - `image`: 8 (eingebaute TensorFlow‑Modelle)
-    - `ollama`: 16 (Captions und Kategorien über Ollama)
-    - `openai`: 16 (Captions und Kategorien über OpenAI)
-    - `batch`: 64 (Stapel‑Bearbeitung in der Web‑UI)
-    - `vision`: 64 (manuelle Vision‑Läufe über die CLI)
-    - `manual`: 64 (Captions, die direkt in der Web‑UI bearbeitet wurden)
 
 ## Befehle für die Gesichtserkennung
 
