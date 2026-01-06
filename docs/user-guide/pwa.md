@@ -28,6 +28,10 @@ Die Kompatibilität unserer PWA wurde mit Apple Safari und Google Chrome geteste
 
         ![Screenshot](img/ios-3.jpg){: style="width:35%" class="shadow"}
 
+    5. PhotoPrism ist jetzt auf deinem Startbildschirm verfügbar.
+
+        ![Screenshot](img/ios-4.jpg){: style="width:35%" class="shadow"}
+
     !!! info "iOS‑Originale behalten"
         iOS kann Fotos und Videos in ein besser kompatibles Format umwandeln, **bevor** sie über Safari oder die PhotoPrism‑PWA hochgeladen werden. In diesem Fall erhält und speichert PhotoPrism bereits konvertierte Dateien.
 
@@ -47,11 +51,7 @@ Die Kompatibilität unserer PWA wurde mit Apple Safari und Google Chrome geteste
 
         ![Screenshot](img/android-install-app.jpg){: style="width:35%" class="shadow"}
 
-    4.Wähle einen Namen und klicke *Add*
+    4. Wähle einen Namen und klicke *Add*
 
-      ![Screenshot](img/android-3.jpg){: style="width:35%" class="shadow"}
+        ![Screenshot](img/android-3.jpg){: style="width:35%" class="shadow"}
 
-
-PhotoPrism ist jetzt auf deinem Startbildschirm verfügbar.
-
-![Screenshot](img/ios-4.jpg){: style="width:35%" class="shadow"}
