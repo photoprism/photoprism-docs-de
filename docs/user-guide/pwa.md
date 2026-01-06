@@ -28,6 +28,14 @@ Die Kompatibilität unserer PWA wurde mit Apple Safari und Google Chrome geteste
 
         ![Screenshot](img/ios-3.jpg){: style="width:35%" class="shadow"}
 
+    !!! info "iOS‑Originale behalten"
+        iOS kann Fotos und Videos in ein besser kompatibles Format umwandeln, **bevor** sie über Safari oder die PhotoPrism‑PWA hochgeladen werden. In diesem Fall erhält und speichert PhotoPrism bereits konvertierte Dateien.
+
+        Damit deine Originale erhalten bleiben:
+
+        - Öffne im iOS‑Fotowähler das Drei‑Punkte‑Menü (…) → *Optionen* und stelle **Format** von **Automatisch** auf **Aktuell**, damit deine Originaldateien erhalten bleiben.
+        - Alternativ kannst du spezielle Sync‑Apps wie [PhotoSync](sync/sync-phone.md#photosync-verwenden) verwenden, die Dateien im Originalformat per WebDAV hochladen können.
+
 === "Android/Firefox/Chrome"
 
     1. Öffne PhotoPrism im Browser deines Geräts
