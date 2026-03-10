@@ -81,6 +81,7 @@ nav:
   - KI Modelle nutzen:
       - Einführung: user-guide/ai/index.md
       - Ollama Setup: user-guide/ai/using-ollama.md
+      - Ollama Cloud: user-guide/ai/ollama-cloud.md
       - Ollama Modelle: user-guide/ai/ollama-models.md
       - OpenAI API: user-guide/ai/using-openai.md
       - CLI Befehle: user-guide/ai/cli.md

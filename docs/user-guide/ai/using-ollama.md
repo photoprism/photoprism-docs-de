@@ -163,6 +163,17 @@ photoprism --log-level=trace vision run -m labels --count 1 --force
 photoprism --log-level=trace vision run -m caption --count 1 --force
 ```
 
+### Unvollständige Captions bei Thinking‑Modellen
+
+Wenn du ein Reasoning‑ oder „Thinking"‑Modell verwendest und unvollständige oder abgeschnittene Captions erhältst, verbraucht das Modell möglicherweise den Großteil seines Output‑Token‑Budgets für internes Reasoning – sodass zu wenige Tokens für die eigentliche Caption übrig bleiben.
+
+Um das zu beheben, wechsle entweder zu einem Modell ohne Thinking oder erhöhe den Wert von `NumPredict` in den [`vision.yml`](index.md#visionyml-reference) [Optionen](index.md#options), um dem Modell mehr Spielraum zu geben:
+
+```yaml
+Options:
+  NumPredict: 4096
+```
+
 ### GPU Performance Probleme
 
 Bei der Verwendung von Ollama mit GPU‑Beschleunigung kann es mit der Zeit zu Leistungseinbrüchen durch Probleme im VRAM‑Management kommen. Typische Anzeichen sind langsamere Verarbeitung und der Eindruck, dass der Dienst „abstürzt“, obwohl er noch Anfragen beantwortet – dann allerdings ohne GPU‑Nutzung.
