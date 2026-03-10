@@ -20,17 +20,17 @@ Manuell geänderte Werte werden in einer Konfigurationsdatei gespeichert. Sie wi
 Debug Logs unter *Dateien>Logs* anzeigen.
 Änderungen erfordern einen Neustart.
 
-Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options#logging) ist `PHOTOPRISM_DEBUG`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/#logging) ist `PHOTOPRISM_DEBUG`.
 
 ### Experimentelle Funktionen ###
 Aktiviert neue Funktionen, an denen derzeit noch entwickelt wird.
 
-Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options#feature-flags) ist `PHOTOPRISM_EXPERIMENTAL`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/#feature-flags) ist `PHOTOPRISM_EXPERIMENTAL`.
 
 ### Schreibgeschützter Modus ###
 Ist diese Option gewählt, können Dateien nicht importiert, über die Benutzeroberfläche hochgeladen oder gelöscht werden.
 
-Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options#feature-flags) ist `PHOTOPRISM_READONLY`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/#feature-flags) ist `PHOTOPRISM_READONLY`.
 
 ### Keine Datensicherung ###
 Diese Option verhindert die Erstellung von Datenbank-, Album- und YAML-Sidecar-Dateisicherungen.
@@ -40,12 +40,12 @@ Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting
 ### WebDAV deaktivieren ###
 Deaktiviert den eingebauten WebDAV-Server. Änderungen erfordern einen Neustart.
 
-Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options#feature-flags) ist `PHOTOPRISM_DISABLE_WEBDAV`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/#feature-flags) ist `PHOTOPRISM_DISABLE_WEBDAV`.
 
 ### Gesichter deaktivieren ###
 Wenn diese Option aktiviert ist, werden alle Funktionen zur Gesichts­erkennung und zum Erkennen von Gesichtern deaktiviert.
 
-Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options#feature-flags) ist `PHOTOPRISM_DISABLE_FACES`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/#feature-flags) ist `PHOTOPRISM_DISABLE_FACES`.
 
 ### Karten deaktivieren ###
 Wenn Karten deaktiviert sind, liest PhotoPrism trotzdem noch Geo-Informationen (Längen- und Breitengrad) aus den Metadaten deiner Dateien aus.
@@ -53,7 +53,7 @@ Es wird allerdings kein Reverse Lookup mehr gemacht, um Informationen über die 
 
 Die Karten-Ansicht ist dann nicht sichtbar.
 
-Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options#feature-flags) ist `PHOTOPRISM_DISABLE_PLACES`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/#feature-flags) ist `PHOTOPRISM_DISABLE_PLACES`.
 
 ### ExifTool deaktivieren ###
 Keine JSON-Dateien in `storage/sidecar` mit ExifTool erstellen.
@@ -68,26 +68,26 @@ Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting
 
 Wenn diese Option aktiviert ist, werden Bildklassifizierung und Gesichtserkennung deaktiviert, da beide auf TensorFlow basieren.
 
-Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options#feature-flags) ist `PHOTOPRISM_DISABLE_TENSORFLOW`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/#feature-flags) ist `PHOTOPRISM_DISABLE_TENSORFLOW`.
 
 ## Datensicherung ##
 
 ### Datenbank Backups
 Datenbank-Backups werden nach dem konfigurierten Zeitplan erstellt.
 
-Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options.md#backup) ist `PHOTOPRISM_BACKUP_DATABASE`.
-Der Zeitplan sowie die Anzahl der Backups, die aufbewahrt werden, können mittels `PHOTOPRISM_BACKUP_SCHEDULE` und `PHOTOPRISM_BACKUP_RETAIN` [konfiguriert](https://docs.photoprism.app/getting-started/config-options.md#backup) werden.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/#backup) ist `PHOTOPRISM_BACKUP_DATABASE`.
+Der Zeitplan sowie die Anzahl der Backups, die aufbewahrt werden, können mittels `PHOTOPRISM_BACKUP_SCHEDULE` und `PHOTOPRISM_BACKUP_RETAIN` [konfiguriert](https://docs.photoprism.app/getting-started/config-options/#backup) werden.
 
 ### Album Backups
 [YAML-Dateien, die die Metadaten von Alben sichern](../backups/export.md) werden nach dem konfigurierten Zeitplan erstellt.
 
-Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options.md#backup) ist `PHOTOPRISM_BACKUP_ALBUMS`.
-Der Zeitplan kann mittels [`PHOTOPRISM_BACKUP_SCHEDULE`](https://docs.photoprism.app/getting-started/config-options.md#backup) konfiguriert werden.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/#backup) ist `PHOTOPRISM_BACKUP_ALBUMS`.
+Der Zeitplan kann mittels [`PHOTOPRISM_BACKUP_SCHEDULE`](https://docs.photoprism.app/getting-started/config-options/#backup) konfiguriert werden.
 
 ### Sidecar Dateien
 [YAML-Dateien, die die Metadaten von Bildern sichern](../backups/export.md) werden erstellt.
 
-Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options.md#sidecar-files) ist `PHOTOPRISM_SIDECAR_YAML`.
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/#sidecar-files) ist `PHOTOPRISM_SIDECAR_YAML`.
 
 ## Vorschaubilder ##
 In diesem Bereich wird festgelegt, wie JPEG-Vorschaubilder und Miniaturansichten gerendert werden. Das sind hochwertige, verkleinerte Versionen deiner Originale.
@@ -318,5 +318,4 @@ Die *Lanczos*-Interpolation ist eine mathematische Formel zur weichen Interpolat
 *Blackman* ist eine modifizierte *Lanczos*-Interpolation die eine bessere Kontrolle über bestimmte Artefakte hat.
 
 -->
-
 

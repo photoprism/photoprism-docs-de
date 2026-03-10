@@ -1,15 +1,15 @@
 # Dateien indexieren #
 
 !!! info ""
-    Wenn du PhotoPrism zum ersten Mal verwendest, stelle sicher, dass deine Bild und Video Sammlung als [*Originals* Ordner konfiguriert ist](https://docs.photoprism.app/getting-started/docker-compose/#photoprismoriginals) und dass die [Bibliothekseinstellungen](../settings/library.md) deinen individuellen Vorlieben entsprechen.    
+    Wenn du PhotoPrism zum ersten Mal verwendest, stelle sicher, dass deine Bild- und Videosammlung als [*Originals*-Ordner konfiguriert ist](https://docs.photoprism.app/getting-started/docker-compose/#photoprismoriginals) und dass die [Bibliothekseinstellungen](../settings/library.md) deinen individuellen Vorlieben entsprechen.
 
 ## Manuelles Indexieren
 
 1. Öffne den Bereich *Dateien*, indem du auf den Link in der Hauptnavigation klickst
 
-2. Wählen einen Unterordner aus, oder nutze die Standardeinstellung, um alle Dateien zu indexieren
+2. Wähle einen Unterordner aus oder nutze die Standardeinstellung, um alle Dateien zu indexieren
 
-3. Wähle *Index vollständig aktualisieren*, falls du alle Dateien, einschließlich bereits indexierterer und unveränderter Dateien, indexieren möchtest
+3. Wähle *Index vollständig aktualisieren*, falls du alle Dateien einschließlich bereits indexierter und unveränderter Dateien erneut indexieren möchtest
 
 4. Klicke *Start*, um mit der Indexierung zu beginnen
 
@@ -21,7 +21,7 @@
     Du kannst [WebDAV](webdav.md)-kompatible Anwendungen wie den Windows Explorer von Microsoft und den Finder von Apple verwenden,  um Dateien von einem Remote-Computer oder einem mobilen Gerät zu deinem *Originals* Ordner hinzuzufügen.
 
 !!! tip "NSFW" 
-    Ein NSFW-Detektor kann aktiviert werden, um Bilder, mit anstößigem Inhalt, automatisch als privat zu kennzeichnen. 
+    Ein NSFW-Detektor kann aktiviert werden, um Bilder mit anstößigem Inhalt automatisch als privat zu kennzeichnen.
     Beachte, dass der Mechanismus nicht 100% zuverlässig ist.
     
     Bilder, die bereits indexiert wurden, bevor der NSFW-Detektor aktiviert wird, werden vom Detektor nicht gescannt.
@@ -37,12 +37,12 @@ Das kann nach einem Upgrade auf eine neue Hauptversion erforderlich sein.
 ### Aufräumen ###
 Admins können "Aufräumen" aktivieren, um ungenutzte Vorschaubilder aus dem Cache zu löschen und verwaiste Indexeinträge zu entfernen. Wenn du dies von Zeit zu Zeit tust, kann dies die Indexierung beschleunigen und die Speichernutzung reduzieren.
 
-## Regelmäßige und automatische Indixierung ##
+## Regelmäßige und automatische Indexierung ##
 
 [PhotoPrism 240523-923ee0cf7](https://docs.photoprism.app/release-notes/#may-23-2024) und neuere Versionen können optional zeitgesteuerte Rescans deiner Bibliothek durchführen. Diese Funktion kannst du aktivieren, indem du [einen Zeitplan in deiner Konfiguration einstellst](https://docs.photoprism.app/getting-started/config-options/#indexing). Wenn du einen externen Scheduler verwendest, achte bitte darauf, dass du nicht mehrere Indexierungsprozesse gleichzeitig startest, da dies nicht nur eine hohe Serverlast verursacht, sondern auch zu unerwarteten Ergebnissen führen kann.
 
 Standardmäßig wird auch automatisch ein Rescan der Bibliothek nach einer Sicherheitsverzögerung von 5 Minuten ausgelöst, wenn Dateien [über WebDAV](../sync/webdav.md) mit dem Ordner Originals synchronisiert werden.
-Du kannst die Sicherheitsverzögerung über die Konfigurationsoption [PHOTOPRISM_AUTO_INDEX](https://docs.photoprism.app/getting-started/config-options#indexing) ändern.
+Du kannst die Sicherheitsverzögerung über die Konfigurationsoption [PHOTOPRISM_AUTO_INDEX](https://docs.photoprism.app/getting-started/config-options/#indexing) ändern.
 
 ## Verzeichnisse und Dateien ignorieren ##
 Versteckte Dateien oder Ordner, deren Namen mit  `.`, `@`, `_.` oder `__` wie `__MACOSX` beginnen, werden automatisch ignoriert.

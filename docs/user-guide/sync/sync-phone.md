@@ -25,7 +25,7 @@ Eine Übersicht über [mobile Sync-Apps](#sync-apps-fur-ios-und-android) für iO
 4. Trage deine PhotoPrism Konfiguration ein
 
     !!! info ""
-        *Server:* Deine Server Url, z.B. "example.com".
+        *Server:* Deine Server-URL, z. B. `example.com`.
 
         *Port:* Dein Port. Falls du HTTPS verwendest ist der Port 443.
 
@@ -33,7 +33,7 @@ Eine Übersicht über [mobile Sync-Apps](#sync-apps-fur-ios-und-android) für iO
         
         *Password:* Dein Admin Passwort.
 
-        *Directory:* /import/ oder /originals/ jenachdem, wie du deine Dateien [einlesen möchtest](../library/import-vs-index.md).
+        *Directory:* `/import/` oder `/originals/`, je nachdem, wie du deine Dateien [einlesen möchtest](../library/import-vs-index.md).
         
         *Use SSL:* Sollte aktiviert sein.
 
@@ -65,7 +65,7 @@ Eine Übersicht über [mobile Sync-Apps](#sync-apps-fur-ios-und-android) für iO
 PhotoPrism startet den Import- bzw. Indexiervorgang automatisch, nachdem neue Dateien mit PhotoSync übertragen wurden.
 
 ## Sync Apps für iOS und Android##
-Als Alternative zu [PhotoSync](https://link.photoprism.app/photosync) kannst du auch eine Vielzahl anderer Apps verwenden, um deine Bilder mit PhotoPrism zu synchronisieren, entweder [direkt über WebDAV](./webdav.md#server-url) oder indem du den Originals Ordner als [SMB-Netzlaufwerk](https://ubuntu.com/server/docs/samba-as-a-file-server){:target="_blank"} über dein [Betriebssystem](https://support.microsoft.com/en-us/windows/file-sharing-over-a-network-in-windows-b58704b2-f53a-4b82-7bc1-80f9994725bf){:target="_blank"} oder deinen [Cloud-Anbieter](https://learn.microsoft.com/en-us/azure/storage/files/files-smb-protocol){:target="_blank"} freigibst:
+Als Alternative zu [PhotoSync](https://link.photoprism.app/photosync) kannst du auch viele andere Apps verwenden, um deine Bilder mit PhotoPrism zu synchronisieren, entweder [direkt über WebDAV](./webdav.md#server-url) oder indem du den *Originals*-Ordner als [SMB-Netzlaufwerk](https://ubuntu.com/server/docs/samba-as-a-file-server){:target="_blank"} über dein [Betriebssystem](https://support.microsoft.com/en-us/windows/file-sharing-over-a-network-in-windows-b58704b2-f53a-4b82-7bc1-80f9994725bf){:target="_blank"} oder deinen [Cloud-Anbieter](https://learn.microsoft.com/en-us/azure/storage/files/files-smb-protocol){:target="_blank"} freigibst:
 
 | Name                                                                                                                            | Platform     | Synchronisation                     | Preis     | Download                                                                                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------------------------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

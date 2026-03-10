@@ -35,9 +35,9 @@ Wähle diese Option nur, wenn du die Dateien nicht als Backup oder aus einem and
 ## Automatisch Importieren ##
 Der automatische Import ist standardmäßig deaktiviert, da eine falsche Konfiguration oder eine nicht unterstützte Verwendung dazu führen kann, dass Dateien oder Dateigruppen unvollständig importiert werden, z. B. wenn du eine langsame oder unzuverlässige Internetverbindung verwendest, was besonders bei [großen Video- oder RAW-Dateien](https://github.com/photoprism/photoprism/issues/4310) von Bedeutung ist.
 
-Wenn du den automatischen Import aktivierst, indem du die Konfigurationsoption [`PHOTOPRISM_AUTO_IMPORT`](https://docs.photoprism.app/getting-started/config-options#indexing) auf eine positive Zahl setzt, die die Sicherheitsverzögerung in Sekunden angibt, wird ein Import automatisch nach der Sicherheitsverzögerung ausgelöst, wenn Dateien [über WebDAV](../sync/webdav.md) zum *Import*-Ordner hinzugefügt werden.
+Wenn du den automatischen Import aktivierst, indem du die Konfigurationsoption [`PHOTOPRISM_AUTO_IMPORT`](https://docs.photoprism.app/getting-started/config-options/#indexing) auf eine positive Zahl setzt, die die Sicherheitsverzögerung in Sekunden angibt, wird ein Import automatisch nach der Sicherheitsverzögerung ausgelöst, wenn Dateien [über WebDAV](../sync/webdav.md) zum *Import*-Ordner hinzugefügt werden.
 
-[Mehr Erfahren ›](https://docs.photoprism.app/getting-started/config-options#indexing)
+[Mehr Erfahren ›](https://docs.photoprism.app/getting-started/config-options/#indexing)
 
 ## Import Pfad Schema ändern
 

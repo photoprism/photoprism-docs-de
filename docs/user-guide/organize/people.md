@@ -18,19 +18,19 @@ Klicke :material-star:, um eine Person als Favorit zu markieren. Favoriten werde
 ![Screenshot](img/recognized-2503-german.jpg){ class="shadow" }
 ![Screenshot](img/recognized-new-2503-german.jpg){ class="shadow" }
 
-### Warum werdem im Bereich NEU nicht alle erkannten Gesichter angezeigt?
+### Warum werden im Bereich NEU nicht alle erkannten Gesichter angezeigt?
 
-Im Bereich *NEU* werden nur erkannte Gesichts-Cluster angezeigt. In deiner Sammlung kann es noch tausende weitere, nicht gruppierte Gesichter, geben, wie z.B. Gesichter auf Shampooflaschen
+Im Bereich *NEU* werden nur erkannte Gesichts-Cluster angezeigt. In deiner Sammlung kann es noch tausende weitere, nicht gruppierte Gesichter geben, wie z. B. Gesichter auf Shampooflaschen
 oder im Fernsehen. 
 
-Du kannst diese Bilder finden, indem du nach `face:new` suchst. Falls du bestimmte Bilder suchst, empfehlen wir die Suche mit anderen Filtern, wie `year` or `country`,
+Du kannst diese Bilder finden, indem du nach `face:new` suchst. Falls du bestimmte Bilder suchst, empfehlen wir, die Suche mit anderen Filtern wie `year` oder `country`
 zu kombinieren. Im [Bearbeitungs-Dialog](edit.md) werden immer alle Gesichter angezeigt. Hier kannst du den Gesichtern Personen zuordnen.
 
 ### Wenn ein Gesicht nicht erkannt wurde... ###
 
 Gesichter können aus mehreren Gründen nicht erkannt werden:
 
-- Unsere [neueste Version](https://docs.photoprism.app/release-notes/#november-30-2025) beinhaltet eine verbesserte Gesichtserkennung. Nach einem Update solltest du einen [kompletten Rescan](https://docs.photoprism.app/user-guide/library/originals/#when-should-complete-rescan-be-selected) durchführen oder `photoprism faces index` [im Terminal ausführen](https://docs.photoprism.app/getting-started/docker-compose/#opening-a-terminal), um weitere zuvor übersehene Gesichter zu finden
+- Unsere [neueste Version](https://docs.photoprism.app/release-notes/#november-30-2025) beinhaltet eine verbesserte Gesichtserkennung. Nach einem Update solltest du einen [kompletten Rescan](../library/indexing.md#index-vollstandig-aktualisieren) durchführen oder `photoprism faces index` [im Terminal ausführen](https://docs.photoprism.app/getting-started/docker-compose/#opening-a-terminal), um weitere zuvor übersehene Gesichter zu finden
 - Möglicherweise musst du warten, bis die Indexierung abgeschlossen ist, da die Gesichtserkennung erst danach beginnt
 - Bei Bildstapeln wird nur die Primärdatei nach Gesichtern durchsucht
 - Gesichter können kleiner als die konfigurierte Mindestgröße sein
@@ -180,11 +180,11 @@ Suchfilter können auch kombiniert werden.
 
 ## Performance Tipps ##
 
-### Background Worker ###
+### Hintergrund-Worker ###
 
-Die Gesichtserkennung wurde unter der Annahme entwickelt und getestet, dass der Background Worker alle 15 Minuten läuft, es sei denn, das Backend ist mit anderen Aufgaben wie der Indexierung beschäftigt. Sie wurde nicht mit viel längeren Intervallen getestet und ist dafür auch nicht ausgelegt.
+Die Gesichtserkennung wurde unter der Annahme entwickelt und getestet, dass der Hintergrund-Worker ungefähr alle 15 Minuten läuft, sofern das Backend nicht mit anderen Aufgaben wie der Indexierung beschäftigt ist. Sie wurde nicht mit deutlich längeren Intervallen getestet und ist dafür auch nicht ausgelegt.
 
-Der Background Worker gruppiert neue Gesichter nach Ähnlichkeit, vergleicht Gesichter mit Clustern und optimiert bei Bedarf bestehende Cluster. Ohne diese Routineaufgaben wird die Anzahl der zu verarbeitenden Gesichter zu groß. Bei der ersten und nächsten Ausführung des Workers kann es dann zu einer starken Serverbelastung kommen, bis alle Gesichter, Gesichtscluster und zugehörigen Bilder aktualisiert wurden. Je länger du wartest, desto mehr CPU wird benötigt und desto länger dauert es.
+Der Hintergrund-Worker gruppiert neue Gesichter nach Ähnlichkeit, vergleicht Gesichter mit Clustern und optimiert bei Bedarf bestehende Cluster. Ohne diese Routineaufgaben wird die Anzahl der zu verarbeitenden Gesichter schnell zu groß. Bei der nächsten Ausführung des Workers kann es dann zu einer starken Serverbelastung kommen, bis alle Gesichter, Gesichts-Cluster und zugehörigen Bilder aktualisiert wurden. Je länger du wartest, desto mehr CPU wird benötigt und desto länger dauert es.
 
 ### Ältere Hardware ###
 

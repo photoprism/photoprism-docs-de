@@ -1,6 +1,5 @@
-# Panorama Aufnahmen #
-Bilder, ab einem Größenverhältnis von 2:1, werden von PhotoPrism automatisch als *Panorama* markiert und im Bereich
-*Panoramas* angezeigt.
+# Panorama-Aufnahmen #
+Bilder mit einem Seitenverhältnis von mindestens 1,9:1 werden von PhotoPrism automatisch als *Panorama* markiert und im Bereich *Panoramen* angezeigt.
 
 ![Screenshot](img/panorama-1-2503-german.jpg){ class="shadow" }
 

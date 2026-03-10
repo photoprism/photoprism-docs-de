@@ -18,7 +18,7 @@ Mit PhotoPrism® lassen sich Bilder ganz einfach finden, organisieren und teilen
 * Metadaten werden aus Exif-, XMP- und proprietären Formaten, wie von Google Photos, ausgelesen und zusammengeführt
 * Viele weitere Bildeigenschaften wie [Farbe](https://demo-de.photoprism.app/library/browse?view=cards&q=color:red), [Chroma](https://demo-de.photoprism.app/library/browse?view=cards&q=mono%3Atrue) und [Qualität](https://demo-de.photoprism.app/library/review) können ebenfalls als Suchfilter verwendet werden
 * Übertrage mit :material-sync: [PhotoSync](https://link.photoprism.app/photosync) deine Bilder von Apple iOS- und Android-Geräten
-* WebDAV-Clients wie Microsofts Windows Explorer und Apples Finder können eine direkte [Verbindung](https://docs.photoprism.app/user-guide/sync/webdav/) zu PhotoPrism herstellen, so dass du Dateien auf deinem Computer öffnen, bearbeiten und löschen kannst, als wären sie lokal gespeichert
+* WebDAV-Clients wie Microsofts Windows Explorer und Apples Finder können eine direkte [Verbindung](user-guide/sync/webdav.md) zu PhotoPrism herstellen, so dass du Dateien auf deinem Computer öffnen, bearbeiten und löschen kannst, als wären sie lokal gespeichert
 
 [Vollständige Funktionsübersicht ›](https://www.photoprism.app/teams#compare)
 

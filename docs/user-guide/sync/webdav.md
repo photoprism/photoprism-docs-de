@@ -18,7 +18,7 @@ Es ist auch möglich, Dateien mit [externen WebDAV-Servern](../settings/sync.md)
 	Verwende WebDAV nicht [ohne HTTPS](https://docs.photoprism.app/getting-started/using-https/) außerhalb deines lokalen, privaten Netzwerks, da dein Passwort im Klartext über das Internet übertragen werden würde. Backup-Tools und Apps zur Dateisynchronisation wie [FolderSync](https://foldersync.io/docs/faq/#https-connection-errors) können die Verbindung ebenfalls verweigern.
 
 
-## Server Url ##
+## Server-URL ##
 Wenn die Instanz mit dem öffentlichen Internet verbunden ist, hat die WebDAV-URL des *Originals*-Ordners das folgende Format, wobei `example.com` durch den tatsächlichen Hostnamen und `admin` durch den [tatsächlichen Benutzernamen](#zugangsdaten) ersetzt werden muss:
 
 ```
@@ -31,7 +31,7 @@ Für Benutzer, die eine lokale Instanz auf dem Standardport 2342 *ohne HTTPS* be
 http://admin@localhost:2342/originals/
 ```
 
-Beachte, dass der Slash am Ende des Pfades nicht weggelassen werden darf und dass die WebDAV URL in deinen Client-Anwendungen aktualisiert werden muss, wenn sich der Hostname oder der Port des Servers ändert.
+Beachte, dass der abschließende Slash am Ende des Pfads nicht weggelassen werden darf und dass die WebDAV-URL in deinen Client-Anwendungen aktualisiert werden muss, wenn sich Hostname oder Port des Servers ändern.
 
 !!! note ""
 	Du kannst die URL des *Originals*-Ordners einsehen, indem du zu [Einstellungen > Konto](../settings/account.md) navigierst und dann auf *Mit WebDAV Verbinden* klickst. Es ist möglich, sich alternativ mit dem *Import*-Ordner zu verbinden, indem du in der URL `/originals/` durch `/import/` ersetzst.
@@ -75,10 +75,10 @@ Wenn der Zugriff verweigert wird, obwohl die Anmeldedaten korrekt sind, überpr�
 === "macOS"
 
      1. Im **Finder** klicke "Gehe zu" > "Mit Server verbinden"
-     2. Trage die Url in das Feld **Serveradresse** ein
+     2. Trage die URL in das Feld **Serveradresse** ein
      3. Klicke  **Verbinden**
 
-	[Wenn du Probleme bei der Verbindung mit WebDav hast](https://docs.photoprism.app/getting-started/troubleshooting/windows/#connecting-via-webdav):
+	[Wenn du Probleme bei der Verbindung mit WebDAV hast](https://docs.photoprism.app/getting-started/troubleshooting/windows/#connecting-via-webdav):
 
 	- [ ] Du hast nicht genügend Benutzerrechte (versuche es als Admin)
   	- [ ] Es gibt ein [allgemeines Authentifizierungsproblem](https://docs.photoprism.app/getting-started/troubleshooting/#cannot-log-in)
@@ -111,7 +111,7 @@ Wenn der Zugriff verweigert wird, obwohl die Anmeldedaten korrekt sind, überpr�
 
 		![Screenshot](img/webdav-5.jpg){ class="shadow" }
 
-     10. Gib deinen Nutzernamen und dein Passwort ein und klicke **OK**
+     10. Gib deinen Benutzernamen und dein Passwort ein und klicke **OK**
 		
 		![Screenshot](img/webdav-6.jpg){ class="shadow" }
 
@@ -127,7 +127,7 @@ Wenn der Zugriff verweigert wird, obwohl die Anmeldedaten korrekt sind, überpr�
 	
 	![Screenshot](img/webdav-9.jpg){ class="shadow" }
 
-  	[Wenn du Probleme bei der Verbindung mit WebDav hast](https://docs.photoprism.app/getting-started/troubleshooting/windows/#connecting-via-webdav):
+  	[Wenn du Probleme bei der Verbindung mit WebDAV hast](https://docs.photoprism.app/getting-started/troubleshooting/windows/#connecting-via-webdav):
 
      - [ ] Möglicherweise musst du **[die grundlegende Authentifizierungsstufe](https://docs.photoprism.app/getting-started/troubleshooting/windows/#connecting-via-webdav)** in der Registrierung ändern
      - [ ] Du hast nicht genügend Benutzerrechte (versuche es als Admin)

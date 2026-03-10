@@ -1,6 +1,6 @@
 # Gesichtserkennung (Technische Details) #
 
-PhotoPrism verwendet eine mehrstufige KI‑Pipeline, um Gesichter zu erkennen, Embeddings zu erzeugen und ähnliche Gesichter zu Clustern zusammenzufassen, damit sie später [einfach nach Personen organisiert werden können](https://docs.photoprism.app/user-guide/organize/people/):
+PhotoPrism verwendet eine mehrstufige KI‑Pipeline, um Gesichter zu erkennen, Embeddings zu erzeugen und ähnliche Gesichter zu Clustern zusammenzufassen, damit sie später [einfach nach Personen organisiert werden können](../organize/people.md):
 
 1. **Detection** – die Engines *Pigo* oder *ONNX SCRFD* erkennen Gesichter in Bildern.
 2. **Embedding** – 512‑dimensionale Vektoren beschreiben jedes erkannte Gesicht.
@@ -113,6 +113,5 @@ photoprism faces optimize    # optional tidy-up
 ```
 
 !!! note ""
-    Ein [vollständiger Rescan](https://docs.photoprism.app/user-guide/library/originals/#when-should-complete-rescan-be-selected) erkennt ebenfalls zusätzliche Gesichter, dauert aber länger, da mehr Indexierungsaufgaben ausgeführt werden.
-
+    Ein [vollständiger Rescan](../library/indexing.md#index-vollstandig-aktualisieren) erkennt ebenfalls zusätzliche Gesichter, dauert aber länger, da mehr Indexierungsaufgaben ausgeführt werden.
 

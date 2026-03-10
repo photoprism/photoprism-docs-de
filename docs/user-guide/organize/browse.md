@@ -19,8 +19,8 @@ Zeigt alle einfarbigen Bilder und Videos.
 
 ![Screenshot](img/monochrome-section-2503-german.jpg){ class="shadow" }
 
-##### [Panoramas](panoramas.md) #####
-Zeigt alle Panoramas.
+##### [Panoramen](panoramas.md) #####
+Zeigt alle Panoramen.
 
 ##### [Bildstapel](stacks.md) #####
 Zeigt Bildstapel.
@@ -29,7 +29,7 @@ Zeigt Bildstapel.
 Zeigt alle eingescannten Bilder.
 
 ##### [Überprüfen](review.md) #####
-Zeigt all Bilder, die überprüft werden müssen.
+Zeigt alle Bilder, die überprüft werden müssen.
 
 ##### [Archiv](archive.md) #####
 Zeigt archivierte Bilder.
@@ -66,8 +66,8 @@ Hier sind deine Bilder nach Erstellungsdatum sortiert.
 
 ![Screenshot](img/calendar-section-2503-german.jpg){ class="shadow" }
 
-### :material-map-marker: [Karten](places.md) ###
-Hier sind alle Bilder und Videos, die Geodaten haben, auf einer Weltkarte dargestellt.
+### :material-map-marker: [Orte](places.md) ###
+Hier werden alle Bilder und Videos mit Geodaten auf einer Weltkarte dargestellt.
 
 ![Screenshot](img/places-section-2503-german.jpg){ class="shadow" }
 
@@ -84,7 +84,7 @@ Zeigt deine Bilder und Videos gruppiert nach Kategorien wie *Katze*, *Hund* oder
 ![Screenshot](img/labels-section-2503-german.jpg){ class="shadow" }
 
 ### :material-folder: [Ordner](folders.md) ###
-Hier werden automatisch die Unterordner deines *Originals* Verzeichnis angezeigt.
+Hier werden automatisch die Unterordner deines *Originals*-Verzeichnisses angezeigt.
 
 ![Screenshot](img/folders-section-2503-german.jpg){ class="shadow" }
 
@@ -92,7 +92,7 @@ Hier werden automatisch die Unterordner deines *Originals* Verzeichnis angezeigt
 Hier befinden sich alle Bilder, die du als privat markiert hast.
 
 ### :material-film: [Originale](../library/files.md) ###
-Hier werden alle Dateien deines *Originals* Verzeichnis angezeigt
+Hier werden alle Dateien deines *Originals*-Verzeichnisses angezeigt.
 
 ![Screenshot](../library/img/files-2503-german.jpg){ class="shadow" }
 

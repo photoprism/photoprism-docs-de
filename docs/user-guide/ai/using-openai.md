@@ -91,7 +91,7 @@ Models:
 
 ### Caption Prompt anpassen
 
-Wenn du längere Captions, andere Sprachen oder branchen-spezifische Beschreibungen benötigst, kannst du die Defaults für `System` oder `Prompt` in der [`vision.yml`](index.md#visionyml-reference) überschreiben.
+Wenn du längere Captions, andere Sprachen oder branchenspezifische Beschreibungen benötigst, kannst du die Defaults für `System` oder `Prompt` in der [`vision.yml`](index.md#visionyml-referenz) überschreiben.
 
 - **System:** You are a PhotoPrism vision model. Return concise, user-friendly captions that describe the main subjects accurately.
 - **Prompt:** Provide exactly one sentence describing the key subject and action in the image. Avoid filler words and technical jargon.
@@ -135,5 +135,4 @@ Wenn keine Ausgabe erzeugt wird, wiederhole den Aufruf mit einem höhreren Log L
 photoprism --log-level=trace vision run -m labels --count 1 --force
 photoprism --log-level=trace vision run -m caption --count 1 --force
 ```
-
 

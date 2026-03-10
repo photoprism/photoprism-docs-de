@@ -9,11 +9,11 @@ nav:
       - Übersicht: user-guide/library/import-vs-index.md
       - Originale indexieren: user-guide/library/indexing.md
       - Dateien importieren: user-guide/library/import.md
-      - Duplikat Erkennung: user-guide/library/duplicates.md
+      - Duplikaterkennung: user-guide/library/duplicates.md
       - Unterstützung von Metadaten: user-guide/library/metadata.md
-      - Web Datei Upload: user-guide/library/upload.md
-      - WebDAV Datei Sync: user-guide/library/webdav.md
-      - Datei Browser: user-guide/library/files.md
+      - Web-Upload: user-guide/library/upload.md
+      - WebDAV-Synchronisierung: user-guide/library/webdav.md
+      - Dateibrowser: user-guide/library/files.md
     #- Import from camera: user-guide.md
     #- Import from Facebook: user-guide.md
     #- Import from NAS: user-guide.md
@@ -37,7 +37,7 @@ nav:
       - Überprüfen: user-guide/organize/review.md
       - Bildstapel: user-guide/organize/stacks.md
       - Metadaten bearbeiten: user-guide/organize/edit.md
-      - Batch Bearbeitung: user-guide/organize/batch-edit.md
+      - Batch-Bearbeitung: user-guide/organize/batch-edit.md
       - Bilder drehen: user-guide/organize/rotate.md
       - Herunterladen: user-guide/organize/download.md
       - Videos: user-guide/organize/video.md
@@ -45,12 +45,12 @@ nav:
       - Ereignisse: user-guide/organize/moments.md
       - Kalender: user-guide/organize/calendar.md
       - Ordner: user-guide/organize/folders.md
-      - Panoramas: user-guide/organize/panoramas.md
+      - Panoramen: user-guide/organize/panoramas.md
       - Scans: user-guide/organize/scans.md
   - Teilen:
       - Linkfreigabe: user-guide/share/share.md
       - Dateien hochladen: user-guide/share/services-share.md
-  - Fern-Synchronisation:
+  - Fernsynchronisierung:
       - WebDAV Zugriff:  user-guide/sync/webdav.md
       - Smartphones:  user-guide/sync/sync-phone.md
       - Andere Apps:  user-guide/sync/services-sync.md
@@ -68,9 +68,9 @@ nav:
       - Verzeichnis Übersicht: user-guide/backups/folders.md
   - Benutzer verwalten:
       - Admin Web UI: user-guide/users/index.md
-      - CLI Commands: user-guide/users/cli.md
-      - Benutzer Rollen: user-guide/users/roles.md
-      - Teilen mit Gastnuztern: user-guide/users/sharing.md
+      - CLI-Befehle: user-guide/users/cli.md
+      - Benutzerrollen: user-guide/users/roles.md
+      - Mit Gästen teilen: user-guide/users/sharing.md
       - Mehrere Bibliotheken: user-guide/users/libraries.md
       - 2FA einrichten: user-guide/users/2fa.md
   - Cloud Migration:

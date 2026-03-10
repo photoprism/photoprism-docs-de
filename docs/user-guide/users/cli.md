@@ -23,7 +23,7 @@ Dies gilt auch für [andere Befehle](https://docs.photoprism.app/getting-started
 
 Wenn du die Authentifizierung eines bestehenden Kontos auf einen passwortlosen Anbieter wie [*OIDC*](https://docs.photoprism.app/getting-started/advanced/openid-connect) änderst, wird ein zuvor vergebenes Passwort nicht entfernt, so dass es weiterhin zur Anmeldung verwendet werden kann (optional auch mit [2FA](2fa.md)).
 
-Wenn für [ein solches Konto](https://docs.photoprism.app/getting-started/advanced/openid-connect#existing-accounts) ein lokales Passwort gesetzt wurde, das nicht mehr verwendet werden soll, kannst du es mit folgendem Befehl [in einem Terminal](https://docs.photoprism.app/getting-started/docker-compose#opening-a-terminal) entfernen:
+Wenn für [ein solches Konto](https://docs.photoprism.app/getting-started/advanced/openid-connect#existing-accounts) ein lokales Passwort gesetzt wurde, das nicht mehr verwendet werden soll, kannst du es mit folgendem Befehl [in einem Terminal](https://docs.photoprism.app/getting-started/docker-compose/#opening-a-terminal) entfernen:
 
 ```bash
 photoprism passwd --rm [username]

@@ -1,6 +1,6 @@
 # Navigieren in der Benutzeroberfläche
 
-Die Benutzeroberfläche zum Durchsuchen deiner Bilder basiert auf den folgenden Komponenten.
+Die Benutzeroberfläche zum Durchsuchen deiner Bilder besteht aus den folgenden Komponenten:
 
 !!! info ""
     PhotoPrism ist auf alle Bildschirmgrößen angepasst. Unsere Screenshots zeigen die App in einem Desktop-Browser mit mittlerer Auflösung.
@@ -33,21 +33,21 @@ Klicke, um zu einer anderen Ansicht zu wechseln (Karten: :material-view-column:,
 
 #### 5. Upload-Funktion
 
-:material-cloud-upload: öffnet den Upload-Dialog. Diese Funktion ist auf den meisten Seiten verfügbar, sofern PhotoPrism nicht im read-only Modus (schreibgeschützt) betrieben wird und der Upload nicht in den  [Einstellungen](settings/general.md) deaktiviert wurde.
+:material-cloud-upload: öffnet den Upload-Dialog. Diese Funktion ist auf den meisten Seiten verfügbar, sofern PhotoPrism nicht im schreibgeschützten Modus betrieben wird und der Upload nicht in den [Einstellungen](settings/general.md) deaktiviert wurde.
 
 !!! tip "Tastenkombination"
     Du kannst den Upload-Dialog schnell öffnen, indem du **Strg + U** drückst.
 
 #### 6. Filterleiste
 
-Die Filterleise enthält zusätzliche Suchfilter wie Land, Jahr, Monat, Kamera, Farbe oder Kategorie.
+Die Filterleiste enthält zusätzliche Suchfilter wie Land, Jahr, Monat, Kamera, Farbe oder Kategorie.
 
 !!! tip "Tastenkombination"
     Du kannst die erweiterte Symbolleiste öffnen, indem du **Umschalt + Strg + F** drückst.
 
 #### 7. Kontext-Menü
 
-Wenn Bilder oder Videos selektiert sind, erscheint das Kontext-Menü in der Ecke unten rechts. Die angezeigte Zahl ist die Anzahl der aktuell selektierten Ergebnisse. Das Menü bietet folgende Aktionen:
+Wenn Bilder oder Videos ausgewählt sind, erscheint das Kontextmenü unten rechts. Die angezeigte Zahl entspricht der Anzahl der aktuell ausgewählten Ergebnisse. Das Menü bietet folgende Aktionen:
 
 * :material-archive: Bilder archivieren
 * :material-bookmark: Bilder zu Alben hinzufügen
@@ -68,12 +68,12 @@ Wähle das erste Bild aus, indem du auf :material-checkbox-blank-circle-outline:
 PhotoPrism befindet sich jetzt im Auswahlmodus.
 
 - Um zusätzlich einzelne Bilder auszuwählen, klicke irgendwo auf sie, außer auf die Symbole in der Ecke.
-- Um mehrere Bilder auf einmal auszuwählen, drücke Umschalttaste+Klick. Alle Bilder zwischen dem zuletzt ausgewählten Bild und dem Bild, auf das du mit Umschalt+Klick klickst, werden ausgewählt.
+- Um mehrere Bilder auf einmal auszuwählen, drücke `Umschalt` + Klick. Alle Bilder zwischen dem zuletzt ausgewählten Bild und dem Bild, auf das du mit `Umschalt` + Klick klickst, werden ausgewählt.
 
 ### Tablet / Handy ###
 Wähle das erste Bild mit einem langen Klick/Touch aus.
 
 PhotoPrism befindet sich jetzt im Auswahlmodus.
 
-- Um zusätzlich einzelne Bilder auszuwählen, klicke/touche irgendwo auf sie, außer auf die Symbole in der Ecke.
-- Um mehrere Bilder auf einmal auszuwählen, verwende einen langen Klick/Touch. Alle Bilder zwischen dem zuletzt ausgewählten Bild und dem Bild, auf das du lange klickst, werden ausgewählt.
+- Um zusätzlich einzelne Bilder auszuwählen, tippe irgendwo auf sie, außer auf die Symbole in der Ecke.
+- Um mehrere Bilder auf einmal auszuwählen, verwende langes Tippen. Alle Bilder zwischen dem zuletzt ausgewählten Bild und dem Bild, das du lange antippst, werden ausgewählt.
