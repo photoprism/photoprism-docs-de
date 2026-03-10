@@ -1,6 +1,6 @@
 # PhotoPrism® Docs-DE Repository Guidelines
 
-**Last Updated:** December 8, 2025
+**Last Updated:** March 10, 2026
 
 ## Purpose
 
@@ -38,7 +38,9 @@
 - `overrides/` contains the only template customizations; edit cautiously and verify both light/dark themes.  
 - Generated output in `site/` and the virtualenv in `venv/` are workspace artifacts; do not commit them.
 
-## Content Standards
+## Style Notes
+
+### Content Standards
 
 - Match the tone and terminology of the canonical English pages while writing natural German; prefer consistent translations of feature names (Albums, Personen, Labels, Bibliothek, etc.).  
 - Keep headings and navigation labels consistent with `mkdocs.yml`; avoid introducing new casing styles.  
@@ -46,3 +48,41 @@
 - When documenting product behavior, confirm against the main application repository or the English docs to avoid drift.  
 - Store images next to the pages that reference them and provide descriptive alt text.  
 - Never commit credentials or private tokens; `.env` stays untracked.
+
+### Commit Messages
+
+Use concise, imperative subjects with a one-word prefix indicating the scope or topic:
+
+- `Config: Add tests for "darktable-cli" path detection`
+
+If the commit relates to specific issues or pull requests, reference their IDs in the message:
+
+- `Docker: Use two stage build to reduce image size #123 #5632`
+
+Commit messages must not exceed 80 characters in length.
+
+### GitHub Issues
+
+Issue titles MUST be concise, use the imperative mood, and start with a single capitalized prefix followed by a colon and a space, e.g. `Search: Add filter for RAW image formats`.
+
+Issue descriptions MUST begin with a one-sentence **User Story** where the sentence itself is fully bold in the format: `**As a <role>, I want <goal>, so that <outcome>.**`
+Follow the User Story with a clear summary of the expected behavior, rationale, technical considerations, and constraints.
+
+Descriptions MUST conclude with a checklist of **Acceptance Criteria**:
+- Use GitHub checklist formatting: `- [ ]`
+- Criteria MUST be clear, testable, and unambiguous.
+- Each item MUST use one of the following priority keywords:
+  - `MUST`   — required for the issue to be considered complete
+  - `SHOULD` — strongly recommended but not strictly required
+  - `MAY`    — optional enhancement
+
+Additional details MAY be included as needed, such as related issues, references, screenshots, or external resources.
+
+> Agents MUST create, edit, close, reopen, relabel, or otherwise modify GitHub issues only when explicitly requested by the user.
+
+## Security & Access
+
+- Never commit credentials. MkDocs Material Insiders is now public on PyPI, so we no longer ask contributors to add `GH_TOKEN` values to `.env`; keep that file untracked if you use it for other local overrides.
+- Treat `docs/license`, `docs/icons/LICENSE`, and `docs/img/LICENSE` as authoritative for third-party assets. Confirm redistribution rights before adding new binaries or artwork.
+- All social sharing and analytics scripts live in `overrides/main.html`. Review those tags when changing analytics providers to ensure we only load scripts from approved domains (`a.photoprism.app` for outbound tracking).
+- Follow the main repository’s security and contribution policies (see `SECURITY.md` and `CONTRIBUTING.md` in photoprism/photoprism) when referencing vulnerabilities or non-public features in these docs.
