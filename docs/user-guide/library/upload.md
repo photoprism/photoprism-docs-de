@@ -39,10 +39,10 @@
 
       6. Klicke *Upload*, um mit dem Hochladen und Importieren der ausgewählten Dateien zu beginnen
 
-!!! info "iOS‑Originale behalten"
+!!! info "iOS Original-Format beim Upload beibehalten"
     iOS kann Fotos und Videos in ein besser kompatibles Format umwandeln, **bevor** sie über Safari oder die PhotoPrism‑PWA hochgeladen werden. In diesem Fall erhält und speichert PhotoPrism bereits konvertierte Dateien.
 
-    Damit deine Originale erhalten bleiben:
+    Um das Original-Format beim Upload beizubehalten:
 
     - Öffne im iOS‑Fotowähler das Drei‑Punkte‑Menü (…) → *Optionen* und stelle **Format** von **Automatisch** auf **Aktuell**, damit deine Originaldateien erhalten bleiben.
-    - Alternativ kannst du spezielle Sync‑Apps wie [PhotoSync](../sync/sync-phone.md#photosync-verwenden) verwenden, die Dateien im Originalformat per WebDAV hochladen können.
+    - Alternativ kannst du spezielle Sync‑Apps wie [PhotoSync](sync/sync-phone.md#photosync-verwenden) verwenden, die Dateien im Original-Format per WebDAV hochladen können.
