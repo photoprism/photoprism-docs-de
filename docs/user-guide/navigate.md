@@ -15,7 +15,7 @@ Befindet sich auf der linken Seite und ist auf mobilen Geräten minimiert. Klick
 
 #### 2. Suchleiste
 
-Befindet sich ganz oben. Finde Bilder oder Videos, indem du zum Beispiel nach `cats` oder `label:cat` suchst. Eine Übersicht über alle Suchfilter findest du [hier](organize/search.md).
+Befindet sich ganz oben. Finde Bilder oder Videos, indem du zum Beispiel nach `cats` oder `label:cat` suchst. Eine Übersicht über alle Suchfilter findest du [hier](search/filters.md).
 
 !!! tip "Tastenkombination"
     Du kannst das Suchfeld schnell fokussieren, indem du **Strg + F** drückst.

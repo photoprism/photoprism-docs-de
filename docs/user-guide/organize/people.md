@@ -30,7 +30,7 @@ zu kombinieren. Im [Bearbeitungs-Dialog](edit.md) werden immer alle Gesichter an
 
 Gesichter können aus mehreren Gründen nicht erkannt werden:
 
-- Unsere [neueste Version](https://docs.photoprism.app/release-notes/#november-30-2025) beinhaltet eine verbesserte Gesichtserkennung. Nach einem Update solltest du einen [kompletten Rescan](../library/indexing.md#index-vollstandig-aktualisieren) durchführen oder `photoprism faces index` [im Terminal ausführen](https://docs.photoprism.app/getting-started/docker-compose/#opening-a-terminal), um weitere zuvor übersehene Gesichter zu finden
+- Unsere [neueste Version](https://docs.photoprism.app/release-notes/#november-30-2025) beinhaltet eine verbesserte Gesichtserkennung. Nach einem Update solltest du einen [kompletten Rescan](../library/originals.md#index-vollstandig-aktualisieren) durchführen oder `photoprism faces index` [im Terminal ausführen](https://docs.photoprism.app/getting-started/docker-compose/#opening-a-terminal), um weitere zuvor übersehene Gesichter zu finden
 - Möglicherweise musst du warten, bis die Indexierung abgeschlossen ist, da die Gesichtserkennung erst danach beginnt
 - Bei Bildstapeln wird nur die Primärdatei nach Gesichtern durchsucht
 - Gesichter können kleiner als die konfigurierte Mindestgröße sein
@@ -171,7 +171,7 @@ Du kannst Bilder von bestimmten Personen mit Hilfe der folgenden Suchanfragen fi
 - `person:"John Doe"` oder `subject:"John Doe"` findet alle Bilder der Person John Doe
 - `people:"John"` oder `subjects:"John"` findet alle Bilder von Personen, deren Namen John enthält
 
-Der person/subject sowie der people/subjects Filter kann in Kombination mit & und | verwendet werden (siehe [Suche](search.md)). 
+Der person/subject sowie der people/subjects Filter kann in Kombination mit & und | verwendet werden (siehe [Suche](../search/filters.md)). 
 Suchfilter können auch kombiniert werden.
 
 `person:"John Doe&Jane Doe" faces:3` findet alle Bilder auf denen John und Jane Doe und mindestens eine weitere Person abgebildet sind.

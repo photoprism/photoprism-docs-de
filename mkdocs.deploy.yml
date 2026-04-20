@@ -1,6 +1,15 @@
 INHERIT: mkdocs.yml
 plugins:
   - search
+  - redirects:
+      redirect_maps:
+        'user-guide/library/import-vs-index.md': 'user-guide/library/index.md'
+        'user-guide/library/indexing.md': 'user-guide/library/originals.md'
+        'user-guide/organize/browse.md': 'user-guide/search/index.md'
+        'user-guide/organize/views.md': 'user-guide/search/views.md'
+        'user-guide/organize/search.md': 'user-guide/search/filters.md'
+        'user-guide/share/share.md': 'user-guide/share/index.md'
+        'user-guide/sync/sync-phone.md': 'user-guide/sync/mobile-devices.md'
   - privacy:
       enabled: true
       assets_fetch: true

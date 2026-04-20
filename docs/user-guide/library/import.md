@@ -1,7 +1,7 @@
 # Dateien in das Originals Verzeichnis importieren #
 
 !!! tldr ""
-    Die meisten Benutzer mit einer bestehenden Bibliothek werden ihre [Originale](./indexing.md) direkt indexieren wollen, ohne die optionale Importfunktion zu verwenden, wobei die Datei- und Ordnernamen unverändert bleiben. 
+    Die meisten Benutzer mit einer bestehenden Bibliothek werden ihre [Originale](./originals.md) direkt indexieren wollen, ohne die optionale Importfunktion zu verwenden, wobei die Datei- und Ordnernamen unverändert bleiben. 
     Beim Importieren werden zunächst Kopien oder Verschiebungen aus dem Quellverzeichnis in den *Originals*-Ordner vorgenommen, was optional ist.
 
 ## Manueller Import

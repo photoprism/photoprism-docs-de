@@ -62,7 +62,7 @@ Automatisch zugewiesene *Kategorien* können entfernt werden. Manuell hinzugefü
     Beachte, dass diese Änderung alle Bilder betrifft, die mit dieser *Kategorie* verknüpft sind.
 
 ### Kategorie löschen ###
-*Kategorien* können dauerhaft gelöscht werden. Eine gelöschte *Kategorie* wird bei der [*Indexierung*](../library/indexing.md) in Zukunft nicht mehr vergeben.
+*Kategorien* können dauerhaft gelöscht werden. Eine gelöschte *Kategorie* wird bei der [*Indexierung*](../library/originals.md) in Zukunft nicht mehr vergeben.
 
 1. Gehe zu *Kategorien*
 2. Selektiere die zu löschende *Kategorie*
@@ -70,7 +70,7 @@ Automatisch zugewiesene *Kategorien* können entfernt werden. Manuell hinzugefü
 4. Bestätige
 
 !!! attention ""
-    Wenn eine gelöschte *Kategorie* wieder hergestellt werden soll, muss diese einem Bild hinzugefügt sowie die [*Indexierung*](../library/indexing.md) gestartet werden.
+    Wenn eine gelöschte *Kategorie* wieder hergestellt werden soll, muss diese einem Bild hinzugefügt sowie die [*Indexierung*](../library/originals.md) gestartet werden.
 
 ![Screenshot](img/delete-label-1-2503-german.jpg){ class="shadow" }
     

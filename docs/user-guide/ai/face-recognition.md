@@ -113,5 +113,5 @@ photoprism faces optimize    # optional tidy-up
 ```
 
 !!! note ""
-    Ein [vollständiger Rescan](../library/indexing.md#index-vollstandig-aktualisieren) erkennt ebenfalls zusätzliche Gesichter, dauert aber länger, da mehr Indexierungsaufgaben ausgeführt werden.
+    Ein [vollständiger Rescan](../library/originals.md#index-vollstandig-aktualisieren) erkennt ebenfalls zusätzliche Gesichter, dauert aber länger, da mehr Indexierungsaufgaben ausgeführt werden.
 

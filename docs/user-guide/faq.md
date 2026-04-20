@@ -242,7 +242,7 @@
     Lies unbedingt [die Hinweise zu jeder Version](https://docs.photoprism.app/release-notes/), um herauszufinden, welche Änderungen vorgenommen wurden und ob sie sich auf deine Bibliothek auswirken könnten, z. B. wegen der Dateitypen, die du hast, oder weil neue Suchfunktionen hinzugefügt wurden. 
     Wenn du auf Probleme stößt, die du anders nicht lösen kannst (also bevor du einen Fehler meldest), versuche bitte auch einen Rescan und schaue, ob das Problem dadurch gelöst wird.
 
-    Du kannst einen [Rescan über die Benutzeroberfläche](library/indexing.md) starten, indem du zu *Dateien* > *Index* navigierst, "Index vollständig aktualisieren" auswählst und dann auf "Start" klickst.
+    Du kannst einen [Rescan über die Benutzeroberfläche](library/originals.md) starten, indem du zu *Dateien* > *Index* navigierst, "Index vollständig aktualisieren" auswählst und dann auf "Start" klickst.
     Manuell eingegebene Informationen wie Kategorien, Personen, Titel oder Bidlunterschriften werden bei der Indexierung nicht verändert, selbst wenn du den Index vollständig aktualisierst.
 
 ??? question "Wie kann ich Dateien endgültig löschen?"
@@ -259,7 +259,7 @@
 
     Professionelle und semiprofessionelle Fotografen bewahren ihre Originale oft in einem [verlustfreien RAW-Format](https://en.wikipedia.org/wiki/Raw_image_format) auf, das den Aufnahmen mit dem physischen Sensor entspricht, und nicht in einem komprimierten Bildformat wie JPEG, besonders wenn sie mit einer digitalen Spiegelreflexkamera fotografieren. Auch neuere Handys können Bilder im RAW-Format aufnehmen. Unser Ziel ist es, erstklassige Unterstützung für [alle RAW-Dateien](https://docs.photoprism.app/getting-started/faq/#what-media-file-types-are-supported) zu bieten, unabhängig von Kameramarke und -modell. Eine vollständige Liste der Dateitypen und -erweiterungen findest du in unserer [Knowledge Base](https://www.photoprism.app/kb/file-formats).
     
-    Da Webbrowser RAW-Dateien in der Regel nicht direkt anzeigen können, müssen sie konvertiert werden. Das geschieht beim [Import](library/import.md) oder beim [initialen Indexieren](library/indexing.md). Die Konvertierung kann auch manuell [in einem Terminal](https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface) mit dem Befehl `photoprism convert` durchgeführt werden.
+    Da Webbrowser RAW-Dateien in der Regel nicht direkt anzeigen können, müssen sie konvertiert werden. Das geschieht beim [Import](library/import.md) oder beim [initialen Indexieren](library/originals.md). Die Konvertierung kann auch manuell [in einem Terminal](https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface) mit dem Befehl `photoprism convert` durchgeführt werden.
 
 ??? question "Werden JPEGs aktualisiert, wenn sich RAW- oder XMP-Dateien ändern?"
 

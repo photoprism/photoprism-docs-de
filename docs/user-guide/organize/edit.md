@@ -1,7 +1,7 @@
 # Bild Details bearbeiten #
 Der Bearbeitungs-Dialog ermöglicht es dir, Metadaten zu deinen Bildern hinzuzufügen oder vorhandene Metadaten zu bearbeiten.
 
-Während der [*Indexierung*](../library/indexing.md) liest PhotoPrism so viele Daten wie möglich aus Sidecar-Dateien oder den Bildern selbst aus.
+Während der [*Indexierung*](../library/originals.md) liest PhotoPrism so viele Daten wie möglich aus Sidecar-Dateien oder den Bildern selbst aus.
 
 ### Bearbeitungs-Dialog öffnen ###
 

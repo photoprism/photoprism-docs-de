@@ -3,7 +3,7 @@ Nach der [Installation](https://docs.photoprism.app/getting-started/) sind nur n
 bevor du mit dem Durchsuchen deiner Bilder beginnen kannst:
 
 - Passe deine [Inhalts](./settings/library.md) und die [erweiterten Einstellungen](./settings/advanced.md) an deine persönlichen Vorlieben an
-- [Wähle](./library/import-vs-index.md), ob du deine [Originale direkt indexieren](./library/indexing.md) willst, wobei alle Datei- und Ordnernamen unverändert bleiben,
+- [Wähle](./library/index.md), ob du deine [Originale direkt indexieren](./library/originals.md) willst, wobei alle Datei- und Ordnernamen unverändert bleiben,
   oder ob du die optionale [Importfunktion](./library/import.md) verwenden willst, die automatisch Duplikate entfernt,
   Dateien einen eindeutigen Namen gibt und sie nach Jahr und Monat sortiert
 
@@ -11,7 +11,7 @@ Wenn du Ordner verwenden möchtest, die bereits auf deinem Computer existieren, 
 
 Um neue Bilder hinzuzufügen, kannst du sie entweder in den originals- oder import Ordner kopieren, z. B. mit [WebDAV](./sync/webdav.md), oder sie mit einem Browser [hochladen](./library/upload.md), der sie automatisch importiert, sobald sie hochgeladen sind.
 
-Starte dann die [Indexierung](library/indexing.md) oder den [Import](library/import.md), je nachdem, welche Strategie du gewählt hast.
+Starte dann die [Indexierung](library/originals.md) oder den [Import](library/import.md), je nachdem, welche Strategie du gewählt hast.
 
 !!! tldr ""
     Stelle sicher, dass [genügend Speicherplatz](https://docs.photoprism.app/getting-started/troubleshooting/docker/#disk-space) für die Erstellung von Thumbnails zur Verfügung steht und überprüfe die [Dateisystemberechtigungen](https://docs.photoprism.app/getting-started/troubleshooting/docker/#file-permissions),
@@ -36,4 +36,4 @@ Dies kann auch über die Konfigurationsoption [`PHOTOPRISM_INDEX_SCHEDULE`](http
     Sidecar- und Thumbnail-Dateien werden dem storage Ordner hinzugefügt, so dass der Ordner mit den Originalen nicht verändert wird.
 
 ## Geräte einrichten
-Sobald die Indexierung abgeschlossen ist und du mit den Ergebnissen zufrieden bist, kannst du die [automatische Synchronisierung](./sync/sync-phone.md) von deinem Handy aus einrichten und die [Progressive Web App](./pwa.md) (PWA) je nach Bedarf auf deinem Desktop sowie deinen mobilen Endgeräten installieren.
+Sobald die Indexierung abgeschlossen ist und du mit den Ergebnissen zufrieden bist, kannst du die [automatische Synchronisierung](./sync/mobile-devices.md) von deinem Handy aus einrichten und die [Progressive Web App](./pwa.md) (PWA) je nach Bedarf auf deinem Desktop sowie deinen mobilen Endgeräten installieren.

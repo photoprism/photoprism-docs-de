@@ -1,4 +1,4 @@
-Doppelte Dateien werden erkannt und bei der [Indexierung](./indexing.md) automatisch übersprungen, so dass sie in den Suchergebnissen und Alben nur einmal erscheinen. 
+Doppelte Dateien werden erkannt und bei der [Indexierung](./originals.md) automatisch übersprungen, so dass sie in den Suchergebnissen und Alben nur einmal erscheinen. 
 Ihre SHA1-Prüfsummen und Größen werden zum Vergleich herangezogen.
 
 !!! tldr ""
