@@ -6,7 +6,7 @@
 2. Triggere den *Export* deiner Google-Photos Daten
 3. Abhängig von der Anzahl/Größe der Bilder kann es einige Tage dauern, bis deine Daten exportiert sind
 4. *Lade* deine Daten herunter und fügen sie (einschließlich JSON-Dateien) deinem *Originals* oder *Import* Verzeichnis hinzu
-5. [*Indexiere*](../library/indexing.md) oder [*Importiere*](../library/import.md) die Dateien
+5. [*Indexiere*](../library/originals.md) oder [*Importiere*](../library/import.md) die Dateien
 
 ## Metadaten
 

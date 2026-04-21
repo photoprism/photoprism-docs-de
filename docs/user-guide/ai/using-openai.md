@@ -69,7 +69,7 @@ photoprism vision run -m labels
 
 ### Benutzerdefinierte Kategorien erstellen
 
-Um die generierten Kategorien an deine Bedürfnisse anzupassen, können die Defaults für `System` oder `Prompt` in der [`vision.yml`](index.md#visionyml-referenz) überschrieben werden:
+Um die generierten Kategorien an deine Bedürfnisse anzupassen, können die Defaults für `System` oder `Prompt` in der [`vision.yml`](index.md#visionyml-reference) überschrieben werden:
 
 - **System:** You are a PhotoPrism vision model. Emit JSON that matches the provided schema and keep label names short, singular nouns.
 - **Prompt:** Analyze the image and return label objects with name, confidence (0-1), and topicality (0-1).
@@ -91,7 +91,7 @@ Models:
 
 ### Caption Prompt anpassen
 
-Wenn du längere Captions, andere Sprachen oder branchenspezifische Beschreibungen benötigst, kannst du die Defaults für `System` oder `Prompt` in der [`vision.yml`](index.md#visionyml-referenz) überschreiben.
+Wenn du längere Captions, andere Sprachen oder branchenspezifische Beschreibungen benötigst, kannst du die Defaults für `System` oder `Prompt` in der [`vision.yml`](index.md#visionyml-reference) überschreiben.
 
 - **System:** You are a PhotoPrism vision model. Return concise, user-friendly captions that describe the main subjects accurately.
 - **Prompt:** Provide exactly one sentence describing the key subject and action in the image. Avoid filler words and technical jargon.

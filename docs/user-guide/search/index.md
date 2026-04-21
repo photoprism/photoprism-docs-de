@@ -12,39 +12,39 @@ Hier findest du alle Bilder und Videos, die nicht in *Überprüfen*, *Archiv* od
 !!! hint ""
     Wenn die Funktionen Qualitätsfilter, Privat oder Archiv deaktiviert sind, findest du hier alle deine Bilder und Videos.
     
-![Screenshot](img/search-section-2503-german.jpg){ class="shadow" }
+![Screenshot](../organize/img/search-section-2503-german.jpg){ class="shadow" }
 
 ##### Monochrom #####
 Zeigt alle einfarbigen Bilder und Videos.
 
-![Screenshot](img/monochrome-section-2503-german.jpg){ class="shadow" }
+![Screenshot](../organize/img/monochrome-section-2503-german.jpg){ class="shadow" }
 
-##### [Panoramen](panoramas.md) #####
+##### [Panoramen](../organize/panoramas.md) #####
 Zeigt alle Panoramen.
 
-##### [Bildstapel](stacks.md) #####
+##### [Bildstapel](../organize/stacks.md) #####
 Zeigt Bildstapel.
 
-##### [Scans](scans.md) #####
+##### [Scans](../organize/scans.md) #####
 Zeigt alle eingescannten Bilder.
 
-##### [Überprüfen](review.md) #####
+##### [Überprüfen](../organize/review.md) #####
 Zeigt alle Bilder, die überprüft werden müssen.
 
-##### [Archiv](archive.md) #####
+##### [Archiv](../organize/archive.md) #####
 Zeigt archivierte Bilder.
 
-### :material-bookmark: [Alben](albums.md) ###
+### :material-bookmark: [Alben](../organize/albums.md) ###
 Hier befinden sich deine Alben.
 
-![Screenshot](img/albums-section-2503-german.jpg){ class="shadow" }
+![Screenshot](../organize/img/albums-section-2503-german.jpg){ class="shadow" }
 
 #### Unsortiert ####
 Hier werden alle Bilder, die nicht Teil eines Albums sind, angezeigt.
 
-![Screenshot](img/unsorted-section-2503-german.jpg){ class="shadow" }
+![Screenshot](../organize/img/unsorted-section-2503-german.jpg){ class="shadow" }
 
-### :material-play-circle: [Videos](video.md) ###
+### :material-play-circle: [Videos](../organize/video.md) ###
 Hier findest du alle Videos, die nicht in *Überprüfen*, *Archiv* oder *Privat* sind.
 
 #### Live Photos ####
@@ -56,39 +56,39 @@ Zeigt deine Bilder gruppiert nach abgebildeten Personen.
 ### :material-star: Favoriten ###
 Hier befinden sich alle Bilder, die du als Favorit markiert hast.
 
-### :material-filmstrip-box: [Ereignisse](moments.md)  ###
+### :material-filmstrip-box: [Ereignisse](../organize/moments.md)  ###
 Entdecke Alben von Ereignissen, die wir automatisch für dich erstellt haben.
 
-![Screenshot](img/moments-section-2503-german.jpg){ class="shadow" }
+![Screenshot](../organize/img/moments-section-2503-german.jpg){ class="shadow" }
 
-### :material-calendar: [Kalender](calendar.md) ###
+### :material-calendar: [Kalender](../organize/calendar.md) ###
 Hier sind deine Bilder nach Erstellungsdatum sortiert.
 
-![Screenshot](img/calendar-section-2503-german.jpg){ class="shadow" }
+![Screenshot](../organize/img/calendar-section-2503-german.jpg){ class="shadow" }
 
-### :material-map-marker: [Orte](places.md) ###
+### :material-map-marker: [Orte](../organize/places.md) ###
 Hier werden alle Bilder und Videos mit Geodaten auf einer Weltkarte dargestellt.
 
-![Screenshot](img/places-section-2503-german.jpg){ class="shadow" }
+![Screenshot](../organize/img/places-section-2503-german.jpg){ class="shadow" }
 
-![Screenshot](img/places-section-2-2503-german.jpg){ class="shadow" }
+![Screenshot](../organize/img/places-section-2-2503-german.jpg){ class="shadow" }
 
 #### Regionen ####
 Zeigt deine Bilder gruppiert nach Regionen.
 
-![Screenshot](img/states-section-2503-german.jpg){ class="shadow" }
+![Screenshot](../organize/img/states-section-2503-german.jpg){ class="shadow" }
 
-### :material-label: [Kategorien](labels.md) ###
+### :material-label: [Kategorien](../organize/labels.md) ###
 Zeigt deine Bilder und Videos gruppiert nach Kategorien wie *Katze*, *Hund* oder *Strand*.
 
-![Screenshot](img/labels-section-2503-german.jpg){ class="shadow" }
+![Screenshot](../organize/img/labels-section-2503-german.jpg){ class="shadow" }
 
-### :material-folder: [Ordner](folders.md) ###
+### :material-folder: [Ordner](../organize/folders.md) ###
 Hier werden automatisch die Unterordner deines *Originals*-Verzeichnisses angezeigt.
 
-![Screenshot](img/folders-section-2503-german.jpg){ class="shadow" }
+![Screenshot](../organize/img/folders-section-2503-german.jpg){ class="shadow" }
 
-### :material-lock: [Privat](private.md) ###
+### :material-lock: [Privat](../organize/private.md) ###
 Hier befinden sich alle Bilder, die du als privat markiert hast.
 
 ### :material-film: [Originale](../library/files.md) ###

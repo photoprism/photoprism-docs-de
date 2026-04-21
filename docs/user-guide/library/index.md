@@ -1,6 +1,6 @@
 # Dateien einlesen #
 
-Die meisten Benutzer mit einer bestehenden Ordnerstruktur werden ihre Originale direkt [indexieren](./indexing.md) wollen, ohne die optionale Importfunktion zu verwenden, 
+Die meisten Benutzer mit einer bestehenden Ordnerstruktur werden ihre Originale direkt [indexieren](./originals.md) wollen, ohne die optionale Importfunktion zu verwenden, 
 sodass die Datei- und Ordnernamen unverändert bleiben.
 
 Beim [Importieren](./import.md) werden die Dateien zunächst aus einem temporären Ordner in den Originals Ordner  übertragen. 

@@ -33,7 +33,7 @@ Eine Übersicht über [mobile Sync-Apps](#sync-apps-fur-ios-und-android) für iO
         
         *Password:* Dein Admin Passwort.
 
-        *Directory:* `/import/` oder `/originals/`, je nachdem, wie du deine Dateien [einlesen möchtest](../library/import-vs-index.md).
+        *Directory:* `/import/` oder `/originals/`, je nachdem, wie du deine Dateien [einlesen möchtest](../library/index.md).
         
         *Use SSL:* Sollte aktiviert sein.
 

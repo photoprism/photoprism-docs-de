@@ -6,7 +6,7 @@ Mit PhotoPrism® lassen sich Bilder ganz einfach finden, organisieren und teilen
 
 ## Grenzenlose Möglichkeiten ##
 
-* Genieße deine [Foto](user-guide/organize/browse.md)- und [Video](https://demo-de.photoprism.app/library/videos)-Sammlung ohne dir Gedanken über [RAW-Konvertierung, Duplikate oder Videoformate machen zu müssen](user-guide/settings/library.md)
+* Genieße deine [Foto](user-guide/search/index.md)- und [Video](https://demo-de.photoprism.app/library/videos)-Sammlung ohne dir Gedanken über [RAW-Konvertierung, Duplikate oder Videoformate machen zu müssen](user-guide/settings/library.md)
 * Finde Bilder mithilfe von umfangreichen [Suchfiltern](https://demo-de.photoprism.app/library/browse?view=cards&q=flower%20color%3Ared)
 * Privatsphäre: PhotoPrism sendet keine Daten an Google, Amazon, Facebook oder Apple, es sei denn, du lädst explizit Dateien auf einen dieser Dienste hoch :closed_lock_with_key:
 * PhotoPrism erkennt die [Gesichter](https://demo-de.photoprism.app/library/people) deiner Familie und Freunde

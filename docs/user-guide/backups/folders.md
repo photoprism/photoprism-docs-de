@@ -43,7 +43,7 @@ Der `backup` Ordner enthält sowohl [Datenbank-Dumps als auch Album-Backup-Datei
 Dieser Pfad kann mit `PHOTOPRISM_BACKUP_PATH` geändert werden.
 
 ## Import
-Beim [Importieren](../library/import-vs-index.md) werden die Dateien aus dem `import` Ordner in den `originals` Ordner kopiert oder verschoben. Dabei werden Duplikate automatisch übersprungen, und die importierten Dateien erhalten einen eindeutigen Dateinamen und werden nach Jahr und Monat sortiert.
+Beim [Importieren](../library/index.md) werden die Dateien aus dem `import` Ordner in den `originals` Ordner kopiert oder verschoben. Dabei werden Duplikate automatisch übersprungen, und die importierten Dateien erhalten einen eindeutigen Dateinamen und werden nach Jahr und Monat sortiert.
 
 Dieser Pfad kann mit `PHOTOPRISM_IMPORT_PATH` geändert werden.
 

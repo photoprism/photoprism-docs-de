@@ -3,11 +3,12 @@ nav:
   - Funktionen: index.md
   - Installation: user-guide/index.md
   - Erste Schritte 👣: user-guide/first-steps.md
+  - Benutzeroberfläche: user-guide/navigate.md
   - Tastenkombinationen: user-guide/organize/keyboard-shortcuts.md
   # - Setting up: user-guide/setup.md
   - Deine Dateien:
-      - Übersicht: user-guide/library/import-vs-index.md
-      - Originale indexieren: user-guide/library/indexing.md
+      - Übersicht: user-guide/library/index.md
+      - Originale indexieren: user-guide/library/originals.md
       - Dateien importieren: user-guide/library/import.md
       - Duplikaterkennung: user-guide/library/duplicates.md
       - Unterstützung von Metadaten: user-guide/library/metadata.md
@@ -23,10 +24,9 @@ nav:
   # - WebDAV Sync
   #    - Nextcloud: user-guide/nextcloud.md
   - Bilder finden:
-      - Benutzeroberfläche: user-guide/navigate.md
-      - Bereiche: user-guide/organize/browse.md
-      - Ansichten: user-guide/organize/views.md
-      - Suchfilter verwenden: user-guide/organize/search.md
+      - Bereiche: user-guide/search/index.md
+      - Ansichten: user-guide/search/views.md
+      - Suchfilter verwenden: user-guide/search/filters.md
   - Funktionen:
       - Alben: user-guide/organize/albums.md
       - Personen: user-guide/organize/people.md
@@ -48,11 +48,11 @@ nav:
       - Panoramen: user-guide/organize/panoramas.md
       - Scans: user-guide/organize/scans.md
   - Teilen:
-      - Linkfreigabe: user-guide/share/share.md
+      - Linkfreigabe: user-guide/share/index.md
       - Dateien hochladen: user-guide/share/services-share.md
   - Fernsynchronisierung:
       - WebDAV Zugriff:  user-guide/sync/webdav.md
-      - Smartphones:  user-guide/sync/sync-phone.md
+      - Smartphones:  user-guide/sync/mobile-devices.md
       - Andere Apps:  user-guide/sync/services-sync.md
   - Einstellungen:
       - Allgemein: user-guide/settings/general.md
@@ -170,6 +170,15 @@ theme:
 
 plugins:
   - search
+  - redirects:
+      redirect_maps:
+        'user-guide/library/import-vs-index.md': 'user-guide/library/index.md'
+        'user-guide/library/indexing.md': 'user-guide/library/originals.md'
+        'user-guide/organize/browse.md': 'user-guide/search/index.md'
+        'user-guide/organize/views.md': 'user-guide/search/views.md'
+        'user-guide/organize/search.md': 'user-guide/search/filters.md'
+        'user-guide/share/share.md': 'user-guide/share/index.md'
+        'user-guide/sync/sync-phone.md': 'user-guide/sync/mobile-devices.md'
 
 # MkDocs extensions.
 markdown_extensions:

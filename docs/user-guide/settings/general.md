@@ -33,7 +33,7 @@ Diese Einstellung kann hilfreich sein, wenn du anderen Personen Zugriff auf dein
 Wenn diese Option deaktiviert ist, können keine Dateien über die PhotoPrism-Benutzeroberfläche heruntergeladen werden. Bitte beachte, dass es trotzdem möglich sein kann, Dateien mit den integrierten Browserfunktionen herunterzuladen.
 
 #### :material-folder-plus: Import ####
-Wenn diese Option deaktiviert ist, gibt es keine Möglichkeit Bilder zu [*importieren*](../library/import.md). Du musst stattdessen [*indexieren*](../library/indexing.md) verwenden, um neue Bilder hinzuzufügen.
+Wenn diese Option deaktiviert ist, gibt es keine Möglichkeit Bilder zu [*importieren*](../library/import.md). Du musst stattdessen [*indexieren*](../library/originals.md) verwenden, um neue Bilder hinzuzufügen.
 
 #### :material-pencil: Bearbeiten ####
 Wenn diese Option deaktiviert ist, können keine Fotodetails bearbeitet werden.

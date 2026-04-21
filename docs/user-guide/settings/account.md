@@ -28,7 +28,7 @@ Wenn 2FA für dein Konto aktiviert ist, können andere Apps und Dienste dein Pas
 
 Du kannst deshalb App-Passwörter für sie erstellen, indem du auf die Schaltfläche *Apps und Geräte* klickst. Wir empfehlen, App-Passwörter auch dann zu verwenden, wenn 2FA für dein Konto nicht aktiviert ist.
 
-Beispiel für die Erstellung eines App-Passworts, das du mit [WebDAV-kompatiblen](../sync/webdav.md) Dateisynchronisierungs-Apps wie [PhotoSync](../sync/sync-phone.md) verwenden kannst:
+Beispiel für die Erstellung eines App-Passworts, das du mit [WebDAV-kompatiblen](../sync/webdav.md) Dateisynchronisierungs-Apps wie [PhotoSync](../sync/mobile-devices.md) verwenden kannst:
 
 ![Screenshot](../users/img/app-password.jpg){ class="shadow" }
 

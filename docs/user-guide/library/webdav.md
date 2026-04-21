@@ -1,9 +1,9 @@
 # Dateien mit WebDAV zum Originals oder Import Ordner hinzufügen #
-WebDAV-kompatible Apps und Clients wie [PhotoSync](../sync/sync-phone.md), der Windows Explorer von Microsoft oder der Finder von Apple können sich direkt mit PhotoPrism verbinden:
+WebDAV-kompatible Apps und Clients wie [PhotoSync](../sync/mobile-devices.md), der Windows Explorer von Microsoft oder der Finder von Apple können sich direkt mit PhotoPrism verbinden:
 
 Folge hierzu dieser [Anleitung](../sync/webdav.md).
 
-Sobald alle Dateien hinzugefügt sind, können sie [importiert oder indexiert](import-vs-index.md) werden.
+Sobald alle Dateien hinzugefügt sind, können sie [importiert oder indexiert](index.md) werden.
 Nachdem Dateien über WebDAV hochgeladen wurden, beginnt die Indexierung beziehungsweise der Import automatisch nach einer kurzen Verzögerung.
 
 !!! info ""

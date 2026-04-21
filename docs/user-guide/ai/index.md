@@ -23,7 +23,7 @@ PhotoPrism unterstützt derzeit die folgende Dienste:
 !!! tldr ""
     Ohne GPU-Beschleunigung sind Ollama-Modelle deutlich langsamer und benötigen zwischen 10 Sekunden und über einer Minute pro Bild. Das kann in Ordnung sein, wenn du nur wenige Bilder verarbeiten möchtest oder Wartezeiten akzeptabel sind.
 
-## `vision.yml` Referenz
+## `vision.yml` Referenz { #visionyml-reference }
 
 KI-Engines, Modelle und Laufmodi können in einer `vision.yml` Datei im Verzeichnis `storage/config` konfiguriert werden. Darin wird festgelegt, welche Modelle und Schwellenwerte verwendet werden sollen, zum Beispiel:
 

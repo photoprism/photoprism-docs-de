@@ -38,7 +38,7 @@ Die Kompatibilität unserer PWA wurde mit Apple Safari und Google Chrome geteste
         Um das Original-Format beim Upload beizubehalten:
 
         - Öffne im iOS‑Fotowähler das Drei‑Punkte‑Menü (…) → *Optionen* und stelle **Format** von **Automatisch** auf **Aktuell**, damit deine Originaldateien erhalten bleiben.
-        - Alternativ kannst du spezielle Sync‑Apps wie [PhotoSync](sync/sync-phone.md#photosync-verwenden) verwenden, die Dateien im Original-Format per WebDAV hochladen können.
+        - Alternativ kannst du spezielle Sync‑Apps wie [PhotoSync](sync/mobile-devices.md#photosync-verwenden) verwenden, die Dateien im Original-Format per WebDAV hochladen können.
 
 === "Android/Firefox/Chrome"
 
