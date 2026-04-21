@@ -54,6 +54,7 @@ nav:
       - WebDAV Zugriff:  user-guide/sync/webdav.md
       - Smartphones:  user-guide/sync/mobile-devices.md
       - Andere Apps:  user-guide/sync/services-sync.md
+      - Dropbox:  user-guide/sync/dropbox.md
   - Einstellungen:
       - Allgemein: user-guide/settings/general.md
       - Inhalte: user-guide/settings/library.md
@@ -61,23 +62,6 @@ nav:
       - Dienste:  user-guide/settings/sync.md
       - Konto: user-guide/settings/account.md
       #- Places: user-guide/settings/places.md
-  - Backup Anleitung:
-      - Backups erstellen: user-guide/backups/index.md
-      - Backups wiederherstellen: user-guide/backups/restore.md
-      - Metadaten Export: user-guide/backups/export.md
-      - Verzeichnis Übersicht: user-guide/backups/folders.md
-  - Benutzer verwalten:
-      - Admin Web UI: user-guide/users/index.md
-      - CLI-Befehle: user-guide/users/cli.md
-      - Benutzerrollen: user-guide/users/roles.md
-      - Mit Gästen teilen: user-guide/users/sharing.md
-      - Mehrere Bibliotheken: user-guide/users/libraries.md
-      - 2FA einrichten: user-guide/users/2fa.md
-  - Cloud Migration:
-      - Google Photos: user-guide/use-cases/google.md
-      - Apple Photos: user-guide/use-cases/apple.md
-      - Flickr: user-guide/use-cases/flickr.md
-      #- Link directories from remote:
   - KI Modelle nutzen:
       - Einführung: user-guide/ai/index.md
       - Ollama Setup: user-guide/ai/using-ollama.md
@@ -85,7 +69,26 @@ nav:
       - Ollama Modelle: user-guide/ai/ollama-models.md
       - OpenAI API: user-guide/ai/using-openai.md
       - CLI Befehle: user-guide/ai/cli.md
+  - Backup Anleitung:
+      - Backups erstellen: user-guide/backups/index.md
+      - Backups wiederherstellen: user-guide/backups/restore.md
+      - Externer Speicher: user-guide/backups/external-storage.md
+      - Metadaten Export: user-guide/backups/export.md
+      - Verzeichnis Übersicht: user-guide/backups/folders.md
+  - Cloud Migration:
+      - Google Photos: user-guide/use-cases/google.md
+      - Apple Photos: user-guide/use-cases/apple.md
+      - Flickr: user-guide/use-cases/flickr.md
+      #- Link directories from remote:
+  - Benutzer verwalten:
+      - Admin Web UI: user-guide/users/index.md
+      - CLI-Befehle: user-guide/users/cli.md
+      - Benutzerrollen: user-guide/users/roles.md
+      - Mit Gästen teilen: user-guide/users/sharing.md
+      - Mehrere Bibliotheken: user-guide/users/libraries.md
+      - 2FA einrichten: user-guide/users/2fa.md
   - Mobile App (PWA): user-guide/pwa.md
+  - iOS und Android: user-guide/native-apps/index.md
   - FAQ: user-guide/faq.md
   # - Metadata: user-guide/metadata.md
 
@@ -179,6 +182,7 @@ plugins:
         'user-guide/organize/search.md': 'user-guide/search/filters.md'
         'user-guide/share/share.md': 'user-guide/share/index.md'
         'user-guide/sync/sync-phone.md': 'user-guide/sync/mobile-devices.md'
+        'user-guide/use-cases/dropbox.md': 'user-guide/sync/dropbox.md'
 
 # MkDocs extensions.
 markdown_extensions:
