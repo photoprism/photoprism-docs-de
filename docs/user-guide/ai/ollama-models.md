@@ -56,7 +56,7 @@ Für andere Sprachen sollten die Basisanweisungen im Prompt auf Englisch bleiben
 
 ## Konfigurations Beispiele
 
-Die folgenden Beispiele kannst du direkt in deiner `vision.yml` verwenden. Die Datei liegt im Verzeichnis `storage/config`. [Mehr erfahren ›](index.md#visionyml-referenz).
+Die folgenden Beispiele kannst du direkt in deiner `vision.yml` verwenden. Die Datei liegt im Verzeichnis `storage/config`. [Mehr erfahren ›](index.md#visionyml-reference).
 
 ### Gemma 3: Labels
 
