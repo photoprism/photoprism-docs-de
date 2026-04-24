@@ -27,7 +27,7 @@ So importierst du hochgeladene Dateien automatisch in PhotoPrism:
     volumes:
       - "~/Dropbox/Camera Uploads:/photoprism/import"
     ```
-5. Optional: Aktiviere „Beim Import löschen" in den PhotoPrism-Einstellungen, um importierte Dateien aus Dropbox zu entfernen. Damit sparst du Dropbox-Speicherplatz und bleibst innerhalb der kostenlosen 2‑GB‑Stufe.
+5. Optional: Aktiviere „Dateien verschieben" in den Import-Einstellungen, um importierte Dateien aus Dropbox zu entfernen. Damit sparst du Dropbox-Speicherplatz und bleibst innerhalb der kostenlosen 2‑GB‑Stufe.
 
 !!! note ""
     Die Dropbox-Smartphone-App muss regelmäßig geöffnet werden, da sie sonst neue Bilder oft nicht erkennt und nicht synchronisiert.
