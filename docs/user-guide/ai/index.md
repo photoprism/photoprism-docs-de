@@ -27,6 +27,11 @@ PhotoPrism unterstützt derzeit die folgende Dienste:
 
 KI-Engines, Modelle und Laufmodi können in einer `vision.yml` Datei im Verzeichnis `storage/config` konfiguriert werden. Darin wird festgelegt, welche Modelle und Schwellenwerte verwendet werden sollen, zum Beispiel:
 
+!!! info ""
+    Wenn PhotoPrism deine Konfigurationsdatei nicht lesen kann, stelle sicher, dass sie unter dem für deine Instanz konfigurierten Konfigurationspfad existiert. Ältere Installationen verwenden möglicherweise `storage/settings`.
+
+    Führe `docker compose exec photoprism photoprism show config | grep config-path` aus, um deinen konfigurierten Konfigurationspfad zu ermitteln.
+
 ```yaml
 Models:
 - Type: caption
@@ -136,6 +141,7 @@ Unter `Service` konfigurierst du Endpunkt‑URL, HTTP-Methode, Format und Authen
 | `Username` / `Password`            | `""`           | Injected as basic auth when `Uri` lacks userinfo.                                              |
 | `Model`                            | `""`           | Endpoint-specific override; wins over model/name.                                              |
 | `Org` / `Project`                  | `""`           | Organization / Project ID when using OpenAI.                                                   |
+| `Think`                            | `""`           | Optionaler Reasoning-Hint für Ollama. Als String übergebene Werte (`"true"`/`"false"`) werden als JSON-Booleans gesendet. |
 | `RequestFormat` / `ResponseFormat` | engine default | Explicit values win over engine defaults.                                                      |
 | `FileScheme`                       | engine default | Controls image transport e.g. `data` or `base64`.                                              |
 | `Disabled`                         | `false`        | Disables the endpoint without removing the model.                                              |
