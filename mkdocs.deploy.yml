@@ -10,6 +10,7 @@ plugins:
         'user-guide/organize/search.md': 'user-guide/search/filters.md'
         'user-guide/share/share.md': 'user-guide/share/index.md'
         'user-guide/sync/sync-phone.md': 'user-guide/sync/mobile-devices.md'
+        'user-guide/use-cases/dropbox.md': 'user-guide/sync/dropbox.md'
   - privacy:
       enabled: true
       assets_fetch: true
