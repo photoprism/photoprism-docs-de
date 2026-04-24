@@ -1,17 +1,19 @@
 # Ollama Modelle #
 
-Wir empfehlen, ein [Vision Modell](https://ollama.com/search?c=vision) zu wählen, das Geschwindigkeit, Genauigkeit und Zuverlässigkeit gut ausbalanciert. Zwei Modelle, die diese Kriterien erfüllen und die wir besonders empfehlen können, sind [Gemma 3](https://ollama.com/library/gemma3) und [Qwen3‑VL](https://ollama.com/library/qwen3-vl):
+Wir empfehlen, ein [Vision Modell](https://ollama.com/search?c=vision) zu wählen, das Geschwindigkeit, Genauigkeit und Zuverlässigkeit gut ausbalanciert. Zwei Modelle, die diese Kriterien erfüllen und die wir empfehlen können, sind [Gemma 4](https://ollama.com/library/gemma4) und [Qwen3-VL](https://ollama.com/library/qwen3-vl):
 
 | Modell       | Anwendungsfall                                             | Anmerkungen                                                          |
 |--------------|------------------------------------------------------------|----------------------------------------------------------------------|
-| **Gemma 3**  | Standard-Generierung von Bildunterschriften und Labels     | Leichte, zuverlässige JSON-Ausgabe; guter Standard.                  |
-| **Qwen3-VL** | Fortgeschrittene Bilderkennung und Reasoning (OCR, komplexe Prompts) | Bessere visuelle Verankerung (Grounding) und Multi-Language-Support; benötigt mehr VRAM. |
+| **Gemma 4**  | Standard-Generierung von Bildunterschriften und Labels     | Leichte, zuverlässige JSON-Ausgabe; guter Standard.                  |
+| **Qwen3-VL** | Fortgeschrittene Bilderkennung und Reasoning (OCR, komplexe Prompts) | Bessere visuelle Verankerung (Grounding) und Multi-Language-Support; in vielen Größen und Varianten verfügbar. |
 
-[**Gemma 3**](https://ollama.com/library/gemma3) ist in Bezug auf Performance sehr konsistent; Fehler treten nur selten auf. Für sehr lange oder komplexe Prompts und Captions ist es jedoch weniger geeignet. Für die meisten [Anwendungsfälle](#gemma-3-labels) empfehlen wir die Standard‑Variante `gemma3:latest`.
+[**Gemma 4**](https://ollama.com/library/gemma4) ist in Bezug auf Performance sehr konsistent; Fehler treten nur selten auf. Für sehr lange oder komplexe Prompts und Captions ist es jedoch weniger geeignet. Für die meisten [Anwendungsfälle](#gemma-4-labels) empfehlen wir die [Standard‑Variante](https://ollama.com/library/gemma4/tags) `gemma4:latest` (aktuell ein Alias für `gemma4:e4b`). Die kleinere Variante [`gemma4:e2b`](https://ollama.com/library/gemma4/tags) ist spürbar schneller und eine gute Wahl, wenn ein einziges Haupt‑Label pro Bild ausreicht. Wenn du bereits [Gemma 3](https://ollama.com/library/gemma3) konfiguriert hast, funktioniert das weiterhin – Gemma 4 ist ein Drop‑in‑Ersatz mit vergleichbarer Latenz (ca. 2 Sekunden für die Label‑Generierung auf einer NVIDIA RTX 4060 in unseren Tests).
 
-[**Qwen3‑VL**](https://ollama.com/library/qwen3-vl) verhält sich in den kleineren `2b`‑ und `4b`‑[Varianten](https://ollama.com/library/qwen3-vl/tags) weniger vorhersehbar; Leistung und Fehlerrate können stark schwanken – [es sei denn, du steuerst es wie in den Beispielen](#qwen3-vl-labels) weiter unten. Die Standardversion `qwen3-vl:latest` (`8b`) funktioniert im Allgemeinen ohne größere Anpassungen gut. Auf einer NVIDIA RTX 4060 ist Qwen3‑VL bei der [Label‑Generierung mit 2–3 Sekunden](#qwen3-vl-labels) pro Bild etwas langsamer als Gemma 3 mit [1–2 Sekunden](#gemma-3-labels).
+[**Qwen3‑VL**](https://ollama.com/library/qwen3-vl) verhält sich in den kleineren `2b`‑ und `4b`‑[Varianten](https://ollama.com/library/qwen3-vl/tags) weniger vorhersehbar; Leistung und Fehlerrate können stark schwanken – [es sei denn, du steuerst es wie in den Beispielen](#qwen3-vl-labels) weiter unten. Die Standardversion `qwen3-vl:latest` (`8b`) funktioniert im Allgemeinen ohne größere Anpassungen gut. Die Label‑Generierung auf einer NVIDIA RTX 4060 dauert typischerweise [2–3 Sekunden](#qwen3-vl-labels) und ist damit in etwa vergleichbar mit [Gemma 4](#gemma-4-labels).
 
-Die Performance hängt außerdem von deiner Hardware ab. Auf Apple Silicon oder NVIDIA‑Blackwell‑GPUs können z.B. bestimmte [Qwen3‑VL‑Varianten](https://ollama.com/search?q=qwen3-vl) schneller sein als Gemma 3. Am besten testest du beide Modelle und entscheidest, welches für deinen Anwendungsfall besser funktioniert. Wenn du sowohl Captions als auch Labels erzeugst, solltest du möglichst dasselbe Modell verwenden, damit Ollama nicht zwischen Modellen hin‑ und herschalten muss.
+Eine neuere Community‑Variante, [`frob/qwen3.5-instruct:4b`](https://ollama.com/frob/qwen3.5-instruct), hat sich in unseren Tests als fähige Alternative erwiesen – sie nutzt dasselbe Options‑Profil wie `qwen3-vl:4b-instruct` (siehe [unten](#qwen3-vl-labels)) und liefert eine vergleichbare Latenz. In einer begrenzten Testreihe haben wir leicht bessere Ergebnisse bei weniger verbreiteten Motiven beobachtet (zum Beispiel wird ein Chamäleon korrekt als „chameleon“ erkannt und nicht als generisches „lizard“, wie es einige andere 4B‑Modelle zurückgeben). Wie bei allen Qwen‑Modellen müssen die strikten Options und das Prompt‑Schema „AT MOST N labels“ beibehalten werden – ohne sie erzeugt das Modell zu viele Tokens und die JSON‑Antwort wird abgeschnitten.
+
+Die Performance hängt außerdem von deiner Hardware ab. Auf Apple Silicon oder NVIDIA‑Blackwell‑GPUs können z.B. bestimmte [Qwen3‑VL‑Varianten](https://ollama.com/search?q=qwen3-vl) schneller sein als Gemma 4. Am besten testest du beide Modelle und entscheidest, welches für deinen Anwendungsfall besser funktioniert. Wenn du sowohl Captions als auch Labels erzeugst, solltest du möglichst dasselbe Modell verwenden, damit Ollama nicht zwischen Modellen hin‑ und herschalten muss.
 
 !!! tldr ""
     Ohne GPU‑Beschleunigung sind Ollama‑Modelle deutlich langsamer und benötigen zwischen 10 Sekunden und über einer Minute pro Bild. Das kann in Ordnung sein, wenn du nur wenige Bilder verarbeiten möchtest oder Wartezeiten akzeptabel sind.
@@ -58,12 +60,12 @@ Für andere Sprachen sollten die Basisanweisungen im Prompt auf Englisch bleiben
 
 Die folgenden Beispiele kannst du direkt in deiner `vision.yml` verwenden. Die Datei liegt im Verzeichnis `storage/config`. [Mehr erfahren ›](index.md#visionyml-reference).
 
-### Gemma 3: Labels
+### Gemma 4: Labels
 
 ```yaml
 Models:
 - Type: labels
-  Model: gemma3:latest
+  Model: gemma4:latest
   Engine: ollama
   Run: auto
   Service:
@@ -74,13 +76,14 @@ Warum das funktioniert:
 
 - **Engine:** Verwendet sinnvolle Standardwerte für **Resolution**, **Format**, **Prompt** und **Options** (720 px‑Thumbnails, JSON‑Prompts für Labels). Ein eigener Prompt ist nicht notwendig.
 - **Run:** `auto` läuft automatisch nach der Indexierung und durch geplante Jobs. Kann zusätzlich manuell ausgeführt werden ￫ [Run Modes](index.md#run-modes).
+- **Model:** `gemma4:latest` ist aktuell ein Alias für `gemma4:e4b` und liefert drei bis vier Labels pro Bild mit abgestufter Topicality. Für einen schnelleren Klassifizierer mit einem einzelnen Haupt‑Label pro Bild wechsle zu `gemma4:e2b`.
 
-### Gemma 3: Caption
+### Gemma 4: Caption
 
 ```yaml
 Models:
 - Type: caption
-  Model: gemma3:latest
+  Model: gemma4:latest
   Engine: ollama
   Run: auto
   Prompt: >
@@ -128,7 +131,7 @@ Models:
 
 Warum das funktioniert:
 
-- **Model:** [`qwen3-vl:4b-instruct`](https://ollama.com/library/qwen3-vl/tags) ist eine leichtere Qwen3‑VL‑Variante. Alternativ kannst du [`huihui_ai/qwen3-vl-abliterated:4b-instruct`](https://ollama.com/huihui_ai/qwen3-vl-abliterated), [`qwen3-vl:latest`](https://ollama.com/library/qwen3-vl) oder andere [Varianten](https://ollama.com/search?c=vision&q=qwen3-vl) ausprobieren.
+- **Model:** [`qwen3-vl:4b-instruct`](https://ollama.com/library/qwen3-vl/tags) ist eine leichtere Qwen3‑VL‑Variante. Alternativ kannst du [`frob/qwen3.5-instruct:4b`](https://ollama.com/frob/qwen3.5-instruct) (eine neuere Community‑Variante; nutzt dasselbe Options‑Profil und hat in unseren Tests leicht bessere Ergebnisse bei weniger verbreiteten Motiven geliefert), [`huihui_ai/qwen3-vl-abliterated:4b-instruct`](https://ollama.com/huihui_ai/qwen3-vl-abliterated), [`qwen3-vl:latest`](https://ollama.com/library/qwen3-vl) oder andere [Varianten](https://ollama.com/search?c=vision&q=qwen3-vl) ausprobieren.
 - **Engine:** Wendet sinnvolle Standardwerte für **Resolution**, **Format** und **Options** an.
 - **Run:** `on-demand` erlaubt manuelle Läufe, Ausführungen durch den Metadata‑Worker und geplante Jobs ￫ [Run Modes](index.md#run-modes).
 - **Prompt:** Begrenzte Latenz, keine Wiederholungen und klare Kontrolle über Art und Anzahl der zurückgegebenen Labels. Für andere Sprachen ergänze „Respond in …“ im Prompt.
@@ -171,7 +174,7 @@ Models:
 
 Warum das funktioniert:
 
-- **Model:** Die Verwendung von [`qwen3-vl:4b-instruct`](https://ollama.com/library/qwen3-vl/tags) für Labels und Captions vermeidet zeitaufwändige Modellwechsel in Ollama. Alternativ kannst du [`huihui_ai/qwen3-vl-abliterated:4b-instruct`](https://ollama.com/huihui_ai/qwen3-vl-abliterated), [`qwen3-vl:latest`](https://ollama.com/library/qwen3-vl) oder andere [Varianten](https://ollama.com/search?c=vision&q=qwen3-vl) testen.
+- **Model:** Die Verwendung von [`qwen3-vl:4b-instruct`](https://ollama.com/library/qwen3-vl/tags) für Labels und Captions vermeidet zeitaufwändige Modellwechsel in Ollama. Alternativ kannst du [`frob/qwen3.5-instruct:4b`](https://ollama.com/frob/qwen3.5-instruct) (eine neuere Community‑Variante; nutzt dasselbe Options‑Profil und hat in unseren Tests leicht bessere Ergebnisse bei weniger verbreiteten Motiven geliefert), [`huihui_ai/qwen3-vl-abliterated:4b-instruct`](https://ollama.com/huihui_ai/qwen3-vl-abliterated), [`qwen3-vl:latest`](https://ollama.com/library/qwen3-vl) oder andere [Varianten](https://ollama.com/search?c=vision&q=qwen3-vl) testen.
 - **Engine:** Wendet sinnvolle Standardwerte für **Resolution**, **Format** und **Options** an.
 - **Run:** `on-schedule` erlaubt manuelle Läufe und geplante Jobs ￫ [Run Modes](index.md#run-modes).
 - **System:** Weist das Modell an, Bilder in natürlicher Sprache zu beschreiben.
@@ -205,3 +208,31 @@ photoprism vision run -m labels
 ```
 
 [Learn more ›](cli.md)
+
+## Troubleshooting
+
+### Konfiguration überprüfen
+
+Wenn Probleme auftreten, prüfe zuerst, wie PhotoPrism deine [`vision.yml`](index.md#visionyml-reference)‑Konfiguration geladen hat. Das geht mit folgendem Befehl:
+
+```bash
+docker compose exec photoprism photoprism vision ls
+```
+
+Der Befehl gibt die Einstellungen aller unterstützten und konfigurierten Modelltypen aus. Vergleiche das Ergebnis mit deiner [`vision.yml`](index.md#visionyml-reference)‑Datei, um zu bestätigen, dass die Konfiguration korrekt geladen wurde, und um Parsing‑Fehler oder Fehlkonfigurationen zu erkennen.
+
+### Test Runs durchführen
+
+Die folgenden [Terminal‑Befehle](https://docs.photoprism.app/getting-started/docker-compose/#opening-a-terminal) führen jeweils einen einzelnen Lauf für den angegebenen Modelltyp aus:
+
+```bash
+photoprism vision run -m labels --count 1 --force
+photoprism vision run -m caption --count 1 --force
+```
+
+Wenn du nicht die erwarteten Ergebnisse erhältst oder Fehler bemerkst, kannst du die Befehle erneut mit aktiviertem Trace‑Log‑Modus ausführen, um Anfrage und Antwort zu untersuchen:
+
+```bash
+photoprism --log-level=trace vision run -m labels --count 1 --force
+photoprism --log-level=trace vision run -m caption --count 1 --force
+```
