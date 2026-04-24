@@ -87,6 +87,11 @@ docker compose exec ollama ollama pull gemma3:latest
 
 Erstelle nun eine neue Datei `config/vision.yml` oder bearbeite die vorhandene Datei im *storage*‑Verzeichnis deiner PhotoPrism‑Instanz, wie im folgenden Beispiel. Aus Sicht des Containers befindet sich die Datei unter `/photoprism/storage/config/vision.yml`:
 
+!!! info ""
+    Wenn PhotoPrism deine Konfigurationsdatei nicht lesen kann, stelle sicher, dass sie unter dem für deine Instanz konfigurierten Konfigurationspfad existiert. Ältere Installationen verwenden möglicherweise `storage/settings`.
+
+    Führe `docker compose exec photoprism photoprism show config | grep config-path` aus, um deinen konfigurierten Konfigurationspfad zu ermitteln.
+
 !!! example "vision.yml"
     ```yaml
     Models:
@@ -139,13 +144,13 @@ Anschließend kannst du die `photoprism vision` [CLI‑Befehle](./cli.md#vision-
 
 ### Konfiguration überprüfen
 
-Wenn es Probleme gibt, solltest du zuerst prüfen, ob die `vision.yml` richtig geladen wurde.
+Wenn Probleme auftreten, prüfe zuerst, wie PhotoPrism deine [`vision.yml`](index.md#visionyml-reference)‑Konfiguration geladen hat. Das geht mit folgendem Befehl:
 
 ```bash
 docker compose exec photoprism photoprism vision ls
 ```
 
-Der Befehl gibt die Einstellungen aller unterstützten und konfigurierten Modelltypen aus. Vergleiche das Ergebnis mit deiner `vision.yml`, um zu prüfen, ob die Konfiguration korrekt übernommen wurde oder Konfigurationsfehler vorliegen.
+Der Befehl gibt die Einstellungen aller unterstützten und konfigurierten Modelltypen aus. Vergleiche das Ergebnis mit deiner [`vision.yml`](index.md#visionyml-reference)‑Datei, um zu bestätigen, dass die Konfiguration korrekt geladen wurde, und um Parsing‑Fehler oder Fehlkonfigurationen zu erkennen.
 
 ### Test Runs durchführen
 
@@ -156,7 +161,7 @@ photoprism vision run -m labels --count 1 --force
 photoprism vision run -m caption --count 1 --force
 ```
 
-Wenn keine Ausgabe erzeugt wird, wiederhole den Aufruf mit einem höhreren Log Level.
+Wenn du nicht die erwarteten Ergebnisse erhältst oder Fehler bemerkst, kannst du die Befehle erneut mit aktiviertem Trace‑Log‑Modus ausführen, um Anfrage und Antwort zu untersuchen:
 
 ```bash
 photoprism --log-level=trace vision run -m labels --count 1 --force
@@ -167,7 +172,18 @@ photoprism --log-level=trace vision run -m caption --count 1 --force
 
 Wenn du ein Reasoning‑ oder „Thinking"‑Modell verwendest und unvollständige oder abgeschnittene Captions erhältst, verbraucht das Modell möglicherweise den Großteil seines Output‑Token‑Budgets für internes Reasoning – sodass zu wenige Tokens für die eigentliche Caption übrig bleiben.
 
-Um das zu beheben, wechsle entweder zu einem Modell ohne Thinking oder erhöhe den Wert von `NumPredict` in den [`vision.yml`](index.md#visionyml-reference) [Optionen](index.md#options), um dem Modell mehr Spielraum zu geben:
+Um das zu beheben, kannst du entweder Reasoning für das Modell mit `Service.Think: "false"` deaktivieren, zu einem Modell ohne Thinking wechseln oder den Wert von `NumPredict` in den [`vision.yml`](index.md#visionyml-reference) [Optionen](index.md#options) erhöhen, um dem Modell mehr Spielraum zu geben:
+
+```yaml
+Models:
+- Type: caption
+  Model: qwen3-vl:235b-instruct
+  Engine: ollama
+  Service:
+    Think: "false"
+```
+
+Wenn Reasoning weiterhin aktiviert bleiben soll, erhöhe das Output‑Budget für die eigentliche Caption:
 
 ```yaml
 Options:

@@ -24,7 +24,7 @@ Füge die Umgebungsvariablen `OLLAMA_BASE_URL` und `OLLAMA_API_KEY` zum `photopr
 Mit diesen Variablen verwendet PhotoPrism automatisch den Ollama Cloud Endpunkt für alle Ollama‑basierten Modelle, die in deiner [`vision.yml`](index.md#visionyml-reference) konfiguriert sind. Du musst weder `Service.Uri` noch `Service.Key` in der Modellkonfiguration angeben – beides wird aus den Umgebungsvariablen übernommen.
 
 !!! info ""
-    Wenn `OLLAMA_BASE_URL` auf `https://ollama.com` gesetzt ist, wechselt PhotoPrism automatisch zu den Cloud‑Standardeinstellungen. Ein API‑Key allein erzwingt keine Cloud‑Nutzung.
+    Wenn `OLLAMA_BASE_URL` auf `https://ollama.com` gesetzt ist, wechselt PhotoPrism automatisch zu den Cloud‑Standardeinstellungen. Ein API‑Key allein erzwingt keine Cloud‑Nutzung. Da der aktuell veröffentlichte Ollama Cloud Modellname `qwen3-vl:235b-instruct-cloud` lautet, empfehlen wir, ihn explizit in `vision.yml` festzulegen.
 
 ## Schritt 3: Modelle konfigurieren
 
@@ -36,16 +36,24 @@ Da die Service‑URI aus `OLLAMA_BASE_URL` übernommen wird, kannst du den `Serv
     ```yaml
     Models:
     - Type: labels
-      Model: qwen3.5:397b-cloud
+      Model: qwen3-vl:235b-instruct-cloud
       Engine: ollama
       Run: auto
+      Service:
+        Think: "false"
     - Type: caption
-      Model: qwen3.5:397b-cloud
+      Model: qwen3-vl:235b-instruct-cloud
       Engine: ollama
       Run: auto
+      Service:
+        Think: "false"
     ```
 
 Stelle sicher, dass die konfigurierten Modelle [auf Ollama Cloud verfügbar](https://ollama.com/search?c=cloud) sind. Du kannst die [Liste der unterstützten Cloud‑Modelle](https://ollama.com/search?c=cloud) durchsuchen, um zu sehen, welche verwendet werden können. Ein manuelles Herunterladen ist nicht nötig – Cloud‑Modelle werden remote bereitgestellt.
+
+Die optionale Einstellung `Service.Think: "false"` deaktiviert die Reasoning‑Ausgabe bei Modellen, die dies unterstützen. Das ist für Captions und Kategorien oft sinnvoll, da es die Latenz reduziert und verhindert, dass Output‑Tokens für internes Reasoning statt für das eigentliche Ergebnis verbraucht werden.
+
+Zum Zeitpunkt dieser Dokumentation verwendet PhotoPrism intern immer noch `qwen3-vl:235b-instruct` als Ollama Cloud Standardmodell. Durch das explizite Festlegen von `Model: qwen3-vl:235b-instruct-cloud` werden Unklarheiten vermieden, bis dieser Standardwert im Code aktualisiert wird.
 
 [Mehr erfahren ›](ollama-models.md)
 
@@ -82,13 +90,13 @@ Anschließend kannst du die `photoprism vision` [CLI‑Befehle](./cli.md#vision-
 
 ### Konfiguration überprüfen
 
-Wenn es Probleme gibt, solltest du zuerst prüfen, ob die [`vision.yml`](index.md#visionyml-reference) richtig geladen wurde:
+Wenn Probleme auftreten, prüfe zuerst, wie PhotoPrism deine [`vision.yml`](index.md#visionyml-reference)‑Konfiguration geladen hat. Das geht mit folgendem Befehl:
 
 ```bash
 docker compose exec photoprism photoprism vision ls
 ```
 
-Der Befehl gibt die Einstellungen aller unterstützten und konfigurierten Modelltypen aus. Vergleiche das Ergebnis mit deiner [`vision.yml`](index.md#visionyml-reference), um zu prüfen, ob die Konfiguration korrekt übernommen wurde oder Konfigurationsfehler vorliegen.
+Der Befehl gibt die Einstellungen aller unterstützten und konfigurierten Modelltypen aus. Vergleiche das Ergebnis mit deiner [`vision.yml`](index.md#visionyml-reference)‑Datei, um zu bestätigen, dass die Konfiguration korrekt geladen wurde, und um Parsing‑Fehler oder Fehlkonfigurationen zu erkennen.
 
 ### Test Runs durchführen
 
@@ -99,7 +107,7 @@ photoprism vision run -m labels --count 1 --force
 photoprism vision run -m caption --count 1 --force
 ```
 
-Wenn keine Ausgabe erzeugt wird oder Fehler auftreten, wiederhole den Aufruf mit Trace‑Log‑Level:
+Wenn du nicht die erwarteten Ergebnisse erhältst oder Fehler bemerkst, kannst du die Befehle erneut mit aktiviertem Trace‑Log‑Modus ausführen, um Anfrage und Antwort zu untersuchen:
 
 ```bash
 photoprism --log-level=trace vision run -m labels --count 1 --force

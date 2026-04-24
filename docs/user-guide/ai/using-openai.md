@@ -41,7 +41,7 @@ Empfehlungen:
 - PhotoPrism wertet Modelle von unten nach oben aus. Wenn du die OpenAI‑Einträge ans Ende der Liste setzt, werden sie bevorzugt, während andere Modelle als Fallback dienen.
 
 !!! tldr ""
-    Standardmäßig verwendet PhotoPrism den OpenAI‑Responses‑Endpunkt `https://api.openai.com/v1/responses` mit einem einzelnen 720 px Thumbnail (`detail: low`).
+    Standardmäßig verwendet PhotoPrism den OpenAI‑Responses‑Endpunkt `https://api.openai.com/v1/responses` mit einem einzelnen 720 px Thumbnail (`detail: low`). Der Endpunkt lässt sich über `Service.Url` auf einen eigenen Wert ändern.
 
 ## Nutzungs Tipps
 
@@ -112,13 +112,13 @@ Models:
 
 ### Konfiguration überprüfen
 
-Wenn es Probleme gibt, solltest du zuerst prüfen, ob die `vision.yml` richtig geladen wurde.
+Wenn Probleme auftreten, prüfe zuerst, wie PhotoPrism deine [`vision.yml`](index.md#visionyml-reference)‑Konfiguration geladen hat. Das geht mit folgendem Befehl:
 
 ```bash
 docker compose exec photoprism photoprism vision ls
 ```
 
-Der Befehl gibt die Einstellungen aller unterstützten und konfigurierten Modelltypen aus. Vergleiche das Ergebnis mit deiner `vision.yml`, um zu prüfen, ob die Konfiguration korrekt übernommen wurde oder Konfigurationsfehler vorliegen.
+Der Befehl gibt die Einstellungen aller unterstützten und konfigurierten Modelltypen aus. Vergleiche das Ergebnis mit deiner [`vision.yml`](index.md#visionyml-reference)‑Datei, um zu bestätigen, dass die Konfiguration korrekt geladen wurde, und um Parsing‑Fehler oder Fehlkonfigurationen zu erkennen.
 
 ### Test Runs durchführen
 
@@ -129,7 +129,7 @@ photoprism vision run -m labels --count 1 --force
 photoprism vision run -m caption --count 1 --force
 ```
 
-Wenn keine Ausgabe erzeugt wird, wiederhole den Aufruf mit einem höhreren Log Level.
+Wenn du nicht die erwarteten Ergebnisse erhältst oder Fehler bemerkst, kannst du die Befehle erneut mit aktiviertem Trace‑Log‑Modus ausführen, um Anfrage und Antwort zu untersuchen:
 
 ```bash
 photoprism --log-level=trace vision run -m labels --count 1 --force
