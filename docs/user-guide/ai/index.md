@@ -17,7 +17,7 @@ PhotoPrism unterstützt derzeit die folgende Dienste:
 ### Performance
 
 - **TensorFlow:** Die integrierten Modelle liefern auf allen unterstützten Plattformen zuverlässige Ergebnisse und bilden die Grundlage für Kernfunktionen wie Kategorien und Gesichtserkennung.
-- **Ollama:** [Das Generieren von Kategorien](ollama-models.md#gemma-3-labels) für ein Bild dauert auf einer NVIDIA RTX 4060 in der Regel 1–4 Sekunden – je nach verwendetem Modell und [Anzahl der Kategorien](ollama-models.md#qwen3-vl-labels).
+- **Ollama:** [Das Generieren von Kategorien](ollama-models.md#gemma-4-labels) für ein Bild dauert auf einer NVIDIA RTX 4060 in der Regel 1–4 Sekunden – je nach verwendetem Modell und [Anzahl der Kategorien](ollama-models.md#qwen3-vl-labels).
 - **OpenAI:** Die Verarbeitung eines Bildes dauert etwa 3 Sekunden, abhängig von Modell, Region und aktueller Auslastung.
 
 !!! tldr ""

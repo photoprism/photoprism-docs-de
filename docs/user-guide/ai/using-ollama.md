@@ -109,7 +109,7 @@ Erstelle nun eine neue Datei `config/vision.yml` oder bearbeite die vorhandene D
         Uri: http://ollama:11434/api/generate
     ```
 
-[Mehr erfahren ›](ollama-models.md#gemma-3-labels)
+[Mehr erfahren ›](ollama-models.md#gemma-4-labels)
 
 ### Scheduling Optionen
 
