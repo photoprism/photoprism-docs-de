@@ -11,7 +11,7 @@ Systemkonfigurationsoptionen wie die Bildqualität können in den erweiterten Ei
 
 ![Screenshot](img/settings-advanced-0912-german.jpg){ class="shadow" }
 
-Alle [Optionen](https://docs.photoprism.app/getting-started/config-options/) können in deiner `docker-compose.yml` oder auch über Kommandozeilenparameter gesetzt werden. 
+Alle [Optionen](https://docs.photoprism.app/getting-started/config-options/) können in deiner `compose.yaml` (oder `docker-compose.yml`) oder auch über Kommandozeilenparameter gesetzt werden. 
 Manuell geänderte Werte werden in einer Konfigurationsdatei gespeichert. Sie wird standardmäßig im Ordner `storage/config` gespeichert. 
 
 ## Globale Optionen ##
