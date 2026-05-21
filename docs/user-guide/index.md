@@ -3,7 +3,7 @@ Unsere schrittweise Installationsanleitung für die Community-Edition ist in eng
 Alles, was du brauchst, ist ein Webbrowser und
 [Docker](https://store.docker.com/search?type=edition&offering=community), um den Server zu betreiben.
 
-Docker ist für [Mac](https://docs.docker.com/desktop/install/mac-install/), [Linux](https://docs.photoprism.app/getting-started/troubleshooting/docker/#installation) und [Windows](https://docs.docker.com/desktop/install/windows-install/) verfügbar. PhotoPrism läuft auch auf [PikaPods](https://docs.photoprism.app/getting-started/cloud/pikapods/), [DigitalOcean](https://docs.photoprism.app/getting-started/cloud/digitalocean/),
+Docker ist für [Mac](https://docs.docker.com/desktop/setup/install/mac-install/), [Linux](https://docs.photoprism.app/getting-started/troubleshooting/docker/#installation) und [Windows](https://docs.docker.com/desktop/setup/install/windows-install/) verfügbar. PhotoPrism läuft auch auf [PikaPods](https://docs.photoprism.app/getting-started/cloud/pikapods/), [DigitalOcean](https://docs.photoprism.app/getting-started/cloud/digitalocean/),
 [Raspberry Pi](https://docs.photoprism.app/getting-started/raspberry-pi/), [Portainer](https://docs.photoprism.app/getting-started/portainer/), [FreeBSD](https://docs.photoprism.app/getting-started/ports/freebsd/), und vielen [NAS-Geräten](https://docs.photoprism.app/getting-started/nas/synology/).
 
 
