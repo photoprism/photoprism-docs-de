@@ -1,5 +1,5 @@
 # Ansichten #
-PhotoPrism bietet dir drei verschiedene Ansichten zum Betrachten deiner Fotos und Videos:
+PhotoPrism bietet dir drei verschiedene Ansichten zum Betrachten deiner Fotos und Videos. Zusätzlich kannst du zwischen mehreren hellen und dunklen Designs wählen.
 
 === "Karteikarten Ansicht"
 
@@ -31,6 +31,7 @@ Alternativ kannst du dir Bilder und Videos auch in der *Vollbild Ansicht* anzeig
     
     - **Strg + F** : Vollbildmodus ein-/ausschalten
     - **Strg + S** : Diashow abspielen/anhalten
-    - **Strg + I** : Info-Panel ein-/ausblenden    
+    - **Strg + I** : Info-Seitenleiste umschalten
+    - **Strg + H** : Bildunterschrift ein-/ausblenden
     - **Strg + M** : Stumm schalten/Stummschaltung aufheben
     - **Strg + L** : Liken/Entliken

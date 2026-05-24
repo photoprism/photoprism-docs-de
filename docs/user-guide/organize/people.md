@@ -1,17 +1,16 @@
-PhotoPrism unterstützt Gesichtserkennung. Sie ermöglicht dir, Bilder deiner Familie und Freunde zu finden.
-Freue dich darauf, lang vergessene Bilder wieder zu entdecken! Wenn du deine Sammlung indexierst, werden Gesichter erkannt und nach
-Ähnlichkeit gruppiert, so dass du sie schnell Personen zuordnen kannst.
+# Gesichtserkennung
+
+PhotoPrism enthält eine Gesichtserkennung, mit der du Bilder deiner Familie und Freunde wiederfindest. Freue dich darauf, längst vergessene Aufnahmen neu zu entdecken! Neue Gesichter werden während des Indexierens deiner Sammlung erkannt und anschließend nach Ähnlichkeit gruppiert, sodass du sie schnell Personen zuordnen kannst.
+
+!!! note ""
+    Die Erkennung beginnt erst, wenn deine Sammlung vollständig indexiert wurde. Das Suchen und Aktualisieren von Gesichtern verursacht vorübergehend eine hohe CPU-Belastung und kann je nach Hardware und Anzahl der Bilder eine Weile dauern.
 
 !!! tldr ""
-    Die Erkennung beginnt erst, wenn deine Bibliothek vollständig indexiert wurde. Das Suchen und Aktualisieren von Gesichtern verursacht vorübergehend eine hohe CPU-Belastung und kann je nach Hardware und Anzahl der Bilder eine Weile dauern.
+    Vorhandene Cluster werden automatisch im Hintergrund optimiert, z.B. wenn neue Gesichter erkannt werden, du eine falsche Zuordnung gemeldet hast oder neue Dateien zu deiner Sammlung hinzugefügt werden.
 
-!!! tldr ""
-    Vorhandene Cluster werden automatisch im Hintergrund optimiert , 
-    z. B. wenn neue Gesichter identifiziert, Gesichter aus einem Cluster entfernt oder neue
-    Dateien zur Bibliothek hinzugefügt werden.
+## Erkannte und neue Personen ##
 
-## Personen ##
-Der Bereich Personen zeigt dir bereits identifizierte Personen sowie neue Gesichts-Cluster.
+Der Bereich Personen zeigt dir bereits erkannte Personen sowie neue Gesichts-Cluster.
 
 Klicke :material-star:, um eine Person als Favorit zu markieren. Favoriten werden ganz oben angezeigt.
 
@@ -23,8 +22,7 @@ Klicke :material-star:, um eine Person als Favorit zu markieren. Favoriten werde
 Im Bereich *NEU* werden nur erkannte Gesichts-Cluster angezeigt. In deiner Sammlung kann es noch tausende weitere, nicht gruppierte Gesichter geben, wie z. B. Gesichter auf Shampooflaschen
 oder im Fernsehen. 
 
-Du kannst diese Bilder finden, indem du nach `face:new` suchst. Falls du bestimmte Bilder suchst, empfehlen wir, die Suche mit anderen Filtern wie `year` oder `country`
-zu kombinieren. Im [Bearbeitungs-Dialog](edit.md) werden immer alle Gesichter angezeigt. Hier kannst du den Gesichtern Personen zuordnen.
+Du kannst diese Bilder finden, indem du nach `face:new` suchst. Falls du bestimmte Bilder suchst, empfehlen wir, die Suche mit anderen Filtern wie `year` oder `country` zu kombinieren. Im *Personen*-Tab des [Bearbeitungs-Dialogs](edit.md) werden alle Gesichter angezeigt, sodass du sie benennen oder eine falsche Zuordnung über die Schaltfläche :material-eject: melden kannst.
 
 ### Wenn ein Gesicht nicht erkannt wurde... ###
 
@@ -63,13 +61,14 @@ Gesichter können aus mehreren Gründen nicht erkannt werden:
 
     ![Screenshot](img/add-name-edit-new-2503-german.jpg){ class="shadow" }
 
+     Du kannst Namen auch direkt aus der [Info-Seitenleiste](info-sidebar.md) des Vollbildbetrachters zuweisen. Sie ist außerdem der einzige Ort, an dem du ein Gesicht **manuell markieren** kannst, das PhotoPrism bei der automatischen Erkennung übersehen hat.
+
 Die Person wird nun unter *Erkannt* angezeigt
 
 ## Cover für eine Person ändern ##
 1. Gehe zum Tab [Personen](./edit.md#personen-bearbeiten) im Bearbeitungs-Dialog des Bildes, auf dem das Gesicht zu sehen ist, das du als Titelbild verwenden möchtest
 2. Fahre mit der Maus über :material-dots-vertical: in der oberen rechten Ecke des Gesichts
 3. Klicke auf *Als Titelbild festlegen*
-
 
 ## Personen ausblenden ##
 Du kannst Personen im Bereich *Erkannt* ausblenden, indem du :material-close: klickst.
@@ -131,6 +130,8 @@ Wenn einem Gesicht die falsche Person zugeordnet ist, kannst du dies ändern.
 
 ![Screenshot](img/reject-2503-german.jpg){ class="shadow" }
 
+Du kannst Zuordnungen auch über die [Info-Seitenleiste](info-sidebar.md) des Vollbildbetrachters ändern.
+
 ## Gesichter entfernen ##
 Falls etwas Falsches als Gesicht erkannt wurde, oder dich ein Gesicht nicht interessiert, kannst du es entfernen.
 
@@ -143,6 +144,8 @@ Falls etwas Falsches als Gesicht erkannt wurde, oder dich ein Gesicht nicht inte
 Bevor die Seite neu geladen wird kannst du diese Aktion rückgängig machen.
 
 ![Screenshot](img/undo-remove-face-2503-german.jpg){ class="shadow" }
+
+Gesichter können auch über die [Info-Seitenleiste](info-sidebar.md) des Vollbildbetrachters entfernt werden.
 
 ## Alle Bilder einer Person herunterladen ##
 1. Gehe zu *Personen*
@@ -178,14 +181,29 @@ Suchfilter können auch kombiniert werden.
 
 ![Screenshot](img/people-search-2503-german.jpg){ class="shadow" }
 
-## Performance Tipps ##
+## Bekannte Probleme ##
 
-### Hintergrund-Worker ###
-
-Die Gesichtserkennung wurde unter der Annahme entwickelt und getestet, dass der Hintergrund-Worker ungefähr alle 15 Minuten läuft, sofern das Backend nicht mit anderen Aufgaben wie der Indexierung beschäftigt ist. Sie wurde nicht mit deutlich längeren Intervallen getestet und ist dafür auch nicht ausgelegt.
-
-Der Hintergrund-Worker gruppiert neue Gesichter nach Ähnlichkeit, vergleicht Gesichter mit Clustern und optimiert bei Bedarf bestehende Cluster. Ohne diese Routineaufgaben wird die Anzahl der zu verarbeitenden Gesichter schnell zu groß. Bei der nächsten Ausführung des Workers kann es dann zu einer starken Serverbelastung kommen, bis alle Gesichter, Gesichts-Cluster und zugehörigen Bilder aktualisiert wurden. Je länger du wartest, desto mehr CPU wird benötigt und desto länger dauert es.
+Eine vollständige Liste bekannter Probleme findest du unter [Erste Schritte > Bekannte Probleme > Gesichtserkennung](https://docs.photoprism.app/known-issues/#face-recognition).
 
 ### Ältere Hardware ###
 
-Es ist ein [bekanntes Problem](https://docs.photoprism.app/getting-started/troubleshooting/performance/#legacy-hardware), dass die Benutzeroberfläche und Backend-Vorgänge, insbesondere die Gesichtserkennung, auf älterer Hardware aufgrund mangelnder Ressourcen langsam sein oder sogar abstürzen können. Wie die meisten Anwendungen hat auch PhotoPrism bestimmte Anforderungen und unser Entwicklungsprozess beinhaltet keine Tests auf nicht unterstützter oder ungewöhnlicher Hardware.
+Die Gesichtserkennung kann auf [älterer Hardware](https://docs.photoprism.app/getting-started/troubleshooting/performance/#legacy-hardware) aufgrund unzureichender Ressourcen langsam sein oder sogar abstürzen.
+
+*Wie die meisten Anwendungen hat auch PhotoPrism [bestimmte Anforderungen](https://docs.photoprism.app/getting-started/#system-requirements) und unser Entwicklungsprozess beinhaltet keine Tests auf nicht unterstützter oder ungewöhnlicher Hardware.*
+
+### Hintergrund-Worker ###
+
+Die Gesichtserkennung wurde unter der Annahme entwickelt und getestet, dass der [Hintergrund-Worker](https://docs.photoprism.app/getting-started/config-options/#indexing) ungefähr alle 15 Minuten läuft, sofern das Backend nicht mit anderen Aufgaben wie der Indexierung beschäftigt ist. Sie wurde nicht mit deutlich längeren Intervallen getestet und ist dafür auch nicht ausgelegt.
+
+Der Hintergrund-Worker gruppiert neue Gesichter nach Ähnlichkeit, vergleicht Gesichter mit Clustern und optimiert bei Bedarf bestehende Cluster. Ohne diese Routineaufgaben wird die Anzahl der zu verarbeitenden Gesichter schnell zu groß. Bei der nächsten Ausführung des Workers kann es dann zu einer starken Serverbelastung kommen, bis alle Gesichter, Gesichts-Cluster und zugehörigen Bilder aktualisiert wurden. Je länger du wartest, desto mehr CPU wird benötigt und desto länger dauert es.
+
+Ein wichtiger Grund, warum der Worker unabhängig von tatsächlichen Änderungen in der Hauptinstanz läuft, ist, dass manche Nutzer Datenbankinhalte direkt verändern oder zusätzliche Instanzen betreiben, etwa zum Indexieren. Dieses Problem lässt sich lösen, braucht aber Zeit. Würden wir das ignorieren und den Worker nicht ständig laufen lassen, könnte das zu vielen zusätzlichen Support-Anfragen führen und uns weiter von der Entwicklung abhalten.
+
+*Der Umgang mit Änderungen über mehrere Instanzen hinweg wird im Laufe der Zeit verbessert, sodass der Worker in zukünftigen Releases seltener laufen muss.*
+
+!!! info "Geplante Funktionen"
+    - Import von XMP-Gesichtsmarkierungen
+    - Personen beim Durchsuchen deiner Bilder ausschließen
+    - automatische Sicherung benannter Personen in YAML-Dateien
+
+*[Gesichts-Cluster]: Ein Cluster ist eine Gruppe von Gesichtern, die aufgrund ihrer Ähnlichkeit derselben Person zugeordnet werden.

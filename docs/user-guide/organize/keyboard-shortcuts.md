@@ -19,7 +19,8 @@ PhotoPrism bietet eine Vielzahl von Tastenkombinationen, mit denen du die App ef
 
 | Tastenkombination         | Aktion                                 |
 |--------------------------|----------------------------------------|
-| Strg + I                 | Info-Panel öffnen/schließen            |
+| Strg + I                 | Info-Seitenleiste umschalten           |
+| Strg + H                 | Bildunterschrift ein-/ausblenden       |
 | Strg + M                 | Stumm schalten/Stummschaltung aufheben |
 | Strg + S                 | Diashow abspielen/anhalten             |
 | Strg + A                 | Archivieren/Wiederherstellen           |

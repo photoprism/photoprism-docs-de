@@ -18,13 +18,15 @@ Folgende Filter können auf der Filterleiste gesetzt werden:
 
 * Land, Jahr, Monat, Reihenfolge, Kamera, Farbe, Kategorie
 
-Sind mehrere Filter gesetzt, werden nur Bilder von der Suche berücksichtigt, die allen Filterkriterien entsprechen.
+Sind mehrere Filter gesetzt, werden nur Bilder von der Suche berücksichtigt, die allen Filterkriterien entsprechen. Filter können in der Regel kombiniert werden, sofern sie sich nicht widersprechen.
 
  ![Screenshot](../organize/img/filter-bar-2503-german.jpg){ class="shadow" }
 
 Darüber hinaus können diese und viele andere Filter wie folgt in das Suchfeld der Toolbar eingegeben werden:
 
-    `label:cat color:green type:live`
+```
+label:cat color:green type:live
+```
 
 Die komplette Liste der Filter findest du weiter [unten](#suchfilter-ubersicht).
 
@@ -54,11 +56,7 @@ Diese Suche resultiert in allen Bildern, die die Suchbegriffe buffalo **UND** wa
 
 & funktioniert in Kombination mit folgenden Suchfiltern:
 
-* albums, keywords, subject/person, subjects/people.
-
-!!!info ""
-    Der label Suchfilter funktioniert nicht mit &. Du kannst alternativ den keywords Filter verwenden, da 
-    alle Labels auch Suchbegriffe sind.
+* albums, keywords, labels, subject/person, subjects/people.
 
 ### ODER Suche ###
 Für eine ODER Suche verwende |:
@@ -73,6 +71,47 @@ Folgende Suchfilter unterstützen |:
 
 * albums, color, country, state, city, day, month, year, keywords, label, path, subject/person, subjects/people, title, type, name, filename, original, hash
 
+### NICHT Suche ###
+
+Der `label` Suchfilter akzeptiert ein vorangestelltes `!`, um Bilder mit einer bestimmten Kategorie auszuschließen. UND, ODER und Negation können innerhalb desselben Filters kombiniert werden:
+
+```
+label:!rejected
+```
+
+Diese Suche zeigt alle Bilder, die **nicht** die Kategorie rejected haben.
+
+```
+label:"cat&!blurry"
+```
+
+Diese Suche zeigt alle Bilder, die die Kategorie cat haben **und** nicht die Kategorie blurry.
+
+```
+label:"cat|dog&!blurry"
+```
+
+Diese Suche zeigt alle Bilder mit Kategorie cat **oder** dog, schließt dabei aber Bilder mit der Kategorie blurry aus.
+
+Um einen Kategorienamen zu treffen, der mit einem literalen `!` beginnt, maskiere es mit `\`:
+
+```
+label:"\!weird"
+```
+
+### Suche nach &, |, oder ! ###
+
+Eine Suche nach Bildern, die `&`, `|` oder `!` in Bildunterschrift, Dateiname, Name, Titel oder Kategoriename enthalten, ist mit dem Escape-Zeichen `\` möglich:
+
+```
+caption:Green\|Blue
+```
+
+Diese Suche zeigt alle Bilder mit der Bildunterschrift Green|Blue – und nicht alle Bilder mit Bildunterschrift Green ODER Blue. Bestehende Kategorien, deren Namen `&` enthalten, müssen im `label` Filter entsprechend als `\&` maskiert werden, damit sie wörtlich und nicht als UND-Operator interpretiert werden.
+
+Folgende Suchfilter unterstützen das Escape-Zeichen:
+
+* name, filename, caption, title, label
 
 ### Wildcard ###
 Das `*` fungiert in der Suche als Wildcard:

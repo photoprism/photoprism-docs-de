@@ -36,12 +36,12 @@ Models:
 
 Empfehlungen:
 
-- Lass den Modellnamen (`Model` / `Name`) exakt so, wie er von OpenAI veröffentlicht wurde. Das Default Modell ist `gpt-5-mini`.
-- `Service.Key` kann entfallen, wenn `OPENAI_API_KEY` bzw. `_FILE` bereits in der Umgebung gesetzt ist. Optional kannst du `Service.Org` und `Service.Project` setzen, falls dein Account diese Header erfordert.
+- Lass den Modellnamen exakt so, wie er von OpenAI veröffentlicht wurde. Das Standardmodell ist `gpt-5-mini`. Modellbezeichner sind außerdem case‑sensitiv – PhotoPrism übernimmt die Schreibweise direkt aus deiner `vision.yml`, sodass Werte wie `QuantTrio/Qwen3-VL-30B-A3B-Instruct-AWQ` von Hugging Face oder einem anderen OpenAI‑kompatiblen Katalog unverändert an die Upstream‑API geschickt werden.
+- `Service.Key` kann entfallen, wenn `OPENAI_API_KEY` bzw. `_FILE` bereits in der Umgebung gesetzt ist. Optional kannst du `Service.Org` und `Service.Project` setzen, falls dein Account das aus Abrechnungsgründen verlangt.
 - PhotoPrism wertet Modelle von unten nach oben aus. Wenn du die OpenAI‑Einträge ans Ende der Liste setzt, werden sie bevorzugt, während andere Modelle als Fallback dienen.
 
 !!! tldr ""
-    Standardmäßig verwendet PhotoPrism den OpenAI‑Responses‑Endpunkt `https://api.openai.com/v1/responses` mit einem einzelnen 720 px Thumbnail (`detail: low`). Der Endpunkt lässt sich über `Service.Url` auf einen eigenen Wert ändern.
+    Standardmäßig verwendet PhotoPrism den OpenAI‑Responses‑Endpunkt `https://api.openai.com/v1/responses` mit einem einzelnen 720 px Thumbnail (`detail: low`). Der Endpunkt lässt sich über `Service.Uri` auf einen eigenen Wert ändern.
 
 ## Nutzungs Tipps
 
@@ -50,22 +50,17 @@ Empfehlungen:
 Um unerwartete Kosten zu vermeiden – insbesondere beim Testen neuer Modelle oder Prompts – setze `Run: manual` und [führe die Modelle manuell aus](cli.md#vision-modelle-ausfuhren), z.B. mit `photoprism vision run -m caption` oder `photoprism vision run -m labels`.
 `Run: auto` führt das Modell automatisch aus, nachdem die Indexierung abgeschlossen ist, um den Import nicht auszubremsen. Gleichzeitig bleiben [manuelle](cli.md#vision-modelle-ausfuhren) und [geplante Ausführungen](https://docs.photoprism.app/getting-started/config-options/#computer-vision) möglich.
 
-[Learn more ›](index.md#run-modes)
+[Mehr erfahren ›](index.md#run-modes)
 
 ### Existierende Kategorien ersetzen
-Um Kategorien, die vom eingebauten Klassifizierungsmodell erstellt wurden, zu entfernen, kann folgender Befehl in einem Terminal ausgeführt werden 
 
-```
-photoprism vision reset -m labels -s image
-```
-
-bevor neue Kategorien mit OpenAI erstellt werden
+Wenn du bestehende Kategorien des eingebauten Klassifizierungsmodells entfernen möchtest, führe `photoprism vision reset -m labels -s image` [in einem Terminal](https://docs.photoprism.app/getting-started/docker-compose/#opening-a-terminal) aus, bevor du alle Kategorien mit OpenAI neu generierst:
 
 ```
 photoprism vision run -m labels
 ```
 
-[Learn more ›](cli.md)
+[Mehr erfahren ›](cli.md#visiondaten-zurucksetzen)
 
 ### Benutzerdefinierte Kategorien erstellen
 
@@ -96,7 +91,7 @@ Wenn du längere Captions, andere Sprachen oder branchenspezifische Beschreibung
 - **System:** You are a PhotoPrism vision model. Return concise, user-friendly captions that describe the main subjects accurately.
 - **Prompt:** Provide exactly one sentence describing the key subject and action in the image. Avoid filler words and technical jargon.
 
-Example:
+Beispiel:
 
 ```yaml
 Models:
@@ -108,7 +103,7 @@ Models:
       Provide one or two German sentences describing the key subject and
       action in the image. Avoid filler words and technical jargon.
 ```
-## Troubleshooting ##
+## Troubleshooting
 
 ### Konfiguration überprüfen
 

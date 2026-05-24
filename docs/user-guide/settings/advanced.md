@@ -92,62 +92,58 @@ Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting
 ## Vorschaubilder ##
 In diesem Bereich wird festgelegt, wie JPEG-Vorschaubilder und Miniaturansichten gerendert werden. Das sind hochwertige, verkleinerte Versionen deiner Originale.
 
-[Vorschaubilder sind notwendig](https://docs.photoprism.app/getting-started/faq/#why-is-my-storage-folder-so-large-what-is-in-it), weil Webbrowser große Bilder nur schlecht an den Bildschirm anpassen können. 
+[Vorschaubilder sind notwendig](https://docs.photoprism.app/getting-started/faq/#why-is-my-storage-folder-so-large-what-is-in-it), weil Webbrowser große Bilder nur schlecht an den Bildschirm anpassen können.
 Die Verwendung von Originalen in voller Auflösung für Diashows und in Suchergebnissen würde außerdem viel Speicherplatz im Browser verbrauchen und die Geschwindigkeit der Indexierung deutlich verringern.
 
 ### Skalierungsfilter ###
-Du kannst den Algorithmus wählen, der verwendet werden soll, um JPEG Vorschaubilder ('Thumbnails') zu erstellen.
 
-Beispiele der verfügbaren Filter findest du im [folgenden Abschnitt](#skalierungsfilter-beispiele).
-
-Um einen guten Kompromiss zwischen Qualität und Leistung zu finden, empfehlen wir den *Lanczos-Filter*. 
-Er ist zwar etwas langsamer bei der Erstellung von Miniaturansichten, erzeugt aber Bilder von sehr hoher Qualität. Im Vergleich dazu kann der weniger anspruchsvolle *kubische Filter* 30 % schneller sein.
-
-Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_THUMB_FILTER`.
+PhotoPrism rendert Vorschaubilder mit `libvips`, das immer einen hochwertigen Lanczos-3-Lobe-Kernel zur Skalierung verwendet. Die [Konfigurationsoption](https://docs.photoprism.app/getting-started/config-options/#preview-images) `PHOTOPRISM_THUMB_FILTER` und das Dropdown „Skalierungsfilter“ bleiben aus Gründen der Abwärtskompatibilität erhalten, haben jedoch keinen Einfluss mehr auf das gerenderte Ergebnis.
 
 !!! info ""
-    Diese Option ist nur verfügbar, wenn `PHOTOPRISM_THUMB_LIBRARY` in deiner Konfigurationsdatei `compose.yaml` oder `docker-compose.yml` auf `„imaging“` gesetzt ist.
+    Die alte native `imaging`-Bibliothek zur Bildverarbeitung wurde im April 2026 entfernt. Vorschaubilder werden jetzt immer mit libvips erzeugt, die zuvor wählbaren Filter (blackman, lanczos, cubic, linear, nearest) haben daher keine Wirkung mehr.
 
 ### Statische und Dynamische Maximalgrößen
 
-**Statische Maximalgröße**:
-Maximalgröße, für Thumbnails, die während des Import- bzw Indexiervorgangs erstellt werden.
-
+**Statische Maximalgröße**: Maximalgröße für Thumbnails, die während des Import- bzw. Indexiervorgangs erstellt werden.
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_THUMB_SIZE`.
 
-**Dynamische Maximalgröße**:
-Maximalgröße, für Thumbnails, die on demand erstellt werden.
-
+**Dynamische Maximalgröße**: Maximalgröße für Thumbnails, die on demand erstellt werden.
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_THUMB_SIZE_UNCACHED`.
 
 !!! danger ""
     Die Verringerung des statischen Größenlimits hat erhebliche Auswirkungen auf die Ergebnisse der [Gesichtserkennung](../organize/people.md) und Bildklassifizierung.
     Einfach ausgedrückt, bedeutet das, dass der Indexer nicht mehr richtig sehen kann.
 
+!!! danger ""
+    Wenn die konfigurierte Maximalgröße überschritten wird (z.B. wenn Nutzer einen größeren Bildschirm haben), kann kein ausreichend großes Thumbnail erstellt werden und der Bildbetrachter ist möglicherweise gezwungen, stattdessen das Originalbild anzuzeigen.
+    **Beim Skalieren von Bildern im Browser ist die Qualität in der Regel schlecht und sie können zudem in der falschen Orientierung dargestellt werden.**
 
-!!! warning ""
-    Wenn die eingestellte Maximalgröße überschritten wird (z.B. wenn Nutzer einen großen Bildschirm verwenden),
-    und kein Thumbnail in der angefragten Größe vorhanden ist, wird das Originalbild angezeigt.
-    **Dies kann dazu führen, dass Bilder in der falschen Orientierung dargestellt werden.**
+Die kleinste konfigurierbare Größe beträgt 720px, damit der Indexer Farberkennung, Gesichtserkennung und Bildklassifizierung durchführen kann. Diese bei jedem Aufruf neu zu berechnen, wäre selbst für die leistungsfähigsten Server zu aufwändig. Wenn du nicht nur wenige kleine Bilder hast, würde das die App unbenutzbar machen.
 
-Die Maximalgröße muss mindestens 720px sein, um zu gewährleisten, dass Thumbnails für Farberkennung, Gesichtserkennung, Bildklassifizierung sowie die Ansichten vorhanden sind.
-
-Wir empfehlen eine hohe Maximalgröße.
-Sollte der von Thumbnails belegte Speicherplatz allerdings ein Problem darstellen, kannst du eine niedrigere statische Maximalgröße einstellen.
-Setze in diesem Fall eine hohe dynamische Maximalgröße, damit dein Server bei Bedarf Vorschaubilder erstellen kann.
-Beachte, dass dies eine hohe Rechenleistung erfordert und es zu einer Verzögerung kommen kann, wenn du Bilder im Vollbildmodus betrachten willst.
+Wir empfehlen, diese Limits hoch zu setzen, damit das Durchsuchen von Bildern möglichst flüssig bleibt.
+Sollte der von Thumbnails belegte Speicherplatz allerdings ein ernsthaftes Problem darstellen und bist du bereit, dafür eine höhere Serverauslastung in Kauf zu nehmen, kannst du die *Statische Maximalgröße* auf das Minimum von 720px setzen und gleichzeitig eine höhere *Dynamische Maximalgröße* konfigurieren.
+So kann der Server größere Thumbnails bei Bedarf generieren. Das kann beim Betrachten von Bildern im Vollbildmodus zu einer spürbaren Verzögerung führen.
 
 !!! tip ""
-    Falls du im Vollbildmodus deine Originalbilder angezeigt bekommen möchtest, aktiviere *Dynamische Vorschaubilder*,
-    und setze niedrige dynamische und statische Maximalgrößen (z.B. 720).
+    Um Originalbilder anzuzeigen, aktiviere *Dynamische Vorschaubilder* und setze *Dynamische Maximalgröße* sowie *Statische Maximalgröße* auf einen niedrigen Wert wie `720`. Beim Betrachten von Bildern, die dieses Limit überschreiten, werden die Originaldateien angezeigt.
+
+### Dynamische Vorschaubilder
+
+Aktiviert die Erzeugung von Vorschaubildern on the fly, sobald sie zum Betrachten oder zur Analyse benötigt werden. Das spart Speicherplatz, ist aber rechenintensiver und wird daher auf weniger leistungsfähigen Geräten wie dem Raspberry Pi nicht empfohlen.
+
+!!! tip ""
+    Thumbnails in Größen bis zur konfigurierten [statischen Maximalgröße](#statische-und-dynamische-maximalgroen) [werden während der Indexierung immer erzeugt](https://docs.photoprism.app/getting-started/faq/#can-i-skip-creating-thumbnails-completely).
+
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_THUMB_UNCACHED`.
 
 ### Welche Dateien werden von PhotoPrism erstellt? ###
-Das kleinste konfigurierbare statische und dynamische Maximalgröße ist 720px, so dass die meisten Größen bis zu `fit_720` standardmäßig **immer** erzeugt werden.
-[Höhere Maximalgrößen](#statische-und-dynamische-maximalgroen) generieren Thumbnails mit mehr Details bei höheren Auflösungen - entweder statisch (vorgeneriert während der Indexierung) oder **on demand**, wenn die [Konfiguration es erlaubt](#dynamische-vorschaubilder).
 
-**Optionale** Vorschaubilder können nicht vorgeneriert werden und werden nur auf Anfrage gerendert, z. B. beim Teilen eines Bildes auf Instagram.
+Die kleinste konfigurierbare statische und dynamische Maximalgröße beträgt 720px, daher werden die meisten Größen bis `fit_720` standardmäßig **immer** erzeugt.
+[Höhere Maximalgrößen](#statische-und-dynamische-maximalgroen) generieren Thumbnails mit mehr Details bei höheren Auflösungen – entweder statisch (vorgeneriert während der Indexierung) oder **on demand**, sofern die [Konfiguration es erlaubt](https://docs.photoprism.app/getting-started/config-options/#preview-images).
 
-Folgende Tabelle listet die verschiedenen Thumbnailgrößen sowie ihre Anwendung:
+**Optionale** Vorschaubilder können nicht vorgeneriert werden und werden nur auf Anfrage gerendert, z.B. beim Teilen eines Bildes auf Instagram.
+
+Folgende Tabelle listet Name, Maße, Seitenverhältnis und Verwendungszweck jeder Thumbnailgröße:
 
 |   Name    | Width | Height | Aspect Ratio | Available |       Usage       |
 |-----------|-------|--------|--------------|-----------|-------------------|
@@ -177,15 +173,8 @@ Folgende Tabelle listet die verschiedenen Thumbnailgrößen sowie ihre Anwendung
 | fit_7680  |  7680 |   4320 | Preserved    | On-Demand | 8K Ultra HD 2     |
 
 !!! tldr ""
-    Die Thumbnails werden in `storage/cache/thumbnails`gespeichert. Der genaue Pfad ist abhängig von Thumbnail-Größe und Hash der Originaldatei z.B.
+    Die Thumbnails werden in `storage/cache/thumbnails` gespeichert. Der genaue Pfad ist abhängig von Thumbnail-Größe und Hash der Originaldatei, z.B.
     `storage/cache/thumbnails/1/a/3/1a30c1f...9_100x100_center.jpg`
-
-### Dynamische Vorschaubilder
-Vorschaubilder können on-demand erstellt werden, also erst, wenn sie gebraucht werden. 
-Dies ist beispielsweise beim Betrachten der Bilder der Fall.
-Das spart Speicherplatz, ist aber rechenintensiver und wird daher nicht empfohlen, wenn du auf weniger leistungsfähigen Geräten (wie dem Raspberry Pi) arbeitest.
-
-Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_THUMB_UNCACHED`.
 
 ## Bildqualität ##
 
@@ -252,9 +241,15 @@ Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting
 
 ### Presets anwenden
 
-Aktiviert Benutzerdefinierte Voreinstellungen. Dateien werden möglicherweise langsamer konvertiert.
+Deaktiviert die parallele Konvertierung von RAW-Dateien, damit Darktable-Presets angewendet werden können.
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_RAW_PRESETS`.
+
+### ImageMagick deaktivieren
+
+Wenn diese Funktion deaktiviert ist, wird [ImageMagick](https://imagemagick.org/) nicht für die Konvertierung verwendet.
+
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_IMAGEMAGICK`.
 
 ### FFmpeg deaktivieren
 
@@ -265,57 +260,7 @@ Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting
 !!! info ""
     Um zu verhindern, dass unerfahrene Benutzer versehentlich die Erstellung von Vorschaubildern für Videos deaktivieren, kann *FFmpeg* nur deaktiviert werden, wenn [Experimentelle Funktionen](#experimentelle-funktionen) aktiviert sind.
 
-### ImageMagick deaktivieren
-
-Wenn diese Funktion deaktiviert ist, wird [ImageMagick](https://imagemagick.org/) nicht für die Konvertierung verwendet.
-
-Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_IMAGEMAGICK`.
-
 ### Vektorgrafiken deaktivieren
 
 Deaktiviert die Unterstützung von Vektorgrafiken.
-
-## Skalierungsfilter Beispiele ##
-
-Originalbild:
-
-![](img/branches.jpg){ class="shadow" }
-
-Dieses Bild wurde unter der Verwendung von verschiedenen Filtern von 600x400 Pixeln auf 150x100 Pixel skaliert.
-Die Liste ist sortiert nach Rechengeschwindigkeit.
-
-An erster Stelle steht der schnellste Filter mit der niedgrigsten Qualität, an letzer Stelle der langsamste Filter mit der besten Qualität.
-
-| Filter             | Ergebnis                        |
-|--------------------|---------------------------------|
-| Nächster Nachbar   | ![](img/out_resize_nearest.jpg) |
-| Bilinear           | ![](img/out_resize_linear.jpg)  |
-| Bikubisch (Scharf) | ![](img/out_resize_catrom.jpg)  |
-| Lanczos            | ![](img/out_resize_lanczos.jpg) |
-
-Source: [A Comparative Analysis of Image Interpolation Algorithms](https://dl.photoprism.app/pdf/publications/20160201-Comparative_Analysis_of_Image_Interpolation.pdf)
-
-
-<!--## Filter ##
-
-Quelle: https://ijarcce.com/wp-content/uploads/2016/02/IJARCCE-7.pdf
-
-### Linear ###
-
-Die bilineare Interpolation berechnet den Wert eines Pixels indem ein gewichteter Mittelwert der vier benachbarten Pixel berechnet wird. Das dabei entstehende Bild ist weicher als das Originalbild. Wenn die Distanzen zu den verwendeten Pixeln gleich sind, dann ist der interpolierte Wert eines Pixels gleich der Summe der Distanzen geteilt durch vier.
-Bei der bilinearen Interpolation wird die Interpolation in beiden Richtungen, horizontal und vertikal, durchgeführt. Das Ergebnis ist qualitativ besser als *Nächster Nachbar* und benötigt weniger Rechenzeit als die bikubische Interpolation.
-
-### Kubisch ###
-
-Catmull-Rom ist ein lokal interpolierendes Kurvenintervall was speziell für die Verwendung in der Computergrafik entwickelt wurde. Während die ursprüngliche Verwendung im Design von Oberflächen und Kurven lag, wird es mittlerweile auch in anderen Bereichen eingesetzt. Catmull-Rom Splines gehören zur Familie von kubischen, interpolierenden Splines, so dass die Tangente an jedem Punkt mithilfe des vorherigen und des nächsten Punkts auf dem Kurvenintervall berechnet wird. Das Ergebnis ist ähnlich dem der bikubischen Interpolation im Bezug auf die Schärfe des Ergebnisbildes, aber bei Regionen mit weichen Verläufen ist Catmull-Rom eindeutig überlegen.
-
-### Lanczos ###
-
-Die *Lanczos*-Interpolation ist eine mathematische Formel zur weichen Interpolation eines Bildes, basierend auf verschiedenen Teilen innerhalb des Bildes. Dabei wird jedes Sample auf eine verschobene und skalierte Kopie des Filter-Kerns angewandt. Die Summe dieser Kerne wird dann am aktuell zu berechnenden Pixel ausgewertet. Die *Lanczos*-Interpolation ist **am besten geeignet um Details beizubehalten und ein Minimum an Artefakten zu erhalten**. Jedoch benötigt eine höherwertige *Lanczos*-Interpolation sehr viel Rechenzeit, wodurch es für die meiste kommerzielle Software ungeeignet ist.
-
-### Blackman ###
-
-*Blackman* ist eine modifizierte *Lanczos*-Interpolation die eine bessere Kontrolle über bestimmte Artefakte hat.
-
--->
 

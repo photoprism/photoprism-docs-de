@@ -16,7 +16,7 @@ PhotoPrism unterstützt derzeit die folgende Dienste:
 
 ### Performance
 
-- **TensorFlow:** Die integrierten Modelle liefern auf allen unterstützten Plattformen zuverlässige Ergebnisse und bilden die Grundlage für Kernfunktionen wie Kategorien und Gesichtserkennung.
+- **TensorFlow:** Unsere integrierten Modelle liefern auf praktisch jeder Hardware gute Ergebnisse.
 - **Ollama:** [Das Generieren von Kategorien](ollama-models.md#gemma-4-labels) für ein Bild dauert auf einer NVIDIA RTX 4060 in der Regel 1–4 Sekunden – je nach verwendetem Modell und [Anzahl der Kategorien](ollama-models.md#qwen3-vl-labels).
 - **OpenAI:** Die Verarbeitung eines Bildes dauert etwa 3 Sekunden, abhängig von Modell, Region und aktueller Auslastung.
 
@@ -25,7 +25,7 @@ PhotoPrism unterstützt derzeit die folgende Dienste:
 
 ## `vision.yml` Referenz { #visionyml-reference }
 
-KI-Engines, Modelle und Laufmodi können in einer `vision.yml` Datei im Verzeichnis `storage/config` konfiguriert werden. Darin wird festgelegt, welche Modelle und Schwellenwerte verwendet werden sollen, zum Beispiel:
+KI-Engines, Modelle und Laufmodi können in einer `vision.yml`-Datei in deinem Konfigurationsverzeichnis konfiguriert werden (Standard: `storage/config`). Darin wird festgelegt, welche Modelle und Schwellenwerte verwendet werden sollen, zum Beispiel:
 
 !!! info ""
     Wenn PhotoPrism deine Konfigurationsdatei nicht lesen kann, stelle sicher, dass sie unter dem für deine Instanz konfigurierten Konfigurationspfad existiert. Ältere Installationen verwenden möglicherweise `storage/settings`.
@@ -58,9 +58,9 @@ Wenn ein Modelltyp nicht definiert ist, verwendet PhotoPrism die eingebauten Sta
 | Field                   | Default                                | Notes                                                                              |
 |-------------------------|----------------------------------------|------------------------------------------------------------------------------------|
 | `Type` (required)       | —                                      | `labels`, `caption`, `face`, `nsfw`. Drives routing & scheduling.                  |
-| `Model`                 | `""`                                   | Raw identifier override; precedence: `Service.Model` → `Model` → `Name`.           |
-| `Name`                  | derived from type/version              | Display name; lower-cased by helpers.                                              |
-| `Version`               | `latest` (non-OpenAI)                  | OpenAI payloads omit version.                                                      |
+| `Model`                 | `""`                                   | Model identifier in the format `<name>:<version>`.                                 |
+| `Name`                  | derived from `Model`                   | Model name.                                                                        |
+| `Version`               | `latest` (non-OpenAI)                  | Model version, not used by OpenAI.                                                 |
 | `Engine`                | inferred from service/alias            | Aliases set formats, file scheme, resolution. Explicit `Service` values still win. |
 | `Run`                   | `auto`                                 | See Run modes table below.                                                         |
 | `Default`               | `false`                                | Keep one per type for TensorFlow fallbacks.                                        |
