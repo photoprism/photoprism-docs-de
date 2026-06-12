@@ -23,7 +23,7 @@ PhotoPrism bietet eine Vielzahl von Tastenkombinationen, mit denen du die App ef
 | Strg + H                 | Bildunterschrift ein-/ausblenden       |
 | Strg + M                 | Stumm schalten/Stummschaltung aufheben |
 | Strg + S                 | Diashow abspielen/anhalten             |
-| Strg + A                 | Archivieren/Wiederherstellen           |
+| Strg + X                 | Archivieren/Wiederherstellen           |
 | Strg + D                 | Herunterladen                          |
 | Strg + E                 | Bearbeiten                             |
 | Strg + F                 | Vollbildmodus öffnen                   |
