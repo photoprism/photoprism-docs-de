@@ -73,7 +73,7 @@ docker compose exec photoprism photoprism users add -p mysecret -n "Bob" bob
 ```
 
 !!! example ""
-    Einige Benutzer Rollen wie Benutzer und Betrachter sind derzeit [nur mit einer Mitgliedschaft](https://www.photoprism.app/editions#compare) verfügbar, um die Entwicklung und Pflege des Projekts zu unterstützen.
+    Einige Benutzer Rollen wie Benutzer und Betrachter sind derzeit [nur mit einer Mitgliedschaft](https://www.photoprism.app/editions/#compare) verfügbar, um die Entwicklung und Pflege des Projekts zu unterstützen.
 
 ### Kontodetails anzeigen
 

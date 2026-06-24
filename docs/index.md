@@ -20,11 +20,11 @@ Mit PhotoPrism® lassen sich Bilder ganz einfach finden, organisieren und teilen
 * Übertrage mit :material-sync: [PhotoSync](https://link.photoprism.app/photosync) deine Bilder von Apple iOS- und Android-Geräten
 * WebDAV-Clients wie Microsofts Windows Explorer und Apples Finder können eine direkte [Verbindung](user-guide/sync/webdav.md) zu PhotoPrism herstellen, so dass du Dateien auf deinem Computer öffnen, bearbeiten und löschen kannst, als wären sie lokal gespeichert
 
-[Vollständige Funktionsübersicht ›](https://www.photoprism.app/teams#compare)
+[Vollständige Funktionsübersicht ›](https://www.photoprism.app/teams/#compare)
 
 
 ### 100% Privatsphäre :lock:
-Da PhotoPrism sich zu [**100 % selbst finanziert und unabhängig**](https://www.photoprism.app/membership) ist, können wir versprechen, dass wir [**niemals deine Daten verkaufen werden**](https://www.photoprism.app/privacy) und dass wir unsere Software und Dienste [**stets transparent**](https://www.photoprism.app/terms) gestalten. 
+Da PhotoPrism sich zu [**100 % selbst finanziert und unabhängig**](https://www.photoprism.app/membership/) ist, können wir versprechen, dass wir [**niemals deine Daten verkaufen werden**](https://www.photoprism.app/privacy/) und dass wir unsere Software und Dienste [**stets transparent**](https://www.photoprism.app/terms/) gestalten. 
 Deine Daten werden auch niemals an Google, Amazon, Facebook oder Apple weitergegeben, es sei denn, du lädst absichtlich Dateien auf einen dieser Dienste hoch.
 
 <p class="center-align action-buttons">

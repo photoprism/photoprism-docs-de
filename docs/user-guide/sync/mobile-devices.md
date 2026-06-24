@@ -78,4 +78,4 @@ Als Alternative zu [PhotoSync](https://link.photoprism.app/photosync) kannst du 
 
 
 !!! note ""
-      Beachte, dass diese Übersicht nur der Orientierung dient und dass wir keinen [technischen Support](https://www.photoprism.app/kb/getting-support) für diese Apps leisten können. Wenn du Probleme hast, wende dich bitte an den Autor oder bitte die Community um Hilfe. Du kannst gerne weitere Synchronisierungs-Apps [vorschlagen](https://github.com/photoprism/photoprism-docs/tree/develop/docs/user-guide/sync/mobile-devices.md), damit wir sie in diese Liste aufnehmen können.
+      Beachte, dass diese Übersicht nur der Orientierung dient und dass wir keinen [technischen Support](https://www.photoprism.app/kb/getting-support/) für diese Apps leisten können. Wenn du Probleme hast, wende dich bitte an den Autor oder bitte die Community um Hilfe. Du kannst gerne weitere Synchronisierungs-Apps [vorschlagen](https://github.com/photoprism/photoprism-docs/tree/develop/docs/user-guide/sync/mobile-devices.md), damit wir sie in diese Liste aufnehmen können.

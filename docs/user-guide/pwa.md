@@ -1,6 +1,6 @@
 # Mobile App (PWA) #
 
-PhotoPrism stellt derzeit keine native App zur Verfügung, die über einen App Store installiert werden kann. Es gibt jedoch viele [kompatible Apps](https://www.photoprism.app/partners), und du kannst unsere Progressive Web App (PWA) ganz bequem auf deinem Desktop oder Smartphone installieren, um ein nahezu app-ähnliches Erlebnis zu haben.
+PhotoPrism stellt derzeit keine native App zur Verfügung, die über einen App Store installiert werden kann. Es gibt jedoch viele [kompatible Apps](https://www.photoprism.app/partners/), und du kannst unsere Progressive Web App (PWA) ganz bequem auf deinem Desktop oder Smartphone installieren, um ein nahezu app-ähnliches Erlebnis zu haben.
 
 !!! info ""
     Du kannst die PWA auf deinem Handy, Tablet oder Computer installieren.

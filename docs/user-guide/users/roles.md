@@ -33,4 +33,4 @@ Wenn *Superadmins* Einstellungen wie die Sprache oder das Theme ändern, werden 
 *Besucher* können nicht manuell hinzugefügt werden. Diese spezielle Rolle ist an ein Systemkonto gebunden, das anonyme Nutzer/innen repräsentiert, die Links verwenden, um Alben oder andere Inhalte anzusehen, die für sie freigegeben wurden. Besucher können nur auf diese Ressourcen zugreifen und sich nicht mit einem Benutzernamen oder Passwort anmelden. Anders als Gäste können sie auch ihre persönlichen Einstellungen nicht länger behalten, als ihre Browser-Sitzung andauert.
 
 !!! example ""
-    Einige Benutzer Rollen wie Benutzer und Betrachter sind derzeit [nur mit einer Mitgliedschaft](https://www.photoprism.app/editions#compare) verfügbar, um die Entwicklung und Pflege des Projekts zu unterstützen.
+    Einige Benutzer Rollen wie Benutzer und Betrachter sind derzeit [nur mit einer Mitgliedschaft](https://www.photoprism.app/editions/#compare) verfügbar, um die Entwicklung und Pflege des Projekts zu unterstützen.

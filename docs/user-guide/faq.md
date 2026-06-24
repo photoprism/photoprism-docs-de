@@ -4,11 +4,11 @@
 
 ??? question "Ist PhotoPrism von irgendwelchen externen Diensten abhängig?"
 
-    Wie in unserer [Datenschutzerklärung](https://www.photoprism.app/privacy) ausführlich erklärt, hängen die Reverse Geocodierung und die interaktiven Weltkarten davon ab, dass die erforderlichen Daten von externen Systemen [von uns](https://www.photoprism.app/contact) und der [MapTiler AG](https://www.maptiler.com/contacts/) mit Hauptsitz in der Schweiz abgerufen werden. Beide Dienste werden mit einem sehr hohen Maß an Datenschutz und Vertraulichkeit angeboten.
+    Wie in unserer [Datenschutzerklärung](https://www.photoprism.app/privacy/) ausführlich erklärt, hängen die Reverse Geocodierung und die interaktiven Weltkarten davon ab, dass die erforderlichen Daten von externen Systemen [von uns](https://www.photoprism.app/contact/) und der [MapTiler AG](https://www.maptiler.com/contacts/) mit Hauptsitz in der Schweiz abgerufen werden. Beide Dienste werden mit einem sehr hohen Maß an Datenschutz und Vertraulichkeit angeboten.
 
-    Die Nutzung dieser Dienste ist derzeit [vollständig durch uns abgedeckt](https://docs.photoprism.app/getting-started/faq/#are-the-keys-for-using-interactive-world-maps-provided-free-of-charge). Abhängig von deiner Nutzung kannst du damit viel mehr sparen als die Kosten für eine [PhotoPrism+ Mitgliedschaft](https://www.photoprism.app/membership). Andere Anbieter berechnen in der Regel nutzungsabhängige Gebühren und erlauben möglicherweise auch nicht, die von ihnen bereitgestellten Daten zwischenzuspeichern, was deine Privatsphäre durch unnötige Anfragen gefährdet.
+    Die Nutzung dieser Dienste ist derzeit [vollständig durch uns abgedeckt](https://docs.photoprism.app/getting-started/faq/#are-the-keys-for-using-interactive-world-maps-provided-free-of-charge). Abhängig von deiner Nutzung kannst du damit viel mehr sparen als die Kosten für eine [PhotoPrism+ Mitgliedschaft](https://www.photoprism.app/membership/). Andere Anbieter berechnen in der Regel nutzungsabhängige Gebühren und erlauben möglicherweise auch nicht, die von ihnen bereitgestellten Daten zwischenzuspeichern, was deine Privatsphäre durch unnötige Anfragen gefährdet.
 
-      ↪ [Datenschutzerklärung](https://www.photoprism.app/privacy#section-7){ class="pr-3 block-xs" } ↪ [Compliance FAQ](https://www.photoprism.app/kb/compliance-faq#privacy)
+      ↪ [Datenschutzerklärung](https://www.photoprism.app/privacy/#section-7){ class="pr-3 block-xs" } ↪ [Compliance FAQ](https://www.photoprism.app/kb/compliance-faq/#privacy)
 
     Um deine Installation erfolgreich einzurichten und Standortdetails in PhotoPrism anzuzeigen, musst du [Anfragen an diese API-Endpunkte zulassen](https://docs.photoprism.app/getting-started/troubleshooting/firewall), wenn du eine Firewall installiert hast, und sicherstellen, dass deine Internetverbindung funktioniert:    
 
@@ -20,14 +20,14 @@
 
     PhotoPrism ist **100% selbstfinanziert und unabhängig**. Freiwillige Spenden decken nicht die Kosten für ein Team, das Vollzeit arbeitet, um dich mit Updates, Dokumentation und Support zu versorgen. Es ist deine Entscheidung, ob du dich anmelden möchtest, um zusätzliche Vorteile zu genießen.
     
-    [Mitgliedschafts FAQ ›](https://www.photoprism.app/kb/membership)
+    [Mitgliedschafts FAQ ›](https://www.photoprism.app/membership/faq/)
 
 ??? question "Was sind die Vorteile des Kaufs einer kommerziellen Lizenz?"
 
-    Ein wesentlicher Unterschied zwischen der [Open Source Lizenz](https://docs.photoprism.app/license/agpl/) und  einem [kommerziellen Lizenzvertrag](https://www.photoprism.app/teams) besteht darin, dass du Zugang zu zusätzlichen Support- und Konfigurationsoptionen sowie das Recht erhälst, die Funktionalität an deine Bedürfnisse anzupassen, ohne dass du deine Änderungen veröffentlichen musst. 
-    Unsere [Compliance-FAQ](https://www.photoprism.app/kb/compliance-faq) geben Antworten auf die am häufigsten gestellten Fragen zur Produkt-Compliance und Skalierbarkeit.    
+    Ein wesentlicher Unterschied zwischen der [Open Source Lizenz](https://docs.photoprism.app/license/agpl/) und  einem [kommerziellen Lizenzvertrag](https://www.photoprism.app/teams/) besteht darin, dass du Zugang zu zusätzlichen Support- und Konfigurationsoptionen sowie das Recht erhälst, die Funktionalität an deine Bedürfnisse anzupassen, ohne dass du deine Änderungen veröffentlichen musst. 
+    Unsere [Compliance-FAQ](https://www.photoprism.app/kb/compliance-faq/) geben Antworten auf die am häufigsten gestellten Fragen zur Produkt-Compliance und Skalierbarkeit.    
 
-    [Team Editionen Vergleichen ›](https://www.photoprism.app/teams#compare)
+    [Team Editionen Vergleichen ›](https://www.photoprism.app/teams/#compare)
 
 ??? question "Wann genau werden neuen Funktionen veröffentlicht?"
 
@@ -40,7 +40,7 @@
     Unser Team erhält viel mehr Anfragen als umgesetzt werden können. Wir möchten daher betonen, dass wir in keiner Weise verpflichtet sind, die von dir angeforderten Funktionen, Verbesserungen oder sonstigen Änderungen umzusetzen. 
     Wir freuen uns jedoch über dein Feedback und werden alle Anfragen sorgfältig prüfen.
 
-    **Da eine [nachhaltige Finanzierung](https://www.photoprism.app/oss/faq) der Schlüssel zur schnellen Veröffentlichung neuer Funktionen ist, ermutigen wir alle Nutzer, unsere Mission zu unterstützen, indem sie [sich als Mitglied anmelden](https://www.photoprism.app/membership) oder eine [kommerzielle Lizenz](https://www.photoprism.app/teams) erwerben.**
+    **Da eine [nachhaltige Finanzierung](https://www.photoprism.app/oss/faq/) der Schlüssel zur schnellen Veröffentlichung neuer Funktionen ist, ermutigen wir alle Nutzer, unsere Mission zu unterstützen, indem sie [sich als Mitglied anmelden](https://www.photoprism.app/membership/) oder eine [kommerzielle Lizenz](https://www.photoprism.app/teams/) erwerben.**
 
 ## Mitgliedschaften ##
 
@@ -48,7 +48,7 @@
 
     Um eine neue Instanz mit deinem Mitgliedskonto zu verbinden, musst du dich mit dem Admin-Benutzer anmelden, der bei der Einrichtung automatisch erstellt wird (siehe deine `docker-compose.yml`-Datei oder die App-Store-Dokumentation), und dann die in unserem Aktivierungs-Guide beschriebenen Schritte ausführen.    
     
-    [Aktivierungs-Guide ›](https://www.photoprism.app/kb/activation)
+    [Aktivierungs-Guide ›](https://www.photoprism.app/kb/activation/)
 
 ??? question "Gibt es Alternativen zu einem wiederkehrenden Abonnement?"
 
@@ -58,13 +58,13 @@
 
     Beachte, dass du als Lifetime-Mitglied Updates und Support für deinen persönlichen Gebrauch von uns erhältst, anders als bei sogenannten "Lifetime"-Lizenzen, die vielleicht nur bis zur Veröffentlichung der nächsten Hauptversion gültig sind.    
     
-    [Mitgliedschaften FAQ ›](https://www.photoprism.app/kb/membership) [Anmelden ›](https://link.photoprism.app/membership)
+    [Mitgliedschaften FAQ ›](https://www.photoprism.app/membership/faq/) [Anmelden ›](https://link.photoprism.app/membership)
 
 ??? question "Was passiert, wenn ich meine Mitgliedschaft kündige?"
 
     Wenn du Anspruch auf eine lebenslange Essentials- oder Plus-Mitgliedschaft hast, kannst du diese Funktionen weiterhin nutzen, auch wenn du dich entscheidest, uns nicht mehr zu unterstützen. Ansonsten kannst du weiterhin alle frei verfügbaren Funktionen nutzen. In keinem Fall verlierst du den Zugriff auf deine Bilder.
     
-    [Mitgliedschaften Vergleichen >](https://www.photoprism.app/editions#compare)
+    [Mitgliedschaften Vergleichen >](https://www.photoprism.app/editions/#compare)
 
 ## Benutzer-Oberfläche ##
 
@@ -118,15 +118,15 @@
 
     Alle Benutzer haben Zugriff auf eine [hochauflösende Vektorkarte](https://maps.photoprism.app/){:target="_blank"}, die wir auf [unserer eigenen Infrastruktur](https://github.com/photoprism/photoprism/issues/2998){:target="_blank"} hosten, sodass kein kommerzieller API-Schlüssel erforderlich ist. Sie basiert auf [von OpenStreetMap veröffentlichten Daten](https://planet.openstreetmap.org/){:target="_blank"} (OSM).
 
-    Darüber hinaus stellen wir [unseren Mitgliedern](https://www.photoprism.app/membership) und [Geschäftskunden](https://www.photoprism.app/teams#compare) automatisch einen API-Schlüssel für den kommerziellen Dienst von MapTiler zur Verfügung, der [Satelliten-, Outdoor- und 3D-Karten](https://www.photoprism.app/kb/personal#maps-and-places) umfasst. Du kannst diese auf [unserer öffentlichen Demo](https://try.photoprism.app/library/places){:target="_blank"} testen.
+    Darüber hinaus stellen wir [unseren Mitgliedern](https://www.photoprism.app/membership/) und [Geschäftskunden](https://www.photoprism.app/teams/#compare) automatisch einen API-Schlüssel für den kommerziellen Dienst von MapTiler zur Verfügung, der [Satelliten-, Outdoor- und 3D-Karten](https://www.photoprism.app/kb/personal/#maps-and-places) umfasst. Du kannst diese auf [unserer öffentlichen Demo](https://try.photoprism.app/library/places){:target="_blank"} testen.
     
-    [Mehr erfahren ›](https://www.photoprism.app/kb/personal#maps-and-places)
+    [Mehr erfahren ›](https://www.photoprism.app/kb/personal/#maps-and-places)
 
 ??? question "Warum nutzt ihr nicht den kostenlosen Kartendienst von OpenStreetMap?"
 
     Andere [freie und Open-Source-Software Projekte](https://en.wikipedia.org/wiki/Free_and_open-source_software){:target="_blank"} verwenden manchmal die öffentlichen Karten, die OpenStreetMap für die Entwicklung und das Testen bereitstellt. Diese sind [nicht für Endbenutzeranwendungen](https://operations.osmfoundation.org/policies/tiles/) wie unsere gedacht.
 
-    Die Nutzung dieser Dienste bedeutet auch, dass [ihre Nutzungs-](https://operations.osmfoundation.org/policies/tiles/) und [Datenschutzrichtlinien](https://wiki.osmfoundation.org/wiki/Privacy_Policy) gelten, da deine Anfragedaten gespeichert und zur Erstellung [öffentlich zugänglicher Berichte](https://planet.openstreetmap.org/tile_logs/) verwendet werden. Dies unterscheidet sich von unseren Diensten, die [ein hohes Maß an Datenschutz](https://www.photoprism.app/privacy) gewährleisten und eine bessere Benutzererfahrung mit schnelleren Ladezeiten bieten.
+    Die Nutzung dieser Dienste bedeutet auch, dass [ihre Nutzungs-](https://operations.osmfoundation.org/policies/tiles/) und [Datenschutzrichtlinien](https://wiki.osmfoundation.org/wiki/Privacy_Policy) gelten, da deine Anfragedaten gespeichert und zur Erstellung [öffentlich zugänglicher Berichte](https://planet.openstreetmap.org/tile_logs/) verwendet werden. Dies unterscheidet sich von unseren Diensten, die [ein hohes Maß an Datenschutz](https://www.photoprism.app/privacy/) gewährleisten und eine bessere Benutzererfahrung mit schnelleren Ladezeiten bieten.
 
     [Mehr erfahren ›](https://docs.photoprism.app/getting-started/faq/#are-the-keys-for-using-interactive-world-maps-provided-free-of-charge)
 
@@ -257,7 +257,7 @@
 
 ??? question "Was ist eine RAW-Bilddatei?"
 
-    Professionelle und semiprofessionelle Fotografen bewahren ihre Originale oft in einem [verlustfreien RAW-Format](https://en.wikipedia.org/wiki/Raw_image_format) auf, das den Aufnahmen mit dem physischen Sensor entspricht, und nicht in einem komprimierten Bildformat wie JPEG, besonders wenn sie mit einer digitalen Spiegelreflexkamera fotografieren. Auch neuere Handys können Bilder im RAW-Format aufnehmen. Unser Ziel ist es, erstklassige Unterstützung für [alle RAW-Dateien](https://docs.photoprism.app/getting-started/faq/#what-media-file-types-are-supported) zu bieten, unabhängig von Kameramarke und -modell. Eine vollständige Liste der Dateitypen und -erweiterungen findest du in unserer [Knowledge Base](https://www.photoprism.app/kb/file-formats).
+    Professionelle und semiprofessionelle Fotografen bewahren ihre Originale oft in einem [verlustfreien RAW-Format](https://en.wikipedia.org/wiki/Raw_image_format) auf, das den Aufnahmen mit dem physischen Sensor entspricht, und nicht in einem komprimierten Bildformat wie JPEG, besonders wenn sie mit einer digitalen Spiegelreflexkamera fotografieren. Auch neuere Handys können Bilder im RAW-Format aufnehmen. Unser Ziel ist es, erstklassige Unterstützung für [alle RAW-Dateien](https://docs.photoprism.app/getting-started/faq/#what-media-file-types-are-supported) zu bieten, unabhängig von Kameramarke und -modell. Eine vollständige Liste der Dateitypen und -erweiterungen findest du in unserer [Knowledge Base](https://www.photoprism.app/kb/file-formats/).
     
     Da Webbrowser RAW-Dateien in der Regel nicht direkt anzeigen können, müssen sie konvertiert werden. Das geschieht beim [Import](library/import.md) oder beim [initialen Indexieren](library/originals.md). Die Konvertierung kann auch manuell [in einem Terminal](https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface) mit dem Befehl `photoprism convert` durchgeführt werden.
 
@@ -298,7 +298,7 @@
 
     Wir empfehlen, dass du [Exiftool](https://exiftool.org/install.html) verwendest, um alle Metadatenfelder und -werte zu prüfen, da Windows nur eine begrenzte Funktionalität hat.
     
-    Vielleicht wird dann klar, warum es Unterschiede gibt. Es könnte zum Beispiel sein, dass Windows einige Felder nicht unterstützt und sie deshalb ignoriert oder dass die angezeigten Daten tatsächlich aus dem Dateisystem und nicht aus den Dateien stammen. Wenn du immer noch glaubst, einen Fehler gefunden zu haben, stelle uns bitte [Beispieldateien](https://www.photoprism.app/contact#file-samples) zur Verfügung, damit wir das Problem reproduzieren können.
+    Vielleicht wird dann klar, warum es Unterschiede gibt. Es könnte zum Beispiel sein, dass Windows einige Felder nicht unterstützt und sie deshalb ignoriert oder dass die angezeigten Daten tatsächlich aus dem Dateisystem und nicht aus den Dateien stammen. Wenn du immer noch glaubst, einen Fehler gefunden zu haben, stelle uns bitte [Beispieldateien](https://www.photoprism.app/contact/#file-samples) zur Verfügung, damit wir das Problem reproduzieren können.
 
 ??? question "Warum wird das Datum von Bildern ohne Metadaten in den Suchergebnissen als *Unbekannt* angezeigt?"
 
