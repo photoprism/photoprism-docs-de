@@ -1,6 +1,6 @@
 # PhotoPrism: Browse Your Life in Pictures
 
-Mit PhotoPrism® lassen sich Bilder ganz einfach finden, organisieren und teilen. Dabei können die neuesten KI-Modelle für die Klassifizierung oder die Erstellung von Bildunterschriften genutzt werden. PhotoPrism lässt sich sowohl zu Hause als auch auf einem privaten Server oder in der Cloud nutzen.
+PhotoPrism® ist eine KI-gestützte, selbstgehostete Plattform, um deine Fotos und Videos privat zu durchsuchen, zu organisieren und zu teilen. Sie nutzt modernste Technologien, um Bilder zu verschlagworten und zu finden, ohne dir dabei im Weg zu stehen. Du kannst sie zu Hause, auf einem privaten Server oder in der Cloud betreiben.
 
 ![Screenshot](img/preview-2503-german.jpg){ class="shadow" }
 
