@@ -8,10 +8,15 @@
   {% if nav_title %}
     {% set description = nav_title %}
   {% endif %}
+  {% set keywords = "selbst gehostet, datenschutzfreundlich, dsgvo, datenschutz, google fotos alternative, fotoverwaltung, digital asset management, dam, videoverwaltung, künstliche intelligenz, ki, gesichtserkennung, on-premises, cloud, foto-app" %}
+  {% if page and page.meta and page.meta.keywords %}
+    {% set keywords = page.meta.keywords %}
+  {% endif %}
   {% set caption = page.title %}
   {% if page and page.meta and page.meta.title %}
     {% set caption = page.meta.title %}
   {% endif %}
+  <meta name="keywords" content="{{ keywords }}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description }}">
