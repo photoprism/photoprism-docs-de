@@ -21,7 +21,7 @@
 - This repository hosts **only the German User Guide**. The content lives in `docs/user-guide/` plus the landing page `docs/index.md`; there is no Developer Guide or Getting Started tree here.  
 - Navigation labels are defined in German within `mkdocs.yml`. Keep filenames lowercase with hyphens; mirror English paths where possible so redirects stay predictable.  
 - Shared assets: `docs/img/` (global), `docs/user-guide/img/` (screenshots referenced by multiple pages), and section-local `img/` folders. Icons and favicons reside in `docs/icons/` with licensing in `docs/icons/LICENSE`.  
-- Styling overrides belong in `docs/css/custom.css`; theme overrides live in `overrides/` (`main.html` for meta/analytics/banners, `partials/copyright.html` for footer text).  
+- Styling overrides belong in `docs/css/custom.css`; theme overrides live in `overrides/` (`main.html` for meta/analytics/banners, `partials/copyright.html` for footer text). The site-wide `<meta name="keywords">` is in `main.html`'s `extrahead` block (German-localized list + `page.meta.keywords` override); keep the German keywords localized, not translated 1:1 (e.g. `dsgvo` not `gdpr`).  
 - No drafts directory exists; introduce work-in-progress material behind clear TODO notices or stage it in a branch until ready to publish.
 
 ## Build & Preview Workflow
