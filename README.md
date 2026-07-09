@@ -32,6 +32,8 @@ To make more extensive changes, fork this repository, modify the corresponding `
 
 MkDocs Material (including features that used to require the Insiders build) installs directly from PyPI, so `make deps` / `make install` work out of the box without adding anything to `.env`.
 
+This site is built with [ProperDocs](https://properdocs.org/), a maintained drop-in fork of MkDocs 1.x (MkDocs core is EOL). It reads the existing `mkdocs.yml` unchanged and is installed via `requirements.txt`; the `make` targets call it under the hood, so the commands below are unchanged.
+
 #### Installing MkDocs ####
 
 When using a Debian, Ubuntu, or Mint Linux, run this command the first time you work with this repository on your computer so that the dependencies are installed:
@@ -72,7 +74,7 @@ To produce a one-off build without installing a Python toolchain on your host, r
 
 ```sh
 docker run --rm --entrypoint sh -v "$PWD":/docs -w /docs squidfunk/mkdocs-material:latest \
-  -c "pip install -r requirements.txt && mkdocs build -f mkdocs.deploy.yml"
+  -c "pip install -r requirements.txt && properdocs build -f mkdocs.deploy.yml"
 ```
 
 The rendered site is written to `site/` (the container writes it as `root`). Both `site/` and `venv/` are git-ignored build artifacts.

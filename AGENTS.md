@@ -26,9 +26,10 @@
 
 ## Build & Preview Workflow
 
+- Build tool: the site is built with **ProperDocs**, a maintained drop-in fork of MkDocs 1.x (MkDocs core is EOL; its planned 2.0 removes the plugin system). It reads `mkdocs.yml` unchanged and keeps every plugin working; `make` and CI invoke `properdocs`, while `mkdocs` stays installed only as a dependency of the Material theme.
 - Dependencies: on Debian/Ubuntu run `make deps`; otherwise `make install` to create `venv/` and install MkDocs plus requirements from `requirements.txt`. Material for MkDocs (including former Insiders features) now ships from PyPI, so no tokens or private repos are needed.  
-- Preview locally with `make watch` (alias for `mkdocs serve --livereload`) and browse http://localhost:8000/. The command watches `docs/`, `overrides/`, and `mkdocs.yml`.  
-- Production render: `make build` uses `mkdocs.deploy.yml`; `make deploy` runs `mkdocs gh-deploy --force` for emergency pushes. Normal releases flow by merging `develop` into `deploy` (see below).
+- Preview locally with `make watch` (alias for `properdocs serve`; livereload is on by default) and browse http://localhost:8000/. The command watches `docs/`, `overrides/`, and `mkdocs.yml`.  
+- Production render: `make build` uses `mkdocs.deploy.yml`; `make deploy` runs `properdocs gh-deploy --force` for emergency pushes. Normal releases flow by merging `develop` into `deploy` (see below).
 - Container option: to build without installing a host toolchain, run the upstream `squidfunk/mkdocs-material` image and `pip install -r requirements.txt` at run time (full command in `README.md` / `CLAUDE.md`).  
 - Image hygiene: run `make img-resize` after adding screenshots under `docs/user-guide/img/` or nested `img/` folders to enforce the `1000x860` max size.
 
