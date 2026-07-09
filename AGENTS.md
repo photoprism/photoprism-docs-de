@@ -1,6 +1,6 @@
 # PhotoPrism® Docs-DE Repository Guidelines
 
-**Last Updated:** March 10, 2026
+**Last Updated:** July 9, 2026
 
 ## Purpose
 
@@ -11,7 +11,7 @@
 
 - `README.md` — contributor onboarding, MkDocs overview, and deployment notes specific to the German site.  
 - `mkdocs.yml` — the entire navigation tree for the German User Guide; every new or moved page must be registered here before it appears.  
-- `mkdocs.deploy.yml` — production settings (adds `search` and `privacy` plugins, mirrors assets) used for builds and deployments.  
+- `mkdocs.deploy.yml` — production settings (re-declares the plugins with the production redirect map and adds the `privacy` plugin, mirroring external assets) used for builds and deployments.  
 - Canonical English docs: `https://github.com/photoprism/photoprism-docs` (AGENTS.md, CODEMAP.md, and the `docs/` tree) supply source text and structure for translations.  
 - Main app references: `https://github.com/photoprism/photoprism/blob/develop/AGENTS.md` and `https://github.com/photoprism/photoprism/blob/develop/CODEMAP.md` remain authoritative for product behavior, CLI semantics, and backend/frontend boundaries.  
 - Published sites: https://docs.photoprism.app/ (English) and https://docs-de.photoprism.app/ (German) are the live contracts; verify rendered behavior there before asserting version-specific details.
@@ -28,13 +28,14 @@
 
 - Dependencies: on Debian/Ubuntu run `make deps`; otherwise `make install` to create `venv/` and install MkDocs plus requirements from `requirements.txt`. Material for MkDocs (including former Insiders features) now ships from PyPI, so no tokens or private repos are needed.  
 - Preview locally with `make watch` (alias for `mkdocs serve --livereload`) and browse http://localhost:8000/. The command watches `docs/`, `overrides/`, and `mkdocs.yml`.  
-- Production render: `make build` uses `mkdocs.deploy.yml`; `make deploy` runs `mkdocs gh-deploy --force` for emergency pushes. Normal releases flow by merging `develop` into `deploy` (see below).  
+- Production render: `make build` uses `mkdocs.deploy.yml`; `make deploy` runs `mkdocs gh-deploy --force` for emergency pushes. Normal releases flow by merging `develop` into `deploy` (see below).
+- Container option: to build without installing a host toolchain, run the upstream `squidfunk/mkdocs-material` image and `pip install -r requirements.txt` at run time (full command in `README.md` / `CLAUDE.md`).  
 - Image hygiene: run `make img-resize` after adding screenshots under `docs/user-guide/img/` or nested `img/` folders to enforce the `1000x860` max size.
 
 ## Repository Layout & Ownership
 
 - Branch flow: work in `develop`; merge `develop` into `deploy` (or run `make merge`) to trigger the GitHub Pages pipeline that publishes https://docs-de.photoprism.app/. Resolve conflicts locally so deploy history stays clean.  
-- `mkdocs.yml` controls navigation, theme options, edit links, plugins (redirects), and Markdown extensions. Update redirects in both `mkdocs.yml` and `mkdocs.deploy.yml` when URLs change so previews and production behave identically.  
+- `mkdocs.yml` controls navigation, theme options, edit links, plugins (`search`, `redirects`), and Markdown extensions. Update redirects in both `mkdocs.yml` and `mkdocs.deploy.yml` when URLs change so previews and production behave identically.  
 - `overrides/` contains the only template customizations; edit cautiously and verify both light/dark themes.  
 - Generated output in `site/` and the virtualenv in `venv/` are workspace artifacts; do not commit them.
 

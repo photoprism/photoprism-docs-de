@@ -56,18 +56,26 @@ make fix
 
 ### Using MkDocs ###
 
-First make sure you have Docker and common development tools like `make` installed on your computer.
-
-Then use this command in the main project directory to download and run the latest version of
-[mkdocs-material](https://github.com/squidfunk/mkdocs-material):
+Once the dependencies are installed (see [Build Setup](#build-setup) above), preview the documentation locally with live reload:
 
 ```sh
 make watch
 ```
 
-Now open [http://localhost:8000/](http://localhost:8000/) in a browser to view the rendered documentation.
+This runs [MkDocs Material](https://github.com/squidfunk/mkdocs-material) from the local `venv/`. Now open [http://localhost:8000/](http://localhost:8000/) in a browser to view the rendered documentation.
 
 **The content will be updated automatically when changes are detected.**
+
+### Building in a Container ###
+
+To produce a one-off build without installing a Python toolchain on your host, run the upstream MkDocs Material image and add this repo's extra plugins at run time (the image's entrypoint is `mkdocs`, so override it to run `pip` first):
+
+```sh
+docker run --rm --entrypoint sh -v "$PWD":/docs -w /docs squidfunk/mkdocs-material:latest \
+  -c "pip install -r requirements.txt && mkdocs build -f mkdocs.deploy.yml"
+```
+
+The rendered site is written to `site/` (the container writes it as `root`). Both `site/` and `venv/` are git-ignored build artifacts.
 
 ### Deployment ###
 
@@ -95,4 +103,3 @@ After you submit your first pull request, you will be asked to accept our Contri
 [docs]: https://docs-de.photoprism.app/
 [chat]: https://link.photoprism.app/chat
 [ask]: https://link.photoprism.app/discussions
-[twitter]: https://link.photoprism.app/twitter
