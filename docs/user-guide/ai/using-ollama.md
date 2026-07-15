@@ -177,7 +177,7 @@ Um das zu beheben, kannst du entweder Reasoning für das Modell mit `Service.Thi
 ```yaml
 Models:
 - Type: caption
-  Model: qwen3-vl:235b-instruct
+  Model: qwen3-vl:latest
   Engine: ollama
   Service:
     Think: "false"

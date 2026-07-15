@@ -24,7 +24,7 @@ Füge die Umgebungsvariablen `OLLAMA_BASE_URL` und `OLLAMA_API_KEY` zum `photopr
 Mit diesen Variablen verwendet PhotoPrism automatisch den Ollama Cloud Endpunkt für alle Ollama‑basierten Modelle, die in deiner [`vision.yml`](index.md#visionyml-reference) konfiguriert sind. Du musst weder `Service.Uri` noch `Service.Key` in der Modellkonfiguration angeben – beides wird aus den Umgebungsvariablen übernommen.
 
 !!! info ""
-    Wenn `OLLAMA_BASE_URL` auf `https://ollama.com` gesetzt ist, wechselt PhotoPrism automatisch zu den Cloud‑Standardeinstellungen. Ein API‑Key allein erzwingt keine Cloud‑Nutzung. Da der aktuell veröffentlichte Ollama Cloud Modellname `qwen3-vl:235b-instruct-cloud` lautet, empfehlen wir, ihn explizit in `vision.yml` festzulegen.
+    Wenn `OLLAMA_BASE_URL` auf `https://ollama.com` gesetzt ist, wechselt PhotoPrism automatisch zu den Cloud‑Standardeinstellungen. Ein API‑Key allein erzwingt keine Cloud‑Nutzung. Die Namen der Cloud‑Modelle ändern sich und werden gelegentlich ohne Vorankündigung eingestellt. Wir empfehlen daher, ein explizites, aktuell verfügbares `Model:` in `vision.yml` festzulegen – zum Beispiel `minimax-m3:cloud` – und die [Liste der Cloud‑Modelle](https://ollama.com/search?c=cloud) zu prüfen, falls die Erzeugung von Kategorien oder Bildunterschriften nicht mehr funktioniert.
 
 ## Schritt 3: Modelle konfigurieren
 
@@ -36,13 +36,13 @@ Da die Service‑URI aus `OLLAMA_BASE_URL` übernommen wird, kannst du den `Serv
     ```yaml
     Models:
     - Type: labels
-      Model: qwen3-vl:235b-instruct-cloud
+      Model: minimax-m3:cloud
       Engine: ollama
       Run: auto
       Service:
         Think: "false"
     - Type: caption
-      Model: qwen3-vl:235b-instruct-cloud
+      Model: minimax-m3:cloud
       Engine: ollama
       Run: auto
       Service:
@@ -53,7 +53,7 @@ Stelle sicher, dass die konfigurierten Modelle [auf Ollama Cloud verfügbar](htt
 
 Die optionale Einstellung `Service.Think: "false"` deaktiviert die Reasoning‑Ausgabe bei Modellen, die dies unterstützen. Das ist für Captions und Kategorien oft sinnvoll, da es die Latenz reduziert und verhindert, dass Output‑Tokens für internes Reasoning statt für das eigentliche Ergebnis verbraucht werden.
 
-Zum Zeitpunkt dieser Dokumentation verwendet PhotoPrism intern immer noch `qwen3-vl:235b-instruct` als Ollama Cloud Standardmodell. Durch das explizite Festlegen von `Model: qwen3-vl:235b-instruct-cloud` werden Unklarheiten vermieden, bis dieser Standardwert im Code aktualisiert wird.
+Lege für die Cloud‑Nutzung immer ein explizites `Model:` fest: Der eingebaute Standardwert kann dem aktuellen Katalog von Ollama Cloud hinterherhinken (Modelle werden gelegentlich eingestellt). Das Festlegen eines aktuell verfügbaren Modells wie `minimax-m3:cloud` vermeidet Unklarheiten und hält die Erzeugung von Kategorien und Bildunterschriften funktionsfähig.
 
 [Mehr erfahren ›](ollama-models.md)
 
