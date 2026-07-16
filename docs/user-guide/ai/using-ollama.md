@@ -101,12 +101,14 @@ Erstelle nun eine neue Datei `config/vision.yml` oder bearbeite die vorhandene D
       Run: auto
       Service:
         Uri: http://ollama:11434/api/generate
+        Think: "false"
     - Type: labels
       Model: gemma3:latest
       Engine: ollama
       Run: auto
       Service:
         Uri: http://ollama:11434/api/generate
+        Think: "false"
     ```
 
 [Mehr erfahren ›](ollama-models.md#gemma-4-labels)

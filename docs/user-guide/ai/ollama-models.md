@@ -18,6 +18,9 @@ Die Performance hängt außerdem von deiner Hardware ab. Auf Apple Silicon oder 
 !!! tldr ""
     Ohne GPU‑Beschleunigung sind Ollama‑Modelle deutlich langsamer und benötigen zwischen 10 Sekunden und über einer Minute pro Bild. Das kann in Ordnung sein, wenn du nur wenige Bilder verarbeiten möchtest oder Wartezeiten akzeptabel sind.
 
+!!! warning "Reasoning bei Thinking-Modellen deaktivieren"
+    Viele aktuelle Vision-Modelle – die Qwen3.5-Familie, `qwen3-vl:*`, `frob/qwen3.5-instruct:4b` und andere – sind **Thinking- bzw. Reasoning-Modelle**. Neuere Ollama-Versionen geben dieses Reasoning **standardmäßig** aus, und es landet dann im Ergebnis: Captions beginnen mit Text wie *"The user wants a concise description of the provided image…"* und das Label-JSON lässt sich nicht mehr parsen. Setze für diese Modelle **`Service.Think: "false"`** (wie in den Beispielen unten), um die Reasoning-Ausgabe abzuschalten. Für Modelle ohne Thinking ist die Einstellung harmlos, du kannst sie also generell setzen.
+
 ## Temperature, TopK und TopP
 
 Wenn du die Optionen `Temperature`, `TopK` und `TopP` bei Ollama Modellen setzt, kannst du Zufälligkeit und Kreativität generativer [Large Language Modelle](https://en.wikipedia.org/wiki/Large_language_model) gezielt steuern:
@@ -70,6 +73,7 @@ Models:
   Run: auto
   Service:
     Uri: http://ollama:11434/api/generate
+    Think: "false"
 ```
 
 Warum das funktioniert:
@@ -92,6 +96,7 @@ Models:
     clear action. Avoid text formatting, meta-language, and filler words.
   Service:
     Uri: http://ollama:11434/api/generate
+    Think: "false"
 ```
 
 Warum das funktioniert:
@@ -127,6 +132,7 @@ Models:
     NumPredict: 512      # verhindert ausufernde Ausgaben
   Service:
     Uri: http://ollama:11434/api/generate
+    Think: "false"
 ```
 
 Warum das funktioniert:
@@ -170,6 +176,7 @@ Models:
     NumPredict: 128      # verhindert ausufernde Ausgaben
   Service:
     Uri: http://ollama:11434/api/generate
+    Think: "false"
 ```
 
 Warum das funktioniert:
