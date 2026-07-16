@@ -38,6 +38,7 @@ Empfehlungen:
 
 - Lass den Modellnamen exakt so, wie er von OpenAI veröffentlicht wurde. Das Standardmodell ist `gpt-5-mini`. Modellbezeichner sind außerdem case‑sensitiv – PhotoPrism übernimmt die Schreibweise direkt aus deiner `vision.yml`, sodass Werte wie `QuantTrio/Qwen3-VL-30B-A3B-Instruct-AWQ` von Hugging Face oder einem anderen OpenAI‑kompatiblen Katalog unverändert an die Upstream‑API geschickt werden.
 - `Service.Key` kann entfallen, wenn `OPENAI_API_KEY` bzw. `_FILE` bereits in der Umgebung gesetzt ist. Optional kannst du `Service.Org` und `Service.Project` setzen, falls dein Account das aus Abrechnungsgründen verlangt.
+- `Service.Tier` setzt optional den OpenAI `service_tier` (zum Beispiel `flex` für günstigere, langsamere Verarbeitung); ohne Angabe wird OpenAIs Standard (`auto`) verwendet.
 - PhotoPrism wertet Modelle von unten nach oben aus. Wenn du die OpenAI‑Einträge ans Ende der Liste setzt, werden sie bevorzugt, während andere Modelle als Fallback dienen.
 
 !!! tldr ""
