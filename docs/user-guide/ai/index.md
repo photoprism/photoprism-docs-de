@@ -35,7 +35,7 @@ KI-Engines, Modelle und Laufmodi können in einer `vision.yml`-Datei in deinem K
 ```yaml
 Models:
 - Type: caption
-  Model: gemma3:latest
+  Model: gemma4:latest
   Engine: ollama
   Run: auto
   Options:

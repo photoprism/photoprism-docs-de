@@ -25,7 +25,7 @@ Wenn Ollama standardmäßeig ohne `--profile ollama` gestartet werden soll, entf
       ## Ollama Large-Language Model Runner (optional)
       ## Run "ollama pull [name]:[version]" to download a vision model
       ## listed at <https://ollama.com/search?c=vision>, for example:
-      ## docker compose exec ollama ollama pull gemma3:latest
+      ## docker compose exec ollama ollama pull gemma4:latest
       ollama:
         image: ollama/ollama:latest
         restart: unless-stopped
@@ -78,7 +78,7 @@ Beachte, dass das [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/
 Sobald der Ollama Dienst läuft (siehe [Schritt 1](#schritt-1-ollama-installieren)), kannst du [beliebige Vision‑Modelle](https://ollama.com/search?c=vision) herunterladen, die zu deiner Hardware und deinen Anforderungen passen. Zum Beispiel:
 
 ```bash
-docker compose exec ollama ollama pull gemma3:latest
+docker compose exec ollama ollama pull gemma4:latest
 ```
 
 [Mehr erfahren ›](ollama-models.md)
@@ -96,14 +96,14 @@ Erstelle nun eine neue Datei `config/vision.yml` oder bearbeite die vorhandene D
     ```yaml
     Models:
     - Type: caption
-      Model: gemma3:latest
+      Model: gemma4:latest
       Engine: ollama
       Run: auto
       Service:
         Uri: http://ollama:11434/api/generate
         Think: "false"
     - Type: labels
-      Model: gemma3:latest
+      Model: gemma4:latest
       Engine: ollama
       Run: auto
       Service:
