@@ -49,12 +49,12 @@ PhotoPrism enthält eine Standortkomponente, mit der Standortkoordinaten eines B
     Mit dieser integrierten Funktionalität wird das [externe Geolocation Plugin](https://github.com/andyvalerio/photoprism-geolocation) nicht mehr benötigt. Wir danken unserer Community für ihren wertvollen Beitrag, der diese Funktion inspiriert hat!
 
 ### Kategorien bearbeiten ###
-Im Tab *Kategorien* können die [*Kategorien*](labels.md) eines Bildes/Videos angesehen und verändert werden.
+Im Tab *Kategorien* kannst du die [*Kategorien*](labels.md) eines Bildes/Videos ansehen, hinzufügen und bearbeiten sowie erkennen, ob sie automatisch zugewiesen oder manuell hinzugefügt wurden.
 
 ### Personen bearbeiten ###
-Im Tab *Personen* kannst du abgebildete [Personen](people.md) ansehen und editieren.
+Öffne den Tab *Personen*, um zu sehen, [wessen Gesicht](people.md#gesicht-einer-anderen-person-zuordnen) auf dem Bild erkannt wurde, und um [Gesichtern Namen zuzuweisen](people.md#gesichter-identifizieren), die noch nicht erkannt wurden.
 
-### Dateien bearbeiten###
+### Dateien bearbeiten ###
 Im Tab *Dateien* werden alle Dateien angezeigt, die zu einem Bild gehören.
 Ein Bild kann aus mehreren Dateien bestehen. Beispielsweise einer *RAW-Datei*, eine dazugehörige *JPEG-Version* sowie eine verknüpfte *XMP/JSON Datei*.
 
@@ -64,5 +64,5 @@ Um die Details einer Datei anzuzeigen, klicke auf :material-chevron-down:.
 
 ![Screenshot](img/edit-files-2-2503-german.jpg){ class="shadow" }
 
-Falls du [*Bildstapel*](stacks.md) bearbeitest, kannst du in dieser Ansicht das Anzeigebild wechseln oder gruppierte Dateien trennen.
+Wenn [mehr als eine JPEG- oder PNG-Datei](stacks.md) vorhanden ist, kannst du über eine Schaltfläche in den Dateidetails das Anzeigebild wechseln, das in Alben und Suchergebnissen als Vorschau verwendet wird. Über die Aktionsschaltflächen kannst du außerdem nicht primäre Dateien löschen oder [gruppierte Dateien trennen](stacks.md).
 

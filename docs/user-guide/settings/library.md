@@ -20,10 +20,10 @@ Schätzt den Standort von Bildern, die ohne GPS-Informationen aufgenommen wurden
     Für nicht-fotografische Bilder oder Bilder ohne Kamerainformationen wird keine Standortbestimmung durchgeführt.
 
 #### :material-image-size-select-large: Vorschaubilder ####
-Erstellt automatisch JPEG-Vorschaubilder für andere Dateitypen, damit sie in den Suchergebnissen und im Vollbildmodus angezeigt werden können.
+Erstellt automatisch JPEG- oder PNG-Vorschaubilder für andere Dateitypen, damit sie in den Suchergebnissen und im Vollbildmodus angezeigt werden können.
 
 !!! danger ""
-    Die Option *Vorschaubilder* sollte nicht deaktiviert werden, da sie PhotoPrism daran hindert, andere Dateitypen als JPEG zu indexieren, es sei denn, es gibt bereits JPEG-Sidecar-Dateien mit demselben Dateinamenpräfix. Siehe *Bildstapel*, um mehr über die Namenskonventionen von Sidecar-Dateien zu erfahren.
+    Die Option *Vorschaubilder* sollte normalerweise aktiviert bleiben. Andernfalls kann PhotoPrism andere Dateitypen als JPEG oder PNG nicht vollständig indexieren, es sei denn, es gibt bereits eine kompatible Vorschau-Sidecar-Datei mit demselben Dateinamenpräfix. Siehe *Bildstapel*, um mehr über die Namenskonventionen von Sidecar-Dateien zu erfahren.
 
 !!! info ""
     Um zu verhindern, dass unerfahrene Benutzer versehentlich die Erstellung von Vorschaubildern deaktivieren, können *Vorschaubilder* nur deaktiviert werden, wenn [Experimentelle Funktionen](advanced.md#experimentelle-funktionen) aktiviert sind.
@@ -32,12 +32,13 @@ Erstellt automatisch JPEG-Vorschaubilder für andere Dateitypen, damit sie in de
 
 PhotoPrism gruppiert zusammengehörige Dateien automatisch zu Bildstapeln.
 Bildstapel sind Gruppen von Dateien, die den gleichen Ursprung haben, sich aber in Qualität, Format, Größe oder Farbe unterscheiden.
+Unter [*Suche > Bildstapel*](../organize/stacks.md) findest du alle Bilder mit gruppierten Mediendateien.
 
 Du kannst folgende Optionen nutzen, um Bilder zu gruppieren:
 
 * :material-format-list-numbered-rtl: **Fortlaufende Dateinamen** zum Beispiel `/2018/IMG_1234 (2).jpg` und `/2018/IMG_1234 (3).jpg`
 * :material-clock-outline: **Gleicher Ort und Zeit** Gruppiert Bilder, die an derselben GPS-Position und in derselben Sekunde aufgenommen wurden
-* :material-fingerprint: **Gleiche eindeutige Bild-ID**  vergleicht die *ImageUniqueID* (Exif) oder *Instance ID*
+* :material-fingerprint: **Gleiche eindeutige Bild-ID**  vergleicht die *ImageUniqueID* (Exif) oder *Instance ID* (XMP)
 
 Gleichnamige Dateien, die sich im selben Ordner befinden, z.B. `/2018/IMG_1234.jpg` und  `/2018/IMG_1234.avi`, werden immer gruppiert.
 
@@ -75,8 +76,11 @@ RAW Dateien herunterladen.
 #### :material-paperclip: Sidecar ####
 Sidecar-Dateien herunterladen, z.B. XMP-Metadaten. Dies wird im Allgemeinen nicht empfohlen, außer für professionelle Workflows.
 
+#### :material-file-download: Dateiname ####
+Legt fest, wie heruntergeladene Dateien benannt werden: mit ihrem *Aktuellen Namen*, ihrem *Originalnamen* oder einem Namen nach dem Schema *Einfach teilen*, der sich aus Aufnahmezeit und Bildtitel zusammensetzt.
+
 !!! info ""
-    Beachte, dass deine Einstellungen keine Auswirkungen auf ZIP-Archive haben, wenn du komplette Alben herunterlädst. Um Album-Downloads zu konfigurieren, können fortgeschrittene Benutzer die Datei `settings.yml` in ihrem config Ordner bearbeiten. [Mehr erfahren ›](https://docs.photoprism.app/getting-started/config-files/settings/#albums)
+    Beachte, dass diese Einstellungen keine Auswirkungen auf ZIP-Archive haben, wenn du komplette Sammlungen herunterlädst. Diese konfigurierst du im Tab [*Sammlungen*](collections.md). [Mehr erfahren ›](collections.md#download)
 
 
 <!--## Umwandlung von RAW zu JPEG ##

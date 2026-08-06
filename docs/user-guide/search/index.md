@@ -14,24 +14,30 @@ Hier findest du alle Bilder und Videos, die nicht in *Überprüfen*, *Archiv* od
     
 ![Screenshot](../organize/img/search-section-2503-german.jpg){ class="shadow" }
 
-##### Monochrom #####
+#### Monochrom ####
 Zeigt alle einfarbigen Bilder und Videos.
 
 ![Screenshot](../organize/img/monochrome-section-2503-german.jpg){ class="shadow" }
 
-##### [Panoramen](../organize/panoramas.md) #####
+#### [Panoramen](../organize/panoramas.md) ####
 Zeigt alle Panoramen.
 
-##### [Bildstapel](../organize/stacks.md) #####
+#### [Bildstapel](../organize/stacks.md) ####
 Zeigt Bildstapel.
 
-##### [Scans](../organize/scans.md) #####
+#### [Vektorgrafiken](filters.md) ####
+Zeigt Vektorgrafiken wie SVG- und Adobe-Illustrator-Dateien.
+
+#### [Scans](../organize/scans.md) ####
 Zeigt alle eingescannten Bilder.
 
-##### [Überprüfen](../organize/review.md) #####
+#### [Dokumente](../organize/documents.md) ####
+Zeigt PDF-Dokumente und andere als Dokument eingestufte Inhalte.
+
+#### [Überprüfen](../organize/review.md) ####
 Zeigt alle Bilder, die überprüft werden müssen.
 
-##### [Archiv](../organize/archive.md) #####
+#### [Archiv](../organize/archive.md) ####
 Zeigt archivierte Bilder.
 
 ### :material-bookmark: [Alben](../organize/albums.md) ###

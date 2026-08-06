@@ -23,7 +23,10 @@
     Das ist besonders hilfreich, wenn PhotoPrism auf einem Remote-Server ausgeführt wird.
 
 !!! danger ""
-    Importieren ist im [schreibgeschützten Modus](../settings/library.md) nicht möglich, da er [Schreibrechte](https://docs.photoprism.app/getting-started/troubleshooting/docker/#file-permissions) für den Ordner *originals* benötigt.    
+    Importieren ist im [schreibgeschützten Modus](../settings/library.md) nicht möglich, da er [Schreibrechte](https://docs.photoprism.app/getting-started/troubleshooting/docker/#file-permissions) für den Ordner *originals* benötigt.
+
+!!! info ""
+    Der Import wird automatisch pausiert, wenn der freie Speicherplatz unter den [konfigurierten Schwellwert](originals.md#schwellwert-freier-speicherplatz) fällt, damit sich das *storage*-Volume nicht vollständig füllt.
 
 ### Option "Dateien Verschieben" ###
 
@@ -41,7 +44,7 @@ Wenn du den automatischen Import aktivierst, indem du die Konfigurationsoption [
 
 ## Import Pfad Schema ändern
 
-Seit [Release 250223-b79d21907](https://docs.photoprism.app/release-notes/#february-23-2025) können fortgeschrittene Benutzer das von der Importfunktion verwendete Schema für den Zieldateipfad über die [`settings.yml`](https://docs.photoprism.app/getting-started/config-files/settings/#media-library) anpassen, wie in diesem Beispiel gezeigt:
+Seit [Release 250223-b79d21907](https://docs.photoprism.app/release-notes/#february-23-2025) können fortgeschrittene Benutzer das von der Importfunktion verwendete Schema für den Zieldateipfad über die [`settings.yml`](https://docs.photoprism.app/getting-started/config-files/settings/#library) anpassen, wie in diesem Beispiel gezeigt:
 
 ```yaml
 Import:
@@ -50,12 +53,15 @@ Import:
 
 Die Platzhalter für Datum und Uhrzeit werden in der [Dokumentation zum *time*-Paket beschrieben](https://pkg.go.dev/time#Layout). Die Verwendung einer anderen 8-stelligen Hexadezimalzahl wie „12345678“ für die [CRC32-Prüfsumme](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) und „.ext“ anstelle von „.jpg“ für die Dateierweiterung funktioniert ebenfalls. Ungültige und leere Schemata werden ignoriert und stattdessen wird der Standard verwendet.
 
-[Mehr Erfahren ›](https://docs.photoprism.app/getting-started/config-files/settings/#media-library)
+[Mehr Erfahren ›](https://docs.photoprism.app/getting-started/config-files/settings/#library)
 
 !!! note ""
-    Durch das Festlegen eines benutzerdefinierten Importdateipfads **werden bereits importierte Dateien nicht umbenannt**, da dies zu Konflikten mit anderen Tools oder Instanzen führen kann, die möglicherweise auf die Dateien zugreifen. Das Umbenennen vorhandener Dateien kann auch zu Speicher- und/oder Übertragungsaufwand mit Backup-Tools führen, die nicht erkennen, dass Dateien verschoben wurden, d. h. sie können eine neue Sicherungskopie erstellen und/oder übertragen.
+    Durch das Festlegen eines benutzerdefinierten Importdateipfads **werden bereits importierte Dateien nicht umbenannt**, da dies zu Konflikten mit anderen Tools oder Instanzen führen kann, die möglicherweise auf die Dateien zugreifen. Das Umbenennen vorhandener Dateien kann auch zu Speicher- und/oder Übertragungsaufwand mit Backup-Tools führen, die nicht erkennen, dass Dateien verschoben wurden, d. h. sie können eine neue Sicherungskopie erstellen und/oder übertragen. Wir ziehen in Betracht, [eine integrierte Funktion zum Umbenennen von Dateien hinzuzufügen](https://docs.photoprism.app/getting-started/faq/#can-i-use-photoprism-to-sort-files-into-a-configurable-folder-structure), sobald wir Zeit hatten, mögliche Implementierungen auf Bedienbarkeit, Performance und Sicherheit zu testen.
 
-## FAQ "Kann ich mit PhotoPrism Dateien in einer konfigurierbaren Ordnerstruktur sortieren?"
+## Häufig gestellte Fragen
+
+### Kann ich mit PhotoPrism Dateien in einer konfigurierbaren Ordnerstruktur sortieren?
+
 Du kannst deine Dateien sortieren, wie du möchtest. Falls dir die Ordner- und Namenskonvention unserer Importfunktion nicht gefällt,
 kannst du andere Tools zur Umbenennung verwenden:
 
@@ -63,4 +69,3 @@ kannst du andere Tools zur Umbenennung verwenden:
 * [PhockUp](https://github.com/ivandokov/phockup)
 * [Photo Organizer](https://www.systweak.com/photo-organizer)
 
-[Mehr Erfahren >](https://docs.photoprism.app/getting-started/faq/#can-i-use-photoprism-to-sort-files-into-a-configurable-folder-structure)

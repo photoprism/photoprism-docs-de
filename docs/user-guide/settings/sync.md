@@ -2,10 +2,7 @@
 
 Du kannst deine PhotoPrism-Instanz mit anderen Diensten mit WebDAV-Unterstützung verbinden, zum Beispiel mit anderen PhotoPrism-Instanzen, Nextcloud oder ownCloud. Dies ermöglicht es dir, Dateien zwischen mehreren Diensten zu [teilen](../share/services-share.md) oder zu [synchronisieren](../sync/services-sync.md).
 
-PhotoPrism kann Dateien außerdem per WebDAV bereitstellen, sodass du sie direkt unter macOS oder Windows im Dateimanager durchsuchen kannst. [Mehr erfahren ›](../sync/webdav.md)
-
-
-Das kann nützlich sein, wenn du Dateien zwischen mehreren Diensten [teilen](../share/services-share.md) oder [synchronisieren](../sync/services-sync.md) willst.
+PhotoPrism kann seine Originale außerdem per WebDAV bereitstellen, sodass kompatible Clients unter macOS, Windows und auf Mobilgeräten sich direkt verbinden können. [Mehr erfahren ›](../sync/webdav.md)
 
 !!! tldr ""
     Da diese Einstellungen ohne Authentifizierung nicht sicher sind, sind sie nicht verfügbar, wenn du PhotoPrism im [public Modus](https://docs.photoprism.app/getting-started/config-options/#authentication) verwendest.

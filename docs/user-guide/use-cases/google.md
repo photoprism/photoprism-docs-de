@@ -3,10 +3,12 @@
 ## Dateien übertragen #
 
 1. Gehe zu [Google Takeout](https://takeout.google.com/)
-2. Triggere den *Export* deiner Google-Photos Daten
-3. Abhängig von der Anzahl/Größe der Bilder kann es einige Tage dauern, bis deine Daten exportiert sind
-4. *Lade* deine Daten herunter und fügen sie (einschließlich JSON-Dateien) deinem *Originals* oder *Import* Verzeichnis hinzu
-5. [*Indexiere*](../library/originals.md) oder [*Importiere*](../library/import.md) die Dateien
+2. Klicke auf `Auswahl aufheben` und wähle dann ausschließlich `Google Fotos` aus
+3. Triggere den *Export* deiner Google-Photos Daten
+4. Abhängig von der Anzahl/Größe der Bilder kann es einige Tage dauern, bis deine Daten exportiert sind
+5. *Lade* deine Daten herunter und entpacke alle Archive in dein *Originals*- oder *Import*-Verzeichnis
+    - der Ordner sollte neben den Bildern selbst auch eine JSON-Datei je Bild enthalten
+6. [*Indexiere*](../library/originals.md) oder [*Importiere*](../library/import.md) die Dateien
 
 ## Metadaten
 
@@ -15,7 +17,9 @@
 - Titel
 - Bildunterschrift
 - Koordinaten (lat/long)
-- Erstellungsdatum
+- Aufnahmedatum und -zeit
+- Erstellungsdatum und -zeit
+- Änderungsdatum und -zeit
 
 ## Google Photos Alben ##
 

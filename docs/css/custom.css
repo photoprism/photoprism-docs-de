@@ -455,6 +455,12 @@ img.sponsor-logo {
     margin: 25px;
 }
 
+.md-typeset video.screencast {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 /* Common Styles */
 
 .right {

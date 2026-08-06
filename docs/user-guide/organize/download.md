@@ -20,7 +20,7 @@
      ![Screenshot](img/download-2-2503-german.jpg){ class="shadow" }
 
     !!! info ""
-        Du kannst [konfigurieren](../settings/general.md#download), welche Dateien jeweils heruntergeladen werden sollen.
+        Du kannst [konfigurieren](../settings/library.md#download), welche Dateien jeweils heruntergeladen werden sollen.
 
     !!! tip "Tastenkombination"
         Im Vollbild-Viewer kannst du Dateien schnell herunterladen, indem du **Strg + D** drückst.

@@ -65,6 +65,9 @@ Gesichter können aus mehreren Gründen nicht erkannt werden:
 
 Die Person wird nun unter *Erkannt* angezeigt
 
+!!! tip ""
+    Wenn du Gesichter bereits in einer anderen Anwendung wie Adobe Bridge, Lightroom, digiKam, ACDSee oder Windows benannt hast, kann PhotoPrism diese Namen beim Indexieren aus den XMP-Metadaten übernehmen, sodass du sie nicht erneut eingeben musst. Aktiviere dafür [*Gesichter aus XMP importieren*](../settings/advanced.md#gesichter-aus-xmp-importieren).
+
 ## Cover für eine Person ändern ##
 1. Gehe zum Tab [Personen](./edit.md#personen-bearbeiten) im Bearbeitungs-Dialog des Bildes, auf dem das Gesicht zu sehen ist, das du als Titelbild verwenden möchtest
 2. Fahre mit der Maus über :material-dots-vertical: in der oberen rechten Ecke des Gesichts

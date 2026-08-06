@@ -9,7 +9,7 @@ Systemkonfigurationsoptionen wie die Bildqualität können in den erweiterten Ei
     Wenn du die Thumbnail-Qualität oder Größen Einstellungen änderst, werden bereits erstellte Thumbnails nicht gelöscht.
     Thumbnails können über die [Kommandozeile](https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface) neu generiert werden.
 
-![Screenshot](img/settings-advanced-0912-german.jpg){ class="shadow" }
+![Screenshot](img/settings-advanced-2607-german.jpg){ class="shadow" }
 
 Alle [Optionen](https://docs.photoprism.app/getting-started/config-options/) können in deiner `compose.yaml` (oder `docker-compose.yml`) oder auch über Kommandozeilenparameter gesetzt werden. 
 Manuell geänderte Werte werden in einer Konfigurationsdatei gespeichert. Sie wird standardmäßig im Ordner `storage/config` gespeichert. 
@@ -46,6 +46,12 @@ Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting
 Wenn diese Option aktiviert ist, werden alle Funktionen zur Gesichts­erkennung und zum Erkennen von Gesichtern deaktiviert.
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/#feature-flags) ist `PHOTOPRISM_DISABLE_FACES`.
+
+### Gesichter aus XMP importieren ###
+Wenn diese Option aktiviert ist, werden beim Indexieren Gesichtsbereiche und Namen aus den XMP-Metadaten als Personen-Markierungen übernommen. Namen, die du in Anwendungen wie Adobe Bridge, Lightroom, digiKam, ACDSee oder Windows vergeben hast, müssen so nicht erneut eingegeben werden.
+[Mehr erfahren ›](../library/metadata.md#gesichtsbereiche)
+
+Die entsprechende [Konfigurations-Option](https://docs.photoprism.app/getting-started/config-options/#computer-vision) ist `PHOTOPRISM_XMP_FACES`.
 
 ### Karten deaktivieren ###
 Wenn Karten deaktiviert sind, liest PhotoPrism trotzdem noch Geo-Informationen (Längen- und Breitengrad) aus den Metadaten deiner Dateien aus.

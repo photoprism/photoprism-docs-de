@@ -48,6 +48,7 @@ nav:
       - Ordner: user-guide/organize/folders.md
       - Panoramen: user-guide/organize/panoramas.md
       - Scans: user-guide/organize/scans.md
+      - Dokumente: user-guide/organize/documents.md
   - Teilen:
       - Linkfreigabe: user-guide/share/index.md
       - Dateien hochladen: user-guide/share/services-share.md
@@ -59,6 +60,7 @@ nav:
   - Einstellungen:
       - Allgemein: user-guide/settings/general.md
       - Inhalte: user-guide/settings/library.md
+      - Sammlungen: user-guide/settings/collections.md
       - Erweitert: user-guide/settings/advanced.md
       - Dienste:  user-guide/settings/sync.md
       - Konto: user-guide/settings/account.md

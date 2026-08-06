@@ -4,6 +4,10 @@ Im Bereich *Kalender* findest du deine Bilder nach Jahr und Monat sortiert.
 
 ![Screenshot](img/calendar-2503-german.jpg){ class="shadow" }
 
+Beachte, dass die Monatsalben in diesem Bereich nur Bilder enthalten, für die ein gültiges [Aufnahmedatum mit Uhrzeit](edit.md#bilddetails-bearbeiten) in den Metadaten oder im Dateinamen hinterlegt ist.
+
+Dateien, deren Aufnahmedatum lediglich anhand des Änderungsdatums *geschätzt* wurde, erscheinen daher nicht in diesen Alben – auch dann nicht, wenn sie [korrekt indexiert](../library/originals.md) wurden.
+
 Das Kontext-Menü ermöglicht die folgenden Aktionen:
 
 <!--## Monat löschen ##

@@ -9,6 +9,10 @@ Kategorien werden automatisch gesetzt, wenn neue Bilder zu PhotoPrism hinzugefü
 Im Bereich *Kategorien* werden alle Kategorien deiner Fotos und Videos angezeigt.
 Du kannst eine Kategorie hervorheben, indem du auf :material-star: klickst. Hervorgehobene Kategorien werden in der Ansicht ganz oben angezeigt.
 
+PhotoPrism ordnet jede automatisch erzeugte *Kategorie* zusätzlich einer übergeordneten Gruppe zu. So gibt es beispielsweise die übergeordnete Kategorie "Fahrzeug", zu der Kategorien wie "Taxi", "Katamaran", "Rettungsboot" und "Hochgeschwindigkeitszug" gehören. Diese übergeordneten Kategorien lassen sich nicht bearbeiten, können aber genau wie alle anderen Kategorien für die Suche verwendet werden.
+
+Du kannst dir die übergeordneten Kategorien zusätzlich zu den gewohnten Kategorien im Bereich *Kategorien* anzeigen lassen. Über das Symbol in der oberen rechten Ecke blendest du sie ein :material-eye: und wieder aus :material-eye-off:. Außerdem lassen sie sich in komplexeren Suchfiltern verwenden – die übergeordneten Kategorien deiner Bilder erscheinen in der Suchfilterleiste als Auswahlliste unter *Alle Kategorien*.
+
 ![Screenshot](img/labels-1-2503-german.jpg){ class="shadow" }
 
 ### Bilder einer bestimmten Kategorie anzeigen ###
