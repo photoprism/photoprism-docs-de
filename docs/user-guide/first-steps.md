@@ -1,11 +1,12 @@
+# Erste Schritte 👣 #
 
 Nach der [Installation](https://docs.photoprism.app/getting-started/) sind nur noch zwei weitere Schritte erforderlich,
 bevor du mit dem Durchsuchen deiner Bilder beginnen kannst:
 
-- Passe deine [Inhalts](./settings/library.md) und die [erweiterten Einstellungen](./settings/advanced.md) an deine persönlichen Vorlieben an
-- [Wähle](./library/index.md), ob du deine [Originale direkt indexieren](./library/originals.md) willst, wobei alle Datei- und Ordnernamen unverändert bleiben,
-  oder ob du die optionale [Importfunktion](./library/import.md) verwenden willst, die automatisch Duplikate entfernt,
-  Dateien einen eindeutigen Namen gibt und sie nach Jahr und Monat sortiert
+1. Passe deine [Inhalts](./settings/library.md) und die [erweiterten Einstellungen](./settings/advanced.md) an deine persönlichen Vorlieben an
+2. [Wähle](./library/index.md), ob du deine [Originale direkt indexieren](./library/originals.md) willst, wobei alle Datei- und Ordnernamen unverändert bleiben,
+   oder ob du die optionale [Importfunktion](./library/import.md) verwenden willst, die automatisch Duplikate entfernt,
+   Dateien einen eindeutigen Namen gibt und sie nach Jahr und Monat sortiert
 
 Wenn du Ordner verwenden möchtest, die bereits auf deinem Computer existieren, stelle sicher, dass du sie während der Einrichtung als originals- bzw. import Ordner konfiguriert hast.
 
@@ -20,20 +21,30 @@ Starte dann die [Indexierung](library/originals.md) oder den [Import](library/im
 
 ## Während die Indexierung noch läuft...
 
-Deine Fotos und Videos werden nach und nach in den Suchergebnissen und anderen Bereichen der Benutzeroberfläche sichtbar.
+Deine [Fotos](./search/index.md) und [Videos](./organize/video.md) werden nach und nach in den Suchergebnissen und anderen Bereichen der Benutzeroberfläche sichtbar.
 Öffne den Tab *Logs* im Bereich *Dateien*, um die Arbeit des Indexers zu beobachten.
 Die Anzahl in der Navigation wird ständig aktualisiert, so dass du den Fortschritt verfolgen kannst.
 
 Falls einige deiner Bilder nach Abschluss der Indexierung immer noch fehlen, sind sie möglicherweise aufgrund von schlechter Qualität oder unvollständigen Metadaten im Bereich [Überprüfen](./organize/review.md).
-Du kannst diese und andere Funktionen in den [Einstellungen](./settings/library.md) deaktivieren.
+Du kannst diese und andere Funktionen je nach Anwendungsfall in den [Einstellungen](./settings/general.md) deaktivieren.
 
 Natürlich kannst du weiterhin deine bevorzugten Programme zur Verarbeitung von RAW-Dateien, zur Bearbeitung von Metadaten oder zum Importieren neuer Aufnahmen verwenden.
-Gehe zu *Dateien> Index* und klicke auf Start, um den Index zu aktualisieren, nachdem Dateien geändert, hinzugefügt oder entfernt wurden.
+Gehe zu *Dateien > Index* und klicke auf *Start*, um den Index zu aktualisieren, nachdem Dateien geändert, hinzugefügt oder entfernt wurden.
 Dies kann auch über die Konfigurationsoption [`PHOTOPRISM_INDEX_SCHEDULE`](https://docs.photoprism.app/getting-started/config-options/#indexing) automatisiert werden.
 
 !!! tldr ""
     Bei der Indexierung können JPEG-Sidecar-Dateien für Originale in anderen Formaten wie RAW und HEIF erstellt werden. Dies ist für die Bildklassifizierung, die Gesichtserkennung und für die Anzeige in einem Webbrowser erforderlich.
     Sidecar- und Thumbnail-Dateien werden dem storage Ordner hinzugefügt, so dass der Ordner mit den Originalen nicht verändert wird.
+
+## Bildunterschriften und Kategorien verbessern
+
+PhotoPrism klassifiziert deine Bilder beim Indexieren mit integrierten Modellen, sodass Kategorien ohne zusätzliche Einrichtung
+zur Verfügung stehen. Für deutlich genauere Kategorien und beschreibende Bildunterschriften kannst du jederzeit eine
+[selbst gehostete Ollama-Instanz](./ai/using-ollama.md), [Ollama Cloud](./ai/ollama-cloud.md) oder die
+[OpenAI API](./ai/using-openai.md) anbinden – auch für bereits indexierte Bilder.
+Beim Selbsthosten empfehlen wir einen Server mit GPU, da die Erzeugung der Ergebnisse ohne GPU deutlich länger dauert.
+
+[Mehr erfahren ›](./ai/index.md)
 
 ## Geräte einrichten
 Sobald die Indexierung abgeschlossen ist und du mit den Ergebnissen zufrieden bist, kannst du die [automatische Synchronisierung](./sync/mobile-devices.md) von deinem Handy aus einrichten und die [Progressive Web App](./pwa.md) (PWA) je nach Bedarf auf deinem Desktop sowie deinen mobilen Endgeräten installieren.
