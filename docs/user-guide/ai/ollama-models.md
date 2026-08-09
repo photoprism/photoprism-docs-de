@@ -314,4 +314,4 @@ photoprism --log-level=trace vision run -m labels --count 1 --force
 photoprism --log-level=trace vision run -m caption --count 1 --force
 ```
 
-[^1]: Verfügbar ab dem nächsten Preview-Build und dem darauf folgenden stabilen Release. Frühere Versionen reduzieren einen Label‑Namen immer auf ein einzelnes Token und ignorieren diese Eigenschaft.
+[^1]: Verfügbar in unseren [Preview-Builds](https://docs.photoprism.app/getting-started/updates/#development-preview) und dem kommenden stabilen Release. Frühere Versionen reduzieren einen Label-Namen immer auf ein einzelnes Wort und ignorieren diese Einstellung.

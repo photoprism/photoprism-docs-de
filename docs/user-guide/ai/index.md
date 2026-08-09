@@ -159,4 +159,4 @@ Unter `Service` konfigurierst du Endpunkt‑URL, HTTP-Methode, Format und Authen
     **Authentifizierung:** Alle Zugangsdaten und Kennungen unterstützen `${ENV_VAR}`‑Ersetzung. `Service.Key` setzt z.B. den HTTP‑Header `Authorization: Bearer <token>`, während `Username`/`Password` für Basic Auth verwendet werden, falls die `Uri` keine Zugangsdaten enthält. Wenn `Service.Key` leer ist, verwendet PhotoPrism standardmäßig `OPENAI_API_KEY` (OpenAI Engine) bzw. `OLLAMA_API_KEY`[^1] (Ollama Engine) und berücksichtigt auch die jeweiligen `_FILE`‑Varianten.
 
 [^1]: Verfügbar seit dem [Release vom 5. März 2026](https://docs.photoprism.app/release-notes/#march-5-2026).
-[^2]: Verfügbar ab dem nächsten Preview-Build und dem darauf folgenden stabilen Release.
+[^2]: Verfügbar in unseren [Preview-Builds](https://docs.photoprism.app/getting-started/updates/#development-preview) und dem kommenden stabilen Release.
