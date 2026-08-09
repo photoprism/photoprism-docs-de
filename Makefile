@@ -1,4 +1,4 @@
-.PHONY: all deps fix pip build serve install replace upgrade venv install-venv upgrade upgrade-venv replace replace-venv reinstall watch deploy spellcheck install-typos check-links check-links-external install-muffet muffet format-whitespace format-whitespace-check format-tables;
+.PHONY: all deps fix pip build serve install replace upgrade venv install-venv upgrade upgrade-venv replace replace-venv reinstall watch deploy spellcheck install-typos check-links check-links-external install-muffet muffet format-whitespace format-whitespace-check format-tables format-artifacts format-artifacts-check format;
 
 MUFFET_PORT ?= 8042
 
@@ -97,3 +97,12 @@ format-tables:
 	# Reformat Markdown tables. Fenced code blocks are masked so sample CLI
 	# output drawn with pipes is not rewritten.
 	python3 ./scripts/format-tables.py
+format-artifacts:
+	# Straighten smart quotes inside code spans and remove invisible characters. Joiners,
+	# ZWNJ and soft hyphens are reported, never removed: each is load-bearing somewhere
+	# (emoji sequences, Persian and Indic scripts, German hyphenation points).
+	python3 ./scripts/format-artifacts.py
+format-artifacts-check:
+	# Report the artifact drift without modifying files; exits non-zero on drift.
+	python3 ./scripts/format-artifacts.py --check
+format: format-whitespace format-tables format-artifacts
