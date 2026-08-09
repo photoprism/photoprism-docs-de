@@ -1,4 +1,4 @@
-.PHONY: all deps fix pip build serve install replace upgrade venv install-venv upgrade upgrade-venv replace replace-venv reinstall watch deploy spellcheck install-typos check-links check-links-external install-muffet muffet format-whitespace format-whitespace-check;
+.PHONY: all deps fix pip build serve install replace upgrade venv install-venv upgrade upgrade-venv replace replace-venv reinstall watch deploy spellcheck install-typos check-links check-links-external install-muffet muffet format-whitespace format-whitespace-check format-tables;
 
 MUFFET_PORT ?= 8042
 
@@ -93,3 +93,7 @@ format-whitespace:
 format-whitespace-check:
 	# Report the whitespace drift without modifying files; exits non-zero on drift.
 	python3 ./scripts/format-whitespace.py --check
+format-tables:
+	# Reformat Markdown tables. Fenced code blocks are masked so sample CLI
+	# output drawn with pipes is not rewritten.
+	python3 ./scripts/format-tables.py
