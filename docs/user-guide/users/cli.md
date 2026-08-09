@@ -50,8 +50,8 @@ Alternativ zur [Web-Benutzeroberfläche](index.md) kannst du Benutzerkonten auch
 
 Du kannst die Unterbefehle `add` und `mod` mit diesen Flags kombinieren, um Kontoeigenschaften zu setzen oder zu ändern:
 
-| Command Flag                         | Description                                                      |
-|--------------------------------------|------------------------------------------------------------------|
+| Command Flag                         | Description                                                         |
+|--------------------------------------|---------------------------------------------------------------------|
 | `--name NAME`, `-n NAME`             | full NAME for display in the interface                              |
 | `--email EMAIL`, `-m EMAIL`          | unique EMAIL address of the user                                    |
 | `--password PASSWORD`, `-p PASSWORD` | PASSWORD for local authentication (8-72 characters)                 |
@@ -123,7 +123,7 @@ Du kannst ihn mit folgenden Flags kombinieren, um das Ausgabeformat und die maxi
 
 ### Beispiel Bericht
 
-| Client IP  | User Name | Realm | Status |     Last Login      | Failed At |
+| Client IP  | User Name | Realm | Status | Last Login          | Failed At |
 |------------|-----------|-------|--------|---------------------|-----------|
 | 172.19.0.1 | user      | api   | OK     | 2023-02-03 07:17:46 |           |
 | 172.19.0.1 | viewer    | api   | OK     | 2023-02-03 07:16:55 |           |

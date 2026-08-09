@@ -7,27 +7,27 @@ PhotoPrism bietet eine Vielzahl von Tastenkombinationen, mit denen du die App ef
 
 ## Allgemeine Seiten-Kurzbefehle
 
-| Tastenkombination         | Aktion               |
-|--------------------------|----------------------|
-| Strg + F                 | Suche fokussieren    |
-| Strg + R                 | Seite neu laden      |
-| Strg + U                 | Upload-Dialog öffnen |
-| Umschalt + Strg + F      | Filterleiste öffnen  |
+| Tastenkombination                                               | Aktion               |
+|-----------------------------------------------------------------|----------------------|
+| Strg + F                                                        | Suche fokussieren    |
+| Strg + R                                                        | Seite neu laden      |
+| Strg + U                                                        | Upload-Dialog öffnen |
+| Umschalt + Strg + F                                             | Filterleiste öffnen  |
 | Strg + F (auf Personen-, Kategorien-, Bibliotheksfehler-Seiten) | Suchfeld fokussieren |
 
 ## Viewer-Kurzbefehle
 
-| Tastenkombination         | Aktion                                 |
-|--------------------------|----------------------------------------|
-| Strg + I                 | Info-Seitenleiste umschalten           |
-| Strg + H                 | Bildunterschrift ein-/ausblenden       |
-| Strg + M                 | Stumm schalten/Stummschaltung aufheben |
-| Strg + S                 | Diashow abspielen/anhalten             |
-| Strg + X                 | Archivieren/Wiederherstellen           |
-| Strg + D                 | Herunterladen                          |
-| Strg + E                 | Bearbeiten                             |
-| Strg + F                 | Vollbildmodus öffnen                   |
-| Strg + L                 | Liken/Entliken                         |
+| Tastenkombination | Aktion                                 |
+|-------------------|----------------------------------------|
+| Strg + I          | Info-Seitenleiste umschalten           |
+| Strg + H          | Bildunterschrift ein-/ausblenden       |
+| Strg + M          | Stumm schalten/Stummschaltung aufheben |
+| Strg + S          | Diashow abspielen/anhalten             |
+| Strg + X          | Archivieren/Wiederherstellen           |
+| Strg + D          | Herunterladen                          |
+| Strg + E          | Bearbeiten                             |
+| Strg + F          | Vollbildmodus öffnen                   |
+| Strg + L          | Liken/Entliken                         |
 
 !!! tip ""
     Tastenkombinationen helfen dir, schneller zu arbeiten und die Hände auf der Tastatur zu lassen. Probiere sie aus, um deinen Workflow zu optimieren!
