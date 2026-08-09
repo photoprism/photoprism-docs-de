@@ -70,7 +70,7 @@ Um die generierten Kategorien an deine Bedürfnisse anzupassen, können die Defa
 - **System:** You are a PhotoPrism vision model. Emit JSON that matches the provided schema and keep label names short, singular nouns.
 - **Prompt:** Analyze the image and return label objects with name, confidence (0-1), and topicality (0-1).
 
-Halte die Prompts kurz und **behalte die Erinnerung an das JSON-Schema** für Kategorien. Für Bildunterschriften und Kategorien in anderen Sprachen solltest du die Basisanweisungen im Prompt auf Englisch belassen und nur die gewünschte Sprache ergänzen (z.B. „Respond in German“). Das funktioniert sowohl für Captions als auch für Label‑Prompts.
+Halte die Prompts kurz und **behalte die Erinnerung an das JSON-Schema** für Kategorien. Für Bildunterschriften und Kategorien in anderen Sprachen solltest du die Basisanweisungen im Prompt auf Englisch belassen und nur die gewünschte Sprache ergänzen (z.B. "Respond in German"). Das funktioniert sowohl für Captions als auch für Label‑Prompts.
 
 Beispiel:
 

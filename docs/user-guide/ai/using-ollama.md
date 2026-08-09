@@ -127,7 +127,7 @@ PhotoPrism wertet Modelle von unten nach oben in der Liste aus. Wenn du die Olla
 Von Ollama generierte Captions und Labels werden automatisch mit der Source `ollama` gespeichert. Du musst daher keinen speziellen `source`‑Wert angeben, außer du möchtest die Quelle explizit überschreiben.
 
 !!! tip "Prompt‑Lokalisierung"
-    Wenn du Ausgaben in anderen Sprachen erzeugen möchtest, lasse die Basisanweisungen im Prompt auf Englisch und ergänze nur die gewünschte Sprache (z.B. „Respond in German“). Dieses Vorgehen funktioniert sowohl für [Caption‑Prompts](ollama-models.md#qwen3-vl-caption) als auch für [Label‑Prompts](ollama-models.md#qwen3-vl-labels).
+    Wenn du Ausgaben in anderen Sprachen erzeugen möchtest, lasse die Basisanweisungen im Prompt auf Englisch und ergänze nur die gewünschte Sprache (z.B. "Respond in German"). Dieses Vorgehen funktioniert sowohl für [Caption‑Prompts](ollama-models.md#qwen3-vl-caption) als auch für [Label‑Prompts](ollama-models.md#qwen3-vl-labels).
 
 ## Schritt 4: PhotoPrism neu starten
 
@@ -172,7 +172,7 @@ photoprism --log-level=trace vision run -m caption --count 1 --force
 
 ### Unvollständige Captions bei Thinking‑Modellen
 
-Wenn du ein Reasoning‑ oder „Thinking"‑Modell verwendest und unvollständige oder abgeschnittene Captions erhältst, verbraucht das Modell möglicherweise den Großteil seines Output‑Token‑Budgets für internes Reasoning – sodass zu wenige Tokens für die eigentliche Caption übrig bleiben.
+Wenn du ein Reasoning‑ oder "Thinking"‑Modell verwendest und unvollständige oder abgeschnittene Captions erhältst, verbraucht das Modell möglicherweise den Großteil seines Output‑Token‑Budgets für internes Reasoning – sodass zu wenige Tokens für die eigentliche Caption übrig bleiben.
 
 Um das zu beheben, kannst du entweder Reasoning für das Modell mit `Service.Think: "false"` deaktivieren, zu einem Modell ohne Thinking wechseln oder den Wert von `NumPredict` in den [`vision.yml`](index.md#visionyml-reference) [Optionen](index.md#options) erhöhen, um dem Modell mehr Spielraum zu geben:
 
@@ -194,7 +194,7 @@ Options:
 
 ### GPU Performance Probleme
 
-Bei der Verwendung von Ollama mit GPU‑Beschleunigung kann es mit der Zeit zu Leistungseinbrüchen durch Probleme im VRAM‑Management kommen. Typische Anzeichen sind langsamere Verarbeitung und der Eindruck, dass der Dienst „abstürzt“, obwohl er noch Anfragen beantwortet – dann allerdings ohne GPU‑Nutzung.
+Bei der Verwendung von Ollama mit GPU‑Beschleunigung kann es mit der Zeit zu Leistungseinbrüchen durch Probleme im VRAM‑Management kommen. Typische Anzeichen sind langsamere Verarbeitung und der Eindruck, dass der Dienst "abstürzt", obwohl er noch Anfragen beantwortet – dann allerdings ohne GPU‑Nutzung.
 
 Die Ursache ist, dass die VRAM‑Belegung nach vielen Anfragen nicht sauber aufgeräumt wird und es zu Fragmentierung sowie fehlgeschlagenen GPU‑Aufrufen kommt.
 

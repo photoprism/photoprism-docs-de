@@ -4,7 +4,7 @@ Ein Backup von PhotoPrism sollte mindestens die Dateien in [deinem *originals* O
 
 !!! tldr ""
     Der einfachste Weg, ein vollständiges Backup zu erstellen, besteht darin, zunächst den Backup-Befehl auszuführen, um einen Datenbank-Dump zu erstellen, wie unten beschrieben.
-    Erstelle dann ein Backup deiner „*originals*“- und „*storage*“-Ordner mit einem beliebigen handelsüblichen Dateibackup-Programm.
+    Erstelle dann ein Backup deiner "*originals*"- und "*storage*"-Ordner mit einem beliebigen handelsüblichen Dateibackup-Programm.
 
 ## Automatische Backups
 

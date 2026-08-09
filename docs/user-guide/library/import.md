@@ -51,7 +51,7 @@ Import:
   Dest: 2006/01/20060102_150405_82F63B78.jpg
 ```
 
-Die Platzhalter für Datum und Uhrzeit werden in der [Dokumentation zum *time*-Paket beschrieben](https://pkg.go.dev/time#Layout). Die Verwendung einer anderen 8-stelligen Hexadezimalzahl wie „12345678“ für die [CRC32-Prüfsumme](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) und „.ext“ anstelle von „.jpg“ für die Dateierweiterung funktioniert ebenfalls. Ungültige und leere Schemata werden ignoriert und stattdessen wird der Standard verwendet.
+Die Platzhalter für Datum und Uhrzeit werden in der [Dokumentation zum *time*-Paket beschrieben](https://pkg.go.dev/time#Layout). Die Verwendung einer anderen 8-stelligen Hexadezimalzahl wie "12345678" für die [CRC32-Prüfsumme](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) und ".ext" anstelle von ".jpg" für die Dateierweiterung funktioniert ebenfalls. Ungültige und leere Schemata werden ignoriert und stattdessen wird der Standard verwendet.
 
 [Mehr Erfahren ›](https://docs.photoprism.app/getting-started/config-files/settings/#library)
 

@@ -39,7 +39,7 @@ Beachte, dass der abschließende Slash am Ende des Pfads nicht weggelassen werde
 
 ### Microsoft Windows
 
-Unter Windows musst du einen [Ressourcenstring in folgendem Format eingeben](#mit-webdav-verbinden), um den WebDAV-Zugang zu [konfigurieren](https://docs.photoprism.app/getting-started/troubleshooting/windows/#connecting-via-webdav), wobei „example.com“ durch den tatsächlichen Hostnamen deiner Instanz ersetzt werden muss:
+Unter Windows musst du einen [Ressourcenstring in folgendem Format eingeben](#mit-webdav-verbinden), um den WebDAV-Zugang zu [konfigurieren](https://docs.photoprism.app/getting-started/troubleshooting/windows/#connecting-via-webdav), wobei "example.com" durch den tatsächlichen Hostnamen deiner Instanz ersetzt werden muss:
 
 ```
 \\example.com@SSL\originals\

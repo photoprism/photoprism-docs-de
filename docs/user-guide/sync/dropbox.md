@@ -14,12 +14,12 @@ Du kannst [Dropbox](https://www.dropbox.com/) zur Speicherung deiner Bilder verw
 
 ## Automatischer Upload vom Smartphone
 
-Die Dropbox-Smartphone-Apps bieten zusätzlich eine „Kamera-Upload"-Funktion, die Bilder nach Dropbox und von dort auf jeden Rechner synchronisiert, auf dem Dropbox installiert ist.
+Die Dropbox-Smartphone-Apps bieten zusätzlich eine "Kamera-Upload"-Funktion, die Bilder nach Dropbox und von dort auf jeden Rechner synchronisiert, auf dem Dropbox installiert ist.
 
 So importierst du hochgeladene Dateien automatisch in PhotoPrism:
 
 1. Installiere die Dropbox-App für [iOS](https://itunes.apple.com/gb/app/dropbox/id327630330?mt=8) oder [Android](https://play.google.com/store/apps/details?hl=en_GB&id=com.dropbox.android).
-2. Aktiviere „Kamera-Uploads" in den Einstellungen der Dropbox-App.
+2. Aktiviere "Kamera-Uploads" in den Einstellungen der Dropbox-App.
 3. Installiere den Dropbox-[Desktop-Client](https://www.dropbox.com/install) auf deinem Server oder einem im Netzwerk erreichbaren Rechner.
 4. Konfiguriere den Ordner `Camera Uploads` als dein `import`-Verzeichnis für PhotoPrism.
     In deiner `compose.yaml` bzw. `docker-compose.yml` sieht das so aus:
@@ -27,7 +27,7 @@ So importierst du hochgeladene Dateien automatisch in PhotoPrism:
     volumes:
       - "~/Dropbox/Camera Uploads:/photoprism/import"
     ```
-5. Optional: Aktiviere „Dateien verschieben" in den Import-Einstellungen, um importierte Dateien aus Dropbox zu entfernen. Damit sparst du Dropbox-Speicherplatz und bleibst innerhalb der kostenlosen 2‑GB‑Stufe.
+5. Optional: Aktiviere "Dateien verschieben" in den Import-Einstellungen, um importierte Dateien aus Dropbox zu entfernen. Damit sparst du Dropbox-Speicherplatz und bleibst innerhalb der kostenlosen 2‑GB‑Stufe.
 
 !!! note ""
     Die Dropbox-Smartphone-App muss regelmäßig geöffnet werden, da sie sonst neue Bilder oft nicht erkennt und nicht synchronisiert.

@@ -9,7 +9,7 @@ Die Info-Seitenleiste öffnet sich neben dem Vollbildbetrachter und zeigt die Me
 
 ## Seitenleiste öffnen
 
-Drücke **Strg + I**, während ein Bild im Vollbildbetrachter geöffnet ist, oder wähle „Info-Seitenleiste umschalten“ aus dem Betrachter-Menü. Mit derselben Tastenkombination schließt du sie wieder. Die Position der Seitenleiste bleibt über Seitenaufrufe hinweg erhalten, sie bleibt also so lange geöffnet, bis du sie ausdrücklich schließt.
+Drücke **Strg + I**, während ein Bild im Vollbildbetrachter geöffnet ist, oder wähle "Info-Seitenleiste umschalten" aus dem Betrachter-Menü. Mit derselben Tastenkombination schließt du sie wieder. Die Position der Seitenleiste bleibt über Seitenaufrufe hinweg erhalten, sie bleibt also so lange geöffnet, bis du sie ausdrücklich schließt.
 
 ## Was sie anzeigt
 
