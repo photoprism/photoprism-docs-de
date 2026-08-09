@@ -131,4 +131,3 @@ Wenn du nicht die erwarteten Ergebnisse erhältst oder Fehler bemerkst, kannst d
 photoprism --log-level=trace vision run -m labels --count 1 --force
 photoprism --log-level=trace vision run -m caption --count 1 --force
 ```
-

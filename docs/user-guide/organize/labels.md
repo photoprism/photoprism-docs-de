@@ -28,12 +28,12 @@ Du kannst dir die übergeordneten Kategorien zusätzlich zu den gewohnten Katego
 ### Kategorie hinzufügen ###
 1. Öffne den [*Bearbeitungs-Dialog*](edit.md) eines Bildes
 2. Gehe zum Tab *Kategorien*
-3. Klicke auf das *Kategorie-Feld* in der letzten Zeile der Tabelle 
+3. Klicke auf das *Kategorie-Feld* in der letzten Zeile der Tabelle
 4. Gib den Kategorienamen ein
 5. Klicke auf :material-plus: in der rechten Spalte
 
     ![Screenshot](img/add-label-2503-german.jpg){ class="shadow" }
-    
+
 ### Kategorien von Bilder/Videos entfernen/löschen ###
 
 Automatisch zugewiesene *Kategorien* können entfernt werden. Manuell hinzugefügte *Kategorien* können gelöscht werden.
@@ -43,10 +43,10 @@ Automatisch zugewiesene *Kategorien* können entfernt werden. Manuell hinzugefü
 3. Klicke auf :material-minus: oder :material-delete: um die Kategorie zu entfernen oder zu löschen
 
     ![Screenshot](img/remove-label-1-2503-german.jpg){ class="shadow" }
-    
+
 !!! info ""
     Entfernte *Kategorien* bekommen die Wahrscheinlichkeit 0% zugewiesen. Sie können jederzeit durch klicken auf :material-plus: wieder aktiviert werden.
-    
+
    ![Screenshot](img/remove-label-2-2503-german.jpg){ class="shadow" }
 
 !!! info ""
@@ -60,7 +60,6 @@ Automatisch zugewiesene *Kategorien* können entfernt werden. Manuell hinzugefü
 3. Ändere den Namen
 4. Klicke auf Speichern
 ![Screenshot](img/edit-label-2-2503-german.jpg){ class="shadow" }
-
 
 !!! attention ""
     Beachte, dass diese Änderung alle Bilder betrifft, die mit dieser *Kategorie* verknüpft sind.
@@ -77,5 +76,5 @@ Automatisch zugewiesene *Kategorien* können entfernt werden. Manuell hinzugefü
     Wenn eine gelöschte *Kategorie* wieder hergestellt werden soll, muss diese einem Bild hinzugefügt sowie die [*Indexierung*](../library/originals.md) gestartet werden.
 
 ![Screenshot](img/delete-label-1-2503-german.jpg){ class="shadow" }
-    
+
 ![Screenshot](img/delete-label-2-2503-german.jpg){ class="shadow" }

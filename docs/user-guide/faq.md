@@ -10,7 +10,7 @@
 
       ↪ [Datenschutzerklärung](https://www.photoprism.app/privacy/#section-7){ class="pr-3 block-xs" } ↪ [Compliance FAQ](https://www.photoprism.app/kb/compliance-faq/#privacy)
 
-    Um deine Installation erfolgreich einzurichten und Standortdetails in PhotoPrism anzuzeigen, musst du [Anfragen an diese API-Endpunkte zulassen](https://docs.photoprism.app/getting-started/troubleshooting/firewall), wenn du eine Firewall installiert hast, und sicherstellen, dass deine Internetverbindung funktioniert:    
+    Um deine Installation erfolgreich einzurichten und Standortdetails in PhotoPrism anzuzeigen, musst du [Anfragen an diese API-Endpunkte zulassen](https://docs.photoprism.app/getting-started/troubleshooting/firewall), wenn du eine Firewall installiert hast, und sicherstellen, dass deine Internetverbindung funktioniert:  
 
     [![](https://dl.photoprism.app/img/diagrams/proxy-cdn.svg){ class="w100" }](https://docs.photoprism.app/getting-started/troubleshooting/firewall)
 
@@ -19,25 +19,25 @@
 ??? question "Warum sind einige Funktionen nur für Mitglieder verfügbar?"
 
     PhotoPrism ist **100% selbstfinanziert und unabhängig**. Freiwillige Spenden decken nicht die Kosten für ein Team, das Vollzeit arbeitet, um dich mit Updates, Dokumentation und Support zu versorgen. Es ist deine Entscheidung, ob du dich anmelden möchtest, um zusätzliche Vorteile zu genießen.
-    
+
     [Mitgliedschafts FAQ ›](https://www.photoprism.app/membership/faq/)
 
 ??? question "Was sind die Vorteile des Kaufs einer kommerziellen Lizenz?"
 
-    Ein wesentlicher Unterschied zwischen der [Open Source Lizenz](https://docs.photoprism.app/license/agpl/) und  einem [kommerziellen Lizenzvertrag](https://www.photoprism.app/teams/) besteht darin, dass du Zugang zu zusätzlichen Support- und Konfigurationsoptionen sowie das Recht erhälst, die Funktionalität an deine Bedürfnisse anzupassen, ohne dass du deine Änderungen veröffentlichen musst. 
-    Unsere [Compliance-FAQ](https://www.photoprism.app/kb/compliance-faq/) geben Antworten auf die am häufigsten gestellten Fragen zur Produkt-Compliance und Skalierbarkeit.    
+    Ein wesentlicher Unterschied zwischen der [Open Source Lizenz](https://docs.photoprism.app/license/agpl/) und  einem [kommerziellen Lizenzvertrag](https://www.photoprism.app/teams/) besteht darin, dass du Zugang zu zusätzlichen Support- und Konfigurationsoptionen sowie das Recht erhälst, die Funktionalität an deine Bedürfnisse anzupassen, ohne dass du deine Änderungen veröffentlichen musst.
+    Unsere [Compliance-FAQ](https://www.photoprism.app/kb/compliance-faq/) geben Antworten auf die am häufigsten gestellten Fragen zur Produkt-Compliance und Skalierbarkeit.  
 
     [Team Editionen Vergleichen ›](https://www.photoprism.app/teams/#compare)
 
 ??? question "Wann genau werden neuen Funktionen veröffentlicht?"
 
-    Unsere [Roadmap](https://link.photoprism.app/roadmap) zeigt, welche Aufgaben in Arbeit sind und welche Funktionen als nächstes implementiert werden. 
+    Unsere [Roadmap](https://link.photoprism.app/roadmap) zeigt, welche Aufgaben in Arbeit sind und welche Funktionen als nächstes implementiert werden.
     Du kannst Ideen, die dir gefallen, mit einem Daumen hoch bewerten, damit wir wissen, was am beliebtesten ist.
 
     Wir haben eine Zero Bug Policy und geben unser Bestes, Nuztern zu helfen, wenn sie Fragen haben.
-    Aus diesem Grund können wir keine exakten Veröffentlichungstermine für neue Funktionen geben. 
-    
-    Unser Team erhält viel mehr Anfragen als umgesetzt werden können. Wir möchten daher betonen, dass wir in keiner Weise verpflichtet sind, die von dir angeforderten Funktionen, Verbesserungen oder sonstigen Änderungen umzusetzen. 
+    Aus diesem Grund können wir keine exakten Veröffentlichungstermine für neue Funktionen geben.
+
+    Unser Team erhält viel mehr Anfragen als umgesetzt werden können. Wir möchten daher betonen, dass wir in keiner Weise verpflichtet sind, die von dir angeforderten Funktionen, Verbesserungen oder sonstigen Änderungen umzusetzen.
     Wir freuen uns jedoch über dein Feedback und werden alle Anfragen sorgfältig prüfen.
 
     **Da eine [nachhaltige Finanzierung](https://www.photoprism.app/oss/faq/) der Schlüssel zur schnellen Veröffentlichung neuer Funktionen ist, ermutigen wir alle Nutzer, unsere Mission zu unterstützen, indem sie [sich als Mitglied anmelden](https://www.photoprism.app/membership/) oder eine [kommerzielle Lizenz](https://www.photoprism.app/teams/) erwerben.**
@@ -46,8 +46,8 @@
 
 ??? question "Wie kann ich meine Mitgliedschaft aktivieren?"
 
-    Um eine neue Instanz mit deinem Mitgliedskonto zu verbinden, musst du dich mit dem Admin-Benutzer anmelden, der bei der Einrichtung automatisch erstellt wird (siehe deine `docker-compose.yml`-Datei oder die App-Store-Dokumentation), und dann die in unserem Aktivierungs-Guide beschriebenen Schritte ausführen.    
-    
+    Um eine neue Instanz mit deinem Mitgliedskonto zu verbinden, musst du dich mit dem Admin-Benutzer anmelden, der bei der Einrichtung automatisch erstellt wird (siehe deine `docker-compose.yml`-Datei oder die App-Store-Dokumentation), und dann die in unserem Aktivierungs-Guide beschriebenen Schritte ausführen.  
+
     [Aktivierungs-Guide ›](https://www.photoprism.app/kb/activation/)
 
 ??? question "Gibt es Alternativen zu einem wiederkehrenden Abonnement?"
@@ -56,14 +56,14 @@
 
     Wenn du dich für eine Silber-, Gold- oder Platin-Mitgliedschaft anmelden möchtest, kannst du das entweder [direkt auf unserer Website](https://my.photoprism.app/register) oder [auf Patreon](https://www.patreon.com/photoprism) tun, wo du auch jährlich mit einem Rabatt von 15% zahlen kannst.
 
-    Beachte, dass du als Lifetime-Mitglied Updates und Support für deinen persönlichen Gebrauch von uns erhältst, anders als bei sogenannten "Lifetime"-Lizenzen, die vielleicht nur bis zur Veröffentlichung der nächsten Hauptversion gültig sind.    
-    
+    Beachte, dass du als Lifetime-Mitglied Updates und Support für deinen persönlichen Gebrauch von uns erhältst, anders als bei sogenannten "Lifetime"-Lizenzen, die vielleicht nur bis zur Veröffentlichung der nächsten Hauptversion gültig sind.  
+
     [Mitgliedschaften FAQ ›](https://www.photoprism.app/membership/faq/) [Anmelden ›](https://link.photoprism.app/membership)
 
 ??? question "Was passiert, wenn ich meine Mitgliedschaft kündige?"
 
     Wenn du Anspruch auf eine lebenslange Essentials- oder Plus-Mitgliedschaft hast, kannst du diese Funktionen weiterhin nutzen, auch wenn du dich entscheidest, uns nicht mehr zu unterstützen. Ansonsten kannst du weiterhin alle frei verfügbaren Funktionen nutzen. In keinem Fall verlierst du den Zugriff auf deine Bilder.
-    
+
     [Mitgliedschaften Vergleichen >](https://www.photoprism.app/editions/#compare)
 
 ## Benutzer-Oberfläche ##
@@ -73,7 +73,7 @@
     Ja, das ist möglich. Wie es funktioniert, hängt davon ab, welche Art von Gerät du benutzt.
 
     **Desktop Browser**
-    
+
     Wähle das erste Bild aus, indem du auf :material-checkbox-blank-circle-outline: in der unteren rechten Ecke klickst.
 
     Die Benutzeroberfläche befindet sich jetzt im Auswahlmodus:
@@ -90,21 +90,21 @@
     - Um zusätzlich einzelne Bilder auszuwählen, klicke/touche irgendwo auf sie, außer auf die Symbole in der Ecke.
     - Um mehrere Bilder auf einmal auszuwählen, mache einen langen Klick, damit alle Bilder zwischen dem zuletzt ausgewählten Bild und dem Bild, auf das du lange klickst, ausgewählt werden
 
-??? question "Kann ich meine Bilder und Alben in Baumstrukturen organisieren?" 
-    
+??? question "Kann ich meine Bilder und Alben in Baumstrukturen organisieren?"
+
     Außerhalb der Bereiche *Dateien > Originale* und *Kategorien* unterstützt PhotoPrism aus folgenden Gründen keine hierarchische Organisation von Dateien:
-    
+
     Zum Einen gibt es schon viele Anwendungen (einschließlich Windows Explorer und Mac OS Finder), die Ordner auf diese Weise anzeigen.
-    
+
     Der Umgang mit Namespaces stellt eine besondere Herausforderung für die Benutzeroberfläche dar.
     Zum Beispiel könnte ein Album mit Namen "Berlin" 5 Mal an unterschiedlichen Stellen in der Hierarchie existieren.
     Um Missverständnissen vorzubeugen müsste man statt nur dem Album immer den kompletten Kontext anzeigen, was auf kleinen Bildschirmen schwer umzusetzen ist.
-    
+
     Persönliche Alben können nach Zeit sortiert sowie mit weiteren Filtern gesucht werden.
     Im Geschäftsumfeld dagegen, werden Baumstrukturen häufig benötigt, um Verantwortlichkeiten und [Zugänge](https://github.com/photoprism/photoprism/issues/455#issuecomment-675859270) zu organisieren.
     Wir werden später eventuell eine extra Version für Geschäftskunden veröffentlichen.
-    
-    Während du die Freiheit hast, deine Original Dateien und Ordner zu organisieren wie du möchtest, denken wir, dass Baumstrukturen kein Teil der PhotoPrism 
+
+    Während du die Freiheit hast, deine Original Dateien und Ordner zu organisieren wie du möchtest, denken wir, dass Baumstrukturen kein Teil der PhotoPrism
     Benutzeroberfläche sein sollten.
     Die meisten Nutzer können ihre Erinnerungen nicht strikt hierarchisch sortieren und bevorzugen es ihre Bilder in mehreren Dimensionen zu entdecken.
 
@@ -119,7 +119,7 @@
     Alle Benutzer haben Zugriff auf eine [hochauflösende Vektorkarte](https://maps.photoprism.app/){:target="_blank"}, die wir auf [unserer eigenen Infrastruktur](https://github.com/photoprism/photoprism/issues/2998){:target="_blank"} hosten, sodass kein kommerzieller API-Schlüssel erforderlich ist. Sie basiert auf [von OpenStreetMap veröffentlichten Daten](https://planet.openstreetmap.org/){:target="_blank"} (OSM).
 
     Darüber hinaus stellen wir [unseren Mitgliedern](https://www.photoprism.app/membership/) und [Geschäftskunden](https://www.photoprism.app/teams/#compare) automatisch einen API-Schlüssel für den kommerziellen Dienst von MapTiler zur Verfügung, der [Satelliten-, Outdoor- und 3D-Karten](https://www.photoprism.app/kb/personal/#maps-and-places) umfasst. Du kannst diese auf [unserer öffentlichen Demo](https://try.photoprism.app/library/places){:target="_blank"} testen.
-    
+
     [Mehr erfahren ›](https://www.photoprism.app/kb/personal/#maps-and-places)
 
 ??? question "Warum nutzt ihr nicht den kostenlosen Kartendienst von OpenStreetMap?"
@@ -137,7 +137,7 @@
     PhotoPrism unterstützt Indexieren, Anzeigen und [Konvertierung](./settings/library.md) der meisten gängigen Bild-, Video- und RAW-Dateiformate, einschließlich JPEG, PNG, GIF, BMP, HEIF, HEIC, MP4, MOV, WebP und WebM. [TIFF wird teilweise unterstützt](https://github.com/golang/go/issues?q=is%3Aissue+image%2Ftiff+) ohne Erweiterungen wie GeoTIFF.
 
     Bei der Indexierung wird automatisch eine JPEG- oder PNG-Sidecar-Datei für Videos und Bilder in anderen Formaten, wie RAW oder Vektorgrafiken, erstellt. Sie wird für die Erstellung von Thumbnails, die Bildklassifizierung und die Gesichtserkennung benötigt. Die Unterstützung von JPEG XL ist geplant, sobald es allgemein verfügbar ist und genügend kompatible Programme existieren.
-    
+
     Falls installiert, ist die Konvertierung von RAW-Dateien mit den folgenden Konvertern möglich (unser Docker-Image enthält beide):
 
     - [Darktable](https://www.darktable.org/) ([unterstützte Kameras](https://www.darktable.org/resources/camera-support/))
@@ -147,41 +147,40 @@
     Unser Ziel ist es, erstklassige Unterstützung für alle RAW-Formate zu bieten, unabhängig von Kameramarke und -modell.
     Falls du Probleme mit einem bestimmten Dateiformat hast, öffne gerne ein Ticket.
 
-    
     Von [FFmpeg](https://en.wikipedia.org/wiki/FFmpeg#Supported_codecs_and_formats) unterstützte [Videoformate](https://docs.photoprism.app/developer-guide/media/) können zu
     [MPEG-4 AVC](https://en.wikipedia.org/wiki/Advanced_Video_Coding) transkodiert werden, um maximale Browser-Kompatibilität zu gewährleisten. Aus den meisten Videos können auch Standbilder für die Erstellung von Thumbnails extrahiert werden.
-    
+
     Du solltest PhotoPrism so konfigurieren, dass automatisch JSON Sidecar-Dateien erstellt werden, wenn Du Videos, Live-Fotos und/oder [animierte GIFs](https://github.com/photoprism/photoprism/issues/590) hast, damit videospezifische Metadaten wie Codec, Frames und Dauer extrahiert, indexiert und durchsucht werden können.
 
     Eine vollständige Liste der Dateiformate und -erweiterungen findest du [hier](https://docs.photoprism.app/developer-guide/media/).
 
 ??? question "Welche Metadaten-Dateitypen werden unterstützt?"
-    
+
     Derzeit werden folgende Metadaten-Formate unterstützt
 
     #### JSON ####
-    
+
     Wenn [Exiftool](https://exiftool.org/) nicht über `PHOTOPRISM_DISABLE_EXIFTOOL` oder `--disable-exiftool` deaktiviert ist, wird es verwendet,
-    um automatisch eine JSON-Sidecar-Datei für jede Mediendatei zu erstellen. 
+    um automatisch eine JSON-Sidecar-Datei für jede Mediendatei zu erstellen.
 
     **Auf diese Weise können auch eingebettete XMP- und Video-Metadaten ausgelesen werden.**
     Die native Metadatenextraktion ist auf die üblichen Exif-Header beschränkt. Beachte, dass dies bei der ersten Indexierung einen geringen Overhead erzeugt.
-    
+
     JSON-Dateien können auch für die Fehlersuche nützlich sein, da sie die vollständigen Metadaten enthalten und mit gängigen Entwicklungswerkzeugen und Texteditoren verarbeitet werden können.
-    
+
     *JSON-Dateien, die aus Google Photos exportiert wurden, können ebenfalls gelesen werden. Die Unterstützung für weitere Schemata kann im Laufe der Zeit hinzugefügt werden.*
- 
+
     #### YAML ####
-    
+
     Sofern Metadaten Backups nicht über `PHOTOPRISM_SIDECAR_YAML` deaktiviert sind, erstellt/aktualisiert PhotoPrism automatisch
-    [menschenlesbare YAML-Dateien](https://docs.photoprism.app/developer-guide/technologies/yaml/) während der Indexierung und nach manueller Bearbeitung von Feldern wie Titel, Datum oder Ort. 
+    [menschenlesbare YAML-Dateien](https://docs.photoprism.app/developer-guide/technologies/yaml/) während der Indexierung und nach manueller Bearbeitung von Feldern wie Titel, Datum oder Ort.
     Sie dienen als Backup, falls die Datenbank (Index) verloren geht, oder bei der Synchronisation von Ordnern mit einer anderen Instanz.
-    
+
     Wie JSON können auch [YAML-Dateien](https://docs.photoprism.app/developer-guide/technologies/yaml/) mit gängigen Entwicklungswerkzeugen und
     Texteditoren geöffnet werden. Änderungen werden jedoch nicht mit dem ursprünglichen Index synchronisiert, da dadurch bestehende Daten überschrieben werden könnten.
- 
+
     #### XMP ####
-    
+
     XMP (Extensible Metadata Platform) ist ein XML-basiertes Metadaten-Containerformat [entwickelt von Adobe](https://www.adobe.com/products/xmp.html).
     Es bietet deutlich mehr Felder (als Teil von eingebetteten Modellen wie Dublin Core) als Exif. Dies macht es auch schwierig - wenn nicht
     wenn nicht gar unmöglich - eine vollständige Unterstützung zu bieten. Das Lesen von Titel, Copyright, Künstler und Bildunterschrift aus XMP-Sidecar-Dateien ist
@@ -194,7 +193,7 @@
     Außerdem solltest du [Exiftool](settings/advanced.md#exiftool-deaktivieren) aktiviert haben, um Metadaten wie Dauer, Auflösung und Codec zu extrahieren.
 
 ??? question "Ich vermisse einige Dateien, wo könnten sie sein?"
-   
+
     Falls du den [Qualitätsfilter](organize/review.md) aktiviert hast, findest du deine Bilder eventuell im Bereich *Überprüfen*.
     Es kann auch sein, dass das Format der Bilder nicht unterstützt wird, oder die Bilder kaputt sind.
     Haben mehrere Dateien den gleichen Namen oder exakt das gleiche Datum und den gleichen Aufnahmeort oder die gleiche ID,
@@ -202,7 +201,7 @@
 
     [Checklist ansehen ›](https://docs.photoprism.app/getting-started/troubleshooting/#missing-pictures)
 
-??? question "Unter welchen Bedingungen können Dateien gruppiert werden?" 
+??? question "Unter welchen Bedingungen können Dateien gruppiert werden?"
 
     1. Gleichnamige Dateien, die sich im selben Ordner befinden, z.B. `/2018/IMG_1234.jpg` und  `/2018/IMG_1234.avi`, werden immer gruppiert.
     2. Dateien mit fortlaufenden Namen, wie `/2018/IMG_1234 (2).jpg` und `/2018/IMG_1234 (3).jpg`, können optional gruppiert werden.
@@ -218,17 +217,17 @@
     Wenn du die Bildstapel-Einstellungen unter *[Einstellungen > Inhalte](settings/library.md)* änderst, werden Dateien, die bereits gruppiert sind, **nicht automatisch voneinander getrennt**. Das liegt daran, dass das Entstapeln ein ressourcenintensiver Vorgang ist, bei dem jede Datei neu indexiert werden muss.
 
     Das Ergebnis hängt auch von der genauen Reihenfolge ab, in der du die Dateien entstapelst, da z. B. Nicht-Medien-Sidecar-Dateien an die verbleibende Mediendatei in einem Stapel gebunden bleiben. Wir denken darüber nach, in einer zukünftigen Version einen entsprechenden Befehl bereitzustellen.
- 
+
     Wenn du PhotoPrism zum ersten Mal verwendest und deine Bibliothek mit anderen Einstellungen neu indexieren möchtest, kannst du den Befehl `photoprism reset` [in einem Terminal](https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface) ausführen, um den Index zurückzusetzen und von vorne zu beginnen. [Mehr erfahren >](https://docs.photoprism.app/getting-started/docker-compose/#examples)
 
 ??? question "Es sind bereits einige meiner Bilder indexiert. Warum befinden sich noch keine Bilder in den Bereichen Ordner, Kalender und Ereignisse?"
-   
+
     Bilder werden erst am Ende der Indexierung zu den Bereichen Ordner, Kalender und Ereignisse hinzugefügt.
 
 ??? question "Warum zeigt die Navigation unterschiedliche Zahlen für *Suche* und *Originale* an?"
 
     Der Bereich *Dateien > Originale* zeigt Dateien an, während in *Suche* Bilder und Videos dargestellt werden.
-    
+
     Bilder und Videos können aus mehreren Dateien bestehen:
 
     * RAW + JPG + XMP = 1 Bild, 3 Dateien
@@ -238,8 +237,8 @@
 
 ??? question "Wann sollte ich meinen Index vollständig aktualisieren?"
 
-    Wir empfehlen, nach größeren Aktualisierungen einen kompletten Rescan durchzuführen, um die Vorteile der neuen Suchfilter und Sortieroptionen zu nutzen. 
-    Lies unbedingt [die Hinweise zu jeder Version](https://docs.photoprism.app/release-notes/), um herauszufinden, welche Änderungen vorgenommen wurden und ob sie sich auf deine Bibliothek auswirken könnten, z. B. wegen der Dateitypen, die du hast, oder weil neue Suchfunktionen hinzugefügt wurden. 
+    Wir empfehlen, nach größeren Aktualisierungen einen kompletten Rescan durchzuführen, um die Vorteile der neuen Suchfilter und Sortieroptionen zu nutzen.
+    Lies unbedingt [die Hinweise zu jeder Version](https://docs.photoprism.app/release-notes/), um herauszufinden, welche Änderungen vorgenommen wurden und ob sie sich auf deine Bibliothek auswirken könnten, z. B. wegen der Dateitypen, die du hast, oder weil neue Suchfunktionen hinzugefügt wurden.
     Wenn du auf Probleme stößt, die du anders nicht lösen kannst (also bevor du einen Fehler meldest), versuche bitte auch einen Rescan und schaue, ob das Problem dadurch gelöst wird.
 
     Du kannst einen [Rescan über die Benutzeroberfläche](library/originals.md) starten, indem du zu *Dateien* > *Index* navigierst, "Index vollständig aktualisieren" auswählst und dann auf "Start" klickst.
@@ -258,22 +257,22 @@
 ??? question "Was ist eine RAW-Bilddatei?"
 
     Professionelle und semiprofessionelle Fotografen bewahren ihre Originale oft in einem [verlustfreien RAW-Format](https://en.wikipedia.org/wiki/Raw_image_format) auf, das den Aufnahmen mit dem physischen Sensor entspricht, und nicht in einem komprimierten Bildformat wie JPEG, besonders wenn sie mit einer digitalen Spiegelreflexkamera fotografieren. Auch neuere Handys können Bilder im RAW-Format aufnehmen. Unser Ziel ist es, erstklassige Unterstützung für [alle RAW-Dateien](https://docs.photoprism.app/getting-started/faq/#what-media-file-types-are-supported) zu bieten, unabhängig von Kameramarke und -modell. Eine vollständige Liste der Dateitypen und -erweiterungen findest du in unserer [Knowledge Base](https://www.photoprism.app/kb/file-formats/).
-    
+
     Da Webbrowser RAW-Dateien in der Regel nicht direkt anzeigen können, müssen sie konvertiert werden. Das geschieht beim [Import](library/import.md) oder beim [initialen Indexieren](library/originals.md). Die Konvertierung kann auch manuell [in einem Terminal](https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface) mit dem Befehl `photoprism convert` durchgeführt werden.
 
 ??? question "Werden JPEGs aktualisiert, wenn sich RAW- oder XMP-Dateien ändern?"
 
     JPEGs werden derzeit nicht neu generiert, wenn sich zugehörige RAW- oder XMP-Dateien ändern. RAW-Dateien sind von vornherein digitale Negative. PhotoPrism geht daher davon aus, dass ihre Bildinformationen unveränderlich sind.
 
-    XMP-Dateien können das Erscheinungsbild beeinflussen, aber die meisten der darin enthaltenen Metadaten, wie z. B. Titel und Bildunterschrift, sind davon nicht betroffen. 
-    Die Erstellung von JPEGs aus RAW-Dateien ist eine zeitaufwändige Aufgabe und würde in den meisten Fällen einen enormen, nicht zu rechtfertigenden Overhead verursachen. 
+    XMP-Dateien können das Erscheinungsbild beeinflussen, aber die meisten der darin enthaltenen Metadaten, wie z. B. Titel und Bildunterschrift, sind davon nicht betroffen.
+    Die Erstellung von JPEGs aus RAW-Dateien ist eine zeitaufwändige Aufgabe und würde in den meisten Fällen einen enormen, nicht zu rechtfertigenden Overhead verursachen.
     Hinzu kommt, dass die Rendering-Informationen in XMP-Dateien nicht gut standardisiert sind. So sind beispielsweise Änderungen, die Sie in Photoshop vornehmen, möglicherweise nicht mit Darktable kompatibel.
 
     Wir empfehlen, vorhandene JPEG-Sidecar-Dateien bei Bedarf manuell zu aktualisieren oder zusätzliche JPEGs zu erstellen, damit Sie zwischen verschiedenen Versionen wählen können. Neue Dateien und andere Metadatenänderungen werden wie üblich beim Scannen Ihrer Bibliothek erkannt und in den Index aufgenommen.
 
 ??? question "Bleiben Bearbeitungen bei der Konvertierung eines RAW-Bildes mit einer XMP-Sidecar-Datei erhalten?"
 
-    PhotoPrism unterstützt derzeit Darktable und RawTherapee als RAW-Konverter. Darktable unterstützt XMP-Sidecar-Dateien vollständig, RawTherapee nur teilweise. XMP ist jedoch nur ein "Container"-Format, daher unterscheiden sich die Felder (Namensräume), die dort verwendet werden, um anzugeben, wie ein Bild konvertiert werden soll (sowie andere Metadaten) zwischen Lightroom/Photoshop, Darktable und RawTherapee.    
+    PhotoPrism unterstützt derzeit Darktable und RawTherapee als RAW-Konverter. Darktable unterstützt XMP-Sidecar-Dateien vollständig, RawTherapee nur teilweise. XMP ist jedoch nur ein "Container"-Format, daher unterscheiden sich die Felder (Namensräume), die dort verwendet werden, um anzugeben, wie ein Bild konvertiert werden soll (sowie andere Metadaten) zwischen Lightroom/Photoshop, Darktable und RawTherapee.  
 
     Mit anderen Worten: Nur weil eine Anwendung generell XMP unterstützt, heißt das nicht, dass sie Metadaten verwenden kann, die mit einer anderen Anwendung oder von einem anderen Anbieter wie Adobe erstellt wurden. Wenn du denkst, dass das verwirrend ist, dann stimmt das auch. Du hast zwar ein offenes Format, bist aber immer noch an einen bestimmten Anbieter gebunden - wahrscheinlich nicht ganz unbeabsichtigt von Adobe.
 
@@ -285,19 +284,18 @@
 
     Unsere Such-API und die Benutzeroberfläche führen eine Dateisuche durch. Dies ist beabsichtigt, da "Bildstapel" Dateien unterschiedlichen Typs und unterschiedlicher Eigenschaften, wie z. B. Farbe, enthalten können.
 
-    So kann es beispielsweise Farb- und Schwarzweißversionen geben. Wenn nach diesen gesucht wird oder Bilder nach Farbe sortiert werden, muss die Benutzeroberfläche nun einzelne Dateien anzeigen. Andernfalls würden die Ergebnisse, die ein Farbbild/Video anzeigen, wenn nach Schwarzweiß gefiltert wird, keinen Sinn ergeben.    
-    
+    So kann es beispielsweise Farb- und Schwarzweißversionen geben. Wenn nach diesen gesucht wird oder Bilder nach Farbe sortiert werden, muss die Benutzeroberfläche nun einzelne Dateien anzeigen. Andernfalls würden die Ergebnisse, die ein Farbbild/Video anzeigen, wenn nach Schwarzweiß gefiltert wird, keinen Sinn ergeben.  
+
     Ebenso finden Sie bei der Suche nach `Dateiname.mp4.*` nur JPEGs ohne Video, da die Videodateierweiterung `.mp4` nicht mit einem Punkt endet.
 
-    Wir empfehlen die Verwendung der Filter `path:` und/oder `name:` mit Wildcards, wenn die Suche nach einzelnen Dateien die Suchergebnisse zu sehr einschränkt. Die meisten Nutzer werden alle zusammengehörigen Dateien finden wollen, damit sie zusammen angezeigt werden können, z. B. als Live-Fotos, die aus einem Video und einem Bild bestehen.    
+    Wir empfehlen die Verwendung der Filter `path:` und/oder `name:` mit Wildcards, wenn die Suche nach einzelnen Dateien die Suchergebnisse zu sehr einschränkt. Die meisten Nutzer werden alle zusammengehörigen Dateien finden wollen, damit sie zusammen angezeigt werden können, z. B. als Live-Fotos, die aus einem Video und einem Bild bestehen.  
     Sie können diese Filter mit anderen Filtern wie `live` kombinieren, um sicherzustellen, dass die Ergebnisse nur Bilder mit einem bestimmten Medientyp enthalten. Alternativ können Sie auch den Filter "filename:" mit einem freizügigeren Platzhalter verwenden, der die Dateierweiterung ausschließt.
-
 
 ## Metadaten ##
 ??? question "Windows zeigt andere Metadaten an. Könnte das ein Fehler in PhotoPrism sein?"
 
     Wir empfehlen, dass du [Exiftool](https://exiftool.org/) verwendest, um alle Metadatenfelder und -werte zu prüfen, da Windows nur eine begrenzte Funktionalität hat.
-    
+
     Vielleicht wird dann klar, warum es Unterschiede gibt. Es könnte zum Beispiel sein, dass Windows einige Felder nicht unterstützt und sie deshalb ignoriert oder dass die angezeigten Daten tatsächlich aus dem Dateisystem und nicht aus den Dateien stammen. Wenn du immer noch glaubst, einen Fehler gefunden zu haben, stelle uns bitte [Beispieldateien](https://www.photoprism.app/contact/#file-samples) zur Verfügung, damit wir das Problem reproduzieren können.
 
 ??? question "Warum wird das Datum von Bildern ohne Metadaten in den Suchergebnissen als *Unbekannt* angezeigt?"
@@ -313,14 +311,14 @@
 
     Das kommt vor, wenn es zum Aufnahmezeitpunkt Probleme mit deinen Kameraeinstellungen gab.
     Du kannst das Datum im [Bearbeitungs-Dialog](organize/edit.md) ändern. Hier wird allerdings nur der Index in PhotoPrism geändert.
-    
+
     Um das Datum direkt in deiner Originaldatei zu ändern nutze bitte andere Apps wie Photoshop oder Exiftool und indexiere deine Dateien anschließend erneut.
 
 ??? question "Was ist der Unterschied zwischen Suchbegriffen und Kategorien"
 
     Suchbegriffe bestehen aus einer Liste von Begriffen, welche aus Metadaten, Dateinamen und anderen Quellen, wie Geoddaten, extrahiert wurden.
     Bilder mit passenden Suchbegriffen tauchen automatisch auch in den entsprechenden Kategorien auf.
-    
+
     Auch wenn sich Suchbegriffe und Kategorien überschneiden können, dienen sie unterschiedlichen Zwecken:
 
     * **Kategorien** können übergeordnete Kategorien haben und werden primär für die Klassifizierung verwendet, z.B. "Tier", "Katze", "Boot".
@@ -340,7 +338,7 @@
 
 ## WebDAV ##
 ??? question "Warum bekomme ich eine Fehlermeldung, wenn ich versuche einen Remote Server als Synchronisationsziel hinzuzufügen?"
-   
+
     PhotoPrism testet einige [übliche Endpoints](https://github.com/photoprism/photoprism/blob/develop/internal/service/heuristic.go), wenn ein neuer Remote Server
     hinzugefügt wird.
     Falls diese Tests fehlschlagen, wird dir eine Fehlermeldung angezeigt. Hierfür kann es unterschiedliche Gründe geben:
@@ -353,20 +351,20 @@
     - Benutzername oder Passwort sind falsch.
 
     Wenn du keine Probleme hast, das Terminal zu benutzen, kannst du [Curl](https://curl.se/) verwenden, um [HTTP Verbindungen zu testen](https://code.blogs.iiidefix.net/posts/webdav-with-curl/).
- 
+
     ```
     curl -X PROPFIND -H "Depth: 1" -u user:pass https://example.org/webdav/
     ```
-    
+
     Benutze Curl am besten im gleichen Docker-Container/der gleichen VM/der gleichen Server Umgebung, auf der du PhotoPrism installiert hast.
 
 ??? question "Wenn ich mit meiner Synchronisations App eine WebDAV Verbindung aufbauen will, bekomme ich den Fehler "TLS Paket-Header können nicht gelesen werden"?"
 
     Aufgrund von Sicherheitsbedenken haben einige Apps, wie [FolderSync](https://foldersync.io/docs/faq/#https-connection-errors), den
     Support f̈́ür HTTP ohne SSL eingestellt.
-    
+
     Wenn du PhotoPrism auf einem öffentlichen Server außerhalb deines Heimnetzwerks installierst, führe es bitte **immer hinter einem sicheren Reverse HTTP Proxy** ,
      wie [Traefik](https://docs.photoprism.app/getting-started/proxies/traefik/),
-    [Caddy](https://docs.photoprism.app/getting-started/proxies/caddy-2/), oder [NGINX](https://docs.photoprism.app/getting-started/proxies/nginx/) aus. 
+    [Caddy](https://docs.photoprism.app/getting-started/proxies/caddy-2/), oder [NGINX](https://docs.photoprism.app/getting-started/proxies/nginx/) aus.
     Deine Dateien und Passwörter werden sonst im Klartext übermittelt und können
     abgefangen werden.

@@ -1,18 +1,18 @@
 # Dateien einlesen #
 
-Die meisten Benutzer mit einer bestehenden Ordnerstruktur werden ihre Originale direkt [indexieren](./originals.md) wollen, ohne die optionale Importfunktion zu verwenden, 
+Die meisten Benutzer mit einer bestehenden Ordnerstruktur werden ihre Originale direkt [indexieren](./originals.md) wollen, ohne die optionale Importfunktion zu verwenden,
 sodass die Datei- und Ordnernamen unverändert bleiben.
 
-Beim [Importieren](./import.md) werden die Dateien zunächst aus einem temporären Ordner in den Originals Ordner  übertragen. 
-Dabei werden Duplikate automatisch übersprungen, und die importierten Dateien erhalten einen eindeutigen Dateinamen und werden nach Jahr 
+Beim [Importieren](./import.md) werden die Dateien zunächst aus einem temporären Ordner in den Originals Ordner  übertragen.
+Dabei werden Duplikate automatisch übersprungen, und die importierten Dateien erhalten einen eindeutigen Dateinamen und werden nach Jahr
 und Monat sortiert.
 
-Der Import ist auch eine effiziente Methode zum Hinzufügen von Dateien, da PhotoPrism das Originals Verzeichnis nicht durchsuchen muss, 
+Der Import ist auch eine effiziente Methode zum Hinzufügen von Dateien, da PhotoPrism das Originals Verzeichnis nicht durchsuchen muss,
 um neue Dateien zu finden.
 
 !!! tip ""
-    Versteckte Dateien sowie Ordner, die mit `.`, `@`, `_.` oder `__` wie `__MACOSX` beginnen, werden automatisch ignoriert. 
-    Andere Namen, die ignoriert werden sollen, können in einer .ppignore Datei im Originals oder Import Verzeichnis konfiguriert werden. 
+    Versteckte Dateien sowie Ordner, die mit `.`, `@`, `_.` oder `__` wie `__MACOSX` beginnen, werden automatisch ignoriert.
+    Andere Namen, die ignoriert werden sollen, können in einer .ppignore Datei im Originals oder Import Verzeichnis konfiguriert werden.
     Diese Datei kann im Hauptordner oder in einem Unterordner ablegt werden.
 
 ## Originale Indexieren ##
@@ -22,7 +22,7 @@ Verwende *Indexieren*, wenn du deine Bilder und Videos direkt im Ordner *Origina
 **Deine Ordnerstruktur in *Originals* könnte so aussehen:**
 
 ![Screenshot](img/originals-before-after.jpg){ class="shadow" }
-     
+
 **Während der Indexierung:**
 
 * Dateien werden NICHT umbenannt oder verschoben
@@ -34,8 +34,6 @@ Verwende *Indexieren*, wenn du deine Bilder und Videos direkt im Ordner *Origina
 Das *Originals* Verzeichnis nach der Indexierung, es wurde in keiner Weise verändert:
 
 ![Screenshot](img/originals-before-after.jpg){ class="shadow" }
-
-    
 
 ### Vorteile ###
 
@@ -55,9 +53,9 @@ Das *Originals* Verzeichnis nach der Indexierung, es wurde in keiner Weise verä
 **Deine anfängliche Ordnerstruktur in *Import* könnte wie folgt aussehen:**
 
    ![Screenshot](img/before-import.jpg){ class="shadow" }
-   
+
 **Während dem Import:**
- 
+
 * Dateien werden aus dem *Import* Verzeichnis in das *Originals* Verzeichnis verschoben oder kopiert
 * Duplikate werden automatisch übersprungen, "Verschieben" löscht sie auch im Ursprungsverzeichnis
 * Importierte Dateien erhalten einen eindeutigen Dateinamen und werden nach Jahr und Monat sortiert
@@ -76,15 +74,13 @@ Das *Originals* Verzeichnis nach der Indexierung, es wurde in keiner Weise verä
 * Nicht unterstützte Dateien bleiben unberührt im Import Verzeichnis
 * Keine Duplikate im Originals Verzeichnis
 
-
 !!! info ""
-    Original Datei- und Ordnernamen werden zum Erstellen von Suchbegriffen verwendet. 
+    Original Datei- und Ordnernamen werden zum Erstellen von Suchbegriffen verwendet.
     Falls du ein Verzeichnis mit dem Pfad "Urlaub/Afrika" importierst oder indexierst erhalten alle Dateien aus diesem Ordner die Suchbegriffe "Urlaub" und "Afrika".
 
-
 ## Fazit ##
-Falls deine Bildersammlung nicht gut organisiert ist und/oder du viele Duplikate hast, kannst du in Erwägung ziehen, deine Dateien zu importieren, da dadurch Duplikate entfernt werden. 
+Falls deine Bildersammlung nicht gut organisiert ist und/oder du viele Duplikate hast, kannst du in Erwägung ziehen, deine Dateien zu importieren, da dadurch Duplikate entfernt werden.
 Beachte, dass importierte Dateien einen eindeutigen Dateinamen erhalten und nach Jahr und Monat sortiert werden.
 
-Wenn du über eine gut organisierte Bibliothek mit aussagekräftigen Datei- und Ordnernamen verfügst, ist es am besten, wenn du deine Originale direkt indexierst 
+Wenn du über eine gut organisierte Bibliothek mit aussagekräftigen Datei- und Ordnernamen verfügst, ist es am besten, wenn du deine Originale direkt indexierst
 und die Datei- und Ordnernamen unverändert lässt.

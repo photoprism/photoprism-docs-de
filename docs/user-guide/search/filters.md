@@ -6,7 +6,7 @@ Mit den leistungsstarken Suchfiltern von PhotoPrism kannst du ganz einfach besti
 * Bilder von bestimmten Motiven, z.B. Blume oder Katze
 * Bilder mit einer bestimmten Hauptfarbe
 * Bilder mit bestimmten Datei- oder Verzeichnisnamen
-* Bilder von bestimmten Orten 
+* Bilder von bestimmten Orten
 * Andere Metadaten wie Kamera, Linse oder Chroma...
 
 Probier es einfach aus!
@@ -122,7 +122,6 @@ name:"IMG_23*"
 
 Gefunden werden alle Bilder, deren Namen mit `IMG_23` starten.
 
-
 ```
 name:"*_23*"
 ```
@@ -221,14 +220,12 @@ Dies ist eine vollständige Liste der unterstützten Suchfilter mit Beispielen. 
 | taken       | timestamp | taken:"2022-01-30"                    | Finds content created on the specified date                                                                                                                                                                                                              |
 | updated     | timestamp | updated:"2006-01-02T15:04:05Z"        | Finds content updated at or after this time                                                                                                                                                                                                              |
 
-
-
 !!! question "Warum kann ich Live Fotos nicht abspielen oder Bildstapel finden, wenn ich nach bestimmten Bildern suche?"
     Unsere Such-API und die Benutzeroberfläche führen eine Dateisuche durch. Dies ist beabsichtigt, da "Bildstapel" Dateien unterschiedlichen Typs und unterschiedlicher Eigenschaften, wie z. B. Farbe, enthalten können.
 
-    So kann es beispielsweise Farb- und Schwarzweißversionen geben. Wenn nach diesen gesucht wird oder Bilder nach Farbe sortiert werden, muss die Benutzeroberfläche nun einzelne Dateien anzeigen. Andernfalls würden die Ergebnisse, die ein Farbbild/Video anzeigen, wenn nach Schwarzweiß gefiltert wird, keinen Sinn ergeben.    
-    
+    So kann es beispielsweise Farb- und Schwarzweißversionen geben. Wenn nach diesen gesucht wird oder Bilder nach Farbe sortiert werden, muss die Benutzeroberfläche nun einzelne Dateien anzeigen. Andernfalls würden die Ergebnisse, die ein Farbbild/Video anzeigen, wenn nach Schwarzweiß gefiltert wird, keinen Sinn ergeben.  
+
     Ebenso finden Sie bei der Suche nach `Dateiname.mp4.*` nur JPEGs ohne Video, da die Videodateierweiterung `.mp4` nicht mit einem Punkt endet.
 
-    Wir empfehlen die Verwendung der Filter `path:` und/oder `name:` mit Wildcards, wenn die Suche nach einzelnen Dateien die Suchergebnisse zu sehr einschränkt. Die meisten Nutzer werden alle zusammengehörigen Dateien finden wollen, damit sie zusammen angezeigt werden können, z. B. als Live-Fotos, die aus einem Video und einem Bild bestehen.    
+    Wir empfehlen die Verwendung der Filter `path:` und/oder `name:` mit Wildcards, wenn die Suche nach einzelnen Dateien die Suchergebnisse zu sehr einschränkt. Die meisten Nutzer werden alle zusammengehörigen Dateien finden wollen, damit sie zusammen angezeigt werden können, z. B. als Live-Fotos, die aus einem Video und einem Bild bestehen.  
     Sie können diese Filter mit anderen Filtern wie `live` kombinieren, um sicherzustellen, dass die Ergebnisse nur Bilder mit einem bestimmten Medientyp enthalten. Alternativ können Sie auch den Filter "filename:" mit einem freizügigeren Platzhalter verwenden, der die Dateierweiterung ausschließt.

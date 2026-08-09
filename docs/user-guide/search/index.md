@@ -11,7 +11,7 @@ Hier findest du alle Bilder und Videos, die nicht in *Überprüfen*, *Archiv* od
 
 !!! hint ""
     Wenn die Funktionen Qualitätsfilter, Privat oder Archiv deaktiviert sind, findest du hier alle deine Bilder und Videos.
-    
+
 ![Screenshot](../organize/img/search-section-2503-german.jpg){ class="shadow" }
 
 #### Monochrom ####
@@ -103,11 +103,3 @@ Hier werden alle Dateien deines *Originals*-Verzeichnisses angezeigt.
 ![Screenshot](../library/img/files-2503-german.jpg){ class="shadow" }
 
 ![Screenshot](../library/img/files-2-2503-german.jpg){ class="shadow" }
-
-
-
-
-
-
-
-    

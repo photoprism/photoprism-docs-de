@@ -1,9 +1,9 @@
 # PhotoPrism Places #
 
-PhotoPrism bietet dir 4 hochauflösende Kartenansichten. 
-Um deinen Bildern Informationen wie Land, Stadt oder Kategorie hinzuzufügen, haben wir kürzlich **PhotoPrism Places** in Betrieb genommen. 
+PhotoPrism bietet dir 4 hochauflösende Kartenansichten.
+Um deinen Bildern Informationen wie Land, Stadt oder Kategorie hinzuzufügen, haben wir kürzlich **PhotoPrism Places** in Betrieb genommen.
 PhotoPrism Places ist unsere eigene Geocoding API, basierend auf  OpenStreetMap.
-Zusätzlich werden wir in Zukunft Informationen über öffentliche Events bereitstellen, die an bestimmten Orten stattgefunden haben. 
+Zusätzlich werden wir in Zukunft Informationen über öffentliche Events bereitstellen, die an bestimmten Orten stattgefunden haben.
 Dadurch können beispielsweise automatisch Alben von Musikfestivals oder Sportevents erzeugt werden.
 
 ## Datenschutz ##

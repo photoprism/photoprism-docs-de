@@ -16,7 +16,7 @@ Die Schaltfläche *Passwort ändern* steht für Konten zur Verfügung, die sich 
 5. Gib das neue Passwort ein und bestätige es durch eine erneute Eingabe
 6. Klicke auf *Speichern*
 
-![Screenshot](img/change-password-2503-german.jpg){ class="shadow" } 
+![Screenshot](img/change-password-2503-german.jpg){ class="shadow" }
 
 ## 2-Faktor-Authentifizierung
 
@@ -37,7 +37,6 @@ Beispiel für die Erstellung eines App-Passworts, das du mit [WebDAV-kompatiblen
 !!! tldr ""
     Wenn du die [Berechtigung](https://docs.photoprism.app/user-guide/users/client-credentials/#authorization-scopes) *WebDAV* auswählst, stellst du sicher, dass das App-Passwort nicht für die Anmeldung über die reguläre Benutzeroberfläche oder für andere Aktionen verwendet werden kann. Apps können auch nicht dein Passwort ändern oder Benutzerkonten verwalten, selbst wenn du ihnen *Vollen Zugriff* gewährst.
 
-
 ## WebDAV-URL anzeigen
 
 Diese Schaltfläche wird nur angezeigt, wenn der WebDAV-Zugriff für dein Konto aktiviert und der integrierte WebDAV-Server verfügbar ist.
@@ -48,4 +47,4 @@ So öffnest du einen Dialog mit den URLs, die du zum Verbinden einer App oder ei
 2. Klicke auf *Konto*
 3. Klicke *Mit WebDAV verbinden*
 
-![Screenshot](img/show-webdav-2503-german.jpg){ class="shadow" } 
+![Screenshot](img/show-webdav-2503-german.jpg){ class="shadow" }

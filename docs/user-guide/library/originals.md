@@ -13,17 +13,15 @@
 
 4. Klicke *Start*, um mit der Indexierung zu beginnen
 
-
 ![Screenshot](img/index-2503-german.jpg){ class="shadow" }
-
 
 !!! tip ""
     Du kannst [WebDAV](webdav.md)-kompatible Anwendungen wie den Windows Explorer von Microsoft und den Finder von Apple verwenden,  um Dateien von einem Remote-Computer oder einem mobilen Gerät zu deinem *Originals* Ordner hinzuzufügen.
 
-!!! tip "NSFW" 
+!!! tip "NSFW"
     Ein NSFW-Detektor kann aktiviert werden, um Bilder mit anstößigem Inhalt automatisch als privat zu kennzeichnen.
     Beachte, dass der Mechanismus nicht 100% zuverlässig ist.
-    
+
     Bilder, die bereits indexiert wurden, bevor der NSFW-Detektor aktiviert wird, werden vom Detektor nicht gescannt.
 
 ### Index Vollständig aktualisieren ###
@@ -85,7 +83,7 @@ MVI_*.MOV
 MVI_*.*
 ```
 
-Dateien werden im Ordner, in welchem die .ppignore Datei liegt, sowie in allen Unterordnern ignoriert. 
+Dateien werden im Ordner, in welchem die .ppignore Datei liegt, sowie in allen Unterordnern ignoriert.
 Du kannst `*` als Wildcard benutzen.
 
 Bereits indexierte Dateien und Ordner werden nicht nachträglich aus dem Index entfernt, wenn du Sie auf die Ignorieren Liste setzt. Sie bleiben also indexiert und in der Benutzeroberfläche sichtbar, auch wenn du ihren Namen oder ein passendes Namensmuster später hinzufügst.

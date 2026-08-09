@@ -22,9 +22,8 @@ PhotoPrism® ist eine KI-gestützte, datenschutzfreundliche App zum Durchsuchen,
 
 [Vollständige Funktionsübersicht ›](https://www.photoprism.app/teams/#compare)
 
-
 ### 100% Privatsphäre :lock:
-Da PhotoPrism sich zu [**100 % selbst finanziert und unabhängig**](https://www.photoprism.app/membership/) ist, können wir versprechen, dass wir [**niemals deine Daten verkaufen werden**](https://www.photoprism.app/privacy/) und dass wir unsere Software und Dienste [**stets transparent**](https://www.photoprism.app/terms/) gestalten. 
+Da PhotoPrism sich zu [**100 % selbst finanziert und unabhängig**](https://www.photoprism.app/membership/) ist, können wir versprechen, dass wir [**niemals deine Daten verkaufen werden**](https://www.photoprism.app/privacy/) und dass wir unsere Software und Dienste [**stets transparent**](https://www.photoprism.app/terms/) gestalten.
 Deine Daten werden auch niemals an Google, Amazon, Facebook oder Apple weitergegeben, es sei denn, du lädst absichtlich Dateien auf einen dieser Dienste hoch.
 
 <p class="center-align action-buttons">

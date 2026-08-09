@@ -6,7 +6,6 @@ Aus eigener Erfahrung können wir [PhotoSync](https://link.photoprism.app/photos
 
 Eine Übersicht über [mobile Sync-Apps](#sync-apps-fur-ios-und-android) für iOS und Android findest du unten.
 
-
 !!! info ""
     WebDAV kann in den [Erweiterten Einstellungen](../settings/advanced.md) deaktiviert werden.
     Da der WebDAV-Server Schreibrechte und Authentifizierung erfordert, wird er automatisch deaktiviert, wenn du PhotoPrism im [public](https://docs.photoprism.app/getting-started/config-options/#authentication) und/oder [schreibgeschützten Modus](https://docs.photoprism.app/getting-started/config-options/#feature-flags) betreibst.
@@ -21,7 +20,7 @@ Eine Übersicht über [mobile Sync-Apps](#sync-apps-fur-ios-und-android) für iO
 
       ![Screenshot](img/photosync-1.jpg){: style="width:35%" class="shadow"}
       ![Screenshot](img/photosync-2.jpg){: style="width:35%" class="shadow"}
-   
+
 4. Trage deine PhotoPrism Konfiguration ein
 
     !!! info ""
@@ -30,23 +29,23 @@ Eine Übersicht über [mobile Sync-Apps](#sync-apps-fur-ios-und-android) für iO
         *Port:* Dein Port. Falls du HTTPS verwendest ist der Port 443.
 
         *Login:* Dein Benutzername, z.B. "admin".
-        
+
         *Password:* Dein Admin Passwort.
 
         *Directory:* `/import/` oder `/originals/`, je nachdem, wie du deine Dateien [einlesen möchtest](../library/index.md).
-        
+
         *Use SSL:* Sollte aktiviert sein.
 
-        [PikaPods](https://docs.photoprism.app/getting-started/cloud/pikapods/) Benutzer können [hier](https://docs.pikapods.com/apps/photoprism/#sync-from-mobile-apps) weitere Informationen finden. 
+        [PikaPods](https://docs.photoprism.app/getting-started/cloud/pikapods/) Benutzer können [hier](https://docs.pikapods.com/apps/photoprism/#sync-from-mobile-apps) weitere Informationen finden.
 
       ![Screenshot](img/photosync-3.jpg){: style="width:35%" class="shadow"}
 
 5. Klicke *Fertig*
 6. Du kannst die Übertragungsdetails deinen Wünschen anpassen
-   
+
       ![Screenshot](img/photosync-4.jpg){: style="width:35%" class="shadow"}
       ![Screenshot](img/photosync-5.jpg){: style="width:35%" class="shadow"}
-   
+
 ### Automatische Synchronisation einrichten ###
 1. Öffne PhotoSync und klicke :material-cog-outline:
 2. Klicke *Autotransfer*
@@ -54,9 +53,9 @@ Eine Übersicht über [mobile Sync-Apps](#sync-apps-fur-ios-und-android) für iO
       ![Screenshot](img/photosync-1.jpg){: style="width:35%" class="shadow"}
 
 3. Klicke *Neuer Auslöser* und wähle mindestens einen Auslöser
-   
+
       ![Screenshot](img/photosync-6.jpg){: style="width:35%" class="shadow"}
-   
+
 4. Wähle PhotoPrism als Übertragungsziel
 5. Klicke *Fertig*
 
@@ -75,7 +74,6 @@ Als Alternative zu [PhotoSync](https://link.photoprism.app/photosync) kannst du 
 | [Syncthing](https://syncthing.net/)                                                                                             | Android      | Syncthing                           | Kostenlos | [Google Play](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid)                                                                                                                               |
 | [FolderSync Pro](https://foldersync.io/)                                                                                        | Android      | [WebDAV](webdav.md#server-url), SMB | €6.49     | [Google Play](https://play.google.com/store/apps/details?id=dk.tacit.android.foldersync.full)                                                                                                                           |
 | [Owlfiles Pro](https://www.skyjos.com/owlfiles/)                                                                                | iOS, Android | [WebDAV](webdav.md#server-url), SMB | €59.99    | [App Store](https://itunes.apple.com/app/id510282524), [Google Play](https://play.google.com/store/apps/details?id=com.skyjos.apps.fileexplorerfree)                                                                    |
-
 
 !!! note ""
       Beachte, dass diese Übersicht nur der Orientierung dient und dass wir keinen [technischen Support](https://www.photoprism.app/kb/getting-support/) für diese Apps leisten können. Wenn du Probleme hast, wende dich bitte an den Autor oder bitte die Community um Hilfe. Du kannst gerne weitere Synchronisierungs-Apps [vorschlagen](https://github.com/photoprism/photoprism-docs/tree/develop/docs/user-guide/sync/mobile-devices.md), damit wir sie in diese Liste aufnehmen können.

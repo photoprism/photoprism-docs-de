@@ -18,7 +18,7 @@ Du kannst den Befehl mit diesen Flags kombinieren, um das Ausgabeformat zu ände
 | `--csv, -c`  | export as semicolon separated values   |
 | `--tsv, -t`  | export as tab separated values         |
 
-## Vision-Modelle ausführen 
+## Vision-Modelle ausführen
 
 Sobald du deine bevorzugten Computer‑Vision‑Modelle und Dienste in der Datei `vision.yml` konfiguriert hast, kannst du sie mit folgendem Befehl auf eine per Suchfilter ausgewählte Bildmenge anwenden:
 
@@ -31,7 +31,7 @@ photoprism vision run [options] [filter]
 | Command Flag                  | Description                                                                                                                     |
 |-------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | `--models MODELS`, `-m MODELS`| computer vision MODELS to run, e.g. caption, labels, or nsfw (default: "caption")                                               |
-| `--count NUMBER`, `-n NUMBER` | maximum NUMBER of pictures to be processed (default: 100000)                                                                    | 
+| `--count NUMBER`, `-n NUMBER` | maximum NUMBER of pictures to be processed (default: 100000)                                                                    |
 | `--source TYPE`, `-s TYPE`    | custom data source TYPE (auto, default, image, marker, ollama, openai, vision) (default: "image")                              |
 | `--force`, `-f`               | force existing data to be updated if the model supports it and the source priority is equal to or higher (default: false)      |
 
@@ -180,5 +180,3 @@ docker compose exec photoprism photoprism faces reset
 
 !!! danger ""
     Der Befehl `faces reset` löscht alle vorhandenen Gesichts‑Marker und Cluster. Stelle sicher, dass du bei Bedarf Backups hast – dieser Vorgang kann nicht rückgängig gemacht werden.
-
-

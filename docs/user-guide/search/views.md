@@ -13,7 +13,6 @@ PhotoPrism bietet dir drei verschiedene Ansichten zum Betrachten deiner Fotos un
 
     ![Screenshot](../organize/img/mosaic-2503-german.jpg){ class="shadow" }
 
-
 === "Listen Ansicht"
 
     Die *Listen Ansicht* stellt Bilder und Metadaten in einer übersichtlichen Liste dar.
@@ -28,7 +27,7 @@ Alternativ kannst du dir Bilder und Videos auch in der *Vollbild Ansicht* anzeig
 
 !!! tip "Tastenkombinationen im Vollbildmodus"
     Im Vollbildmodus kannst du diese Tastenkombinationen für schnelle Aktionen verwenden:
-    
+
     - **Strg + F** : Vollbildmodus ein-/ausschalten
     - **Strg + S** : Diashow abspielen/anhalten
     - **Strg + I** : Info-Seitenleiste umschalten

@@ -62,7 +62,7 @@ Wenn 2FA für dein Konto aktiviert wurde, kannst du es deaktivieren, indem du zu
 !!! tldr ""
     Wenn du den Zugriff auf deine Authentifizierungs-App oder dein Gerät verlierst, kannst du deinen [Wiederherstellungscode](#schritt-2-wiederherstellungscode) verwenden, um wieder Zugriff auf dein Konto zu erhalten. Es handelt sich um einen einmal verwendbaren Code, der 2FA für dein Konto deaktiviert, sobald du ihn verwendest.
 
-     Wenn du dich nicht mehr an deinen Wiederherstellungscode erinnerst, kannst du auch [einen Admin](roles.md#admin) bitten, 2FA für dich im *Benutzerdetails*-Dialog des [Admin Web UI](index.md#benutzer-details-bearbeiten) oder durch Ausführen des [folgenden Befehls](cli.md#optionen) in einem [Terminal](https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface) zu deaktivieren:    
+     Wenn du dich nicht mehr an deinen Wiederherstellungscode erinnerst, kannst du auch [einen Admin](roles.md#admin) bitten, 2FA für dich im *Benutzerdetails*-Dialog des [Admin Web UI](index.md#benutzer-details-bearbeiten) oder durch Ausführen des [folgenden Befehls](cli.md#optionen) in einem [Terminal](https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface) zu deaktivieren:  
     ```bash
     photoprism users mod --disable-2fa [username]
     ```

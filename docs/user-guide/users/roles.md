@@ -3,7 +3,7 @@
 | Role    |   View Library   |     Download     |      Upload      |  WebDAV  |   Full Access    |
 |---------|:----------------:|:----------------:|:----------------:|:--------:|:----------------:|
 | admin   | :material-check: | :material-check: | :material-check: | optional | :material-check: |
-| user    | :material-check: | :material-check: | :material-check: | optional |                  | 
+| user    | :material-check: | :material-check: | :material-check: | optional |                  |
 | viewer  |  except private  |  except private  |                  |          |                  |
 | guest   |                  |      shared      |                  |          |                  |
 | visitor |                  |      shared      |                  |          |                  |

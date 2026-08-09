@@ -2,12 +2,12 @@
 
 PhotoPrism sorgt dafür, dass du immer die volle Kontrolle über deine Daten hast.
 
-Kontrolle bezieht sich hierbei nicht nur auf die Möglichkeit, deine Daten durch ein Datenbank-Backup wieder herzustellen, sondern auch darauf, 
+Kontrolle bezieht sich hierbei nicht nur auf die Möglichkeit, deine Daten durch ein Datenbank-Backup wieder herzustellen, sondern auch darauf,
 dir eine Möglichkeit zu bieten, auf deine Metadaten zuzugreifen, die unabhängig von PhotoPrism ist.
 
 Deshalb legt PhotoPrism neben einem Datenbank-Backup zusätzlich YAML-Backupdateien für Alben und Bilder an.
 
-Backups können in den [Einstellungen](../settings/advanced.md) deaktiviert werden. 
+Backups können in den [Einstellungen](../settings/advanced.md) deaktiviert werden.
 
 Beachte, dass sich die Daten immer noch in der Datenbank befinden und dass Änderungen an den YAML Dateien nicht in PhotoPrism übernommen werden.
 Dies ist vergleichbar mit einem Backup, allerdings in einem für Menschen lesbaren Format.
@@ -47,8 +47,6 @@ PhotoPrism erstellt für jedes Bild/Video eine YAML Datei in deinem `sidecar pat
 
 Folgende Metadaten werden für Bilder gespeichert:
 
-* TakenAt + Source, UID, Type, Title + Source, Caption + Source, OriginalName, TimeZone, PlaceSrc, Altitude, 
-  Lat, Lng, Year, Month, Day, Iso, Exposure, FNumber, FocalLength, Quality, Favorite, Private, Keywords + Source, 
+* TakenAt + Source, UID, Type, Title + Source, Caption + Source, OriginalName, TimeZone, PlaceSrc, Altitude,
+  Lat, Lng, Year, Month, Day, Iso, Exposure, FNumber, FocalLength, Quality, Favorite, Private, Keywords + Source,
   Notes + Source, Subject + Source, Artist + Source, Copyright + Source, License + Source, CreatedAt, UpdatedAt, EditedAt, DeletedAt (Archived)
-
-

@@ -1,10 +1,10 @@
 # Archiv #
-Du kannst Dateien, die du nicht in deiner Sammlung behalten möchtest archivieren. 
+Du kannst Dateien, die du nicht in deiner Sammlung behalten möchtest archivieren.
 Archivierte Dateien werden nicht gelöscht, sie werden allerdings ausschließlich im Bereich *Archiv* angezeigt.
 
 !!! tip "Tastenkombination"
     Im Vollbild-Viewer kannst du Fotos schnell archivieren oder wiederherstellen, indem du **Strg + X** drückst.
-    
+
 ### Bilder archivieren ###
 
 1. Selektiere Bilder/Videos
@@ -12,9 +12,8 @@ Archivierte Dateien werden nicht gelöscht, sie werden allerdings ausschließlic
 3. Klicke :material-archive:
 
     ![Screenshot](img/archive-2503-german.jpg){ class="shadow" }
-    
-    <!--![Screenshot](img/confirm-archive.jpg)-->
 
+    <!--![Screenshot](img/confirm-archive.jpg)-->
 
 ### Archivierte Bilder wieder herstellen ###
 
@@ -24,4 +23,3 @@ Archivierte Dateien werden nicht gelöscht, sie werden allerdings ausschließlic
 4. Klicke :material-check:
 
     ![Screenshot](img/restore-2503-german.jpg){ class="shadow" }
-

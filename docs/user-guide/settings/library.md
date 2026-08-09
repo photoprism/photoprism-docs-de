@@ -82,7 +82,6 @@ Legt fest, wie heruntergeladene Dateien benannt werden: mit ihrem *Aktuellen Nam
 !!! info ""
     Beachte, dass diese Einstellungen keine Auswirkungen auf ZIP-Archive haben, wenn du komplette Sammlungen herunterlädst. Diese konfigurierst du im Tab [*Sammlungen*](collections.md). [Mehr erfahren ›](collections.md#download)
 
-
 <!--## Umwandlung von RAW zu JPEG ##
 Viele Fotografen, insbeondere Nutzer einer digitalen SLR, verwenden ein verlustfreies RAW-Format anstelle des verlustbehafteten JPEG-Formats. Es gibt auch [Handies](https://www.fredericpaulussen.be/how-to-raw-photos-huawei-p30-pro/) die RAW-Daten abspeichern können oder das Format HEIC/HEIF nutzen.
 Das Ziel von PhotoPrism ist eine umfangreiche Unterstützung für alle [RAW-Formate](https://en.wikipedia.org/wiki/Raw_image_format), unabhängig vom verwendeten Kameramodell. Deshalb bitten wir dich uns eine Nachricht zu schicken, falls du ein Problem mit den Dateien von einem deiner Geräte hast.

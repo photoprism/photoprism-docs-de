@@ -121,4 +121,3 @@ Am Ende des Tabs *Allgemeine Einstellungen* kannst du deinen bevorzugten Kartens
 PhotoPrism enthält mehrere hochauflösende Weltkarten, sodass du deine Bibliothek nach Orten durchsuchen kannst.
 
 Um deine Fotos mit Standortdaten wie Land, Bundesland, Stadt und Kategorie anzureichern, enthält PhotoPrism außerdem ein Reverse-Geocoding auf Basis von OpenStreetMap-Daten.
-

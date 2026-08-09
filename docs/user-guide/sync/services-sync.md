@@ -7,7 +7,6 @@ In den [Einstellungen > Dienste](../settings/sync.md) kannst du deine PhotoPrism
 
     Wenn PhotoPrism Dateien aus einer anderen lokalen Anwendung, z. B. Nextcloud, indexieren soll, empfehlen wir, deren Speicherordner [als originals Ordner einzubinden](https://docs.photoprism.app/getting-started/docker-compose/#photoprismoriginals), anstatt die Dateien über WebDAV zu synchronisieren. Dadurch wird verhindert, dass unnötige Kopien deiner Dateien erstellt werden.
 
-
 ## Dateien von/zu einerApp herunterladen/hochladen##
 1. Gehe zu *Einstellungen*
 2. Öffne das *Dienste* Tab

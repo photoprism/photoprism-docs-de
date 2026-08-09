@@ -28,4 +28,3 @@ Um ein Titelbild für einen Ordner festzulegen:
     ![Screenshot](img/set-cover-2504-german.jpg){ class="shadow" }
 
 Dadurch wird das ausgewählte Foto als Titelbild für den Ordner festgelegt.
-

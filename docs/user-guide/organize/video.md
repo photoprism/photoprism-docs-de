@@ -2,8 +2,8 @@
 
 Im Bereich *Videos* findest du alle Videos deiner Sammlung. Um ein Video abzuspielen, klicke auf das Video.
 
-Beachte, dass nicht alle [Video- und Audioformate](https://caniuse.com/?search=video%20format) von jedem [Browser abgespielt](https://docs.photoprism.app/getting-started/troubleshooting/browsers/) werden können. 
-So wird beispielsweise [AAC](https://caniuse.com/aac) - der Standard-Audiocodec für [MPEG-4 AVC / H.264](https://caniuse.com/mpeg4) - in Chrome, Safari und Edge nativ unterstützt, 
+Beachte, dass nicht alle [Video- und Audioformate](https://caniuse.com/?search=video%20format) von jedem [Browser abgespielt](https://docs.photoprism.app/getting-started/troubleshooting/browsers/) werden können.
+So wird beispielsweise [AAC](https://caniuse.com/aac) - der Standard-Audiocodec für [MPEG-4 AVC / H.264](https://caniuse.com/mpeg4) - in Chrome, Safari und Edge nativ unterstützt,
 während er in Firefox und Opera nur optional vom Betriebssystem unterstützt wird.
 
 ![Screenshot](img/videos-2503-german.jpg){ class="shadow" }
@@ -34,7 +34,6 @@ Für maximale Browserkompatibilität kann PhotoPrism Videocodecs und Container [
 - OGV-, VP8-, VP9-, AV1-, WebM- und HEVC-Videos können direkt gestreamt werden, wenn sie von deinem Browser unterstützt werden und die [konfigurierte Bitratengrenze](https://docs.photoprism.app/getting-started/advanced/transcoding/#bitrate-limit) nicht überschreiten.
 - andere Formate müssen immer transcodiert werden
 
-
 **Falls erforderlich, werden Videos bei Bedarf transkodiert. Das kann zu unerwünschten Verzögerungen führen, wenn große Videodateien zum ersten Mal abgespielt werden.**
 
 In diesem Fall kannst du [den folgenden Befehl in einem Terminal ausführen](https://docs.photoprism.app/getting-started/docker-compose/#command-line-interface), um alle Videodateien vorzutranskodieren:
@@ -46,7 +45,7 @@ docker compose exec photoprism photoprism convert
 In unserer Setup-Anleitung für fortgeschrittene Nutzer wird erklärt, wie du die [Hardware-Videotranskodierung](https://docs.photoprism.app/getting-started/advanced/transcoding/) konfigurieren kannst .
 
 !!! note ""
-    Vergewissere dich, dass dein Server genug freien Speicherplatz zur verfügung hat, bevor du deine Videos transkodierst. 
+    Vergewissere dich, dass dein Server genug freien Speicherplatz zur verfügung hat, bevor du deine Videos transkodierst.
 
 !!! tldr ""
     HEVC-Videodateien können auch die Dateiendung `.mp4` haben, die normalerweise mit AVC assoziiert wird. Dies liegt daran, dass MP4 ein

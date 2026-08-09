@@ -45,7 +45,7 @@ Die Kompatibilität unserer PWA wurde mit Apple Safari und Google Chrome geteste
     1. Öffne PhotoPrism im Browser deines Geräts
     2. Klicke :material-dots-vertical:
 
-        ![Screenshot](img/android-1.jpg){: style="width:35%" class="shadow"} 
+        ![Screenshot](img/android-1.jpg){: style="width:35%" class="shadow"}
 
     3. Klicke *Install app*
 
@@ -54,4 +54,3 @@ Die Kompatibilität unserer PWA wurde mit Apple Safari und Google Chrome geteste
     4. Wähle einen Namen und klicke *Add*
 
         ![Screenshot](img/android-3.jpg){: style="width:35%" class="shadow"}
-

@@ -5,7 +5,7 @@
 2. Klicke :material-plus: oben rechts
 
     ![Screenshot](img/create-album-2503-german.jpg){ class="shadow" }
-    
+
 3. Ein neues Album mit Titel "Monat Jahr" ist nun erstellt
 
     ![Screenshot](img/album-name-2503-german.jpg){ class="shadow" }
@@ -19,18 +19,17 @@ Gehe zu *Alben* und öffne den *Album-Bearbeitungs-Dialog*
 
 === "Kontext-Menü"
     Selektiere ein Album, öffne das Kontext-Menü und klicke :material-pencil:.
-    
+
     ![Screenshot](img/album-edit-menu-2503-german.jpg){ class="shadow" }
 
 === "Album-Suchleiste"
     Öffne das Album und klicke :material-pencil: rechts oben.
-    
+
     ![Screenshot](img/album-edit-toolbar-2507-german.jpg){ class="shadow" }
-    
+
 Dann bearbeite die Album Details und klicke *Speichern*
 
 ![Screenshot](img/album-edit-2503-german.jpg){ class="shadow" }
-    
 
 ### Bilder zu Album hinzufügen ###
 
@@ -39,8 +38,8 @@ Dann bearbeite die Album Details und klicke *Speichern*
 3. Klicke :material-bookmark:
 
     ![Screenshot](img/add-photo-album-2503-german.jpg){ class="shadow" }
-    
-4. Wählen Sie die Alben aus, zu denen die Bilder hinzugefügt werden sollen, oder erstellen Sie neue Alben. 
+
+4. Wählen Sie die Alben aus, zu denen die Bilder hinzugefügt werden sollen, oder erstellen Sie neue Alben.
     ![Screenshot](img/add-photo-album-2-0512-german.jpg){ class="shadow" }
 
 5. Klicke *Bestätigen*
@@ -81,4 +80,3 @@ Dadurch wird das ausgewählte Foto als Titelbild für das Album festgelegt.
        Öffne das Album, klicke :material-dots-vertical: und dann klicke **Album löschen**
 
        ![Screenshot](img/album-delete-toolbar-2507-german.jpg){ class="shadow" }
-

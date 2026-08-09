@@ -1,5 +1,5 @@
 # Bilder löschen #
-Du kannst Dateien, die du nicht behalten möchtest endgültig aus deinem Dateisystem löschen. 
+Du kannst Dateien, die du nicht behalten möchtest endgültig aus deinem Dateisystem löschen.
 Dateien, die du löschen möchtest, müssen zuvor [archiviert](./archive.md) werden.
 
 Stelle vorab sicher, dass die Funktion **Löschen** in den [Einstellungen](../settings/general.md) aktiviert ist.

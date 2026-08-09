@@ -208,5 +208,3 @@ docker compose up -d ollama
 Dadurch wird der VRAM geleert und die normale GPU‑beschleunigte Verarbeitung wiederhergestellt.
 
 [^1]: Nicht relevante Konfigurationsdetails wurden zur besseren Lesbarkeit ausgelassen.
-
-

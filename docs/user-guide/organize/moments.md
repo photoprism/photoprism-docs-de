@@ -1,6 +1,6 @@
 # Ereignisse #
 
-PhotoPrism erstellt automatisch *Ereignisse* aus deinen Erinnerungen. 
+PhotoPrism erstellt automatisch *Ereignisse* aus deinen Erinnerungen.
 Deine *Ereignisse* werden laufend aktualisiert, wenn neue Bilder hinzugefügt werden.
 
 !!! info ""

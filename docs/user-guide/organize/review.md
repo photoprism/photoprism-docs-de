@@ -27,13 +27,11 @@ Die Qualität wird anhand der folgenden Kriterien bestimmt:
      ![Screenshot](img/review-2503-german.jpg){ class="shadow" }
 
 === "Karteikarten Ansicht"
-     1. Gehe zu *Überprüfen*     
+     1. Gehe zu *Überprüfen*  
      2. Öffne die *Karteikarten Ansicht*
      3. Klicke :material-check:
 
      ![Screenshot](img/review-2-2503-german.jpg){ class="shadow" }
-
-
 
 !!! attention ""
     Die Qualitätsbewertung wird automatisch aktualisiert.

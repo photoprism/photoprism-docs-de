@@ -6,7 +6,6 @@ Alles, was du brauchst, ist ein Webbrowser und
 Docker ist für [Mac](https://docs.docker.com/desktop/setup/install/mac-install/), [Linux](https://docs.photoprism.app/getting-started/troubleshooting/docker/#installation) und [Windows](https://docs.docker.com/desktop/setup/install/windows-install/) verfügbar. PhotoPrism läuft auch auf [PikaPods](https://docs.photoprism.app/getting-started/cloud/pikapods/), [DigitalOcean](https://docs.photoprism.app/getting-started/cloud/digitalocean/),
 [Raspberry Pi](https://docs.photoprism.app/getting-started/raspberry-pi/), [Portainer](https://docs.photoprism.app/getting-started/portainer/), [FreeBSD](https://docs.photoprism.app/getting-started/ports/freebsd/), und vielen [NAS-Geräten](https://docs.photoprism.app/getting-started/nas/synology/).
 
-
 ![Progressive Web App](./img/iphone-crocus.png){ align=right }
 
 Sobald die [Installation](https://docs.photoprism.app/getting-started/) abgeschlossen ist, führt dich unser [Erste Schritte 👣](./first-steps.md) Tutorial durch die Benutzeroberfläche und die Einstellungen, um sicherzustellen, dass deine Bibliothek nach deinen individuellen Präferenzen indexiert wird.
@@ -17,7 +16,7 @@ Als Mitglied kannst du [zusätzliche Funktionen](https://link.photoprism.app/mem
 
 !!! tldr ""
     Wir empfehlen neuen Nutzern, [unsere kostenlose Community Edition zu installieren](https://docs.photoprism.app/getting-started/), bevor sie sich [für eine Mitgliedschaft anmelden](https://link.photoprism.app/membership).
-[Mitgliedschaften vergleichen ›](https://link.photoprism.app/membership){ class="pr-3 block-xs" } [FAQ ansehen ›](https://www.photoprism.app/membership/faq/) 
+[Mitgliedschaften vergleichen ›](https://link.photoprism.app/membership){ class="pr-3 block-xs" } [FAQ ansehen ›](https://www.photoprism.app/membership/faq/)
 
 ## Unterstützung erhalten ##
 

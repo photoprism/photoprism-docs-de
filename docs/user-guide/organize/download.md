@@ -6,7 +6,7 @@
      3. Klicke :material-cloud-download:
 
      ![Screenshot](img/download-1-2503-german.jpg){ class="shadow" }
-    
+
     !!! tip ""
         Du kannst [mehrere Bilder auf einmal selektieren](../navigate.md#auswahlmodus-und-mehrfachauswahl), indem du die Shift Taste verwendest.
 
@@ -16,7 +16,7 @@
 === "Vollbild-Modus"
      1. Klicke auf das Bild
      2. Im Vollbild Modus klicke :material-download:
-     
+
      ![Screenshot](img/download-2-2503-german.jpg){ class="shadow" }
 
     !!! info ""

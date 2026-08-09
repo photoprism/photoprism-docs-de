@@ -20,8 +20,7 @@ Um den Standort-Suchfilter zu entfernen klicke :material-map-marker-off-outline:
 
 ![Screenshot](img/places-cluster-3-2503-german.jpg){ class="shadow" }
 
-
-## Suche 
+## Suche
 
 Bei der Nutzung der Suche werden nur Fotos auf der Karte angezeigt, die dem Suchbegriff entsprechen. Du kannst die meisten unserer [Suchfilter](../search/filters.md) auch auf der Karte verwenden.
 

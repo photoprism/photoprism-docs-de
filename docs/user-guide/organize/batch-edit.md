@@ -29,5 +29,3 @@ Zusätzliche Kategorien oder Alben kannst du über das Eingabefeld hinzufügen:
 
 - Beginne zu tippen, um in vorhandenen Kategorien und Alben zu suchen.
 - Existiert der eingegebene Name noch nicht, wird automatisch eine neue Kategorie oder ein neues Album angelegt.
-
-

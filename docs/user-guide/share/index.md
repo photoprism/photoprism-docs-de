@@ -53,10 +53,10 @@ Dann
 ## Freigabelink löschen ##
 
 1. Gehe zu *Alben*
-2. Klicke auf :material-share-variant: auf dem Albumcover 
+2. Klicke auf :material-share-variant: auf dem Albumcover
 
     ![Screenshot](img/share-delete-1-2503-german.jpg)
-    
+
 3. Klicke :material-chevron-down:
 4. Klicke :material-delete:
 

@@ -38,7 +38,7 @@ Durch Klicken auf die Schaltfläche *Anwenden* werden die vorgenommenen Änderun
 
 !!! note ""
     Bei einer Suche kann Text in den Feldern *Titel*, *Bildunterschrift* und *Suchbegriffe* gefunden werden, während *Notizen* privat sind und ignoriert werden.
-    
+
 **Standortauswahl**
 
 PhotoPrism enthält eine Standortkomponente, mit der Standortkoordinaten eines Bildes einfach geändert werden können, indem sein Standort auf einer Karte ausgewählt wird. Klicke einfach auf das :material-map-marker: Symbol neben dem *Ort*-Feld, um die interaktive Kartenoberfläche zu öffnen. Es kann auch nach Standorten gesucht werden, indem Stadt- oder Straßennamen direkt in die Kartenkomponente eingegeben werden.
@@ -65,4 +65,3 @@ Um die Details einer Datei anzuzeigen, klicke auf :material-chevron-down:.
 ![Screenshot](img/edit-files-2-2503-german.jpg){ class="shadow" }
 
 Wenn [mehr als eine JPEG- oder PNG-Datei](stacks.md) vorhanden ist, kannst du über eine Schaltfläche in den Dateidetails das Anzeigebild wechseln, das in Alben und Suchergebnissen als Vorschau verwendet wird. Über die Aktionsschaltflächen kannst du außerdem nicht primäre Dateien löschen oder [gruppierte Dateien trennen](stacks.md).
-

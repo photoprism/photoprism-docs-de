@@ -18,7 +18,6 @@ PhotoPrism kann seine Originale außerdem per WebDAV bereitstellen, sodass kompa
    ![Screenshot](img/services-connect-2-2503-german.jpg){ class="shadow" }
 6. Dein Server ist jetzt mit PhotoPrism verbunden
 
-
 ## Verbindungsdetails bearbeiten ##
 1. Gehe zu *Einstellungen*
 2. Öffne das *Dienste* Tab
@@ -41,7 +40,7 @@ PhotoPrism kann seine Originale außerdem per WebDAV bereitstellen, sodass kompa
 Du kannst jetzt [Alben oder Dateien mit diesem Dienst teilen](../share/services-share.md).
 
 !!! danger ""
-    Auf Grund von Problemen bei bestimmten Nextcloud Einstellungen kann es vorkommen, dass nach dem Upload bei Nextcloud nur 0 Byte große Dateien ankommen. 
+    Auf Grund von Problemen bei bestimmten Nextcloud Einstellungen kann es vorkommen, dass nach dem Upload bei Nextcloud nur 0 Byte große Dateien ankommen.
     [Hier](https://github.com/photoprism/photoprism/issues/443) findest du Informationen, die dir helfen, das Problem zu beheben.
 
 ## Synchronisation bearbeiten ##

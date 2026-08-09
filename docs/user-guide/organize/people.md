@@ -20,7 +20,7 @@ Klicke :material-star:, um eine Person als Favorit zu markieren. Favoriten werde
 ### Warum werden im Bereich NEU nicht alle erkannten Gesichter angezeigt?
 
 Im Bereich *NEU* werden nur erkannte Gesichts-Cluster angezeigt. In deiner Sammlung kann es noch tausende weitere, nicht gruppierte Gesichter geben, wie z. B. Gesichter auf Shampooflaschen
-oder im Fernsehen. 
+oder im Fernsehen.
 
 Du kannst diese Bilder finden, indem du nach `face:new` suchst. Falls du bestimmte Bilder suchst, empfehlen wir, die Suche mit anderen Filtern wie `year` oder `country` zu kombinieren. Im *Personen*-Tab des [Bearbeitungs-Dialogs](edit.md) werden alle Gesichter angezeigt, sodass du sie benennen oder eine falsche Zuordnung über die Schaltfläche :material-eject: melden kannst.
 
@@ -79,7 +79,6 @@ Du kannst Personen im Bereich *Erkannt* ausblenden, indem du :material-close: kl
 !!! attention ""
     Bilder von ausgeblendeten Personen tauchen weiterhin in Suchergebnissen auf.
 
-
 ![Screenshot](img/person-hide-2503-german.jpg){ class="shadow" }
 
 Um alle Personen, inklusive ausgeblendete, zu sehen klicke :material-eye:.
@@ -89,7 +88,6 @@ Um alle Personen, inklusive ausgeblendete, zu sehen klicke :material-eye:.
 Ausgeblendete Personen werden wieder angezeigt, wenn du :material-eye-off: klickst.
 
 ![Screenshot](img/person-recover-2503-german.jpg){ class="shadow" }
-
 
 ## Gesichter ausblenden ##
 Du kannst Gesichts-Cluster im Bereich *Neu* auf die gleiche Weise wie [Personen](#personen-ausblenden) ausblenden.
@@ -177,7 +175,7 @@ Du kannst Bilder von bestimmten Personen mit Hilfe der folgenden Suchanfragen fi
 - `person:"John Doe"` oder `subject:"John Doe"` findet alle Bilder der Person John Doe
 - `people:"John"` oder `subjects:"John"` findet alle Bilder von Personen, deren Namen John enthält
 
-Der person/subject sowie der people/subjects Filter kann in Kombination mit & und | verwendet werden (siehe [Suche](../search/filters.md)). 
+Der person/subject sowie der people/subjects Filter kann in Kombination mit & und | verwendet werden (siehe [Suche](../search/filters.md)).
 Suchfilter können auch kombiniert werden.
 
 `person:"John Doe&Jane Doe" faces:3` findet alle Bilder auf denen John und Jane Doe und mindestens eine weitere Person abgebildet sind.

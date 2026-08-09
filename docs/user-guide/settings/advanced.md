@@ -11,8 +11,8 @@ Systemkonfigurationsoptionen wie die Bildqualität können in den erweiterten Ei
 
 ![Screenshot](img/settings-advanced-2607-german.jpg){ class="shadow" }
 
-Alle [Optionen](https://docs.photoprism.app/getting-started/config-options/) können in deiner `compose.yaml` (oder `docker-compose.yml`) oder auch über Kommandozeilenparameter gesetzt werden. 
-Manuell geänderte Werte werden in einer Konfigurationsdatei gespeichert. Sie wird standardmäßig im Ordner `storage/config` gespeichert. 
+Alle [Optionen](https://docs.photoprism.app/getting-started/config-options/) können in deiner `compose.yaml` (oder `docker-compose.yml`) oder auch über Kommandozeilenparameter gesetzt werden.
+Manuell geänderte Werte werden in einer Konfigurationsdatei gespeichert. Sie wird standardmäßig im Ordner `storage/config` gespeichert.
 
 ## Globale Optionen ##
 
@@ -187,21 +187,21 @@ Folgende Tabelle listet Name, Maße, Seitenverhältnis und Verwendungszweck jede
 
 ### JPG Qualität
 
-Um Thumbnails in bestmöglicher Qualität zu erhalten, solltest du die *JPEG*-Qualität auf ein Minimum von 90 einstellen. 
+Um Thumbnails in bestmöglicher Qualität zu erhalten, solltest du die *JPEG*-Qualität auf ein Minimum von 90 einstellen.
 Generell gilt: je höher die Qualität, desto mehr Speicherplatz brauchen die Thumbnails und desto länger dauert die Generierung.
 
 * Qualitäts-Level von >90% werden als hoch eingestuft.
 * 80%-90% gilt als mittlere Qualität
-* 70-80% gilt als niedrige Qualität (z.B. stark komprimierte Bilder auf Social Media). 
+* 70-80% gilt als niedrige Qualität (z.B. stark komprimierte Bilder auf Social Media).
 
 Alles mit einer Qualität von unter 70% gilt als sehr niedrig.
 
 Beispiel: Bei einer JPEG-Qualität von 95 sind die Vorschaubilder ca 500kB groß. Bei einer Qualität von 80 ist die Größe auf ca 100kB reduziert.
 
 !!! tldr ""
-    **Das Qualitätsempfinden hängt stark davon ab, wie viele Informationen ein Bild enthält.** 
+    **Das Qualitätsempfinden hängt stark davon ab, wie viele Informationen ein Bild enthält.**
     Leere Flächen oder Himmel, lassen sich leicht komprimieren. Während Bilder mit vielen Details am meisten unter der Komprimierung leiden.
-    Deshalb wirkt sich eine Verringerung der Qualität der Thumbnails auch negativ auf die Ergebnisse der Gesichtserkennung und Bildklassifizierung aus. 
+    Deshalb wirkt sich eine Verringerung der Qualität der Thumbnails auch negativ auf die Ergebnisse der Gesichtserkennung und Bildklassifizierung aus.
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_JPEG_QUALITY`.
 
@@ -270,4 +270,3 @@ Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting
 ### Vektorgrafiken deaktivieren
 
 Deaktiviert die Unterstützung von Vektorgrafiken.
-

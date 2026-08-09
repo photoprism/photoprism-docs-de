@@ -16,7 +16,7 @@ Mit der Standardeinstellung werden alle Bilder, die als privat markiert sind, in
  * In geteilten Alben
 
 Private Fotos werden im Beeich *Privat*, in nutzergenerierten Alben und im Dateibrowser angezeigt.
- 
+
 !!! info ""
      Wenn du möchtest, dass private Bilder überall erscheinen, kannst du das in den  [Einstellungen](../settings/general.md) konfigurieren.
 
@@ -29,4 +29,3 @@ Private Fotos werden im Beeich *Privat*, in nutzergenerierten Alben und im Datei
 3. Öffne das Kontext-Menü und klicke :material-lock:
 
 ![Screenshot](img/private-context-menu-2503-german.jpg){ class="shadow" }
-

@@ -7,7 +7,7 @@ Der Ordner `originals` enthält die originalen Foto- und Videodateien deiner Bib
 Dieser Pfad kann mit `PHOTOPRISM_ORIGINALS_PATH` geändert werden.
 
 ## Storage
-Sofern du keine [benutzerdefinierte Konfiguration](../settings/advanced.md) hast, wird der [*storage*-Ordner](https://docs.photoprism.app/getting-started/docker-compose/#photoprismstorage) zum Lesen und Schreiben von [config](#config), [cache](#cache), [backup](#backup), [thumbnail](#thumbnails) und [sidecar](#sidecar) Dateien verwendet. 
+Sofern du keine [benutzerdefinierte Konfiguration](../settings/advanced.md) hast, wird der [*storage*-Ordner](https://docs.photoprism.app/getting-started/docker-compose/#photoprismstorage) zum Lesen und Schreiben von [config](#config), [cache](#cache), [backup](#backup), [thumbnail](#thumbnails) und [sidecar](#sidecar) Dateien verwendet.
 Wir empfehlen, den *storage*-Ordner [nicht innerhalb des *originals*-Ordners zu konfigurieren](https://docs.photoprism.app/known-issues/#nested-storage-folder), es sei denn, der Name beginnt mit einem `.` als Zeichen dafür, dass er versteckt ist.
 
 Dieser Pfad kann mit `PHOTOPRISM_STORAGE_PATH` geändert werden.
@@ -30,12 +30,10 @@ Der `sidecar` Ordner enthält [YAML-Backup-Dateien](export.md#bild-backups) für
 
 Dieser Pfad kann mit `PHOTOPRISM_SIDECAR_PATH` geändert werden.
 
-
 ### Config
 Der `config` Ordner enthält Konfigurationsdateien und Zertifikate.
 
 Dieser Pfad kann mit `PHOTOPRISM_CONFIG_PATH` geändert werden.
-
 
 ### Backup
 Der `backup` Ordner enthält sowohl [Datenbank-Dumps als auch Album-Backup-Dateien](index.md#automatische-backups) und befindet sich standardmäßig im `storage` Ordner.
@@ -60,4 +58,3 @@ Dieser Pfad kann mit `PHOTOPRISM_TEMP_PATH` geändert werden.
 Der `assets` Ordner enthält statische Resourcen wie Models, Icons und Templates.
 
 Dieser Pfad kann mit `PHOTOPRISM_ASSETS_PATH` geändert werden.
-
