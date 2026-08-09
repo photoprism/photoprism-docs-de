@@ -22,17 +22,18 @@ The **German translation of the PhotoPrism User Guide**, published at https://do
 
 ## Common Commands (via `Makefile`)
 
-| Command           | What it does                                                                                                             |
-|-------------------|--------------------------------------------------------------------------------------------------------------------------|
-| `make deps`       | Debian/Ubuntu first-time setup: `apt` Python packages, then `make upgrade`                                               |
-| `make install`    | Create `venv/` and install MkDocs Material + `requirements.txt` (no `apt`)                                               |
-| `make upgrade`    | Nuke `venv/` and reinstall; use when dependencies drift or you want the latest Material                                  |
-| `make watch`      | Alias for `make serve` — livereload on `0.0.0.0:8000` (watches `docs/`, `overrides/`, `mkdocs.yml`)                      |
-| `make build`      | Production render using `mkdocs.deploy.yml` → `site/` (do not commit `site/`)                                            |
-| `make deploy`     | `properdocs gh-deploy --force --config-file mkdocs.deploy.yml` — emergency manual publish only                           |
-| `make merge`      | `develop` → `deploy` merge that triggers the GitHub Actions publish pipeline                                             |
-| `make img-resize` | `mogrify` to cap screenshots at `1000x860`; run after adding images under `docs/user-guide/img` or nested `img/` folders |
-| `make fix`        | `chown`/`chmod` the tree when MkDocs can't read or write files                                                           |
+| Command           | What it does                                                                                                              |
+|-------------------|---------------------------------------------------------------------------------------------------------------------------|
+| `make deps`       | Debian/Ubuntu first-time setup: `apt` Python packages, then `make upgrade`                                                |
+| `make install`    | Create `venv/` and install MkDocs Material + `requirements.txt` (no `apt`)                                                |
+| `make upgrade`    | Nuke `venv/` and reinstall; use when dependencies drift or you want the latest Material                                   |
+| `make watch`      | Alias for `make serve` — livereload on `0.0.0.0:8000` (watches `docs/`, `overrides/`, `mkdocs.yml`)                       |
+| `make build`      | Production render using `mkdocs.deploy.yml` → `site/` (do not commit `site/`)                                             |
+| `make deploy`     | `properdocs gh-deploy --force --config-file mkdocs.deploy.yml` — emergency manual publish only                            |
+| `make merge`      | `develop` → `deploy` merge that triggers the GitHub Actions publish pipeline                                              |
+| `make img-resize` | `mogrify` to cap screenshots at `1000x860`; run after adding images under `docs/user-guide/img` or nested `img/` folders  |
+| `make fix`        | `chown`/`chmod` the tree when MkDocs can't read or write files                                                            |
+| `make format`     | Run all three Markdown formatters (`format-whitespace`, `format-tables`, `format-artifacts`); each has a `-check` variant |
 
 **Checks.** Reviewing `make watch` / `make build` output for build warnings (missing files, broken nav links, unresolved anchors) is still the main correctness check, and it is the only one that validates internal `.md` links *and* anchors. On top of that:
 
