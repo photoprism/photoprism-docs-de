@@ -20,6 +20,11 @@ PhotoPrism unterstützt derzeit die folgende Dienste:
 - **Ollama:** [Das Generieren von Kategorien](ollama-models.md#gemma-4-labels) für ein Bild dauert auf einer NVIDIA RTX 4060 in der Regel 1–4 Sekunden – je nach verwendetem Modell und [Anzahl der Kategorien](ollama-models.md#qwen3-vl-labels).
 - **OpenAI:** Die Verarbeitung eines Bildes dauert etwa 3 Sekunden, abhängig von Modell, Region und aktueller Auslastung.
 
+Zwei Dinge hinter diesen Zahlen solltest du kennen, bevor du auf Geschwindigkeit optimierst:
+
+- **Was ein Bild an Prompt‑Tokens kostet, ist eine Eigenschaft des Modells, nicht des Thumbnails.** Dasselbe 720‑px‑Bild kostete in unserem Benchmark bei einem Modell 208 Prompt‑Tokens und bei einem anderen 1.182 — ein Unterschied um das Fünffache bei identischer Eingabe, verursacht vom Vision‑Encoder des Modells. Ein Modellwechsel kann die Zeit bis zum ersten Token daher stärker senken als eine niedrigere `Resolution`.
+- **Zeiten gehosteter Modelle sind Näherungswerte.** Eine Wiederholung desselben Benchmarks wenige Stunden später verschob die Label‑Latenz eines Cloud‑Modells um mehr als das Sechsfache, während sich seine Ausgabe kaum änderte. Die Zeiten selbst gehosteter Modelle waren über dasselbe Laufpaar hinweg gut reproduzierbar. Wähle ein gehostetes Modell nach Ausgabequalität und miss die Latenz dann, wenn sie für dich zählt, statt einer veröffentlichten Zahl zu vertrauen.
+
 !!! tldr ""
     Ohne GPU-Beschleunigung sind Ollama-Modelle deutlich langsamer und benötigen zwischen 10 Sekunden und über einer Minute pro Bild. Das kann in Ordnung sein, wenn du nur wenige Bilder verarbeiten möchtest oder Wartezeiten akzeptabel sind.
 
