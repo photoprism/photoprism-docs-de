@@ -46,6 +46,38 @@ Für andere Sprachen als Englisch sollten die Basisanweisungen im Prompt auf Eng
 
 Die Unterstützung schwankt stark je nach Modell und folgt weder der Größe noch der allgemeinen Qualität. Gehostete Modelle beherrschten Deutsch, Arabisch und Hebräisch deutlich besser als jedes von uns gemessene selbst gehostete Modell, das in 8 GB VRAM passt. Unter den selbst gehosteten Optionen war Gemma 4 bei nicht‑englischen **Kategorien** am schwächsten, obwohl es unser empfohlener Standard für Englisch ist — eine nicht‑englische Bibliothek ist also einer der Fälle, in denen sich [Qwen3-VL](#qwen3-vl-labels) oder ein [Cloud‑Modell](ollama-cloud.md) zu testen lohnt.
 
+## Normalisierung der Label‑Namen { #label-name-normalization }
+
+Sprachmodelle liefern Label‑Namen in der Form, die der Prompt nahelegt. PhotoPrism vereinheitlicht sie deshalb vor dem Speichern. Die Eigenschaft `Normalize` eines **Labels**-Modells legt fest, wie:[^1]
+
+| Wert              | `ferris wheel` wird gespeichert als | Verhalten                                                                                                                                   |
+|-------------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| *(nicht gesetzt)* | Engine-Standard                     | `phrase` für gehostete Modelle, sonst `single-word`.                                                                                        |
+| `single-word`     | *Ferris*                            | Reduziert auf das erste Token, das im Label‑Vokabular auflösbar ist, sonst auf das erste Token.                                             |
+| `phrase`          | *Ferris Wheel*                      | Behält die Wortgruppe und gleicht sie samt Singularform zuerst als Ganzes gegen das Vokabular ab, sodass aus `sea lions` *Sea Lion* wird.   |
+| `false`           | *Ferris Wheel*                      | Behält exakt das, was das Modell zurückgegeben hat, ohne Vokabular‑Zuordnung — `carousel` bleibt *Carousel* und wird nicht zu *Theme Park*. |
+
+`off`, `none`, `no` und `disabled` werden als Aliase für `false` akzeptiert.
+
+Nur der *Name* hängt vom Modus ab. Schwellenwerte für Confidence und Topicality, Kategorien und Prioritäten gelten in allen Modi gleich, ein wenig aussagekräftiger Name wie `background` wird also weiterhin verworfen. Was sich ändert, ist die gefundene Vokabular‑Regel: `ski-lift` erbt den strengeren `ski`-Schwellenwert, wenn es zu *Ski* reduziert wird, und den allgemeinen Schwellenwert, wenn es als *Ski Lift* erhalten bleibt.
+
+**Die Standardwerte unterscheiden sich aus einem gemessenen Grund.** Jeder mehrteilige Label‑Name, den die gehosteten Modelle in unserem Benchmark zurückgaben, war ein echtes Kompositum — 0–2,1 % aller Labels. Sie behalten Wortgruppen daher standardmäßig bei. Modelle, die in 8 GB VRAM passen, lieferten 3–19 % mehrteilige Namen und mischten echte Komposita mit Füllwörtern wie `city_name`, `text_on_sign` und `photo list` — sie bleiben deshalb bei `single-word`, und die Rate mehrteiliger Namen lohnt einen Blick, bevor du ein Modell auf `phrase` umstellst.
+
+**Nicht‑englische Bibliotheken verlieren mehr, als die englische Rate vermuten lässt**, denn außerhalb des Englischen besteht ein zusammengesetztes Motiv meist aus zwei Wörtern. Mit `single-word` wird aus dem arabischen `حمار وحشي` (Zebra) nur `حمار` (Esel) und aus `عجلة دوارة` (Riesenrad) nur `عجلة` (Rad); aus dem hebräischen `לונה פארק` (Vergnügungspark) wird `לונה` (Luna). Wenn du Labels in einer anderen Sprache erzeugst, ist `phrase` in der Regel die bessere Wahl.
+
+Um zusammengesetzte Namen zu behalten, setze `Normalize: phrase` am Modell **und** verwende einen `System`-Prompt, der keine Einzelwort-Substantive verlangt — sonst liefert das Modell kaum je eine Wortgruppe, die erhalten bleiben könnte:
+
+```yaml
+Models:
+- Type: labels
+  Model: qwen3-vl:4b-instruct
+  Engine: ollama
+  Normalize: phrase
+  Service:
+    Uri: http://ollama:11434/api/generate
+    Think: "false"
+```
+
 ## Temperature, TopK und TopP
 
 Wenn du die Optionen `Temperature`, `TopK` und `TopP` bei Ollama Modellen setzt, kannst du Zufälligkeit und Kreativität generativer [Large Language Modelle](https://en.wikipedia.org/wiki/Large_language_model) gezielt steuern:
@@ -93,7 +125,7 @@ Die folgenden Beispiele kannst du direkt in deiner `vision.yml` verwenden. Die D
 
     Wie viele du bekommst, hängt daher vom Modell ab und ist kein Verfehlen einer Vorgabe. In unserem Benchmark gaben gehostete Modelle sieben bis zwölf Labels pro Bild von sich aus zurück, Modelle mit 8 GB VRAM ein bis vier — beim selben Prompt.
 
-    Du *kannst* eine Anzahl anfordern — siehe das [Qwen3-VL Label‑Beispiel](#qwen3-vl-labels) weiter unten —, aber betrachte das als Feineinstellung pro Modell, die du überprüfst, nicht als Behebung eines Mangels. Sie verdoppelt die Label‑Latenz ungefähr und erhöht den Anteil mehrteiliger Namen bei jedem Modell, das nicht ohnehin bei null lag; diese Namen überstehen die Normalisierung nicht und sind damit verloren.
+    Du *kannst* eine Anzahl anfordern — siehe das [Qwen3-VL Label‑Beispiel](#qwen3-vl-labels) weiter unten —, aber betrachte das als Feineinstellung pro Modell, die du überprüfst, nicht als Behebung eines Mangels. Sie verdoppelt die Label‑Latenz ungefähr und erhöht den Anteil mehrteiliger Namen bei jedem Modell, das nicht ohnehin bei null lag. Ob diese verloren gehen, hängt vom [Normalisierungs-Modus](#label-name-normalization) des Modells ab.
 
 ### Gemma 4: Labels
 
@@ -174,7 +206,7 @@ Warum das funktioniert:
 - **Run:** `on-demand` erlaubt manuelle Läufe, Ausführungen durch den Metadata‑Worker und geplante Jobs ￫ [Run Modes](index.md#run-modes).
 - **Prompt:** Begrenzte Latenz, keine Wiederholungen und klare Kontrolle über Art und Anzahl der zurückgegebenen Labels. Für andere Sprachen siehe [Sprachunterstützung](#language-support).
 - **`Return AT MOST 3 labels`:** Eine bewusste Obergrenze und der Grund, warum die strikten Options nicht aus dem Ruder laufen. Sie ist zugleich restriktiv: In unserem Benchmark lieferte `qwen3-vl:4b-instruct` mit diesem Prompt rund drei Labels pro Bild, mit einer Vorgabe von 8–15 dagegen rund zehn, wobei die Motiv‑Abdeckung von 75 % auf 97 % stieg. Wenn du reichhaltigere Labels möchtest, erhöhe die Obergrenze — und rechne mit etwa der zwei‑ bis dreifachen Latenz. Den Zuwachs bei der Abdeckung solltest du dabei einordnen: Sie misst die Trefferquote, belohnt also das Benennen des erwarteten Motivs und erkennt kein zusätzliches, falsches Label. Ein Modell, das um mehr Labels gebeten wird, schneidet teilweise allein durch Raten besser ab.
-- **`single-word noun in canonical singular form`:** Behalte diese Anweisung in jedem eigenen Prompt bei. PhotoPrism reduziert einen mehrwortigen Label‑Namen derzeit auf ein einzelnes Token und behält dabei meist das falsche — `ferris wheel` wird als *Ferris* gespeichert, `amusement park` als *Park* ([photoprism#5773](https://github.com/photoprism/photoprism/issues/5773)).
+- **`single-word noun in canonical singular form`:** Behalte diese Anweisung bei, sofern du nicht zusätzlich `Normalize: phrase` setzt. Mit der Standard-Normalisierung für selbst gehostete Modelle wird ein zusammengesetzter Name auf ein einzelnes Token reduziert — meist das falsche: `ferris wheel` wird als *Ferris* gespeichert, `amusement park` als *Park*. Siehe [Normalisierung der Label‑Namen](#label-name-normalization).
 - **Seed:** Sorgt für stabile, reproduzierbare Labels. Im Beispiel wird der Default‑Seed der [instruct‑Variante](https://github.com/QwenLM/Qwen3-VL?tab=readme-ov-file#instruct-models) verwendet.
 - **Temperature, TopP und TopK:** Erzwingen eher häufige, hochwahrscheinliche Wörter statt kreativer Synonyme.
 - **MinP:** Schließt unwahrscheinliche Tokens aus, also jene seltenen Labels und merkwürdigen Formulierungen, die du für Klassifizierung nicht brauchst.
@@ -277,3 +309,5 @@ Wenn du nicht die erwarteten Ergebnisse erhältst oder Fehler bemerkst, kannst d
 photoprism --log-level=trace vision run -m labels --count 1 --force
 photoprism --log-level=trace vision run -m caption --count 1 --force
 ```
+
+[^1]: Verfügbar ab dem nächsten Preview-Build und dem darauf folgenden stabilen Release. Frühere Versionen reduzieren einen Label‑Namen immer auf ein einzelnes Token und ignorieren diese Eigenschaft.

@@ -62,23 +62,24 @@ Thresholds:
 
 Wenn ein Modelltyp nicht definiert ist, verwendet PhotoPrism die eingebauten Standardmodelle für `labels`, `nsfw`, `face` oder `caption`. Der optionale Block `Thresholds` kann verwendet werden, um Kategorien mit niedriger Wahrscheinlichkeit herauszufiltern oder die Schwelle für NSFW-Erkennung anzupassen.
 
-| Field                   | Default                                | Notes                                                                              |
-|-------------------------|----------------------------------------|------------------------------------------------------------------------------------|
-| `Type` (required)       | —                                      | `labels`, `caption`, `face`, `nsfw`. Drives routing & scheduling.                  |
-| `Model`                 | `""`                                   | Model identifier in the format `<name>:<version>`.                                 |
-| `Name`                  | derived from `Model`                   | Model name.                                                                        |
-| `Version`               | `latest` (non-OpenAI)                  | Model version, not used by OpenAI.                                                 |
-| `Engine`                | inferred from service/alias            | Aliases set formats, file scheme, resolution. Explicit `Service` values still win. |
-| `Run`                   | `auto`                                 | See Run modes table below.                                                         |
-| `Default`               | `false`                                | Keep one per type for TensorFlow fallbacks.                                        |
-| `Disabled`              | `false`                                | Registered but inactive.                                                           |
-| `Resolution`            | 224 (TensorFlow) / 720 (Ollama/OpenAI) | Thumbnail edge in px; TensorFlow models default to 224 unless you override.        |
-| `System` / `Prompt`     | engine defaults / empty                | Override prompts per model.                                                        |
-| `Format`                | `""`                                   | Response hint (`json`, `text`, `markdown`).                                        |
-| `Schema` / `SchemaFile` | engine defaults / empty                | Inline vs file JSON schema (labels).                                               |
-| `TensorFlow`            | engine defaults / empty                | Local TF model info (paths, tags).                                                 |
-| [`Options`](#options)   | engine defaults / empty                | Sampling/settings merged with engine defaults.                                     |
-| [`Service`](#service)   | engine defaults / empty                | Remote endpoint config (see below).                                                |
+| Field                   | Default                                | Notes                                                                                     |
+|-------------------------|----------------------------------------|-------------------------------------------------------------------------------------------|
+| `Type` (required)       | —                                      | `labels`, `caption`, `face`, `nsfw`. Drives routing & scheduling.                         |
+| `Model`                 | `""`                                   | Model identifier in the format `<name>:<version>`.                                        |
+| `Name`                  | derived from `Model`                   | Model name.                                                                               |
+| `Version`               | `latest` (non-OpenAI)                  | Model version, not used by OpenAI.                                                        |
+| `Engine`                | inferred from service/alias            | Aliases set formats, file scheme, resolution. Explicit `Service` values still win.        |
+| `Run`                   | `auto`                                 | See Run modes table below.                                                                |
+| `Default`               | `false`                                | Keep one per type for TensorFlow fallbacks.                                               |
+| `Disabled`              | `false`                                | Registered but inactive.                                                                  |
+| `Resolution`            | 224 (TensorFlow) / 720 (Ollama/OpenAI) | Thumbnail edge in px; TensorFlow models default to 224 unless you override.               |
+| `System` / `Prompt`     | engine defaults / empty                | Override prompts per model.                                                               |
+| `Format`                | `""`                                   | Response hint (`json`, `text`, `markdown`).                                               |
+| `Schema` / `SchemaFile` | engine defaults / empty                | Inline vs file JSON schema (labels).                                                      |
+| `Normalize`[^2]         | engine default                         | Normalisierung der Label‑Namen; `single-word`, `phrase` oder `false`. Nur Labels‑Modelle. |
+| `TensorFlow`            | engine defaults / empty                | Local TF model info (paths, tags).                                                        |
+| [`Options`](#options)   | engine defaults / empty                | Sampling/settings merged with engine defaults.                                            |
+| [`Service`](#service)   | engine defaults / empty                | Remote endpoint config (see below).                                                       |
 
 ### Run Modes
 
@@ -158,3 +159,4 @@ Unter `Service` konfigurierst du Endpunkt‑URL, HTTP-Methode, Format und Authen
     **Authentifizierung:** Alle Zugangsdaten und Kennungen unterstützen `${ENV_VAR}`‑Ersetzung. `Service.Key` setzt z.B. den HTTP‑Header `Authorization: Bearer <token>`, während `Username`/`Password` für Basic Auth verwendet werden, falls die `Uri` keine Zugangsdaten enthält. Wenn `Service.Key` leer ist, verwendet PhotoPrism standardmäßig `OPENAI_API_KEY` (OpenAI Engine) bzw. `OLLAMA_API_KEY`[^1] (Ollama Engine) und berücksichtigt auch die jeweiligen `_FILE`‑Varianten.
 
 [^1]: Verfügbar seit dem [Release vom 5. März 2026](https://docs.photoprism.app/release-notes/#march-5-2026).
+[^2]: Verfügbar ab dem nächsten Preview-Build und dem darauf folgenden stabilen Release.
