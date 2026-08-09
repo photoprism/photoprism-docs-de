@@ -1,4 +1,6 @@
-.PHONY: all deps fix pip build serve install replace upgrade venv install-venv upgrade upgrade-venv replace replace-venv reinstall watch deploy;
+.PHONY: all deps fix pip build serve install replace upgrade venv install-venv upgrade upgrade-venv replace replace-venv reinstall watch deploy spellcheck install-typos check-links check-links-external install-muffet muffet;
+
+MUFFET_PORT ?= 8042
 
 UID := $(shell id -u)
 GID := $(shell id -g)
@@ -58,3 +60,29 @@ merge:
 img-resize:
 	mogrify -resize '1000x860>' docs/user-guide/img/*.jpg
 	mogrify -resize '1000x860>' docs/user-guide/**/img/*.jpg
+install-typos:
+	./scripts/install-typos.sh
+spellcheck: install-typos
+	# Report-only spell check of docs/, configured in _typos.toml. To apply the suggested
+	# corrections instead of just listing them, run: ./bin/typos --write-changes docs/
+	# German words that collide with the English typo corpus are allowlisted in _typos.toml.
+	./bin/typos docs/
+check-links:
+	# Report internal links and assets in site/ that do not resolve. Needs a build
+	# first (make build) and no network; exits non-zero when something is missing.
+	node scripts/check-links.js
+check-links-external:
+	# Also probe external URLs. Advisory only - a third party rate-limiting us is
+	# not our build breaking - so a non-zero exit is deliberately swallowed.
+	-node scripts/check-links.js --external
+install-muffet:
+	./scripts/install-muffet.sh
+muffet: install-muffet
+	# Crawl the built site with muffet, which also validates in-page anchors that
+	# check-links does not. Served locally on purpose: crawling the live site would
+	# fill its access logs with our own checks. Advisory - muffet judges by status
+	# code, so SPA deep links and bot-challenged hosts show up as false positives.
+	@test -f site/index.html || { echo "No build found in site/ - run 'make build' first." >&2; exit 1; }
+	@cd site && python3 -m http.server $(MUFFET_PORT) --bind 127.0.0.1 >/dev/null 2>&1 & \
+	  SRV=$$!; trap 'kill $$SRV 2>/dev/null' EXIT INT TERM; sleep 2; \
+	  ./bin/muffet --max-connections 16 --buffer-size 8192 $(MUFFET_ARGS) http://127.0.0.1:$(MUFFET_PORT)/ || true

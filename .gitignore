@@ -74,3 +74,8 @@ site/
 
 # Apple Files
 .DS_Store
+# Spellcheck (see Makefile: spellcheck)
+/bin/typos
+
+# Link checking (see Makefile: muffet)
+/bin/muffet

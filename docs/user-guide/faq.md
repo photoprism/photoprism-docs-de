@@ -296,7 +296,7 @@
 ## Metadaten ##
 ??? question "Windows zeigt andere Metadaten an. Könnte das ein Fehler in PhotoPrism sein?"
 
-    Wir empfehlen, dass du [Exiftool](https://exiftool.org/install.html) verwendest, um alle Metadatenfelder und -werte zu prüfen, da Windows nur eine begrenzte Funktionalität hat.
+    Wir empfehlen, dass du [Exiftool](https://exiftool.org/) verwendest, um alle Metadatenfelder und -werte zu prüfen, da Windows nur eine begrenzte Funktionalität hat.
     
     Vielleicht wird dann klar, warum es Unterschiede gibt. Es könnte zum Beispiel sein, dass Windows einige Felder nicht unterstützt und sie deshalb ignoriert oder dass die angezeigten Daten tatsächlich aus dem Dateisystem und nicht aus den Dateien stammen. Wenn du immer noch glaubst, einen Fehler gefunden zu haben, stelle uns bitte [Beispieldateien](https://www.photoprism.app/contact/#file-samples) zur Verfügung, damit wir das Problem reproduzieren können.
 
@@ -341,7 +341,7 @@
 ## WebDAV ##
 ??? question "Warum bekomme ich eine Fehlermeldung, wenn ich versuche einen Remote Server als Synchronisationsziel hinzuzufügen?"
    
-    PhotoPrism testet einige [übliche Endpoints](https://raw.githubusercontent.com/photoprism/photoprism/develop/internal/remote/heuristic.go), wenn ein neuer Remote Server
+    PhotoPrism testet einige [übliche Endpoints](https://github.com/photoprism/photoprism/blob/develop/internal/service/heuristic.go), wenn ein neuer Remote Server
     hinzugefügt wird.
     Falls diese Tests fehlschlagen, wird dir eine Fehlermeldung angezeigt. Hierfür kann es unterschiedliche Gründe geben:
 
