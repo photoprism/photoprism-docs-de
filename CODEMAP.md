@@ -1,6 +1,6 @@
 PhotoPrism Docs-DE CODEMAP
 
-**Last Updated:** December 8, 2025
+**Last Updated:** August 9, 2026
 
 Purpose
 - Provide a fast orientation for contributors working on the German User Guide so they can find Markdown sources, assets, templates, and build tooling without guesswork.
@@ -14,7 +14,9 @@ Quick Start
 
 Tooling & Configuration
 - `README.md` — contributor entry point (German site focus, build/deploy instructions, CLA reminder).  
-- `Makefile` — canonical commands: environment setup (`deps`, `install`, `upgrade`), MkDocs lifecycle (`watch`, `build`, `deploy`), Git helpers (`pull`, `push`, `merge`), and image normalization (`img-resize`).  
+- `Makefile` — canonical commands: environment setup (`deps`, `install`, `upgrade`), MkDocs lifecycle (`watch`, `build`, `deploy`), Git helpers (`pull`, `push`, `merge`), image normalization (`img-resize`), and the post-build checks (`check-links`, `check-links-external`, `spellcheck`, `muffet`).
+- `scripts/` — `check-links.js` (internal link and asset checker for `site/`; a byte-identical sibling of the copies in `photoprism-docs`, `photoprism-web` and `photoprism-blog`) plus `install-typos.sh` and `install-muffet.sh`, which fetch pinned binaries into the git-ignored `bin/`.
+- `_typos.toml` — spell-checker configuration, including the allowlist of German words that collide with the English typo corpus `typos` ships.  
 - `requirements.txt` — Python dependencies pinned for MkDocs Material and extensions.  
 - `.env` (local) — optional for proxy or environment overrides; keep it untracked.  
 - `mkdocs.yml` — main configuration: German navigation, metadata, theme options, redirects plugin, Markdown extensions.  

@@ -32,6 +32,7 @@
 - Production render: `make build` uses `mkdocs.deploy.yml`; `make deploy` runs `properdocs gh-deploy --force` for emergency pushes. Normal releases flow by merging `develop` into `deploy` (see below).
 - Container option: to build without installing a host toolchain, run the upstream `squidfunk/mkdocs-material` image and `pip install -r requirements.txt` at run time (full command in `README.md` / `CLAUDE.md`).  
 - Image hygiene: run `make img-resize` after adding screenshots under `docs/user-guide/img/` or nested `img/` folders to enforce the `1000x860` max size.
+- Checks after a build: `make check-links` resolves every internal link and asset in `site/` and exits non-zero on a miss; `make spellcheck` runs `typos` over `docs/` (German words that collide with its English typo list are allowlisted in `_typos.toml`); `make muffet` crawls a locally served copy and additionally validates in-page anchors. The build output itself remains the check for internal `.md` links and anchors.
 
 ## Repository Layout & Ownership
 

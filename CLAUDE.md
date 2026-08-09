@@ -34,7 +34,11 @@ The **German translation of the PhotoPrism User Guide**, published at https://do
 | `make img-resize` | `mogrify` to cap screenshots at `1000x860`; run after adding images under `docs/user-guide/img` or nested `img/` folders |
 | `make fix`        | `chown`/`chmod` the tree when MkDocs can't read or write files                                                           |
 
-There are no repo-wide lint or test targets — reviewing `make watch` output for build warnings (missing files, broken nav links, unresolved references) is the closest equivalent.
+**Checks.** Reviewing `make watch` / `make build` output for build warnings (missing files, broken nav links, unresolved anchors) is still the main correctness check, and it is the only one that validates internal `.md` links *and* anchors. On top of that:
+
+- **`make check-links`** resolves every site-relative `src`/`href`/`poster`/`data-src`/`srcset` in the built `site/` tree against the files on disk. No network, deterministic, exits non-zero on a miss. It catches what the build does not: missing images and other assets in the rendered output. `make check-links-external` adds an off-site probe that is advisory only. `scripts/check-links.js` is a sibling copy of the one in `photoprism-docs`, `photoprism-web` and `photoprism-blog` — all four are kept byte-identical apart from the header, so fix one and copy it across.
+- **`make spellcheck`** runs `typos`. It only reports words on its curated typo list rather than dictionary-checking, which is what makes it usable on German prose. Where an ordinary German word collides with an English typo entry (`ist` → `is`, `oder` → `order`), it is allowlisted in `_typos.toml`; that list is the whole German-specific difference from the English configuration. Expect to extend it as new vocabulary appears, and check a word really is correct German before adding it — that is the one thing the list can hide.
+- **`make muffet`** crawls a *served* copy of `site/` and **does** validate in-page anchors, which `check-links` does not. Advisory: it judges by status code, so expect false positives from bot-challenged hosts (Wikipedia, LinkedIn) and from JS-driven fragments such as `photoprism.app/editions/#compare` and GitHub `#issuecomment-…` anchors, none of which are broken.
 
 MkDocs Material Insiders is now public on PyPI, so **no `GH_TOKEN` is required** in `.env`.
 
@@ -49,6 +53,8 @@ MkDocs Material Insiders is now public on PyPI, so **no `GH_TOKEN` is required**
 
   A complete, throwaway build env. The container writes `site/` as **root** (git-ignored; remove with another `docker run … rm -rf site` if needed).
 - **Host `venv`.** `make deps` (first time), then `make watch` (livereload) or `make build`.
+
+**A `venv` does not survive the repo moving.** The scripts in `venv/bin/` hard-code an absolute interpreter path in their shebang, so relocating the checkout leaves `make build` failing with a bare `Error 127` and no useful message. Check with `head -1 venv/bin/properdocs`; `make upgrade` rebuilds it. This bit us after the host workspace moved off `/workspace` — the venv had been broken and unnoticed for weeks.
 
 ## Architecture & Deployment
 
@@ -68,7 +74,7 @@ When you **add or rename a redirect**, update the entries in **both** configs so
 - **German straight double quotes** `"…"` — not the typographic `„…"` form.
 - **Localize, don't translate 1:1**, the `<meta name="keywords">` list in `overrides/main.html` (e.g. `dsgvo`, not `gdpr`).
 - **Keep headings/nav labels consistent with `mkdocs.yml`**; don't introduce new casing styles. Store images next to the page that references them, with descriptive alt text.
-- **Refresh `**Last Updated:**`** at the top of a page whenever you change its contents (format: `January 20, 2026`, no time); leave it for whitespace-only edits.
+- **No `**Last Updated:**` stamps.** Unlike a handful of English developer-guide pages, no page under `docs/` here carries one — don't introduce one, and don't go looking for one to refresh.
 - **Commit messages:** concise, imperative, one-word `Prefix:` (e.g. `Content: Translate Search Filters page`), subject ≤80 chars. Do **not** append `Co-Authored-By: Claude …` trailers; no emojis.
 - **GitHub issues:** only create/edit/close/relabel when explicitly asked (see `AGENTS.md` for the required User Story + Acceptance Criteria format).
 - **Never commit credentials**; keep `.env` untracked.

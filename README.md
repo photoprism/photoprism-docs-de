@@ -24,9 +24,11 @@ To make more extensive changes, fork this repository, modify the corresponding `
 ### Project Layout ###
 
     mkdocs.yml    # The configuration file.
+    _typos.toml   # Spell-checker configuration (see "Checking Your Changes").
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+    scripts/      # Link checker and installers for the check tooling.
 
 ### Build Setup ###
 
@@ -78,6 +80,22 @@ docker run --rm --entrypoint sh -v "$PWD":/docs -w /docs squidfunk/mkdocs-materi
 ```
 
 The rendered site is written to `site/` (the container writes it as `root`). Both `site/` and `venv/` are git-ignored build artifacts.
+
+Note that a `venv/` does not survive the checkout being moved: the scripts in `venv/bin/` hard-code an absolute interpreter path, so a relocated repository makes `make build` fail with a bare `Error 127`. Run `make upgrade` to rebuild it.
+
+### Checking Your Changes ###
+
+After `make build`, three optional checks are available. None of them is run by CI, and only the first is a reliable gate:
+
+```
+make check-links           # internal links and assets in site/; exits non-zero on a miss
+make spellcheck            # typos over docs/, configured in _typos.toml
+make muffet                # crawls a locally served copy; also validates in-page anchors
+```
+
+`make spellcheck` uses [typos](https://github.com/crate-ci/typos), which reports only words on its curated typo list instead of dictionary-checking — that is what makes it workable on German text. German words that collide with an English typo entry are allowlisted in `_typos.toml`; add to that list as new vocabulary appears.
+
+`make check-links-external` and `make muffet` also probe external URLs and are advisory only: they judge by status code, so bot-challenged hosts and JavaScript-driven page fragments show up as false positives.
 
 ### Deployment ###
 
