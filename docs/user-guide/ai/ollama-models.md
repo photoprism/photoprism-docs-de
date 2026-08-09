@@ -57,13 +57,17 @@ Sprachmodelle liefern Label‑Namen in der Form, die der Prompt nahelegt. PhotoP
 | `phrase`          | *Ferris Wheel*                      | Behält die Wortgruppe und gleicht sie samt Singularform zuerst als Ganzes gegen das Vokabular ab, sodass aus `sea lions` *Sea Lion* wird.   |
 | `false`           | *Ferris Wheel*                      | Behält exakt das, was das Modell zurückgegeben hat, ohne Vokabular‑Zuordnung — `carousel` bleibt *Carousel* und wird nicht zu *Theme Park*. |
 
+Ein Name in einer **nicht-lateinischen Schrift** bleibt in jedem Modus vollständig erhalten, auch unter `single-word` — die Einstellung kann ihn nicht zusammenziehen.
+
 `off`, `none`, `no` und `disabled` werden als Aliase für `false` akzeptiert.
 
 Nur der *Name* hängt vom Modus ab. Schwellenwerte für Confidence und Topicality, Kategorien und Prioritäten gelten in allen Modi gleich, ein wenig aussagekräftiger Name wie `background` wird also weiterhin verworfen. Was sich ändert, ist die gefundene Vokabular‑Regel: `ski-lift` erbt den strengeren `ski`-Schwellenwert, wenn es zu *Ski* reduziert wird, und den allgemeinen Schwellenwert, wenn es als *Ski Lift* erhalten bleibt.
 
 **Die Standardwerte unterscheiden sich aus einem gemessenen Grund.** Jeder mehrteilige Label‑Name, den die gehosteten Modelle in unserem Benchmark zurückgaben, war ein echtes Kompositum — 0–2,1 % aller Labels. Sie behalten Wortgruppen daher standardmäßig bei. Modelle, die in 8 GB VRAM passen, lieferten 3–19 % mehrteilige Namen und mischten echte Komposita mit Füllwörtern wie `city_name`, `text_on_sign` und `photo list` — sie bleiben deshalb bei `single-word`, und die Rate mehrteiliger Namen lohnt einen Blick, bevor du ein Modell auf `phrase` umstellst.
 
-**Nicht‑englische Bibliotheken verlieren mehr, als die englische Rate vermuten lässt**, denn außerhalb des Englischen besteht ein zusammengesetztes Motiv meist aus zwei Wörtern. Mit `single-word` wird aus dem arabischen `حمار وحشي` (Zebra) nur `حمار` (Esel) und aus `عجلة دوارة` (Riesenrad) nur `عجلة` (Rad); aus dem hebräischen `לונה פארק` (Vergnügungspark) wird `לונה` (Luna). Wenn du Labels in einer anderen Sprache erzeugst, ist `phrase` in der Regel die bessere Wahl.
+**Namen in einer anderen Schrift sind automatisch geschützt.** Das Label‑Vokabular ist englisch. Einen Namen ohne lateinische Buchstaben in Token zu zerlegen, kann daher nichts treffen und kürzt nur das Motiv weg — aus dem arabischen `حمار وحشي` (Zebra) würde `حمار` (Esel), aus dem hebräischen `גלגל ענק` (Riesenrad) würde `גלגל` (Rad). PhotoPrism behält solche Namen deshalb auch unter `single-word` vollständig bei; für eine arabische, hebräische, chinesische, japanische, koreanische, griechische oder kyrillische Bibliothek musst du dafür nichts einstellen.
+
+Maßgeblich ist die **Schrift, nicht die Sprache**: Ein Name in lateinischer Schrift lässt sich weiterhin Token für Token auflösen, und das dabei behaltene Hauptwort ist meist das richtige — aus dem spanischen `noria gigante` wird *Noria*, also weiterhin ein Riesenrad. Ein Name, der Schriften mischt, folgt der konfigurierten Einstellung, sodass `شاطئ beach` über das Vokabular zu *Beach* aufgelöst wird. **Für eine deutsche Bibliothek ist es damit eine echte Abwägung und keine Notwendigkeit:** `single-word` behält das Hauptwort, `phrase` das vollständige Kompositum — bei deutschen Komposita, die ohnehin oft ein einzelnes Wort sind (`Riesenrad`), fällt der Unterschied ohnehin kaum ins Gewicht.
 
 Um zusammengesetzte Namen zu behalten, setze `Normalize: phrase` am Modell **und** verwende einen `System`-Prompt, der keine Einzelwort-Substantive verlangt — sonst liefert das Modell kaum je eine Wortgruppe, die erhalten bleiben könnte:
 
