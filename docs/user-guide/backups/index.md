@@ -59,6 +59,6 @@ Wenn du [MariaDB](https://docs.photoprism.app/getting-started/troubleshooting/ma
 
 ## MariaDB Server Migration
 
-Detaillierte Informationen darüber, wie du deine [MariaDB-Datenbank](#database) auf einen anderen Server oder eine andere virtuelle Maschine verschieben kannst, findest du im Abschnitt [Server-Migration](https://docs.photoprism.app/getting-started/troubleshooting/mariadb/#server-migration) in unserem [MariaDB-Fehlerbehebungsleitfaden](https://docs.photoprism.app/getting-started/troubleshooting/mariadb.md).
+Detaillierte Informationen darüber, wie du deine [MariaDB-Datenbank](#database) auf einen anderen Server oder eine andere virtuelle Maschine verschieben kannst, findest du im Abschnitt [Server-Migration](https://docs.photoprism.app/getting-started/troubleshooting/mariadb/#server-migration) in unserem [MariaDB-Fehlerbehebungsleitfaden](https://docs.photoprism.app/getting-started/troubleshooting/mariadb/).
 
 [Erfahre mehr ›](https://docs.photoprism.app/getting-started/troubleshooting/mariadb/#server-migration)
