@@ -35,7 +35,7 @@ Beispiel für die Erstellung eines App-Passworts, das du mit [WebDAV-kompatiblen
 ![Screenshot](../users/img/app-password.jpg){ class="shadow" }
 
 !!! tldr ""
-    Wenn du die [Berechtigung](https://docs.photoprism.app/user-guide/users/client-credentials/#authorization-scopes) *WebDAV* auswählst, stellst du sicher, dass das App-Passwort nicht für die Anmeldung über die reguläre Benutzeroberfläche oder für andere Aktionen verwendet werden kann. Apps können auch nicht dein Passwort ändern oder Benutzerkonten verwalten, selbst wenn du ihnen *Vollen Zugriff* gewährst.
+    Wenn du die [Berechtigung](https://docs.photoprism.app/user-guide/users/client-credentials/#authorization-scopes) *WebDAV* auswählst, stellst du sicher, dass das App-Passwort nicht für die Anmeldung über die reguläre Benutzeroberfläche oder für andere Aktionen verwendet werden kann. Apps können auch nicht dein Passwort ändern oder Benutzerkonten verwalten, selbst wenn du ihnen *Vollen Zugriff* gewährst. Wenn ein Administrator die [Anmeldung deaktiviert](../users/cli.md#optionen) hat, können App-Passwörter nur noch für die [WebDAV](../sync/webdav.md)-Synchronisierung verwendet werden.
 
 ## WebDAV-URL anzeigen
 
