@@ -48,21 +48,29 @@ Alternativ zur [Web-Benutzeroberfläche](index.md) kannst du Benutzerkonten auch
 
 ### Optionen
 
-Du kannst die Unterbefehle `add` und `mod` mit diesen Flags kombinieren, um Kontoeigenschaften zu setzen oder zu ändern:
+Die Unterbefehle `add` und `mod` unterstützen diese Flags, um Kontoeigenschaften zu setzen oder zu ändern. Die folgende Liste enthält die Basis-Flags aus dem öffentlichen Repository sowie die editionsspezifischen Erweiterungen, die derzeit von Plus und Pro bereitgestellt werden:
 
-| Command Flag                         | Description                                                         |
-|--------------------------------------|---------------------------------------------------------------------|
-| `--name NAME`, `-n NAME`             | full NAME for display in the interface                              |
-| `--email EMAIL`, `-m EMAIL`          | unique EMAIL address of the user                                    |
-| `--password PASSWORD`, `-p PASSWORD` | PASSWORD for local authentication (8-72 characters)                 |
-| `--role value`, `-r value`           | user account ROLE (admin, user, viewer or guest) (default: "admin") |
-| `--auth PROVIDER`, `-A PROVIDER`     | authentication PROVIDER (default, local, oidc or none)              |
-| `--auth-id ID`                       | authentication ID e.g. Subject ID or Distinguished Name (DN)        |
-| `--superadmin`, `-s`                 | make user super admin with full access                              |
-| `--no-login`, `-l`                   | disable login on the web interface                                  |
-| `--webdav`, `-w`                     | allow to sync files via WebDAV                                      |
-| `--upload-path value`, `-u value`    | upload files to this sub-folder                                     |
-| `--disable-2fa`                      | deactivate two-factor authentication                                |
+| Command Flag                         | Description                                                  |
+|--------------------------------------|--------------------------------------------------------------|
+| `--name NAME`, `-n NAME`             | full NAME for display in the interface                       |
+| `--email EMAIL`, `-m EMAIL`          | unique EMAIL address of the user                             |
+| `--password PASSWORD`, `-p PASSWORD` | PASSWORD for local authentication (8-72 characters)          |
+| `--role value`, `-r value`           | user account ROLE accepted by the current edition            |
+| `--auth PROVIDER`, `-A PROVIDER`     | authentication PROVIDER supported by the current edition     |
+| `--auth-id ID`                       | authentication ID e.g. Subject ID or Distinguished Name (DN) |
+| `--superadmin`, `--super`            | make user super admin with full access                       |
+| `--no-login`, `-l`                   | disable login on the web interface                           |
+| `--webdav`, `-w`                     | allow to sync files via WebDAV                               |
+| `--disable-2fa`                      | deactivate two-factor authentication                         |
+| `--upload-path value`, `-u value`    | upload files to this subfolder in Plus and Pro               |
+| `--scope SCOPES`, `-s SCOPES`        | set a user authorization scope in Pro                        |
+| `--attr ATTRIBUTES`, `-a ATTRIBUTES` | set custom user attributes in Pro                            |
+| `--base-path value`, `-d value`      | restrict search to this originals folder in Pro              |
+
+!!! note ""
+    Welche Optionen verfügbar sind, hängt von der Edition ab, die du verwendest. Unsere Community Edition stellt den Basis-Befehlssatz bereit, während PhotoPrism Plus und Pro weitere Flags und Funktionen zur Kontoverwaltung hinzufügen. Führe `photoprism users add --help` und `photoprism users mod --help` auf deiner Instanz aus, um die genauen Optionen deines Builds zu sehen.
+
+Konten, für die die Anmeldung mit `--no-login` deaktiviert ist, können sich weder an der Benutzeroberfläche anmelden noch Anfragen an die [REST API](https://docs.photoprism.app/developer-guide/api/) authentifizieren, auch nicht mit einem [App-Passwort](../settings/account.md#apps-und-gerate). In Kombination mit `--webdav` bleiben sie für die [WebDAV](../sync/webdav.md)-Synchronisierung mit App-Passwörtern nutzbar, die die [Berechtigung](https://docs.photoprism.app/user-guide/users/client-credentials/#authorization-scopes) `webdav` haben. Anwendungen, die ohne Benutzeranmeldung auf die REST API zugreifen müssen, können ein [Access-Token](https://docs.photoprism.app/user-guide/users/client-credentials/#access-tokens) oder [Client-Zugangsdaten](https://docs.photoprism.app/user-guide/users/client-credentials/#client-credentials) verwenden.
 
 ### Neuen Benutzer erstellen
 
