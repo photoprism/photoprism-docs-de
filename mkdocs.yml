@@ -90,6 +90,7 @@ nav:
       - Mit Gästen teilen: user-guide/users/sharing.md
       - Mehrere Bibliotheken: user-guide/users/libraries.md
       - 2FA einrichten: user-guide/users/2fa.md
+      - Client-Zugangsdaten: user-guide/users/client-credentials.md
   - Mobile App (PWA): user-guide/pwa.md
   - iOS und Android: user-guide/native-apps/index.md
   - FAQ: user-guide/faq.md
