@@ -3,7 +3,7 @@
 PhotoPrism verwendet eine mehrstufige KI‑Pipeline, um Gesichter zu erkennen, Embeddings zu erzeugen und ähnliche Gesichter zu Clustern zusammenzufassen, damit sie später [einfach nach Personen organisiert werden können](../organize/people.md):
 
 1. **Detection** – ein Erkennungsmodell findet Gesichter in den Bildern.
-2. **Embedding** – ein Vektor beschreibt jedes erkannte Gesicht.
+2. **Embedding** – für jedes erkannte Gesicht wird ein Embedding erzeugt.
 3. **Clustering** – ähnliche Gesichter werden gruppiert, sodass sie einer Person zugeordnet werden können.
 
 Detection und Embedding verwenden getrennte Modelle, die unabhängig voneinander gewählt und aktualisiert werden können.
@@ -30,7 +30,7 @@ Das Erkennungsmodell wird über `FACE_DETECTOR` ausgewählt. Wenn du die Variabl
 
 ## Face‑Embeddings
 
-Nach der Erkennung erzeugt PhotoPrism für jedes Gesicht einen Embedding‑Vektor. Diese Vektoren werden genutzt, um:
+Nach der Erkennung erzeugt PhotoPrism für jedes Gesicht ein Embedding. Diese Embeddings werden genutzt, um:
 
 1. **Gesichter über verschiedene Bilder hinweg zu matchen**,
 2. **ähnliche Gesichter per DBSCAN‑Algorithmus zu Clustern zu gruppieren** und
