@@ -25,15 +25,25 @@ Wenn du Podman auf einer Red Hat-kompatiblen Linux-Distribution verwendest:
 podman-compose exec photoprism photoprism backup -i -f
 ```
 
-Standardmäßig wird ein Backup in `storage/backup/mysql/[JJJJ-MM-TT].sql` erstellt. Ein benutzerdefinierter Backup-Basis-Ordner kann mit [`PHOTOPRISM_BACKUP_PATH`](https://docs.photoprism.app/getting-started/config-options/#storage) konfiguriert werden.
+Standardmäßig wird ein Backup in einem treiberspezifischen Unterordner erstellt, also z.B. in `storage/backup/mysql/[JJJJ-MM-TT].sql` oder `storage/backup/sqlite/[JJJJ-MM-TT].sql`. Lass das `-f` Flag weg, wenn du keine bestehende Datei gleichen Namens überschreiben willst. Ein benutzerdefinierter Backup-Basis-Ordner kann mit [`PHOTOPRISM_BACKUP_PATH`](https://docs.photoprism.app/getting-started/config-options/#backup) konfiguriert werden.
 
-Lass das `-f` Flag weg, wenn du keine bestehenden Dateien überschreiben willst. Du kannst auch einen eigenen Dateinamen als Argument angeben (oder `-`, um den SQL-Dump nach [stdout](https://docs.photoprism.app/getting-started/advanced/backups/) zu schreiben):
+Alternative Möglichkeiten zur Erstellung von SQL-Dumps aus SQLite findest du in unserer [erweiterten Backup-Anleitung](https://docs.photoprism.app/getting-started/advanced/backups/#sqlite-backups).
+
+### Eigene Dateinamen
+
+Du kannst einen eigenen Dateinamen als Argument angeben, um den Dump in einer Datei deiner Wahl zu speichern. Verwende `-f`, wenn du eine bestehende Datei überschreiben möchtest:
 
 ```
-docker compose exec photoprism photoprism backup -i [filename]
+docker compose exec photoprism photoprism backup -i my_custom_dump.sql
 ```
 
-Alternative Möglichkeiten zur Erstellung von SQL-Dumps aus SQLite findest du in unserer [erweiterten Backup-Anleitung](https://docs.photoprism.app/getting-started/advanced/backups).
+Wenn du nur einen Dateinamen übergibst, wird die Datei im aktuellen Arbeitsverzeichnis innerhalb des Containers angelegt, üblicherweise also in `/photoprism/`. Um den Dump stattdessen im Standard-Backup-Verzeichnis abzulegen:
+
+```
+docker compose exec photoprism photoprism backup -i /photoprism/storage/backup/mysql/my_custom_dump.sql
+```
+
+Du kannst außerdem `-` als Dateinamen verwenden, um den SQL-Dump nach [stdout](https://docs.photoprism.app/getting-started/advanced/backups/) zu schreiben.
 
 !!! tldr ""
     Beachte, dass unsere Anleitungen jetzt standardmäßig den neuen Befehl `docker compose` verwenden. Wenn dein Server diesen Befehl noch nicht unterstützt, kannst du trotzdem `docker-compose` verwenden.
