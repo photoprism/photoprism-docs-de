@@ -19,7 +19,7 @@ PhotoPrism liefert **YuNet** mit, ein kompaktes Erkennungsmodell, das auf der [O
 - verwendet 720 px‑Thumbnails als Eingabe (Modell‑Input 640 px)
 - führt Berechnungen über die Meta/Vision‑Worker aus
 
-Das Erkennungsmodell wird über `FACE_DETECTOR` ausgewählt. Wenn du die Variable nicht setzt, wird es vom verwendeten Gesichtsmodell abgeleitet, sodass standardmäßig eine zueinander passende Kombination läuft. Der vorgebaute Runtime‑Build zielt auf glibc ≥ 2.27 auf x86_64‑ und arm64‑Systemen.
+Das Erkennungsmodell wird über `FACE_DETECTOR` ausgewählt. Wenn du die Variable nicht setzt, wird es vom verwendeten Gesichtsmodell abgeleitet, sodass standardmäßig eine zueinander passende Kombination läuft. Der vorgebaute Runtime‑Build zielt auf glibc ≥ 2.28 auf x86_64‑ und arm64‑Systemen.
 
 !!! info ""
     `FACE_ENGINE` ist **veraltet**: Die Variable hat eine Runtime ausgewählt und kein Modell. Nur `FACE_ENGINE=none` hat noch eine Wirkung, und `FACE_DETECTOR` hat Vorrang. Bestehende Konfigurationen funktionieren weiterhin.
