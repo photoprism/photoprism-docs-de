@@ -2,6 +2,7 @@
 
 !!! example ""
     [PhotoPrism® Plus](https://www.photoprism.app/editions/#compare) verfügt zusätzlich zum in allen Editionen enthaltenen [Command-Line Interface](cli.md) über ein Admin-Web-UI zum Verwalten von Nutzern und Sitzungen.
+    Wenn du [PhotoPrism® Pro](https://www.photoprism.app/teams/#compare) verwendest, findest du weitere Informationen unter [Managing User Accounts](https://www.photoprism.app/pro/kb/roles/) in der Pro Knowledge Base.
 
 Du kannst Benutzerkonten hinzufügen, bearbeiten und löschen, indem du als [Admin](roles.md#admin) zu *Einstellungen > Benutzer* navigierst:
 
@@ -34,3 +35,6 @@ Du kannst aktive Sitzungen anzeigen und löschen, indem du als [Admin](roles.md#
 
 Um Sitzungsdetails anzuzeigen, klicke auf :material-magnify:.
 Um eine Sitzung zu löschen klicke :material-delete:.
+
+!!! info ""
+    Wenn sich das Passwort oder die Berechtigungsstufe eines Benutzers ändert, macht PhotoPrism dessen andere aktive Sitzungen ungültig, um das Konto zu schützen.
