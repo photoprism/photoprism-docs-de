@@ -47,12 +47,15 @@ Wenn Ollama standardmäßeig ohne `--profile ollama` gestartet werden soll, entf
           OLLAMA_MULTIUSER_CACHE: "false" # optimize prompt caching for multi-user scenarios
           OLLAMA_NOPRUNE: "false"         # disables pruning of model blobs at startup
           OLLAMA_NOHISTORY: "true"        # disables readline history
-          OLLAMA_FLASH_ATTENTION: "false" # enables the experimental flash attention feature
-          OLLAMA_KV_CACHE_TYPE: "f16"     # cache quantization (f16, q8_0, or q4_0)
+          OLLAMA_FLASH_ATTENTION: "true"  # required for OLLAMA_KV_CACHE_TYPE quantization
+          OLLAMA_KV_CACHE_TYPE: "f16"     # cache precision: f16 (default), q8_0, q4_0
           OLLAMA_SCHED_SPREAD: "false"    # allows scheduling models across all GPUs.
-          OLLAMA_NEW_ENGINE: "true"       # enables the new Ollama engine
           # OLLAMA_DEBUG: "true"            # shows additional debug information
           # OLLAMA_INTEL_GPU: "true"        # enables experimental Intel GPU detection
+          ## Telemetry / privacy opt-outs (containers do not inherit /etc/environment):
+          DO_NOT_TRACK: "true"
+          HF_HUB_DISABLE_TELEMETRY: "1"
+          # OLLAMA_NO_CLOUD: "1"            # uncomment to disable Ollama Cloud models/features
           ## NVIDIA GPU Hardware Acceleration (optional):
           # NVIDIA_VISIBLE_DEVICES: "all"
           # NVIDIA_DRIVER_CAPABILITIES: "compute,utility"
@@ -72,6 +75,19 @@ Beachte, dass das [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/
 
 !!! danger ""
     Ollama erzwingt standardmäßig **keine Authentifizierung**. Öffne Port `11434` daher nur in vertrauenswürdigen Netzwerken oder betreibe Ollama hinter einem Reverse Proxy, der Zugriffskontrolle hinzufügt.
+
+### Flash Attention & KV Cache
+
+**`OLLAMA_FLASH_ATTENTION`** bringt auf unterstützten Modell‑Architekturen (`gemma3`, `gptoss`, `mistral3`, `qwen3*`) einen kleinen Geschwindigkeitsgewinn. Auf nicht unterstützten Architekturen und auf der CPU bleibt die Option wirkungslos. Sie ist **erforderlich**, wenn du zusätzlich die Quantisierung über `OLLAMA_KV_CACHE_TYPE` aktivierst. Setze sie auf `"false"`, wenn du [Qwen3‑2507 Builds](https://github.com/ollama/ollama/issues/12432) verwendest – diese sind nicht mit Flash Attention kompatibel.
+
+**`OLLAMA_KV_CACHE_TYPE`** steuert die Genauigkeit des Key/Value‑Caches der Attention pro Token:
+
+- **`f16`** (Standard) – native Genauigkeit, funktioniert mit jeder Architektur, kein Qualitätsverlust.
+- **`q8_0`** – halbiert den VRAM‑Bedarf des Caches; unproblematisch für `qwen3*` / `gpt-oss` / `mistral3`; verursacht bei [`gemma3`](https://ollama.com/library/gemma3) [eine 5‑fache Verlangsamung](https://github.com/ollama/ollama/issues/11949); fällt bei [`gemma4`](https://ollama.com/library/gemma4) / [`qwen2.5vl`](https://ollama.com/library/qwen2.5vl) stillschweigend auf `f16` zurück (beide stehen nicht auf der [Flash‑Attention‑Allowlist](https://github.com/ollama/ollama/issues/13337)).
+- **`q4_0`** – viertelt den VRAM‑Bedarf des Caches; auf Qwen weiterhin brauchbar, verschlechtert Gemma spürbar; nur bei knappem VRAM sinnvoll.
+
+!!! tldr ""
+    Die [im Beispiel oben](#schritt-1-ollama-installieren) verwendeten Standardwerte (`OLLAMA_FLASH_ATTENTION: "true"` + `OLLAMA_KV_CACHE_TYPE: "f16"`) sind eine sichere Kombination für unsere [empfohlenen Modelle](ollama-models.md) auf typischer Hardware.
 
 ## Schritt 2: Modelle herunterladen
 
@@ -128,6 +144,9 @@ Von Ollama generierte Captions und Labels werden automatisch mit der Source `oll
 
 !!! tip "Prompt‑Lokalisierung"
     Wenn du Ausgaben in anderen Sprachen erzeugen möchtest, lasse die Basisanweisungen im Prompt auf Englisch und ergänze nur die gewünschte Sprache (z.B. "Respond in German"). Dieses Vorgehen funktioniert sowohl für [Caption‑Prompts](ollama-models.md#qwen3-vl-caption) als auch für [Label‑Prompts](ollama-models.md#qwen3-vl-labels).
+
+!!! info "NSFW‑Erkennung"
+    Wenn du das `labels`‑Modell über Ollama betreibst, erfolgt die NSFW‑Erkennung **nicht** automatisch. PhotoPrism bittet das Modell nur dann, die NSFW‑Klassifizierung in dieselbe Antwort aufzunehmen, wenn **sowohl** `PHOTOPRISM_DETECT_NSFW=true` **als auch** `PHOTOPRISM_EXPERIMENTAL=true` gesetzt sind. Ohne diese Kombination überspringt `photoprism vision run -m labels` die NSFW‑Markierung, selbst wenn das LLM "weiß", dass der Inhalt nicht jugendfrei ist. Die vollständige Übersicht findest du unter [NSFW Detection](https://docs.photoprism.app/user-guide/ai/nsfw/).
 
 ## Schritt 4: PhotoPrism neu starten
 
