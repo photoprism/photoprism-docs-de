@@ -194,9 +194,9 @@ Die Gesichtserkennung kann auf [älterer Hardware](https://docs.photoprism.app/g
 
 ### Kinder und Aufnahmen mit vielen Jahren Abstand ###
 
-Die automatische Erkennung ist bei kleinen Kindern sowie bei Bildern derselben Person, die viele Jahre auseinanderliegen, weniger zuverlässig als bei Erwachsenen, die innerhalb weniger Jahre fotografiert wurden. Das ist eine Eigenschaft des [Embedding-Modells](../ai/face-recognition.md#faceembeddings) und nicht der Detection – die Gesichter werden also weiterhin gefunden, angezeigt und sind durchsuchbar. Sie werden nur seltener automatisch zu einer Person zusammengefasst und bilden häufiger mehrere Cluster, die du von Hand zusammenführen kannst.
+Die automatische Erkennung ist bei kleinen Kindern sowie bei Bildern derselben Person, die viele Jahre auseinanderliegen, weniger zuverlässig als bei Erwachsenen, die innerhalb weniger Jahre fotografiert wurden. Das ist eine Eigenschaft des [Embedding-Modells](https://docs.photoprism.app/user-guide/ai/face-recognition/#face-embeddings) und nicht der Detection – die Gesichter werden also weiterhin gefunden, angezeigt und sind durchsuchbar. Sie werden nur seltener automatisch zu einer Person zusammengefasst und bilden häufiger mehrere Cluster, die du von Hand zusammenführen kannst.
 
-Das Modell, das für neue Sammlungen verwendet wird, ist eine deutliche Verbesserung gegenüber dem zuvor mit PhotoPrism ausgelieferten Modell, das zusätzlich bei asiatischen Gesichtern unzuverlässig war. Sammlungen, die vor seiner Verfügbarkeit angelegt wurden, behalten das bisherige Modell, bis sie [migriert werden](../ai/face-recognition.md#das-gesichtsmodell-wechseln).
+Das Modell, das für neue Sammlungen verwendet wird, ist eine deutliche Verbesserung gegenüber dem zuvor mit PhotoPrism ausgelieferten Modell, das zusätzlich bei asiatischen Gesichtern unzuverlässig war. Sammlungen, die vor seiner Verfügbarkeit angelegt wurden, behalten das bisherige Modell, bis sie [migriert werden](https://docs.photoprism.app/user-guide/ai/face-recognition/#changing-the-face-model).
 
 ### Gedrehte Gesichter ###
 
