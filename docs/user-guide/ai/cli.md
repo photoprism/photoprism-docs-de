@@ -190,4 +190,4 @@ docker compose exec photoprism photoprism faces reset
 !!! danger ""
     Der Befehl `faces reset` löscht alle vorhandenen Gesichts‑Marker und Cluster. Stelle sicher, dass du bei Bedarf Backups hast – dieser Vorgang kann nicht rückgängig gemacht werden.
 
-[Mehr über die Gesichtserkennung erfahren ›](face-recognition.md)
+[Mehr über die Gesichtserkennung erfahren ›](../organize/people.md)
