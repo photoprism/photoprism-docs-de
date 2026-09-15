@@ -21,6 +21,7 @@ Starte dann die [Indexierung](library/originals.md) oder den [Import](library/im
 
 ## Während die Indexierung noch läuft...
 
+[![Dateien > Index](img/iphone-library-index.png){ align=right }](./library/originals.md)
 Deine [Fotos](./search/index.md) und [Videos](./organize/video.md) werden nach und nach in den Suchergebnissen und anderen Bereichen der Benutzeroberfläche sichtbar.
 Öffne den Tab *Logs* im Bereich *Dateien*, um die Arbeit des Indexers zu beobachten.
 Die Anzahl in der Navigation wird ständig aktualisiert, so dass du den Fortschritt verfolgen kannst.

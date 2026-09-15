@@ -23,7 +23,7 @@ Gehe zu *Alben* und öffne den *Album-Bearbeitungs-Dialog*
     ![Screenshot](img/album-edit-menu-2503-german.jpg){ class="shadow" }
 
 === "Album-Suchleiste"
-    Öffne das Album und klicke :material-pencil: rechts oben.
+    Öffne das Album, klicke :material-dots-vertical: rechts oben und dann klicke :material-pencil: **Bearbeiten**.
 
     ![Screenshot](img/album-edit-toolbar-2507-german.jpg){ class="shadow" }
 

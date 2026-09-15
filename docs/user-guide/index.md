@@ -1,3 +1,5 @@
+# Installation #
+
 Unsere schrittweise Installationsanleitung für die Community-Edition ist in englischer Sprache unter [docs.photoprism.app/getting-started](https://docs.photoprism.app/getting-started/) zu finden.
 
 Alles, was du brauchst, ist ein Webbrowser und
