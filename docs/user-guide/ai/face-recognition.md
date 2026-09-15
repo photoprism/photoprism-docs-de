@@ -87,10 +87,14 @@ Die Distanz‑Schwellwerte sind für jedes Embedding‑Modell einzeln kalibriert
 
 ## CLI‑Referenz { #cli-referenz }
 
-- `photoprism faces config` — zeigt, welche Optionen tatsächlich wirksam sind, einschließlich der vom Erkennungs‑ oder Embedding‑Modell abgeleiteten.
-- `photoprism faces stats` — zeigt Statistiken und Informationen zum verwendeten Modell.
+- `photoprism faces status` — zeigt, welche Optionen tatsächlich wirksam sind, einschließlich der vom Erkennungs‑ oder Embedding‑Modell abgeleiteten, und warum das Clustering wartet, falls keine Cluster entstehen. `faces config` ist ein Alias.
+- `photoprism faces stats` — misst, wie weit die Embeddings voneinander entfernt liegen. Vergleicht jedes Sample mit jedem anderen, also nur auf einer Testsammlung ausführen.
+- `photoprism faces subjects [Name|UID]` — listet Personen mit den Clustern, Dateien und Fotos, die ihre Marker belegen.
+- `photoprism faces ls [Name|UID]` — listet Gesichts‑Cluster mit ihren Samples, ihrem Radius und ihren aktuellen Markern. `faces clusters` ist ein Alias.
+- `photoprism faces markers [Name|UID] [--face ID] [--unassigned] [--dangling]` — listet Gesichts‑Marker und zeigt, wem sie zugeordnet sind.
+- `photoprism faces conflicts [Name|UID]` — listet Gesichts‑Cluster, die dasselbe Gesicht enthalten, aber verschiedenen Personen zugeordnet sind.
 - `photoprism faces audit [--subject UID] [--fix]` — prüft und repariert Gesichts‑Daten bei Bedarf.
-- `photoprism faces reset [--detector auto|none|yunet] [--force]` — löscht Personen und Marker und baut sie mit dem gewählten Erkennungsmodell neu auf.
+- `photoprism faces reset [--detector auto|none|yunet] [--all] [--force]` — entfernt automatische Cluster und Zuordnungen; `--all` löscht zusätzlich die Namen, behält aber die Marker, `--force` löscht auch die Marker, sodass Gesichter neu erkannt werden müssen.
 - `photoprism faces index` — (re)erkennt Gesichter in den Originalen.
 - `photoprism faces update [--force]` — clustert und matched erkannte Gesichter.
 - `photoprism faces optimize` — räumt Cluster nach Updates auf.
