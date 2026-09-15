@@ -103,10 +103,10 @@ Die Verwendung von Originalen in voller Auflösung für Diashows und in Sucherge
 
 ### Skalierungsfilter ###
 
-PhotoPrism rendert Vorschaubilder mit `libvips`, das immer einen hochwertigen Lanczos-3-Lobe-Kernel zur Skalierung verwendet. Die [Konfigurationsoption](https://docs.photoprism.app/getting-started/config-options/#preview-images) `PHOTOPRISM_THUMB_FILTER` und das Dropdown "Skalierungsfilter" bleiben aus Gründen der Abwärtskompatibilität erhalten, haben jedoch keinen Einfluss mehr auf das gerenderte Ergebnis.
+PhotoPrism rendert Vorschaubilder mit `libvips`, das immer einen hochwertigen Lanczos-3-Lobe-Kernel zur Skalierung verwendet. Hier gibt es nichts zu konfigurieren.
 
 !!! info ""
-    Die alte native `imaging`-Bibliothek zur Bildverarbeitung wurde im April 2026 entfernt. Vorschaubilder werden jetzt immer mit libvips erzeugt, die zuvor wählbaren Filter (blackman, lanczos, cubic, linear, nearest) haben daher keine Wirkung mehr.
+    Die alte native `imaging`-Bibliothek zur Bildverarbeitung wurde im April 2026 entfernt, zusammen mit der Einstellung "Skalierungsfilter" und der Konfigurationsoption `PHOTOPRISM_THUMB_FILTER`. Die zuvor wählbaren Filter (blackman, lanczos, cubic, linear, nearest) gibt es nicht mehr; ein in `options.yml` verbliebener `ThumbFilter`-Wert wird ignoriert.
 
 ### Statische und Dynamische Maximalgrößen
 
