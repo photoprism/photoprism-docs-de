@@ -192,6 +192,16 @@ Die Gesichtserkennung kann auf [älterer Hardware](https://docs.photoprism.app/g
 
 *Wie die meisten Anwendungen hat auch PhotoPrism [bestimmte Anforderungen](https://docs.photoprism.app/getting-started/#system-requirements) und unser Entwicklungsprozess beinhaltet keine Tests auf nicht unterstützter oder ungewöhnlicher Hardware.*
 
+### Kinder und Aufnahmen mit vielen Jahren Abstand ###
+
+Die automatische Erkennung ist bei kleinen Kindern sowie bei Bildern derselben Person, die viele Jahre auseinanderliegen, weniger zuverlässig als bei Erwachsenen, die innerhalb weniger Jahre fotografiert wurden. Das ist eine Eigenschaft des [Embedding-Modells](../ai/face-recognition.md#faceembeddings) und nicht der Detection – die Gesichter werden also weiterhin gefunden, angezeigt und sind durchsuchbar. Sie werden nur seltener automatisch zu einer Person zusammengefasst und bilden häufiger mehrere Cluster, die du von Hand zusammenführen kannst.
+
+Das Modell, das für neue Sammlungen verwendet wird, ist eine deutliche Verbesserung gegenüber dem zuvor mit PhotoPrism ausgelieferten Modell, das zusätzlich bei asiatischen Gesichtern unzuverlässig war. Sammlungen, die vor seiner Verfügbarkeit angelegt wurden, behalten das bisherige Modell, bis sie [migriert werden](../ai/face-recognition.md#das-gesichtsmodell-wechseln).
+
+### Gedrehte Gesichter ###
+
+Die Detection erwartet aufrecht abgebildete Gesichter. Ein um etwa 90° gedrehtes Gesicht – etwa bei einer liegenden Person oder bei einer Aufnahme mit seitlich gehaltener Kamera ohne passenden Orientierungs-Tag – wird in der Regel gar nicht erkannt. Als praktikable Abhilfe drehst du die betroffenen Bilder so, dass sie aufrecht angezeigt werden, und indexierst sie anschließend erneut.
+
 ### Hintergrund-Worker ###
 
 Die Gesichtserkennung wurde unter der Annahme entwickelt und getestet, dass der [Hintergrund-Worker](https://docs.photoprism.app/getting-started/config-options/#indexing) ungefähr alle 15 Minuten läuft, sofern das Backend nicht mit anderen Aufgaben wie der Indexierung beschäftigt ist. Sie wurde nicht mit deutlich längeren Intervallen getestet und ist dafür auch nicht ausgelegt.
@@ -203,8 +213,6 @@ Ein wichtiger Grund, warum der Worker unabhängig von tatsächlichen Änderungen
 *Der Umgang mit Änderungen über mehrere Instanzen hinweg wird im Laufe der Zeit verbessert, sodass der Worker in zukünftigen Releases seltener laufen muss.*
 
 !!! info "Geplante Funktionen"
-    - Import von XMP-Gesichtsmarkierungen
-    - Personen beim Durchsuchen deiner Bilder ausschließen
     - automatische Sicherung benannter Personen in YAML-Dateien
 
 *[Gesichts-Cluster]: Ein Cluster ist eine Gruppe von Gesichtern, die aufgrund ihrer Ähnlichkeit derselben Person zugeordnet werden.
