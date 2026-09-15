@@ -2,7 +2,7 @@
 Im Bereich *Karten* werden alle mit GPS-Daten versehenen Bilder auf einer Weltkarte dargestellt.
 
 !!! info ""
-    Der Bereich *Karten* benötigt einen Browser mit WebGL-Unterstützung. Die meisten modernen Browser unterstützen WebGL, ältere Browser oder Browser mit deaktivierter Hardwarebeschleunigung können die Karte jedoch möglicherweise nicht korrekt darstellen.
+    Der Bereich *Karten* benötigt einen Browser mit WebGL-2-Unterstützung. Praktisch alle aktuellen Browser unterstützen WebGL 2, Browser mit deaktivierter Hardwarebeschleunigung, veraltetem Grafiktreiber oder einer Erweiterung, die die WebGL-Schnittstelle blockiert, können die Karte jedoch möglicherweise nicht darstellen.
 
 ![Screenshot](img/places-2503-german.jpg){ class="shadow" }
 
