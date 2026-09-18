@@ -44,7 +44,7 @@ Alternativ zur [Web-Benutzeroberfläche](index.md) kannst du Benutzerkonten auch
 | `photoprism users reset --yes`              | Removes all accounts and resets the database |
 
 !!! tldr ""
-    Benutzer, die nach einem Upgrade von [Entwicklungs-Builds](https://docs.photoprism.app/getting-started/updates/#development-preview) oder [alten Versionen von vor November 2022](https://docs.photoprism.app/known-issues/#new-user-management) Probleme bei der Anmeldung haben, können den Befehl `photoprism users reset --yes` ausführen, um [die Sitzung](#sessions-verwalten) und die Datenbanktabellen der Benutzerverwaltung neu zu erstellen, damit sie mit der aktuellen Version kompatibel sind. Beachte, dass alle [Client Access Token](client-credentials.md#access-token) und [App-Passwörter](../settings/account.md#apps-und-gerate), die Benutzer möglicherweise erstellt haben, ebenfalls gelöscht werden und neu erstellt werden müssen.
+    Benutzer, die nach einem Upgrade von [Entwicklungs-Builds](https://docs.photoprism.app/getting-started/updates/#development-preview) oder [alten Versionen von vor November 2022](https://docs.photoprism.app/known-issues/#legacy-user-accounts) Probleme bei der Anmeldung haben, können den Befehl `photoprism users reset --yes` ausführen, um [die Sitzung](#sessions-verwalten) und die Datenbanktabellen der Benutzerverwaltung neu zu erstellen, damit sie mit der aktuellen Version kompatibel sind. Beachte, dass alle [Client Access Token](client-credentials.md#access-token) und [App-Passwörter](../settings/account.md#apps-und-gerate), die Benutzer möglicherweise erstellt haben, ebenfalls gelöscht werden und neu erstellt werden müssen.
 
 ### Optionen
 
@@ -74,14 +74,16 @@ Konten, für die die Anmeldung mit `--no-login` deaktiviert ist, können sich we
 
 ### Neuen Benutzer erstellen
 
-Du könntest zum Beispiel wie folgt vorgehen, um einen neuen Admin mit dem Benutzernamen "bob" und dem Passwort "mysecret" hinzuzufügen:
+Der Befehl `photoprism users add` erstellt ein neues Benutzerkonto oder bietet an, ein **zuvor gelöschtes Konto** mit demselben *Benutzernamen* wiederherzustellen, sofern ein solches existiert. Du könntest zum Beispiel wie folgt vorgehen, um einen neuen Admin mit dem Benutzernamen "bob" und dem Passwort "mysecret" hinzuzufügen:
 
 ```
 docker compose exec photoprism photoprism users add -p mysecret -n "Bob" bob
 ```
 
+Wenn du mit dem `-p` Flag kein initiales Passwort angibst, wirst du aufgefordert, ein Passwort für das neue Konto einzugeben. Weitere Kontoeigenschaften kannst du mit den oben aufgeführten Flags setzen.
+
 !!! example ""
-    Einige Benutzer Rollen wie Benutzer und Betrachter sind derzeit [nur mit einer Mitgliedschaft](https://www.photoprism.app/editions/#compare) verfügbar, um die Entwicklung und Pflege des Projekts zu unterstützen.
+    Unter [Rollen und Berechtigungen](roles.md) findest du die Kontorollen, die du mit `--role` setzen kannst, und welche davon in deiner Edition verfügbar sind.
 
 ### Kontodetails anzeigen
 
@@ -138,7 +140,7 @@ Du kannst ihn mit folgenden Flags kombinieren, um das Ausgabeformat und die maxi
 | 172.19.0.1 | admin     | api   | OK     | 2023-02-03 06:55:06 |           |
 
 !!! tldr ""
-    Führe `photoprism auth reset --yes` aus, um alle aufgezeichneten Einträge zu löschen und die Datenbank auf einen sauberen Zustand zurückzusetzen.
+    Führe `photoprism audit reset --yes` aus, um alle aufgezeichneten Einträge zu löschen und die Datenbank auf einen sauberen Zustand zurückzusetzen.
 
 ## Sessions verwalten
 

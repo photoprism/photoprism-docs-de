@@ -64,7 +64,6 @@ nav:
       - Erweitert: user-guide/settings/advanced.md
       - Dienste:  user-guide/settings/sync.md
       - Konto: user-guide/settings/account.md
-      #- Places: user-guide/settings/places.md
   - KI Modelle nutzen:
       - Einführung: user-guide/ai/index.md
       - Ollama Setup: user-guide/ai/using-ollama.md

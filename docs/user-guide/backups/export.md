@@ -15,7 +15,7 @@ Dies ist vergleichbar mit einem Backup, allerdings in einem für Menschen lesbar
 ## Album Backups
 Backups werden für alle Albentypen erstellt: Album, Ordner, Bundesland, Ereignis und Monat.
 
-Du findest sie in deinem `storage path` in `/albums`.
+Standardmäßig werden sie in `storage/backup/albums` gespeichert. Bestehende ältere Installationen verwenden unter Umständen weiterhin `storage/albums`.
 
 ### Alben
 Für Alben werden folgende Metadaten in den YAML Dateien gespeichert:

@@ -4,6 +4,7 @@ In den [Einstellungen](../settings/sync.md) kannst du deine PhotoPrism-Instanz m
 
 ## Dateien mit anderen Apps teilen ##
 
+1. Gehe zu *Suche*
 2. Wähle Bilder aus
 3. Öffne das Kontext-Menü
 4. Klicke :material-arrow-top-right:

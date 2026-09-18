@@ -28,7 +28,7 @@ Verwende *Indexieren*, wenn du deine Bilder und Videos direkt im Ordner *Origina
 * Dateien werden NICHT umbenannt oder verschoben
 * Die vorhandene Ordnerstruktur bleibt erhalten. Ordner können später optional als Alben in PhotoPrism angezeigt werden
 * Metadaten der Dateien werden eingelesen, um Kategorien, Titel und Ortsinformationen für deine Bilder zu erstellen
-* Für JPEGs werden Thumbnails erstellt
+* Thumbnails werden erstellt
 * Optional werden JSON- und oder YAML-Dateien mit Metadaten erstellt
 
 Das *Originals* Verzeichnis nach der Indexierung, es wurde in keiner Weise verändert:

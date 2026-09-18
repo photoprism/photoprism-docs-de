@@ -108,7 +108,24 @@
     Benutzeroberfläche sein sollten.
     Die meisten Nutzer können ihre Erinnerungen nicht strikt hierarchisch sortieren und bevorzugen es ihre Bilder in mehreren Dimensionen zu entdecken.
 
+## Suchergebnisse ##
+
+??? question "Warum werden Ergebnisse beim Sortieren nach neuesten/ältesten Bildern nach lokaler Zeit statt nach UTC geordnet?"
+
+    Beim Sortieren nach Zeit verwendet PhotoPrism die lokale Aufnahmezeit ("Wall Time"), da die meisten Fotos diese Information enthalten und die meisten Menschen sie auf einer Zeitleiste erwarten. Bei Standbildern werden Exif-Zeitstempel in der Regel ohne verlässliche Zeitzone gespeichert und daher üblicherweise als lokale Zeit behandelt. Würde man sie als UTC interpretieren, verschöbe sich die chronologische Reihenfolge oft um Stunden (oder sogar Tage), sodass sie *falsch* wirken würde.
+
+    Hinzu kommt, dass reale Bibliotheken und Kameras die Zeitstempel-Felder uneinheitlich verwenden (mal mit Zeitzonen-Offset, mal ohne).
+    PhotoPrism vermeidet es deshalb, UTC aus unvollständigen Metadaten zu "erraten", und sortiert stattdessen anhand des lokalen Zeitstempels, sofern dieser verfügbar ist.
+
+    [Mehr erfahren ›](https://github.com/photoprism/photoprism/issues/2320)
+
 ## Karten & Orte ##
+
+??? question "Warum fehlt der Standort, nachdem ich Fotos von meinem Handy hochgeladen habe?"
+
+    Aktuelle Android-Versionen entfernen die eingebetteten GPS-Koordinaten aus Fotos, sobald diese von einer App gelesen werden, die nicht über die System-Berechtigung *media location* ([`ACCESS_MEDIA_LOCATION`](https://developer.android.com/training/data-storage/shared/media#location-info-photos)) verfügt. Da Webbrowser diese Berechtigung nicht anfordern können, kommen Bilder, die du über die Weboberfläche auf dem Handy hochlädst, möglicherweise ohne Standortdaten an. iOS kann sich je nach Browser und dessen Datenschutzeinstellungen ähnlich verhalten.
+
+    Beachte, dass dies auf dem Gerät passiert, *bevor* die Dateien PhotoPrism erreichen, sodass die Koordinaten bei der Indexierung nicht wiederhergestellt werden können. Um den Standort zu erhalten, lade die Originale über einen Desktop-Browser hoch oder verwende eine Sync-App wie [PhotoSync](sync/mobile-devices.md#photosync-verwenden), die über die erforderliche Berechtigung verfügt und die Dateien unverändert per WebDAV überträgt. Ob eine Datei noch GPS-Daten enthält, kannst du mit [ExifTool](https://exiftool.org/) prüfen.
 
 ??? question "Warum sind einige Bilder an nicht besuchten Orten auf der Karte positioniert?"
 
@@ -224,6 +241,12 @@
 
     Bilder werden erst am Ende der Indexierung zu den Bereichen Ordner, Kalender und Ereignisse hinzugefügt.
 
+??? question "Warum sehe ich in der Kalenderansicht nicht alle meine Bilder?"
+
+    Die Monatsalben in dieser Ansicht enthalten nur Bilder, für die in den Metadaten oder als Teil des Dateinamens ein gültiges [Aufnahmedatum mit Uhrzeit](organize/edit.md#bilddetails-bearbeiten) angegeben ist. Dateien, deren Aufnahmedatum anhand der Modifikationszeit *geschätzt* wurde, erscheinen daher nicht in diesen Alben, selbst wenn sie [korrekt indexiert](library/originals.md) wurden.
+
+    [Mehr erfahren ›](organize/calendar.md)
+
 ??? question "Warum zeigt die Navigation unterschiedliche Zahlen für *Suche* und *Originale* an?"
 
     Der Bereich *Dateien > Originale* zeigt Dateien an, während in *Suche* Bilder und Videos dargestellt werden.
@@ -325,6 +348,12 @@
     Duplikate und Unstimmigkeiten sollten vermieden werden.
     * **Suchbegriffe** werden hauptsächlich zum Suchen verwendet. Sie können ähnliche Begriffe und Übersetzungen enthalten wie "Kätzchen", "Katze", "Kater".
 
+??? question "Wie kann ich die Metadaten von Bildern und Videos prüfen?"
+
+    Wir [empfehlen ExifTool](https://docs.photoprism.app/getting-started/troubleshooting/metadata/), wenn einige deiner Bilder falsch dargestellt werden (gestreckt, verzerrt), Informationen zu fehlen scheinen (z. B. Titel oder Bildunterschrift) oder [Zeit und Ort falsch](organize/edit.md) angezeigt werden.
+
+    [Mehr erfahren ›](https://docs.photoprism.app/getting-started/troubleshooting/metadata/)
+
 ## Vorschaubilder ##
 ??? question "Ist es nicht unsicher, dass die URLs von Vorschaubildern auch dann funktionieren, wenn du nicht eingeloggt bist?"
 
@@ -337,6 +366,12 @@
     Unter [docs.photoprism.app/developer-guide/media/thumbnails/](https://docs.photoprism.app/developer-guide/media/thumbnails/) erfährst du mehr.
 
 ## WebDAV ##
+??? question "Warum werden über WebDAV hochgeladene Dateien nicht sofort indexiert/importiert?"
+
+    Mit `PHOTOPRISM_AUTO_INDEX` und `PHOTOPRISM_AUTO_IMPORT` legst du fest, wie lange PhotoPrism warten soll, [bevor neu hochgeladene Dateien indexiert oder importiert werden](https://docs.photoprism.app/getting-started/config-options/#indexing). Voreingestellt sind 300 Sekunden, also 5 Minuten. Das ist eine Sicherheitsmaßnahme für Nutzer mit langsamen Uploads, damit keine unvollständigen Dateisätze verarbeitet werden, zum Beispiel beim Hochladen von Bildern mit Sidecar-Dateien. Du kannst die Verzögerung daher verkürzen, wenn du eine schnelle Verbindung hast und normalerweise keine [Bildstapel zusammengehöriger Dateien](organize/stacks.md) wie RAW-Bilder mit JPEG- und XMP-Sidecar-Dateien hochlädst.
+
+    Es kann auch sein, dass [der Index gerade bereits aktualisiert wird](library/originals.md), sodass du warten musst, bis der Vorgang abgeschlossen ist, bevor neue Dateien indexiert werden.
+
 ??? question "Warum bekomme ich eine Fehlermeldung, wenn ich versuche einen Remote Server als Synchronisationsziel hinzuzufügen?"
 
     PhotoPrism testet einige [übliche Endpoints](https://github.com/photoprism/photoprism/blob/develop/internal/service/heuristic.go), wenn ein neuer Remote Server

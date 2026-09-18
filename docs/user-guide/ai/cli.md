@@ -116,6 +116,15 @@ docker compose exec photoprism photoprism vision reset --models=labels --source=
     docker compose exec photoprism photoprism vision sources show
     ```
 
+    Die für Bildunterschriften relevanten Sources haben derzeit diese Prioritäten:
+
+    - `image`: 8 (integrierte TensorFlow‑Modelle)
+    - `ollama`: 16 (Captions und Labels von Ollama)
+    - `openai`: 16 (Captions und Labels von OpenAI)
+    - `batch`: 64 (Batch‑Bearbeitung im Web‑UI)
+    - `vision`: 64 (manuelle Vision‑Läufe über die CLI)
+    - `manual`: 64 (direkt im Web‑UI bearbeitete Bildunterschriften)
+
 ## Befehle für die Gesichtserkennung
 
 PhotoPrism stellt spezielle Befehle zum Verwalten von Gesichtserkennung, Clustering und Optimierung bereit. Diese sind besonders hilfreich, wenn du zwischen verschiedenen Erkennungs‑Engines wechselst oder Probleme mit der Gesichtserkennung analysieren möchtest.
@@ -180,3 +189,5 @@ docker compose exec photoprism photoprism faces reset
 
 !!! danger ""
     Der Befehl `faces reset` löscht alle vorhandenen Gesichts‑Marker und Cluster. Stelle sicher, dass du bei Bedarf Backups hast – dieser Vorgang kann nicht rückgängig gemacht werden.
+
+[Mehr über die Gesichtserkennung erfahren ›](../organize/people.md)

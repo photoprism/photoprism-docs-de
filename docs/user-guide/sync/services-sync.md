@@ -24,3 +24,9 @@ In den [Einstellungen > Dienste](../settings/sync.md) kannst du deine PhotoPrism
 * *Dateien hochladen* - alle Dateien (auch als privat markierte oder archivierte), die auf deinem Dienst noch nicht existieren, werden regelmäßig hochgeladen
 * *Namen beibehalten* - Dateinamen werden beibehalten
 * *RAWs und Videos kopieren* - Neben JPEGs werden auch RAW Dateien und Videos synchronisiert
+
+### Fehlersuche bei langsamen oder Depth-limitierten Servern ###
+
+PhotoPrism bevorzugt `PROPFIND Depth: infinity`, um Verzeichnisse rekursiv zu durchsuchen, und wechselt automatisch zu einer iterativen `Depth: 1`-Traversierung, wenn ein WebDAV-Server die rekursive Variante ablehnt (zum Beispiel pCloud und ähnliche Anbieter). Wird auf `Depth: 1` zurückgegriffen, protokolliert die Anwendung die Anzahl der Folgeanfragen und die dafür benötigte Zeit. Du kannst die Logs also nach `depth-1 fallback` oder `PROPFIND` durchsuchen, um bei einer langsamen Synchronisation nachzuvollziehen, was der Client getan hat. Versteckte Dateien, die mit einem Punkt beginnen, sowie Einträge in versteckten Punkt-Verzeichnissen werden dabei ausgelassen, da es sich häufig um Sperrdateien, unvollständige Uploads oder Metadaten des Anbieters handelt.
+
+Für große Dateiübertragungen gilt kein Gesamt-Timeout. PhotoPrism verwendet jedoch separate Timeouts für den Verbindungsaufbau, den TLS-Handshake, inaktive Verbindungen und Expect-Continue, um sich schnell von blockierten oder nicht reagierenden Servern zu erholen, ohne eine laufende Übertragung zu unterbrechen.
