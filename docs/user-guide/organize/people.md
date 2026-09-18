@@ -107,8 +107,8 @@ Nicht jede Person in einer geteilten Bibliothek soll für jedes Konto namentlich
 Für ein Konto, das sie nicht sehen darf, erscheint eine zurückgehaltene Person weder unter *Personen*
 noch in den Namensvorschlägen beim Zuordnen eines Gesichts, wird in der *Personen*-Liste eines Bildes
 nicht genannt und ihre Gesichtsregion wird dort nicht angezeigt. Ihr Name bleibt außerdem aus
-automatisch erzeugten Titeln, Bildunterschriften und Suchbegriffen heraus; wenn du eine der beiden
-Optionen änderst, werden diese für die vorhandenen Bilder der Person aktualisiert.
+automatisch erzeugten Titeln, Bildunterschriften und Suchbegriffen heraus; bereits vorhandene Bilder
+werden beim nächsten Wartungsdurchlauf aktualisiert, plane dafür einige Minuten ein.
 
 !!! note ""
     **Die Bilder bleiben sichtbar.** Nur der Name und die Gesichtsregion werden zurückgehalten — wer
