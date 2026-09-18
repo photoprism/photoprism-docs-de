@@ -75,6 +75,8 @@ Die Person wird nun unter *Erkannt* angezeigt
 
 ## Personen ausblenden ##
 Du kannst Personen im Bereich *Erkannt* ausblenden, indem du :material-close: klickst.
+Eine Person auszublenden hält ihren Namen außerdem von Konten zurück, die keine privaten Inhalte
+sehen dürfen — siehe [Privat & Verborgen](#private-hidden-people).
 
 !!! attention ""
     Bilder von ausgeblendeten Personen tauchen weiterhin in Suchergebnissen auf.
@@ -91,6 +93,27 @@ Ausgeblendete Personen werden wieder angezeigt, wenn du :material-eye-off: klick
 
 ## Gesichter ausblenden ##
 Du kannst Gesichts-Cluster im Bereich *Neu* auf die gleiche Weise wie [Personen](#personen-ausblenden) ausblenden.
+
+## Privat & Verborgen { #private-hidden-people }
+
+Nicht jede Person in einer geteilten Bibliothek soll für jedes Konto namentlich sichtbar sein.
+Öffne den Dialog *Bearbeiten* einer Person, um sie als **Privat** oder **Verborgen** zu markieren:
+
+| Option        | Wirkung                                                                     |
+|---------------|-----------------------------------------------------------------------------|
+| **Privat**    | Hält die Person von Konten zurück, die keine privaten Inhalte sehen dürfen. |
+| **Verborgen** | Dasselbe, und nimmt die Person zusätzlich für alle aus *Erkannt* heraus.    |
+
+Für ein Konto, das sie nicht sehen darf, erscheint eine zurückgehaltene Person weder unter *Personen*
+noch in den Namensvorschlägen beim Zuordnen eines Gesichts, wird in der *Personen*-Liste eines Bildes
+nicht genannt und ihre Gesichtsregion wird dort nicht angezeigt. Ihr Name bleibt außerdem aus
+automatisch erzeugten Titeln, Bildunterschriften und Suchbegriffen heraus; wenn du eine der beiden
+Optionen änderst, werden diese für die vorhandenen Bilder der Person aktualisiert.
+
+!!! note ""
+    **Die Bilder bleiben sichtbar.** Nur der Name und die Gesichtsregion werden zurückgehalten — wer
+    die Bibliothek durchsehen darf, sieht die Bilder weiterhin. Das ist keine Verschlüsselung und
+    keine Passwortabfrage.
 
 ## Alle Bilder einer Person ansehen ##
 === "Unter Personen"
