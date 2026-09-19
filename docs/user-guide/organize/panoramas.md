@@ -35,11 +35,17 @@ Horizontales Ziehen dreht die Kugel, statt zum nächsten Bild zu wechseln. Verwe
 
 ## Unterstützte Dateien ##
 
-Nur *equirektangulare* Inhalte – eine vollständige Kugel, die in ein einzelnes Bild mit einem Seitenverhältnis von etwa 2:1 aufgeklappt wurde – können interaktiv dargestellt werden:
+*Equirektangulare* Inhalte – eine vollständige Kugel, die in ein einzelnes Bild mit einem Seitenverhältnis von etwa 2:1 aufgeklappt wurde – werden ohne Umwandlung interaktiv dargestellt:
 
 - Bilder werden anhand des Projektionstyps `equirectangular` erkannt, der in ihren [Exif](https://docs.photoprism.app/developer-guide/metadata/exif/)- oder [XMP](https://docs.photoprism.app/developer-guide/metadata/xmp/)-Metadaten gespeichert ist und von den meisten 360°-Kameras beim Speichern geschrieben wird; `GPano`-Metadaten werden ebenfalls akzeptiert
 - Videos enthalten oft keine auslesbaren Projektionsdaten. Ein Video wird daher im 360°-Betrachter angezeigt, wenn es als *Panorama* markiert ist und seine Bildgröße ungefähr 2:1 beträgt
-- Andere Projektionstypen wie Cubemaps und zylindrische Panoramen sowie ultrabreite Videos werden als normale Bilder angezeigt, da sie als Kugel gerendert verzerrt wären
+
+*Fisheye*-360°-Originale von Insta360-Kameras werden zuerst umgewandelt und öffnen sich anschließend im selben Betrachter:
+
+- `.insv`-Videos, `.insp`-Bilder und Fisheye-DNG-Dateien werden beim Indexieren erkannt und in einem Hintergrundauftrag nach equirektangular entzerrt. Es kann daher einen Moment dauern, bis sie verfügbar sind
+- Deine Originale werden dabei nie verändert, und eine Datei, die sich nicht umwandeln lässt, wird als normales Bild angezeigt
+
+Andere Projektionstypen wie Cubemaps und zylindrische Panoramen sowie ultrabreite Videos werden als normale Bilder angezeigt, da sie als Kugel gerendert verzerrt wären.
 
 !!! note ""
     Für die Darstellung einer Kugel wird ein Browser mit [WebGL](https://caniuse.com/webgl)-Unterstützung benötigt, die in allen aktuellen Browsern standardmäßig aktiviert ist. Beachte, dass das manuelle Markieren von Gesichtern auf 360°-Inhalten noch nicht unterstützt wird.

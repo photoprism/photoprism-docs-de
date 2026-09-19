@@ -120,9 +120,8 @@ Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting
     Die Verringerung des statischen Größenlimits hat erhebliche Auswirkungen auf die Ergebnisse der [Gesichtserkennung](../organize/people.md) und Bildklassifizierung.
     Einfach ausgedrückt, bedeutet das, dass der Indexer nicht mehr richtig sehen kann.
 
-!!! danger ""
-    Wenn die konfigurierte Maximalgröße überschritten wird (z.B. wenn Nutzer einen größeren Bildschirm haben), kann kein ausreichend großes Thumbnail erstellt werden und der Bildbetrachter ist möglicherweise gezwungen, stattdessen das Originalbild anzuzeigen.
-    **Beim Skalieren von Bildern im Browser ist die Qualität in der Regel schlecht und sie können zudem in der falschen Orientierung dargestellt werden.**
+!!! info ""
+    Wenn eine Anfrage die konfigurierte Maximalgröße überschreitet (z.B. wenn Nutzer einen größeren Bildschirm haben), wird sie auf die größte darstellbare Größe reduziert, sodass weiterhin das vollständige Bild angezeigt wird – es kann lediglich weicher wirken, als der Bildschirm darstellen könnte. Erhöhe die *Dynamische Maximalgröße*, wenn größere Vorschaubilder verfügbar sein sollen.
 
 Die kleinste konfigurierbare Größe beträgt 720px, damit der Indexer Farberkennung, Gesichtserkennung und Bildklassifizierung durchführen kann. Diese bei jedem Aufruf neu zu berechnen, wäre selbst für die leistungsfähigsten Server zu aufwändig. Wenn du nicht nur wenige kleine Bilder hast, würde das die App unbenutzbar machen.
 
@@ -131,7 +130,7 @@ Sollte der von Thumbnails belegte Speicherplatz allerdings ein ernsthaftes Probl
 So kann der Server größere Thumbnails bei Bedarf generieren. Das kann beim Betrachten von Bildern im Vollbildmodus zu einer spürbaren Verzögerung führen.
 
 !!! tip ""
-    Um Originalbilder anzuzeigen, aktiviere *Dynamische Vorschaubilder* und setze *Dynamische Maximalgröße* sowie *Statische Maximalgröße* auf einen niedrigen Wert wie `720`. Beim Betrachten von Bildern, die dieses Limit überschreiten, werden die Originaldateien angezeigt.
+    Um Speicherplatz zu sparen, aktiviere *Dynamische Vorschaubilder* und setze die *Statische Maximalgröße* auf einen niedrigen Wert wie `720`, sodass größere Vorschaubilder nur dann erzeugt werden, wenn sie tatsächlich benötigt werden. Halte die *Dynamische Maximalgröße* hoch genug für die von dir genutzten Bildschirme, da Anfragen darüber auf die größte darstellbare Größe reduziert werden.
 
 ### Dynamische Vorschaubilder
 

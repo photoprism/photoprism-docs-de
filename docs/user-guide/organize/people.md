@@ -104,6 +104,12 @@ Nicht jede Person in einer geteilten Bibliothek soll für jedes Konto namentlich
 | **Privat**    | Hält die Person von Konten zurück, die keine privaten Inhalte sehen dürfen. |
 | **Verborgen** | Dasselbe, und nimmt die Person zusätzlich für alle aus *Erkannt* heraus.    |
 
+**Verborgen** zu setzen entspricht dem [Ausblenden einer Person](#personen-ausblenden) mit
+:material-close:. *Betrachter* sowie *Gäste* und *Besucher*, die einen Freigabe-Link öffnen, sehen
+die Namen von Personen nicht, die als privat oder verborgen markiert sind; *Admins* und *Benutzer*
+sehen sie wie gewohnt und können beide Optionen ändern.
+[Mehr erfahren ›](../users/roles.md)
+
 Für ein Konto, das sie nicht sehen darf, erscheint eine zurückgehaltene Person weder unter *Personen*
 noch in den Namensvorschlägen beim Zuordnen eines Gesichts, wird in der *Personen*-Liste eines Bildes
 nicht genannt und ihre Gesichtsregion wird dort nicht angezeigt. Ihr Name bleibt außerdem aus
