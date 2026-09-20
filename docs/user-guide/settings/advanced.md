@@ -251,6 +251,12 @@ Deaktiviert die parallele Konvertierung von RAW-Dateien, damit Darktable-Presets
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_RAW_PRESETS`.
 
+### Zeitlimit für die Konvertierung
+
+Die Konvertierung eines Bildes, Dokuments oder einer RAW-Datei wird nach der eingestellten Anzahl an Minuten abgebrochen, damit ein einzelnes hartnäckiges Original nicht alles aufhält, was dahinter in der Warteschlange steht.
+
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/#file-conversion) ist `PHOTOPRISM_CONVERT_TIMEOUT`, angegeben in `MINUTEN` (Standard 10; `-1` hebt das Limit auf). Für die Videotranskodierung gibt es ein [eigenes Zeitlimit](https://docs.photoprism.app/getting-started/advanced/transcoding/#timeout), das standardmäßig deaktiviert ist.
+
 ### ImageMagick deaktivieren
 
 Wenn diese Funktion deaktiviert ist, wird [ImageMagick](https://imagemagick.org/) nicht für die Konvertierung verwendet.
