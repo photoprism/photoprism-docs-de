@@ -45,6 +45,8 @@ Horizontales Ziehen dreht die Kugel, statt zum nächsten Bild zu wechseln. Verwe
 - `.insv`-Videos, `.insp`-Bilder und Fisheye-DNG-Dateien werden beim Indexieren erkannt und in einem Hintergrundauftrag nach equirektangular entzerrt. Es kann daher einen Moment dauern, bis sie verfügbar sind
 - Deine Originale werden dabei nie verändert, und eine Datei, die sich nicht umwandeln lässt, wird als normales Bild angezeigt
 
+Kameras, die PhotoPrism kennt – etwa die Insta360- und Ricoh-Theta-Serien –, werden mit ihrem eigenen bekannten Sichtfeld entzerrt. Für alle anderen legt [`PHOTOPRISM_FFMPEG_FISHEYE_FOV`](https://docs.photoprism.app/getting-started/config-options/#file-conversion) den Ausweichwert in Grad fest. Der Wert beschreibt die Ausdehnung der *gespeicherten* Fisheye-Scheibe, nicht das Objektiv selbst. Ist er kleiner als das tatsächlich aufgenommene Blickfeld, fehlt an jeder Nahtstelle der Kugel ein Ausschnitt der Szene.
+
 Andere Projektionstypen wie Cubemaps und zylindrische Panoramen sowie ultrabreite Videos werden als normale Bilder angezeigt, da sie als Kugel gerendert verzerrt wären.
 
 !!! note ""
