@@ -118,8 +118,8 @@ sehen sie wie gewohnt und können beide Optionen ändern.
 Für ein Konto, das sie nicht sehen darf, erscheint eine zurückgehaltene Person nicht unter
 *Personen*, wird in der *Personen*-Liste eines Bildes nicht genannt und ihre Gesichtsregion wird dort
 nicht angezeigt. Ihr Name bleibt außerdem aus automatisch erzeugten Titeln und Bildunterschriften
-heraus, und eine Suche danach findet ihre Bilder nicht; bereits vorhandene Bilder werden beim
-nächsten Wartungsdurchlauf aktualisiert, plane dafür einige Minuten ein.
+heraus; bereits vorhandene Bilder werden beim nächsten Wartungsdurchlauf aktualisiert, plane dafür
+einige Minuten ein.
 
 !!! note ""
     **Die Bilder bleiben sichtbar.** Nur der Name und die Gesichtsregion werden zurückgehalten — wer
