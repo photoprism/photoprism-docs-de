@@ -28,6 +28,12 @@ Zwei Dinge hinter diesen Zahlen solltest du kennen, bevor du auf Geschwindigkeit
 !!! tldr ""
     Ohne GPU-Beschleunigung sind Ollama-Modelle deutlich langsamer und benötigen zwischen 10 Sekunden und über einer Minute pro Bild. Das kann in Ordnung sein, wenn du nur wenige Bilder verarbeiten möchtest oder Wartezeiten akzeptabel sind.
 
+## Gesichtserkennung
+
+Gesichter werden von integrierten Modellen verarbeitet, die keine Einrichtung benötigen: **YuNet** findet sie, und **SFace** wandelt jedes in einen Vektor um, der sich mit anderen vergleichen lässt. Beide laufen auf ONNX. Sammlungen, die vor der Verfügbarkeit von SFace angelegt wurden, behalten **FaceNet** auf TensorFlow-Basis, bis sie auf das aktuelle Modell migriert werden.
+
+Unter [KI Modelle > Gesichtserkennung](https://docs.photoprism.app/user-guide/ai/face-recognition/) sind die Konfigurationsoptionen und der Ablauf der Migration beschrieben, und [Fehlerbehebung > Gesichtserkennung](https://docs.photoprism.app/getting-started/troubleshooting/face-recognition/) bietet Checklisten für Gesichter, die fehlen, falsch gruppiert werden oder sich nur langsam zuordnen lassen.
+
 ## `vision.yml` Referenz { #visionyml-reference }
 
 KI-Engines, Modelle und Laufmodi können in einer `vision.yml`-Datei in deinem Konfigurationsverzeichnis konfiguriert werden (Standard: `storage/config`). Darin wird festgelegt, welche Modelle und Schwellenwerte verwendet werden sollen, zum Beispiel:

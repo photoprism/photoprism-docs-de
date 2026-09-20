@@ -119,4 +119,8 @@ photoprism --log-level=trace vision run -m labels --count 1 --force
 photoprism --log-level=trace vision run -m caption --count 1 --force
 ```
 
+### Cloud-Verarbeitung abschalten
+
+`OLLAMA_API_KEY` zu entfernen verhindert nicht, dass Bilder gesendet werden: Die Anfrage wird weiterhin gestellt und vom Dienst abgelehnt, das Bild hat deine Instanz zum Zeitpunkt des Fehlers also bereits verlassen. Um keine Bilder mehr in die Cloud zu senden, richte die Konfiguration wieder auf einen lokalen Dienst aus — entferne `OLLAMA_BASE_URL` (und ein eventuelles `Service.Uri` in deiner [`vision.yml`](index.md#visionyml-reference)), damit die Engine auf ihren lokalen Standard zurückfällt, oder setze `Run: manual`, um automatische Läufe ganz zu unterbinden.
+
 [^1]: Nicht relevante Konfigurationsdetails wurden zur besseren Lesbarkeit ausgelassen.
