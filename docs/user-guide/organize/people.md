@@ -8,6 +8,8 @@ PhotoPrism enthält eine Gesichtserkennung, mit der du Bilder deiner Familie und
 !!! tldr ""
     Vorhandene Cluster werden automatisch im Hintergrund optimiert, z.B. wenn neue Gesichter erkannt werden, du eine falsche Zuordnung gemeldet hast oder neue Dateien zu deiner Sammlung hinzugefügt werden.
 
+Unter [KI Modelle > Gesichtserkennung](https://docs.photoprism.app/user-guide/ai/face-recognition/) wird erklärt, wie Erkennung, Embedding und Gruppierung funktionieren; dort sind auch die Konfigurationsoptionen aufgeführt, die du anpassen kannst.
+
 ## Erkannte und neue Personen ##
 
 Der Bereich Personen zeigt dir bereits erkannte Personen sowie neue Gesichts-Cluster.
@@ -62,6 +64,9 @@ Gesichter können aus mehreren Gründen nicht erkannt werden:
     ![Screenshot](img/add-name-edit-new-2503-german.jpg){ class="shadow" }
 
      Du kannst Namen auch direkt aus der [Info-Seitenleiste](info-sidebar.md) des Vollbildbetrachters zuweisen. Sie ist außerdem der einzige Ort, an dem du ein Gesicht **manuell markieren** kannst, das PhotoPrism bei der automatischen Erkennung übersehen hat.
+
+!!! note ""
+    Passt der eingegebene Name zu niemandem in deiner Bibliothek, fragt PhotoPrism nach, bevor eine neue Person angelegt wird. So entsteht durch einen Tippfehler nicht unbemerkt ein zweiter Eintrag für jemanden, den du bereits benannt hast.
 
 Die Person wird nun unter *Erkannt* angezeigt
 
@@ -213,33 +218,9 @@ Suchfilter können auch kombiniert werden.
 
 ## Bekannte Probleme ##
 
-Eine vollständige Liste bekannter Probleme findest du unter [Erste Schritte > Bekannte Probleme > Gesichtserkennung](https://docs.photoprism.app/known-issues/#face-recognition).
+Die automatische Erkennung hat Grenzen: Bei kleinen Kindern und bei Bildern derselben Person, die viele Jahre auseinanderliegen, ist sie weniger zuverlässig, nicht aufrecht abgebildete Gesichter werden oft gar nicht erkannt, und auf älterer Hardware kann sie langsam sein. Die vollständige Liste und die Gründe dafür findest du unter [Bekannte Probleme > Gesichtserkennung](https://docs.photoprism.app/known-issues/#face-recognition).
 
-### Ältere Hardware ###
-
-Die Gesichtserkennung kann auf [älterer Hardware](https://docs.photoprism.app/getting-started/troubleshooting/performance/#legacy-hardware) aufgrund unzureichender Ressourcen langsam sein oder sogar abstürzen.
-
-*Wie die meisten Anwendungen hat auch PhotoPrism [bestimmte Anforderungen](https://docs.photoprism.app/getting-started/#system-requirements) und unser Entwicklungsprozess beinhaltet keine Tests auf nicht unterstützter oder ungewöhnlicher Hardware.*
-
-### Kinder und Aufnahmen mit vielen Jahren Abstand ###
-
-Die automatische Erkennung ist bei kleinen Kindern sowie bei Bildern derselben Person, die viele Jahre auseinanderliegen, weniger zuverlässig als bei Erwachsenen, die innerhalb weniger Jahre fotografiert wurden. Das ist eine Eigenschaft des [Embedding-Modells](https://docs.photoprism.app/user-guide/ai/face-recognition/#face-embeddings) und nicht der Detection – die Gesichter werden also weiterhin gefunden, angezeigt und sind durchsuchbar. Sie werden nur seltener automatisch zu einer Person zusammengefasst und bilden häufiger mehrere Cluster, die du von Hand zusammenführen kannst.
-
-Das Modell, das für neue Sammlungen verwendet wird, ist eine deutliche Verbesserung gegenüber dem zuvor mit PhotoPrism ausgelieferten Modell, das zusätzlich bei asiatischen Gesichtern unzuverlässig war. Sammlungen, die vor seiner Verfügbarkeit angelegt wurden, behalten das bisherige Modell, bis sie [migriert werden](https://docs.photoprism.app/user-guide/ai/face-recognition/#changing-the-face-model).
-
-### Gedrehte Gesichter ###
-
-Die Detection erwartet aufrecht abgebildete Gesichter. Ein um etwa 90° gedrehtes Gesicht – etwa bei einer liegenden Person oder bei einer Aufnahme mit seitlich gehaltener Kamera ohne passenden Orientierungs-Tag – wird in der Regel gar nicht erkannt. Als praktikable Abhilfe drehst du die betroffenen Bilder so, dass sie aufrecht angezeigt werden, und indexierst sie anschließend erneut.
-
-### Hintergrund-Worker ###
-
-Die Gesichtserkennung wurde unter der Annahme entwickelt und getestet, dass der [Hintergrund-Worker](https://docs.photoprism.app/getting-started/config-options/#indexing) ungefähr alle 15 Minuten läuft, sofern das Backend nicht mit anderen Aufgaben wie der Indexierung beschäftigt ist. Sie wurde nicht mit deutlich längeren Intervallen getestet und ist dafür auch nicht ausgelegt.
-
-Der Hintergrund-Worker gruppiert neue Gesichter nach Ähnlichkeit, vergleicht Gesichter mit Clustern und optimiert bei Bedarf bestehende Cluster. Ohne diese Routineaufgaben wird die Anzahl der zu verarbeitenden Gesichter schnell zu groß. Bei der nächsten Ausführung des Workers kann es dann zu einer starken Serverbelastung kommen, bis alle Gesichter, Gesichts-Cluster und zugehörigen Bilder aktualisiert wurden. Je länger du wartest, desto mehr CPU wird benötigt und desto länger dauert es.
-
-Ein wichtiger Grund, warum der Worker unabhängig von tatsächlichen Änderungen in der Hauptinstanz läuft, ist, dass manche Nutzer Datenbankinhalte direkt verändern oder zusätzliche Instanzen betreiben, etwa zum Indexieren. Dieses Problem lässt sich lösen, braucht aber Zeit. Würden wir das ignorieren und den Worker nicht ständig laufen lassen, könnte das zu vielen zusätzlichen Support-Anfragen führen und uns weiter von der Entwicklung abhalten.
-
-*Der Umgang mit Änderungen über mehrere Instanzen hinweg wird im Laufe der Zeit verbessert, sodass der Worker in zukünftigen Releases seltener laufen muss.*
+Wenn Gesichter fehlen, Personen falsch gruppiert werden, Namen nicht erhalten bleiben oder das Zuordnen langsam ist, arbeite die Checklisten unter [Fehlerbehebung > Gesichtserkennung](https://docs.photoprism.app/getting-started/troubleshooting/face-recognition/) durch.
 
 !!! info "Geplante Funktionen"
     - automatische Sicherung benannter Personen in YAML-Dateien
