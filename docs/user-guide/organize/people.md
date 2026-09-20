@@ -115,11 +115,11 @@ die Namen von Personen nicht, die als privat oder verborgen markiert sind; *Admi
 sehen sie wie gewohnt und können beide Optionen ändern.
 [Mehr erfahren ›](../users/roles.md)
 
-Für ein Konto, das sie nicht sehen darf, erscheint eine zurückgehaltene Person weder unter *Personen*
-noch in den Namensvorschlägen beim Zuordnen eines Gesichts, wird in der *Personen*-Liste eines Bildes
-nicht genannt und ihre Gesichtsregion wird dort nicht angezeigt. Ihr Name bleibt außerdem aus
-automatisch erzeugten Titeln, Bildunterschriften und Suchbegriffen heraus; bereits vorhandene Bilder
-werden beim nächsten Wartungsdurchlauf aktualisiert, plane dafür einige Minuten ein.
+Für ein Konto, das sie nicht sehen darf, erscheint eine zurückgehaltene Person nicht unter
+*Personen*, wird in der *Personen*-Liste eines Bildes nicht genannt und ihre Gesichtsregion wird dort
+nicht angezeigt. Ihr Name bleibt außerdem aus automatisch erzeugten Titeln und Bildunterschriften
+heraus, und eine Suche danach findet ihre Bilder nicht; bereits vorhandene Bilder werden beim
+nächsten Wartungsdurchlauf aktualisiert, plane dafür einige Minuten ein.
 
 !!! note ""
     **Die Bilder bleiben sichtbar.** Nur der Name und die Gesichtsregion werden zurückgehalten — wer
