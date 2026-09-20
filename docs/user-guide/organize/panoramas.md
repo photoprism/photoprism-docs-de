@@ -48,7 +48,7 @@ Horizontales Ziehen dreht die Kugel, statt zum nächsten Bild zu wechseln. Verwe
 Andere Projektionstypen wie Cubemaps und zylindrische Panoramen sowie ultrabreite Videos werden als normale Bilder angezeigt, da sie als Kugel gerendert verzerrt wären.
 
 !!! note ""
-    Für die Darstellung einer Kugel wird ein Browser mit [WebGL](https://caniuse.com/webgl)-Unterstützung benötigt, die in allen aktuellen Browsern standardmäßig aktiviert ist. Beachte, dass das manuelle Markieren von Gesichtern auf 360°-Inhalten noch nicht unterstützt wird.
+    Für die Darstellung einer Kugel wird ein Browser mit [WebGL 2](https://caniuse.com/webgl2)-Unterstützung benötigt, die in allen aktuellen Browsern standardmäßig aktiviert ist. Beachte, dass das manuelle Markieren von Gesichtern auf 360°-Inhalten noch nicht unterstützt wird.
 
 ## Bildqualität ##
 
