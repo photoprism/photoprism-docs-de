@@ -188,6 +188,6 @@ docker compose exec photoprism photoprism faces reset
 ```
 
 !!! danger ""
-    Der Befehl `faces reset` löscht alle vorhandenen Gesichts‑Marker und Cluster. Stelle sicher, dass du bei Bedarf Backups hast – dieser Vorgang kann nicht rückgängig gemacht werden.
+    Der Befehl `faces reset` löscht alle vorhandenen Gesichts‑Marker und Cluster. Dieser Vorgang kann nicht rückgängig gemacht werden, erstelle deshalb vorher ein [Backup](../backups/index.md), z. B. mit `docker compose exec photoprism photoprism backup -i /photoprism/storage/backup/before-faces.sql`. Wiederherstellen lässt es sich mit `docker compose exec photoprism photoprism restore -i -f /photoprism/storage/backup/before-faces.sql`.
 
 [Mehr über die Gesichtserkennung erfahren ›](../organize/people.md)
