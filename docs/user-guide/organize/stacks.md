@@ -14,6 +14,7 @@ Beachte, dass *[Videos](./video.md)* und *[Live-Fotos](video.md#live-fotos)*, di
 2. Dateien mit fortlaufenden Namen, wie `/2018/IMG_1234 (2).jpg` und `/2018/IMG_1234 (3).jpg`, können gruppiert werden (optional)
 3. Dateien, deren Metadaten zeigen, dass sie am selben Ort und in der selben Sekunde aufgenommen wurden, können gruppiert werden (optional)
 4. Dateien mit der gleichen *Unique Image ID* oder *XMP Instance ID* können gruppiert werden (optional)
+5. Insta360-Videos, bei denen jedes Objektiv in eine eigene Datei aufgenommen wird, z.B. `VID_20231218_150323_00_022.insv` und `VID_20231218_150323_10_022.insv`, werden zusammen mit der optionalen Proxy-Datei `LRV_20231218_150323_11_022.insv` in niedriger Auflösung als ein [360°-Video](panoramas.md) gruppiert; die Namensregeln findest du im [Developer Guide](https://docs.photoprism.app/developer-guide/media/insta360/)
 
 Du kannst das Verhalten der Punkte 2-4 in *[Einstellungen > Inhalte](../settings/library.md#bildstapel)* konfigurieren.
 
