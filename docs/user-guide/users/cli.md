@@ -80,7 +80,7 @@ Der Befehl `photoprism users add` erstellt ein neues Benutzerkonto oder bietet a
 docker compose exec photoprism photoprism users add -p mysecret -n "Bob" bob
 ```
 
-Wenn du mit dem `-p` Flag kein initiales Passwort angibst, wirst du aufgefordert, ein Passwort für das neue Konto einzugeben. Weitere Kontoeigenschaften kannst du mit den oben aufgeführten Flags setzen.
+Wenn du mit dem `-p` Flag kein initiales Passwort angibst, wirst du aufgefordert, ein Passwort für das neue Konto einzugeben. Bietet der Befehl an, ein gelöschtes Konto wiederherzustellen, übergib `--restore`, um es ohne Rückfrage wiederherzustellen, zum Beispiel in einem Skript oder wenn kein Terminal angeschlossen ist. Lehnst du das Angebot ab oder läuft der Befehl ohne Terminal, bleibt das Konto gelöscht und der Befehl endet mit Exit-Code `1`. Weitere Kontoeigenschaften kannst du mit den oben aufgeführten Flags setzen.
 
 !!! example ""
     Unter [Rollen und Berechtigungen](roles.md) findest du die Kontorollen, die du mit `--role` setzen kannst, und welche davon in deiner Edition verfügbar sind.
