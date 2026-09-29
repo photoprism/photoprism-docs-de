@@ -61,7 +61,7 @@ Eine Übersicht über [mobile Sync-Apps](#sync-apps-fur-ios-und-android) für iO
 
       ![Screenshot](img/photosync-7.jpg){: style="width:35%" class="shadow"}
 
-PhotoPrism startet den Import- bzw. Indexiervorgang automatisch, nachdem neue Dateien mit PhotoSync übertragen wurden.
+Da PhotoSync die Dateien über WebDAV sendet, startet PhotoPrism den Indexiervorgang automatisch, sobald neue Dateien im *Originals*-Ordner eintreffen. Dateien, die in den *Import*-Ordner hochgeladen werden, werden nur dann automatisch importiert, wenn du den [automatischen Import aktiviert](../library/import.md#automatisch-importieren) hast, der standardmäßig deaktiviert ist. Andernfalls starte den Import manuell, sobald alle Dateien übertragen wurden.
 
 ## Sync Apps für iOS und Android##
 Als Alternative zu [PhotoSync](https://link.photoprism.app/photosync) kannst du auch viele andere Apps verwenden, um deine Bilder mit PhotoPrism zu synchronisieren, entweder [direkt über WebDAV](./webdav.md#server-url) oder indem du den *Originals*-Ordner als [SMB-Netzlaufwerk](https://ubuntu.com/server/docs/samba-as-a-file-server){:target="_blank"} über dein [Betriebssystem](https://support.microsoft.com/en-us/windows/file-sharing-over-a-network-in-windows-b58704b2-f53a-4b82-7bc1-80f9994725bf){:target="_blank"} oder deinen [Cloud-Anbieter](https://learn.microsoft.com/en-us/azure/storage/files/files-smb-protocol){:target="_blank"} freigibst:
