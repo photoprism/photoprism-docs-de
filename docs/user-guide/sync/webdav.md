@@ -10,11 +10,11 @@ Nachdem Dateien über WebDAV hochgeladen wurden, beginnt die Indexierung nach ei
 Es ist auch möglich, Dateien mit [externen WebDAV-Servern](../settings/sync.md) wie ownCloud oder anderen PhotoPrism-Instanzen zu synchronisieren.
 
 !!! info ""
-	WebDAV kann in den [Erweiterten Einstellungen](../settings/advanced.md) deaktiviert werden.
-	Wenn du PhotoPrism im [public-Modus](https://docs.photoprism.app/getting-started/config-options/) ohne Authentifizierung betreibst, ist WebDAV aus Sicherheitsgründen automatisch deaktiviert.
+    WebDAV kann in den [Erweiterten Einstellungen](../settings/advanced.md) deaktiviert werden.
+    Wenn du PhotoPrism im [public-Modus](https://docs.photoprism.app/getting-started/config-options/) ohne Authentifizierung betreibst, ist WebDAV aus Sicherheitsgründen automatisch deaktiviert.
 
 !!! danger ""
-	Verwende WebDAV nicht [ohne HTTPS](https://docs.photoprism.app/getting-started/using-https/) außerhalb deines lokalen, privaten Netzwerks, da dein Passwort im Klartext über das Internet übertragen werden würde. Backup-Tools und Apps zur Dateisynchronisation wie [FolderSync](https://foldersync.io/docs/faq/#https-connection-errors) können die Verbindung ebenfalls verweigern.
+    Verwende WebDAV nicht [ohne HTTPS](https://docs.photoprism.app/getting-started/using-https/) außerhalb deines lokalen, privaten Netzwerks, da dein Passwort im Klartext über das Internet übertragen werden würde. Backup-Tools und Apps zur Dateisynchronisation wie [FolderSync](https://foldersync.io/docs/faq/#https-connection-errors) können die Verbindung ebenfalls verweigern.
 
 ## Server-URL ##
 Wenn die Instanz mit dem öffentlichen Internet verbunden ist, hat die WebDAV-URL des *Originals*-Ordners das folgende Format, wobei `example.com` durch den tatsächlichen Hostnamen und `admin` durch den [tatsächlichen Benutzernamen](#zugangsdaten) ersetzt werden muss:
@@ -32,7 +32,7 @@ http://admin@localhost:2342/originals/
 Beachte, dass der abschließende Slash am Ende des Pfads nicht weggelassen werden darf und dass die WebDAV-URL in deinen Client-Anwendungen aktualisiert werden muss, wenn sich Hostname oder Port des Servers ändern.
 
 !!! note ""
-	Du kannst die URL des *Originals*-Ordners einsehen, indem du zu [Einstellungen > Konto](../settings/account.md) navigierst und dann auf *Mit WebDAV Verbinden* klickst. Es ist möglich, sich alternativ mit dem *Import*-Ordner zu verbinden, indem du in der URL `/originals/` durch `/import/` ersetzst.
+    Du kannst die URL des *Originals*-Ordners einsehen, indem du zu [Einstellungen > Konto](../settings/account.md) navigierst und dann auf *Mit WebDAV Verbinden* klickst. Es ist möglich, sich alternativ mit dem *Import*-Ordner zu verbinden, indem du in der URL `/originals/` durch `/import/` ersetzst.
 
 ### Microsoft Windows
 
@@ -57,7 +57,7 @@ Bei lokalen Installationen, die auf dem Standard-Port 2342 *ohne HTTPS* laufen, 
 Bitte beachte, dass der Slash am Ende nicht weggelassen werden darf und dass die WebDAV-Ressource in Windows aktualisiert werden muss, wenn sich der Hostname oder Port des Servers ändert.
 
 !!! note ""
-	Du kannst die URL des *Originals*-Ordners einsehen, indem du zu [Einstellungen > Konto](../settings/account.md) navigierst und dann auf *Mit WebDAV Verbinden* klickst. Es ist möglich, sich alternativ mit dem *Import*-Ordner zu verbinden, indem du in der URL `/originals/` durch `/import/` ersetzst.
+    Du kannst die URL des *Originals*-Ordners einsehen, indem du zu [Einstellungen > Konto](../settings/account.md) navigierst und dann auf *Mit WebDAV Verbinden* klickst. Es ist möglich, sich alternativ mit dem *Import*-Ordner zu verbinden, indem du in der URL `/originals/` durch `/import/` ersetzst.
 
 ## Zugangsdaten
 
@@ -75,12 +75,12 @@ Wenn der Zugriff verweigert wird, obwohl die Anmeldedaten korrekt sind, überpr�
      2. Trage die URL in das Feld **Serveradresse** ein
      3. Klicke  **Verbinden**
 
-	[Wenn du Probleme bei der Verbindung mit WebDAV hast](https://docs.photoprism.app/getting-started/troubleshooting/windows/#connecting-via-webdav):
+    [Wenn du Probleme bei der Verbindung mit WebDAV hast](https://docs.photoprism.app/getting-started/troubleshooting/windows/#connecting-via-webdav):
 
-	- [ ] Du hast nicht genügend Benutzerrechte (versuche es als Admin)
-  	- [ ] Es gibt ein [allgemeines Authentifizierungsproblem](https://docs.photoprism.app/getting-started/troubleshooting/#cannot-log-in)
-  	- [ ] Deine Instanz oder dein Reverse Proxy verwendet ein ungültiges HTTPS-Zertifikat
-  	- [ ] Du versuchst, dich mit dem falschen Netzwerk oder Server zu verbinden
+    - [ ] Du hast nicht genügend Benutzerrechte (versuche es als Admin)
+    - [ ] Es gibt ein [allgemeines Authentifizierungsproblem](https://docs.photoprism.app/getting-started/troubleshooting/#cannot-log-in)
+    - [ ] Deine Instanz oder dein Reverse Proxy verwendet ein ungültiges HTTPS-Zertifikat
+    - [ ] Du versuchst, dich mit dem falschen Netzwerk oder Server zu verbinden
 
 === "Windows 10"
 
@@ -88,43 +88,43 @@ Wenn der Zugriff verweigert wird, obwohl die Anmeldedaten korrekt sind, überpr�
      2. Klicke mit der rechten Maustaste auf **Mein PC**
      3. Wähle **Netzwerklaufwerk hinzufügen...**
 
-		![Screenshot](img/webdav-1.jpg){ class="shadow" }
+        ![Screenshot](img/webdav-1.jpg){ class="shadow" }
 
      4. Wähle den Laufwerksbuchstaben sowie das Verzeichnis, das mit WebDAV verknüpft werden soll
      5. Wähle die Optionen **Verbindung bei Anmeldung wiederherstellen** und **Verbindung mit anderen Anmeldeinformationen herstellen** aus
      6. Öffne folgenden Link: **Verbindung mit einer Webseite herstellen, auf der Sie Dokumente und Bilder speichern können**
 
-		![Screenshot](img/webdav-2.jpg){ class="shadow" }
+        ![Screenshot](img/webdav-2.jpg){ class="shadow" }
 
-	 7. Klicke  **Weiter**
+     7. Klicke  **Weiter**
 
-		![Screenshot](img/webdav-3.jpg){ class="shadow" }
+        ![Screenshot](img/webdav-3.jpg){ class="shadow" }
 
      8. Klicke **Eine benutzerdefinierte Netzwerkadresse auswählen** und dann auf **Weiter**
 
-		![Screenshot](img/webdav-4.jpg){ class="shadow" }
+        ![Screenshot](img/webdav-4.jpg){ class="shadow" }
 
-	 9. Trage die URL, wie oben beschrieben, in das Feld **Internet oder Netzwerkadresse** ein und klicke **Weiter**
+     9. Trage die URL, wie oben beschrieben, in das Feld **Internet oder Netzwerkadresse** ein und klicke **Weiter**
 
-		![Screenshot](img/webdav-5.jpg){ class="shadow" }
+        ![Screenshot](img/webdav-5.jpg){ class="shadow" }
 
      10. Gib deinen Benutzernamen und dein Passwort ein und klicke **OK**
 
-		![Screenshot](img/webdav-6.jpg){ class="shadow" }
+        ![Screenshot](img/webdav-6.jpg){ class="shadow" }
 
-	11. Gib einen Namen für die Netzwerkverbindung ein und klicke **Weiter**
+    11. Gib einen Namen für die Netzwerkverbindung ein und klicke **Weiter**
 
-		![Screenshot](img/webdav-7.jpg){ class="shadow" }
+        ![Screenshot](img/webdav-7.jpg){ class="shadow" }
 
-	10. Klicke **Fertig stellen**
+    10. Klicke **Fertig stellen**
 
-		![Screenshot](img/webdav-8.jpg){ class="shadow" }
+        ![Screenshot](img/webdav-8.jpg){ class="shadow" }
 
-	Der *Originals* Ordner ist nun als Netzwerklaufwerk im Windows Explorer eingebunden und du kannst direkt Dateien oder Verzeichnisse hinzufügen, bearbeiten oder löschen.
+    Der *Originals* Ordner ist nun als Netzwerklaufwerk im Windows Explorer eingebunden und du kannst direkt Dateien oder Verzeichnisse hinzufügen, bearbeiten oder löschen.
 
-	![Screenshot](img/webdav-9.jpg){ class="shadow" }
+    ![Screenshot](img/webdav-9.jpg){ class="shadow" }
 
-  	[Wenn du Probleme bei der Verbindung mit WebDAV hast](https://docs.photoprism.app/getting-started/troubleshooting/windows/#connecting-via-webdav):
+    [Wenn du Probleme bei der Verbindung mit WebDAV hast](https://docs.photoprism.app/getting-started/troubleshooting/windows/#connecting-via-webdav):
 
      - [ ] Möglicherweise musst du **[die grundlegende Authentifizierungsstufe](https://docs.photoprism.app/getting-started/troubleshooting/windows/#connecting-via-webdav)** in der Registrierung ändern
      - [ ] Du hast nicht genügend Benutzerrechte (versuche es als Admin)
