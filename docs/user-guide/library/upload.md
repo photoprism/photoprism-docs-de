@@ -57,3 +57,9 @@ Der Upload-Dialog unterstützt Drag-and-drop: Ziehe eine oder mehrere Dateien (o
     - verwende eine spezielle Sync-App wie [PhotoSync](../sync/mobile-devices.md#photosync-verwenden), die über die nötige Berechtigung verfügt und Dateien unverändert per WebDAV überträgt.
 
     Ob eine Datei noch GPS-Daten enthält, kannst du mit [ExifTool](https://exiftool.org/) prüfen (zum Beispiel `exiftool -a -G1 photo.jpg`).
+
+## Wenn die Verarbeitung fehlschlägt
+
+Nach dem Hochladen verschiebt PhotoPrism die Dateien in deinen Ordner *originals* und indexiert sie. Kann dieser Schritt nicht ausgeführt werden, zum Beispiel weil gerade indexiert wird oder nicht genügend Speicherplatz frei ist, zeigt der Dialog *Upload fehlgeschlagen* an und bietet *Erneut versuchen* an. Damit werden die hochgeladenen Dateien erneut verarbeitet, ohne dass du sie ein zweites Mal hochladen musst.
+
+Hochgeladene Dateien, die nie verarbeitet wurden, werden automatisch entfernt, sobald sie länger als [`PHOTOPRISM_UPLOAD_MAXAGE`](https://docs.photoprism.app/getting-started/config-options/#storage) unverändert geblieben sind. Der Standardwert entspricht 7 Tagen. Der Wert wird in Sekunden angegeben; mit `-1` bleiben die Dateien erhalten.

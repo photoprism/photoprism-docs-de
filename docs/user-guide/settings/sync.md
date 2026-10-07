@@ -35,6 +35,8 @@ PhotoPrism kann seine Originale außerdem per WebDAV bereitstellen, sodass kompa
 ![Screenshot](img/services-upload-1-2503-german.jpg){ class="shadow" }
 4. Wähle den Ordner, in den die Dateien hochgeladen werden sollen und klicke *Speichern*
 
+Beim Hochladen von Originalen legt *YAML-Sidecar-Dateien hochladen* fest, ob die YAML-Sidecar-Dateien ebenfalls hochgeladen werden. Es ändert dieselbe Einstellung wie *YAML-Sidecar-Dateien synchronisieren* weiter unten.
+
 ![Screenshot](img/services-upload-2-2503-german.jpg){ class="shadow" }
 
 Du kannst jetzt [Alben oder Dateien mit diesem Dienst teilen](../share/services-share.md).
@@ -61,3 +63,4 @@ Du kannst jetzt [Alben oder Dateien mit diesem Dienst teilen](../share/services-
 * *Dateien hochladen* - alle Dateien (auch als privat markierte oder archivierte), die auf deinem Dienst noch nicht existieren, werden regelmäßig hochgeladen
 * *Namen beibehalten* - Dateinamen werden beibehalten
 * *RAWs und Videos kopieren* - Neben JPEGs werden auch RAW Dateien und Videos synchronisiert
+* *YAML-Sidecar-Dateien synchronisieren* - Die YAML-Sidecar-Dateien mit den Metadaten deiner Bilder werden hoch- und heruntergeladen. Die Option ist standardmäßig aktiviert. Wenn der entfernte Server YAML-Dateien ablehnt, andere Dateien aber annimmt, deaktiviert PhotoPrism die Option für diesen Dienst und protokolliert eine Warnung; sobald der Server sie annimmt, kannst du sie wieder aktivieren.

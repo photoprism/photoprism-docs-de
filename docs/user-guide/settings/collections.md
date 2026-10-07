@@ -24,7 +24,7 @@ Sie werden nur angezeigt, wenn Downloads nicht wie oben beschrieben deaktiviert 
 #### :material-camera: Originale ####
 
 Es werden nur Dateien aus dem Ordner *originals* aufgenommen, nicht die automatisch erzeugten Dateien aus dem Ordner *sidecar*.
-Dies ist die empfohlene Standardeinstellung.
+Dies ist die empfohlene Standardeinstellung. Vorschaubilder, die PhotoPrism aus einem Video erzeugt hat, werden nicht aufgenommen, außer als Teil eines Live Photos.
 
 #### :material-raw: RAW ####
 

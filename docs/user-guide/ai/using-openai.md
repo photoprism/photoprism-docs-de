@@ -36,13 +36,13 @@ Models:
 
 Empfehlungen:
 
-- Lass den Modellnamen exakt so, wie er von OpenAI veröffentlicht wurde. Das Standardmodell ist `gpt-5-mini`. Modellbezeichner sind außerdem case‑sensitiv – PhotoPrism übernimmt die Schreibweise direkt aus deiner `vision.yml`, sodass Werte wie `QuantTrio/Qwen3-VL-30B-A3B-Instruct-AWQ` von Hugging Face oder einem anderen OpenAI‑kompatiblen Katalog unverändert an die Upstream‑API geschickt werden.
-- `Service.Key` kann entfallen, wenn `OPENAI_API_KEY` bzw. `_FILE` bereits in der Umgebung gesetzt ist. Optional kannst du `Service.Org` und `Service.Project` setzen, falls dein Account das aus Abrechnungsgründen verlangt.
+- Lass den Modellnamen exakt so, wie er von OpenAI veröffentlicht wurde. Der Bezeichner wird so gesendet, wie er geschrieben ist, einschließlich eines Tags nach einem Doppelpunkt; verwende also `gpt-5-mini` statt `gpt-5-mini:latest`. Für Einträge ohne Modellnamen verwendet PhotoPrism `OPENAI_MODEL`, falls gesetzt, andernfalls `gpt-5-mini`. Modellbezeichner sind außerdem case‑sensitiv – PhotoPrism übernimmt die Schreibweise direkt aus deiner `vision.yml`, sodass Werte wie `QuantTrio/Qwen3-VL-30B-A3B-Instruct-AWQ` von Hugging Face oder einem anderen OpenAI‑kompatiblen Katalog unverändert an die Upstream‑API geschickt werden.
+- `Service.Key` kann entfallen, wenn `OPENAI_API_KEY` bzw. `_FILE` bereits in der Umgebung gesetzt ist. Ohne Schlüssel werden keine Anfragen an `api.openai.com` gesendet. Optional kannst du `Service.Org` und `Service.Project` setzen, falls dein Account das aus Abrechnungsgründen verlangt.
 - `Service.Tier` setzt optional den OpenAI `service_tier` (zum Beispiel `flex` für günstigere, langsamere Verarbeitung); ohne Angabe wird OpenAIs Standard (`auto`) verwendet.
 - PhotoPrism wertet Modelle von unten nach oben aus. Wenn du die OpenAI‑Einträge ans Ende der Liste setzt, werden sie bevorzugt, während andere Modelle als Fallback dienen.
 
 !!! tldr ""
-    Standardmäßig verwendet PhotoPrism den OpenAI‑Responses‑Endpunkt `https://api.openai.com/v1/responses` mit einem einzelnen 720 px Thumbnail (`detail: low`). Der Endpunkt lässt sich über `Service.Uri` auf einen eigenen Wert ändern.
+    Standardmäßig verwendet PhotoPrism den OpenAI‑Responses‑Endpunkt `https://api.openai.com/v1/responses` mit einem einzelnen 720 px Thumbnail (`detail: low`). Um einen anderen OpenAI‑kompatiblen Endpunkt zu verwenden, setze `OPENAI_BASE_URL` auf dessen Basis-URL einschließlich des Versionspfads, z. B. `https://llm.example.com/v1`. Sie wird dann für alle OpenAI‑Modelle ohne `Service.Uri` verwendet. Alternativ setzt du für ein einzelnes Modell ein eigenes `Service.Uri`. Eine Query in der Basis-URL, etwa `?api-version=...` für Azure OpenAI, wird ans Ende der Anfrage-URL verschoben; Zugangsdaten gibst du über `OPENAI_API_KEY` oder `Service.Key` an, nicht über die URL. Weicht `OPENAI_BASE_URL` vom Standard ab, protokolliert PhotoPrism beim Start die verwendete Basis-URL mit maskierten Zugangsdaten, sodass du prüfen kannst, welcher Endpunkt die Anfragen erhält.
 
 ## Nutzungs Tipps
 

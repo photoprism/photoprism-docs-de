@@ -76,7 +76,7 @@ PhotoPrism wertet Modelle von unten nach oben in der Liste aus. Wenn du die Olla
 Von Ollama generierte Captions und Labels werden automatisch mit der Source `ollama` gespeichert. Du musst daher keinen speziellen `source`‑Wert angeben, außer du möchtest die Quelle explizit überschreiben.
 
 !!! tip "Prompt‑Lokalisierung"
-    Wenn du Ausgaben in anderen Sprachen erzeugen möchtest, lasse die Basisanweisungen im Prompt auf Englisch und ergänze nur die gewünschte Sprache (z.B. "Respond in German"). Dieses Vorgehen funktioniert sowohl für [Caption‑Prompts](ollama-models.md#qwen3-vl-caption) als auch für [Label‑Prompts](ollama-models.md#qwen3-vl-labels).
+    Wenn du Ausgaben in anderen Sprachen erzeugen möchtest, lasse die Basisanweisungen im Prompt auf Englisch und ergänze nur die gewünschte Sprache (z.B. "Respond in German"). Dieses Vorgehen funktioniert sowohl für [Caption‑Prompts](ollama-models.md#qwen-35-caption) als auch für [Label‑Prompts](ollama-models.md#qwen-35-labels).
 
 ## Schritt 4: PhotoPrism neu starten
 
@@ -121,6 +121,6 @@ photoprism --log-level=trace vision run -m caption --count 1 --force
 
 ### Cloud-Verarbeitung abschalten
 
-`OLLAMA_API_KEY` zu entfernen verhindert nicht, dass Bilder gesendet werden: Die Anfrage wird weiterhin gestellt und vom Dienst abgelehnt, das Bild hat deine Instanz zum Zeitpunkt des Fehlers also bereits verlassen. Um keine Bilder mehr in die Cloud zu senden, richte die Konfiguration wieder auf einen lokalen Dienst aus — entferne `OLLAMA_BASE_URL` (und ein eventuelles `Service.Uri` in deiner [`vision.yml`](index.md#visionyml-reference)), damit die Engine auf ihren lokalen Standard zurückfällt, oder setze `Run: manual`, um automatische Läufe ganz zu unterbinden.
+Ohne `OLLAMA_API_KEY` (oder ein `Service.Key`) sendet PhotoPrism keine Anfragen an Ollama Cloud: Sie schlagen mit `missing api key` fehl, und eine Warnung mit dem Namen des Modells wird protokolliert. Das gilt nicht für eine lokale Ollama-Instanz, die `:cloud`-Modelle ausführt, da sie diese mit ihren eigenen Zugangsdaten weiterleitet. Um wieder lokal zu verarbeiten, richte die Konfiguration auf einen lokalen Dienst aus — entferne `OLLAMA_BASE_URL` (und ein eventuelles `Service.Uri` in deiner [`vision.yml`](index.md#visionyml-reference)), damit die Engine auf ihren lokalen Standard zurückfällt — oder setze `Run: manual`, um automatische Läufe ganz zu unterbinden.
 
 [^1]: Nicht relevante Konfigurationsdetails wurden zur besseren Lesbarkeit ausgelassen.

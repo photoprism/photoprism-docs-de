@@ -140,13 +140,15 @@ Erstelle nun eine neue Datei `config/vision.yml` oder bearbeite die vorhandene D
 
 PhotoPrism wertet Modelle von unten nach oben in der Liste aus. Wenn du die Ollama Einträge unterhalb anderer Modelle platzierst, werden Ollama‑Modelle bevorzugt, während andere als Fallback erhalten bleiben.
 
+Die Ollama‑Engine sendet Anfragen an `${OLLAMA_BASE_URL}/api/generate`, wobei `OLLAMA_BASE_URL` standardmäßig `http://ollama:11434` ist. Für Einträge ohne Modellnamen verwendet sie `OLLAMA_MODEL`, falls gesetzt, andernfalls `gemma4:latest`. Beide lassen sich als Umgebungsvariablen des `photoprism`‑Dienstes setzen, sodass du sie nicht in der `vision.yml` wiederholen musst.
+
 Von Ollama generierte Captions und Labels werden automatisch mit der Source `ollama` gespeichert. Du musst daher keinen speziellen `source`‑Wert angeben, außer du möchtest die Quelle explizit überschreiben.
 
 !!! tip "Prompt‑Lokalisierung"
-    Wenn du Ausgaben in anderen Sprachen erzeugen möchtest, lasse die Basisanweisungen im Prompt auf Englisch und ergänze nur die gewünschte Sprache (z.B. "Respond in German"). Dieses Vorgehen funktioniert sowohl für [Caption‑Prompts](ollama-models.md#qwen3-vl-caption) als auch für [Label‑Prompts](ollama-models.md#qwen3-vl-labels).
+    Wenn du Ausgaben in anderen Sprachen erzeugen möchtest, lasse die Basisanweisungen im Prompt auf Englisch und ergänze nur die gewünschte Sprache (z.B. "Respond in German"). Dieses Vorgehen funktioniert sowohl für [Caption‑Prompts](ollama-models.md#qwen-35-caption) als auch für [Label‑Prompts](ollama-models.md#qwen-35-labels).
 
 !!! info "NSFW‑Erkennung"
-    Wenn du das `labels`‑Modell über Ollama betreibst, erfolgt die NSFW‑Erkennung **nicht** automatisch. PhotoPrism bittet das Modell nur dann, die NSFW‑Klassifizierung in dieselbe Antwort aufzunehmen, wenn **sowohl** `PHOTOPRISM_DETECT_NSFW=true` **als auch** `PHOTOPRISM_EXPERIMENTAL=true` gesetzt sind. Ohne diese Kombination überspringt `photoprism vision run -m labels` die NSFW‑Markierung, selbst wenn das LLM "weiß", dass der Inhalt nicht jugendfrei ist. Die vollständige Übersicht findest du unter [NSFW Detection](https://docs.photoprism.app/user-guide/ai/nsfw/).
+    Standardmäßig entscheidet der integrierte NSFW‑Detektor, auch wenn du das `labels`‑Modell über Ollama betreibst. PhotoPrism bittet das `labels`‑Modell nur dann, die NSFW‑Klassifizierung in dieselbe Antwort aufzunehmen, wenn **sowohl** `PHOTOPRISM_NSFW_MODEL=labels` **als auch** `PHOTOPRISM_DETECT_NSFW=true` gesetzt sind; Uploads werden dann nicht geprüft. Details findest du unter [NSFW Detection](https://docs.photoprism.app/user-guide/ai/nsfw/#using-a-labels-model).
 
 ## Schritt 4: PhotoPrism neu starten
 
@@ -198,7 +200,7 @@ Um das zu beheben, kannst du entweder Reasoning für das Modell mit `Service.Thi
 ```yaml
 Models:
 - Type: caption
-  Model: qwen3-vl:latest
+  Model: qwen3.5:4b
   Engine: ollama
   Service:
     Think: "false"
