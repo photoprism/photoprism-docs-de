@@ -1,20 +1,20 @@
 # Ollama Modelle #
 
-Wir empfehlen, ein [Vision Modell](https://ollama.com/search?c=vision) zu wählen, das Geschwindigkeit, Genauigkeit und Zuverlässigkeit gut ausbalanciert. Drei Modellfamilien erfüllen diese Kriterien und können wir empfehlen — [Gemma 4](https://ollama.com/library/gemma4), [Qwen3-VL](https://ollama.com/library/qwen3-vl) und [Qwen 3.5](https://ollama.com/library/qwen3.5):
+Wir empfehlen, ein [Vision Modell](https://ollama.com/search?c=vision) zu wählen, das Geschwindigkeit, Genauigkeit und Zuverlässigkeit gut ausbalanciert. Drei Modellfamilien erfüllen diese Kriterien und können wir empfehlen — [Gemma 4](https://ollama.com/library/gemma4), [Qwen 3.5](https://ollama.com/library/qwen3.5) und [Qwen3-VL](https://ollama.com/library/qwen3-vl):
 
-| Modell       | Anwendungsfall                                                       | Anmerkungen                                                                                                                                               |
-|--------------|----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Gemma 4**  | Standard-Generierung von Bildunterschriften und Labels auf Englisch  | Leichte, zuverlässige JSON-Ausgabe; guter Standard. Für eine nicht‑englische Bibliothek keine gute Wahl — siehe [Sprachunterstützung](#language-support). |
-| **Qwen3-VL** | Fortgeschrittene Bilderkennung und Reasoning (OCR, komplexe Prompts) | Beste Motiv‑Abdeckung in unserem Benchmark, wenn der Prompt eine Anzahl an Labels vorgibt. Verwende einen `-instruct`‑Tag.                                |
-| **Qwen 3.5** | Leichtgewichtige Alternative für Captions und Labels                 | Starke Ergebnisse mit dem eingebauten Prompt bei weniger als der Hälfte der Prompt‑Tokens von Qwen3-VL. Kein `-instruct`‑Tag nötig.                       |
+| Modell       | Anwendungsfall                                                           | Anmerkungen                                                                                                                                                     |
+|--------------|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Gemma 4**  | Standard-Generierung von Bildunterschriften und Labels auf Englisch      | Leichte, zuverlässige JSON-Ausgabe; guter Standard. Für eine nicht‑englische Bibliothek keine gute Wahl — siehe [Sprachunterstützung](#language-support).       |
+| **Qwen 3.5** | Generierung von Bildunterschriften und Labels, auch für seltenere Motive | Höchste Motiv‑Abdeckung mit dem eingebauten Prompt in unserem Benchmark, bei weniger als der Hälfte der Prompt‑Tokens von Qwen3-VL. Kein `-instruct`‑Tag nötig. |
+| **Qwen3-VL** | Fortgeschrittene Bilderkennung und Reasoning (OCR, komplexe Prompts)     | Beste Motiv‑Abdeckung in unserem Benchmark, wenn der Prompt eine Anzahl an Labels vorgibt. Verwende einen `-instruct`‑Tag.                                      |
 
 [**Gemma 4**](https://ollama.com/library/gemma4) ist in Bezug auf Performance sehr konsistent; Fehler treten nur selten auf. Für sehr lange oder komplexe Prompts und Captions ist es jedoch weniger geeignet. Für die meisten [Anwendungsfälle](#gemma-4-labels) empfehlen wir die [Standard‑Variante](https://ollama.com/library/gemma4/tags) `gemma4:latest` (aktuell ein Alias für `gemma4:e4b`). Die kleinere Variante [`gemma4:e2b`](https://ollama.com/library/gemma4/tags) ist spürbar schneller und liefert sogar *mehr* Labels pro Bild, bei etwas geringerer Motiv‑Abdeckung — eine gute Wahl, wenn Tempo und Label‑Anzahl wichtiger sind als das eine treffendste Motiv. Wenn du bereits [Gemma 3](https://ollama.com/library/gemma3) konfiguriert hast, funktioniert das weiterhin – Gemma 4 ist ein Drop‑in‑Ersatz mit vergleichbarer Latenz (ca. 2 Sekunden für die Label‑Generierung auf einer NVIDIA RTX 4060 in unseren Tests).
 
-Schwächer ist Gemma 4 beim Erkennen von Motiven, bei denen es sich nicht sicher ist: Statt allgemein zu bleiben, rät es selbstbewusst. In unserem Benchmark bezeichneten beide Varianten einen Gepard als "Leopard" — bei jedem Durchlauf und in jeder getesteten Sprache, also auch auf Deutsch. Das ist kein Übersetzungsproblem, sondern eine Fehlerkennung: Das Modell meint tatsächlich das falsche Tier. Ebenso wurde eine Pinguinkolonie als "Robben" beschrieben und ein Skispringer als Snowboarder. Wenn deine Bibliothek viele Tieraufnahmen oder andere weniger verbreitete Motive enthält, ist das der Grund, stattdessen Qwen3-VL oder Qwen 3.5 in vergleichbarer Größe auszuprobieren.
+Schwächer ist Gemma 4 beim Erkennen von Motiven, bei denen es sich nicht sicher ist: Statt allgemein zu bleiben, rät es selbstbewusst. In unserem Benchmark bezeichneten beide Varianten einen Gepard als "Leopard" — bei jedem Durchlauf und in jeder getesteten Sprache, also auch auf Deutsch. Das ist kein Übersetzungsproblem, sondern eine Fehlerkennung: Das Modell meint tatsächlich das falsche Tier. Ebenso wurde eine Pinguinkolonie als "Robben" beschrieben und ein Skispringer als Snowboarder. Wenn deine Bibliothek viele Tieraufnahmen oder andere weniger verbreitete Motive enthält, ist das der Grund, stattdessen Qwen 3.5 oder Qwen3-VL in vergleichbarer Größe auszuprobieren.
 
-[**Qwen3‑VL**](https://ollama.com/library/qwen3-vl) verhält sich in den kleineren `2b`‑ und `4b`‑[Varianten](https://ollama.com/library/qwen3-vl/tags) weniger vorhersehbar; Leistung und Fehlerrate können stark schwanken – [es sei denn, du steuerst es wie in den Beispielen](#qwen3-vl-labels) weiter unten. Die Standardversion `qwen3-vl:latest` (`8b`) funktioniert im Allgemeinen ohne größere Anpassungen gut. Die Label‑Generierung auf einer NVIDIA RTX 4060 dauert typischerweise [2–3 Sekunden](#qwen3-vl-labels) und ist damit in etwa vergleichbar mit [Gemma 4](#gemma-4-labels).
+[**Qwen 3.5**](https://ollama.com/library/qwen3.5) benötigt keinen speziellen Tag: `qwen3.5:4b` verhält sich bereits wie ein Instruct‑Build, erzeugt Captions in etwa einer Sekunde und hält mehrwortige Label‑Namen nahe null. Mit dem eingebauten Label‑Prompt erreichte es die höchste Motiv‑Abdeckung aller von uns gemessenen selbst gehosteten Modelle, und es kodiert ein 720‑px‑Bild in weniger als der Hälfte der Prompt‑Tokens von Qwen3-VL, was es an einem abgerechneten Endpunkt spürbar günstiger macht. Sobald der Prompt eine [Label‑Anzahl](https://docs.photoprism.app/developer-guide/vision/model-comparison/#self-hosted-with-a-label-count-in-the-prompt) vorgibt, zieht Qwen3-VL wieder vorbei — wähle also Qwen 3.5 für den eingebauten Prompt und geringere Token‑Kosten und Qwen3-VL, wenn du mehr Labels anforderst. Beachte, dass die [`2b`‑ und `9b`‑Varianten](https://ollama.com/library/qwen3.5/tags) bei Labels beide deutlich schlechter abschnitten als `4b` — größer ist hier nicht besser.
 
-[**Qwen 3.5**](https://ollama.com/library/qwen3.5) ist die leichtere der beiden Qwen‑Optionen und benötigt keinen speziellen Tag: `qwen3.5:4b` verhält sich bereits wie ein Instruct‑Build, erzeugt Captions in etwa einer Sekunde und hält mehrwortige Label‑Namen nahe null. Mit dem eingebauten Label‑Prompt erreichte es die höchste Motiv‑Abdeckung aller von uns gemessenen selbst gehosteten Modelle, und es kodiert ein 720‑px‑Bild in weniger als der Hälfte der Prompt‑Tokens von Qwen3-VL, was es an einem abgerechneten Endpunkt spürbar günstiger macht. Sobald der Prompt eine [Label‑Anzahl](#qwen3-vl-labels) vorgibt, zieht Qwen3-VL wieder vorbei — wähle also Qwen 3.5 für ein leichtes, günstiges Setup und Qwen3-VL, wenn die Motiv‑Abdeckung am wichtigsten ist. Beachte, dass die [`2b`‑ und `9b`‑Varianten](https://ollama.com/library/qwen3.5/tags) bei Labels beide deutlich schlechter abschnitten als `4b` — größer ist hier nicht besser.
+[**Qwen3‑VL**](https://ollama.com/library/qwen3-vl) verhält sich in den kleineren `2b`‑ und `4b`‑[Varianten](https://ollama.com/library/qwen3-vl/tags) weniger vorhersehbar; Leistung und Fehlerrate können stark schwanken – es sei denn, du steuerst es mit den Options aus den [Beispielen](#qwen-35-labels) weiter unten. Die Standardversion `qwen3-vl:latest` (`8b`) funktioniert im Allgemeinen ohne größere Anpassungen gut. Die Label‑Generierung auf einer NVIDIA RTX 4060 dauert typischerweise [2–3 Sekunden](https://docs.photoprism.app/developer-guide/vision/model-comparison/#self-hosted-built-in-prompt) und ist damit in etwa vergleichbar mit [Gemma 4](#gemma-4-labels).
 
 Wie bei allen Qwen‑Modellen müssen für beide die strikten Options und das Prompt‑Schema "AT MOST N labels" beibehalten werden — ohne sie erzeugen sie zu viele Tokens und die JSON‑Antwort wird abgeschnitten.
 
@@ -44,7 +44,7 @@ Für andere Sprachen als Englisch sollten die Basisanweisungen im Prompt auf Eng
 
     Prüfe also beide Modelltypen — und prüfe den **Inhalt**, nicht nur das Alphabet. Erzeuge ein paar Bilder mit `photoprism vision run -m labels --count 1 --force` sowie `-m caption` und lies die Ergebnisse.
 
-Die Unterstützung schwankt stark je nach Modell und folgt weder der Größe noch der allgemeinen Qualität. Gehostete Modelle beherrschten Deutsch, Arabisch und Hebräisch deutlich besser als jedes von uns gemessene selbst gehostete Modell, das in 8 GB VRAM passt. Unter den selbst gehosteten Optionen war Gemma 4 bei nicht‑englischen **Kategorien** am schwächsten, obwohl es unser empfohlener Standard für Englisch ist — eine nicht‑englische Bibliothek ist also einer der Fälle, in denen sich [Qwen3-VL](#qwen3-vl-labels) oder ein [Cloud‑Modell](ollama-cloud.md) zu testen lohnt.
+Die Unterstützung schwankt stark je nach Modell und folgt weder der Größe noch der allgemeinen Qualität. Gehostete Modelle beherrschten Deutsch, Arabisch und Hebräisch deutlich besser als jedes von uns gemessene selbst gehostete Modell, das in 8 GB VRAM passt. Unter den selbst gehosteten Optionen war Gemma 4 bei nicht‑englischen **Kategorien** am schwächsten, obwohl es unser empfohlener Standard für Englisch ist — eine nicht‑englische Bibliothek ist also einer der Fälle, in denen sich [Qwen3-VL](https://docs.photoprism.app/developer-guide/vision/model-comparison/#multilingual-behavior) oder ein [Cloud‑Modell](ollama-cloud.md) zu testen lohnt.
 
 ## Normalisierung der Label‑Namen { #label-name-normalization }
 
@@ -74,7 +74,7 @@ Um zusammengesetzte Namen zu behalten, setze `Normalize: phrase` am Modell **und
 ```yaml
 Models:
 - Type: labels
-  Model: qwen3-vl:4b-instruct
+  Model: qwen3.5:4b
   Engine: ollama
   Normalize: phrase
   Service:
@@ -129,7 +129,7 @@ Die folgenden Beispiele kannst du direkt in deiner `vision.yml` verwenden. Die D
 
     Wie viele du bekommst, hängt daher vom Modell ab und ist kein Verfehlen einer Vorgabe. In unserem Benchmark gaben gehostete Modelle sieben bis zwölf Labels pro Bild von sich aus zurück, Modelle mit 8 GB VRAM ein bis vier — beim selben Prompt.
 
-    Du *kannst* eine Anzahl anfordern — siehe das [Qwen3-VL Label‑Beispiel](#qwen3-vl-labels) weiter unten —, aber betrachte das als Feineinstellung pro Modell, die du überprüfst, nicht als Behebung eines Mangels. Sie verdoppelt die Label‑Latenz ungefähr und erhöht den Anteil mehrteiliger Namen bei jedem Modell, das nicht ohnehin bei null lag. Ob diese verloren gehen, hängt vom [Normalisierungs-Modus](#label-name-normalization) des Modells ab.
+    Du *kannst* eine Anzahl anfordern — siehe das [Qwen 3.5 Label‑Beispiel](#qwen-35-labels) weiter unten —, aber betrachte das als Feineinstellung pro Modell, die du überprüfst, nicht als Behebung eines Mangels. Sie verdoppelt die Label‑Latenz ungefähr und erhöht den Anteil mehrteiliger Namen bei jedem Modell, das nicht ohnehin bei null lag. Ob diese verloren gehen, hängt vom [Normalisierungs-Modus](#label-name-normalization) des Modells ab.
 
 ### Gemma 4: Labels
 
@@ -173,14 +173,17 @@ Warum das funktioniert:
 - **Run:** `auto` läuft automatisch nach der Indexierung und durch geplante Jobs. Kann zusätzlich manuell ausgeführt werden ￫ [Run Modes](index.md#run-modes).
 - **Prompt:** Nutzt den eingebauten [Standard‑Prompt](#caption-prompts). Für andere Sprachen ergänze beispielsweise "Respond in German".
 
-### Qwen3-VL: Labels
+<a id="qwen3-vl-labels"></a>
+
+### Qwen 3.5: Labels
 
 ```yaml
 Models:
 - Type: labels
-  Model: qwen3-vl:4b-instruct
+  Model: qwen3.5:4b
   Engine: ollama
   Run: on-demand
+  Normalize: single-word
   Prompt: |
     Analyze the image and return JSON label objects with name, confidence (0-1), and topicality (0-1):
     - Return AT MOST 3 labels.
@@ -189,7 +192,7 @@ Models:
     - Do NOT add any fields other than name, confidence, topicality.
     - Do NOT output any text before or after the JSON.
   Options:
-    Seed: 3407           # Modell-Standard, siehe https://github.com/QwenLM/Qwen3-VL
+    Seed: 3407           # fester Seed für stabile Ergebnisse
     Temperature: 0.01    # geringe Zufälligkeit, weniger Halluzinationen
     TopK: 40             # berücksichtigt nur die Top ~40 Token
     TopP: 0.9            # schneidet das Ende der Verteilung ab
@@ -205,24 +208,27 @@ Models:
 
 Warum das funktioniert:
 
-- **Model:** [`qwen3-vl:4b-instruct`](https://ollama.com/library/qwen3-vl/tags) ist eine leichtere Qwen3‑VL‑Variante. Alternativ kannst du [`huihui_ai/qwen3-vl-abliterated:4b-instruct`](https://ollama.com/huihui_ai/qwen3-vl-abliterated), [`qwen3-vl:latest`](https://ollama.com/library/qwen3-vl) oder andere [Varianten](https://ollama.com/search?c=vision&q=qwen3-vl) ausprobieren.
+- **Model:** [`qwen3.5:4b`](https://ollama.com/library/qwen3.5/tags) benötigt keinen `-instruct`‑Tag und erreichte die höchste Motiv‑Abdeckung aller selbst gehosteten Modelle in unserem [Benchmark](https://docs.photoprism.app/developer-guide/vision/model-comparison/#self-hosted-built-in-prompt). Dieselben Options funktionieren auch mit [`qwen3-vl:4b-instruct`](https://ollama.com/library/qwen3-vl/tags) oder [`qwen3-vl:latest`](https://ollama.com/library/qwen3-vl) — verwende für die kleineren Qwen3-VL‑Varianten einen `-instruct`‑Tag.
 - **Engine:** Wendet sinnvolle Standardwerte für **Resolution**, **Format** und **Options** an.
 - **Run:** `on-demand` erlaubt manuelle Läufe, Ausführungen durch den Metadata‑Worker und geplante Jobs ￫ [Run Modes](index.md#run-modes).
+- **Normalize:** `single-word` speichert jeden Label‑Namen als ein Wort, passend zum Prompt. Das ist der Standard für selbst gehostete Modelle und wird gezeigt, damit du weißt, wo du es änderst; es behält dieses Verhalten auch bei, wenn du das Beispiel auf ein gehostetes Modell umstellst, bei dem `phrase` der Standard ist ￫ [Normalisierung der Label‑Namen](#label-name-normalization).
 - **Prompt:** Begrenzte Latenz, keine Wiederholungen und klare Kontrolle über Art und Anzahl der zurückgegebenen Labels. Für andere Sprachen siehe [Sprachunterstützung](#language-support).
-- **`Return AT MOST 3 labels`:** Eine bewusste Obergrenze und der Grund, warum die strikten Options nicht aus dem Ruder laufen. Sie ist zugleich restriktiv: In unserem Benchmark lieferte `qwen3-vl:4b-instruct` mit diesem Prompt rund drei Labels pro Bild, mit einer Vorgabe von 8–15 dagegen rund zehn, wobei die Motiv‑Abdeckung von 75 % auf 97 % stieg. Wenn du reichhaltigere Labels möchtest, erhöhe die Obergrenze — und rechne mit etwa der zwei‑ bis dreifachen Latenz. Den Zuwachs bei der Abdeckung solltest du dabei einordnen: Sie misst die Trefferquote, belohnt also das Benennen des erwarteten Motivs und erkennt kein zusätzliches, falsches Label. Ein Modell, das um mehr Labels gebeten wird, schneidet teilweise allein durch Raten besser ab.
-- **`single-word noun in canonical singular form`:** Behalte diese Anweisung bei, sofern du nicht zusätzlich `Normalize: phrase` setzt. Mit der Standard-Normalisierung für selbst gehostete Modelle wird ein zusammengesetzter Name auf ein einzelnes Token reduziert — meist das falsche: `ferris wheel` wird als *Ferris* gespeichert, `amusement park` als *Park*. Siehe [Normalisierung der Label‑Namen](#label-name-normalization).
-- **Seed:** Sorgt für stabile, reproduzierbare Labels. Im Beispiel wird der Default‑Seed der [instruct‑Variante](https://github.com/QwenLM/Qwen3-VL?tab=readme-ov-file#instruct-models) verwendet.
+- **`Return AT MOST 3 labels`:** Eine bewusste Obergrenze und der Grund, warum die strikten Options nicht aus dem Ruder laufen. Sie ist zugleich restriktiv: In unserem [Benchmark](https://docs.photoprism.app/developer-guide/vision/model-comparison/#self-hosted-with-a-label-count-in-the-prompt) lieferte `qwen3.5:4b` ohne Vorgabe 3,6 Labels pro Bild und mit einer Vorgabe von 8–15 rund sieben, wobei die Motiv‑Abdeckung bei doppelter Latenz nur von 88 % auf 91 % stieg. Qwen3-VL profitiert stärker von einer höheren Anzahl (`qwen3-vl:4b-instruct`: von 75 % auf 97 %). Wenn du reichhaltigere Labels möchtest, erhöhe die Obergrenze — und rechne mit etwa der zwei‑ bis dreifachen Latenz. Den Zuwachs bei der Abdeckung solltest du dabei einordnen: Sie misst die Trefferquote, belohnt also das Benennen des erwarteten Motivs und erkennt kein zusätzliches, falsches Label. Ein Modell, das um mehr Labels gebeten wird, schneidet teilweise allein durch Raten besser ab.
+- **`single-word noun in canonical singular form`:** Behalte diese Anweisung bei, sofern du `Normalize` nicht auf `phrase` änderst. Mit `single-word` wird ein zusammengesetzter Name auf ein einzelnes Token reduziert — meist das falsche: `ferris wheel` wird als *Ferris* gespeichert, `amusement park` als *Park*. Siehe [Normalisierung der Label‑Namen](#label-name-normalization).
+- **Seed:** Sorgt für stabile, reproduzierbare Labels. Jeder feste Wert funktioniert; unser Beispiel verwendet 3407, den Standard der [Qwen3-VL‑Instruct‑Modelle](https://github.com/QwenLM/Qwen3-VL?tab=readme-ov-file#instruct-models).
 - **Temperature, TopP und TopK:** Erzwingen eher häufige, hochwahrscheinliche Wörter statt kreativer Synonyme.
 - **MinP:** Schließt unwahrscheinliche Tokens aus, also jene seltenen Labels und merkwürdigen Formulierungen, die du für Klassifizierung nicht brauchst.
 - **RepeatLastN** und **RepeatPenalty:** Stellen sicher, dass Labels eindeutig bleiben, indem Wiederholungen vermieden werden.
 - **NumPredict:** Begrenzt die maximale Ausgabelänge, um Endloswiederholungen zu vermeiden.
 
-### Qwen3-VL: Caption
+<a id="qwen3-vl-caption"></a>
+
+### Qwen 3.5: Caption
 
 ```yaml
 Models:
 - Type: caption
-  Model: qwen3-vl:4b-instruct
+  Model: qwen3.5:4b
   Engine: ollama
   Run: on-schedule
   System: You are an image captioning assistant.
@@ -235,10 +241,10 @@ Models:
     - Do NOT include quotation marks around the caption.
     - Respond with the caption text only, and nothing else.
   Options:
-    Seed: 3407           # Modell-Standard, siehe https://github.com/QwenLM/Qwen3-VL
+    Seed: 3407           # fester Seed für stabile Ergebnisse
     Temperature: 0.25    # reduziert Zufälligkeit für weniger Halluzinationen
-    TopK: 20             # entspricht dem Modell-Standard
-    TopP: 0.8            # entspricht dem Modell-Standard
+    TopK: 20             # berücksichtigt nur die Top 20 Token
+    TopP: 0.8            # schneidet das Ende der Verteilung ab
     MinP: 0.05           # schneidet sehr unwahrscheinliche, seltsame Token ab
     TypicalP: 1.0        # effektiv deaktiviert; TopP/MinP dominieren
     RepeatLastN: 64      # kurze Historie für 1–2 Sätze
@@ -251,7 +257,7 @@ Models:
 
 Warum das funktioniert:
 
-- **Model:** Die Verwendung von [`qwen3-vl:4b-instruct`](https://ollama.com/library/qwen3-vl/tags) für Labels und Captions vermeidet zeitaufwändige Modellwechsel in Ollama. Alternativ kannst du [`huihui_ai/qwen3-vl-abliterated:4b-instruct`](https://ollama.com/huihui_ai/qwen3-vl-abliterated), [`qwen3-vl:latest`](https://ollama.com/library/qwen3-vl) oder andere [Varianten](https://ollama.com/search?c=vision&q=qwen3-vl) testen.
+- **Model:** Die Verwendung von [`qwen3.5:4b`](https://ollama.com/library/qwen3.5/tags) für Labels und Captions vermeidet zeitaufwändige Modellwechsel in Ollama; in unserem [Benchmark](https://docs.photoprism.app/developer-guide/vision/model-comparison/#caption-generation) erzeugte es eine Caption in etwa einer Sekunde. Dieselben Options funktionieren auch mit [`qwen3-vl:4b-instruct`](https://ollama.com/library/qwen3-vl/tags) oder [`qwen3-vl:latest`](https://ollama.com/library/qwen3-vl).
 - **Engine:** Wendet sinnvolle Standardwerte für **Resolution**, **Format** und **Options** an.
 - **Run:** `on-schedule` erlaubt manuelle Läufe und geplante Jobs ￫ [Run Modes](index.md#run-modes).
 - **System:** Weist das Modell an, Bilder in natürlicher Sprache zu beschreiben.
@@ -314,4 +320,4 @@ photoprism --log-level=trace vision run -m labels --count 1 --force
 photoprism --log-level=trace vision run -m caption --count 1 --force
 ```
 
-[^1]: Verfügbar in unseren [Preview-Builds](https://docs.photoprism.app/getting-started/updates/#development-preview) und dem kommenden stabilen Release. Frühere Versionen reduzieren einen Label-Namen immer auf ein einzelnes Wort und ignorieren diese Einstellung.
+[^1]: Verfügbar seit dem [Release vom 19. September 2026](https://docs.photoprism.app/release-notes/#september-19-2026). Frühere Versionen reduzieren einen Label-Namen immer auf ein einzelnes Wort und ignorieren diese Einstellung.
