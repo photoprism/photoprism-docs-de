@@ -26,6 +26,10 @@ oder im Fernsehen.
 
 Du kannst diese Bilder finden, indem du nach `face:new` suchst. Falls du bestimmte Bilder suchst, empfehlen wir, die Suche mit anderen Filtern wie `year` oder `country` zu kombinieren. Im *Personen*-Tab des [Bearbeitungs-Dialogs](edit.md) werden alle Gesichter angezeigt, sodass du sie benennen oder eine falsche Zuordnung über die Schaltfläche :material-eject: melden kannst.
 
+### Warum ist ein neuer Gesichts-Cluster verschwunden? ###
+
+Wenn in einem neuen Cluster bereits genügend Gesichter erkannt wurden und alle zu derselben Person gehören, wird der Cluster automatisch nach dieser Person benannt und seine übrigen Gesichter werden ihr zugeordnet. Das geschieht nur, wenn diese Gesichter mindestens die Hälfte des Clusters ausmachen und keines seiner Gesichter manuell benannt wurde. Der Cluster wird dann nicht mehr bei den neuen Gesichtern angezeigt, und die übrigen Bilder dieser Person darin werden ebenfalls gefunden. Cluster, deren erkannte Gesichter zu verschiedenen Personen gehören, bleiben unbenannt.
+
 ### Wenn ein Gesicht nicht erkannt wurde... ###
 
 Gesichter können aus mehreren Gründen nicht erkannt werden:
@@ -71,7 +75,7 @@ Gesichter können aus mehreren Gründen nicht erkannt werden:
 Die Person wird nun unter *Erkannt* angezeigt
 
 !!! tip ""
-    Wenn du Gesichter bereits in einer anderen Anwendung wie Adobe Bridge, Lightroom, digiKam, ACDSee oder Windows benannt hast, kann PhotoPrism diese Namen beim Indexieren aus den XMP-Metadaten übernehmen, sodass du sie nicht erneut eingeben musst. Aktiviere dafür [*Gesichter aus XMP importieren*](../settings/advanced.md#gesichter-aus-xmp-importieren).
+    Wenn du Gesichter bereits in einer anderen Anwendung wie Adobe Bridge, Lightroom, digiKam, ACDSee oder Windows benannt hast, kann PhotoPrism diese Namen beim Indexieren aus den XMP-Metadaten übernehmen, sodass du sie nicht erneut eingeben musst. Aktiviere dafür [*Gesichter aus XMP importieren*](../settings/advanced.md#gesichter-aus-xmp-importieren). Wenn du nur so importierte oder manuell markierte Gesichter verwenden möchtest, findest du unter [Using Faces Without Automatic Detection](https://docs.photoprism.app/user-guide/ai/face-recognition/#using-faces-without-automatic-detection) eine Anleitung.
 
 ## Cover für eine Person ändern ##
 1. Gehe zum Tab [Personen](./edit.md#personen-bearbeiten) im Bearbeitungs-Dialog des Bildes, auf dem das Gesicht zu sehen ist, das du als Titelbild verwenden möchtest
