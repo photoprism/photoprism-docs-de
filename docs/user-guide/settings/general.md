@@ -26,7 +26,7 @@ Wenn diese Option deaktiviert ist, gibt es keinen Bereich *Ordner*, um Bilder an
 Wenn diese Option deaktiviert ist, gibt es keinen Bereich *Medien*, um Videos, Live-Fotos und Animationen zu durchsuchen.
 
 #### :material-account: Personen ####
-Wenn diese Option deaktiviert ist, wird der Bereich Personen nicht angezeigt. Um die Gesichtserkennung zu deaktivieren kannst du `PHOTOPRISM_DISABLE_FACES` oder `PHOTOPRISM_DISABLE_TENSORFLOW` `"true"` in deiner [Konfiguration](https://docs.photoprism.app/getting-started/config-options/) verwenden.
+Wenn diese Option deaktiviert ist, wird der Bereich Personen nicht angezeigt. Um die Gesichtserkennung zu deaktivieren, kannst du `PHOTOPRISM_DISABLE_FACES` in deiner [Konfiguration](https://docs.photoprism.app/getting-started/config-options/) auf `"true"` setzen. Wie du den Bereich *Personen* behältst, aber die automatische Gesichtserkennung beendest, erfährst du unter [Using Faces Without Automatic Detection](https://docs.photoprism.app/user-guide/ai/face-recognition/#using-faces-without-automatic-detection).
 
 #### :material-calendar: Kalender ####
 Wenn diese Option deaktiviert ist, wird der Bereich *Kalender* nicht angezeigt.

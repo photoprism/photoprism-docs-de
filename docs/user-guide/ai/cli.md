@@ -118,7 +118,7 @@ docker compose exec photoprism photoprism vision reset --models=labels --source=
 
     Die für Bildunterschriften relevanten Sources haben derzeit diese Prioritäten:
 
-    - `image`: 8 (integrierte TensorFlow‑Modelle)
+    - `image`: 8 (integrierte Modelle)
     - `ollama`: 16 (Captions und Labels von Ollama)
     - `openai`: 16 (Captions und Labels von OpenAI)
     - `batch`: 64 (Batch‑Bearbeitung im Web‑UI)

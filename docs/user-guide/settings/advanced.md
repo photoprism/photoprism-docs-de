@@ -68,16 +68,6 @@ Beachte, dass du ExifTool aktiviert haben musst, um Videometadaten wie Dauer, Au
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/) ist `PHOTOPRISM_DISABLE_EXIFTOOL`.
 
-### TensorFlow deaktivieren – veraltet ###
-!!! warning ""
-    Diese Option ist veraltet. Um die automatische Bildklassifizierung und Gesichtserkennung zu deaktivieren, verwende stattdessen die Konfigurationsoptionen `PHOTOPRISM_DISABLE_FACES` und `PHOTOPRISM_DISABLE_CLASSIFICATION`. Weitere Details findest du im zugehörigen [GitHub Issue](https://github.com/photoprism/photoprism/issues/5310).
-
-Wenn diese Option aktiviert ist, werden Bildklassifizierung und Gesichtserkennung deaktiviert, da beide auf TensorFlow basieren.
-
-Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/#feature-flags) ist `PHOTOPRISM_DISABLE_TENSORFLOW`.
-
-## Datensicherung ##
-
 ### Datenbank Backups
 Datenbank-Backups werden nach dem konfigurierten Zeitplan erstellt.
 
