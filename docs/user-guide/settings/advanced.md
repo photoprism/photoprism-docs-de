@@ -42,6 +42,11 @@ Deaktiviert den eingebauten WebDAV-Server. Änderungen erfordern einen Neustart.
 
 Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/#feature-flags) ist `PHOTOPRISM_DISABLE_WEBDAV`.
 
+### MCP deaktivieren ###
+Deaktiviert den API-Endpunkt für das Model Context Protocol (MCP), über den KI-Agenten auf PhotoPrism zugreifen können.
+
+Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting-started/config-options/#feature-flags) ist `PHOTOPRISM_DISABLE_MCP`.
+
 ### Gesichter deaktivieren ###
 Wenn diese Option aktiviert ist, werden alle Funktionen zur Gesichts­erkennung und zum Erkennen von Gesichtern deaktiviert.
 
@@ -51,7 +56,7 @@ Der entsprechende [Konfigurations-Parameter](https://docs.photoprism.app/getting
 Wenn diese Option aktiviert ist, werden beim Indexieren Gesichtsbereiche und Namen aus den XMP-Metadaten als Personen-Markierungen übernommen. Namen, die du in Anwendungen wie Adobe Bridge, Lightroom, digiKam, ACDSee oder Windows vergeben hast, müssen so nicht erneut eingegeben werden.
 [Mehr erfahren ›](../library/metadata.md#gesichtsbereiche)
 
-Die entsprechende [Konfigurations-Option](https://docs.photoprism.app/getting-started/config-options/#computer-vision) ist `PHOTOPRISM_XMP_FACES`.
+Die entsprechende [Konfigurations-Option](https://docs.photoprism.app/getting-started/config-options/#face-recognition) ist `PHOTOPRISM_XMP_FACES`.
 
 ### Karten deaktivieren ###
 Wenn Karten deaktiviert sind, liest PhotoPrism trotzdem noch Geo-Informationen (Längen- und Breitengrad) aus den Metadaten deiner Dateien aus.
