@@ -68,7 +68,7 @@ In diesem Abschnitt kannst du die Listenansicht und das Anzeigen von Titeln und 
 ## Download ##
 
 #### :material-camera: Originale ####
-Nur Dateien aus dem Ordner *originals* werden heruntergeladen, nicht aber Dateien, die automatisch im Ordner *sidecar* erstellt wurden. Dies ist die empfohlene Standardeinstellung.
+Nur Dateien aus dem Ordner *originals* werden heruntergeladen, nicht aber Dateien, die automatisch im Ordner *sidecar* erstellt wurden. Dies ist die empfohlene Standardeinstellung. Vorschaubilder, die PhotoPrism aus einem Video erzeugt hat, werden nicht heruntergeladen, außer als Teil eines Live Photos.
 
 #### :material-raw: RAW ####
 RAW Dateien herunterladen.
