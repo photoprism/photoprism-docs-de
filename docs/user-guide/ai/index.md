@@ -17,7 +17,7 @@ PhotoPrism unterstützt derzeit die folgende Dienste:
 
 ### Performance
 
-- **Integrierte Modelle:** Unsere integrierten Modelle laufen auf [ONNX Runtime](https://onnxruntime.ai/) und liefern auf praktisch jeder Hardware gute Ergebnisse. Mit einer NVIDIA-Grafikkarte können sie auch [die GPU nutzen](https://docs.photoprism.app/user-guide/ai/gpu-acceleration/).
+- **Integrierte Modelle:** Unsere integrierten Modelle laufen auf [ONNX](https://onnx.ai/) und liefern auf praktisch jeder Hardware gute Ergebnisse. Mit einer NVIDIA-Grafikkarte können sie auch [die GPU nutzen](https://docs.photoprism.app/user-guide/ai/gpu-acceleration/).
 - **Ollama:** [Das Generieren von Kategorien](ollama-models.md#gemma-4-labels) für ein Bild dauert auf einer NVIDIA RTX 4060 in der Regel 1–4 Sekunden – je nach verwendetem Modell und [Anzahl der Kategorien](ollama-models.md#qwen-35-labels).
 - **OpenAI:** Die Verarbeitung eines Bildes dauert etwa 3 Sekunden, abhängig von Modell, Region und aktueller Auslastung.
 
