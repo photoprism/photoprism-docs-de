@@ -1,6 +1,6 @@
 # KI Modelle verwenden #
 
-Als Ergänzung zu den integrierten TensorFlow-Modellen kannst du mit PhotoPrism Bildunterschriften (captions) und Kategorien mithilfe von [Ollama](using-ollama.md) oder der [OpenAI API](using-openai.md) generieren. Unsere Schritt-für-Schritt-Anleitungen erklären die Einrichtung und enthalten getestete Beispielkonfigurationen, die du als Ausgangspunkt verwenden kannst.
+Als Ergänzung zu den integrierten Modellen kannst du mit PhotoPrism Bildunterschriften (captions) und Kategorien mithilfe von [Ollama](using-ollama.md) oder der [OpenAI API](using-openai.md) generieren. Unsere Schritt-für-Schritt-Anleitungen erklären die Einrichtung und enthalten getestete Beispielkonfigurationen, die du als Ausgangspunkt verwenden kannst.
 
 [Mehr erfahren ›](using-ollama.md)
 
@@ -8,16 +8,17 @@ Als Ergänzung zu den integrierten TensorFlow-Modellen kannst du mit PhotoPrism 
 
 PhotoPrism unterstützt derzeit die folgende Dienste:
 
-| Engine                                                                                     | Auflösung | Ausführung      | Geeignet für                                                                                                 |
-|--------------------------------------------------------------------------------------------|-----------|-----------------|--------------------------------------------------------------------------------------------------------------|
-| [TensorFlow](https://docs.photoprism.app/developer-guide/vision/tensorflow/custom-models/) | 224 px    | Integriert      | Schnelle Offline-Standardmodelle für Kernfunktionen (Kategorien, Gesichter, NSFW)                            |
-| [Ollama](using-ollama.md)                                                                  | 720 px    | Selbst gehostet | Gut für hochwertige Bildunterschriften & Kategorien; Server mit GPU empfohlen                                |
-| [OpenAI API](using-openai.md)                                                              | 720 px    | Cloud           | Höchste Qualität bei Bildunterschriften & Kategorien, auch ohne GPU; API-Key und Internetzugang erforderlich |
+| Engine                                                                   | Auflösung | Ausführung      | Geeignet für                                                                                                          |
+|--------------------------------------------------------------------------|-----------|-----------------|-----------------------------------------------------------------------------------------------------------------------|
+| [ONNX](https://docs.photoprism.app/developer-guide/vision/label-models/) | 224 px    | Integriert      | Schnelle Offline-Standardmodelle für Kategorien und [NSFW-Erkennung](https://docs.photoprism.app/user-guide/ai/nsfw/) |
+| [ONNX](https://docs.photoprism.app/user-guide/ai/face-recognition/)      | 720 px    | Integriert      | Gesichtserkennung und Embeddings                                                                                      |
+| [Ollama](using-ollama.md)                                                | 720 px    | Selbst gehostet | Gut für hochwertige Bildunterschriften & Kategorien; Server mit GPU empfohlen                                         |
+| [OpenAI API](using-openai.md)                                            | 720 px    | Cloud           | Höchste Qualität bei Bildunterschriften & Kategorien, auch ohne GPU; API-Key und Internetzugang erforderlich          |
 
 ### Performance
 
-- **TensorFlow:** Unsere integrierten Modelle liefern auf praktisch jeder Hardware gute Ergebnisse.
-- **Ollama:** [Das Generieren von Kategorien](ollama-models.md#gemma-4-labels) für ein Bild dauert auf einer NVIDIA RTX 4060 in der Regel 1–4 Sekunden – je nach verwendetem Modell und [Anzahl der Kategorien](ollama-models.md#qwen3-vl-labels).
+- **Integrierte Modelle:** Unsere integrierten Modelle laufen auf [ONNX Runtime](https://onnxruntime.ai/) und liefern auf praktisch jeder Hardware gute Ergebnisse. Mit einer NVIDIA-Grafikkarte können sie auch [die GPU nutzen](https://docs.photoprism.app/user-guide/ai/gpu-acceleration/).
+- **Ollama:** [Das Generieren von Kategorien](ollama-models.md#gemma-4-labels) für ein Bild dauert auf einer NVIDIA RTX 4060 in der Regel 1–4 Sekunden – je nach verwendetem Modell und [Anzahl der Kategorien](ollama-models.md#qwen-35-labels).
 - **OpenAI:** Die Verarbeitung eines Bildes dauert etwa 3 Sekunden, abhängig von Modell, Region und aktueller Auslastung.
 
 Zwei Dinge hinter diesen Zahlen solltest du kennen, bevor du auf Geschwindigkeit optimierst:
@@ -27,6 +28,12 @@ Zwei Dinge hinter diesen Zahlen solltest du kennen, bevor du auf Geschwindigkeit
 
 !!! tldr ""
     Ohne GPU-Beschleunigung sind Ollama-Modelle deutlich langsamer und benötigen zwischen 10 Sekunden und über einer Minute pro Bild. Das kann in Ordnung sein, wenn du nur wenige Bilder verarbeiten möchtest oder Wartezeiten akzeptabel sind.
+
+## Bildklassifizierung
+
+Kategorien werden von einem integrierten [ONNX-Modell](https://docs.photoprism.app/developer-guide/vision/label-models/) erzeugt, sofern deine `vision.yml` kein anderes `labels`-Modell konfiguriert, zum Beispiel eines, das über [Ollama](using-ollama.md) bereitgestellt wird. Um die Erzeugung von Kategorien abzuschalten, setze [`PHOTOPRISM_LABELS_MODEL`](https://docs.photoprism.app/getting-started/config-options/#computer-vision) auf `"none"`. Das deaktiviert jedes `labels`-Modell, auch solche, die über Ollama oder die OpenAI API bereitgestellt werden; vorhandene Kategorien bleiben erhalten und können weiterhin bearbeitet werden. Die bisherige Option `PHOTOPRISM_DISABLE_CLASSIFICATION` ist veraltet.
+
+[Mehr erfahren ›](https://docs.photoprism.app/developer-guide/vision/label-models/#disabling-classification)
 
 ## Gesichtserkennung
 
@@ -55,7 +62,7 @@ Models:
     Uri: http://ollama:11434/api/generate
     Think: "false"
 - Type: labels
-  Model: qwen3-vl:latest
+  Model: qwen3.5:4b
   Engine: ollama
   Service:
     Uri: http://ollama:11434/api/generate
@@ -66,42 +73,41 @@ Thresholds:
   NSFW: 75
 ```
 
-Wenn ein Modelltyp nicht definiert ist, verwendet PhotoPrism die eingebauten Standardmodelle für `labels`, `nsfw`, `face` oder `caption`. Der optionale Block `Thresholds` kann verwendet werden, um Kategorien mit niedriger Wahrscheinlichkeit herauszufiltern oder die Schwelle für NSFW-Erkennung anzupassen.
+Wenn ein Modelltyp nicht definiert ist, verwendet PhotoPrism die eingebauten Standardmodelle für `labels`, `nsfw`, `face` oder `caption`. Der optionale Block `Thresholds` kann verwendet werden, um Kategorien mit niedriger Wahrscheinlichkeit herauszufiltern oder die [NSFW-Schwellenwerte](https://docs.photoprism.app/user-guide/ai/nsfw/#nsfw-thresholds) anzupassen.
 
-| Field                   | Default                                | Notes                                                                                     |
-|-------------------------|----------------------------------------|-------------------------------------------------------------------------------------------|
-| `Type` (required)       | —                                      | `labels`, `caption`, `face`, `nsfw`. Drives routing & scheduling.                         |
-| `Model`                 | `""`                                   | Model identifier in the format `<name>:<version>`.                                        |
-| `Name`                  | derived from `Model`                   | Model name.                                                                               |
-| `Version`               | `latest` (non-OpenAI)                  | Model version, not used by OpenAI.                                                        |
-| `Engine`                | inferred from service/alias            | Aliases set formats, file scheme, resolution. Explicit `Service` values still win.        |
-| `Run`                   | `auto`                                 | See Run modes table below.                                                                |
-| `Default`               | `false`                                | Keep one per type for TensorFlow fallbacks.                                               |
-| `Disabled`              | `false`                                | Registered but inactive.                                                                  |
-| `Resolution`            | 224 (TensorFlow) / 720 (Ollama/OpenAI) | Thumbnail edge in px; TensorFlow models default to 224 unless you override.               |
-| `System` / `Prompt`     | engine defaults / empty                | Override prompts per model.                                                               |
-| `Format`                | `""`                                   | Response hint (`json`, `text`, `markdown`).                                               |
-| `Schema` / `SchemaFile` | engine defaults / empty                | Inline vs file JSON schema (labels).                                                      |
-| `Normalize`[^2]         | engine default                         | Normalisierung der Label‑Namen; `single-word`, `phrase` oder `false`. Nur Labels‑Modelle. |
-| `TensorFlow`            | engine defaults / empty                | Local TF model info (paths, tags).                                                        |
-| [`Options`](#options)   | engine defaults / empty                | Sampling/settings merged with engine defaults.                                            |
-| [`Service`](#service)   | engine defaults / empty                | Remote endpoint config (see below).                                                       |
+| Field                   | Default                              | Notes                                                                                     |
+|-------------------------|--------------------------------------|-------------------------------------------------------------------------------------------|
+| `Type` (required)       | —                                    | `labels`, `caption`, `face`, `nsfw`. Drives routing & scheduling.                         |
+| `Model`                 | `""`                                 | Model identifier in the format `<name>:<version>`.                                        |
+| `Name`                  | derived from `Model`                 | Model name.                                                                               |
+| `Version`               | `latest` (non-OpenAI)                | Model version, not used by OpenAI.                                                        |
+| `Engine`                | inferred from service/alias          | Aliases set formats, file scheme, resolution. Explicit `Service` values still win.        |
+| `Run`                   | `auto`                               | See Run modes table below.                                                                |
+| `Default`               | `false`                              | Select the built-in model for a type.                                                     |
+| `Disabled`              | `false`                              | Registered but inactive.                                                                  |
+| `Resolution`            | model-specific / 720 (Ollama/OpenAI) | Thumbnail edge in px; built-in models use the size they were trained for.                 |
+| `System` / `Prompt`     | engine defaults / empty              | Override prompts per model.                                                               |
+| `Format`                | `""`                                 | Response hint (`json`, `text`, `markdown`).                                               |
+| `Schema` / `SchemaFile` | engine defaults / empty              | Inline vs file JSON schema (labels).                                                      |
+| `Normalize`[^2]         | engine default                       | Normalisierung der Label‑Namen; `single-word`, `phrase` oder `false`. Nur Labels‑Modelle. |
+| [`Options`](#options)   | engine defaults / empty              | Sampling/settings merged with engine defaults.                                            |
+| [`Service`](#service)   | engine defaults / empty              | Remote endpoint config (see below).                                                       |
 
 ### Run Modes
 
-| Value           | When it runs                                                     | Recommended use                                |
-|-----------------|------------------------------------------------------------------|------------------------------------------------|
-| `auto`          | TensorFlow defaults during index; external via metadata/schedule | Leave as-is for most setups.                   |
-| `manual`        | Only when explicitly invoked (CLI/API)                           | Experiments and diagnostics.                   |
-| `on-index`      | During indexing + manual                                         | Fast built-in models only.                     |
-| `newly-indexed` | Metadata worker after indexing + manual                          | External/Ollama/OpenAI without slowing import. |
-| `on-demand`     | Manual, metadata worker, and scheduled jobs                      | Broad coverage without index path.             |
-| `on-schedule`   | Scheduled jobs + manual                                          | Nightly/cron-style runs.                       |
-| `always`        | Indexing, metadata, scheduled, manual                            | High-priority models; watch resource use.      |
-| `never`         | Never executes                                                   | Keep definition without running it.            |
+| Value           | When it runs                                                               | Recommended use                                |
+|-----------------|----------------------------------------------------------------------------|------------------------------------------------|
+| `auto`          | Built-in labels and NSFW models during index; others via metadata/schedule | Leave as-is for most setups.                   |
+| `manual`        | Only when explicitly invoked (CLI/API)                                     | Experiments and diagnostics.                   |
+| `on-index`      | During indexing + manual                                                   | Fast built-in models only.                     |
+| `newly-indexed` | Metadata worker after indexing + manual                                    | External/Ollama/OpenAI without slowing import. |
+| `on-demand`     | Manual, metadata worker, and scheduled jobs                                | Broad coverage without index path.             |
+| `on-schedule`   | Scheduled jobs + manual                                                    | Nightly/cron-style runs.                       |
+| `always`        | Indexing, metadata, scheduled, manual                                      | High-priority models; watch resource use.      |
+| `never`         | Never executes                                                             | Keep definition without running it.            |
 
 !!! tldr ""
-    Aus Performance-Gründen wird `on-index` nur von den integrierten TensorFlow-Modellen unterstützt.
+    Aus Performance-Gründen wird `on-index` nur von den integrierten lokalen Modellen unterstützt.
 
 ### Options
 
@@ -162,7 +168,7 @@ Unter `Service` konfigurierst du Endpunkt‑URL, HTTP-Methode, Format und Authen
 | `Disabled`                         | `false`                  | Disables the endpoint without removing the model.                                                                                                                                                                                                                                                                 |
 
 !!! tldr ""
-    **Authentifizierung:** Alle Zugangsdaten und Kennungen unterstützen `${ENV_VAR}`‑Ersetzung. `Service.Key` setzt z.B. den HTTP‑Header `Authorization: Bearer <token>`, während `Username`/`Password` für Basic Auth verwendet werden, falls die `Uri` keine Zugangsdaten enthält. Wenn `Service.Key` leer ist, verwendet PhotoPrism standardmäßig `OPENAI_API_KEY` (OpenAI Engine) bzw. `OLLAMA_API_KEY`[^1] (Ollama Engine) und berücksichtigt auch die jeweiligen `_FILE`‑Varianten.
+    **Authentifizierung:** `Service.Key`, `Username` und `Password` unterstützen die `${ENV_VAR}`‑Ersetzung beliebiger Variablen. `Service.Model` ersetzt nur Variablen, deren Name auf `_MODEL` endet, z. B. `${OLLAMA_MODEL}`, und `Service.Uri` nur solche, die auf `_URL`, `_URI` oder `_HOST` enden, z. B. `${OLLAMA_BASE_URL}/api/generate`; andere Variablen in diesen beiden Feldern werden nicht ersetzt, und eine Warnung wird protokolliert. `Service.Key` setzt z.B. den HTTP‑Header `Authorization: Bearer <token>`, während `Username`/`Password` für Basic Auth verwendet werden, falls die `Uri` keine Zugangsdaten enthält. Wenn `Service.Key` leer ist, verwendet PhotoPrism standardmäßig `OPENAI_API_KEY` (OpenAI Engine) bzw. `OLLAMA_API_KEY`[^1] (Ollama Engine) und berücksichtigt auch die jeweiligen `_FILE`‑Varianten. Anfragen an die OpenAI API (`api.openai.com`) oder Ollama Cloud (`ollama.com`) werden ohne Schlüssel nicht gesendet.
 
 [^1]: Verfügbar seit dem [Release vom 5. März 2026](https://docs.photoprism.app/release-notes/#march-5-2026).
-[^2]: Verfügbar in unseren [Preview-Builds](https://docs.photoprism.app/getting-started/updates/#development-preview) und dem kommenden stabilen Release.
+[^2]: Verfügbar seit dem [Release vom 19. September 2026](https://docs.photoprism.app/release-notes/#september-19-2026).
