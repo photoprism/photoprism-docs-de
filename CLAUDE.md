@@ -75,6 +75,7 @@ When you **add or rename a redirect**, update the entries in **both** configs so
 - **German straight double quotes** `"…"` — not the typographic `„…"` form.
 - **Localize, don't translate 1:1**, the `<meta name="keywords">` list in `overrides/main.html` (e.g. `dsgvo`, not `gdpr`).
 - **Keep headings/nav labels consistent with `mkdocs.yml`**; don't introduce new casing styles. Store images next to the page that references them, with descriptive alt text.
+- **Do not hard-wrap Markdown prose.** Write each paragraph and list item on one line, in Markdown files and in text posted elsewhere (GitHub issue descriptions, issue and pull request comments, email drafts). Keep line breaks only where they carry meaning: code blocks, tables, front matter, and deliberate hard breaks. When editing an already wrapped paragraph, unwrap the paragraph you change and leave the rest alone. Commit message bodies and code comments keep their own conventions.
 - **No `**Last Updated:**` stamps.** Unlike a handful of English developer-guide pages, no page under `docs/` here carries one — don't introduce one, and don't go looking for one to refresh.
 - **Commit messages:** concise, imperative, one-word `Prefix:` (e.g. `Content: Translate Search Filters page`), subject ≤80 chars. Do **not** append `Co-Authored-By: Claude …` trailers; no emojis.
 - **GitHub issues:** only create/edit/close/relabel when explicitly asked (see `AGENTS.md` for the required User Story + Acceptance Criteria format).

@@ -1,6 +1,6 @@
 # PhotoPrism® Docs-DE Repository Guidelines
 
-**Last Updated:** July 9, 2026
+**Last Updated:** October 17, 2026
 
 ## Purpose
 
@@ -50,6 +50,7 @@
 - Prefer Markdown constructs supported by MkDocs Material (admonitions, tabs, tooltips) over raw HTML.  
 - When documenting product behavior, confirm against the main application repository or the English docs to avoid drift.  
 - Store images next to the pages that reference them and provide descriptive alt text.  
+- **Do not hard-wrap Markdown prose.** Write each paragraph and list item on one line, in Markdown files and in text posted elsewhere (GitHub issue descriptions, issue and pull request comments, email drafts). Keep line breaks only where they carry meaning: code blocks, tables, front matter, and deliberate hard breaks. When editing an already wrapped paragraph, unwrap the paragraph you change and leave the rest alone. Commit message bodies and code comments keep their own conventions.
 - Never commit credentials or private tokens; `.env` stays untracked.
 
 ### Commit Messages
