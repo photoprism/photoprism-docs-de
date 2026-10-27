@@ -1,6 +1,6 @@
 # OpenAI API verwenden #
 
-Hier erfährst du, wie du PhotoPrism mit den GPT‑5‑Modellen von OpenAI verwendest, um hochwertige Bildunterschriften und Labels für deine Bilder zu erzeugen.
+Hier erfährst du, wie du PhotoPrism mit den GPT‑Modellen von OpenAI verwendest, um hochwertige Bildunterschriften und Labels für deine Bilder zu erzeugen.
 
 ## Setup
 
@@ -16,7 +16,7 @@ Füge deiner `vision.yml`‑Datei die folgenden Caption‑ und/oder Label‑Mode
 ```yaml
 Models:
   - Type: caption
-    Model: gpt-5-nano
+    Model: gpt-6-luna
     Engine: openai
     Run: auto
     Options:
@@ -25,7 +25,7 @@ Models:
     Service:
       Key: ${OPENAI_API_KEY}
   - Type: labels
-    Model: gpt-5-mini
+    Model: gpt-6-luna
     Engine: openai
     Run: auto
     Options:
@@ -36,7 +36,8 @@ Models:
 
 Empfehlungen:
 
-- Lass den Modellnamen exakt so, wie er von OpenAI veröffentlicht wurde. Der Bezeichner wird so gesendet, wie er geschrieben ist, einschließlich eines Tags nach einem Doppelpunkt; verwende also `gpt-5-mini` statt `gpt-5-mini:latest`. Für Einträge ohne Modellnamen verwendet PhotoPrism `OPENAI_MODEL`, falls gesetzt, andernfalls `gpt-5-mini`. Modellbezeichner sind außerdem case‑sensitiv – PhotoPrism übernimmt die Schreibweise direkt aus deiner `vision.yml`, sodass Werte wie `QuantTrio/Qwen3-VL-30B-A3B-Instruct-AWQ` von Hugging Face oder einem anderen OpenAI‑kompatiblen Katalog unverändert an die Upstream‑API geschickt werden.
+- Lass den Modellnamen exakt so, wie er von OpenAI veröffentlicht wurde. Der Bezeichner wird so gesendet, wie er geschrieben ist, einschließlich eines Tags nach einem Doppelpunkt; verwende also `gpt-6-luna` statt `gpt-6-luna:latest`. Für Einträge ohne Modellnamen verwendet PhotoPrism `OPENAI_MODEL`, falls gesetzt, andernfalls `gpt-6-luna`. Modellbezeichner sind außerdem case‑sensitiv – PhotoPrism übernimmt die Schreibweise direkt aus deiner `vision.yml`, sodass Werte wie `QuantTrio/Qwen3-VL-30B-A3B-Instruct-AWQ` von Hugging Face oder einem anderen OpenAI‑kompatiblen Katalog unverändert an die Upstream‑API geschickt werden.
+- OpenAI stellt `gpt-5-mini`, `gpt-5-nano` und `gpt-5` am 11. Dezember 2026 ein. Falls deine `vision.yml` noch eines dieser Modelle nennt, zum Beispiel weil `photoprism vision save` den früheren Standard hineingeschrieben hat, ändere es in ein aktuelles Modell wie `gpt-6-luna` oder `gpt-6.1-terra`. Andernfalls schlagen Anfragen für Bildunterschriften und Labels fehl, sobald das Modell eingestellt ist.
 - `Service.Key` kann entfallen, wenn `OPENAI_API_KEY` bzw. `_FILE` bereits in der Umgebung gesetzt ist. Ohne Schlüssel werden keine Anfragen an `api.openai.com` gesendet. Optional kannst du `Service.Org` und `Service.Project` setzen, falls dein Account das aus Abrechnungsgründen verlangt.
 - `Service.Tier` setzt optional den OpenAI `service_tier` (zum Beispiel `flex` für günstigere, langsamere Verarbeitung); ohne Angabe wird OpenAIs Standard (`auto`) verwendet.
 - PhotoPrism wertet Modelle von unten nach oben aus. Wenn du die OpenAI‑Einträge ans Ende der Liste setzt, werden sie bevorzugt, während andere Modelle als Fallback dienen.
@@ -77,7 +78,7 @@ Beispiel:
 ```yaml
 Models:
   - Type: labels
-    Model: gpt-5-mini
+    Model: gpt-6-luna
     Engine: openai
     Run: auto
     Prompt: >
@@ -97,7 +98,7 @@ Beispiel:
 ```yaml
 Models:
   - Type: caption
-    Model: gpt-5-mini
+    Model: gpt-6-luna
     Engine: openai
     Run: auto
     Prompt: >
