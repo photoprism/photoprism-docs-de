@@ -49,6 +49,9 @@ Wenn diese Option deaktiviert ist, können keine Dateien über die PhotoPrism-Be
 
 Welche Dateien in einen Download aufgenommen werden und ob komplette Sammlungen als ZIP-Archiv heruntergeladen werden können, legst du in den Tabs [*Sammlungen*](collections.md) und [*Inhalte*](library.md#download) fest.
 
+#### :material-file-export: Exportieren ####
+Wenn diese Option deaktiviert ist, steht der Dialog [*Exportieren*](../organize/download.md#exporting-in-different-formats-and-sizes) im Vollbild-Viewer nicht zur Verfügung. Die Option ist unabhängig von der Einstellung *Download*.
+
 #### :material-folder-plus: Import ####
 Wenn diese Option deaktiviert ist, gibt es keine Möglichkeit Bilder zu [*importieren*](../library/import.md). Du musst stattdessen [*indexieren*](../library/originals.md) verwenden, um neue Bilder hinzuzufügen.
 
