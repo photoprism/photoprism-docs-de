@@ -37,6 +37,12 @@ Beispiel für die Erstellung eines App-Passworts, das du mit [WebDAV-kompatiblen
 !!! tldr ""
     Wenn du die [Berechtigung](../users/client-credentials.md#berechtigungen) *WebDAV* auswählst, stellst du sicher, dass das App-Passwort nicht für die Anmeldung über die reguläre Benutzeroberfläche oder für andere Aktionen verwendet werden kann. Apps können auch nicht dein Passwort ändern oder Benutzerkonten verwalten, selbst wenn du ihnen *Vollen Zugriff* gewährst. Wenn ein Administrator die [Anmeldung deaktiviert](../users/cli.md#optionen) hat, können App-Passwörter nur noch für die [WebDAV](../sync/webdav.md)-Synchronisierung verwendet werden.
 
+## Verbundene Apps { #connected-apps }
+
+Apps und KI-Assistenten, denen du über die [OAuth-Anmeldung](https://docs.photoprism.app/developer-guide/api/oauth2/#connecting-apps) Zugriff auf deine Bibliothek erlaubt hast, werden angezeigt, wenn du unter *Einstellungen > Konto* auf die Schaltfläche *Verbundene Apps* klickst. Um den Zugriff einer App zu beenden, klicke auf *Trennen*. Die App kann die Bibliothek dann nicht mehr in deinem Namen verwenden, bis du sie erneut verbindest.
+
+Diese Schaltfläche wird nur angezeigt, wenn das Verbinden von Apps [auf deiner Instanz aktiviert](https://docs.photoprism.app/developer-guide/api/oauth2/#configuration) ist.
+
 ## WebDAV-URL anzeigen
 
 Diese Schaltfläche wird nur angezeigt, wenn der WebDAV-Zugriff für dein Konto aktiviert und der integrierte WebDAV-Server verfügbar ist.
