@@ -17,17 +17,18 @@ PhotoPrism bietet eine Vielzahl von Tastenkombinationen, mit denen du die App ef
 
 ## Viewer-Kurzbefehle
 
-| Tastenkombination | Aktion                                 |
-|-------------------|----------------------------------------|
-| Strg + I          | Info-Seitenleiste umschalten           |
-| Strg + H          | Bildunterschrift ein-/ausblenden       |
-| Strg + M          | Stumm schalten/Stummschaltung aufheben |
-| Strg + S          | Diashow abspielen/anhalten             |
-| Strg + X          | Archivieren/Wiederherstellen           |
-| Strg + D          | Herunterladen                          |
-| Strg + E          | Bearbeiten                             |
-| Strg + F          | Vollbildmodus öffnen                   |
-| Strg + L          | Liken/Entliken                         |
+| Tastenkombination   | Aktion                                 |
+|---------------------|----------------------------------------|
+| Strg + I            | Info-Seitenleiste umschalten           |
+| Strg + H            | Bildunterschrift ein-/ausblenden       |
+| Strg + M            | Stumm schalten/Stummschaltung aufheben |
+| Strg + S            | Diashow abspielen/anhalten             |
+| Strg + X            | Archivieren/Wiederherstellen           |
+| Strg + D            | Herunterladen                          |
+| Strg + E            | Bearbeiten                             |
+| Umschalt + Strg + E | Exportieren                            |
+| Strg + F            | Vollbildmodus öffnen                   |
+| Strg + L            | Liken/Entliken                         |
 
 !!! tip ""
     Tastenkombinationen helfen dir, schneller zu arbeiten und die Hände auf der Tastatur zu lassen. Probiere sie aus, um deinen Workflow zu optimieren!
