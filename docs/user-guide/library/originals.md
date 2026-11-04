@@ -63,6 +63,10 @@ Ist die Prüfung aktiv, gilt zusätzlich eine absolute Untergrenze von **100 MB*
 !!! warning ""
     Aus Sicherheitsgründen kann dieser Schwellwert nur von Server-Administratoren über die Konfiguration geändert werden und ist bewusst nicht in den App-Einstellungen verfügbar. Wir empfehlen, die Prüfung auf Dateisystemen zu aktivieren, auf denen sich der freie Speicherplatz zuverlässig auslesen lässt, da eine volle Festplatte den Betrieb unterbrechen und zu Datenverlust führen kann.
 
+## Nicht unterstützte Zeichen in Namen { #unsupported-characters-in-names }
+
+Dateien und Ordner, deren Namen eines der Zeichen `|"?*%<>{}:~$` enthalten, werden nicht indexiert, importiert oder synchronisiert. Befinden sich solche Dateien bereits in deiner Bibliothek, werden sie beim Indexieren übersprungen, bis du sie umbenennst.
+
 ## Verzeichnisse und Dateien ignorieren ##
 Versteckte Dateien oder Ordner, deren Namen mit  `.`, `@`, `_.` oder `__` wie `__MACOSX` beginnen, werden automatisch ignoriert.
 Falls bestimmte Dateien oder Ordner nicht indexiert werden sollen, erstelle eine `.ppignore` Datei im Verzeichnis, in welchem diese Dateien/Ordner liegen.
