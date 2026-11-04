@@ -12,14 +12,17 @@ Alternativ ist Ollama in den meisten [`compose.yaml`](https://docs.photoprism.ap
 docker compose --profile ollama up -d
 ```
 
-Wenn Ollama standardmäßeig ohne `--profile ollama` gestartet werden soll, entferne `profiles: ["ollama"]`.
+Wenn Ollama standardmäßig ohne `--profile ollama` gestartet werden soll, entferne `profiles: ["ollama"]`.
+
+Beachte, dass Ollama standardmäßig keine Authentifizierung erfordert. Öffne Port `11434` daher nur in **vertrauenswürdigen Netzwerken** oder hinter einem Reverse Proxy mit Zugriffskontrolle.
+Erfahrene Nutzer können Ollama auf einem eigenen Server einrichten und betreiben, den sich mehrere Instanzen teilen.
+Damit die GPU‑Beschleunigung mit NVIDIA funktioniert, muss das [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html) installiert sein.
 
 !!! example "compose.yaml"
     ```yaml
     services:
       photoprism:
-        ## The ":preview" build gives early access to new features:
-        image: photoprism/photoprism:preview
+        image: photoprism/photoprism:latest
         ...
 
       ## Ollama Large-Language Model Runner (optional)
@@ -70,11 +73,6 @@ Wenn Ollama standardmäßeig ohne `--profile ollama` gestartet werden soll, entf
         #          capabilities: [ gpu ]
         #          count: "all"
     ```
-
-Beachte, dass das [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html) installiert sein muss, damit GPU‑Beschleunigung funktioniert. Erfahrene Nutzer können Ollama auch auf einem separaten, leistungsstärkeren Server betreiben.
-
-!!! danger ""
-    Ollama erzwingt standardmäßig **keine Authentifizierung**. Öffne Port `11434` daher nur in vertrauenswürdigen Netzwerken oder betreibe Ollama hinter einem Reverse Proxy, der Zugriffskontrolle hinzufügt.
 
 ### Flash Attention & KV Cache
 
