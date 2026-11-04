@@ -12,9 +12,13 @@ Du kannst Benutzerkonten hinzufügen, bearbeiten und löschen, indem du als [Adm
 
 ![Screenshot](img/users-add-2503-german.jpg){ class="shadow" }
 
+Benutzernamen neuer Konten dürfen nur Standard-ASCII-Zeichen enthalten, Buchstaben mit Akzenten und nicht-lateinische Schriften werden also nicht akzeptiert. Bestehende Konten behalten ihre Namen.
+
 ## Benutzer Details bearbeiten
 
 ![Screenshot](img/users-edit-2503-german.jpg){ class="shadow" }
+
+Der Schalter *MCP* neben *WebDAV* legt fest, ob ein Konto über [MCP](https://docs.photoprism.app/developer-guide/api/mcp/#authorization) KI-Assistenten erlauben kann, die Bibliothek zu durchsuchen. Er ist für Rollen, die MCP verwenden dürfen, standardmäßig aktiviert und hat keine Wirkung, wenn MCP [für alle Benutzer deaktiviert](https://docs.photoprism.app/getting-started/config-options/#feature-flags) ist.
 
 Nur [Super-Admins](roles.md#admin) können [den Authentifizierungs-Provider](cli.md#optionen) eines Kontos über die Weboberfläche ändern, ausgenommen von ihrem eigenen Konto, damit sie sich nicht versehentlich selbst aussperren, indem sie ihn z. B. auf "none" setzen.
 ## Passwörter ändern
