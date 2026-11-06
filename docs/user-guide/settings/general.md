@@ -45,12 +45,12 @@ Wenn diese Option deaktiviert ist, können keine Dateien über [*Upload*](../lib
 Diese Einstellung kann hilfreich sein, wenn du anderen Personen Zugriff auf dein PhotoPrism gibst, diese aber keine Dateien hochladen dürfen.
 
 #### :material-download: Download ####
-Wenn diese Option deaktiviert ist, können keine Dateien über die PhotoPrism-Benutzeroberfläche heruntergeladen werden. Bitte beachte, dass es trotzdem möglich sein kann, Dateien mit den integrierten Browserfunktionen herunterzuladen.
+Wenn diese Option deaktiviert ist, werden die normalen *Download*-Aktionen ausgeblendet. Für die separate Funktion [*Exportieren*](../organize/export.md) gibt es einen eigenen Schalter. Bitte beachte, dass es trotzdem möglich sein kann, bereits angezeigte Inhalte mit den integrierten Browserfunktionen zu speichern.
 
 Welche Dateien in einen Download aufgenommen werden und ob komplette Sammlungen als ZIP-Archiv heruntergeladen werden können, legst du in den Tabs [*Sammlungen*](collections.md) und [*Inhalte*](library.md#download) fest.
 
 #### :material-file-export: Exportieren ####
-Wenn diese Option deaktiviert ist, steht der Dialog [*Exportieren*](../organize/download.md#exporting-in-different-formats-and-sizes) im Vollbild-Viewer nicht zur Verfügung. Die Option ist unabhängig von der Einstellung *Download*.
+Wenn diese Option deaktiviert ist, stehen der Dialog [*Exportieren*](../organize/export.md) und seine Tastenkombination im Vollbild-Viewer nicht zur Verfügung. Die Option ist unabhängig von der Einstellung *Download*.
 
 #### :material-folder-plus: Import ####
 Wenn diese Option deaktiviert ist, gibt es keine Möglichkeit Bilder zu [*importieren*](../library/import.md). Du musst stattdessen [*indexieren*](../library/originals.md) verwenden, um neue Bilder hinzuzufügen.

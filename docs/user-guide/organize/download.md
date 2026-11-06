@@ -1,5 +1,7 @@
 # Bilder herunterladen #
 
+Um im Vollbild-Viewer einzelne Ausgabeformate und Bildgrößen auszuwählen, verwende den [Dialog Exportieren](export.md).
+
 === "Kontext-Menü"
      1. Selektiere Bilder und Videos
      2. Öffne das Kontext-Menü
