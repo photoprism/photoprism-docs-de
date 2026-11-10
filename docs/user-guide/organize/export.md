@@ -7,12 +7,12 @@ Mit dem Dialog *Exportieren* speicherst du Originale, Vorschauen in voller Grö�
 1. Klicke auf ein Bild oder Video, um es im Vollbild-Modus zu öffnen.
 2. Öffne das Menü des Viewers und wähle *Exportieren*.
 
-    ![Menü des Vollbild-Viewers mit der Aktion Exportieren](img/export-menu-2610.jpg){ class="shadow" }
+    ![Menü des Vollbild-Viewers mit der Aktion Exportieren](img/export-menu-2610-german.jpg){ class="shadow" }
 
 3. Klappe eine Dateigruppe auf, um ihre Optionen zu sehen. [Bildstapel](stacks.md) können mehrere Originale enthalten, jedes mit einer eigenen Gruppe.
 4. Wähle die Versionen aus, die du speichern möchtest, z. B. *Original*, *Vorschau in voller Größe* oder eine Größe unter *JPEGs mit angepasster Größe*.
 
-    ![Dialog Exportieren mit einem Originalbild und JPEGs in angepasster Größe](img/export-dialog-2610.jpg){ class="shadow" }
+    ![Dialog Exportieren mit einem Originalbild und JPEGs in angepasster Größe](img/export-dialog-2610-german.jpg){ class="shadow" }
 
 5. Klicke *1 Datei exportieren* bzw. *N Dateien exportieren*. Erlaube mehrere Downloads, falls dein Browser danach fragt.
 6. Warte, bis eine eventuelle Videokonvertierung abgeschlossen ist. Schlägt der Download einer Datei fehl, klicke daneben auf *Erneut versuchen*.
