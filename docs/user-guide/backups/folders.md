@@ -10,7 +10,7 @@ Dieser Pfad kann über die Umgebungsvariable `PHOTOPRISM_ORIGINALS_PATH`, das [e
 
 ## Storage
 Sofern du keine [benutzerdefinierte Konfiguration](../settings/advanced.md) hast, wird der [*storage*-Ordner](https://docs.photoprism.app/getting-started/docker-compose/#photoprismstorage) zum Lesen und Schreiben von [config](#config), [cache](#cache), [backup](#backup), [thumbnail](#thumbnails) und [sidecar](#sidecar) Dateien verwendet.
-Wir empfehlen, den *storage*-Ordner [nicht innerhalb des *originals*-Ordners zu konfigurieren](https://docs.photoprism.app/known-issues/#nested-storage-folder), es sei denn, der Name beginnt mit einem `.` als Zeichen dafür, dass er versteckt ist.
+Konfiguriere den *storage*-Ordner [nicht innerhalb des *originals*-Ordners](https://docs.photoprism.app/known-issues/#nested-storage-folder), auch nicht unter einem versteckten Namen, der mit einem `.` beginnt.
 
 Dieser Pfad kann über die Umgebungsvariable `PHOTOPRISM_STORAGE_PATH`, das [entsprechende CLI-Flag](https://docs.photoprism.app/getting-started/config-options/#storage) oder eine [YAML-Konfigurationsdatei](https://docs.photoprism.app/getting-started/config-files/#storage) geändert werden.
 
